@@ -1,0 +1,390 @@
+% ╔══════════════════════════════════════════════════════════════════════════════╗
+% ║  PHYS4071 · Astrophysics & Cosmology — Course Notes                        ║
+% ║  Compile with: pdflatex → bibtex → pdflatex → pdflatex                     ║
+% ╚══════════════════════════════════════════════════════════════════════════════╝
+
+\documentclass[12pt, a4paper]{article}
+
+% ─── Encoding & Fonts ──────────────────────────────────────────────────────────
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{mathpazo}                  % Palatino for text + math
+\usepackage{microtype}                 % Microtypography (better justification)
+
+% ─── Page Layout ───────────────────────────────────────────────────────────────
+\usepackage[
+  a4paper,
+  top=2.8cm, bottom=2.8cm,
+  left=2.8cm, right=2.8cm,
+  headheight=15pt
+]{geometry}
+
+% ─── Mathematics ───────────────────────────────────────────────────────────────
+\usepackage{amsmath, amssymb, amsfonts}
+\usepackage{bm}                        % Bold math symbols
+
+% ─── Color Palette  ────────────────────────────────────────────────────────────
+%     "Midnight Observatory" — navy anchors, gold & teal accents, clean white page
+\usepackage{xcolor}
+\definecolor{DeepSpace}{HTML}{0D1B2A}       % very dark navy   – headings
+\definecolor{StarGold}{HTML}{C9A84C}        % warm gold        – intuition
+\definecolor{NebulaTeal}{HTML}{2E86AB}      % teal             – theory
+\definecolor{ForestGreen}{HTML}{2D6A4F}     % deep green       – example
+\definecolor{SlateGray}{HTML}{617A8A}       % cool slate       – extra
+\definecolor{GoldBG}{HTML}{FDF8EC}          % pale gold bg
+\definecolor{TealBG}{HTML}{EBF5FA}          % pale teal bg
+\definecolor{GreenBG}{HTML}{EBF5EF}         % pale green bg
+\definecolor{GrayBG}{HTML}{F3F4F6}          % pale gray bg
+\definecolor{TitleBG}{HTML}{090F1A}         % near-black title page
+
+% ─── Graphics & TikZ ───────────────────────────────────────────────────────────
+\usepackage{tikz}
+\usetikzlibrary{calc, backgrounds}
+\usepackage{graphicx}
+
+% ─── Boxes (tcolorbox) ─────────────────────────────────────────────────────────
+\usepackage[most, breakable]{tcolorbox}
+
+%   ── Physics Intuition ──────────────────────────────────────────────────────
+\newtcolorbox{intuition}[1][]{
+  breakable, enhanced,
+  colback   = GoldBG,
+  colframe  = StarGold,
+  leftrule  = 4pt, rightrule = 0pt, toprule = 0pt, bottomrule = 0pt,
+  arc = 0pt, outer arc = 0pt,
+  before upper = {%
+    \textcolor{StarGold}{\textbf{\small\scshape Physics Intuition}}%
+    \par\smallskip},
+  top = 2pt, bottom = 6pt, left = 8pt, right = 8pt,
+  #1
+}
+
+%   ── Theory ─────────────────────────────────────────────────────────────────
+\newtcolorbox{theory}[1][]{
+  breakable, enhanced,
+  colback   = TealBG,
+  colframe  = NebulaTeal,
+  leftrule  = 4pt, rightrule = 0pt, toprule = 0pt, bottomrule = 0pt,
+  arc = 0pt, outer arc = 0pt,
+  before upper = {%
+    \textcolor{NebulaTeal}{\textbf{\small\scshape Theory}}%
+    \par\smallskip},
+  top = 2pt, bottom = 6pt, left = 8pt, right = 8pt,
+  #1
+}
+
+%   ── Question Example (auto-numbered per section) ───────────────────────────
+\newtcbtheorem[number within=section]{example}{Question Example}{
+  breakable, enhanced,
+  colback    = GreenBG,
+  colframe   = ForestGreen,
+  arc = 3pt, outer arc = 3pt,
+  leftrule   = 1.2pt, rightrule = 1.2pt,
+  toprule    = 1.2pt, bottomrule = 1.2pt,
+  fonttitle  = \bfseries\small\color{ForestGreen},
+  coltitle   = ForestGreen,
+  attach boxed title to top left = {yshift=-2mm, xshift=8pt},
+  boxed title style = {
+    colback = white, colframe = ForestGreen,
+    arc = 2pt, outer arc = 2pt,
+    top = 1pt, bottom = 1pt, left = 4pt, right = 4pt
+  },
+  top = 6pt, bottom = 6pt, left = 8pt, right = 8pt,
+}{ex}
+
+%   ── Extra ──────────────────────────────────────────────────────────────────
+\newtcolorbox{extra}[1][]{
+  breakable, enhanced,
+  colback   = GrayBG,
+  colframe  = SlateGray,
+  leftrule  = 2pt, rightrule = 2pt, toprule = 0.6pt, bottomrule = 0.6pt,
+  arc = 3pt, outer arc = 3pt,
+  before upper = {%
+    \textcolor{SlateGray}{\textbf{\small\scshape Extra}}%
+    \par\smallskip},
+  top = 2pt, bottom = 6pt, left = 8pt, right = 8pt,
+  #1
+}
+
+% ─── Section Title Style ───────────────────────────────────────────────────────
+\usepackage{titlesec}
+\titleformat{\section}[block]
+  {\large\bfseries\color{DeepSpace}}
+  {\thesection.}{0.5em}{}
+  [\vspace{2pt}\color{StarGold}\rule{\textwidth}{0.7pt}]
+\titlespacing{\section}{0pt}{1.6em}{0.9em}
+
+\titleformat{\subsection}[block]
+  {\normalsize\bfseries\color{DeepSpace}}
+  {\thesubsection}{0.6em}{}
+  [\vspace{2pt}\color{NebulaTeal!60}\rule{\textwidth}{0.4pt}]
+\titlespacing{\subsection}{0pt}{1.2em}{0.5em}
+
+% ─── Header / Footer ───────────────────────────────────────────────────────────
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyhead[L]{\small\color{SlateGray}\itshape PHYS4071 \,·\, Astrophysics \& Cosmology}
+\fancyhead[R]{\small\color{SlateGray}\thepage}
+\fancyfoot[C]{\color{SlateGray!40}\rule{0.35\textwidth}{0.4pt}}
+
+% ─── Hyperlinks ────────────────────────────────────────────────────────────────
+\usepackage[hidelinks]{hyperref}
+\hypersetup{
+  colorlinks = true,
+  linkcolor  = NebulaTeal,
+  citecolor  = NebulaTeal,
+  urlcolor   = NebulaTeal,
+  pdftitle   = {PHYS4071 Cosmology Notes},
+}
+
+% ─── Miscellaneous ─────────────────────────────────────────────────────────────
+\usepackage{enumitem}
+\setlist[itemize]{leftmargin=*, label={\small\textcolor{StarGold}{$\bullet$}}}
+\setlist[enumerate]{leftmargin=*}
+\usepackage{booktabs}
+\usepackage{lipsum}     % placeholder — remove once real content is added
+
+% ─── Convenience macros ────────────────────────────────────────────────────────
+\newcommand{\Hubble}{H_0}
+\newcommand{\Mpc}{\,\mathrm{Mpc}}
+\newcommand{\Gyr}{\,\mathrm{Gyr}}
+\newcommand{\kms}{\,\mathrm{km\,s^{-1}}}
+
+% ══════════════════════════════════════════════════════════════════════════════
+\begin{document}
+\pagestyle{empty}
+
+% ─── Title Page ────────────────────────────────────────────────────────────────
+\begin{tikzpicture}[remember picture, overlay]
+  % Solid dark background
+  \fill[TitleBG] (current page.south west) rectangle (current page.north east);
+
+  % Starfield — random white dots of varied size and opacity
+  \foreach \i in {1,...,220}{%
+    \pgfmathsetseed{\i * 71 + 13}%
+    \pgfmathsetmacro{\sx}{rand * 10.5 + 10.5}%
+    \pgfmathsetmacro{\sy}{rand * 14.85 + 14.85}%
+    \pgfmathsetmacro{\ro}{0.15 + 0.55 * rnd}%
+    \pgfmathsetmacro{\rr}{0.4 + 1.1 * rnd}%
+    \fill[white, opacity=\ro] (\sx cm, \sy cm) circle (\rr pt);%
+  }%
+
+  % Constellation sketch (Orion belt region, schematic)
+  \newcommand{\starpt}[2]{\fill[StarGold, opacity=0.75] (#1 cm, #2 cm) circle (2.2pt);}%
+  \starpt{4.0}{6.0}   \starpt{5.5}{7.8}   \starpt{6.8}{7.0}
+  \starpt{8.2}{8.5}   \starpt{9.0}{7.2}   \starpt{6.8}{5.2}
+  \starpt{5.8}{4.2}
+  \draw[StarGold, opacity=0.25, line width=0.6pt]
+    (4.0cm,6.0cm) -- (5.5cm,7.8cm) -- (6.8cm,7.0cm) --
+    (8.2cm,8.5cm)  (6.8cm,7.0cm) -- (9.0cm,7.2cm)
+    (6.8cm,7.0cm) -- (6.8cm,5.2cm) -- (5.8cm,4.2cm);
+
+  % Horizontal gold accent rule
+  \draw[StarGold, line width=1.4pt]
+    ([shift={(2.0cm,-10.2cm)}]current page.north west) --
+    ([shift={(-2.0cm,-10.2cm)}]current page.north east);
+  \draw[StarGold!35, line width=0.5pt]
+    ([shift={(2.0cm,-10.42cm)}]current page.north west) --
+    ([shift={(-2.0cm,-10.42cm)}]current page.north east);
+\end{tikzpicture}
+
+\null\vspace{5.8cm}
+
+\begin{center}
+  {\small\color{StarGold}\textsc{\large P\kern1pt H\kern1pt Y\kern1pt S\kern2pt 4\kern1pt 0\kern1pt 7\kern1pt 1}}\\[0.7em]
+  {\fontsize{32}{38}\selectfont\bfseries\color{white}Astrophysics \&}\\[0.15em]
+  {\fontsize{32}{38}\selectfont\bfseries\color{white}Cosmology}\\[1.0em]
+  {\color{StarGold!55}\rule{5.5cm}{0.5pt}}\\[0.7em]
+  {\color{white!65}\normalsize Course Notes}\\[0.3em]
+  {\color{white!40}\small Spring 2026}
+\end{center}
+
+\clearpage
+\pagestyle{fancy}
+
+% ─── Table of Contents ─────────────────────────────────────────────────────────
+{%
+  \hypersetup{linkcolor=DeepSpace}%
+  \tableofcontents
+}
+\clearpage
+
+
+% ══════════════════════════════════════════════════════════════════════════════
+%  §1  THE EXPANDING UNIVERSE
+% ══════════════════════════════════════════════════════════════════════════════
+\section{The Expanding Universe}
+
+% ── Physics Intuition ──────────────────────────────────────────────────────────
+\begin{intuition}
+\lipsum[1][1-4]   %TODO: replace — motivation / historical background / big-picture intuition
+\end{intuition}
+
+\bigskip
+
+% ── Theory ─────────────────────────────────────────────────────────────────────
+\begin{theory}
+\lipsum[2][1-3]   %TODO: replace — derivation / assumptions / connection to intuition
+
+The \textbf{Hubble–Lemaître Law} relates the recession velocity of a galaxy to its
+proper distance~$d$:
+\begin{equation}
+  v \;=\; H_0 \, d,
+  \label{eq:hubble}
+\end{equation}
+where $H_0 \approx 67.4 \kms\Mpc^{-1}$ is the Hubble constant (Planck~2018).
+The cosmological redshift is defined via the scale factor $a(t)$:
+\begin{equation}
+  1 + z \;=\; \frac{a(t_0)}{a(t_e)} \;=\; \frac{1}{a(t_e)},
+  \label{eq:redshift}
+\end{equation}
+using the convention $a(t_0)=1$ today.
+
+\lipsum[2][4-5]   %TODO: replace
+\end{theory}
+
+\bigskip
+
+% ── Question Example ───────────────────────────────────────────────────────────
+\begin{example}{Recession Velocity from Redshift}{}
+\lipsum[3][1-2]   %TODO: replace — question statement
+
+\medskip\textbf{Solution.}\quad
+\lipsum[3][3-4]   %TODO: replace — solution steps and answer
+\end{example}
+
+\bigskip
+
+% ── Extra ──────────────────────────────────────────────────────────────────────
+\begin{extra}
+\lipsum[4][1-2]   %TODO: replace — aside, fun fact, or deeper reference
+\end{extra}
+
+\clearpage
+
+
+% ══════════════════════════════════════════════════════════════════════════════
+%  §2  THE FRIEDMANN EQUATIONS
+% ══════════════════════════════════════════════════════════════════════════════
+\section{The Friedmann Equations}
+
+% ── Physics Intuition ──────────────────────────────────────────────────────────
+\begin{intuition}
+\lipsum[5][1-4]   %TODO: replace
+\end{intuition}
+
+\bigskip
+
+% ── Theory ─────────────────────────────────────────────────────────────────────
+\begin{theory}
+The \textbf{FLRW metric} describes a homogeneous, isotropic universe:
+\begin{equation}
+  ds^2 = -c^2\,dt^2 + a(t)^2
+    \!\left[\frac{dr^2}{1-kr^2} + r^2\,d\theta^2 + r^2\!\sin^2\!\theta\,d\phi^2\right],
+\end{equation}
+with curvature parameter $k\in\{-1,0,+1\}$.
+Inserting into the Einstein field equations gives the \textbf{Friedmann equations}:
+\begin{align}
+  \left(\frac{\dot{a}}{a}\right)^{\!2}
+    &= \frac{8\pi G}{3}\rho - \frac{kc^2}{a^2} + \frac{\Lambda c^2}{3},
+    \label{eq:friedmann1}\\[6pt]
+  \frac{\ddot{a}}{a}
+    &= -\frac{4\pi G}{3}\!\left(\rho + \frac{3p}{c^2}\right) + \frac{\Lambda c^2}{3}.
+    \label{eq:friedmann2}
+\end{align}
+
+\lipsum[6][1-4]   %TODO: replace — explain assumptions, equation of state $w=p/\rho c^2$
+\end{theory}
+
+\bigskip
+
+% ── Question Example ───────────────────────────────────────────────────────────
+\begin{example}{Scale Factor of a Flat Matter-Dominated Universe}{}
+\lipsum[7][1-2]   %TODO: replace — question
+
+\medskip\textbf{Solution.}\quad
+For $k=0$, $\Lambda=0$ and pressureless dust ($p=0$), Eq.~\eqref{eq:friedmann1}
+reduces to $\dot{a}^2 \propto a^{-1}$, giving:
+\begin{equation}
+  a(t) \;\propto\; t^{2/3}.
+\end{equation}
+\lipsum[7][3-4]   %TODO: replace — interpretation
+\end{example}
+
+\bigskip
+
+% ── Extra ──────────────────────────────────────────────────────────────────────
+\begin{extra}
+\lipsum[8][1-2]   %TODO: replace — e.g.\ historical note on Friedmann (1922), Lemaître (1927)
+\end{extra}
+
+\clearpage
+
+
+% ══════════════════════════════════════════════════════════════════════════════
+%  §3  ENERGY BUDGET: THE ΛCDM MODEL
+% ══════════════════════════════════════════════════════════════════════════════
+\section[Energy Budget: LCDM Model]{Energy Budget: The $\Lambda$CDM Model}
+
+% ── Physics Intuition ──────────────────────────────────────────────────────────
+\begin{intuition}
+\lipsum[9][1-4]   %TODO: replace — why dark matter + dark energy? what do observations say?
+\end{intuition}
+
+\bigskip
+
+% ── Theory ─────────────────────────────────────────────────────────────────────
+\begin{theory}
+Define the \textbf{critical density} and dimensionless density parameters:
+\begin{equation}
+  \rho_\mathrm{crit}(z) = \frac{3H(z)^2}{8\pi G}, \qquad
+  \Omega_i(z) = \frac{\rho_i(z)}{\rho_{\mathrm{crit}}(z)}.
+\end{equation}
+Each component scales with redshift according to its equation of state $w_i$:
+\begin{equation}
+  \rho_i(z) = \rho_{i,0}(1+z)^{3(1+w_i)}.
+\end{equation}
+
+In the \textbf{flat $\Lambda$CDM} model ($\Omega_k=0$,
+$\Omega_\mathrm{m,0}+\Omega_{\Lambda}+\Omega_\mathrm{r,0}=1$):
+\begin{equation}
+  \frac{H(z)^2}{H_0^2}
+    = \Omega_{\mathrm{m},0}(1+z)^3
+    + \Omega_{\mathrm{r},0}(1+z)^4
+    + \Omega_\Lambda.
+  \label{eq:lcdm_hubble}
+\end{equation}
+Current Planck~2018 best-fit values:
+$\Omega_\mathrm{m,0}\approx0.315$,
+$\Omega_\Lambda\approx0.685$,
+$\Omega_\mathrm{r,0}\approx9.2\times10^{-5}$.
+
+\lipsum[10][1-3]   %TODO: replace
+\end{theory}
+
+\bigskip
+
+% ── Question Example ───────────────────────────────────────────────────────────
+\begin{example}{Age of the Universe in Flat $\Lambda$CDM}{}
+\lipsum[11][1-2]   %TODO: replace
+
+\medskip\textbf{Solution.}\quad
+The lookback-time integral is:
+\begin{equation}
+  t_0 = \int_0^\infty \frac{dz}{(1+z)\,H(z)},
+\end{equation}
+with $H(z)$ from Eq.~\eqref{eq:lcdm_hubble}.
+\lipsum[11][3-4]   %TODO: replace — numerical result and physical interpretation
+\end{example}
+
+\bigskip
+
+% ── Extra ──────────────────────────────────────────────────────────────────────
+\begin{extra}
+\lipsum[12][1-2]   %TODO: replace — e.g.\ tension between $H_0$ measurements (CMB vs.\ local)
+\end{extra}
+
+% ══════════════════════════════════════════════════════════════════════════════
+\end{document}
