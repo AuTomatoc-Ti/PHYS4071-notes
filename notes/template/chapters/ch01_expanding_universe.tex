@@ -1,0 +1,132 @@
+% ══════════════════════════════════════════════════════════════════════════════
+%  CHAPTER 1: THE EXPANDING UNIVERSE
+% ══════════════════════════════════════════════════════════════════════════════
+
+\chapter{The Expanding Universe}
+
+% ──────────────────────────────────────────────────────────────────────────────
+\section{Hubble's Discovery}
+
+\subsection{Physics Intuition}
+
+\begin{intuition}
+In the early twentieth century, astronomers noticed that the spectral lines of distant
+galaxies were systematically shifted toward the red end of the spectrum.
+Edwin Hubble's landmark 1929 observations at the Mount Wilson Observatory revealed a
+clear linear relation between a galaxy's recession velocity and its distance from us.
+This was the first observational evidence that the universe is not static but
+expanding—every galaxy is moving away from every other, like raisins in a rising loaf
+of bread. The discovery overturned centuries of assumptions about a steady, eternal
+cosmos and laid the empirical foundation for modern Big Bang cosmology.
+\end{intuition}
+
+\subsection{Theory}
+
+\begin{theory}
+To quantify Hubble's discovery we infer recession velocity from the Doppler-like
+redshift of a galaxy's spectral lines: $v = cz$ in the non-relativistic limit.
+Physical distances are estimated via the \emph{cosmic distance ladder}—at
+increasing scales: parallax, Cepheid variable stars, and Type~Ia supernovae.
+
+The \textbf{Hubble--Lema\^itre Law} relates the recession velocity of a galaxy to its
+proper distance~$d$:
+\begin{equation}
+  v \;=\; H_0 \, d,
+  \label{eq:hubble}
+\end{equation}
+where $H_0 \approx 67.4 \kms\Mpc^{-1}$ is the Hubble constant (Planck~2018).
+The cosmological redshift is defined via the scale factor $a(t)$:
+\begin{equation}
+  1 + z \;=\; \frac{a(t_0)}{a(t_e)} \;=\; \frac{1}{a(t_e)},
+  \label{eq:redshift}
+\end{equation}
+using the convention $a(t_0)=1$ today.
+
+The Hubble constant $H_0$ encodes the \emph{current} expansion rate.
+Direct distance-ladder measurements give $H_0 \approx 73\,\mathrm{km\,s^{-1}\,Mpc^{-1}}$,
+while CMB-based inference (Planck~2018) yields $H_0 \approx 67.4\,\mathrm{km\,s^{-1}\,Mpc^{-1}}$.
+This $\sim5\sigma$ discrepancy—the \emph{Hubble tension}—is one of the most pressing
+open problems in modern cosmology.
+\end{theory}
+
+\subsection{Question Examples}
+
+\begin{example}{Recession Velocity from Redshift}{}
+A galaxy in the Virgo Cluster is observed with a spectroscopic redshift of $z = 0.0036$.
+Using the Hubble--Lema\^itre Law with $H_0 = 67.4\,\mathrm{km\,s^{-1}\,Mpc^{-1}}$,
+estimate (a)~its recession velocity and (b)~its distance.
+
+\medskip\textbf{Solution.}\quad
+(a)~In the non-relativistic limit, $v = cz = (3\times10^5)(0.0036)
+= 1080\,\mathrm{km\,s^{-1}}$.
+(b)~From $v = H_0 d$, $d = 1080/67.4 \approx 16\,\mathrm{Mpc}$, consistent with
+the known Virgo Cluster distance of $\sim16$--$17\,\mathrm{Mpc}$.
+\end{example}
+
+\subsection{Extra}
+
+\begin{extra}
+Hubble's original 1929 determination yielded $H_0 \approx 500\,\mathrm{km\,s^{-1}\,Mpc^{-1}}$—nearly
+eight times the modern value—because he confused two classes of Cepheid variable stars:
+classical (Population~I) Cepheids and the intrinsically dimmer W~Virginis stars.
+Walter Baade's 1952 revision of the Cepheid calibration corrected the distance scale and
+reconciled the estimated age of the universe with the known ages of the oldest globular clusters.
+\end{extra}
+
+% ──────────────────────────────────────────────────────────────────────────────
+\section{The Cosmological Redshift}
+
+\subsection{Physics Intuition}
+
+\begin{intuition}
+The cosmological redshift is fundamentally different from the ordinary Doppler
+redshift caused by a galaxy's peculiar velocity through space.
+Instead, it is \emph{space itself} that expands, stretching the wavelength of every
+photon in transit proportionally to how much the universe has expanded during the photon's
+journey. The longer a photon travels, the greater its observed redshift—making $z$ a
+direct measure of cosmic distance and look-back time.
+\end{intuition}
+
+\subsection{Theory}
+
+\begin{theory}
+Consider a photon emitted at cosmic time $t_e$ with wavelength $\lambda_e$, received
+today ($t_0$) with wavelength $\lambda_0$.
+In the FLRW metric, the null geodesic condition $ds^2=0$ for radial travel implies
+that the proper wavelength scales with the scale factor:
+$\lambda \propto a(t)$.
+Therefore
+\begin{equation}
+  \frac{\lambda_0}{\lambda_e} \;=\; \frac{a(t_0)}{a(t_e)} \;=\; 1 + z,
+\end{equation}
+reproducing Eq.~\eqref{eq:redshift}.
+This derivation requires only the FLRW metric—no specific model for $a(t)$ is needed.
+In the limit of small separations, $z \ll 1$, it reduces to the familiar Doppler
+formula $z \approx v/c$ with $v = H_0 d$.
+\end{theory}
+
+\subsection{Question Examples}
+
+\begin{example}{Computing Cosmic Distance}{}
+A hydrogen Lyman-$\alpha$ photon (rest wavelength $\lambda_e = 121.6\,\mathrm{nm}$)
+from a distant quasar is detected at $\lambda_0 = 729.6\,\mathrm{nm}$.
+Find the redshift $z$ and the scale factor $a(t_e)$ at the time of emission.
+
+\medskip\textbf{Solution.}\quad
+$z = \lambda_0/\lambda_e - 1 = 729.6/121.6 - 1 = 5.0$.
+From $1+z = 1/a(t_e)$, we get $a(t_e) = 1/6 \approx 0.167$:
+the universe was six times smaller when this photon was emitted.
+\end{example}
+
+\subsection{Extra}
+
+\begin{extra}
+The most distant objects confirmed to date reach redshifts $z > 13$, placing them
+within the first few hundred million years after the Big Bang.
+JWST has revealed surprisingly luminous, massive galaxies at $z > 10$, challenging
+standard semi-analytic models of early galaxy formation.
+Such observations probe the \emph{epoch of reionization}—when ultraviolet radiation
+from the first stars and quasars ionized the neutral hydrogen permeating the universe.
+\end{extra}
+
+\clearpage

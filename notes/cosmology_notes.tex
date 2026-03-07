@@ -3,7 +3,7 @@
 % ║  Compile with: pdflatex → bibtex → pdflatex → pdflatex                     ║
 % ╚══════════════════════════════════════════════════════════════════════════════╝
 
-\documentclass[12pt, a4paper]{article}
+\documentclass[12pt, a4paper, openright]{report}
 
 % ─── Encoding & Fonts ──────────────────────────────────────────────────────────
 \usepackage[T1]{fontenc}
@@ -36,11 +36,15 @@
 \definecolor{GreenBG}{HTML}{EBF5EF}         % pale green bg
 \definecolor{GrayBG}{HTML}{F3F4F6}          % pale gray bg
 \definecolor{TitleBG}{HTML}{090F1A}         % near-black title page
+\definecolor{BannerDeepBlue}{HTML}{0D1B2A} % deep navy for banner
+
+% ─── Graphics & Images ─────────────────────────────────────────────────────────
+\usepackage{graphicx}
+\graphicspath{{./image/}{./images/}{../image/}{../images/}}
 
 % ─── Graphics & TikZ ───────────────────────────────────────────────────────────
 \usepackage{tikz}
 \usetikzlibrary{calc, backgrounds}
-\usepackage{graphicx}
 
 % ─── Boxes (tcolorbox) ─────────────────────────────────────────────────────────
 \usepackage[most, breakable]{tcolorbox}
@@ -73,8 +77,8 @@
   #1
 }
 
-%   ── Question Example (auto-numbered per section) ───────────────────────────
-\newtcbtheorem[number within=section]{example}{Question Example}{
+%   ── Question Example (auto-numbered per chapter) ───────────────────────────
+\newtcbtheorem[number within=chapter]{example}{Question Example}{
   breakable, enhanced,
   colback    = GreenBG,
   colframe   = ForestGreen,
@@ -106,14 +110,27 @@
   #1
 }
 
-% ─── Section Title Style ───────────────────────────────────────────────────────
+% ─── Chapter & Section Title Style ────────────────────────────────────────────
 \usepackage{titlesec}
+
+%   ── Chapter with Elegant Minimal Design ─────────────────────────────────
+\titleformat{\chapter}[display]
+  {\normalsize\color{DeepSpace}\scshape\letterspacing{\the\spacefactor}}
+  {}
+  {0pt}
+  {\vspace{-0.5cm}{\color{StarGold}\rule{\textwidth}{0.5pt}}\\[0.8em]%
+   \noindent{\Large\bfseries\color{DeepSpace}CHAPTER \thechapter}\\[0.3em]%
+   \textit{#1}\\[0.5em]{\color{StarGold}\rule{\textwidth}{0.5pt}}\\[1cm}}
+\titlespacing{\chapter}{0pt}{2.5em}{1.8em}
+
+%   ── Section Style ─────────────────────────────────────────────────────────
 \titleformat{\section}[block]
   {\large\bfseries\color{DeepSpace}}
-  {\thesection.}{0.5em}{}
+  {\thesection}{0.6em}{}
   [\vspace{2pt}\color{StarGold}\rule{\textwidth}{0.7pt}]
 \titlespacing{\section}{0pt}{1.6em}{0.9em}
 
+%   ── Subsection Style ──────────────────────────────────────────────────────
 \titleformat{\subsection}[block]
   {\normalsize\bfseries\color{DeepSpace}}
   {\thesubsection}{0.6em}{}
@@ -137,7 +154,12 @@
   citecolor  = NebulaTeal,
   urlcolor   = NebulaTeal,
   pdftitle   = {PHYS4071 Cosmology Notes},
+  pdfauthor  = {automatoc-ti},
 }
+
+% ─── Bibliography & References ────────────────────────────────────────────────
+\usepackage[style=authoryear]{biblatex}
+\addbibresource{references.bib}
 
 % ─── Miscellaneous ─────────────────────────────────────────────────────────────
 \usepackage{enumitem}
@@ -151,6 +173,11 @@
 \newcommand{\Mpc}{\,\mathrm{Mpc}}
 \newcommand{\Gyr}{\,\mathrm{Gyr}}
 \newcommand{\kms}{\,\mathrm{km\,s^{-1}}}
+
+% ─── Custom Date & Author Footer ──────────────────────────────────────────────
+\usepackage{datetime}
+\newcommand{\CompileDate}{\today}
+\newcommand{\NoteAuthor}{automatoc-ti}
 
 % ══════════════════════════════════════════════════════════════════════════════
 \begin{document}
@@ -181,52 +208,181 @@
     (8.2cm,8.5cm)  (6.8cm,7.0cm) -- (9.0cm,7.2cm)
     (6.8cm,7.0cm) -- (6.8cm,5.2cm) -- (5.8cm,4.2cm);
 
-  % Horizontal gold accent rule
+  % Horizontal gold accent bars (positioned lower to avoid text)
   \draw[StarGold, line width=1.4pt]
-    ([shift={(2.0cm,-10.2cm)}]current page.north west) --
-    ([shift={(-2.0cm,-10.2cm)}]current page.north east);
+    ([shift={(2.0cm,-12.5cm)}]current page.north west) --
+    ([shift={(-2.0cm,-12.5cm)}]current page.north east);
   \draw[StarGold!35, line width=0.5pt]
-    ([shift={(2.0cm,-10.42cm)}]current page.north west) --
-    ([shift={(-2.0cm,-10.42cm)}]current page.north east);
+    ([shift={(2.0cm,-12.72cm)}]current page.north west) --
+    ([shift={(-2.0cm,-12.72cm)}]current page.north east);
 \end{tikzpicture}
 
-\null\vspace{5.8cm}
+\null\vspace{4.8cm}
 
 \begin{center}
-  {\small\color{StarGold}\textsc{\large P\kern1pt H\kern1pt Y\kern1pt S\kern2pt 4\kern1pt 0\kern1pt 7\kern1pt 1}}\\[0.7em]
-  {\fontsize{32}{38}\selectfont\bfseries\color{white}Astrophysics \&}\\[0.15em]
-  {\fontsize{32}{38}\selectfont\bfseries\color{white}Cosmology}\\[1.0em]
-  {\color{StarGold!55}\rule{5.5cm}{0.5pt}}\\[0.7em]
-  {\color{white!65}\normalsize Course Notes}\\[0.3em]
-  {\color{white!40}\small Spring 2026}
+  {\small\color{StarGold}\textsc{\large P\kern1pt H\kern1pt Y\kern1pt S\kern2pt 4\kern1pt 0\kern1pt 7\kern1pt 1}}\\[1.2em]
+  {\fontsize{32}{38}\selectfont\bfseries\color{white}Astrophysics \&}\\[0.2em]
+  {\fontsize{32}{38}\selectfont\bfseries\color{white}Cosmology}\\[1.2em]
+  {\color{StarGold!55}\rule{5.5cm}{0.5pt}}\\[1.0em]
+  {\color{white!65}\normalsize Course Notes}\\[0.5em]
+  {\color{white!55}\small Spring 2026}
+\end{center}
+
+\vfill
+
+\begin{center}
+  {\small\color{white!50}Author: \textit{\NoteAuthor}}\\[0.3em]
+  {\small\color{white!50}Compiled: \textit{\CompileDate}}
 \end{center}
 
 \clearpage
 \pagestyle{fancy}
 
-% ─── Table of Contents ─────────────────────────────────────────────────────────
+% ─── Table of Contents with Elegant Header ────────────────────────────────
+\phantomsection
+\begin{center}
+  {\color{StarGold}\rule{0.4\textwidth}{0.5pt}}
+\end{center}
+
+\vspace{0.8cm}
+
+{\centering\Large\bfseries\color{DeepSpace}TABLE OF CONTENTS\par}
+
+\vspace{0.8cm}
+
+\begin{center}
+  {\color{StarGold}\rule{0.4\textwidth}{0.5pt}}
+\end{center}
+
+\vspace{1.2cm}
+
 {%
   \hypersetup{linkcolor=DeepSpace}%
+  \renewcommand{\contentsname}{}%
   \tableofcontents
 }
+
 \clearpage
 
 
 % ══════════════════════════════════════════════════════════════════════════════
-%  §1  THE EXPANDING UNIVERSE
+%  INTRODUCTION: HOW TO USE THIS GUIDE
 % ══════════════════════════════════════════════════════════════════════════════
-\section{The Expanding Universe}
 
-% ── Physics Intuition ──────────────────────────────────────────────────────────
-\begin{intuition}
-\lipsum[1][1-4]   %TODO: replace — motivation / historical background / big-picture intuition
-\end{intuition}
+\chapter*{Introduction: How to Use This Course Guide}
+\addcontentsline{toc}{chapter}{Introduction}
+
+Throughout this course guide, each topic is presented using a consistent
+**four-component structure** designed to support multiple learning styles:
 
 \bigskip
 
-% ── Theory ─────────────────────────────────────────────────────────────────────
+\noindent
+\begin{minipage}{0.9\textwidth}
+  \begin{tcolorbox}[breakable, colback=GoldBG, colframe=StarGold, 
+                     leftrule=4pt, arc=0pt,
+                     before upper={\textcolor{StarGold}{\textbf{\scshape Physics Intuition}}\par\smallskip}]
+    \textbf{Purpose:} Builds conceptual understanding through plain language explanations.
+    
+    This section provides the \emph{motivation} behind the physics concept, 
+    explores its \emph{historical development}, and offers \emph{intuitive explanations} 
+    that help you grasp what the theory is really about before diving into equations.
+    
+    \smallskip
+    \textit{Use this when:} You're first encountering a new concept or need to refresh 
+    the "big picture" before tackling mathematics.
+  \end{tcolorbox}
+\end{minipage}
+
+\bigskip
+
+\noindent
+\begin{minipage}{0.9\textwidth}
+  \begin{tcolorbox}[breakable, colback=TealBG, colframe=NebulaTeal, 
+                     leftrule=4pt, arc=0pt,
+                     before upper={\textcolor{NebulaTeal}{\textbf{\scshape Theory}}\par\smallskip}]
+    \textbf{Purpose:} Provides rigorous mathematical treatment of the concept.
+    
+    Here you'll find detailed \emph{derivations}, \emph{fundamental assumptions}, 
+    key \emph{equations}, and connections between \emph{mathematics and physical intuition}. 
+    This is the technical foundation required for exams and deeper problem-solving.
+    
+    \smallskip
+    \textit{Use this when:} You need to understand how to apply formulas, prepare for exams, 
+    or work through problems rigorously.
+  \end{tcolorbox}
+\end{minipage}
+
+\bigskip
+
+\noindent
+\begin{minipage}{0.9\textwidth}
+  \begin{tcolorbox}[breakable, colback=GreenBG, colframe=ForestGreen, 
+                     arc=3pt,
+                     before upper={\textcolor{ForestGreen}{\textbf{\scshape Question Examples}}\par\smallskip}]
+    \textbf{Purpose:} Demonstrates practical application through worked problems.
+    
+    Each question example mimics exam-style problems and includes complete 
+    \emph{solution walkthroughs}. These help you bridge the gap between theory 
+    and problem-solving, and expose common pitfalls.
+    
+    \smallskip
+    \textit{Use this when:} Practicing problem-solving, preparing for assessments, 
+    or checking if you can apply the formulas correctly.
+  \end{tcolorbox}
+\end{minipage}
+
+\bigskip
+
+\noindent
+\begin{minipage}{0.9\textwidth}
+  \begin{tcolorbox}[breakable, colback=GrayBG, colframe=SlateGray, 
+                     leftrule=2pt, rightrule=2pt, arc=3pt,
+                     before upper={\textcolor{SlateGray}{\textbf{\scshape Extra}}\par\smallskip}]
+    \textbf{Purpose:} Provides supplementary material beyond the core curriculum.
+    
+    This section offers \emph{interesting asides}, \emph{historical notes}, 
+    \emph{tangential topics}, citations to deeper references, or connections 
+    to cutting-edge research. Optional but enriching.
+    
+    \smallskip
+    \textit{Use this when:} You're curious to explore further, or when a topic 
+    connects to your research interests.
+  \end{tcolorbox}
+\end{minipage}
+
+\bigskip\bigskip
+
+\noindent
+\textbf{Suggested Reading Paths:}
+\begin{enumerate}
+  \item \textbf{Exam Preparation:} Start with \textit{Physics Intuition} $\to$ 
+        \textit{Theory} $\to$ \textit{Question Examples}
+  \item \textbf{Deep Learning:} \textit{Physics Intuition} $\to$ \textit{Extra} 
+        $\to$ \textit{Theory} $\to$ \textit{Question Examples}
+  \item \textbf{Quick Review:} \textit{Theory} $\to$ \textit{Question Examples}
+\end{enumerate}
+
+\clearpage
+
+
+% ══════════════════════════════════════════════════════════════════════════════
+%  CHAPTER 1: THE EXPANDING UNIVERSE
+% ══════════════════════════════════════════════════════════════════════════════
+\chapter{The Expanding Universe}
+
+\section{Hubble's Discovery}
+
+\subsection{Physics Intuition}
+
+\begin{intuition}
+\lipsum[1][1-4]   %TODO: replace — early observations, why it was revolutionary
+\end{intuition}
+
+\subsection{Theory}
+
 \begin{theory}
-\lipsum[2][1-3]   %TODO: replace — derivation / assumptions / connection to intuition
+\lipsum[2][1-3]   %TODO: replace — derivation and assumptions
 
 The \textbf{Hubble–Lemaître Law} relates the recession velocity of a galaxy to its
 proper distance~$d$:
@@ -245,9 +401,8 @@ using the convention $a(t_0)=1$ today.
 \lipsum[2][4-5]   %TODO: replace
 \end{theory}
 
-\bigskip
+\subsection{Question Examples}
 
-% ── Question Example ───────────────────────────────────────────────────────────
 \begin{example}{Recession Velocity from Redshift}{}
 \lipsum[3][1-2]   %TODO: replace — question statement
 
@@ -255,29 +410,58 @@ using the convention $a(t_0)=1$ today.
 \lipsum[3][3-4]   %TODO: replace — solution steps and answer
 \end{example}
 
-\bigskip
+\subsection{Extra}
 
-% ── Extra ──────────────────────────────────────────────────────────────────────
 \begin{extra}
-\lipsum[4][1-2]   %TODO: replace — aside, fun fact, or deeper reference
+\lipsum[4][1-2]   %TODO: replace — side notes, historical context
+\end{extra}
+
+\section{The Cosmological Redshift}
+
+\subsection{Physics Intuition}
+
+\begin{intuition}
+\lipsum[5][1-3]   %TODO: replace
+\end{intuition}
+
+\subsection{Theory}
+
+\begin{theory}
+\lipsum[6][1-5]   %TODO: replace — full mathematical treatment
+\end{theory}
+
+\subsection{Question Examples}
+
+\begin{example}{Computing Cosmic Distance}{}
+\lipsum[7][1-2]   %TODO: replace
+
+\medskip\textbf{Solution.}\quad
+\lipsum[7][3-4]   %TODO: replace
+\end{example}
+
+\subsection{Extra}
+
+\begin{extra}
+\lipsum[8][1-2]   %TODO: replace
 \end{extra}
 
 \clearpage
 
-
 % ══════════════════════════════════════════════════════════════════════════════
-%  §2  THE FRIEDMANN EQUATIONS
+%  CHAPTER 2: FRIEDMANN EQUATIONS & COSMOLOGICAL DYNAMICS
 % ══════════════════════════════════════════════════════════════════════════════
-\section{The Friedmann Equations}
+\chapter{Friedmann Equations \& Cosmological Dynamics}
 
-% ── Physics Intuition ──────────────────────────────────────────────────────────
+\section{The FLRW Metric}
+
+\subsection{Physics Intuition}
+
 \begin{intuition}
-\lipsum[5][1-4]   %TODO: replace
+\lipsum[9][1-4]   %TODO: replace — why homogeneity and isotropy, simplifications
 \end{intuition}
 
-\bigskip
+\subsection{Theory}
 
-% ── Theory ─────────────────────────────────────────────────────────────────────
 \begin{theory}
 The \textbf{FLRW metric} describes a homogeneous, isotropic universe:
 \begin{equation}
@@ -285,7 +469,38 @@ The \textbf{FLRW metric} describes a homogeneous, isotropic universe:
     \!\left[\frac{dr^2}{1-kr^2} + r^2\,d\theta^2 + r^2\!\sin^2\!\theta\,d\phi^2\right],
 \end{equation}
 with curvature parameter $k\in\{-1,0,+1\}$.
-Inserting into the Einstein field equations gives the \textbf{Friedmann equations}:
+
+\lipsum[10][1-4]   %TODO: replace — explain assumptions, interpretation
+\end{theory}
+
+\subsection{Question Examples}
+
+\begin{example}{Proper Distance in FLRW}{}
+\lipsum[11][1-2]   %TODO: replace
+
+\medskip\textbf{Solution.}\quad
+\lipsum[11][3-4]   %TODO: replace
+\end{example}
+
+\subsection{Extra}
+
+\begin{extra}
+\lipsum[12][1-2]   %TODO: replace — Robertson–Walker, co-moving vs proper distance
+\end{extra}
+
+\section{The Friedmann Equations}
+
+\subsection{Physics Intuition}
+
+\begin{intuition}
+\lipsum[13][1-4]   %TODO: replace — gravity, expansion dynamics
+\end{intuition}
+
+\subsection{Theory}
+
+\begin{theory}
+Inserting the FLRW metric into the Einstein field equations gives the 
+\textbf{Friedmann equations}:
 \begin{align}
   \left(\frac{\dot{a}}{a}\right)^{\!2}
     &= \frac{8\pi G}{3}\rho - \frac{kc^2}{a^2} + \frac{\Lambda c^2}{3},
@@ -294,15 +509,13 @@ Inserting into the Einstein field equations gives the \textbf{Friedmann equation
     &= -\frac{4\pi G}{3}\!\left(\rho + \frac{3p}{c^2}\right) + \frac{\Lambda c^2}{3}.
     \label{eq:friedmann2}
 \end{align}
-
-\lipsum[6][1-4]   %TODO: replace — explain assumptions, equation of state $w=p/\rho c^2$
+\lipsum[14][1-4]   %TODO: replace — explain equation of state, $w=p/\rho c^2$
 \end{theory}
 
-\bigskip
+\subsection{Question Examples}
 
-% ── Question Example ───────────────────────────────────────────────────────────
 \begin{example}{Scale Factor of a Flat Matter-Dominated Universe}{}
-\lipsum[7][1-2]   %TODO: replace — question
+\lipsum[15][1-2]   %TODO: replace
 
 \medskip\textbf{Solution.}\quad
 For $k=0$, $\Lambda=0$ and pressureless dust ($p=0$), Eq.~\eqref{eq:friedmann1}
@@ -310,32 +523,32 @@ reduces to $\dot{a}^2 \propto a^{-1}$, giving:
 \begin{equation}
   a(t) \;\propto\; t^{2/3}.
 \end{equation}
-\lipsum[7][3-4]   %TODO: replace — interpretation
+\lipsum[15][3-4]   %TODO: replace — interpretation
 \end{example}
 
-\bigskip
+\subsection{Extra}
 
-% ── Extra ──────────────────────────────────────────────────────────────────────
 \begin{extra}
-\lipsum[8][1-2]   %TODO: replace — e.g.\ historical note on Friedmann (1922), Lemaître (1927)
+\lipsum[16][1-2]   %TODO: replace — Friedmann (1922), Lemaître (1927), criticism of steady state
 \end{extra}
 
 \clearpage
 
-
 % ══════════════════════════════════════════════════════════════════════════════
-%  §3  ENERGY BUDGET: THE ΛCDM MODEL
+%  CHAPTER 3: ENERGY BUDGET IN THE ΛCDM MODEL
 % ══════════════════════════════════════════════════════════════════════════════
-\section[Energy Budget: LCDM Model]{Energy Budget: The $\Lambda$CDM Model}
+\chapter{Energy Budget in the $\Lambda$CDM Model}
 
-% ── Physics Intuition ──────────────────────────────────────────────────────────
+\section{Density Parameters \& Critical Density}
+
+\subsection{Physics Intuition}
+
 \begin{intuition}
-\lipsum[9][1-4]   %TODO: replace — why dark matter + dark energy? what do observations say?
+\lipsum[17][1-4]   %TODO: replace — concept of critical density, why it matters
 \end{intuition}
 
-\bigskip
+\subsection{Theory}
 
-% ── Theory ─────────────────────────────────────────────────────────────────────
 \begin{theory}
 Define the \textbf{critical density} and dimensionless density parameters:
 \begin{equation}
@@ -347,6 +560,35 @@ Each component scales with redshift according to its equation of state $w_i$:
   \rho_i(z) = \rho_{i,0}(1+z)^{3(1+w_i)}.
 \end{equation}
 
+\lipsum[18][1-3]   %TODO: replace
+\end{theory}
+
+\subsection{Question Examples}
+
+\begin{example}{Computing Critical Density Today}{}
+\lipsum[19][1-2]   %TODO: replace
+
+\medskip\textbf{Solution.}\quad
+\lipsum[19][3-4]   %TODO: replace
+\end{example}
+
+\subsection{Extra}
+
+\begin{extra}
+\lipsum[20][1-2]   %TODO: replace — curvature parameter, flat universe assumption
+\end{extra}
+
+\section{The Flat $\Lambda$CDM Model}
+
+\subsection{Physics Intuition}
+
+\begin{intuition}
+\lipsum[21][1-4]   %TODO: replace — dark matter, dark energy, current observations
+\end{intuition}
+
+\subsection{Theory}
+
+\begin{theory}
 In the \textbf{flat $\Lambda$CDM} model ($\Omega_k=0$,
 $\Omega_\mathrm{m,0}+\Omega_{\Lambda}+\Omega_\mathrm{r,0}=1$):
 \begin{equation}
@@ -356,19 +598,21 @@ $\Omega_\mathrm{m,0}+\Omega_{\Lambda}+\Omega_\mathrm{r,0}=1$):
     + \Omega_\Lambda.
   \label{eq:lcdm_hubble}
 \end{equation}
-Current Planck~2018 best-fit values:
-$\Omega_\mathrm{m,0}\approx0.315$,
-$\Omega_\Lambda\approx0.685$,
-$\Omega_\mathrm{r,0}\approx9.2\times10^{-5}$.
 
-\lipsum[10][1-3]   %TODO: replace
+Current Planck~2018 best-fit values:
+\begin{equation*}
+  \Omega_\mathrm{m,0} \approx 0.315, \quad
+  \Omega_\Lambda \approx 0.685, \quad
+  \Omega_\mathrm{r,0} \approx 9.2 \times 10^{-5}.
+\end{equation*}
+
+\lipsum[22][1-5]   %TODO: replace — physical interpretation, evolution of components
 \end{theory}
 
-\bigskip
+\subsection{Question Examples}
 
-% ── Question Example ───────────────────────────────────────────────────────────
 \begin{example}{Age of the Universe in Flat $\Lambda$CDM}{}
-\lipsum[11][1-2]   %TODO: replace
+\lipsum[23][1-2]   %TODO: replace
 
 \medskip\textbf{Solution.}\quad
 The lookback-time integral is:
@@ -376,15 +620,137 @@ The lookback-time integral is:
   t_0 = \int_0^\infty \frac{dz}{(1+z)\,H(z)},
 \end{equation}
 with $H(z)$ from Eq.~\eqref{eq:lcdm_hubble}.
-\lipsum[11][3-4]   %TODO: replace — numerical result and physical interpretation
+\lipsum[23][3-4]   %TODO: replace — numerical result and interpretation
 \end{example}
 
-\bigskip
+\subsection{Extra}
 
-% ── Extra ──────────────────────────────────────────────────────────────────────
 \begin{extra}
-\lipsum[12][1-2]   %TODO: replace — e.g.\ tension between $H_0$ measurements (CMB vs.\ local)
+\lipsum[24][1-2]   %TODO: replace — Hubble tension, evidence for $\Lambda$, cosmological principle
 \end{extra}
+
+\clearpage
+
+\section{Energy Budget Evolution}
+
+\subsection{Visualizing the Energy Density}
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.85\textwidth]{images/lcdm_energy_budget.png}
+  \caption{%
+    \textbf{Evolution of energy density components in the flat $\Lambda$CDM model.}
+    The figure shows how the fractional energy density (normalized to critical density)
+    of matter (dark and baryonic), radiation, and dark energy evolve with redshift $z$.
+    At early times ($z \gg 1$), radiation dominated; at intermediate times, matter dominated;
+    and at late times ($z \lesssim 1$), dark energy becomes dominant. This transition
+    explains the accelerated expansion observed in the present-day universe.
+    \label{fig:lcdm_budget}
+  }
+\end{figure}
+
+\begin{extra}
+The visualization of energy budget components provides crucial insights into cosmic evolution.
+Early universe physics was radiation-dominated, while the matter-dominated era shaped structure
+formation and galaxy evolution. The recent transition to dark-energy domination (around $z\sim 0.7$)
+explains the observed cosmic acceleration detected through Type Ia supernovae observations
+\citep{Carmeli_2001}.
+\end{extra}
+
+
+% ══════════════════════════════════════════════════════════════════════════════
+%  APPENDICES
+% ══════════════════════════════════════════════════════════════════════════════
+\appendix
+
+\chapter{Mathematical Tools \& Derivations}
+
+\section{Useful Identities}
+
+\lipsum[25][1-8]   %TODO: replace — trigonometric, hyperbolic, common derivatives/integrals
+
+\section{Differential Geometry Primer}
+
+\lipsum[26][1-8]   %TODO: replace — metric tensor, Christoffel symbols, Ricci tensor basics
+
+\chapter{Declaration of AI Assistance}
+
+\section{Use of Artificial Intelligence in This Document}
+
+This course guide was developed with assistance from artificial intelligence (AI) in the following capacities:
+
+\begin{itemize}
+  \item \textbf{Template Design:} AI provided guidance on structuring the document layout,
+        choosing appropriate color schemes, and designing the pedagogical framework
+        (Physics Intuition → Theory → Question Examples → Extra).
+  
+  \item \textbf{LaTeX Code Generation:} AI assisted in writing and refactoring LaTeX code,
+        including package configurations, box styling (tcolorbox), TikZ decorations,
+        and custom command definitions.
+  
+  \item \textbf{LaTeX Structure Refactoring:} AI helped reorganize and optimize the document
+        structure for maintainability, readability, and professional presentation.
+  
+  \item \textbf{Mathematical Formula Formatting:} AI provided assistance in formatting and
+        presenting mathematical equations in clear, readable notation aligned with
+        cosmology conventions.
+\end{itemize}
+
+\bigskip\noindent
+\textbf{Author Verification:} All content, including scientific accuracy, theoretical derivations,
+example problems, and pedagogical choices, has been carefully reviewed and verified by the author.
+The AI assistance was limited to technical formatting and structural optimization, not to
+the generation or validation of course content itself.
+
+\bigskip\noindent
+\textit{Compiled by: \NoteAuthor \quad | \quad Date: \CompileDate}
+
+\clearpage
+
+\chapter{Constants \& Conversion Factors}
+
+\section{Physical Constants}
+
+\begin{center}
+\begin{tabular}{lll}
+\toprule
+\textbf{Quantity} & \textbf{Symbol} & \textbf{Value (SI)} \\
+\midrule
+Speed of light   & $c$ & $2.998 \times 10^8 \,\mathrm{m\,s^{-1}}$ \\
+Gravitational constant & $G$ & $6.674 \times 10^{-11} \,\mathrm{m^3\,kg^{-1}\,s^{-2}}$ \\
+Hubble constant today  & $H_0$ & $67.4 \pm 0.5 \,\mathrm{km\,s^{-1}\,Mpc^{-1}}$ \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\section{Conversion Factors}
+
+\lipsum[27][1-4]   %TODO: replace — Mpc, Gly, etc. with SI units
+
+\clearpage
+
+% ══════════════════════════════════════════════════════════════════════════════
+%  REFERENCES
+% ══════════════════════════════════════════════════════════════════════════════
+
+\begin{center}
+  {\color{StarGold}\rule{0.4\textwidth}{0.5pt}}
+\end{center}
+
+\vspace{0.8cm}
+
+{\centering\Large\bfseries\color{DeepSpace}REFERENCES\par}
+
+\vspace{0.8cm}
+
+\begin{center}
+  {\color{StarGold}\rule{0.4\textwidth}{0.5pt}}
+\end{center}
+
+\vspace{1.2cm}
+
+\nocite{*}
+\printbibliography[heading=none]
 
 % ══════════════════════════════════════════════════════════════════════════════
 \end{document}

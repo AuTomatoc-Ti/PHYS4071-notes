@@ -1,0 +1,46 @@
+\contentsline {chapter}{Introduction}{4}{chapter*.2}%
+\contentsline {section}{About These Notes}{4}{section*.3}%
+\contentsline {section}{Document Conventions}{4}{section*.3}%
+\contentsline {chapter}{\numberline {1}The Expanding Universe}{8}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Hubble's Discovery}{8}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}Physics Intuition}{8}{subsection.1.1.1}%
+\contentsline {subsection}{\numberline {1.1.2}Theory}{8}{subsection.1.1.2}%
+\contentsline {subsection}{\numberline {1.1.3}Question Examples}{9}{subsection.1.1.3}%
+\contentsline {subsection}{\numberline {1.1.4}Extra}{9}{subsection.1.1.4}%
+\contentsline {section}{\numberline {1.2}The Cosmological Redshift}{10}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Physics Intuition}{10}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}Theory}{10}{subsection.1.2.2}%
+\contentsline {subsection}{\numberline {1.2.3}Question Examples}{10}{subsection.1.2.3}%
+\contentsline {subsection}{\numberline {1.2.4}Extra}{11}{subsection.1.2.4}%
+\contentsline {chapter}{\numberline {2}Friedmann Equations \& Cosmological Dynamics}{12}{chapter.2}%
+\contentsline {section}{\numberline {2.1}The FLRW Metric}{12}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Physics Intuition}{12}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}Theory}{12}{subsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.1.3}Question Examples}{13}{subsection.2.1.3}%
+\contentsline {subsection}{\numberline {2.1.4}Extra}{13}{subsection.2.1.4}%
+\contentsline {section}{\numberline {2.2}The Friedmann Equations}{13}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Physics Intuition}{13}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Theory}{13}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}Question Examples}{14}{subsection.2.2.3}%
+\contentsline {subsection}{\numberline {2.2.4}Extra}{14}{subsection.2.2.4}%
+\contentsline {chapter}{\numberline {3}Energy Budget in the $\Lambda $CDM Model}{15}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Density Parameters \& Critical Density}{15}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Physics Intuition}{15}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Theory}{15}{subsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.1.3}Question Examples}{16}{subsection.3.1.3}%
+\contentsline {subsection}{\numberline {3.1.4}Extra}{17}{subsection.3.1.4}%
+\contentsline {section}{\numberline {3.2}The Flat $\Lambda $CDM Model}{17}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Physics Intuition}{17}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Theory}{17}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Question Examples}{18}{subsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.2.4}Extra}{18}{subsection.3.2.4}%
+\contentsline {section}{\numberline {3.3}Energy Budget Evolution}{20}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Visualizing the Energy Density}{20}{subsection.3.3.1}%
+\contentsline {chapter}{\numberline {A}Declaration of AI Assistance}{21}{appendix.A}%
+\contentsline {section}{\numberline {A.1}Use of Artificial Intelligence in This Document}{21}{section.A.1}%
+\contentsline {chapter}{\numberline {B}Mathematical Tools \& Derivations}{22}{appendix.B}%
+\contentsline {section}{\numberline {B.1}Useful Identities}{22}{section.B.1}%
+\contentsline {section}{\numberline {B.2}Differential Geometry Primer}{22}{section.B.2}%
+\contentsline {chapter}{\numberline {C}Constants \& Conversion Factors}{23}{appendix.C}%
+\contentsline {section}{\numberline {C.1}Physical Constants}{23}{section.C.1}%
+\contentsline {section}{\numberline {C.2}Conversion Factors}{23}{section.C.2}%

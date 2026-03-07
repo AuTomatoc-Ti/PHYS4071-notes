@@ -1,0 +1,120 @@
+
+% ══════════════════════════════════════════════════════════════════════════════
+%  APPENDIX A: DECLARATION OF AI ASSISTANCE
+% ══════════════════════════════════════════════════════════════════════════════
+
+\chapter{Declaration of AI Assistance}
+
+\section{Use of Artificial Intelligence in This Document}
+
+This course guide was developed with assistance from artificial intelligence (AI)
+in the following capacities:
+
+\begin{itemize}
+  \item \textbf{Template Design:} AI provided guidance on structuring the document layout,
+        choosing appropriate color schemes.
+
+  \item \textbf{LaTeX Code Generation:} AI assisted in writing and refactoring LaTeX code,
+        including package configurations, box styling (tcolorbox), TikZ decorations,
+        and custom command definitions.
+
+  \item \textbf{LaTeX Structure Refactoring:} AI helped reorganize and optimize the document
+        structure for maintainability, readability, and professional presentation.
+
+  \item \textbf{Mathematical Formula Formatting:} AI provided assistance in formatting and
+        presenting mathematical equations in clear, readable notation aligned with
+        conventions.
+\end{itemize}
+
+\bigskip\noindent
+\textbf{Author Verification:} All content, including scientific accuracy, theoretical derivations,
+example problems, and pedagogical choices, has been carefully reviewed and verified by the author.
+The AI assistance was limited to technical formatting and structural optimization, not to
+the generation or validation of course content itself.
+
+\bigskip\noindent
+\textit{Compiled by: \NoteAuthor \quad | \quad Date: \CompileDate}
+
+\clearpage
+
+% ══════════════════════════════════════════════════════════════════════════════
+%  APPENDIX B: MATHEMATICAL TOOLS & DERIVATIONS
+% ══════════════════════════════════════════════════════════════════════════════
+
+\chapter{Mathematical Tools \& Derivations}
+
+\section{Useful Identities}
+
+\subsection*{Trigonometric}
+$\sin^2\theta + \cos^2\theta = 1$,\quad
+$\tan\theta = \sin\theta/\cos\theta$,\quad
+$\sin(A\pm B) = \sin A\cos B \pm \cos A\sin B$.
+
+\subsection*{Hyperbolic}
+$\cosh^2 x - \sinh^2 x = 1$,\quad
+$\sinh(x\pm y) = \sinh x\cosh y \pm \cosh x\sinh y$.
+
+\subsection*{Common Integrals}
+\begin{align*}
+  \int x^n\,dx &= \tfrac{x^{n+1}}{n+1} + C \quad (n\neq-1), &
+  \int e^{ax}\,dx &= \tfrac{1}{a}e^{ax}+C,\\
+  \int \frac{dx}{x} &= \ln|x|+C, &
+  \int \sin x\,dx &= -\cos x + C.
+\end{align*}
+
+\section{Differential Geometry Primer}
+
+The \textbf{metric tensor} $g_{\mu\nu}$ encodes the geometry of spacetime:
+$ds^2 = g_{\mu\nu}\,dx^\mu\,dx^\nu$.
+The \textbf{Christoffel symbols} (not tensors) are defined as
+\begin{equation}
+  \Gamma^\lambda_{\mu\nu} = \tfrac{1}{2}g^{\lambda\sigma}
+    (\partial_\mu g_{\nu\sigma} + \partial_\nu g_{\mu\sigma} - \partial_\sigma g_{\mu\nu}).
+\end{equation}
+The \textbf{Ricci tensor} is the contraction $R_{\mu\nu} = R^\lambda{}_{\mu\lambda\nu}$
+of the Riemann curvature tensor, and the Ricci scalar is $R = g^{\mu\nu}R_{\mu\nu}$.
+These enter the Einstein field equations as
+$G_{\mu\nu} \equiv R_{\mu\nu} - \tfrac{1}{2}g_{\mu\nu}R = (8\pi G/c^4)T_{\mu\nu}$.
+
+\clearpage
+
+% ══════════════════════════════════════════════════════════════════════════════
+%  APPENDIX C: CONSTANTS & CONVERSION FACTORS
+% ══════════════════════════════════════════════════════════════════════════════
+
+\chapter{Constants \& Conversion Factors}
+
+\section{Physical Constants}
+
+\begin{center}
+\begin{tabular}{lll}
+\toprule
+\textbf{Quantity} & \textbf{Symbol} & \textbf{Value (SI)} \\
+\midrule
+Speed of light         & $c$       & $2.998 \times 10^8 \,\mathrm{m\,s^{-1}}$           \\
+Gravitational constant & $G$       & $6.674 \times 10^{-11} \,\mathrm{m^3\,kg^{-1}\,s^{-2}}$ \\
+Hubble constant today  & $H_0$     & $67.4 \pm 0.5 \,\mathrm{km\,s^{-1}\,Mpc^{-1}}$     \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\section{Conversion Factors}
+
+\begin{center}
+\begin{tabular}{ll}
+\toprule
+\textbf{Conversion} & \textbf{Value} \\
+\midrule
+1 parsec (pc)       & $3.086\times10^{16}\,\mathrm{m}$ \\
+1 kiloparsec (kpc)  & $3.086\times10^{19}\,\mathrm{m}$ \\
+1 megaparsec (Mpc)  & $3.086\times10^{22}\,\mathrm{m}$ \\
+1 gigaparsec (Gpc)  & $3.086\times10^{25}\,\mathrm{m}$ \\
+1 light-year (ly)   & $9.461\times10^{15}\,\mathrm{m}$ \\
+1 gigalight-year (Gly) & $9.461\times10^{24}\,\mathrm{m}$ \\
+1 year (yr)         & $3.156\times10^{7}\,\mathrm{s}$ \\
+1~Gyr               & $3.156\times10^{16}\,\mathrm{s}$ \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\clearpage

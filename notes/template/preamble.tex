@@ -1,0 +1,263 @@
+% ╔══════════════════════════════════════════════════════════════════════════════╗
+% ║  PREAMBLE — shared settings, packages, colours, environments               ║
+% ║  \input{preamble} from main.tex (must be compiled from the same folder)    ║
+% ╚══════════════════════════════════════════════════════════════════════════════╝
+
+% ─── Encoding & Fonts ──────────────────────────────────────────────────────────
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{mathpazo}                  % Palatino for text + math
+\usepackage{microtype}                 % Microtypography (better justification)
+
+% ─── Page Layout ───────────────────────────────────────────────────────────────
+\usepackage[
+  a4paper,
+  top=2.8cm, bottom=2.8cm,
+  left=2.8cm, right=2.8cm,
+  headheight=15pt
+]{geometry}
+
+% ─── Mathematics ───────────────────────────────────────────────────────────────
+\usepackage{amsmath, amssymb, amsfonts}
+\usepackage{bm}                        % Bold math symbols
+
+% ─── Color Palette  ────────────────────────────────────────────────────────────
+%     "Midnight Observatory" — navy anchors, gold & teal accents, clean white page
+\usepackage{xcolor}
+\definecolor{DeepSpace}{HTML}{0D1B2A}       % very dark navy   – headings
+\definecolor{StarGold}{HTML}{C9A84C}        % warm gold        – intuition
+\definecolor{NebulaTeal}{HTML}{2E86AB}      % teal             – theory
+\definecolor{ForestGreen}{HTML}{2D6A4F}     % deep green       – example
+\definecolor{SlateGray}{HTML}{617A8A}       % cool slate       – extra
+\definecolor{GoldBG}{HTML}{FDF8EC}          % pale gold bg
+\definecolor{TealBG}{HTML}{EBF5FA}          % pale teal bg
+\definecolor{GreenBG}{HTML}{EBF5EF}         % pale green bg
+\definecolor{GrayBG}{HTML}{F3F4F6}          % pale gray bg
+\definecolor{TitleBG}{HTML}{090F1A}         % near-black title page
+\definecolor{BannerDeepBlue}{HTML}{0D1B2A} % deep navy for banner
+\definecolor{AmethystPurple}{HTML}{5C3D99}  % deep violet    – foundation
+\definecolor{AlertRed}{HTML}{B03020}        % deep red-orange – important note
+\definecolor{SageGreen}{HTML}{3B6E52}       % sage green      – remark
+\definecolor{PurpleBG}{HTML}{F0ECFB}        % pale violet bg
+\definecolor{RedBG}{HTML}{FCF0ED}           % pale red bg
+\definecolor{SageBG}{HTML}{EBF5EE}          % pale sage bg
+
+% ─── Graphics & Images ─────────────────────────────────────────────────────────
+\usepackage{graphicx}
+\graphicspath{{./images/}{./image/}{../images/}{../image/}}
+
+% ─── Graphics & TikZ ───────────────────────────────────────────────────────────
+\usepackage{tikz}
+\usetikzlibrary{calc, backgrounds}
+
+% ─── Boxes (tcolorbox) ─────────────────────────────────────────────────────────
+\usepackage[most, breakable]{tcolorbox}
+
+%   ── Physics Intuition ──────────────────────────────────────────────────────
+\newtcolorbox{intuition}[1][]{
+  breakable, enhanced,
+  colback   = GoldBG,
+  colframe  = StarGold,
+  leftrule  = 4pt, rightrule = 0pt, toprule = 0pt, bottomrule = 0pt,
+  arc = 0pt, outer arc = 0pt,
+  before upper = {%
+    \textcolor{StarGold}{\textbf{\small\scshape Physics Intuition}}%
+    \par\smallskip},
+  top = 2pt, bottom = 6pt, left = 8pt, right = 8pt,
+  #1
+}
+
+%   ── Theory ─────────────────────────────────────────────────────────────────
+\newtcolorbox{theory}[1][]{
+  breakable, enhanced,
+  colback   = TealBG,
+  colframe  = NebulaTeal,
+  leftrule  = 4pt, rightrule = 0pt, toprule = 0pt, bottomrule = 0pt,
+  arc = 0pt, outer arc = 0pt,
+  before upper = {%
+    \textcolor{NebulaTeal}{\textbf{\small\scshape Theory}}%
+    \par\smallskip},
+  top = 2pt, bottom = 6pt, left = 8pt, right = 8pt,
+  #1
+}
+
+%   ── Question Example (auto-numbered per chapter) ───────────────────────────
+\newtcbtheorem[number within=chapter]{example}{Question Example}{
+  breakable, enhanced,
+  colback    = GreenBG,
+  colframe   = ForestGreen,
+  arc = 3pt, outer arc = 3pt,
+  leftrule   = 1.2pt, rightrule = 1.2pt,
+  toprule    = 1.2pt, bottomrule = 1.2pt,
+  fonttitle  = \bfseries\small\color{ForestGreen},
+  coltitle   = ForestGreen,
+  attach boxed title to top left = {yshift=-2mm, xshift=8pt},
+  boxed title style = {
+    colback = white, colframe = ForestGreen,
+    arc = 2pt, outer arc = 2pt,
+    top = 1pt, bottom = 1pt, left = 4pt, right = 4pt
+  },
+  top = 6pt, bottom = 6pt, left = 8pt, right = 8pt,
+}{ex}
+
+%   ── Extra ──────────────────────────────────────────────────────────────────
+\newtcolorbox{extra}[1][]{
+  breakable, enhanced,
+  colback   = GrayBG,
+  colframe  = SlateGray,
+  leftrule  = 2pt, rightrule = 2pt, toprule = 0.6pt, bottomrule = 0.6pt,
+  arc = 3pt, outer arc = 3pt,
+  before upper = {%
+    \textcolor{SlateGray}{\textbf{\small\scshape Extra}}%
+    \par\smallskip},
+  top = 2pt, bottom = 6pt, left = 8pt, right = 8pt,
+  #1
+}
+
+%   ── Foundation ─────────────────────────────────────────────────────────────
+\newtcolorbox{foundation}[1][]{
+  breakable, enhanced,
+  colback   = PurpleBG,
+  colframe  = AmethystPurple,
+  leftrule  = 4pt, rightrule = 0pt, toprule = 0pt, bottomrule = 0pt,
+  arc = 0pt, outer arc = 0pt,
+  before upper = {%
+    \textcolor{AmethystPurple}{\textbf{\small\scshape Foundation}}%
+    \par\smallskip},
+  top = 2pt, bottom = 6pt, left = 8pt, right = 8pt,
+  #1
+}
+
+%   ── Important Note ───────────────────────────────────────────────────────────
+\newtcolorbox{importantnote}[1][]{
+  breakable, enhanced,
+  colback   = RedBG,
+  colframe  = AlertRed,
+  leftrule  = 5pt, rightrule = 0pt, toprule = 0pt, bottomrule = 0pt,
+  arc = 2pt, outer arc = 2pt,
+  before upper = {%
+    \textcolor{AlertRed}{\textbf{\small\scshape Important Note}}%
+    \par\smallskip},
+  top = 2pt, bottom = 6pt, left = 8pt, right = 8pt,
+  #1
+}
+
+%   ── Remark ────────────────────────────────────────────────────────────────────
+\newtcolorbox{remark}[1][]{
+  breakable, enhanced,
+  colback   = SageBG,
+  colframe  = SageGreen,
+  leftrule  = 2pt, rightrule = 0pt, toprule = 0pt, bottomrule = 0pt,
+  arc = 0pt, outer arc = 0pt,
+  before upper = {%
+    \textcolor{SageGreen}{\textbf{\small\scshape Remark}}%
+    \par\smallskip},
+  top = 2pt, bottom = 6pt, left = 8pt, right = 8pt,
+  #1
+}
+
+% ─── Chapter & Section Title Style ────────────────────────────────────────────
+\usepackage{titlesec}
+
+%   ── Chapter Head — navy banner matching title-page colour tone ─────────────
+%   (Bypasses titlesec for \chapter to avoid the "Nested titles" error;
+%    titlesec is still used for \section and \subsection below.)
+\makeatletter
+\renewcommand{\@makechapterhead}[1]{%
+  {\parindent\z@
+   \setlength{\fboxsep}{1.2em}%
+   \noindent\colorbox{DeepSpace}{%
+     \begin{minipage}{\dimexpr\textwidth-2.4em\relax}%
+       \vspace{0.3em}%
+       {\small\color{StarGold!80}\scshape chapter\ \thechapter}%
+       \par\vspace{0.3em}%
+       {\Large\bfseries\color{white}#1}%
+       \par\vspace{0.35em}%
+       {\color{StarGold!35}\rule{\linewidth}{0.4pt}}%
+       \par\vspace{0.3em}%
+     \end{minipage}%
+   }\par\vspace{2em}%
+  }%
+}
+\renewcommand{\@makeschapterhead}[1]{%
+  {\parindent\z@
+   \setlength{\fboxsep}{1.2em}%
+   \noindent\colorbox{DeepSpace}{%
+     \begin{minipage}{\dimexpr\textwidth-2.4em\relax}%
+       \vspace{0.3em}%
+       {\Large\bfseries\color{white}#1}%
+       \par\vspace{0.4em}%
+     \end{minipage}%
+   }\par\vspace{2em}%
+  }%
+}
+\makeatother
+
+% ─── Table of Contents depth ─────────────────────────────────────────────────
+\setcounter{tocdepth}{3}
+
+%   ── Section Style ─────────────────────────────────────────────────────────
+\titleformat{\section}[block]
+  {\large\bfseries\color{DeepSpace}}
+  {\thesection}{0.6em}{}
+  [\vspace{2pt}\color{StarGold}\rule{\textwidth}{0.7pt}]
+\titlespacing{\section}{0pt}{1.6em}{0.9em}
+
+%   ── Subsection Style ──────────────────────────────────────────────────────
+\titleformat{\subsection}[block]
+  {\normalsize\bfseries\color{DeepSpace}}
+  {\thesubsection}{0.6em}{}
+  [\vspace{2pt}\color{NebulaTeal!60}\rule{\textwidth}{0.4pt}]
+\titlespacing{\subsection}{0pt}{1.2em}{0.5em}
+
+% ─── Header / Footer ───────────────────────────────────────────────────────────
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0.4pt}
+\makeatletter
+\renewcommand{\headrule}{%
+  {\color{SlateGray!60}\hrule\@height\headrulewidth\@width\headwidth
+   \vskip-\headrulewidth}}
+\makeatother
+%   ── Left = current subsection (updates through section → subsection) ────────
+\fancyhead[L]{\small\color{SlateGray}\itshape\rightmark}
+\fancyhead[R]{\small\color{SlateGray}\thepage}
+\fancyfoot[C]{\color{SlateGray!40}\rule{0.35\textwidth}{0.4pt}}
+%   ── Marks: chapter sets an initial right-mark; subsection overwrites it ─────
+\renewcommand{\chaptermark}[1]{\markboth{#1}{Chapter \thechapter:\enspace#1}}
+\renewcommand{\sectionmark}[1]{\markright{\thesection\enspace#1}}
+\renewcommand{\subsectionmark}[1]{\markright{\thesubsection\enspace#1}}
+
+% ─── Hyperlinks ────────────────────────────────────────────────────────────────
+\usepackage[hidelinks]{hyperref}
+\hypersetup{
+  colorlinks = true,
+  linkcolor  = NebulaTeal,
+  citecolor  = NebulaTeal,
+  urlcolor   = NebulaTeal,
+  pdftitle   = {PHYS4071 Cosmology Notes},
+  pdfauthor  = {automatoc-ti},
+}
+
+% ─── Bibliography & References ────────────────────────────────────────────────
+\usepackage[style=numeric, sorting=none, natbib=true]{biblatex}
+\addbibresource{references.bib}
+
+% ─── Miscellaneous ─────────────────────────────────────────────────────────────
+\usepackage{enumitem}
+\setlist[itemize]{leftmargin=*, label={\small\textcolor{StarGold}{$\bullet$}}}
+\setlist[enumerate]{leftmargin=*}
+\usepackage{booktabs}
+% lipsum removed — all placeholder text replaced with meaningful English content
+
+% ─── Convenience macros ────────────────────────────────────────────────────────
+\newcommand{\Hubble}{H_0}
+\newcommand{\Mpc}{\,\mathrm{Mpc}}
+\newcommand{\Gyr}{\,\mathrm{Gyr}}
+\newcommand{\kms}{\,\mathrm{km\,s^{-1}}}
+
+% ─── Custom Date & Author ─────────────────────────────────────────────────────
+\usepackage{datetime}
+\newcommand{\CompileDate}{\today}
+\newcommand{\NoteAuthor}{automatoc-ti}

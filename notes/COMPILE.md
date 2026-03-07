@@ -1,183 +1,255 @@
-# Compiling the Cosmology Notes
+# Compiling the Notes
 
-## Prerequisites
+There are two note sets:
 
-Install a TeX distribution that includes the packages listed below.
-
-| Platform | Recommended distribution |
-|----------|--------------------------|
-| macOS    | [MacTeX](https://www.tug.org/mactex/) — full install preferred |
-| Linux    | TeX Live (`sudo apt install texlive-full`) |
-| Windows  | [MiKTeX](https://miktex.org/) or TeX Live |
-
-### Required LaTeX packages
-
-All packages below are included in the **full MacTeX / TeX Live** install.
-If you use a minimal install, add them individually via `tlmgr`.
-
-| Package | Purpose |
-|---------|---------|
-| `mathpazo` | Palatino font for text + math |
-| `microtype` | Microtypography |
-| `geometry` | Page margins |
-| `amsmath`, `amssymb`, `bm` | Mathematics |
-| `xcolor` | Custom colors |
-| `tikz` | Title page graphics |
-| `tcolorbox` + `most`, `breakable` skins | Styled block boxes |
-| `titlesec` | Section heading style |
-| `fancyhdr` | Header / footer |
-| `hyperref` | Clickable TOC links |
-| `enumitem` | Bullet list style |
-| `booktabs` | Professional tables |
-| `lipsum` | Placeholder text (remove when done) |
+| Target keyword | Folder |
+|---|---|
+| `phys4071` | `notes/phys4071_notes/` |
+| `template` | `notes/template/` |
 
 ---
 
-## Compiling
-
-Navigate to the `notes/` folder first:
+## Running from `notes/` (top-level dispatcher)
 
 ```bash
-cd /Users/automatocti/Documents/ust/course/PHYS4071/notes
+cd notes/
+
+# Compile once
+./compile.sh phys4071
+./compile.sh template
+
+# Compile and immediately open the PDF (macOS)
+./compile.sh phys4071 --open
+./compile.sh template --open
+
+# Watch mode — recompiles on every file save (requires latexmk)
+./compile.sh phys4071 --watch
+./compile.sh template --watch
+
+# Remove all auxiliary files (.aux, .bbl, .log, etc.)
+./compile.sh phys4071 --clean
+./compile.sh template --clean
 ```
 
-> **macOS note:** MacTeX installs to `/usr/local/texlive/2025/bin/universal-darwin/`.
-> If `pdflatex` is not on your `PATH`, either add that directory to `~/.zshrc`:
-> ```bash
-> export PATH="/usr/local/texlive/2025/bin/universal-darwin:$PATH"
-> ```
-> or call it with the full path (replace `pdflatex` with
-> `/usr/local/texlive/2025/bin/universal-darwin/pdflatex` in the commands below).
+If called with no arguments, the script prompts you to choose a target interactively.
 
-### Option A — pdflatex (standard, recommended)
+---
 
-Run `pdflatex` **twice** so the table of contents and cross-references resolve:
+## Running from inside a note folder
+
+Each subfolder has its own `compile.sh` that accepts the same flags:
 
 ```bash
-pdflatex cosmology_notes.tex
-pdflatex cosmology_notes.tex
+cd notes/template/
+./compile.sh            # compile once
+./compile.sh --open     # compile + open PDF
+./compile.sh --watch    # watch mode
+./compile.sh --clean    # clean aux files
 ```
-
-Output: `cosmology_notes.pdf` in the same directory.
-
-### Option B — latexmk (automatic, easiest)
-
-`latexmk` handles the number of passes automatically:
 
 ```bash
-latexmk -pdf cosmology_notes.tex
+cd notes/phys4071_notes/
+./compile.sh
+./compile.sh --open
+./compile.sh --watch
+./compile.sh --clean
 ```
 
-To continuously recompile on save (useful while writing):
+---
 
-```bash
-latexmk -pdf -pvc cosmology_notes.tex
-```
+## How compilation works
 
-To clean up auxiliary files afterwards:
+The script automatically detects `latexmk` from the TeXLive installation and runs a full `pdflatex → biber → pdflatex → pdflatex` cycle so that bibliography citations (`\citep`, `\cite`) resolve correctly.
 
-```bash
-latexmk -c
-```
+If `latexmk` is unavailable, it falls back to calling `pdflatex` and `biber` manually in the correct order.
 
-### Option C — VS Code with LaTeX Workshop
+Output PDF is written to the same folder as `main.tex`.
 
-1. Install the **LaTeX Workshop** extension (`James-Yu.latex-workshop`).
-2. Open `cosmology_notes.tex` in VS Code.
-3. Press **⌘⇧P** → `LaTeX Workshop: Build LaTeX project`.
-4. The PDF preview opens automatically in the side panel.
+---
 
-Recommended `settings.json` snippet for the project:
-```json
-{
-  "latex-workshop.latex.tools": [
-    {
-      "name": "pdflatex",
-      "command": "pdflatex",
-      "args": ["-interaction=nonstopmode", "-synctex=1", "%DOC%"]
-    }
-  ],
-  "latex-workshop.latex.recipes": [
-    {
-      "name": "pdflatex × 2",
-      "tools": ["pdflatex", "pdflatex"]
-    }
-  ]
-}
-```
+## Requirements
+
+- **MacTeX 2025** (or any TeX Live 2025 installation) at `/usr/local/texlive/2025/`
+- Packages used: `tcolorbox`, `titlesec`, `biblatex` (with `biber` backend), `tikz`, `fancyhdr`, `hyperref`, `booktabs`
 
 ---
 
 ## Troubleshooting
 
-| Symptom | Likely cause | Fix |
-|---------|-------------|-----|
-| `tcolorbox` errors | Missing `tcolorbox` skins | Run `tlmgr install tcolorbox` |
-| `mathpazo` not found | Missing `psnfss` bundle | `tlmgr install psnfss` |
-| Starfield very slow | TikZ random loop | Normal on first run; subsequent runs use cache |
-| `! Undefined control sequence` on `\lipsum` | `lipsum` not installed | `tlmgr install lipsum`, or delete placeholder lines |
+| Symptom | Cause | Fix |
+|---|---|---|
+| `pdflatex: command not found` | TeXLive bin not in `PATH` | The script adds it automatically; re-run `./compile.sh` |
+| Citations show `[?]` or `(Author Year)` | biber not run | Run `./compile.sh --clean` then recompile |
+| Missing image warnings | `images/` folder empty | Add figure files or comment out `\includegraphics` lines |
+| `latexmk: command not found` | Not in `PATH` | The script locates it inside TeXLive automatically |
+
+├── COMPILE.md                    ← this file
+│
+├── template/                     ← read-only reference with placeholder lipsum content
+│   ├── compile.sh                ← folder-level compile script
+│   ├── main.tex                  ← document root (\documentclass + \input chapters)
+│   ├── preamble.tex              ← all packages, colours, environments, macros
+│   ├── references.bib            ← BibTeX entries
+│   ├── images/                   ← figures
+│   └── chapters/
+│       ├── intro.tex
+│       ├── ch01_expanding_universe.tex
+│       ├── ch02_friedmann_equations.tex
+│       ├── ch03_energy_budget.tex
+│       └── appendix.tex
+│
+└── phys4071_notes/      # Compiling the Cosmology Notes
+
+## File Structure
+
+```
+notes/
+├── compile.sh   ??
+## File Structure
+
+```
+notes/le.
+```
+notes/
+├?rnoer├?b├── COMPILE.md                    ← this file
+│
+├── template/    │
+├── template/                     ← read??????   ├iedmann_equations.tex
+        ├── ch03_energy_budget.tex
+        └── append│   ├── main.tex                  ← document root (\documentcl t│   ├── preamble.tex              ← all packages, colours, environments, macros
+│Us│   ├── references.bib            ← BibTeX entries
+│   ├── images/    le│   ├── images/                   ← figures
+│   t│   └── chapters/
+│       ├── intro.`b│       ├── intr .│       ├── ch01_exppi│  ript Flags
+
+| Flag | Description |
+|------|│       ├── ch03_energy_budget.tex
+│ it│       └── appendix.tex
+│
+└?r│
+└── phys4071_notes/  ` ?e
+## File Structure
+
+```
+notes/
+├── compile.sh   ??
+## F PD
+```
+notes/
+├?Exnopl├?`## File Structure
+
+```
+n71
+```
+notes/le.
+`mpino a```
+notePDno./├?e│
+├── template/    │
+├── template/                    cl? ├── template/      to        ├── ch03_energy_budget.tex
+        └── append│   ├── mah         └── append│   ├──ks│Us│   ├── references.bib            ← BibTeX entries
+│   ├── images/    le│   ├── images/                   ← figures
+│   t│   └── chapters/
+│ ???  tex → pdflatex → pdflatex`
+
+If `pdflatex`/`latexmk` are not on `PATH`, the script falls back to
+the MacTeX default path `/usr/local/texlive/│       ├── intro.`b│ a
+| Flag | Description |
+|------|│       ├── ch03_energy_budget.tex
+│ it│       └─? >|------|│       ├zs│ it│       └── appendix.tex
+│
+└?rte│
+└?r│
+└── phys4071_note e.g. └─?a## File Structure
+
+```
+notes/
+?h
+```
+notes/
+├?tsnoit├? ## F PD
+```
+notes/
+?ck st```
+noe belo├? R
+```
+n71
+```
+notes/le.
+`mpino a```comn7le``h noys`mpino aatnotePDno./ve├── template/r-├── template/      
+
+        └── append│   ├── mah         └── append│   ├──ks│Us│   ├── referon│   ├── images/    le│   ├── images/                   ← figures
+│   t│   └── chapters/
+│ ???  tex → pdflatex → pon│   t│   └── chapters/
+│ ???  tex → pdflde notes, deeper references│ ???  tex → pdflatex → New Chapter
+
+1. Create `chapters/ch04_your_tthe MacTeX default path `/usr/local/texlive/│       ├── in b| Flag | Description |
+|------|│       ├── ch03_energy_budget.tex
+?7|------|│       ?en │ it│       └─? >|------|│       ├zser│
+└?rte│
+└?r│
+└── phys4071_note e.g. └─?a## File Structure
+
+``\l?l└?label}}└─?u
+```
+notes/
+?h
+```
+notes/
+├?tsnoit├? ## F PD
+`1. nost?h
+*L```X nork├?* ```
+notes/
+?ck st```
+nop`no
+2?ck n noe belin.t```
+n71
+```
+no??n7* ``? noaT`mpino aho
+        └── append│   ├── mah         └── append│   ├──ks│Us?pes": [
+    {
+      "name": "pdflatex → bibtex → pdflatex × 2",
+      "tools": ["pdflatex", "bibtex", "pdflatex", "pdflatex"]
+    }
+  ],
+  "latex-workshop.latex.tools": [
+    { "name": "pdflate│ ???  tex → pdflatex →  │ ???  tex → pdflde notes, deeper references│ ???  tex ?{
+1. Create `chapters/ch04_your_tthe MacTeX default path `/usr/local/texlive/│       ├─isi|------|│       ├── ch03_energy_budget.tex
+?7|------|│       ?en │ it│       └─? >|------|│     la?7|------|│       ?en │ it│       └─ge└?rte│
+└?r│
+└── phys4071_note e.g. └─?a## File Structure
+
+ |└?r│
+
+|└─? 
+``\e page |
+| `tcolorbox` + `most`, `breakable` | Block b```
+notes/
+?h
+```
+notes/
+?hnodi?h
+
+|```annohd├?He`1. nost?h
+*L```X norkre*L```X norkblnotes/
+?ck st```
+no +?ck eXnop`no
+2?c2?ck| n71
+```
+no??n7* ``? s`,``danoti        └── append?Placeholder (template only — remove when done) |
 
 ---
 
-## Workflow for Adding Content
+## Troubleshooting
 
-Each section is structured with four **block environments**. Replace the
-`\lipsum[...]` lines with real content:
+| Symptom | Likely cause     x       "tools": ["pdflatex", "bibtex", "pdflatex", "pds     }
+  ],
+  "latex-workshop.latex.tools": [
+    { "name": "ot  ],nd  "Mi    { "name": "pdflate│ ??? ps1. Create `chapters/ch04_your_tthe MacTeX default path `/usr/local/texlive/│       ├─isi|------|│       ├──  W?7|------|│       ?en │ it│       └─? >|------|│     la?7|------|│       ?en │ it│       └─ge└?rte│
+└?r│ps└?r│
+└── phys4071_note e.g. └─?a## File Structure
 
-```latex
-\begin{intuition}
-  Your plain-text motivation / history here.
-\end{intuition}
+ |└?r│
 
-\begin{theory}
-  Detailed derivation, equations, assumptions.
-\end{theory}
-
-\begin{example}{Title of the question}{}
-  Question statement.
-  \medskip\textbf{Solution.}\quad Solution here.
-\end{example}
-
-\begin{extra}
-  Side notes, fun facts, deeper references.
-\end{extra}
-```
-
-> **Tip:** Remove `\usepackage{lipsum}` and all `\lipsum[...]` calls once
-> sections are filled with real content.
-
----
-
-## Adding a New Section
-
-Copy-paste this template at the appropriate place in `cosmology_notes.tex`:
-
-```latex
-% ══════════════════════════════════════════════════════════════════════════════
-%  §N  SECTION TITLE
-% ══════════════════════════════════════════════════════════════════════════════
-\section{Section Title}
-
-\begin{intuition}
-% ...
-\end{intuition}
-\bigskip
-
-\begin{theory}
-% ...
-\end{theory}
-\bigskip
-
-\begin{example}{Question title}{}
-% Question ...
-\medskip\textbf{Solution.}\quad
-% Solution ...
-\end{example}
-\bigskip
-
-\begin{extra}
-% ...
-\end{extra}
-
-\clearpage
-```
+|└─? 
+``\e page |
+| `tcolorbox` + `most`, `brno└?nd` | PATH not set | Add MacTeX bin to `~/.zshrc` (see above) |

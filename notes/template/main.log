@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2026.2.19)  7 MAR 2026 23:22
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2026.2.19)  8 MAR 2026 02:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**cosmology_notes.tex
-(./cosmology_notes.tex
+**main.tex
+(./main.tex
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
 (/usr/local/texlive/2025/texmf-dist/tex/latex/base/report.cls
@@ -23,8 +23,8 @@ File: size12.clo 2024/06/29 v1.4n Standard LaTeX file (size option)
 \abovecaptionskip=\skip49
 \belowcaptionskip=\skip50
 \bibindent=\dimen141
-)
-(/usr/local/texlive/2025/texmf-dist/tex/latex/base/fontenc.sty
+) (./preamble.tex (/usr/local/texlive/2025/texmf-dist/tex/latex/base/fontenc.st
+y
 Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
 )
 (/usr/local/texlive/2025/texmf-dist/tex/latex/base/inputenc.sty
@@ -677,23 +677,6 @@ Package: titlesec 2025/01/04 v2.17 Sectioning titles
 \titlewidthlast=\dimen279
 \titlewidthfirst=\dimen280
 )
-! Illegal parameter number in definition of \ttlf@chapter.
-<to be read again> 
-                   1
-l.123 ...tarGold}\rule{\textwidth}{0.5pt}}\\[1cm}}
-                                                  
-You meant to type ## instead of #, right?
-Or maybe a } was forgotten somewhere earlier, and things
-are all screwed up? I'm going to assume that you meant ##.
-
-! Too many }'s.
-<recently read> }
-                 
-l.123 ...tarGold}\rule{\textwidth}{0.5pt}}\\[1cm}}
-                                                  
-You've closed more groups than you opened.
-Such booboos are generally harmless, so keep going.
-
 (/usr/local/texlive/2025/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
 
@@ -824,7 +807,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip71
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 158.
+Package hyperref Info: Option `colorlinks' set `true' on input line 241.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/biblatex/biblatex.sty
 Package: biblatex 2024/03/21 v3.20 programmable bibliographies (PK/MW)
 
@@ -902,7 +885,7 @@ Package biblatex Info: ... file 'blx-dm.def' found.
 File: blx-dm.def 2024/03/21 v3.20 biblatex datamodel (PK/MW)
 )
 Package biblatex Info: Trying to load biblatex style data model...
-Package biblatex Info: ... file 'authoryear.dbx' not found.
+Package biblatex Info: ... file 'numeric.dbx' not found.
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
 \c@afterword=\count386
@@ -1012,11 +995,19 @@ File: biblatex.def 2024/03/21 v3.20 biblatex compatibility (PK/MW)
 \biburllcskip=\muskip22
 \c@smartand=\count462
 )
-Package biblatex Info: Trying to load bibliography style 'authoryear'...
-Package biblatex Info: ... file 'authoryear.bbx' found.
+Package biblatex Info: Trying to load natbib compatibility...
+Package biblatex Info: ... file 'blx-natbib.def' found.
 
-(/usr/local/texlive/2025/texmf-dist/tex/latex/biblatex/bbx/authoryear.bbx
-File: authoryear.bbx 2024/03/21 v3.20 biblatex bibliography style (PK/MW)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/biblatex/blx-natbib.def
+File: blx-natbib.def 2024/03/21 v3.20 biblatex compatibility (PK/MW)
+Package biblatex Info: Delimiter 'nameyeardelim' in context '' already defined,
+ overwriting.
+)
+Package biblatex Info: Trying to load bibliography style 'numeric'...
+Package biblatex Info: ... file 'numeric.bbx' found.
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/biblatex/bbx/numeric.bbx
+File: numeric.bbx 2024/03/21 v3.20 biblatex bibliography style (PK/MW)
 Package biblatex Info: Trying to load bibliography style 'standard'...
 Package biblatex Info: ... file 'standard.bbx' found.
 
@@ -1025,18 +1016,22 @@ File: standard.bbx 2024/03/21 v3.20 biblatex bibliography style (PK/MW)
 \c@bbx:relatedcount=\count463
 \c@bbx:relatedtotal=\count464
 ))
-Package biblatex Info: Trying to load citation style 'authoryear'...
-Package biblatex Info: ... file 'authoryear.cbx' found.
+Package biblatex Info: Trying to load citation style 'numeric'...
+Package biblatex Info: ... file 'numeric.cbx' found.
 
-(/usr/local/texlive/2025/texmf-dist/tex/latex/biblatex/cbx/authoryear.cbx
-File: authoryear.cbx 2024/03/21 v3.20 biblatex citation style (PK/MW)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/biblatex/cbx/numeric.cbx
+File: numeric.cbx 2024/03/21 v3.20 biblatex citation style (PK/MW)
 Package biblatex Info: Redefining '\cite'.
 Package biblatex Info: Redefining '\parencite'.
 Package biblatex Info: Redefining '\footcite'.
 Package biblatex Info: Redefining '\footcitetext'.
 Package biblatex Info: Redefining '\smartcite'.
+Package biblatex Info: Redefining '\supercite'.
 Package biblatex Info: Redefining '\textcite'.
 Package biblatex Info: Redefining '\textcites'.
+Package biblatex Info: Redefining '\cites'.
+Package biblatex Info: Redefining '\parencites'.
+Package biblatex Info: Redefining '\smartcites'.
 )
 Package biblatex Info: Trying to load configuration file...
 Package biblatex Info: ... file 'biblatex.cfg' found.
@@ -1095,15 +1090,6 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \@lastruleclass=\count471
 \@thisrulewidth=\dimen298
 )
-(/usr/local/texlive/2025/texmf-dist/tex/latex/lipsum/lipsum.sty
-(/usr/local/texlive/2025/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
-Package: l3keys2e 2024-08-16 LaTeX2e option processing using LaTeX3 keys
-)
-Package: lipsum 2021-09-20 v2.7 150 paragraphs of Lorem Ipsum dummy text
-\g__lipsum_par_int=\count472
-\l__lipsum_a_int=\count473
-\l__lipsum_b_int=\count474
-(/usr/local/texlive/2025/texmf-dist/tex/latex/lipsum/lipsum.ltd.tex))
 (/usr/local/texlive/2025/texmf-dist/tex/latex/datetime/datetime.sty
 Package: datetime 2015/03/20 v2.60 Date Time Package
 
@@ -1119,7 +1105,7 @@ Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
 \XKV@toks=\toks46
 \XKV@tempa@toks=\toks47
 )
-\XKV@depth=\count475
+\XKV@depth=\count472
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
 (/usr/local/texlive/2025/texmf-dist/tex/latex/fmtcount/fcprefix.sty
@@ -1127,85 +1113,83 @@ Package: fcprefix 2012/09/28
 
 (/usr/local/texlive/2025/texmf-dist/tex/latex/fmtcount/fcnumparser.sty
 Package: fcnumparser 2017/06/15
-\fc@digit@counter=\count476
+\fc@digit@counter=\count473
 ))
-\c@padzeroesN=\count477
-\fc@tmpcatcode=\count478
-\@DT@modctr=\count479
-\@ordinalctr=\count480
-\@orgargctr=\count481
-\@strctr=\count482
-\@tmpstrctr=\count483
-\@DT@loopN=\count484
-\@DT@X=\count485
+\c@padzeroesN=\count474
+\fc@tmpcatcode=\count475
+\@DT@modctr=\count476
+\@ordinalctr=\count477
+\@orgargctr=\count478
+\@strctr=\count479
+\@tmpstrctr=\count480
+\@DT@loopN=\count481
+\@DT@X=\count482
 )
 (/usr/local/texlive/2025/texmf-dist/tex/latex/datetime/datetime-defaults.sty
 Package: datetime-defaults 2013/09/10
 )
-\@day=\count486
-\@month=\count487
-\@year=\count488
-\c@HOUR=\count489
-\c@HOURXII=\count490
-\c@MINUTE=\count491
-\c@TOHOUR=\count492
-\c@TOMINUTE=\count493
-\c@SECOND=\count494
-\currenthour=\count495
-\currentminute=\count496
-\currentsecond=\count497
+\@day=\count483
+\@month=\count484
+\@year=\count485
+\c@HOUR=\count486
+\c@HOURXII=\count487
+\c@MINUTE=\count488
+\c@TOHOUR=\count489
+\c@TOMINUTE=\count490
+\c@SECOND=\count491
+\currenthour=\count492
+\currentminute=\count493
+\currentsecond=\count494
 Package datetime Info: No datetime.cfg file found, using default settings on in
 put line 308.
-\@dtctr=\count498
-\dayofyear=\count499
-\dayofweek=\count500
+\@dtctr=\count495
+\dayofyear=\count496
+\dayofweek=\count497
 LaTeX Info: Redefining \today on input line 736.
 \dt@a=\toks48
 \dt@b=\toks49
-)
-\@quotelevel=\count501
-\@quotereset=\count502
-LaTeX Font Info:    Trying to load font information for T1+ppl on input line 18
-3.
-
+))
+\@quotelevel=\count498
+\@quotereset=\count499
+LaTeX Font Info:    Trying to load font information for T1+ppl on input line 12
+.
 (/usr/local/texlive/2025/texmf-dist/tex/latex/psnfss/t1ppl.fd
 File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
-)
-(./cosmology_notes.aux)
-\openout1 = `cosmology_notes.aux'.
+) (./main.aux)
+\openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 183.
-LaTeX Font Info:    ... okay on input line 183.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 183.
-LaTeX Font Info:    ... okay on input line 183.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 183.
-LaTeX Font Info:    ... okay on input line 183.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 183.
-LaTeX Font Info:    ... okay on input line 183.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 183.
-LaTeX Font Info:    ... okay on input line 183.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 183.
-LaTeX Font Info:    ... okay on input line 183.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 183.
-LaTeX Font Info:    ... okay on input line 183.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 183.
-LaTeX Font Info:    ... okay on input line 183.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 183.
-LaTeX Font Info:    ... okay on input line 183.
-LaTeX Info: Redefining \microtypecontext on input line 183.
-Package microtype Info: Applying patch `item' on input line 183.
-Package microtype Info: Applying patch `toc' on input line 183.
-Package microtype Info: Applying patch `eqnum' on input line 183.
-Package microtype Info: Applying patch `footnote' on input line 183.
-Package microtype Info: Applying patch `verbatim' on input line 183.
-LaTeX Info: Redefining \microtypesetup on input line 183.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Info: Redefining \microtypecontext on input line 12.
+Package microtype Info: Applying patch `item' on input line 12.
+Package microtype Info: Applying patch `toc' on input line 12.
+Package microtype Info: Applying patch `eqnum' on input line 12.
+Package microtype Info: Applying patch `footnote' on input line 12.
+Package microtype Info: Applying patch `verbatim' on input line 12.
+LaTeX Info: Redefining \microtypesetup on input line 12.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 183.
+LaTeX Info: Redefining \showhyphens on input line 12.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -1249,16 +1233,16 @@ File: mt-ppl.cfg 2005/11/16 v1.6 microtype config. file: Palatino (RS)
 
 (/usr/local/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count503
+\scratchcounter=\count500
 \scratchdimen=\dimen299
 \scratchbox=\box86
-\nofMPsegments=\count504
-\nofMParguments=\count505
+\nofMPsegments=\count501
+\nofMParguments=\count502
 \everyMPshowfont=\toks50
-\MPscratchCnt=\count506
+\MPscratchCnt=\count503
 \MPscratchDim=\dimen300
-\MPnumerator=\count507
-\makeMPintoPDFobject=\count508
+\MPnumerator=\count504
+\makeMPintoPDFobject=\count505
 \everyMPtoPDFconversion=\toks51
 ) (/usr/local/texlive/2025/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -1269,12 +1253,12 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\c@lstlisting=\count509
-Package hyperref Info: Link coloring ON on input line 183.
+\c@lstlisting=\count506
+Package hyperref Info: Link coloring ON on input line 12.
 
-(./cosmology_notes.out) (./cosmology_notes.out)
+(./main.out) (./main.out)
 \@outlinefile=\write5
-\openout5 = `cosmology_notes.out'.
+\openout5 = `main.out'.
 
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
@@ -1285,43 +1269,44 @@ File: english.lbx 2024/03/21 v3.20 biblatex localization (PK/MW)
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Automatic encoding selection.
 (biblatex)             Assuming data encoding 'utf8'.
-\openout4 = `cosmology_notes.bcf'.
+\openout4 = `main.bcf'.
 
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'cosmology_notes.bbl' not found.
+Package biblatex Info: ... file 'main.bbl' found.
 
-No file cosmology_notes.bbl.
-Package biblatex Info: Reference section=0 on input line 183.
-Package biblatex Info: Reference segment=0 on input line 183.
+(./main.bbl)
+Package biblatex Info: Reference section=0 on input line 12.
+Package biblatex Info: Reference segment=0 on input line 12.
+
 (/usr/local/texlive/2025/texmf-dist/tex/latex/fmtcount/fc-english.def
 File: fc-english.def 2016/01/12
 )
-LaTeX Font Info:    Trying to load font information for OT1+ppl on input line 2
-35.
+LaTeX Font Info:    Trying to load font information for OT1+ppl on input line 6
+4.
 
 (/usr/local/texlive/2025/texmf-dist/tex/latex/psnfss/ot1ppl.fd
 File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
 )
 LaTeX Font Info:    Trying to load font information for OML+zplm on input line 
-235.
+64.
 
 (/usr/local/texlive/2025/texmf-dist/tex/latex/psnfss/omlzplm.fd
 File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
 )
 LaTeX Font Info:    Trying to load font information for OMS+zplm on input line 
-235.
+64.
 
 (/usr/local/texlive/2025/texmf-dist/tex/latex/psnfss/omszplm.fd
 File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
 )
 LaTeX Font Info:    Trying to load font information for OMX+zplm on input line 
-235.
+64.
 
 (/usr/local/texlive/2025/texmf-dist/tex/latex/psnfss/omxzplm.fd
 File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
 )
 LaTeX Font Info:    Trying to load font information for OT1+zplm on input line 
-235.
+64.
 
 (/usr/local/texlive/2025/texmf-dist/tex/latex/psnfss/ot1zplm.fd
 File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
@@ -1331,1248 +1316,233 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 11.40997pt on input line 235.
+(Font)              scaled to size 11.40997pt on input line 64.
 
 (/usr/local/texlive/2025/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 8.33606pt on input line 235.
+(Font)              scaled to size 8.33606pt on input line 64.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 6.25204pt on input line 235.
+(Font)              scaled to size 6.25204pt on input line 64.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 11.40997pt on input line 235.
+(Font)              scaled to size 11.40997pt on input line 64.
 
 (/usr/local/texlive/2025/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 8.33606pt on input line 235.
+(Font)              scaled to size 8.33606pt on input line 64.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 6.25204pt on input line 235.
+(Font)              scaled to size 6.25204pt on input line 64.
 
 
 [1
 
 {/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/loc
-al/texlive/2025/texmf-dist/fonts/enc/dvips/base/8r.enc}]
-
-LaTeX Font Info:    Trying to load font information for TS1+ppl on input line 2
-62.
-(/usr/local/texlive/2025/texmf-dist/tex/latex/psnfss/ts1ppl.fd
-File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
-) [2
-
-]
-! Undefined control sequence.
-<argument> ... {DeepSpace}\scshape \letterspacing 
-                                                  {\the \spacefactor }
-l.262   \tableofcontents
-                        
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Improper \spacefactor.
-<argument> ...e \letterspacing {\the \spacefactor 
-                                                  }
-l.262   \tableofcontents
-                        
-You can refer to \spacefactor only in horizontal mode;
-you can refer to \prevdepth only in vertical mode; and
-neither of these is meaningful inside \write. So
-I'm forgetting what you said and using zero instead.
-
-
-! Package titlesec Error: Entered in horizontal mode.
-
-See the titlesec package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.262   \tableofcontents
-                        
-The <format> argument cannot contain horizontal material
-such as text, \noindent, \makebox, etc.
-
-! Illegal parameter number in definition of \reserved@b.
-<to be read again> 
-                   }
-l.262   \tableofcontents
-                        
-You meant to type ## instead of #, right?
-Or maybe a } was forgotten somewhere earlier, and things
-are all screwed up? I'm going to assume that you meant ##.
-
-
-LaTeX Font Warning: Font shape `T1/ppl/m/scit' undefined
-(Font)              using `T1/ppl/m/it' instead on input line 262.
-
-! You can't use `macro parameter character #' in horizontal mode.
-<recently read> ##
-                  
-l.262   \tableofcontents
-                        
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-! Argument of \@newline has an extra }.
-<inserted text> 
-                \par 
-l.262   \tableofcontents
-                        
-I've run across a `}' that doesn't seem to match anything.
-For example, `\def\a#1{...}' and `\a}' would produce
-this error. If you simply proceed now, the `\par' that
-I've just inserted will cause me to report a runaway
-argument that might be the root of the problem. But if
-your `}' was spurious, just type `2' and it will go away.
-
-Runaway argument?
-1cm{\contentsname \@mkboth {\MakeUppercase \contentsname }{\MakeUppercase \ETC.
-! Paragraph ended before \@newline was complete.
-<to be read again> 
-                   \par 
-l.262   \tableofcontents
-                        
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
-
-
-Overfull \hbox (6.46799pt too wide) in paragraph at lines 262--262
-|\T1/ppl/m/sc/12 (-20) 0[][][] 
- []
-
-! Extra }, or forgotten \endgroup.
-<recently read> }
-                 
-l.262   \tableofcontents
-                        
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-(./cosmology_notes.toc
+al/texlive/2025/texmf-dist/fonts/enc/dvips/base/8r.enc}] (./main.toc
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 12.50409pt on input line 3.
+(Font)              scaled to size 12.50409pt on input line 2.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 9.37807pt on input line 3.
+(Font)              scaled to size 9.37807pt on input line 2.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 7.29405pt on input line 3.
+(Font)              scaled to size 7.29405pt on input line 2.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 12.50409pt on input line 3.
+(Font)              scaled to size 12.50409pt on input line 2.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 9.37807pt on input line 3.
+(Font)              scaled to size 9.37807pt on input line 2.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 7.29405pt on input line 3.
+(Font)              scaled to size 7.29405pt on input line 2.
 
 
-[3
+[2
 
 ])
 \tf@toc=\write6
-\openout6 = `cosmology_notes.toc'.
-
-
-! Extra }, or forgotten \endgroup.
-l.263 }
-       
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
+\openout6 = `main.toc'.
 
 
 
-[4]
-! Argument of \ttlh@display has an extra }.
-<inserted text> 
-                \par 
-l.272 ...troduction: How to Use This Course Guide}
-                                                  
-I've run across a `}' that doesn't seem to match anything.
-For example, `\def\a#1{...}' and `\a}' would produce
-this error. If you simply proceed now, the `\par' that
-I've just inserted will cause me to report a runaway
-argument that might be the root of the problem. But if
-your `}' was spurious, just type `2' and it will go away.
+[3] (./chapters/intro.tex
 
-Runaway argument?
-! Paragraph ended before \ttlh@display was complete.
-<to be read again> 
-                   \par 
-l.272 ...troduction: How to Use This Course Guide}
-                                                  
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
-
-Runaway argument?
-! Paragraph ended before \ttl@mkchap was complete.
-<to be read again> 
-                   \par 
-l.272 ...troduction: How to Use This Course Guide}
-                                                  
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
-
-
-LaTeX Font Warning: Font shape `T1/ppl/m/scit' undefined
-(Font)              using `T1/ppl/m/it' instead on input line 287.
-
-
-LaTeX Font Warning: Font shape `T1/ppl/m/scit' undefined
-(Font)              using `T1/ppl/m/it' instead on input line 288.
-
-
-LaTeX Font Warning: Font shape `T1/ppl/m/scit' undefined
-(Font)              using `T1/ppl/m/it' instead on input line 288.
-
-
-LaTeX Font Warning: Font shape `T1/ppl/m/scit' undefined
-(Font)              using `T1/ppl/m/it' instead on input line 292.
-
-
-LaTeX Font Warning: Font shape `T1/ppl/m/scit' undefined
-(Font)              using `T1/ppl/m/it' instead on input line 306.
-
-
-LaTeX Font Warning: Font shape `T1/ppl/m/scit' undefined
-(Font)              using `T1/ppl/m/it' instead on input line 306.
-
-
-LaTeX Font Warning: Font shape `T1/ppl/m/scit' undefined
-(Font)              using `T1/ppl/m/it' instead on input line 307.
-
-
-LaTeX Font Warning: Font shape `T1/ppl/m/scit' undefined
-(Font)              using `T1/ppl/m/it' instead on input line 307.
-
-
-LaTeX Font Warning: Font shape `T1/ppl/m/scit' undefined
-(Font)              using `T1/ppl/m/it' instead on input line 311.
-
-
-LaTeX Font Warning: Font shape `T1/ppl/m/scit' undefined
-(Font)              using `T1/ppl/m/it' instead on input line 326.
-
-
-LaTeX Font Warning: Font shape `T1/ppl/m/scit' undefined
-(Font)              using `T1/ppl/m/it' instead on input line 330.
-
-
-LaTeX Font Warning: Font shape `T1/ppl/m/scit' undefined
-(Font)              using `T1/ppl/m/it' instead on input line 344.
-
-
-LaTeX Font Warning: Font shape `T1/ppl/m/scit' undefined
-(Font)              using `T1/ppl/m/it' instead on input line 344.
-
-
-LaTeX Font Warning: Font shape `T1/ppl/m/scit' undefined
-(Font)              using `T1/ppl/m/it' instead on input line 345.
-
-
-LaTeX Font Warning: Font shape `T1/ppl/m/scit' undefined
-(Font)              using `T1/ppl/m/it' instead on input line 349.
+Package hyperref Warning: The anchor of a bookmark and its parent's must not
+(hyperref)                be the same. Added a new anchor on input line 11.
 
 
 
-[5
+[4
 
 
 ]
 
-LaTeX Font Warning: Font shape `T1/ppl/m/scit' undefined
-(Font)              using `T1/ppl/m/it' instead on input line 359.
-
-
-LaTeX Font Warning: Font shape `T1/ppl/m/scit' undefined
-(Font)              using `T1/ppl/m/it' instead on input line 360.
-
-
-LaTeX Font Warning: Font shape `T1/ppl/m/scit' undefined
-(Font)              using `T1/ppl/m/it' instead on input line 360.
-
-
-LaTeX Font Warning: Font shape `T1/ppl/m/scit' undefined
-(Font)              using `T1/ppl/m/it' instead on input line 361.
-
-
-LaTeX Font Warning: Font shape `T1/ppl/m/scit' undefined
-(Font)              using `T1/ppl/m/it' instead on input line 361.
-
-
-LaTeX Font Warning: Font shape `T1/ppl/m/scit' undefined
-(Font)              using `T1/ppl/m/it' instead on input line 362.
-
-
-LaTeX Font Warning: Font shape `T1/ppl/m/scit' undefined
-(Font)              using `T1/ppl/m/it' instead on input line 362.
-
-
-LaTeX Font Warning: Font shape `T1/ppl/m/scit' undefined
-(Font)              using `T1/ppl/m/it' instead on input line 363.
-
-
-LaTeX Font Warning: Font shape `T1/ppl/m/scit' undefined
-(Font)              using `T1/ppl/m/it' instead on input line 363.
-
-
+[5]
 
 [6]
+
+[7]) (./chapters/ch01_expanding_universe.tex
 Chapter 1.
-! Argument of \ttlh@display has an extra }.
-<inserted text> 
-                \par 
-l.372 \chapter{The Expanding Universe}
-                                      
-I've run across a `}' that doesn't seem to match anything.
-For example, `\def\a#1{...}' and `\a}' would produce
-this error. If you simply proceed now, the `\par' that
-I've just inserted will cause me to report a runaway
-argument that might be the root of the problem. But if
-your `}' was spurious, just type `2' and it will go away.
-
-Runaway argument?
-! Paragraph ended before \ttlh@display was complete.
-<to be read again> 
-                   \par 
-l.372 \chapter{The Expanding Universe}
-                                      
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
-
-Runaway argument?
-! Paragraph ended before \ttl@mkchap was complete.
-<to be read again> 
-                   \par 
-l.372 \chapter{The Expanding Universe}
-                                      
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
 
 
-! Package titlesec Error: Nested titles.
-
-See the titlesec package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.374 \section{Hubble's Discovery}
-                                  
-Titles must not be nested
-
-
-! Package titlesec Error: Nested titles.
-
-See the titlesec package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.376 \subsection{Physics Intuition}
-                                    
-Titles must not be nested
-
-
-! Package titlesec Error: Nested titles.
-
-See the titlesec package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.382 \subsection{Theory}
-                         
-Titles must not be nested
-
-
-! Package titlesec Error: Nested titles.
-
-See the titlesec package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.404 \subsection{Question Examples}
-                                    
-Titles must not be nested
-
-
-! Package titlesec Error: Nested titles.
-
-See the titlesec package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.413 \subsection{Extra}
-                        
-Titles must not be nested
-
-
-! Package titlesec Error: Nested titles.
-
-See the titlesec package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.419 \section{The Cosmological Redshift}
-                                         
-Titles must not be nested
-
-
-! Package titlesec Error: Nested titles.
-
-See the titlesec package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.421 \subsection{Physics Intuition}
-                                    
-Titles must not be nested
-
-
-
-[7
+[8
 
 
 ]
 
-! Package titlesec Error: Nested titles.
-
-See the titlesec package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.427 \subsection{Theory}
-                         
-Titles must not be nested
-
-
-! Package titlesec Error: Nested titles.
-
-See the titlesec package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.433 \subsection{Question Examples}
-                                    
-Titles must not be nested
-
-
-! Package titlesec Error: Nested titles.
-
-See the titlesec package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.442 \subsection{Extra}
-                        
-Titles must not be nested
-
-
-
-[8]
-Chapter 2.
-! Argument of \ttlh@display has an extra }.
-<inserted text> 
-                \par 
-l.453 ...dmann Equations \& Cosmological Dynamics}
-                                                  
-I've run across a `}' that doesn't seem to match anything.
-For example, `\def\a#1{...}' and `\a}' would produce
-this error. If you simply proceed now, the `\par' that
-I've just inserted will cause me to report a runaway
-argument that might be the root of the problem. But if
-your `}' was spurious, just type `2' and it will go away.
-
-Runaway argument?
-! Paragraph ended before \ttlh@display was complete.
-<to be read again> 
-                   \par 
-l.453 ...dmann Equations \& Cosmological Dynamics}
-                                                  
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
-
-Runaway argument?
-! Paragraph ended before \ttl@mkchap was complete.
-<to be read again> 
-                   \par 
-l.453 ...dmann Equations \& Cosmological Dynamics}
-                                                  
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
-
-
-! Package titlesec Error: Nested titles.
-
-See the titlesec package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.455 \section{The FLRW Metric}
-                               
-Titles must not be nested
-
-
-! Package titlesec Error: Nested titles.
-
-See the titlesec package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.457 \subsection{Physics Intuition}
-                                    
-Titles must not be nested
-
-
-! Package titlesec Error: Nested titles.
-
-See the titlesec package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.463 \subsection{Theory}
-                         
-Titles must not be nested
-
-
-! Package titlesec Error: Nested titles.
-
-See the titlesec package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.476 \subsection{Question Examples}
-                                    
-Titles must not be nested
-
-
-! Package titlesec Error: Nested titles.
-
-See the titlesec package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.485 \subsection{Extra}
-                        
-Titles must not be nested
-
-
-! Package titlesec Error: Nested titles.
-
-See the titlesec package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.491 \section{The Friedmann Equations}
-                                       
-Titles must not be nested
-
-
-! Package titlesec Error: Nested titles.
-
-See the titlesec package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.493 \subsection{Physics Intuition}
-                                    
-Titles must not be nested
-
-
-! Package titlesec Error: Nested titles.
-
-See the titlesec package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.499 \subsection{Theory}
-                         
-Titles must not be nested
-
-
-
-[9
-
-
-]
-
-! Package titlesec Error: Nested titles.
-
-See the titlesec package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.515 \subsection{Question Examples}
-                                    
-Titles must not be nested
-
-
-! Package titlesec Error: Nested titles.
-
-See the titlesec package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.529 \subsection{Extra}
-                        
-Titles must not be nested
-
-
+[9]
 
 [10]
+
+[11]) (./chapters/ch02_friedmann_equations.tex
+Chapter 2.
+
+
+[12
+
+
+]
+
+[13]
+
+[14]) (./chapters/ch03_energy_budget.tex
 Chapter 3.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 540.
+(hyperref)                removing `math shift' on input line 5.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\Lambda' on input line 540.
+(hyperref)                removing `\Lambda' on input line 5.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 540.
-
-! Argument of \ttlh@display has an extra }.
-<inserted text> 
-                \par 
-l.540 ...{Energy Budget in the $\Lambda$CDM Model}
-                                                  
-I've run across a `}' that doesn't seem to match anything.
-For example, `\def\a#1{...}' and `\a}' would produce
-this error. If you simply proceed now, the `\par' that
-I've just inserted will cause me to report a runaway
-argument that might be the root of the problem. But if
-your `}' was spurious, just type `2' and it will go away.
-
-Runaway argument?
-! Paragraph ended before \ttlh@display was complete.
-<to be read again> 
-                   \par 
-l.540 ...{Energy Budget in the $\Lambda$CDM Model}
-                                                  
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
-
-Runaway argument?
-! Paragraph ended before \ttl@mkchap was complete.
-<to be read again> 
-                   \par 
-l.540 ...{Energy Budget in the $\Lambda$CDM Model}
-                                                  
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
-
-
-! Package titlesec Error: Nested titles.
-
-See the titlesec package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.542 ...n{Density Parameters \& Critical Density}
-                                                  
-Titles must not be nested
-
-
-! Package titlesec Error: Nested titles.
-
-See the titlesec package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.544 \subsection{Physics Intuition}
-                                    
-Titles must not be nested
-
-
-! Package titlesec Error: Nested titles.
-
-See the titlesec package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.550 \subsection{Theory}
-                         
-Titles must not be nested
-
-
-! Package titlesec Error: Nested titles.
-
-See the titlesec package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.566 \subsection{Question Examples}
-                                    
-Titles must not be nested
-
-
-! Package titlesec Error: Nested titles.
-
-See the titlesec package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.575 \subsection{Extra}
-                        
-Titles must not be nested
-
-
-! Package titlesec Error: Nested titles.
-
-See the titlesec package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.581 \section{The Flat $\Lambda$CDM Model}
-                                           
-Titles must not be nested
-
-
-! Package titlesec Error: Nested titles.
-
-See the titlesec package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.583 \subsection{Physics Intuition}
-                                    
-Titles must not be nested
-
-
-! Package titlesec Error: Nested titles.
-
-See the titlesec package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.589 \subsection{Theory}
-                         
-Titles must not be nested
-
-
-
-[11
-
-
-]
-
-! Package titlesec Error: Nested titles.
-
-See the titlesec package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.612 \subsection{Question Examples}
-                                    
-Titles must not be nested
-
-
-! Package titlesec Error: Nested titles.
-
-See the titlesec package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.626 \subsection{Extra}
-                        
-Titles must not be nested
-
-
-
-[12]
-
-! Package titlesec Error: Nested titles.
-
-See the titlesec package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.634 \section{Energy Budget Evolution}
-                                       
-Titles must not be nested
-
-
-! Package titlesec Error: Nested titles.
-
-See the titlesec package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.636 \subsection{Visualizing the Energy Density}
-                                                 
-Titles must not be nested
-
-<images/lcdm_energy_budget.png, id=325, 650.43pt x 433.62pt>
-File: images/lcdm_energy_budget.png Graphic file (type png)
-<use images/lcdm_energy_budget.png>
-Package pdftex.def Info: images/lcdm_energy_budget.png  used on input line 640.
-
-(pdftex.def)             Requested size: 372.4491pt x 248.304pt.
-! Undefined control sequence.
-l.657 \citep
-            {Carmeli_2001}.
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.657 \citep{Carmeli_
-                     2001}.
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-l.657 \citep{Carmeli_2001}
-                          .
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.658 \end{extra}
-                 
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.658 \end{extra}
-                 
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-
-
-[13
-
- <./images/lcdm_energy_budget.png>]
-Appendix A.
-! Argument of \ttlh@display has an extra }.
-<inserted text> 
-                \par 
-l.666 \chapter{Mathematical Tools \& Derivations}
-                                                 
-I've run across a `}' that doesn't seem to match anything.
-For example, `\def\a#1{...}' and `\a}' would produce
-this error. If you simply proceed now, the `\par' that
-I've just inserted will cause me to report a runaway
-argument that might be the root of the problem. But if
-your `}' was spurious, just type `2' and it will go away.
-
-Runaway argument?
-! Paragraph ended before \ttlh@display was complete.
-<to be read again> 
-                   \par 
-l.666 \chapter{Mathematical Tools \& Derivations}
-                                                 
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
-
-Runaway argument?
-! Paragraph ended before \ttl@mkchap was complete.
-<to be read again> 
-                   \par 
-l.666 \chapter{Mathematical Tools \& Derivations}
-                                                 
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
-
-
-! Package titlesec Error: Nested titles.
-
-See the titlesec package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.668 \section{Useful Identities}
-                                 
-Titles must not be nested
-
-
-! Package titlesec Error: Nested titles.
-
-See the titlesec package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.672 \section{Differential Geometry Primer}
-                                            
-Titles must not be nested
-
-
-
-[14
-
-]
-Appendix B.
-! Argument of \ttlh@display has an extra }.
-<inserted text> 
-                \par 
-l.676 \chapter{Declaration of AI Assistance}
-                                            
-I've run across a `}' that doesn't seem to match anything.
-For example, `\def\a#1{...}' and `\a}' would produce
-this error. If you simply proceed now, the `\par' that
-I've just inserted will cause me to report a runaway
-argument that might be the root of the problem. But if
-your `}' was spurious, just type `2' and it will go away.
-
-Runaway argument?
-! Paragraph ended before \ttlh@display was complete.
-<to be read again> 
-                   \par 
-l.676 \chapter{Declaration of AI Assistance}
-                                            
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
-
-Runaway argument?
-! Paragraph ended before \ttl@mkchap was complete.
-<to be read again> 
-                   \par 
-l.676 \chapter{Declaration of AI Assistance}
-                                            
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
-
-
-! Package titlesec Error: Nested titles.
-
-See the titlesec package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.678 ...Artificial Intelligence in This Document}
-                                                  
-Titles must not be nested
-
-LaTeX Info: Symbol \textrightarrow not provided by
-            font family ppl in TS1 encoding.
-            Default family used instead on input line 685.
-(/usr/local/texlive/2025/texmf-dist/tex/latex/microtype/mt-cmr.cfg
-File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
-(RS)
-)
-
-LaTeX Font Warning: Font shape `TS1/cmr/m/sc' undefined
-(Font)              using `TS1/cmr/m/n' instead
-(Font)              for symbol `textrightarrow' on input line 685.
-
-LaTeX Info: Symbol \textrightarrow not provided by
-            font family ppl in TS1 encoding.
-            Default family used instead on input line 685.
-LaTeX Info: Symbol \textrightarrow not provided by
-            font family ppl in TS1 encoding.
-            Default family used instead on input line 685.
-
-LaTeX Font Warning: Font shape `T1/ppl/m/scit' undefined
-(Font)              using `T1/ppl/m/it' instead on input line 706.
-
+(hyperref)                removing `math shift' on input line 5.
+
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 18.00587pt on input line 5.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 10.42007pt on input line 5.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 18.00587pt on input line 5.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 10.42007pt on input line 5.
 
 
 [15
 
-{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
-
-Appendix C.
-! Argument of \ttlh@display has an extra }.
-<inserted text> 
-                \par 
-l.710 \chapter{Constants \& Conversion Factors}
-                                               
-I've run across a `}' that doesn't seem to match anything.
-For example, `\def\a#1{...}' and `\a}' would produce
-this error. If you simply proceed now, the `\par' that
-I've just inserted will cause me to report a runaway
-argument that might be the root of the problem. But if
-your `}' was spurious, just type `2' and it will go away.
-
-Runaway argument?
-! Paragraph ended before \ttlh@display was complete.
-<to be read again> 
-                   \par 
-l.710 \chapter{Constants \& Conversion Factors}
-                                               
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
-
-Runaway argument?
-! Paragraph ended before \ttl@mkchap was complete.
-<to be read again> 
-                   \par 
-l.710 \chapter{Constants \& Conversion Factors}
-                                               
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
-
-
-! Package titlesec Error: Nested titles.
-
-See the titlesec package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.712 \section{Physical Constants}
-                                  
-Titles must not be nested
-
-
-! Package titlesec Error: Nested titles.
-
-See the titlesec package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.726 \section{Conversion Factors}
-                                  
-Titles must not be nested
-
-
-
-[16
-
 
 ]
 
-LaTeX Warning: Empty bibliography on input line 753.
+[16]
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 15.0049pt on input line 111.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 15.0049pt on input line 111.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 111.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\Lambda' on input line 111.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 111.
 
 
 
-[17
+[17]
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `cmtt' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
 
-] (./cosmology_notes.aux)
+
+[18{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc
+}]
+
+[19]
+<images/lcdm_energy_budget.png, id=392, 650.43pt x 433.62pt>
+File: images/lcdm_energy_budget.png Graphic file (type png)
+<use images/lcdm_energy_budget.png>
+Package pdftex.def Info: images/lcdm_energy_budget.png  used on input line 198.
+
+(pdftex.def)             Requested size: 372.4491pt x 248.304pt.
+) (./chapters/appendix.tex
+
+[20
+
+ <./images/lcdm_energy_budget.png>]
+Appendix A.
+
+
+[21
+
+]
+Appendix B.
+
+Overfull \hbox (2.8729pt too wide) in paragraph at lines 49--52
+[]$[][] \OML/zplm/m/it/12 ^^R \OT1/zplm/m/n/12 + [][] \OML/zplm/m/it/12 ^^R \OT
+1/zplm/m/n/12 = \OT1/ppl/m/n/12 (-20) 1$\T1/ppl/m/n/12 (-20) , $[] \OML/zplm/m/
+it/12 ^^R \OT1/zplm/m/n/12 = [] \OML/zplm/m/it/12 ^^R\OT1/zplm/m/n/12 / [] \OML
+/zplm/m/it/12 ^^R$\T1/ppl/m/n/12 (-20) , $[]\OT1/zplm/m/n/12 (\OML/zplm/m/it/12
+ A \OMS/zplm/m/n/12 ^^F \OML/zplm/m/it/12 B\OT1/zplm/m/n/12 ) = [] \OML/zplm/m/
+it/12 A [] B \OMS/zplm/m/n/12 ^^F [] \OML/zplm/m/it/12 A [] B$\T1/ppl/m/n/12 (-
+20) . 
+ []
+
+
+
+[22
+
+
+]
+Appendix C.
+
+
+[23
+
+
+])
+
+[24
+
+
+] (./main.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: D21C16BB69E9BAD627C39C804B3A629F;6940.
+Package logreq Info: Writing requests to 'main.run.xml'.
+\openout1 = `main.run.xml'.
 
-
-LaTeX Font Warning: Some font shapes were not available, defaults substituted.
-
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package rerunfilecheck Warning: File `cosmology_notes.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `cosmology_notes.out':
-(rerunfilecheck)             Before: 2DA388DFC67AD739DFDE2404C9C6C571;5736
-(rerunfilecheck)             After:  1EB8D94CA30CCC6A9E8F46BCD3304800;1359.
-
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                cosmology_notes
-(biblatex)                and rerun LaTeX afterwards.
-
-Package logreq Info: Writing requests to 'cosmology_notes.run.xml'.
-\openout1 = `cosmology_notes.run.xml'.
-
- )
-(\end occurred inside a group at level 3)
-
-### semi simple group (level 3) entered at line 262 (\begingroup)
-### simple group (level 2) entered at line 262 ({)
-### simple group (level 1) entered at line 259 ({)
-### bottom level
-(\end occurred when \iffalse on line 262 was incomplete) 
+ ) 
 Here is how much of TeX's memory you used:
- 40696 strings out of 473190
- 804313 string characters out of 5715800
- 1767626 words of memory out of 5000000
- 62848 multiletter control sequences out of 15000+600000
- 639710 words of font info for 408 fonts, out of 8000000 for 9000
+ 40678 strings out of 473190
+ 801368 string characters out of 5715800
+ 1672880 words of memory out of 5000000
+ 62747 multiletter control sequences out of 15000+600000
+ 653881 words of font info for 469 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 87i,12n,96p,1030b,1598s stack positions out of 10000i,1000n,20000p,200000b,200000s
-
-pdfTeX warning (dest): name{section.B.2} has been referenced but does not exist
-, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{section.B.1} has been referenced but does not exist
-, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{section.A.2} has been referenced but does not exist
-, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{section.A.1} has been referenced but does not exist
-, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{subsection.3.2.4} has been referenced but does not 
-exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{subsection.3.2.3} has been referenced but does not 
-exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{subsection.3.2.2} has been referenced but does not 
-exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{subsection.3.2.1} has been referenced but does not 
-exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{section.3.2} has been referenced but does not exist
-, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{subsection.3.1.4} has been referenced but does not 
-exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{subsection.3.1.3} has been referenced but does not 
-exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{subsection.3.1.2} has been referenced but does not 
-exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{subsection.3.1.1} has been referenced but does not 
-exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{section.3.1} has been referenced but does not exist
-, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{subsection.2.2.4} has been referenced but does not 
-exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{subsection.2.2.3} has been referenced but does not 
-exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{subsection.2.2.2} has been referenced but does not 
-exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{subsection.2.2.1} has been referenced but does not 
-exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{section.2.2} has been referenced but does not exist
-, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{subsection.2.1.4} has been referenced but does not 
-exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{subsection.2.1.3} has been referenced but does not 
-exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{subsection.2.1.2} has been referenced but does not 
-exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{subsection.2.1.1} has been referenced but does not 
-exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{section.2.1} has been referenced but does not exist
-, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{subsection.1.2.4} has been referenced but does not 
-exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{subsection.1.2.3} has been referenced but does not 
-exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{subsection.1.2.2} has been referenced but does not 
-exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{subsection.1.2.1} has been referenced but does not 
-exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{section.1.2} has been referenced but does not exist
-, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{subsection.1.1.4} has been referenced but does not 
-exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{subsection.1.1.3} has been referenced but does not 
-exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{subsection.1.1.2} has been referenced but does not 
-exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{subsection.1.1.1} has been referenced but does not 
-exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{section.1.1} has been referenced but does not exist
-, replaced by a fixed one
-
-</usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
-/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></u
-sr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></us
-r/local/texlive/2025/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb></usr/loc
-al/texlive/2025/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb></usr/local/t
-exlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/loc
-al/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local
-/texlive/2025/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texliv
-e/2025/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2025/
-texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on cosmology_notes.pdf (17 pages, 301289 bytes).
+ 92i,13n,99p,1036b,1442s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
+></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb>
+</usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></
+usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></u
+sr/local/texlive/2025/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb></usr/lo
+cal/texlive/2025/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb></usr/local/
+texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/lo
+cal/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb></usr/loca
+l/texlive/2025/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texli
+ve/2025/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2025
+/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on main.pdf (24 pages, 364414 bytes).
 PDF statistics:
- 420 PDF objects out of 1000 (max. 8388607)
- 351 compressed objects within 4 object streams
- 81 named destinations out of 1000 (max. 500000)
- 108002 words of extra memory for PDF output out of 128383 (max. 10000000)
+ 495 PDF objects out of 1000 (max. 8388607)
+ 416 compressed objects within 5 object streams
+ 95 named destinations out of 1000 (max. 500000)
+ 124946 words of extra memory for PDF output out of 128383 (max. 10000000)
 
