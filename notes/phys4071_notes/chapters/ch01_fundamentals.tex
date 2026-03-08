@@ -1,0 +1,351 @@
+% ══════════════════════════════════════════════════════════════════════════════
+%  CHAPTER 1: FUNDAMENTALS
+% ══════════════════════════════════════════════════════════════════════════════
+
+\chapter{Fundamentals (lecture 1)}
+
+% ──────────────────────────────────────────────────────────────────────────────
+\section{Natural Units}
+
+\begin{intuition}
+In SI units, we treat time, length, mass, and energy as distinct physical quantities with different dimensions and units.
+\smallskip\noindent
+To make calculations more convenient, we introduce natural units to connect these quantities via fundamental constants,
+so that we can express everything in terms of a single unit and same type of dimension (i.e.\ energy).
+\end{intuition}
+
+\begin{theory}
+In natural units, we set $c = \hbar = k_B = 1$.
+
+When $c=1$, mass and energy are measured in the same units and dimension in terms of $E^1$ by $ E = mc^2 = m $.
+\end{theory}
+
+\begin{example}{Dimension of Gravitational Constant}{}
+What is the dimension of the gravitational constant $G$ in natural units?
+
+\bigskip\textbf{Solution.}\quad
+We know that $F = G \frac{m_1 m_2}{r^2}$ and $F = ma$. \\
+We get dimension of $a$ is $E^1$ by $a = v/t = x/t^2 = \frac{E^{-1}}{E^{-1}\cdot E^{-1}} = E^1$. \\
+Then we get dimension of $F$ is $E^2$ by $F = ma = E^1 \cdot E^1 = E^2$. \\
+Finally, we get dimension of $G$ is $E^{-2}$ by $G = \frac{F r^2}{m_1 m_2} = E^2 \cdot E^{-2} / (E^1 \cdot E^1) = E^{-2}$.
+
+\end{example}
+
+
+In general, we define the dimension of a quantity directly in terms of n if its dimension is $E^n$ for simplicity.
+Below are some useful conversion factors between SI and natural units:
+\begin{center}
+\begin{tabular}{@{}lll@{\quad}r@{}}
+	\toprule
+	\textbf{Quantity} & \textbf{Related equation} & \textbf{SI dimension} & \textbf{Natural unit} \\
+\midrule
+Energy & $E = mc^2$ & $\mathrm{kg\,m^2\,s^{-2}}$ & $1$ \\
+Mass & $m = E/c^2$ & $\mathrm{kg}$ & $1$ \\
+Frequency & $\nu = E/h$ & $\mathrm{Hz}$ & $1$ \\
+Time & $t = 1/\nu$ & $\mathrm{s}$ & $-1$ \\
+Space & $x = ct$ & $\mathrm{m}$ & $-1$ \\
+Temperature & $T = E/k_B$ & $\mathrm{K}$ & $1$ \\
+\midrule
+Velocity & $v = x/t$ & $\mathrm{m\,s^{-1}}$ & $0$ \\
+Momentum & $p = E/c$ & $\mathrm{kg\,m\,s^{-1}}$ & $1$ \\
+Angular Velocity & $\omega = rv$ & $\mathrm{rad\,s^{-1}}$ & $-1$ \\
+Angular Momentum & $L = \frac{1}{2}mv \omega$ & $\mathrm{kg\,m^2\,s^{-1}}$ & $0$ \\
+Luminosity & $\mathcal{L} = E/t$ & $\mathrm{W}$ & $2$ \\
+Force & $F = p/t$ & $\mathrm{N}$ & $2$ \\
+Pressure & $P = F/A$ & $\mathrm{Pa}$ & $2$ \\
+Mass Density & $\rho = m/V$ & $\mathrm{kg\,m^{-3}}$ & $4$ \\
+Energy Density & $\rho = E/V$ & $\mathrm{J\,m^{-3}}$ & $4$ \\
+\midrule
+Gravitational Constant & $G = Fr^2/m_1m_2$ & $\mathrm{m^3\,kg^{-1}\,s^{-2}}$ & $-2$ \\
+Redshift & $z = \lambda_0/\lambda_e - 1$ & --- & $0$ \\
+Cosmological Scale Factor & $a(t) = 1/(1+z)$ & --- & $0$ \\
+Hubble Parameter & $H = \dot{a}/a$ & $\mathrm{s^{-1}}$ & $1$ \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\bigskip\noindent
+\bigskip\noindent
+\begin{remark}
+  In the Heavide-Lorentz system of natural units, we also set $\epsilon_0 = \mu_0 = 1$.\\
+  Which one can hence get the dimension of charge $q$ is 0.
+\end{remark} 
+
+
+
+% ──────────────────────────────────────────────────────────────────────────────
+\newpage
+\section{4-Vectors and Tensors}
+
+\subsection{4-Vectors}
+\begin{foundation}
+  In special relativity, we treat the time and space coordinates on equal footing as a 4-vector $x^\mu = (t, x, y, z) = (x^0, x^1, x^2, x^3)$.
+  or in other words, we used the 4-vector to combine the time and space coordinates together.
+\end{foundation}
+
+\begin{theory}
+  By using the 4-vector, we can write the Lorentz transformation in-terms of the Lorentz transformation matrix and the 4-vector: \\
+  \smallskip\noindent
+  WLOG, we can consider a boost in the $x$-direction with velocity $v$,
+  \[
+    \begin{pmatrix}t' \\ x' \\ y' \\ z'
+    \end{pmatrix}
+    = \begin{pmatrix}
+      \gamma & -\gamma \beta & 0 & 0 \\
+      -\gamma \beta & \gamma & 0 & 0 \\
+      0 & 0 & 1 & 0 \\
+      0 & 0 & 0 & 1
+    \end{pmatrix}
+    \begin{pmatrix}t \\ x \\ y \\ z
+    \end{pmatrix},
+  \]
+  where $\gamma = 1/\sqrt{1-v^2}$ is the Lorentz factor, and $\beta = v/c$ is the velocity in units of $c$ ($\beta = v$ in natural units).
+\end{theory}
+
+% ──────────────────────────────────────────────────────────────────────────────
+\bigskip\noindent
+\subsection{Einstein Summation Convention}
+\begin{intuition}
+  Each time when we are doing the 4-vectors operations like the Lorentz transformation, we are doing the summation of the products of the components of the 4-vectors and the Lorentz transformation matrix. \\
+  \smallskip\noindent
+  It can be very tedious to write down the summation every time, so we want a more compact notation to represent the summation.
+\end{intuition}
+\begin{theory}
+  Using the example of the Lorentz transformation above, if we want to do the transformation in traditional way, we have to write down the summation explicitly:
+  \[
+    x^{\mu'} = \Sigma_{\nu=0}^3 \Lambda^\mu{}_\nu x^\nu.
+  \]
+  \smallskip\noindent
+  By using the Einstein summation convention, we can simply write down the transformation as:
+  \[
+    x^{\mu'} = \Lambda^\mu{}_\nu x^\nu.
+  \]
+\end{theory}
+
+
+% ──────────────────────────────────────────────────────────────────────────────
+\bigskip\noindent
+\subsection{Metric Tensor}
+\begin{intuition}
+  In a non-Euclidean space, such as the Minkowski spacetime in special relativity, the distance between two points is not simply what we seen in our eyes. \\
+  The spacetime interval between two events(or points) is no longer measured by the Pythagorean theorem, so we need to use another ruler to measure it. \\
+  \\ 
+  In general, we used a metric tensor as the ruler to measure the distance of 2 point in a specific spacetime.
+\end{intuition}
+
+\begin{theory}
+  In traditional Euclidean space, the metric tensor is simply the identity matrix, so the distance between two points is given by the Pythagorean theorem:
+  \[
+    ds^2 = \begin{pmatrix}dx & dy & dz\end{pmatrix}
+    \begin{pmatrix}1 & 0 & 0 \\
+            0 & 1 & 0 \\
+            0 & 0 & 1\end{pmatrix}
+    \begin{pmatrix}dx \\ dy \\ dz\end{pmatrix}
+    = dx^2 + dy^2 + dz^2.
+  \]
+  \smallskip\noindent
+  In Minkowski spacetime, the metric tensor is given by:
+  \[
+    g_{\mu\nu} = \begin{pmatrix}-1 & 0 & 0 & 0 \\
+            0 & 1 & 0 & 0 \\
+            0 & 0 & 1 & 0 \\
+            0 & 0 & 0 & 1\end{pmatrix},
+  \]
+  so the spacetime interval is given by:
+  \[
+    ds^2 = g_{\mu\nu} dx^\mu dx^\nu = -dt^2 + dx^2 + dy^2 + dz^2.
+  \]
+\end{theory}
+
+  or in other words, the spacetime interval is calculated by the dot product of the 4-vector with itself by using the metric tensor as the dot product operator:
+\begin{theory}
+  \[
+    A \cdot B = g_{\mu\nu} A^\mu B^\nu = \begin{pmatrix} A^0 & A^1 & A^2 & A^3 \end{pmatrix}
+    \begin{pmatrix}
+      g_{00} & g_{01} & g_{02} & g_{03} \\
+      g_{10} & g_{11} & g_{12} & g_{13} \\
+      g_{20} & g_{21} & g_{22} & g_{23} \\
+      g_{30} & g_{31} & g_{32} & g_{33}
+    \end{pmatrix}
+    \begin{pmatrix} B^0 \\ B^1 \\ B^2 \\ B^3 \end{pmatrix}.
+  \]
+\end{theory}
+
+
+% ──────────────────────────────────────────────────────────────────────────────
+\newpage
+\subsection{Tensors}
+\begin{intuition}
+  Now you may wonder, why sometimes the index is up, and sometimes it is down? Is there any difference between them? \\
+  \bigskip
+  The answer is yes, they are different. \\
+  The upper index represents a \textbf{contravariant} component, while the lower index represents a \textbf{covariant} component. \\
+  By the combination of the \textbf{contravariant} and \textbf{convariant} components, we can construct a more general mathematical object called a \textbf{tensor}.
+\end{intuition}
+
+\bigskip 
+\begin{foundation}
+  In tensor calculus and differential geometry, the position of an index (upper or lower) indicates how the component of the tensor transforms when you change the coordinate system.
+
+  \bigskip\noindent
+  \textbf{Direct Mapping:}
+  \begin{itemize}
+    \item \textbf{Upper Index} ($\mu$ in $V^\mu$): Represents a \textbf{Contravariant} component.
+    \item \textbf{Lower Index} ($\mu$ in $V_\mu$): Represents a \textbf{Covariant} component.
+  \end{itemize}
+
+  \bigskip\noindent
+  \noindent\textbf{Transformation Rules:}
+
+  The terms \emph{contravariant} and \emph{covariant} describe how components change relative to \textbf{basis vectors} when switching coordinates (e.g., Cartesian to Polar, or meters to centimeters).
+
+  \bigskip\noindent
+  \noindent\textit{Contravariant (Upper Index):}
+  \begin{itemize}
+    \item \textbf{Symbol:} $V^\mu$
+    \item \textbf{Transformation:} Transforms \textbf{inversely} (against) the basis vectors.
+    \medskip
+    \item \textbf{Law:} $\displaystyle V'^\mu = \frac{\partial x'^\mu}{\partial x^\nu} V^\nu$
+    \medskip
+    \item \textbf{Intuition:} If your ruler shrinks (smaller basis vectors), the numerical value must grow to describe the same physical length. Example: $1 \text{ m} = 100 \text{ cm}$.
+  \end{itemize}
+
+  \bigskip\noindent
+  \noindent\textit{Covariant (Lower Index):}
+  \begin{itemize}
+    \item \textbf{Symbol:} $V_\mu$
+    \item \textbf{Transformation:} Transforms \textbf{in the same way} (with) the basis vectors.
+    \medskip
+    \item \textbf{Law:} $\displaystyle V'_\mu = \frac{\partial x^\nu}{\partial x'^\mu} V_\nu$
+    \medskip
+    \item \textbf{Intuition:} Like a gradient (slope). If the ruler shrinks, the slope per unit distance also shrinks.
+  \end{itemize}
+
+  \bigskip\noindent
+  \noindent\textbf{Geometric Interpretation:}
+  \smallskip\noindent
+  \begin{itemize}
+    \item \textbf{Contravariant Vectors} ($V^\mu$): Standard ``arrows'' tangent to a curve, living in the \textbf{Tangent Space}.
+    \medskip
+    \item \textbf{Covariant Vectors} ($V_\mu$): Called \textbf{Dual Vectors} or \textbf{One-Forms}. They are functions that map vectors to scalars and live in the \textbf{Cotangent Space}. Geometrically visualized as stacked parallel surfaces pierced by vectors.
+  \end{itemize}
+
+  \bigskip\noindent
+  \noindent\textbf{Einstein Summation Convention:} \\
+  \smallskip\noindent
+  The distinction is critical, repeated indices (one upper, one lower) indicate summation. Only these are coordinate-invariant scalars.
+  \medskip
+  \begin{itemize}
+    \item \textbf{Valid:} $S = A^\mu B_\mu$ \quad $\Rightarrow$ scalar invariant
+    \item \textbf{Invalid:} $A^\mu B^\mu$ or $A_\mu B_\mu$ \quad $\Rightarrow$ not coordinate-invariant (not summation)
+  \end{itemize}
+
+  \bigskip\noindent
+  \noindent\textbf{Summary Table}
+  \bigskip\noindent
+  \begin{center}
+  \begin{tabular}{@{}lll@{}}
+    \toprule
+    \textbf{Property} & \textbf{Contravariant} & \textbf{Covariant} \\
+    \midrule
+    Index Position & Upper ($^\mu$) & Lower ($_\mu$) \\
+    Notation & $V^\mu$ & $V_\mu$ \\
+    Also Called & Vector & Dual Vector / One-Form \\
+    Transformation & Opposite to basis & Same as basis \\
+    Example & Displacement, Velocity & Gradient \\
+    Metric Operation & Lowered by $g_{\mu\nu}$ & Raised by $g^{\mu\nu}$ \\
+    \bottomrule
+  \end{tabular}
+  \end{center}
+
+\end{foundation}
+
+\begin{theory}
+  \bigskip\noindent
+  \noindent\textbf{Raising and Lowering Indices:} \\
+  \smallskip\noindent
+  With the \textbf{Metric Tensor} ($g_{\mu\nu}$), you can convert between contravariant and covariant components:
+  \medskip
+  \begin{itemize}
+    \item \textbf{Lowering:} $\quad V_\mu = g_{\mu\nu} V^\nu$ \quad (contravariant $\to$ covariant)
+    \item \textbf{Raising:} $\quad V^\mu = g^{\mu\nu} V_\nu$ \quad (covariant $\to$ contravariant)
+  \end{itemize}
+\end{theory}
+
+\newpage
+And the contravariant(inverse) metric $g^{\mu\nu}$ is the inverse of the covariant metric $g_{\mu\nu}$, so we have:
+\begin{theory}
+  \[
+    g^{\mu\nu} g_{\nu\sigma} = \delta^\mu{}_\sigma,
+  \]
+  where $\delta^\mu{}_\sigma$ is the Kronecker delta, which is 1 if $\mu = \sigma$ and 0 otherwise.
+\end{theory}
+
+
+As a results, we can further simplified the operations like the dot product and trace:
+\begin{theory}
+  \[
+    A \cdot B = g_{\mu\nu} A^\mu B^\nu = A_\nu B^\nu = A^\mu B_\mu.
+  \]
+  \[
+    T = g^{\mu\nu} T_{\mu\nu} = g_{\mu\nu} T^{\mu\nu} = T^\nu{}_\nu = T_\mu{}^\mu.
+  \]
+\end{theory}  
+
+\bigskip\noindent
+\begin{example}{Trace of Spherical Minkowski Metric}{}
+  Calculate the trace of the spherical Minkowski metric $g_{\mu\nu} = \operatorname{diag}(-1, 1, r^2, r^2 \sin^2\theta)$.
+
+  \bigskip\textbf{Solution.}\quad
+  We need to first calculate the inverse metric $g^{\mu\nu}$, which is given by:
+  \[
+    g^{\mu\nu} = g_{\mu\nu}^{-1} = \operatorname{diag}(-1, 1, r^{-2}, r^{-2} \sin^{-2}\theta).
+  \]
+  Then we can calculate the trace:
+  \[
+    T = g^{\mu\nu} g_{\mu\nu} = (-1)(-1) + (1)(1) + (r^{-2})(r^2) + (r^{-2} \sin^{-2}\theta)(r^2 \sin^2\theta) = 4.
+  \]
+\end{example}
+
+\medskip\noindent
+\begin{importantnote}
+  In flat Euclidean space with Cartesian coordinates, $g_{\mu\nu} = \delta_{\mu\nu}$ (identity), so $V^\mu = V_\mu$ numerically. 
+
+  \bigskip\noindent
+  However, for other spacetimes (e.g., Minkowski, curved), the metric is not the identity, and $V^\mu$ and $V_\mu$ can differ significantly. The distinction becomes crucial in General Relativity and curvilinear coordinates. To be safe, treat them as different objects and always check the metric when raising/lowering indices.
+\end{importantnote}
+
+\bigskip\noindent
+\begin{extra}
+  The tensor T is said to be of type (p,q) if it has:
+  \begin{itemize}
+    \item p: The number of contravariant indices(upper indices)
+    \item q: The number of convariant indices(lower indices)
+  \end{itemize}
+  Tensor with different types cannot be added together or equal to each other, in such a meaning, you can think of the type of a tensor as its ``dimension'' in the space of tensors, and only tensors with the same type can be compared or combined.
+
+  \bigskip\noindent
+  \textbf{Tensor Rank:}  The total rank of a Tensor T is p + q (let said p + q = n), and we will said it is a rank-n-Tensor \\
+
+  \smallskip\noindent
+  Note that the rank of a tensor is not the same as linear algebra rank of a matrix. The rank of a tensor is the total number of indices, while the linear algebra rank is the maximum number of linearly independent rows or columns in a matrix. Thats mean a rank-2 tensor can have a linear algebra rank of 0, 1, or 2 depending on its components.
+
+  \bigskip\noindent
+  \begin{center}
+    \begin{tabular}{@{}c|c|c|c|l@{}}
+      \toprule
+      \textbf{Tensor Type} & \textbf{p} & \textbf{q} & \textbf{Rank} & \textbf{Example} \\
+      \midrule
+      (0,0) & 0 & 0 & 0 & Scalar (e.g., Temperature) \\
+      (1,0) & 1 & 0 & 1 & Contravariant Vector (e.g., Displacement $V^\mu$) \\
+      (0,1) & 0 & 1 & 1 & Covariant Vector (e.g., Gradient $V_\mu$) \\
+      (1,1) & 1 & 1 & 2 & Mixed Tensor (e.g., Linear Transformation $\Lambda^\mu{}_\nu$) \\
+      (2,0) & 2 & 0 & 2 & Contravariant Tensor (e.g., Inverse Metric $g^{\mu \nu}$) \\
+      (0,2) & 0 & 2 & 2 & Covariant Tensor (e.g., Metric Tensor $g_{\mu \nu}$) \\
+      (1,3) & 1 & 3 & 4 & Riemann Curvature ($R^{\rho}_{\sigma \mu \nu}$) \\
+      \bottomrule
+    \end{tabular}
+  \end{center}
+\end{extra}
+
+\clearpage
