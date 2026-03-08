@@ -566,6 +566,16 @@ INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/adobe/palatino/pplr8t.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/vf/public/mathpazo/zplmr7y.vf
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/mathpazo/fplmr.tfm
+INPUT ./images/energy_momentum_tensor.png
+INPUT ./images/energy_momentum_tensor.png
+INPUT ./images/energy_momentum_tensor.png
+INPUT ./images/energy_momentum_tensor.png
+INPUT ./images/energy_momentum_tensor.png
+INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/psnfss/ts1ppl.fd
+INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/psnfss/ts1ppl.fd
+INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/psnfss/ts1ppl.fd
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/adobe/palatino/pplr8c.tfm
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/vf/adobe/palatino/pplr8c.vf
 INPUT ./chapters/appendix.tex
 INPUT ./chapters/appendix.tex
 INPUT ./chapters/appendix.tex

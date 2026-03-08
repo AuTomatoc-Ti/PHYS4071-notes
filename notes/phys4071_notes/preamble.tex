@@ -38,9 +38,11 @@
 \definecolor{AmethystPurple}{HTML}{5C3D99}  % deep violet    – foundation
 \definecolor{AlertRed}{HTML}{B03020}        % deep red-orange – important note
 \definecolor{SageGreen}{HTML}{3B6E52}       % sage green      – remark
+\definecolor{RemarkTeal}{HTML}{1B5E6F}      % deep teal        – remark
 \definecolor{PurpleBG}{HTML}{F0ECFB}        % pale violet bg
 \definecolor{RedBG}{HTML}{FCF0ED}           % pale red bg
 \definecolor{SageBG}{HTML}{EBF5EE}          % pale sage bg
+\definecolor{RemarkBG}{HTML}{EBF7FB}        % pale teal bg      – remark
 
 % ─── Graphics & Images ─────────────────────────────────────────────────────────
 \usepackage{graphicx}
@@ -145,12 +147,12 @@
 %   ── Remark ────────────────────────────────────────────────────────────────────
 \newtcolorbox{remark}[1][]{
   breakable, enhanced,
-  colback   = SageBG,
-  colframe  = SageGreen,
+  colback   = RemarkBG,
+  colframe  = RemarkTeal,
   leftrule  = 2pt, rightrule = 0pt, toprule = 0pt, bottomrule = 0pt,
   arc = 0pt, outer arc = 0pt,
   before upper = {%
-    \textcolor{SageGreen}{\textbf{\small\scshape Remark}}%
+    \textcolor{RemarkTeal}{\textbf{\small\scshape Remark}}%
     \par\smallskip},
   top = 2pt, bottom = 6pt, left = 8pt, right = 8pt,
   #1

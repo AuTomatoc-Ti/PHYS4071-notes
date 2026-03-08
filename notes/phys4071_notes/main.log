@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2026.2.19)  8 MAR 2026 18:57
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2026.2.19)  8 MAR 2026 23:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -807,7 +807,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip71
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 241.
+Package hyperref Info: Option `colorlinks' set `true' on input line 243.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/biblatex/biblatex.sty
 Package: biblatex 2024/03/21 v3.20 programmable bibliographies (PK/MW)
 
@@ -1384,6 +1384,11 @@ Package microtype Info: Loading generic protrusion settings for font family
 [6]) (./chapters/ch01_fundamentals.tex
 Chapter 1.
 
+Underfull \hbox (badness 10000) in paragraph at lines 11--12
+
+ []
+
+
 
 [7
 
@@ -1391,9 +1396,14 @@ Chapter 1.
 ]
 
 [8]
+Underfull \hbox (badness 10000) in paragraph at lines 110--111
+
+ []
+
+
 
 [9]
-Underfull \hbox (badness 10000) in paragraph at lines 130--134
+Underfull \hbox (badness 10000) in paragraph at lines 131--135
 
  []
 
@@ -1404,25 +1414,110 @@ Underfull \hbox (badness 10000) in paragraph at lines 130--134
 [11]
 
 [12]
-Underfull \hbox (badness 10000) in paragraph at lines 297--298
+Underfull \hbox (badness 10000) in paragraph at lines 298--299
 []\T1/ppl/m/n/12 (+20) Calculate the trace of the spher-i-cal Minkowski met-ric
  $\OML/zplm/m/it/12 g[] \OT1/zplm/m/n/12 =
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 327--329
+
+[13]
+Underfull \hbox (badness 10000) in paragraph at lines 328--330
 
  []
 
 
 
-[13]
+[14]
+Underfull \hbox (badness 10000) in paragraph at lines 357--359
 
-[14]) (./chapters/appendix.tex
+ []
+
+<images/energy_momentum_tensor.png, id=218, 452.69125pt x 254.9525pt>
+File: images/energy_momentum_tensor.png Graphic file (type png)
+<use images/energy_momentum_tensor.png>
+Package pdftex.def Info: images/energy_momentum_tensor.png  used on input line 
+366.
+(pdftex.def)             Requested size: 284.8093pt x 160.40306pt.
+LaTeX Font Info:    Trying to load font information for TS1+ppl on input line 4
+06.
+(/usr/local/texlive/2025/texmf-dist/tex/latex/psnfss/ts1ppl.fd
+File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
+)
+
+[15 <./images/energy_momentum_tensor.png>]
+
+[16]
+Underfull \hbox (badness 10000) in paragraph at lines 428--430
+
+ []
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.432       \item
+                  Reason 1: Energy flux and momentum density are equal, so $...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.432       \item R
+                   eason 1: Energy flux and momentum density are equal, so $...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 435--437
+
+ []
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.438     \end{itemize}
+                       
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 444--445
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 446--447
+
+ []
+
+
+
+[17]
+
+[18]
+
+[19]
+
+[20]) (./chapters/appendix.tex
 Appendix A.
 
 
-[15
+[21
 
 
 ]
@@ -1440,19 +1535,19 @@ it/12 A [] B \OMS/zplm/m/n/12 ^^F [] \OML/zplm/m/it/12 A [] B$\T1/ppl/m/n/12 (-
 
 
 
-[16
+[22
 
 
 ]
 Appendix C.
 
 
-[17
+[23
 
 
 ])
 
-[18
+[24
 
 
 ] (./main.aux)
@@ -1462,25 +1557,26 @@ L3 programming layer <2025-01-18>
  ***********
 
 
-LaTeX Warning: There were undefined references.
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 65AA8DF5CB7AF3B4CDD28688B049FC1F;2983.
 
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                main
-(biblatex)                and rerun LaTeX afterwards.
+Package rerunfilecheck Warning: File `main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
 
+Package rerunfilecheck Info: Checksums for `main.out':
+(rerunfilecheck)             Before: 8786A5E479CC5D55AF84A8CB650176F1;3349
+(rerunfilecheck)             After:  80E367DDD1BE431B457F86DC6D1FFDCE;3517.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 40396 strings out of 473190
- 796806 string characters out of 5715800
- 1672272 words of memory out of 5000000
- 62616 multiletter control sequences out of 15000+600000
- 637260 words of font info for 376 fonts, out of 8000000 for 9000
+ 40488 strings out of 473190
+ 798136 string characters out of 5715800
+ 1672460 words of memory out of 5000000
+ 62660 multiletter control sequences out of 15000+600000
+ 638815 words of font info for 399 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  92i,12n,99p,1036b,1410s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
@@ -1492,10 +1588,10 @@ ocal/texlive/2025/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb></usr/local
 exlive/2025/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/
 2025/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2025/te
 xmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (18 pages, 211228 bytes).
+Output written on main.pdf (24 pages, 315360 bytes).
 PDF statistics:
- 284 PDF objects out of 1000 (max. 8388607)
- 219 compressed objects within 3 object streams
- 45 named destinations out of 1000 (max. 500000)
- 109357 words of extra memory for PDF output out of 128383 (max. 10000000)
+ 326 PDF objects out of 1000 (max. 8388607)
+ 253 compressed objects within 3 object streams
+ 55 named destinations out of 1000 (max. 500000)
+ 113474 words of extra memory for PDF output out of 128383 (max. 10000000)
 

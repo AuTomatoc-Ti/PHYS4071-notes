@@ -2,14 +2,14 @@
 %  CHAPTER 1: FUNDAMENTALS
 % ══════════════════════════════════════════════════════════════════════════════
 
-\chapter{Fundamentals (lecture 1)}
+\chapter{Fundamentals (lecture 1-2)}
 
 % ──────────────────────────────────────────────────────────────────────────────
 \section{Natural Units}
 
 \begin{intuition}
-In SI units, we treat time, length, mass, and energy as distinct physical quantities with different dimensions and units.
-\smallskip\noindent
+In SI units, we treat time, length, mass, and energy as distinct physical quantities with different dimensions and units. \\
+
 To make calculations more convenient, we introduce natural units to connect these quantities via fundamental constants,
 so that we can express everything in terms of a single unit and same type of dimension (i.e.\ energy).
 \end{intuition}
@@ -20,6 +20,7 @@ In natural units, we set $c = \hbar = k_B = 1$.
 When $c=1$, mass and energy are measured in the same units and dimension in terms of $E^1$ by $ E = mc^2 = m $.
 \end{theory}
 
+\bigskip
 \begin{example}{Dimension of Gravitational Constant}{}
 What is the dimension of the gravitational constant $G$ in natural units?
 
@@ -107,7 +108,7 @@ Hubble Parameter & $H = \dot{a}/a$ & $\mathrm{s^{-1}}$ & $1$ \\
 \subsection{Einstein Summation Convention}
 \begin{intuition}
   Each time when we are doing the 4-vectors operations like the Lorentz transformation, we are doing the summation of the products of the components of the 4-vectors and the Lorentz transformation matrix. \\
-  \smallskip\noindent
+
   It can be very tedious to write down the summation every time, so we want a more compact notation to represent the summation.
 \end{intuition}
 \begin{theory}
@@ -281,7 +282,7 @@ And the contravariant(inverse) metric $g^{\mu\nu}$ is the inverse of the covaria
   where $\delta^\mu{}_\sigma$ is the Kronecker delta, which is 1 if $\mu = \sigma$ and 0 otherwise.
 \end{theory}
 
-
+\bigskip
 As a results, we can further simplified the operations like the dot product and trace:
 \begin{theory}
   \[
@@ -307,7 +308,7 @@ As a results, we can further simplified the operations like the dot product and 
   \]
 \end{example}
 
-\medskip\noindent
+\bigskip\noindent
 \begin{importantnote}
   In flat Euclidean space with Cartesian coordinates, $g_{\mu\nu} = \delta_{\mu\nu}$ (identity), so $V^\mu = V_\mu$ numerically. 
 
@@ -315,7 +316,7 @@ As a results, we can further simplified the operations like the dot product and 
   However, for other spacetimes (e.g., Minkowski, curved), the metric is not the identity, and $V^\mu$ and $V_\mu$ can differ significantly. The distinction becomes crucial in General Relativity and curvilinear coordinates. To be safe, treat them as different objects and always check the metric when raising/lowering indices.
 \end{importantnote}
 
-\bigskip\noindent
+\newpage
 \begin{extra}
   The tensor T is said to be of type (p,q) if it has:
   \begin{itemize}
@@ -348,4 +349,137 @@ As a results, we can further simplified the operations like the dot product and 
   \end{center}
 \end{extra}
 
+
+% ──────────────────────────────────────────────────────────────────────────────
+\newpage
+\subsection{Energy-Momentum Tensor}
+\begin{intuition}
+  In Newtonian mechanics, we thought mass is the source of gravity, but in relativity, we found that mass is a form of energy($E=mc^2$), so energy must also be a source of gravity. \\
+  Further, momentum is also a form of energy($E^2 = p^2 c^2 + m^2 c^4$), so momentum must also be a source of gravity. \\
+
+  The energy-momentum tensor expand the concept of a scalar energy density to a 4x4 matrix that track of all "components" in a region of spacetime that contributes to gravity.
+\end{intuition}
+
+%figure of energy-momentum tensor
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.65\textwidth]{images/energy_momentum_tensor.png}
+  \caption{The components of the energy-momentum tensor $T^{\mu\nu}$ and their physical interpretations.}
+\end{figure}
+
+\begin{foundation}
+  \noindent\textit{Interpretation of Components:}
+  
+  For a component $T^{\mu\nu}$ of the energy-momentum tensor, it represents the flux of the $\mu$-th component of the 4-momentum across a volume of constant $\nu$-th coordinate.
+
+  \bigskip\noindent
+  \textbf{(1) Time-Energy Component: } $T^{00}$ (Top-Left Corner)
+  \begin{itemize}
+    \item \textbf{What it is:} Energy density --- the amount of energy per unit volume.
+    \medskip
+    \item \textbf{Includes:} Mass (via $E = mc^2$), heat, light, and chemical energy.
+    \medskip
+    \item \textbf{Gravitational role:} Primary source of gravity for everyday objects (e.g., the Earth).
+  \end{itemize}
+
+  \bigskip\noindent
+  \textbf{(2) Energy Flux Components: } $T^{01}, T^{02}, T^{03}$ (Top Row)
+  \begin{itemize}
+    \item \textbf{What they measure:} Energy flowing through surfaces in the $x$-, $y$-, and $z$-directions.
+    \medskip
+    \item \textbf{Physical picture:} A beam of light passing through the volume carries energy in a direction.
+    \medskip
+    \item \textbf{Key insight:} In relativity, energy flux is equivalent to momentum density. Moving energy carries momentum!
+  \end{itemize}
+
+  \bigskip\noindent
+  \textbf{(3) Momentum Density Components: } $T^{10}, T^{20}, T^{30}$ (Left Column)
+  \begin{itemize}
+    \item \textbf{What they measure:} The amount of momentum stored inside the volume.
+    \medskip
+    \item \textbf{Surprising fact:} These values are typically equal to the energy flux components above!
+    \medskip
+    \item \textbf{Implication:} Energy flow and momentum density are intimately related.
+  \end{itemize}
+
+  \bigskip\noindent
+  \textbf{(4) Stress and Pressure Components: } $T^{11}$ to $T^{33}$ (Bottom-Right 3×3 Grid)
+  \begin{itemize}
+    \item \textbf{Physical meaning:} Forces and stresses acting within the material.
+    \medskip
+    \item \textbf{Diagonal terms } ($T^{11}, T^{22}, T^{33}$): \textbf{Pressure}
+    \begin{itemize}
+      \item Gas molecules bouncing off the walls of the volume exert pressure.
+      \item \textbf{Remarkable fact:} Pressure creates gravity!
+      \item A box of hot gas (high pressure) has slightly more gravitational mass than cold gas with the same rest mass, because pressure contributes to the stress-energy tensor.
+    \end{itemize}
+    \medskip
+    \item \textbf{Off-diagonal terms } ($T^{12}, T^{23}$, etc.): \textbf{Shear Stress}
+    \begin{itemize}
+      \item Internal friction between different parts of the material.
+      \item Analogy: Sliding the top half of a deck of cards sideways relative to the bottom.
+    \end{itemize}
+  \end{itemize}
+\end{foundation}
+
+\newpage
+\bigskip\noindent
+\begin{foundation}
+  The energy-momentum tensor has 2 important properties: \\
+  \begin{itemize}
+    \textbf{(1) Symmetry:} $T^{\mu\nu} = T^{\nu\mu}$
+    \begin{itemize}
+      \item Reason 1: Energy flux and momentum density are equal, so $T^{0i} = T^{i0}$.
+      \item Reason 2: The stress tensor (bottom-right 3×3) is symmetric due to the conservation of angular momentum. If there were a torque, it would cause the material to rotate infinitely fast, which would violate the conservation of angular momentum.
+    \end{itemize}
+    \textbf{(2) Conservation:} $\partial_\mu T^{\mu\nu} = 0$ \\
+    \begin{itemize}
+      imagine a small box in space-time. The conservation law states that the amount of energy-momentum flowing into the box along the $\mu$-th direction must equal the amount flowing out along the $\nu$-th direction. This ensures that energy and momentum are conserved locally.
+    \end{itemize}
+  \end{itemize}
+\end{foundation}
+
+\bigskip\noindent
+\begin{importantnote}
+  The energy-momentum tensor is a symmetric so there are only 10 independent components at a single point in spacetime.\\
+
+  If we further consider the conservation law, we can reduce the number of degree of freedom to 6, as it provides 4 additional constraints on the components of the energy-momentum tensor.\\
+
+  (i.e. 10 independent components, with 4 constraints from conservation, leaves 6 degrees of freedom.)
+\end{importantnote}
+
+\bigskip\noindent
+\begin{remark}
+  In fact, for different type of fluids, the can have different number of degree of freedom, 6 is just the upper bound for a general fluid. For example, a perfect fluid has only 4 degree of freedom, which are the energy density(1) and pressure(1) and velocity(2), as it is isotropic and has no shear stress.
+\end{remark}
+
+\newpage
+\begin{theory}
+  For frictionless perfect fluid, the energy-momentum tensor can be written as:
+  \[
+    T^{\mu\nu} = (\rho + P) u^\mu u^\nu + P g^{\mu\nu},
+  \]
+  where $\rho$ is the energy density, $P$ is the pressure, and $u^\mu$ is the 4-velocity of the fluid.\\
+  WLOG, we can consider a comoving frame where the fluid is at rest, so $u^\mu = (1, 0, 0, 0)$, then we can simplify the energy-momentum tensor to:
+  \[
+    T^{\mu\nu} = \begin{pmatrix}
+      \rho & 0 & 0 & 0 \\
+      0 & P & 0 & 0 \\
+      0 & 0 & P & 0 \\
+      0 & 0 & 0 & P
+    \end{pmatrix}.
+  \]
+\end{theory}
+
+The perfect fluid is a good approximation for many astrophysical and cosmological systems, such as stars, galaxies, and the large-scale structure of the universe. As it is isotropic and has no shear stress, it can be used to model the behavior of matter in these systems without having to consider the complexities of viscosity and heat conduction.
+
+% =═════════════════════════════════════════════════════════════════════════════
+\newpage
+\section{Einstein Field Equations}
+
+% =═════════════════════════════════════════════════════════════════════════════
+\newpage
+\section{Cosmological Principle}
+
+The cosmological principle is a fundamental assumption in cosmology that states that the universe is homogeneous and isotropic on large scales. This means that the universe looks the same in all directions (isotropic) and has the same properties at every point (homogeneous) when viewed on sufficiently large scales.
 \clearpage

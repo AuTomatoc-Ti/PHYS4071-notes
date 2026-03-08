@@ -38,8 +38,8 @@
       \strng{authornamehash}{a567eedd3586ffc9f0058821e4244295}
       \strng{authorfullhash}{a567eedd3586ffc9f0058821e4244295}
       \strng{authorfullhashraw}{a567eedd3586ffc9f0058821e4244295}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{AIP Conference Proceedings}
@@ -47,6 +47,7 @@
       \field{title}{Value of the cosmological constant: Theory versus experiment}
       \field{volume}{586}
       \field{year}{2001}
+      \true{nocite}
       \field{pages}{316\bibrangedash 318}
       \range{pages}{3}
       \verb{doi}

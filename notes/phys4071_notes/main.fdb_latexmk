@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber main"] 1772906366.87948 "main.bcf" "main.bbl" "main" 1772967428.56224 0
-  "main.bcf" 1772967428.36909 107753 b9112550728606e26eb51c291ff2b742 "pdflatex"
+["biber main"] 1772976001.41131 "main.bcf" "main.bbl" "main" 1772983073.35498 0
+  "main.bcf" 1772983073.18055 107753 b9112550728606e26eb51c291ff2b742 "pdflatex"
   "references.bib" 1772897606.95913 344 b5214374ecef7105a938125dc66a0743 ""
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1772967425.12755 "main.tex" "main.pdf" "main" 1772967428.56275 0
+["pdflatex"] 1772983070.48826 "main.tex" "main.pdf" "main" 1772983073.3554 2
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1136849721 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -15,6 +15,7 @@
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/adobe/palatino/pplb8t.tfm" 1136768653 3456 16dd534f88eb2bd21ebc7203786b436e ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/adobe/palatino/pplbc8t.tfm" 1136768653 5772 ff7c7ca93964e1d935efb955c3d7ad7c ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/adobe/palatino/pplr7t.tfm" 1136768653 1804 7b5f73028f6509167f47ace9d69509ed ""
+  "/usr/local/texlive/2025/texmf-dist/fonts/tfm/adobe/palatino/pplr8c.tfm" 1136768653 1348 0e8eb69b4437626c0f6c9bed4a4e373c ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/adobe/palatino/pplr8r.tfm" 1136768653 2796 d37c29814a6717720ee1a7c9a0b2c3b8 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/adobe/palatino/pplr8t.tfm" 1136768653 3820 ee5b9d58608ae328e43c6e2bfd4ff851 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/adobe/palatino/pplrc8t.tfm" 1136768653 6396 8f2d6400481d3b17b3e6693d0adfe2c9 ""
@@ -50,6 +51,7 @@
   "/usr/local/texlive/2025/texmf-dist/fonts/vf/adobe/palatino/pplb8t.vf" 1136768653 2316 c3899bd8afb459a9a5a9a546bf3029a2 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/vf/adobe/palatino/pplbc8t.vf" 1136768653 3612 0205664e8a6f7d59ac2e3eb147448710 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/vf/adobe/palatino/pplr7t.vf" 1136768653 1380 037725697594405988999f61172f52de ""
+  "/usr/local/texlive/2025/texmf-dist/fonts/vf/adobe/palatino/pplr8c.vf" 1136768653 3504 f65f653e1ad318a9d01b4af15300683a ""
   "/usr/local/texlive/2025/texmf-dist/fonts/vf/adobe/palatino/pplr8t.vf" 1136768653 2324 a163806de13ddf37313d2ee968aa0a98 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/vf/adobe/palatino/pplrc8t.vf" 1136768653 3612 3b695ba1de8aa9e6cce1125ba31cb82d ""
   "/usr/local/texlive/2025/texmf-dist/fonts/vf/adobe/palatino/pplri8t.vf" 1136768653 2308 5bc0a90b83a3fd7d37d34ef3b64d7e8a ""
@@ -221,6 +223,7 @@
   "/usr/local/texlive/2025/texmf-dist/tex/latex/psnfss/ot1ppl.fd" 1137110629 961 06b773644d960aac68add40fcb596208 ""
   "/usr/local/texlive/2025/texmf-dist/tex/latex/psnfss/ot1zplm.fd" 1137110629 436 5e7baa1a259bab50a2bdffad6426f38c ""
   "/usr/local/texlive/2025/texmf-dist/tex/latex/psnfss/t1ppl.fd" 1137110629 774 5747d3f33ec2f7c4881c94e931a130b1 ""
+  "/usr/local/texlive/2025/texmf-dist/tex/latex/psnfss/ts1ppl.fd" 1137110629 619 35f1cf70bf09b6e2d22ee0902cfb1a8b ""
   "/usr/local/texlive/2025/texmf-dist/tex/latex/refcount/refcount.sty" 1576624809 9878 9e94e8fa600d95f9c7731bb21dfb67a4 ""
   "/usr/local/texlive/2025/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty" 1657483315 9714 ba3194bd52c8499b3f1e3eb91d409670 ""
   "/usr/local/texlive/2025/texmf-dist/tex/latex/tcolorbox/tcbbreakable.code.tex" 1729629551 34681 5ad5619477798e0585ce97e92ba075bc ""
@@ -254,15 +257,16 @@
   "/usr/local/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt" 1771512017 3345739 abd0a8b9c674b7727f5ea3c55ab83116 ""
   "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
   "chapters/appendix.tex" 1772910373.42657 5345 e69095533454978af7c9dca2a1178d94 ""
-  "chapters/ch01_fundamentals.tex" 1772967423.78958 16279 5292a1e4d0f2db2b267b67b7a71ea841 ""
-  "chapters/intro.tex" 1772953013.15947 10602 d659f56d7f438dc7e9376c61d0c11761 ""
-  "main.aux" 1772967428.36484 3003 177074f6f7c227e6347854a32c915413 "pdflatex"
-  "main.bbl" 1772906368.97959 2053 1a72faa3009771b67c4d59e8a3fab39a "biber main"
-  "main.out" 1772967428.36631 2983 65aa8df5cb7af3b4cdd28688b049fc1f "pdflatex"
-  "main.run.xml" 1772967428.36981 2339 701c5599c28a236675e0b8fb56d35042 "pdflatex"
+  "chapters/ch01_fundamentals.tex" 1772983057.69595 23573 5e620a612f9c637f10f374067f37a7b6 ""
+  "chapters/intro.tex" 1772970985.64724 10631 e5b5acb281eb2086a320726c04e8ff32 ""
+  "images/energy_momentum_tensor.png" 1772971618.23899 146608 0120beb59b83d1dfed09c22f97ad280a ""
+  "main.aux" 1772983073.16903 3577 ca7517c0d1b588e209fd8914da2da50d "pdflatex"
+  "main.bbl" 1772976003.01653 2073 5ae3d1df49f7197f0c1e1ad2c497cfd1 "biber main"
+  "main.out" 1772983073.17729 3517 80e367ddd1be431b457f86dc6d1ffdce "pdflatex"
+  "main.run.xml" 1772983073.18136 2339 1ed341041bd1fbe5a1f3b1992463a6cc "pdflatex"
   "main.tex" 1772911178.27735 5534 5bc3fe45da61e2fc494894a2f58cbe9e ""
-  "main.toc" 1772967428.3699 1448 04fae24fe5e689e9199c2227c86a5fd9 "pdflatex"
-  "preamble.tex" 1772909441.70527 13324 be54f765602a8aa3e7a0c445b8b8cfe9 ""
+  "main.toc" 1772983073.18144 1711 35bb50a4e7939ad97811572d791af261 "pdflatex"
+  "preamble.tex" 1772970847.245 13477 e7e2410f6c9fca8998fcefe61f917ce2 ""
   (generated)
   "main.aux"
   "main.bcf"
