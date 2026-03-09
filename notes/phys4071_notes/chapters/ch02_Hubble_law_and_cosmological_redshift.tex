@@ -1,0 +1,240 @@
+% ══════════════════════════════════════════════════════════════════════════════
+%  CHAPTER 2: Hubble's Law and Cosmological Redshift
+% ══════════════════════════════════════════════════════════════════════════════
+
+\chapter{Hubble's Law and Cosmological Redshift (lecture 3-4)}
+
+% ──────────────────────────────────────────────────────────────────────────────
+\section{Robertson-Walker Metric}
+\subsection{Metric for a Homogeneous and Isotropic Universe}
+\begin{intuition}
+    In general relativity, the geometry of spacetime can be curved. \\
+    Therefore, we need another metric instead of the Minkowski metric to describe the geometry of the universe. \\
+    The Robertson-Walker metric was hence introduced to describe a homogeneous and isotropic universe in large scales. 
+\end{intuition}
+
+\bigskip\noindent
+\begin{theory}
+    By the cosmological principle, the universe is homogeneous and isotropic on large scales. \\
+    In mathematics, there are only three possible spatial geometries that satisfy these conditions, defined by the constant curvature $k$:
+    \begin{itemize}
+        \item $k = 0$: flat geometry (Euclidean space)
+        \item $k > 0$: closed geometry (spherical space)   
+        \item $k < 0$: open geometry (hyperbolic space)
+    \end{itemize}
+
+    And we need to write the line element $dl^2$ for such a spacetime. \\
+    Note that the cosmological principle only states that the universe is homogeneous and isotropic, but it does not forbid the universe to expand or contract. \\
+    Therefore, we need to introduce a time-dependent scale factor $a(t)$ to describe the expansion of the universe. \\
+    \[
+        ds^2 = -dt^2 + a^2(t) dl^2
+    \]
+    To fullfill the isotropy condition, we will use spherical coordinates to write the spatial line element $dl^2$:
+    \[
+        dl^2 = g_{rr} dr^2 + g_{\theta\theta} d\theta^2 + g_{\phi\phi} d\phi^2
+    \]
+\end{theory}
+
+\bigskip\noindent
+\begin{foundation}
+    you may ask why we dont need to consider the cross terms like $g_{r\theta} dr d\theta$ in the line element. \\
+
+    The reason is that the cross terms would break the isotropy of the universe. For example, if we have a cross term like $g_{r\theta} dr d\theta$, it would mean that the radial distance between two points in the universe would depend on the direction we are looking at, which would violate the isotropy condition. \\
+    
+    Therefore, we can safely ignore the cross terms in the line element when we are considering a homogeneous and isotropic universe. 
+\end{foundation}
+
+\bigskip\noindent
+\begin{theory}
+    \textbf{Flat geometry ($k=0$):} \\
+    It is trivial to get the line element for flat geometry, which is just the Euclidean space:
+    \[
+        dl^2 = dr^2 + r^2 d\Omega^2 = dr^2 + r^2 (d\theta^2 + \sin^2\theta d\phi^2)
+    \]
+    which $d\Omega^2$ is the line element of a unit sphere(r = 1). \\
+    Hence, the metric for a flat universe is:
+    \[
+        ds^2 = -dt^2 + a^2(t) [dr^2 + r^2 d\Omega^2] = -dt^2 + a^2(t) \left[ dr^2 + r^2 (d\theta^2 + \sin^2\theta d\phi^2) \right]
+    \]
+
+    However, for the closed and open geometry, the coefficient of $d\Omega^2$ is not $r^2$, but a function of $r$. \\
+
+    \textbf{Closed geometry ($k > 0$):} \\
+    To get the line element for closed geometry like spherical space, we first consider a 3-sphere embedded in a 4-dimensional Euclidean space, which can be described by the equation:
+    \[
+        x^2 + y^2 + z^2 + w^2 = R^2
+    \]
+    where $R$ is the radius of the 3-sphere. \\
+    We can then use spherical coordinates to parameterize the 3-sphere:
+    \[
+        \begin{cases}
+            x = R \sin\chi \sin\theta \cos\phi \\
+            y = R \sin\chi \sin\theta \sin\phi \\
+            z = R \sin\chi \cos\theta \\
+            w = R \cos\chi
+        \end{cases}
+    \]
+    where $\chi$ is the radial coordinate that ranges from 0 to $\pi$. \\
+    And we can get the metric components:
+    \[
+        \begin{cases}
+            g_{\chi\chi} = \frac{\partial}{\partial \chi} (x, y, z, w) \cdot \frac{\partial}{\partial \chi} (x, y, z, w) = R^2 \\
+            g_{\theta\theta} = \frac{\partial}{\partial \theta} (x, y, z, w) \cdot \frac{\partial}{\partial \theta} (x, y, z, w) = R^2 \sin^2\chi \\
+            g_{\phi\phi} = \frac{\partial}{\partial \phi} (x, y, z, w) \cdot \frac{\partial}{\partial \phi} (x, y, z, w) = R^2 \sin^2\chi \sin^2\theta
+        \end{cases}
+    \]
+    The line element for the 3-sphere can then be derived as:
+    \[
+        dl^2 = R^2 \left[ d\chi^2 + \sin^2\chi (d\theta^2 + \sin^2\theta d\phi^2) \right]
+    \]
+    Hence, the metric for a closed universe is:
+    \[
+        ds^2 = -dt^2 + a^2(t) R^2 \left[ d\chi^2 + \sin^2\chi (d\theta^2 + \sin^2\theta d\phi^2) \right]
+    \]  
+    \\
+    
+    \textbf{Open geometry ($k < 0$):} \\
+    To get the line element for open geometry like hyperbolic space, we can consider a 3-hyperboloid embedded in a 4-dimensional Minkowski space, which can be described by the equation:
+    \[
+        -x^2 - y^2 - z^2 + w^2 = R^2
+    \]
+    where $R$ is the radius of curvature of the hyperbolic space. \\
+    We can then use hyperbolic coordinates to parameterize the 3-hyperboloid:
+    \[
+        \begin{cases}
+            x = R \sinh\chi \sin\theta \cos\phi \\ 
+            y = R \sinh\chi \sin\theta \sin\phi \\
+            z = R \sinh\chi \cos\theta \\
+            w = R \cosh\chi
+        \end{cases}
+    \]
+    where $\chi$ is the radial coordinate that ranges from 0 to $\infty$. \\
+    And we can get the metric components:
+    \[
+        \begin{cases}
+            g_{\chi\chi} = \frac{\partial}{\partial \chi} (x, y, z, w) \cdot \frac{\partial}{\partial \chi} (x, y, z, w) = R^2 \\
+            g_{\theta\theta} = \frac{\partial}{\partial \theta} (x, y, z, w) \cdot \frac{\partial}{\partial \theta} (x, y, z, w) = R^2 \sinh^2\chi \\
+            g_{\phi\phi} = \frac{\partial}{\partial \phi} (x, y, z, w) \cdot \frac{\partial}{\partial \phi} (x, y, z, w) = R^2 \sinh^2\chi \sin^2\theta
+        \end{cases}
+    \]
+    The line element for the 3-hyperboloid can then be derived as:
+    \[
+        dl^2 = R^2 \left[ d\chi^2 + \sinh^2\chi (d\theta^2 + \sin^2\theta d\phi^2) \right]
+    \]
+    Hence, the metric for an open universe is:
+    \[
+        ds^2 = -dt^2 + a^2(t) R^2 \left[ d\chi^2 + \sinh^2\chi (d\theta^2 + \sin^2\theta d\phi^2) \right]
+    \]
+\end{theory}
+
+% -─────────────────────────────────────────────────────────────────────────────
+\newpage
+\subsection{Robertson-Walker metric}
+\begin{intuition}
+    In order to be simplified, we want to make a unified form of the metric for all three types of geometry. \\
+\end{intuition}
+
+\bigskip\noindent
+\begin{theory}
+    \textbf{Unified form:} \\
+    \[
+        \begin {pmatrix}
+            g_{tt} & 0 & 0 & 0 \\
+            0 & g_{rr} & 0 & 0 \\
+            0 & 0 & g_{\theta\theta} & 0 \\
+            0 & 0 & 0 & g_{\phi\phi}
+        \end{pmatrix} = \begin{pmatrix}
+            -1 & 0 & 0 & 0 \\
+            0 & \frac{a^2(t)}{1 - kr^2} & 0 & 0 \\
+            0 & 0 & a^2(t) r^2 & 0 \\
+            0 & 0 & 0 & a^2(t) r^2 \sin^2\theta
+         \end{pmatrix}
+
+    \]
+    where $k$ is the curvature constant that can take values of 0, 1, or -1 for flat, closed, and open geometries, respectively. \\
+    And we defined the r: \\
+    \[
+        r = \begin{cases}
+            \chi & ,k = 0 \\
+            \sin\chi & ,k > 0 \\
+            \sinh\chi & ,k < 0
+        \end{cases}
+    \]
+\end{theory}
+
+\bigskip\noindent
+\begin{foundation}
+    By the substitution of $r$ into the unified metric and letting the unit $R = 1$, you can easily to get the $d\theta^2$ and $d\phi^2$ terms of 3 types of geometries, and get the corresponding $dr^2$ term by using the chain rule: \\
+    \[
+        dr^2 = \begin{cases}
+            d\chi^2 & ,k = 0 \\
+            \cos^2\chi d\chi^2 & ,k > 0 \\
+            \cosh^2\chi d\chi^2 & ,k < 0
+        \end{cases} \\
+
+        \center \Rightarrow \frac{dr^2}{1 - kr^2} = \begin{cases}
+            d\chi^2 & ,k = 0 \\
+            d\chi^2 & ,k > 0 \\
+            d\chi^2 & ,k < 0
+        \end{cases}
+
+    \]
+\end{foundation}
+
+\newpage
+And this unified metric is called the \textbf{Robertson-Walker metric}, which can be written as:
+\[
+    ds^2 = -dt^2 + a^2(t) \left[ \frac{dr^2}{1 - kr^2} + r^2 (d\theta^2 + \sin^2\theta d\phi^2) \right]
+\]
+
+\bigskip\noindent
+\begin{remark}
+    In modern cosmology, we will use Friedmann-Lemaître-Robertson-Walker (FLRW) metric, but they are essentially the same, the FLRW metric derived from the Einstein field equations instead of geometry approach like the Robertson-Walker metric, and is used for explaining the dynamics of the universe, while the Robertson-Walker metric is used for describing the geometry of the universe.
+\end{remark}
+
+% -─────────────────────────────────────────────────────────────────────────────
+%\clearpage
+\bigskip\noindent
+\subsection{the scale factor $a(t)$ in the Robertson-Walker metric}
+\begin{intuition}
+    Now we get the Robertson-Walker metric, and we know that through "time" the scale factor $a(t)$ can change, and the metric can be different at different time, which means the proper distance between two points in the universe can change with time.\\
+
+    But what the "time" here means? Isn't the special relativity tells us that there is no absolute time? \\
+    The "time" here is the proper time of comoving observers, which are observers that are at rest with respect to the expansion of the universe. \\
+    For comoving observers, the proper time $\tau$ is the same as the coordinate time $t$.
+\end{intuition}
+
+\bigskip\noindent
+\begin{intuition}
+    As the scale factor $a(t)$ applied on the metric instead of the coordinates difference $dr$, $d\theta$, and $d\phi$, we can think the measurement of coordinate spatial distance is fixed, but the measurement unit (the ruler itself) is changing with time. \\
+
+    \[
+        \Delta D_{proper} = a(t) \Delta D_{coordinate}
+    \]
+    \\
+
+    For example, if we have 2 points on balloon, we draw the marks on the balloon to measure the distance between the two points, when the balloon is expanding, the number of marks between the two points is fixed, but the distance between each mark is increasing with time, which means the proper distance between the two points is increasing with time. \\
+
+\end{intuition}
+
+\begin{figure}[htbp]
+        \centering
+        \includegraphics[width=0.65\textwidth]{images/balloon_expansion.png}
+        \caption{The balloon analogy for the expansion of the universe.}
+\end{figure}
+
+\bigskip\noindent
+\begin{remark}
+    Although scale factor $a(t)$ can change with time, we assume that the curvature constant $k$ does not change with time, which means the geometry of the universe is fixed. \\
+\end{remark}
+
+
+% ═════════════════════════════════════════════════════════════════════════════
+\newpage
+\section{Hubble's Law}
+\subsection{redshift and recession velocity}
+
+
+
+
+\clearpage
