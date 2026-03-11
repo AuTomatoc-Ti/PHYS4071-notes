@@ -23,22 +23,27 @@
 \contentsline {chapter}{\numberline {5}Thermodynamics and Primordial Soup (Lecture 9-12)}{30}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Statistical Distributions}{30}{section.5.1}%
 \contentsline {subsection}{\numberline {5.1.1}Energy-Momentum Relation}{30}{subsection.5.1.1}%
-\contentsline {subsection}{\numberline {5.1.2}Chemical Potential}{30}{subsection.5.1.2}%
+\contentsline {subsection}{\numberline {5.1.2}Chemical Potential}{31}{subsection.5.1.2}%
 \contentsline {subsection}{\numberline {5.1.3}Thermal Equilibrium Distributions}{32}{subsection.5.1.3}%
 \contentsline {section}{\numberline {5.2}Number Density, Energy Density, and Pressure}{33}{section.5.2}%
 \contentsline {subsection}{\numberline {5.2.1}Spin Degeneracy Factor}{33}{subsection.5.2.1}%
 \contentsline {subsection}{\numberline {5.2.2}Derivation of the 3 equations}{33}{subsection.5.2.2}%
 \contentsline {section}{\numberline {5.3}Effective Number of Relativistic DOF}{36}{section.5.3}%
-\contentsline {chapter}{\numberline {6}Big Bang Nucleosynthesis (Lecture 13-14)}{38}{chapter.6}%
-\contentsline {chapter}{\numberline {7}Cosmic Microwave Background (Lecture 15-19)}{39}{chapter.7}%
-\contentsline {chapter}{\numberline {8}Dark Matter (Lecture 20-22)}{40}{chapter.8}%
-\contentsline {chapter}{\numberline {9}Inflation (Lecture 23-24)}{41}{chapter.9}%
-\contentsline {chapter}{\numberline {A}Declaration of AI Assistance}{42}{appendix.A}%
-\contentsline {section}{\numberline {A.1}Use of Artificial Intelligence in This Document}{42}{section.A.1}%
-\contentsline {chapter}{\numberline {B}Mathematical Tools \& Derivations}{43}{appendix.B}%
-\contentsline {section}{\numberline {B.1}Useful Identities}{43}{section.B.1}%
-\contentsline {section}{\numberline {B.2}Differential Geometry Primer}{44}{section.B.2}%
-\contentsline {chapter}{\numberline {C}Constants \& Conversion Factors}{45}{appendix.C}%
-\contentsline {section}{\numberline {C.1}Physical Constants}{45}{section.C.1}%
-\contentsline {section}{\numberline {C.2}Conversion Factors}{45}{section.C.2}%
-\contentsline {section}{\numberline {C.3}SI Unit Prefixes}{46}{section.C.3}%
+\contentsline {section}{\numberline {5.4}Entropy}{37}{section.5.4}%
+\contentsline {subsection}{\numberline {5.4.1}Definition of Entropy}{37}{subsection.5.4.1}%
+\contentsline {subsection}{\numberline {5.4.2}Conservation of Entropy}{41}{subsection.5.4.2}%
+\contentsline {subsection}{\numberline {5.4.3} $g_*$ and $g_{*s}$ in the early universe}{43}{subsection.5.4.3}%
+\contentsline {chapter}{\numberline {6}Big Bang Nucleosynthesis (Lecture 13-14)}{46}{chapter.6}%
+\contentsline {chapter}{\numberline {7}Cosmic Microwave Background (Lecture 15-19)}{47}{chapter.7}%
+\contentsline {chapter}{\numberline {8}Dark Matter (Lecture 20-22)}{48}{chapter.8}%
+\contentsline {chapter}{\numberline {9}Inflation (Lecture 23-24)}{49}{chapter.9}%
+\contentsline {chapter}{\numberline {A}Declaration of AI Assistance}{50}{appendix.A}%
+\contentsline {section}{\numberline {A.1}Use of Artificial Intelligence in This Document}{50}{section.A.1}%
+\contentsline {chapter}{\numberline {B}Mathematical Tools \& Derivations}{51}{appendix.B}%
+\contentsline {section}{\numberline {B.1}Useful Identities}{51}{section.B.1}%
+\contentsline {section}{\numberline {B.2}Differential Geometry Primer}{52}{section.B.2}%
+\contentsline {section}{\numberline {B.3}Relativistic Limits}{52}{section.B.3}%
+\contentsline {chapter}{\numberline {C}Constants \& Conversion Factors}{53}{appendix.C}%
+\contentsline {section}{\numberline {C.1}Physical Constants}{53}{section.C.1}%
+\contentsline {section}{\numberline {C.2}Conversion Factors}{53}{section.C.2}%
+\contentsline {section}{\numberline {C.3}SI Unit Prefixes}{54}{section.C.3}%

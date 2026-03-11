@@ -3,6 +3,9 @@
 % ══════════════════════════════════════════════════════════════════════════════
 
 \chapter{Thermodynamics and Primordial Soup (Lecture 9-12)}
+To get the factors of energy density of radiation and matter, so that we can know the Evolution of the universe in a more general way, we will need to find out how radiation and matter mixture evolves.\\
+
+Thermodynamics allow us to know the contribution of different particle species to the total energy density of the universe, and thus determine the expansion rate and thermal history of the universe.\\
 
 % ──────────────────────────────────────────────────────────────────────────────
 \section{Statistical Distributions}
@@ -220,19 +223,6 @@ It is because in the thermal plasma, the energy of particle are $ E \sim T$, and
 \end{theory}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 % ──────────────────────────────────────────────────────────────────────────────
 \clearpage
 \section{Effective Number of Relativistic DOF}
@@ -258,12 +248,13 @@ It is because in the thermal plasma, the energy of particle are $ E \sim T$, and
     Note the above equation is only valid in early universe which radiation dominates. When universe cools down and matter dominates, the energy density will be dominated by non-relativistic particles, and above equation will no longer valid. In that case, we need to consider the contribution of non-relativistic particles to the energy density, which is given by $\rho_i = n_i m_i$.
 \end{importantnote}
 
-\clearpage
-%\bigskip\noindent
+
+\bigskip\noindent
 \begin{remark}
     $g_*$ is depends on T(i.e. $g_*(T)$), as the sum runs over only relativistic species, with $m_i \ll T$. As the universe cools down, more and more species become non-relativistic and drop out of the sum, thus $g_*$ decreases with time.
 \end{remark}
 
+\clearpage
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.8\textwidth]{images/g*_evolution.png}
@@ -271,3 +262,326 @@ It is because in the thermal plasma, the energy of particle are $ E \sim T$, and
     \label{fig: The evolution of $g_*$ as a function of temperature}
 \end{figure}
 
+\begin{extra}
+    In fact, the above equation of $g_*$ assume that all particles are not decoupled and in same temperature, to be more general, we need to consider the contribution of decoupled particles with different temperature, and the equation will be:
+    \[
+        g_*(T) = \sum_{\text{bosons}} g_i \left( \frac{T_i}{T} \right)^4 + \frac{7}{8} \sum_{\text{fermions}} g_i \left( \frac{T_i}{T} \right)^4
+    \]
+\end{extra}
+
+
+
+% =═════════════════════════════════════════════════════════════════════════════
+\bigskip\noindent \bigskip\noindent \bigskip\noindent
+\section{Entropy}
+\subsection{Definition of Entropy}
+\begin{intuition}
+    Far from above topic, we only discuss the macrostate of a system(e.g., temperature, pressure, volume), but we haven't discussed the microstate of a system, which is the specific configuration of particles(i.e. the positions and momenta of every particles) that make up the system. \\
+
+    In a given macrostate, there can be many different microstates that correspond to the same macrostate. For example, a macrostate of 2 coins combined with 1 H and 1 T can be achieved by 2 different microstates: HT and TH. While a macrostate of 2 coins combined with 2 H can only be achieved by 1 microstate: HH. \\
+
+    The entropy of a system is a measure of the number of microstates that correspond to a given macrostate. The more microstates there are, the higher the entropy. \\
+
+    In the context of thermodynamics, the concentrated energy or particles(mass) in a small region of space has low entropy, while the dispersed energy or particles in a large region of space has high entropy. \\
+\end{intuition}
+
+\bigskip\noindent
+\begin{foundation}
+    State Function is function of state variables, which only depends on the current state of the system, and is independent of the path taken to reach that state. \\
+    Below are some examples of state functions:
+    \begin{itemize}
+        \item Internal Energy (U)
+        \item Volume (V)
+        \item Particle Number (N)
+        \item Temperature (T)
+    \end{itemize}
+
+    And the Entropy (S) is also a state function.
+\end{foundation}
+
+\begin{remark}
+    The entropy value is not absolute, but relative. We can only measure the change of entropy $\Delta S$ between two states, but not the absolute value of entropy $S$ itself. \\
+    
+    This is because the absolute value of entropy depends on the choice of reference state, which is arbitrary. For example, we can choose the reference state to be the state of zero entropy, which corresponds to a perfectly ordered system with only one microstate. \\
+
+    In that case, the entropy of any other state will be positive, and the change in entropy $\Delta S$ will be equal to the absolute value of entropy $S$ for that state. However, if we choose a different reference state, the absolute value of entropy will be different, but the change in entropy $\Delta S$ between two states will remain the same, as it only depends on the difference in the number of microstates between the two states, which is independent of the choice of reference state.
+\end{remark}
+
+\clearpage
+%\bigskip\noindent
+\begin{foundation}
+    There is 2 different definitions of entropy depending on the context:
+    \begin{itemize}
+        \item \textbf{classical thermodynamics definition:} 
+        \[
+            dS = \frac{dQ}{T}
+        \]
+        where $dQ$ is the heat added to the system, and $T$ is the temperature of the system. \\
+
+        It is based on the idea below: \\
+        For a system, if we add heat$(dQ)$, the system gain more energy, and particles in the system will have more energy to move around, which allow them to access more velocities microstates. Thus, the number of microstates accessible to the system will increase, which means the entropy of the system will increase. \\
+        \[
+            dS \propto dQ
+        \]
+        On the other hand, if the system has higher temperature, the average energy of particles in the system already high, and their already larger number of microstates accessible to them. Thus, adding the same amount of heat $dQ$ to a system with higher temperature will result in a smaller increase in the number of microstates, and thus a smaller increase in entropy. \\
+        \[
+            dS \propto \frac{1}{T}
+        \]
+        \\
+        \\
+        \item \textbf{statistical mechanics definition:}
+        \[
+            S = k_B \ln \Omega
+        \]
+        where $k_B$ is the Boltzmann constant, and $\Omega$ is the number of microstates corresponding to the macrostate of the system. \\
+
+        It is based on the idea below: \\
+        Entropy$(S)$ has extensive property, which means that if we have two independent systems A and B, the total entropy of the combined system is the sum of the entropies of the individual systems:
+        \[
+            S_{\text{total}} = S_A + S_B
+        \]
+        On the other hand, the number of microstates$(\Omega)$ has multiplicative property, which means that if we have two independent systems A and B, the total number of microstates of the combined system is the product of the number of microstates of the individual systems:
+        \[
+            \Omega_{\text{total}} = \Omega_A \cdot \Omega_B
+        \]
+         Therefore, to fulfill both properties, we can define the entropy as the logarithm of the number of microstates:
+        \[
+            S \propto \ln \Omega
+        \]
+    \end{itemize}
+\end{foundation}
+
+% proof of 2nd law of thermodynamics
+\bigskip\noindent
+Now we can use the above definition of entropy to prove the 2nd law of thermodynamics.
+\begin{foundation}
+    Start from Carnot cycle, assume we have a reversible carnot engine operating between two heat reservoirs at temperatures $T_H$ and $T_C$ ($T_H > T_C$). \\
+    \[
+        \text{Efficiency} \eta = 1 - \frac{T_C}{T_H} = 1 - \frac{Q_C}{Q_H}
+        \frac{Q_C}{T_C} = \frac{Q_H}{T_H}
+    \]
+    In a complete cycle:
+    \[
+        \oint_\text{rev} \frac{dQ}{T} = 0
+    \]
+    Note carnot cycle is theoretical most efficient engine, which means for any cycle:
+    \[
+        \oint \frac{dQ}{T} \leq 0
+    \]
+    And for a heat loss irreversible process, we have:
+    \[
+        \oint_\text{irr} \frac{dQ}{T} < 0
+    \]
+
+    So only if the process is reversible, the change in entropy will be equal to the integral of $dQ/T$; \\
+
+    And if the process is irreversible, the change in entropy will be greater than the integral of $dQ/T$, or equivalently, the integral of $dQ/T$ will be less than the change in entropy due to the heat loss in the irreversible process.
+\end{foundation}
+
+\clearpage
+%\bigskip\noindent
+\begin{theory}
+    The 2nd law of thermodynamics can been expressed by the general entropy inequality:
+    \[
+        \Delta S = S_{\text{final}} - S_{\text{initial}} \geq \int_{\text{initial}}^{\text{final}} \frac{dQ}{T} |_{\text{path}}
+    \]
+    where $\Delta S$ is the change in entropy of the system, \\
+    If the process is reversible, then lhs is $=$ to rhs;\\
+    and if the process is irreversible, then lhs is $>$ than rhs. \\
+
+    In an isolated system, there is no heat exchange with the surroundings, so $dQ = 0$, thus the inequality reduces to:
+    \[
+        \Delta S_{\text{isolated}} \geq 0
+    \]
+    and we get:
+    \[
+        \begin{cases}
+            \Delta S = 0 & ,\text{for reversible processes} \\
+            \Delta S > 0 & ,\text{for irreversible processes}
+        \end{cases}
+    \]
+\end{theory}
+
+\bigskip\noindent
+\begin{intuition}
+    According to the second law of thermodynamics, the total entropy of an isolated system can never decrease over time, which means that the universe tends to evolve towards states with higher entropy. \\
+    
+    In the macro level, it shows the universe tends to spread out energy and matter, and become more homogeneous and isotropic over time.
+\end{intuition}
+
+%─────────────────────────────────────────────────────────────────────────────
+%\clearpage
+\bigskip\noindent \bigskip\noindent \bigskip\noindent
+\subsection{Conservation of Entropy}
+%why entropy is conserved?
+\begin{intuition}
+    Assuming the universe is an isolated system (adiabatic), by 2nd law of thermodynamics, the total entropy of the universe is either constant or increasing over time. \\
+
+    Further, if we assume the evolution of the universe is quasi-static and reversible, thats mean the universe evolves through a series of equilibrium states, and there is no heat exchange with the surroundings, so the $\Delta S$ of the universe is zero, and entropy is conserved. \\
+\end{intuition}
+
+\bigskip\noindent
+\begin{theory}
+    The fundamental thermodynamic relation is given by:
+    \[
+        dU = TdS - PdV + \mu dN
+    \]
+    by rearranging the above equation, we can get:
+    \[
+        dS = \frac{dU + PdV - \mu dN}{T} 
+    \]
+    or
+    \[
+        s = \frac{\rho + p}{T},
+    \]
+    where $s = \frac{dS}{dV}$, $\rho = \frac{dU}{dV}$, and $p$ are the equilibrium entropy density, energy density, and pressure of the system respectively. \\
+
+    In a more general case, considering $U = \rho V$ and $V \propto a^3$, and assuming $\mu = 0$, we can get:
+    \begin{align*}
+        dU &= Tds - pdV\\
+        d\rho V + \rho dV &= Tds - pdV \\
+        T\frac{ds}{dt} &= V \frac{d\rho}{dt} + (\rho + p) \frac{dV}{dt} \\
+    \end{align*}
+    By substituting the continuity equation $\frac{d\rho}{dt} = -3H(\rho + p)$ into the above equation, we can get:
+    \begin{align*}
+        T\frac{ds}{dt}
+        &= V (-3H(\rho + p)) + 3H V (\rho + p) \\
+        &= 0
+    \end{align*}
+    Thus:
+    \[
+        \frac{ds}{dt} = 0
+    \]
+    which match our intuition that the entropy is conserved in the universe.
+\end{theory}
+
+%derivation of entropy density in early universe
+\bigskip\noindent
+And by knowing the relationship between energy density and entropy density, we can derive the effective number of relativistic degrees of freedom for entropy density $g_{*s}(T)$ in the early universe.
+\begin{theory}
+    For a relativistic particle species in thermal equilibrium, we have:
+    \[
+        \rho = \frac{\pi^2}{30} g_*(T) T^4, \
+    \]
+    and using:
+    \[
+        s = \frac{\rho + p}{T},
+    \]
+    we get:
+    \[
+        s = \frac{2\pi^2}{45} g_{*s}(T) T^3,
+    \]
+    where $g_{*s}(T)$ is the effective number of relativistic degrees of freedom for entropy density, which is defined as:
+    \[
+        g_{*s}(T) = \sum_{\text{bosons}} g_i + \frac{7}{8} \sum_{\text{fermions}} g_i
+    \]
+\end{theory}
+
+\bigskip \noindent
+From the above equation, we can get the entropy conservation in another way:
+\begin{foundation}
+    Assume all particles remains relativistic and not decoupled when universe evolves, we have $g_{*s}(T) = \text{constant}$, thus we can get:
+    \[
+        \rho \propto T^4, 
+    \]
+    Recall:
+    \[
+        \rho \propto a^{-4},
+    \]
+    we can get:
+    \[
+        T \propto a^{-1},
+    \] \\
+
+    At the same time, we also know that:
+    \[
+        s \propto T^3,
+    \]
+    Therefore:
+    \[
+        s V \propto s a^3 = \frac{2\pi^2}{45} g_{*s}(T) T^3 a^3 = \text{constant}
+    \]
+\end{foundation}
+
+%─────────────────────────────────────────────────────────────────────────────────────────────
+\bigskip\noindent \bigskip\noindent \bigskip\noindent
+\subsection{ $g_*$ and $g_{*s}$ in the early universe}
+\begin{foundation}
+    In the early universe, if we assume all standard model particles are relativistic and in thermal equilibrium, we can calculate the effective number of relativistic degrees of freedom for energy density $g_*(T)$ and for entropy density $g_{*s}(T)$ : \\
+    
+    \textbf{(1) For bosons:}
+    \begin{itemize}
+        \item Photon: $g_\gamma = 2$ \\(2 polarization states)
+        \item Gluons: $g_g = 2 \times 8 = 16$ \\(2 polarization states $\times$ 8 color states)
+        \item W$\pm$ bosons: $g_W = 3 \times 2 = 6$ \\(3 spin states $\times$ 2 charge states)
+        \item Z boson: $g_Z = 3$ \\(3 spin states)
+        \item Higgs boson: $g_H = 1$ \\(1 spin state)
+    \end{itemize} \\ \\
+
+    \textbf{(2) For fermions:}
+    \begin{itemize}
+        \item leptons ((e, $\mu$, $\tau$), ($e^+$, $\mu^+$, $\tau^+$)): $g_l = 2 \times 3 \times 2 = 12$ \\(2 spin states $\times$ 3 generations $\times$ 2 charge states)
+        \item Neutrinos ($\nu_e$, $\nu_\mu$, $\nu_\tau$): $g_{\nu} = 2 \times 3 = 6$ \\(2 spin states $\times$ 3 generations, but neutrinos anti-particles are itself, so no charge states)
+        \item Quarks ((u, d, c, s, t, b), ($\bar{u}$, $\bar{d}$, $\bar{c}$, $\bar{s}$, $\bar{t}$, $\bar{b}$)): $g_q = 2 \times 3 
+        \times 6 \times 2 = 72$ \\(2 spin states $\times$ 3 color states $\times$ 6 flavors $\times$ 2 charge states)
+    \end{itemize} \\    
+
+    By summing over all relativistic species, we can get:
+    \begin{align*}
+        g_b &= 2 + 16 + 6 + 3 + 1 = 28, \\
+        g_f &= 12 + 6 + 72 = 90
+    \end{align*}
+    And thus we can get:
+    \[
+        g_*(T) = g_{*s}(T) = g_b + \frac{7}{8} g_f = 28 + \frac{7}{8} \times 90 = 106.75
+    \]
+\end{foundation}
+
+\bigskip\noindent
+\begin{theory}
+    \textbf{In early universe}, by only considering particles in standard model, and assuming all particles are relativistic and not decoupled to other particles, we can get:
+    \[
+        g_*(T) = g_{*s}(T) = 106.75
+    \]
+\end{theory}
+
+\clearpage
+\begin{importantnote}
+    The equivalence of $g_*(T) = g_{*s}(T)$ is only valid in the early universe that particles are not decoupled to other particles. 
+
+    Again, if we consider the contribution of decoupled particles with different temperature, the equation will be:
+    \[
+        \begin{cases}
+            g_*(T) = \sum_{\text{bosons}} g_i \left( \frac{T_i}{T} \right)^4 + \frac{7}{8} \sum_{\text{fermions}} g_i \left( \frac{T_i}{T} \right)^4 \\
+            g_{*s}(T) = \sum_{\text{bosons}} g_i \left( \frac{T_i}{T} \right)^3 + \frac{7}{8} \sum_{\text{fermions}} g_i \left( \frac{T_i}{T} \right)^3
+        \end{cases}
+    \]
+    and thus $g_*(T)$ and $g_{*s}(T)$ will no longer be equal, as they have different power of temperature ratio.
+\end{importantnote}
+
+
+\bigskip\noindent
+\begin{example}{Current Entropy Density of the Universe}{}
+    In the universe nowadays, the entropy density is dominated by photons bath due to its huge amount compared to other particles. \\
+    What is the current entropy density of the universe? \\
+
+    \bigskip\textbf{Solution.}\quad \\
+    Given the temperature of CMB is $T_\text{CMB} \approx 2.725\,\mathrm{K} \approx 2.348\, \mathrm{eV}$, only photons and neutrinos are still relativistic, thus we only need to consider the contribution of photons and neutrinos to the entropy density of the universe. \\
+    
+    Degeneracy factor of photon:
+    \[
+        g_\gamma = 2
+    \]
+    and degeneracy factor of neutrinos:
+    \[
+        g_\nu = 2 \times 3 = 6
+    \]
+    Note due to $e^+e^-$ annihilation only heating the protons but not neutrinos, the temperature of neutrinos is lower than that of photons by a factor of $(4/11)^{1/3}$, by considering this, we can get:
+    \[
+        g_{*s}(T_\text{CMB}) = g_\gamma + \frac{7}{8} g_\nu \left( \frac{T_\nu}{T_\text{CMB}} \right)^3 = 2 + \frac{7}{8} \times 6 \times \left( \frac{4}{11} \right) = 3.909
+    \]
+    thus we can calculate the current entropy density of the universe as:
+    \[
+        s_0 = \frac{2\pi^2}{45} g_{*s}(T_\text{CMB}) T_\text{CMB}^3 \approx 2.889 \times 10^9 \, \mathrm{m}^{-3}
+    \]
+\end{example}
