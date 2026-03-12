@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2026.2.19)  12 MAR 2026 10:46
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2026.2.19)  12 MAR 2026 11:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1718,16 +1718,53 @@ or  <return>  to continue without it.
 [30
 
 ]
-<images/particles_mass.png, id=451, 739.76375pt x 433.62pt>
-File: images/particles_mass.png Graphic file (type png)
-<use images/particles_mass.png>
-Package pdftex.def Info: images/particles_mass.png  used on input line 94.
-(pdftex.def)             Requested size: 262.90604pt x 154.10489pt.
-) (./chapters/ch05_thermodynamics_and_primordial_soup.tex
+Underfull \hbox (badness 10000) in paragraph at lines 74--75
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 76--78
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 81--82
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 90--91
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 92--93
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 94--95
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 96--97
+
+ []
+
+
 
 [31
 
- <./images/particles_mass.png>]
+]
+<images/particles_mass.png, id=456, 739.76375pt x 433.62pt>
+File: images/particles_mass.png Graphic file (type png)
+<use images/particles_mass.png>
+Package pdftex.def Info: images/particles_mass.png  used on input line 112.
+(pdftex.def)             Requested size: 350.53915pt x 205.46878pt.
+) (./chapters/ch05_thermodynamics_and_primordial_soup.tex
+
+[32 <./images/particles_mass.png>]
 Chapter 5.
 
 Underfull \hbox (badness 10000) in paragraph at lines 6--7
@@ -1751,7 +1788,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 20--22
 
 
 
-[32
+[33
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 44--45
@@ -1760,7 +1797,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 44--45
 
 
 
-[33]
+[34]
 
 ! LaTeX Error: There's no line here to end.
 
@@ -1776,7 +1813,7 @@ or  <return>  to continue without it.
 
 
 
-[34
+[35
 
 ]
 
@@ -1807,7 +1844,7 @@ or  <return>  to continue without it.
 
 
 
-[35
+[36
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 174--174
@@ -1826,14 +1863,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 174--175
 
 
 
-[36]
+[37]
 Underfull \hbox (badness 10000) in paragraph at lines 220--221
 
  []
 
 
 
-[37]
+[38]
 Underfull \hbox (badness 10000) in paragraph at lines 233--235
 
  []
@@ -1849,10 +1886,10 @@ and I'll forget about whatever was undefined.
 
 
 
-[38
+[39
 
 ]
-<images/g*_evolution.png, id=489, 739.76375pt x 457.71pt>
+<images/g*_evolution.png, id=493, 739.76375pt x 457.71pt>
 File: images/g*_evolution.png Graphic file (type png)
 <use images/g*_evolution.png>
 Package pdftex.def Info: images/g*_evolution.png  used on input line 260.
@@ -1879,7 +1916,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 285--286
 
 
 
-[39
+[40
 
  <./images/g*_evolution.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 303--304
@@ -1893,7 +1930,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 305--306
 
 
 
-[40]
+[41]
 Underfull \hbox (badness 10000) in paragraph at lines 318--320
 
  []
@@ -1925,7 +1962,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 335--337
 
 
 
-[41
+[42
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 358--359
@@ -1939,7 +1976,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 376--377
 
 
 
-[42]
+[43]
 Underfull \hbox (badness 10000) in paragraph at lines 387--391
 
  []
@@ -1966,11 +2003,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 436--438
 
 
 
-[43
+[44
 
 ]
 
-[44]
+[45]
 Underfull \hbox (badness 10000) in paragraph at lines 494--495
 
  []
@@ -2045,51 +2082,63 @@ or  <return>  to continue without it.
 
 
 
-[45]
-
 [46]
-Underfull \hbox (badness 10000) in paragraph at lines 565--567
+
+[47]
+Underfull \hbox (badness 10000) in paragraph at lines 564--565
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 568--570
+Underfull \hbox (badness 10000) in paragraph at lines 566--568
 
  []
 
-) (./chapters/ch06_Big_Bang_nucleosynthesis.tex
 
-[47
+Underfull \hbox (badness 10000) in paragraph at lines 572--574
 
-]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 575--577
+
+ []
+
+
+
+[48
+
+]) (./chapters/ch06_Big_Bang_nucleosynthesis.tex
+
+[49]
 Chapter 6.
 ) (./chapters/ch07_Cosmic_Microwave_Background.tex
 
-[48
+[50
 
 ]
 Chapter 7.
 ) (./chapters/ch08_dark_matter.tex
 
-[49
+[51
 
 ]
 Chapter 8.
 ) (./chapters/ch09_inflation.tex
 
-[50
+[52
 
 ]
 Chapter 9.
 ) (./chapters/appendix.tex
 
-[51
+[53
 
 ]
 Appendix A.
 
 
-[52
+[54
 
 ]
 Appendix B.
@@ -2106,21 +2155,21 @@ it/12 A [] B \OMS/zplm/m/n/12 ^^F [] \OML/zplm/m/it/12 A [] B$\T1/ppl/m/n/12 (-
 
 
 
-[53
-
-
-]
-
-[54]
-Appendix C.
-
-
 [55
 
 
 ]
 
-[56
+[56]
+Appendix C.
+
+
+[57
+
+
+]
+
+[58
 
 ])
 
@@ -2129,7 +2178,7 @@ Package biblatex Warning: No driver for 'lecturenote'.
 
 
 
-[57
+[59
 
 
 ]
@@ -2162,10 +2211,10 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 ### semi simple group (level 1) entered at line 154 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 40804 strings out of 473190
- 804686 string characters out of 5715800
+ 40812 strings out of 473190
+ 804804 string characters out of 5715800
  1672800 words of memory out of 5000000
- 62831 multiletter control sequences out of 15000+600000
+ 62836 multiletter control sequences out of 15000+600000
  643536 words of font info for 437 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  92i,20n,99p,1036b,1515s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -2179,10 +2228,10 @@ b></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb>
 </usr/local/texlive/2025/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/l
 ocal/texlive/2025/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/te
 xlive/2025/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (57 pages, 1528157 bytes).
+Output written on main.pdf (59 pages, 1533120 bytes).
 PDF statistics:
- 655 PDF objects out of 1000 (max. 8388607)
- 536 compressed objects within 6 object streams
- 124 named destinations out of 1000 (max. 500000)
+ 665 PDF objects out of 1000 (max. 8388607)
+ 544 compressed objects within 6 object streams
+ 127 named destinations out of 1000 (max. 500000)
  113742 words of extra memory for PDF output out of 128383 (max. 10000000)
 
