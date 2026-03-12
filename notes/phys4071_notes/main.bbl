@@ -60,6 +60,17 @@
       \verb http://dx.doi.org/10.1063/1.1419571
       \endverb
     \endentry
+    \entry{PHYS4071_2026}{lecturenote}{}{}
+      \list{publisher}{1}{%
+        {HKUST}%
+      }
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labeltitlesource}{title}
+      \field{title}{PHYS4071 Big Bang Cosmology \& Inflation Lecture Notes}
+      \field{year}{2026}
+      \true{nocite}
+    \endentry
   \enddatalist
 \endrefsection
 \endinput
