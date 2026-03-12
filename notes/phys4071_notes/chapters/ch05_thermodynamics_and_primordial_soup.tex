@@ -33,9 +33,31 @@ In below contents, we will use the $E(p)$ notation to represent the energy of a 
 %──────────────────────────────────────────────────────────────────────────────
 \bigskip\noindent
 \subsection{Chemical Potential}
+\begin{intuition}
+    Imagine we have a box of gas, and we want to add a particle into the box. The chemical potential $\mu$ is the energy cost of adding that particle to the system, which can be thought of as the "price" we need to pay to add one more particle to the system.\\
+
+    However, when we add a particle to the system, we also increase the entropy of the system, which can be thought of as the "benefit" we get from adding that particle, since it allows for more possible microstates and thus increases the disorder of the system.\\
+
+    Furthermore, the temperature $T$ of the system determines how much we value that increase in entropy, since at higher temperatures, we need to pay more energy to achieve the same increase in entropy.\\
+
+    Therefore, the chemical potential can be thought of as a balance between the energy cost of adding a particle and the entropy gain from adding that particle, which is given by the formula:
+    \[
+        \mu = \text{energy cost} - T \cdot \text{entropy gain}
+    \]
+\end{intuition}
+
+\bigskip\noindent
 %Explanation of \mu
 \begin{foundation}
-    $\mu$ is the chemical potential, which measures the change in internal energy when a particle is added to the system at constant entropy and volume.
+    $\mu$ is the chemical potential, which measures the change in internal energy when a particle is added to the system at constant entropy and volume. It is defined as:
+    \[
+        \mu = \left( \frac{\partial U}{\partial N} \right)_{S,V} = \left( \frac{\partial F}{\partial N} \right)_{T,V} ,
+    \] 
+    Or in other way:
+    \[
+        \delta mu = \delta U - T \delta S,
+    \]
+    where $U$ is the internal energy, $F$ is the Helmholtz free energy, $N$ is the number of particles, $S$ is the entropy, and $T$ is the temperature.\\
 \end{foundation}
 
 For ideal gases, $\mu \to 0$, and we will assume $\mu = 0$ in below contents unless otherwise specified.
@@ -50,13 +72,41 @@ For ideal gases, $\mu \to 0$, and we will assume $\mu = 0$ in below contents unl
 %proof of equation
 \clearpage
 \subsection{Thermal Equilibrium Distributions}
-\bigskip\noindent
+%\bigskip\noindent
 \begin{foundation}
-    For a state with energy $E$, and particle number $N$, 
+    For a state with energy $E$, and particle number $N$, the probability of the state is given by the Boltzmann factor:
+    \[
+        P \propto e^{-(E - \mu N)/k_B T}
+    \]
+    While for a single-particle state with energy $E(p)$, each momentum state can have occupation number $n$:
+    \begin{itemize}
+        \item Fermions: $n = 0 \text{ or } 1$ ,
+        \item Bosons: $n = 0, 1, 2, \ldots$
+    \end{itemize} \\
 
+    Then the average occupation number for a single-particle state with energy $E(p)$ is given by:
+    \[
+        \langle n \rangle = \frac{\sum_n n e^{-(E(p) - \mu n)/k_B T}}{\sum_n e^{-(E(p) - \mu n)/k_B T}}
+    \]
+    For fermions, we have:
+    \[
+        \langle n \rangle = \frac{0 \cdot e^{-E(p)/k_B T} + 1 \cdot e^{-(E(p) - \mu)/k_B T}}{e^{-E(p)/k_B T} + e^{-(E(p) - \mu)/k_B T}} = \frac{1}{e^{(E(p) - \mu)/k_B T} + 1}
+    \]
+    For bosons, we have:
+    \[
+        \langle n \rangle = \frac{\sum_{n=0}^\infty n e^{-(E(p) - \mu n)/k_B T}}{\sum_{n=0}^\infty e^{-(E(p) - \mu n)/k_B T}} = \frac{1}{e^{(E(p) - \mu)/k_B T} - 1}
+    \] \\
+
+    By letting $f(p) = \langle n \rangle$, we can calculate the number density by density of states $\times$ occupation number, which is given by:
+    \[
+        \frac{dN}{d^3p} = \overbrace{\frac{g}{(2\pi)^3}}^{\text{density of states}} \overbrace{f(p)}^{\text{occupation number}} = \frac{g}{(2\pi)^3} \frac{1}{e^{(E(p) - \mu)/k_B T} \pm 1}
+    \] \\
+
+    The term $\frac{g}{2\pi^2}$ come from the Heisenberg uncertainty principle, which states that density states, i.e. the number of quantum states in a given volume of phase space as $(2\pi \hbar)^3$ under natural unit, and the factor $g$ accounts for the spin degeneracy of the particle species.
 \end{foundation}
 
-\bigskip\noindent
+\clearpage
+%\bigskip\noindent
 \begin{theory}
   In thermal equilibrium, the distribution of particle energies follows specific statistical distributions:
   \begin{itemize}
@@ -83,7 +133,7 @@ For ideal gases, $\mu \to 0$, and we will assume $\mu = 0$ in below contents unl
 
 \bigskip\noindent
 \begin{theory}
-    In non-relativistic limit(low temperature $\&$ low density), the Fermi-Dirac and Bose-Einstein distributions reduce to the Maxwell-Boltzmann distribution:
+    In non-relativistic limit($ E \gg T $), the Fermi-Dirac and Bose-Einstein distributions reduce to the Maxwell-Boltzmann distribution:
     \[
         e^{(E(p) - \mu)/k_B T} \gg 1 \implies f(p) \approx e^{-(E(p)-\mu)/k_B T}
     \]
@@ -94,11 +144,35 @@ For ideal gases, $\mu \to 0$, and we will assume $\mu = 0$ in below contents unl
 \section{Number Density, Energy Density, and Pressure}
 \subsection{Spin Degeneracy Factor}
 %Explanation of g
-In below contents, we define $g$ as Spin degeneracy factor(spin states), which counts the number of internal degrees of freedom (e.g., spin states) for a particle species.
+\begin{intuition}
+    Imagine in a hotel, there are multiple rooms with different price(Energy level), the spin is like the no. of beds in the room, which can accommodate multiple guests(particles) with the same energy level. 
+    When 2 particles enter the same room(share the same energy level), we call it a degenerate state. \\
+
+    The degeneracy factor $g$ states how many particles can stay in the same energy level, which is determined by the intrinsic spin quantum number $s$ of the particle. On the other hand, it can be treat as the degree of freedom of the particle, which is the number of independent ways the particle can exist in a given energy state.
+\end{intuition}
+
+\bigskip\noindent
 \begin{foundation}
-    g
+    In quantum mechanics, the magnetic quantum number $m_s$ can take on values from $-s$ to $+s$ in integer steps($-s, -s+1, \ldots, s-1, s$). And we can get $g$ by counting the number of possible $m_s$ values, which is given by:
+    \[
+        g = 2s + 1
+    \]
+
+    However, for massless particles, such as photons, the spin is always aligned with the direction of motion, which means they only have 2 possible spin states (helicity states), thus $g = 2$ for photons.
 \end{foundation}
 
+\begin{remark}
+    The $g$ here only counts the intrinsic spin degeneracy, but in general, we also need to consider other types of degeneracy, such as color charge for quarks, which can further increase the effective degeneracy factor for those particles:
+
+    For example, if we treat the 8 type of gulons as the same one and calculate the $g$ for gluons,  we will get $g_\text{total} = 16$.
+    \[
+        g_\text{effective} = g_\text{spin} \times g_\text{color} 
+    \]
+
+    In the below contents, when we see $g_i$, it only represents the intrinsic spin degeneracy, and we will need to multiply it with other degeneracy factors if there are any.
+\end{remark}
+
+\clearpage
 \begin{extra}
     The g values for some common particles are:
     \begin{center}
@@ -116,14 +190,8 @@ In below contents, we define $g$ as Spin degeneracy factor(spin states), which c
 \end{extra}
 
 %──────────────────────────────────────────────────────────────────────────────
+\bigskip\noindent \bigskip\noindent \bigskip\noindent
 \subsection{Derivation of the 3 equations}
-% how the 3 equations are derived
-\bigskip\noindent
-\begin{foundation}
-
-\end{foundation}
-
-\bigskip\noindent
 \begin{theory}
     The number density $n$, energy density $\rho$, and pressure $P$ of some particle i are given by:
     \[
@@ -139,30 +207,106 @@ In below contents, we define $g$ as Spin degeneracy factor(spin states), which c
 
 %derivation of substitute 3 distributions function into the 3 equations
 \bigskip\noindent
-\begin{foundation}
-    By substituting the Fermi-Dirac, Bose-Einstein, or Maxwell-Boltzmann distribution functions into the above integrals, we can derive explicit expressions for $n_i$, $\rho_i$, and $P_i$ for different particle species under various conditions (e.g., relativistic vs. non-relativistic limits).
+By substituting the Fermi-Dirac, Bose-Einstein, or Maxwell-Boltzmann distribution functions into the above integrals, we can derive explicit expressions for $n_i$, $\rho_i$, and $P_i$ for different particle species under various conditions (e.g., relativistic vs. non-relativistic limits).
 
+\clearpage
+\begin{foundation}
     \textbf{(1) Relativistic Fermions ($E \approx p$):}
      \begin{itemize}
-        \item Number density: $n_i = \frac{3\zeta(3)}{4\pi^2} g_i T^3$
-        \item Energy density: $\rho_i = \frac{7\pi^2}{120} g_i T^4$
-        \item Pressure: $P_i = \frac{1}{3}\rho_i$
+        \item Number density: 
+        \begin{align*}
+            n_i &= \frac{g_i}{(2\pi)^3} \int \frac{d^3p}{e^{(E(p) - \mu)/k_B T} + 1}\\
+                &= \frac{g_i}{(2\pi)^3} \int_0^\infty \frac{4 \pi p^2 dp}{e^{(p - \mu)/k_B T} + 1} &
+                \text{, using spherical coordinates}\\ 
+                &= \frac{g_i}{2(\pi)^2} k_B^3 T^3 \int_0^\infty \frac{u^2 du}{e^{u} + 1} & \quad , u = \frac{p - \mu}{k_B T} \\
+                &= \frac{g_i}{2(\pi)^2} k_B^3 T^3 \cdot \frac{3}{2} \zeta(3) & \\
+                &= \frac{3}{4}\frac{\zeta(3)}{\pi^2} g_i T^3
+        \end{align*}
+        \item Energy density: 
+        \begin{align*}
+            \rho_i &= \frac{g_i}{(2\pi)^3} \int E(p) f_i(p) \, d^3p \\
+                    &= \frac{g_i}{(2\pi)^3} \int_0^\infty \frac{p \cdot 4 \pi p^2 dp}{e^{(p - \mu)/k_B T} + 1} & \text{, E = p for relativistic particles} \\
+                    &= \frac{g_i}{2(\pi)^2} k_B^4 T^4 \int_0^\infty \frac{u^3 du}{e^{u} + 1} & \quad , u = \frac{p - \mu}{k_B T} \\
+                    &= \frac{g_i}{2(\pi)^2} k_B^4 T^4 \cdot \frac{7}{8} \cdot 6 \zeta(4) & \\
+                    &= \frac{7}{8}\frac{\pi^2}{30} g_i T^4
+        \end{align*}
+        \item Pressure: \\
+        using:
+        \[
+            \frac{p^2}{3E(p)} = \frac{1}{3} \frac{p^2}{p} = \frac{1}{3} p,
+        \]
+        we get:
+        \begin{align*}
+            P_i &= \frac{g_i}{(2\pi)^3} \int \frac{p^2}{3E(p)} f_i(p) \, d^3p \\
+                &= \frac{g_i}{(2\pi)^3} \int_0^\infty \frac{\frac{1}{3} p \cdot 4 \pi p^2 dp}{e^{(p - \mu)/k_B T} + 1} \\
+                &= \frac{g_i}{2(\pi)^2} k_B^4 T^4 \int_0^\infty \frac{u^3 du}{e^{u} + 1} & \quad , u = \frac{p - \mu}{k_B T} \\
+                &= \frac{7}{8}\frac{\pi^2}{30} g_i T^4 \cdot \frac{1}{3} & \\
+                &= \frac{1}{3}\rho_i
+        \end{align*}
      \end{itemize} \\
 
     \textbf{(2) Relativistic Bosons ($E \approx p$):}
      \begin{itemize}
-        \item Number density: $n_i = \frac{\zeta(3)}{\pi^2} g_i T^3$
-        \item Energy density: $\rho_i = \frac{\pi^2}{30} g_i T^4$
-        \item Pressure: $P_i = \frac{1}{3}\rho_i$
+        \item Number density:
+        \begin{align*}
+            n_i &= \frac{g_i}{(2\pi)^3} \int \frac{d^3p}{e^{(E(p) - \mu)/k_B T} - 1}\\
+                &= \frac{g_i}{(2\pi)^3} \int_0^\infty \frac{4 \pi p^2 dp}{e^{(p - \mu)/k_B T} - 1}\\ 
+                &= \frac{g_i}{2(\pi)^2} k_B^3 T^3 \int_0^\infty \frac{u^2 du}{e^{u} - 1} & \quad , u = \frac{p - \mu}{k_B T} \\
+                &= \frac{g_i}{2(\pi)^2} k_B^3 T^3 \cdot 2\zeta(3) & \\
+                &= \frac{\zeta(3)}{\pi^2} g_i T^3
+        \end{align*}
+        \item Energy density: \\
+        using $E(p) \approx p$, we have:
+        \begin{align*}
+            \rho_i &= \frac{g_i}{(2\pi)^3} \int E(p) f_i(p) \, d^3p \\
+                    &= \frac{g_i}{(2\pi)^3} \int_0^\infty \frac{p \cdot 4 \pi p^2 dp}{e^{(p - \mu)/k_B T} - 1} \\
+                    &= \frac{g_i}{2(\pi)^2} k_B^4 T^4 \int_0^\infty \frac{u^3 du}{e^{u} - 1} & \quad , u = \frac{p - \mu}{k_B T} \\
+                    &= \frac{g_i}{2(\pi)^2} k_B^4 T^4 \cdot 6\zeta(4) & \\
+                    &= \frac{g_i}{2(\pi)^2} k_B^4 T^4 \cdot \frac{\pi^4}{15} & \\
+                    &= \frac{\pi^2}{30} g_i T^4
+        \end{align*}
+        \item Pressure: 
+        \begin{align*}
+            P_i &= \frac{g_i}{(2\pi)^3} \int \frac{p^2}{3E(p)} f_i(p) \, d^3p \\
+                &= \frac{g_i}{(2\pi)^3} \int_0^\infty \frac{\frac{1}{3} p \cdot 4 \pi p^2 dp}{e^{(p - \mu)/k_B T} - 1} \\
+                &= \frac{g_i}{2(\pi)^2} k_B^4 T^4 \int_0^\infty \frac{u^3 du}{e^{u} - 1} & \quad , u = \frac{p - \mu}{k_B T} \\
+                &= \frac{\pi^2}{30} g_i T^4 \cdot \frac{1}{3} & \\
+                &= \frac{1}{3}\rho_i
+        \end{align*}
      \end{itemize} \\
+
+    \pagebreak
     \textbf{(3) Non-relativistic Particles ($E \approx m + p^2/2m$):}
      \begin{itemize}
-        \item Number density: $n_i = g_i \left( \frac{m_i T}{2\pi} \right)^{3/2} e^{-m_i/T}$
-        \item Energy density: $\rho_i = n_i m_i$
-        \item Pressure: $P_i = n_i T$
+        \item Number density:
+        \begin{align*}
+            n_i &= \frac{g_i}{(2\pi)^3} \int e^{-(E(p) - \mu)/k_B T} d^3p\\
+                &= \frac{g_i}{(2\pi)^3} e^{-(m - \mu)/k_B T} \int e^{-p^2/2mk_B T} d^3p\\ 
+                &= \frac{g_i}{(2\pi)^3} e^{-(m - \mu)/k_B T} \int 4 \pi p^2 e^{-p^2/2mk_B T} dp \\
+                &= \frac{g_i}{2 (\pi)^2} e^{-(m - \mu)/k_B T} \cdot \frac{\sqrt{\pi}}{4}  (2mk_B T)^{3/2} & \text{, using Gaussian integral} \\
+                &= g_i \left( \frac{m k_B T}{2\pi} \right)^{3/2} e^{-(m - \mu)/k_B T}
+        \end{align*}
+        \item Energy density: 
+        using $E(p) \approx m + \frac{p^2}{2m}$, we have:
+        \begin{align*}
+            \rho_i &= \frac{g_i}{(2\pi)^3} \int E(p) f_i(p) \, d^3p \\
+                    &\approx \frac{g_i}{(2\pi)^3} \int \left( m + \frac{p^2}{2m} \right) e^{-(E(p) - \mu)/k_B T} d^3p \\
+                    &= \frac{g_i m}{(2\pi)^3} e^{-(m - \mu)/k_B T} \int e^{-p^2/2mk_B T} d^3p \\
+                    & \quad + \frac{g_i}{(2\pi)^3} e^{-(m - \mu)/k_B T} \int \frac{p^2}{2m} e^{-p^2/2mk_B T} d^3p \\
+                    &= n_i m + \frac{3}{2} n_i k_B T \qquad \text{, using Gaussian integral} \\
+                    &= n_i m \qquad \text{, since $m \gg T$ for non-relativistic particles}
+        \end{align*}
+        \item Pressure: 
+        using $\frac{p^2}{3E(p)} \approx \frac{p^2}{3m}$, we have:
+        \begin{align*}
+            P_i &= \frac{g_i}{(2\pi)^3} \int \frac{p^2}{3E(p)} f_i(p) \, d^3p \\
+                &\approx \frac{g_i}{(2\pi)^3} \cdot \frac{2}{3} \int \frac{p^2}{2m} e^{-(E(p) - \mu)/k_B T} d^3p \\
+                &= n_i T \qquad \text{, by using the result from energy density calculation}
+        \end{align*}
      \end{itemize}
 \end{foundation}
 
+\clearpage
 \begin{theory}
     Number density, energy density, and pressure for particles with different thermal equilibrium distributions:
 
@@ -193,6 +337,18 @@ It is because in the thermal plasma, the energy of particle are $ E \sim T$, and
     It also explains why very few positrons exist in the current universe! \\
     In the early universe, $T \gg m_e \approx 0.511\,\mathrm{MeV}$, $e^+e^-$ pairs were abundant. \\
     As the universe cooled below $T \sim m_e$, the number density of positrons (and electrons) dropped exponentially, leaving only a tiny fraction that survived annihilation, which is why we observe so few positrons today.
+\end{intuition}
+
+\bigskip\noindent
+\begin{intuition}
+    We can also observed the ferminos have lower number density and energy density than bosons. \\
+    
+    Actually it also match our expectation in previous section, we know that bosons can occupied the same quantum state but fermions cannot (Pauli exclusion principle), thus we can expect that fermions have lower number density and energy density than bosons as lower occupation number.
+\end{intuition}
+
+\bigskip\noindent
+\begin{intuition}
+    For non-relativistic particles, we can see the energy density is dominated by the rest mass energy $n_i m_i$, while the pressure is given by $n_i T$, which is just the ideal gas law $P = n k_B T$ with $k_B = 1$ under natural unit.\\
 \end{intuition}
 
 \bigskip\noindent
@@ -503,8 +659,16 @@ From the above equation, we can get the entropy conservation in another way:
     \]
 \end{foundation}
 
+\bigskip\noindent
+\begin{remark}
+    The 2nd proof of entropy conservation is based on the assumption that all particles remains relativistic and not decoupled when universe evolves, which is only valid in the radiation dominated era of early universe. \\
+
+    However, in the 1st proof of entropy conservation, we only assume the universe is an isolated system and evolves through a series of equilibrium states, which is more general(both radiation and matter) and can be applied to the whole history of the universe, including the matter dominated era and dark energy dominated era.
+\end{remark}
+
 %─────────────────────────────────────────────────────────────────────────────────────────────
-\bigskip\noindent \bigskip\noindent \bigskip\noindent
+\clearpage
+%\bigskip\noindent \bigskip\noindent \bigskip\noindent
 \subsection{ $g_*$ and $g_{*s}$ in the early universe}
 \begin{foundation}
     In the early universe, if we assume all standard model particles are relativistic and in thermal equilibrium, we can calculate the effective number of relativistic degrees of freedom for energy density $g_*(T)$ and for entropy density $g_{*s}(T)$ : \\
@@ -537,7 +701,8 @@ From the above equation, we can get the entropy conservation in another way:
     \]
 \end{foundation}
 
-\bigskip\noindent
+\clearpage
+%\bigskip\noindent
 \begin{theory}
     \textbf{In early universe}, by only considering particles in standard model, and assuming all particles are relativistic and not decoupled to other particles, we can get:
     \[
@@ -545,7 +710,7 @@ From the above equation, we can get the entropy conservation in another way:
     \]
 \end{theory}
 
-\clearpage
+%\clearpage
 \begin{importantnote}
     The equivalence of $g_*(T) = g_{*s}(T)$ is only valid in the early universe that particles are not decoupled to other particles. 
 

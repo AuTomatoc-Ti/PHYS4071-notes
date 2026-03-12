@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber main"] 1773246589.89292 "main.bcf" "main.bbl" "main" 1773286898.8697 0
-  "main.bcf" 1773286898.60387 107753 b9112550728606e26eb51c291ff2b742 "pdflatex"
+["biber main"] 1773309674.21564 "main.bcf" "main.bbl" "main" 1773331885.24343 0
+  "main.bcf" 1773331885.07555 107753 b9112550728606e26eb51c291ff2b742 "pdflatex"
   "references.bib" 1773246587.54479 479 d7102894c98f64e4e25f4056733f71a4 ""
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1773286892.80532 "main.tex" "main.pdf" "main" 1773286898.87025 2
+["pdflatex"] 1773331881.7593 "main.tex" "main.pdf" "main" 1773331885.24378 2
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1136849721 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -262,7 +262,7 @@
   "chapters/ch02_Hubble_law_and_cosmological_redshift.tex" 1773251735.14648 12067 5ed8babf51418a14338db6ec88cae8ee ""
   "chapters/ch03_cosmic_evolution.tex" 1773083143.58868 785 fd596b15ec0654694befc20b74351620 ""
   "chapters/ch04_standard_model.tex" 1773286881.86314 9747 611e7473e918fff276ede6e77d2cb381 ""
-  "chapters/ch05_thermodynamics_and_primordial_soup.tex" 1773285167.82289 28823 31b695353bfb0bf999610d0332ef6e9d ""
+  "chapters/ch05_thermodynamics_and_primordial_soup.tex" 1773331881.10736 39567 09f388d56b9e25581e1dc79c4cf86c2b ""
   "chapters/ch06_Big_Bang_nucleosynthesis.tex" 1773083161.99426 803 eab6fcb7fa1304e0ca3f0666f6da4c16 ""
   "chapters/ch07_Cosmic_Microwave_Background.tex" 1773083172.16822 809 35fd593319c4db234f7f3f74895e057b ""
   "chapters/ch08_dark_matter.tex" 1773083177.69057 777 488d157e491b95205af67ac01acc6ac8 ""
@@ -273,12 +273,12 @@
   "images/g*_evolution.png" 1773283530.03424 146958 e6e1ebafbb2f3e01c84088999b993fe7 ""
   "images/particles_mass.png" 1773248196.6187 339098 00ce1c2c3f7ff5ad713d07cea3c35623 ""
   "images/standard_model.png" 1773246928.0192 212825 744ec51c55b61fc2c5a8663a0cf00568 ""
-  "main.aux" 1773286898.59779 9433 d2028e8c9cdd97be2300a98d1391d920 "pdflatex"
-  "main.bbl" 1773246601.24735 2429 2391068964189289270d775a3a240772 "biber main"
-  "main.out" 1773286898.59951 9866 c841e373bf33640eb5784cc0c8b34c19 "pdflatex"
-  "main.run.xml" 1773286898.60507 2339 1ed341041bd1fbe5a1f3b1992463a6cc "pdflatex"
+  "main.aux" 1773331885.07189 9433 4d3a122f31b65b6954efcecd47ae67af "pdflatex"
+  "main.bbl" 1773309678.3553 2429 2391068964189289270d775a3a240772 "biber main"
+  "main.out" 1773331885.07303 9866 c841e373bf33640eb5784cc0c8b34c19 "pdflatex"
+  "main.run.xml" 1773331885.07629 2339 1ed341041bd1fbe5a1f3b1992463a6cc "pdflatex"
   "main.tex" 1773082912.6732 6146 a001f54359c75941ba5897ef036038f6 ""
-  "main.toc" 1773286898.60519 4518 294f79fcb45d63d15bc8f1ea33c8577f "pdflatex"
+  "main.toc" 1773331885.07638 4518 62fe359de57ebfd39496c384febe2861 "pdflatex"
   "preamble.tex" 1772970847.245 13477 e7e2410f6c9fca8998fcefe61f917ce2 ""
   (generated)
   "main.aux"
