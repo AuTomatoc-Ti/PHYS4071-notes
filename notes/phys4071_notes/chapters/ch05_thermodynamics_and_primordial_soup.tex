@@ -808,6 +808,69 @@ From the above equation, we can get the entropy conservation in another way:
 % ─────────────────────────────────────────────────────────────────────────────
 \clearpage
 \section{Thermal History of the Universe}
+\begin{figure}[htbp]
+    \centering
+    \begin{tikzpicture}[x=1cm,y=1cm]
+        % axis
+        \draw[->, thick, DeepSpace] (0,0) -- (14.9,0)
+            node[right, DeepSpace] {t $\uparrow$ / T $\downarrow$};
+
+        % nodes (left-to-right: early -> late)
+        \node[draw=DeepSpace, fill=TealBG, rounded corners=2pt, align=left, font=\scriptsize, text width=2.5cm] (A) at (1.0,1.8)
+        {Very early universe\\$T \gg 100\,\mathrm{GeV}$\\all SM in equilibrium\\$g_* = g_{*s} = 106.75$};
+
+        \node[draw=DeepSpace, fill=TealBG, rounded corners=2pt, align=left, font=\scriptsize, text width=2.5cm] (B) at (3.0,-1.9)
+        {Electroweak phase transition\\$T \sim 100\,\mathrm{GeV}$, $t \sim 20\,\mathrm{ps}$\\$H,W,Z,t$ become NR};
+
+        \node[draw=DeepSpace, fill=TealBG, rounded corners=2pt, align=left, font=\scriptsize, text width=2.5cm] (C) at (5.0,1.8)
+        {Further heavy decoupling\\$T \sim 1\,\mathrm{GeV}$\\$b,c,\tau$ suppressed\\$g_* \approx 61.75$};
+
+        \node[draw=DeepSpace, fill=TealBG, rounded corners=2pt, align=left, font=\scriptsize, text width=2.5cm] (D) at (7.0,-1.9)
+        {QCD phase transition\\$T \sim 150\,\mathrm{MeV}$, $t \sim 20\,\mu\mathrm{s}$\\quarks/gluons confined\\$g_* \approx 17.25$};
+
+        \node[draw=DeepSpace, fill=GoldBG, rounded corners=2pt, align=left, font=\scriptsize, text width=2.5cm] (E) at (9.0,1.8)
+        {Neutrino decoupling\\$T \sim 1\,\mathrm{MeV}$, $t \sim 1\,\mathrm{s}$\\$\Gamma_\nu < H$\\$g_* = g_{*s} = 10.75$ (just after)};
+
+        \node[draw=DeepSpace, fill=GoldBG, rounded corners=2pt, align=left, font=\scriptsize, text width=2.5cm] (F) at (11.0,-1.9)
+        {$e^+e^-$ annihilation\\$T \sim 0.5\,\mathrm{MeV}$, $t \sim 10\,\mathrm{s}$\\photon reheating\\$T_\nu/T_\gamma = (4/11)^{1/3}$};
+
+        \node[draw=DeepSpace, fill=GoldBG, rounded corners=2pt, align=left, font=\scriptsize, text width=2.5cm] (G) at (13.0,1.8)
+        {Photon decoupling\\$T \sim 0.3\,\mathrm{eV}$, $t \sim 380\,\mathrm{kyr}$\\recombination, CMB released};
+
+        % optional branch for DM freeze-out
+        \node[draw=DeepSpace, fill=GrayBG, rounded corners=2pt, align=left, font=\scriptsize, text width=2.6cm] (H) at (5.0,-4.3)
+        {DM freeze-out (model-dependent)\\when $\Gamma_\chi < H$\\relic abundance remains};
+
+        \node[draw=DeepSpace, fill=GreenBG, rounded corners=2pt, align=left, font=\scriptsize, text width=2.5cm] (I) at (14.0,-4.3)
+        {Today\\relativistic backgrounds: CMB + C$\nu$B\\$g_* \approx 3.36$, $g_{*s} \approx 3.91$};
+
+        % timeline dots
+        \foreach \x in {1.0,3.0,5.0,7.0,9.0,11.0,13.0,14.0}
+            \fill[DeepSpace] (\x,0) circle (1.4pt);
+
+        % connectors
+        \draw[-{Latex[length=2mm]}, thick, DeepSpace] (1.0,0) -- (3.0,0);
+        \draw[-{Latex[length=2mm]}, thick, DeepSpace] (3.0,0) -- (5.0,0);
+        \draw[-{Latex[length=2mm]}, thick, DeepSpace] (5.0,0) -- (7.0,0);
+        \draw[-{Latex[length=2mm]}, thick, DeepSpace] (7.0,0) -- (9.0,0);
+        \draw[-{Latex[length=2mm]}, thick, DeepSpace] (9.0,0) -- (11.0,0);
+        \draw[-{Latex[length=2mm]}, thick, DeepSpace] (11.0,0) -- (13.0,0);
+        \draw[-{Latex[length=2mm]}, thick, DeepSpace] (13.0,0) -- (14.0,0);
+
+        % links from timeline to boxes
+        \draw[thin, DeepSpace] (1.0,0.1) -- (A.south);
+        \draw[thin, DeepSpace] (3.0,-0.1) -- (B.north);
+        \draw[thin, DeepSpace] (5.0,0.1) -- (C.south);
+        \draw[thin, DeepSpace] (7.0,-0.1) -- (D.north);
+        \draw[thin, DeepSpace] (9.0,0.1) -- (E.south);
+        \draw[thin, DeepSpace] (11.0,-0.1) -- (F.north);
+        \draw[thin, DeepSpace] (13.0,0.1) -- (G.south);
+
+        \draw[thin, DeepSpace] (14.0,0)  -- (I.north);
+    \end{tikzpicture}
+    \caption{Summary of the thermal history of the universe focused on major decoupling events.}
+    \label{fig:thermal-history-decoupling-summary}
+\end{figure}
 %\bigskip\noindent \bigskip\noindent  \bigskip\noindent 
 \subsection{Electroweak Phase Transition}
 At around $T \sim 100\,\mathrm{GeV}$, which $t \sim 20\,\mathrm{ps}$, the temperature of the universe drops below the energy scale of electroweak interaction, thus the electroweak symmetry is spontaneously broken and the Higgs field condenses, which gives mass to the W and Z bosons, and also gives mass to fermions. \\
@@ -1054,7 +1117,8 @@ The dark matter is still a hypothetical matter, but if it exists, it should also
 
 one of the candidates for dark matter is Weakly Interacting Massive Particles (WIMPs $\chi$), which are particles arised beyond the standard model, and is massive($\sim 10 \sim 1000\,\mathrm{GeV}$) and weakly interacting with other particles. \\
 
-\bigskip\noindent
+%\bigskip\noindent
+\clearpage
 \begin{theory}
     In some time of early universe, the WIMPS interact as:
     \[
