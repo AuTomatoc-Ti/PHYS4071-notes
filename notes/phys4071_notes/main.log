@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2026.2.19)  13 MAR 2026 00:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2026.2.19)  15 MAR 2026 03:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1440,7 +1440,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 358--360
 
  []
 
-<images/energy_momentum_tensor.png, id=378, 452.69125pt x 254.9525pt>
+<images/energy_momentum_tensor.png, id=438, 452.69125pt x 254.9525pt>
 File: images/energy_momentum_tensor.png Graphic file (type png)
 <use images/energy_momentum_tensor.png>
 Package pdftex.def Info: images/energy_momentum_tensor.png  used on input line 
@@ -1660,7 +1660,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 214--215
 
  []
 
-<images/balloon_expansion.png, id=420, 705.63625pt x 266.9975pt>
+<images/balloon_expansion.png, id=480, 705.63625pt x 266.9975pt>
 File: images/balloon_expansion.png Graphic file (type png)
 <use images/balloon_expansion.png>
 Package pdftex.def Info: images/balloon_expansion.png  used on input line 220.
@@ -1683,7 +1683,7 @@ Chapter 3.
 
 ]
 Chapter 4.
-<images/standard_model.png, id=436, 853.1875pt x 640.3925pt>
+<images/standard_model.png, id=497, 853.1875pt x 640.3925pt>
 File: images/standard_model.png Graphic file (type png)
 <use images/standard_model.png>
 Package pdftex.def Info: images/standard_model.png  used on input line 17.
@@ -1723,11 +1723,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 74--75
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 76--78
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 81--82
 
  []
@@ -1757,14 +1752,38 @@ Underfull \hbox (badness 10000) in paragraph at lines 96--97
 [31
 
 ]
-<images/particles_mass.png, id=456, 739.76375pt x 433.62pt>
+<images/particles_mass.png, id=517, 739.76375pt x 433.62pt>
 File: images/particles_mass.png Graphic file (type png)
 <use images/particles_mass.png>
 Package pdftex.def Info: images/particles_mass.png  used on input line 112.
 (pdftex.def)             Requested size: 350.53915pt x 205.46878pt.
-) (./chapters/ch05_thermodynamics_and_primordial_soup.tex
+
 
 [32 <./images/particles_mass.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 121--122
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--124
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 125--126
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 127--128
+
+ []
+
+) (./chapters/ch05_thermodynamics_and_primordial_soup.tex
+
+[33
+
+]
 Chapter 5.
 
 Underfull \hbox (badness 10000) in paragraph at lines 6--7
@@ -1788,7 +1807,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 20--22
 
 
 
-[33
+[34
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 37--38
@@ -1817,7 +1836,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 66--67
 
 
 
-[34]
+[35]
 
 ! LaTeX Error: There's no line here to end.
 
@@ -1843,7 +1862,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 103--104
 
 
 
-[35
+[36
 
 ]
 
@@ -1861,7 +1880,7 @@ or  <return>  to continue without it.
 
 
 
-[36
+[37
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 148--150
@@ -1870,11 +1889,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 148--150
 
 
 
-[37
+[38
 
 ]
 
-[38
+[39
 
 ]
 
@@ -1905,13 +1924,13 @@ or  <return>  to continue without it.
 
 
 
-[39
+[40
 
 ]
 
-[40]
-
 [41]
+
+[42]
 Underfull \hbox (badness 10000) in paragraph at lines 318--318
 []\T1/ppl/m/n/10.95 (+20) Relativistic
  []
@@ -1938,7 +1957,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 351--352
 
 
 
-[42
+[43
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 376--377
@@ -1947,7 +1966,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 376--377
 
 
 
-[43]
+[44]
 Underfull \hbox (badness 10000) in paragraph at lines 389--391
 
  []
@@ -1963,10 +1982,10 @@ and I'll forget about whatever was undefined.
 
 
 
-[44
+[45
 
 ]
-<images/g*_evolution.png, id=514, 739.76375pt x 457.71pt>
+<images/g*_evolution.png, id=578, 739.76375pt x 457.71pt>
 File: images/g*_evolution.png Graphic file (type png)
 <use images/g*_evolution.png>
 Package pdftex.def Info: images/g*_evolution.png  used on input line 416.
@@ -1993,7 +2012,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 441--442
 
 
 
-[45
+[46
 
  <./images/g*_evolution.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 459--460
@@ -2007,7 +2026,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 461--462
 
 
 
-[46]
+[47]
 Underfull \hbox (badness 10000) in paragraph at lines 474--476
 
  []
@@ -2039,7 +2058,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 491--493
 
 
 
-[47
+[48
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 514--515
@@ -2053,7 +2072,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 532--533
 
 
 
-[48]
+[49]
 Underfull \hbox (badness 10000) in paragraph at lines 543--547
 
  []
@@ -2080,11 +2099,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 592--594
 
 
 
-[49
+[50
 
 ]
 
-[50]
+[51]
 Underfull \hbox (badness 10000) in paragraph at lines 650--651
 
  []
@@ -2096,7 +2115,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 664--665
 
 
 
-[51]
+[52]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 672.
@@ -2167,9 +2186,14 @@ or  <return>  to continue without it.
 
 
 
-[52
+[53
 
 ]
+Underfull \hbox (badness 10000) in paragraph at lines 715--716
+
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 729--730
 
  []
@@ -2180,50 +2204,352 @@ Underfull \hbox (badness 10000) in paragraph at lines 731--733
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 737--739
+
+[54
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 741--742
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 740--742
+Underfull \hbox (badness 10000) in paragraph at lines 743--744
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 745--746
+
+ []
+
+<images/dependence_interaction_strength.png, id=620, 736.7525pt x 395.4775pt>
+File: images/dependence_interaction_strength.png Graphic file (type png)
+<use images/dependence_interaction_strength.png>
+Package pdftex.def Info: images/dependence_interaction_strength.png  used on in
+put line 753.
+(pdftex.def)             Requested size: 350.53915pt x 188.16151pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 765--766
 
  []
 
 
 
-[53
+[55
 
-]) (./chapters/ch06_Big_Bang_nucleosynthesis.tex
+ <./images/dependence_interaction_strength.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 772--773
 
-[54]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 774--775
+
+ []
+
+
+
+[56]
+Underfull \hbox (badness 10000) in paragraph at lines 787--788
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 789--790
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 796--797
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 798--799
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 800--801
+
+ []
+
+
+
+[57
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 813--814
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 815--816
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 817--818
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 819--820
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 825--826
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 827--828
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 829--830
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 831--832
+
+ []
+
+
+
+[58
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 845--847
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 856--857
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 865--866
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 878--880
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 887--889
+
+ []
+
+
+
+[59]
+Underfull \hbox (badness 10000) in paragraph at lines 897--898
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 899--900
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 909--910
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 911--912
+
+ []
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.913 
+      
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+
+[60]
+Underfull \hbox (badness 10000) in paragraph at lines 925--926
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 927--928
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 956--957
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 958--959
+
+ []
+
+
+
+[61
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 980--982
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 984--985
+
+ []
+
+
+
+[62]
+Underfull \hbox (badness 10000) in paragraph at lines 990--991
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 996--997
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 998--1002
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1004--1006
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1020--1022
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1029--1030
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1039--1040
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1044--1046
+
+ []
+
+
+
+[63
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 1053--1054
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1055--1056
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1062--1064
+
+ []
+
+
+
+[64]
+Underfull \hbox (badness 10000) in paragraph at lines 1065--1066
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1069--1070
+
+ []
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1075     which n_
+                   chi is the number density of WIMPs, $\sigma$ is the cross...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1075 ... is the number density of WIMPs, $\sigma
+                                                  $ is the cross section of ...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Underfull \hbox (badness 1226) in paragraph at lines 1074--1076
+\T1/ppl/m/n/12 (+20) which n$[]\OML/zplm/m/it/12 hiisthenumberdensityofWIMPs\OT
+1/ppl/m/n/12 (+20) ,$$\OML/zplm/m/it/12 ^^[$ \T1/ppl/m/n/12 (+20) is the cross 
+sec-tion of WIMPs
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1074--1076
+
+ []
+
+) (./chapters/ch06_Big_Bang_nucleosynthesis.tex
+
+[65]
 Chapter 6.
 ) (./chapters/ch07_Cosmic_Microwave_Background.tex
 
-[55
+[66
 
 ]
 Chapter 7.
 ) (./chapters/ch08_dark_matter.tex
 
-[56
+[67
 
 ]
 Chapter 8.
 ) (./chapters/ch09_inflation.tex
 
-[57
+[68
 
 ]
 Chapter 9.
 ) (./chapters/appendix.tex
 
-[58
+[69
 
 ]
 Appendix A.
 
 
-[59
+[70
 
 ]
 Appendix B.
@@ -2240,21 +2566,550 @@ it/12 A [] B \OMS/zplm/m/n/12 ^^F [] \OML/zplm/m/it/12 A [] B$\T1/ppl/m/n/12 (-
 
 
 
-[60
+[71
 
 
 ]
 
-[61]
+[72]
 Appendix C.
+! Missing $ inserted.
+<inserted text> 
+                $
+l.152 C$\nu$B temperature ($T_\text{C \nu B}
+                                            $) & $1.95 \,\mathrm{K}$ \\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+\textdef@ ...th {#1}\let \f@size #2\selectfont #3}
+                                                  }
+l.152 C$\nu$B temperature ($T_\text{C \nu B}
+                                            $) & $1.95 \,\mathrm{K}$ \\
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Extra }, or forgotten $.
+\textdef@ ...h {#1}\let \f@size #2\selectfont #3}}
+                                                  
+l.152 C$\nu$B temperature ($T_\text{C \nu B}
+                                            $) & $1.95 \,\mathrm{K}$ \\
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Extra }, or forgotten $.
+\text@ ...e {\textdef@ \displaystyle \f@size {#1}}
+                                                  {\textdef@ \textstyle \f@s...
+l.152 C$\nu$B temperature ($T_\text{C \nu B}
+                                            $) & $1.95 \,\mathrm{K}$ \\
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.152 C$\nu$B temperature ($T_\text{C \nu B}
+                                            $) & $1.95 \,\mathrm{K}$ \\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+\textdef@ ...th {#1}\let \f@size #2\selectfont #3}
+                                                  }
+l.152 C$\nu$B temperature ($T_\text{C \nu B}
+                                            $) & $1.95 \,\mathrm{K}$ \\
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Extra }, or forgotten $.
+\textdef@ ...h {#1}\let \f@size #2\selectfont #3}}
+                                                  
+l.152 C$\nu$B temperature ($T_\text{C \nu B}
+                                            $) & $1.95 \,\mathrm{K}$ \\
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Extra }, or forgotten $.
+\text@ ...xtstyle \f@size {\firstchoice@false #1}}
+                                                  {\textdef@ \textstyle \sf@...
+l.152 C$\nu$B temperature ($T_\text{C \nu B}
+                                            $) & $1.95 \,\mathrm{K}$ \\
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.152 C$\nu$B temperature ($T_\text{C \nu B}
+                                            $) & $1.95 \,\mathrm{K}$ \\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+\textdef@ ...th {#1}\let \f@size #2\selectfont #3}
+                                                  }
+l.152 C$\nu$B temperature ($T_\text{C \nu B}
+                                            $) & $1.95 \,\mathrm{K}$ \\
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Extra }, or forgotten $.
+\textdef@ ...h {#1}\let \f@size #2\selectfont #3}}
+                                                  
+l.152 C$\nu$B temperature ($T_\text{C \nu B}
+                                            $) & $1.95 \,\mathrm{K}$ \\
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Extra }, or forgotten $.
+\text@ ...tstyle \sf@size {\firstchoice@false #1}}
+                                                  {\textdef@ \textstyle \ssf...
+l.152 C$\nu$B temperature ($T_\text{C \nu B}
+                                            $) & $1.95 \,\mathrm{K}$ \\
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.152 C$\nu$B temperature ($T_\text{C \nu B}
+                                            $) & $1.95 \,\mathrm{K}$ \\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+\textdef@ ...th {#1}\let \f@size #2\selectfont #3}
+                                                  }
+l.152 C$\nu$B temperature ($T_\text{C \nu B}
+                                            $) & $1.95 \,\mathrm{K}$ \\
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Extra }, or forgotten $.
+\textdef@ ...h {#1}\let \f@size #2\selectfont #3}}
+                                                  
+l.152 C$\nu$B temperature ($T_\text{C \nu B}
+                                            $) & $1.95 \,\mathrm{K}$ \\
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Extra }, or forgotten $.
+\text@ ...style \ssf@size {\firstchoice@false #1}}
+                                                  \check@mathfonts }
+l.152 C$\nu$B temperature ($T_\text{C \nu B}
+                                            $) & $1.95 \,\mathrm{K}$ \\
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Extra }, or forgotten $.
+\text@ ...firstchoice@false #1}}\check@mathfonts }
+                                                  
+l.152 C$\nu$B temperature ($T_\text{C \nu B}
+                                            $) & $1.95 \,\mathrm{K}$ \\
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Misplaced alignment tab character &.
+l.152 C$\nu$B temperature ($T_\text{C \nu B}$) &
+                                                 $1.95 \,\mathrm{K}$ \\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced \cr.
+\reserved@c ->\ifnum 0=`{\fi }\cr 
+                                  
+l.153 \bottomrule
+                 
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced \noalign.
+\bottomrule ->\noalign 
+                       {\ifnum 0=`}\fi \@aboverulesep =\aboverulesep \global...
+l.153 \bottomrule
+                 
+I expect to see \noalign only after the \cr of
+an alignment. Proceed, and I'll ignore this case.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.154 \end
+          {tabular}
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.154 \end
+          {tabular}
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.154 \end
+          {tabular}
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.154 \end
+          {tabular}
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.154 \end
+          {tabular}
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.154 \end
+          {tabular}
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.154 \end
+          {tabular}
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.154 \end
+          {tabular}
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.154 \end
+          {tabular}
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.154 \end
+          {tabular}
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.154 \end
+          {tabular}
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.154 \end
+          {tabular}
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.154 \end
+          {tabular}
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.154 \end
+          {tabular}
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.154 \end
+          {tabular}
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.154 \end
+          {tabular}
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.154 \end
+          {tabular}
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing { inserted.
+<to be read again> 
+                   $
+l.154 \end
+          {tabular}
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.154 \end
+          {tabular}
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing { inserted.
+<to be read again> 
+                   $
+l.154 \end
+          {tabular}
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.154 \end
+          {tabular}
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing { inserted.
+<to be read again> 
+                   $
+l.154 \end
+          {tabular}
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.154 \end
+          {tabular}
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.154 \end
+          {tabular}
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.154 \end
+          {tabular}
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.154 \end
+          {tabular}
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.154 \end
+          {tabular}
+I'm guessing that you meant to end an alignment here.
+
+! Missing { inserted.
+<inserted text> 
+                {
+l.154 \end
+          {tabular}
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+! Undefined control sequence.
+\@BTrule ...\doublerulesep \fi \fi \fi \@BTswitch 
+                                                  
+l.154 \end
+          {tabular}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Misplaced \crcr.
+<recently read> \crcr 
+                      
+l.154 \end{tabular}
+                   
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Extra }, or forgotten $.
+\endtabular ->\crcr \egroup \egroup 
+                                    $\egroup 
+l.154 \end{tabular}
+                   
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
 
 
-[62
+
+[73
 
 
 ]
+Overfull \hbox (23.4547pt too wide) in paragraph at lines 178--200
+ [] 
+ []
 
-[63
+
+
+[74
 
 ])
 
@@ -2263,60 +3118,42 @@ Package biblatex Warning: No driver for 'lecturenote'.
 
 
 
-[64
+[75
 
 
-]
-
-! LaTeX Error: \begin{center} on input line 154 ended by \end{document}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.134 \end{document}
-                    
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-(./main.aux)
+] (./main.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: C841E373BF33640EB5784CC0C8B34C19;9866.
+(rerunfilecheck)             Checksum: 8EFF9FCBDEEC130DDCC4E65DEE2F3006;11934.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
- )
-(\end occurred inside a group at level 1)
-
-### semi simple group (level 1) entered at line 154 (\begingroup)
-### bottom level 
+ ) 
 Here is how much of TeX's memory you used:
- 40849 strings out of 473190
- 805367 string characters out of 5715800
- 1688798 words of memory out of 5000000
- 62863 multiletter control sequences out of 15000+600000
- 647465 words of font info for 450 fonts, out of 8000000 for 9000
+ 40931 strings out of 473190
+ 806760 string characters out of 5715800
+ 1688889 words of memory out of 5000000
+ 62905 multiletter control sequences out of 15000+600000
+ 649036 words of font info for 461 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 92i,20n,99p,1036b,1515s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmex10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/mathpazo/fplm
-r.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/mathpazo/fplmri.pf
-b></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb>
-</usr/local/texlive/2025/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/l
-ocal/texlive/2025/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/te
-xlive/2025/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (64 pages, 1549305 bytes).
+ 92i,22n,99p,1036b,1410s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
+></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb>
+</usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></
+usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></u
+sr/local/texlive/2025/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb></usr/lo
+cal/texlive/2025/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb></usr/local/
+texlive/2025/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb></usr/local/te
+xlive/2025/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2
+025/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2025/tex
+mf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on main.pdf (75 pages, 2357198 bytes).
 PDF statistics:
- 686 PDF objects out of 1000 (max. 8388607)
- 560 compressed objects within 6 object streams
- 132 named destinations out of 1000 (max. 500000)
- 118862 words of extra memory for PDF output out of 128383 (max. 10000000)
+ 802 PDF objects out of 1000 (max. 8388607)
+ 662 compressed objects within 7 object streams
+ 156 named destinations out of 1000 (max. 500000)
+ 121011 words of extra memory for PDF output out of 128383 (max. 10000000)
 

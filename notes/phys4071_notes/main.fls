@@ -611,12 +611,12 @@ INPUT ./images/particles_mass.png
 INPUT ./images/particles_mass.png
 INPUT ./images/particles_mass.png
 INPUT ./images/particles_mass.png
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/vf/adobe/palatino/pplr8t.vf
 INPUT ./chapters/ch05_thermodynamics_and_primordial_soup.tex
 INPUT ./chapters/ch05_thermodynamics_and_primordial_soup.tex
 INPUT ./chapters/ch05_thermodynamics_and_primordial_soup.tex
 INPUT ./chapters/ch05_thermodynamics_and_primordial_soup.tex
 INPUT chapters/ch05_thermodynamics_and_primordial_soup.tex
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/vf/adobe/palatino/pplr8t.vf
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/vf/public/mathpazo/zplmr7m.vf
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/mathpazo/fplmri.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm
@@ -644,6 +644,11 @@ INPUT ./images/g*_evolution.png
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/vf/public/mathpazo/zplmr7y.vf
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/mathpazo/fplmr.tfm
+INPUT ./images/dependence_interaction_strength.png
+INPUT ./images/dependence_interaction_strength.png
+INPUT ./images/dependence_interaction_strength.png
+INPUT ./images/dependence_interaction_strength.png
+INPUT ./images/dependence_interaction_strength.png
 INPUT ./chapters/ch06_Big_Bang_nucleosynthesis.tex
 INPUT ./chapters/ch06_Big_Bang_nucleosynthesis.tex
 INPUT ./chapters/ch06_Big_Bang_nucleosynthesis.tex
@@ -671,6 +676,7 @@ INPUT ./chapters/appendix.tex
 INPUT chapters/appendix.tex
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/vf/public/mathpazo/zplmr7t.vf
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/adobe/palatino/pplr8t.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/adobe/palatino/pplrc8t.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/vf/adobe/palatino/pplrc8t.vf
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/adobe/palatino/pplr8r.tfm
