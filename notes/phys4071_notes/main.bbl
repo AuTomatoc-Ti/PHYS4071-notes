@@ -19,6 +19,45 @@
 
 \refsection{0}
   \datalist[entry]{none/global//global/global/global}
+    \entry{PHYS4071_2026}{lecturenote}{}{}
+      \list{publisher}{1}{%
+        {HKUST}%
+      }
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labeltitlesource}{title}
+      \field{title}{PHYS4071 Big Bang Cosmology \& Inflation Lecture Notes}
+      \field{year}{2026}
+      \true{nocite}
+    \endentry
+    \entry{Eigenchris_Relativity_Course}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=9972d79e0ad21c024bf6a4e1f6a40eb7}{%
+           family={Eigenchris},
+           familyi={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{9972d79e0ad21c024bf6a4e1f6a40eb7}
+      \strng{fullhash}{9972d79e0ad21c024bf6a4e1f6a40eb7}
+      \strng{fullhashraw}{9972d79e0ad21c024bf6a4e1f6a40eb7}
+      \strng{bibnamehash}{9972d79e0ad21c024bf6a4e1f6a40eb7}
+      \strng{authorbibnamehash}{9972d79e0ad21c024bf6a4e1f6a40eb7}
+      \strng{authornamehash}{9972d79e0ad21c024bf6a4e1f6a40eb7}
+      \strng{authorfullhash}{9972d79e0ad21c024bf6a4e1f6a40eb7}
+      \strng{authorfullhashraw}{9972d79e0ad21c024bf6a4e1f6a40eb7}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Relativity by Eigenchris}
+      \field{year}{2025}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://www.youtube.com/playlist?list=PLJHszsWbB6hqlw73QjgZcFh4DrkQLSCQa
+      \endverb
+      \verb{url}
+      \verb https://www.youtube.com/playlist?list=PLJHszsWbB6hqlw73QjgZcFh4DrkQLSCQa
+      \endverb
+    \endentry
     \entry{Carmeli_2001}{inproceedings}{}{}
       \name{author}{1}{}{%
         {{hash=a567eedd3586ffc9f0058821e4244295}{%
@@ -38,8 +77,8 @@
       \strng{authornamehash}{a567eedd3586ffc9f0058821e4244295}
       \strng{authorfullhash}{a567eedd3586ffc9f0058821e4244295}
       \strng{authorfullhashraw}{a567eedd3586ffc9f0058821e4244295}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{AIP Conference Proceedings}
@@ -59,17 +98,6 @@
       \verb{url}
       \verb http://dx.doi.org/10.1063/1.1419571
       \endverb
-    \endentry
-    \entry{PHYS4071_2026}{lecturenote}{}{}
-      \list{publisher}{1}{%
-        {HKUST}%
-      }
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
-      \field{labeltitlesource}{title}
-      \field{title}{PHYS4071 Big Bang Cosmology \& Inflation Lecture Notes}
-      \field{year}{2026}
-      \true{nocite}
     \endentry
   \enddatalist
 \endrefsection

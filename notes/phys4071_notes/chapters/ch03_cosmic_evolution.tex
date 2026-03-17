@@ -5,3 +5,304 @@
 \chapter{Cosmic Evolution (Lecture 5-7)}
 
 % ──────────────────────────────────────────────────────────────────────────────
+\section{Dynamical Equations}
+\subsection{1st Friedmann Equation}
+\begin{foundation}
+    Recall the FLRW metric:
+    \[
+        g_{\mu\nu} = \begin{pmatrix}
+            -1 & 0 & 0 & 0 \\
+            0 & \frac{a^2}{1-kr^2} & 0 & 0 \\
+            0 & 0 & a^2 r^2 & 0 \\
+            0 & 0 & 0 & a^2 r^2 \sin^2\theta
+        \end{pmatrix}
+    \]
+    where $a(t)$ is the scale factor, and $k$ is the curvature constant. \\
+
+    By brunches of tedious calculations from Christoffel symbols, Riemann curvature tensor(If you really want to do the calculation, you can used the equations in the appendix B.2, trust me, it will not be a good idea), we can find out the Ricci tensor and Ricci scalar as below:
+    \[
+        \begin{cases}
+            R_{00} = -3\frac{\ddot{a}}{a} \\
+            R = \frac{6}{a^2}\left( a \ddot{a} + \dot{a}^2 + k \right)
+        \end{cases}
+    \] \\
+
+    Now plugging above results into the Einstein's field equation, we can get the 1st Friedmann equation as below:
+    \begin{align*}
+        R_{00} - \frac{1}{2}g_{00}R &= 8\pi G T_{00} \\
+        -3\frac{\ddot{a}}{a} + \frac{1}{2}\frac{6}{a^2}\left( a \ddot{a} + \dot{a}^2 + k \right) &= 8\pi G \rho \\
+        -3\frac{\ddot{a}}{a} \frac{a}{a} + 3\frac{1}{a^2}\left( a \ddot{a} + \dot{a}^2 + k \right) &= 8\pi G \rho \\
+        -3\frac{\ddot{a}a}{a^2} + 3\frac{1}{a^2}\left(a\ddot{a}\right) + 3 \frac{1}{a^2}\left( \dot{a}^2 + k \right) &= 8\pi G \rho \\
+        3\frac{\dot{a}^2 + k}{a^2} &= 8\pi G \rho \\
+        3 H^2 + 3\frac{k}{a^2} &= 8\pi G \rho \\
+        H^2 &= \frac{8\pi G}{3}\rho - \frac{k}{a^2}
+    \end{align*}
+\end{foundation}
+
+\bigskip \noindent
+\begin{theory}
+    The 1st Friedmann equation is written as below:
+    \[
+        H^2 = \frac{\dot{a}^2}{a^2} = \frac{8\pi G}{3}\rho - \frac{k}{a^2}
+    \]
+    where $H$ is the Hubble parameter, $\rho$ is the energy density, $k$ is the curvature constant\\
+
+    This equation tells us how the expansion rate $H$ changes with the energy(mass) density $\rho$, curvature $k$
+\end{theory}
+
+
+% ──────────────────────────────────────────────────────────────────────────────
+\bigskip \noindent \bigskip \noindent \bigskip \noindent
+\subsection{2nd Friedmann Equation}
+\begin{foundation}
+    Similarly, we can get the 2nd Friedmann equation by using the results of Ricci tensor and Ricci scalar, and finding the trace of the Einstein's field equation:
+    \begin{align*}
+        R_{\mu\nu} - \frac{1}{2}g_{\mu\nu}R &= 8\pi G T_{\mu\nu} \\
+        R_{\mu\nu}g^{\mu\nu} - \frac{1}{2}g_{\mu\nu}g^{\mu\nu}R &= 8\pi G T_{\mu\nu}g^{\mu\nu} \\
+        R - \frac{1}{2} R \delta^\mu_\mu &= 8\pi G T \\
+        - R &= 8\pi G T \\
+        - (\frac{6}{a^2}\left( a \ddot{a} + \dot{a}^2 + k \right) ) &= 8\pi G (- \rho + 3p) \\
+        \frac{a \ddot{a}}{a^2} + \frac{\dot{a}^2 + k}{a^2} &= - \frac{8\pi G}{6}(- \rho + 3p) \\
+        \frac{\ddot{a}}{a} + \frac{8\pi G}{3}\rho &= \frac{4\pi G}{3}(\rho) - \frac{4\pi G}{3}(3p) \\
+        \frac{\ddot{a}}{a} &= -\frac{4\pi G}{3}(\rho + 3p)
+    \end{align*}
+\end{foundation}
+
+\bigskip \noindent
+\begin{theory}
+    The 2nd Friedmann equation is written as below:
+    \[
+        \frac{\ddot{a}}{a} = -\frac{4\pi G}{3}(\rho + 3p) 
+    \]
+    where $p$ is the pressure. \\
+
+    This equation tells us how the expansion acceleration $\ddot{a}$ changes with the energy(mass) density $\rho$ and pressure $p$.
+\end{theory}
+
+\bigskip \noindent
+\begin{remarks}
+    The Friedmann equations assumed that the universe is homogeneous and isotropic, which means the energy density $\rho$ and pressure $p$ are the same everywhere in the large scale of universe.
+\end{remarks}
+
+
+% ──────────────────────────────────────────────────────────────────────────────
+\bigskip \noindent \bigskip \noindent \bigskip \noindent
+\subsection{Continuity Equation}
+\begin{intuition}
+    Now we have two equations with three unknowns: $a$, $\rho$, and $p$. Thus, we need the "3rd Friedmann equation" to solve for these variables, and we usually call it the continuity equation. 
+\end{intuition}
+
+\bigskip \noindent
+\begin{foundation}
+    We can first take the time derivative of the 1st Friedmann equation:
+    \begin{align*}
+        \frac{\dot{a}^2}{a^2} &= \frac{8\pi G}{3}\rho - \frac{k}{a^2} \\
+        \dot{a}^2 &= \frac{8\pi G}{3}\rho a^2 - k \\
+        2\dot{a}\ddot{a} &= \frac{8\pi G}{3}(\dot{\rho} a^2 + \rho 2 a \dot{a}) - 0 \\
+        \dot{a} \ddot{a} \frac{1}{a \dot{a}} &= \frac{4\pi G}{3}(\dot{\rho} a^2 \frac{1}{a \dot{a}} + \rho 2 a \dot{a} \frac{1}{a \dot{a}}) \\
+        \frac{\ddot{a}}{a} &= \frac{4\pi G}{3}(\dot{\rho} \frac{a}{\dot{a}} + 2\rho) \\
+        - \frac{4\pi G}{3}(\rho + 3p) &= \frac{4\pi G}{3}(\dot{\rho} \frac{a}{\dot{a}} + 2\rho) \\
+        \dot{\rho} \frac{a}{\dot{a}} + 2\rho &= -\rho - 3p \\
+        \dot{\rho} \frac{a}{\dot{a}} &= -3\rho - 3p \\
+        \dot{\rho} &= - 3\frac{\dot{a}}{a}(\rho + p)\\
+    \end{align*}
+\end{foundation}
+
+\bigskip \noindent
+\begin{theory}
+    The continuity equation is written as below:
+    \[
+        \dot{\rho} + 3H(\rho + p) = 0
+    \]
+
+    It tell us how the energy(mass) density $\rho$ changes with the size of the universe $a$.
+\end{theory}
+
+\bigskip \noindent
+\begin{example}{Another proof of the continuity equation}
+    Assuming that the universe is Adiabatic Expansion (i.e. no heat exchange) can you derive the continuity equation by using the first law of thermodynamics?
+    \[
+        dE + pdV = dQ = 0
+    \]
+
+    \bigskip\textbf{Solution.}\quad \\
+    \begin{align*}
+        dE + pdV &= 0 \\
+        d(\rho V) + pdV &= 0 \\
+        d(\rho a^3) + pd(a^3) &= 0 \\
+        a^3 d\rho + 3a^2 \rho da + 3a^2 p da &= 0 \\
+        a^3 d\rho + 3a^2 (\rho + p) da &= 0 \\
+        d\rho + 3\frac{da}{a} (\rho + p) &= 0 \\
+        \dot{\rho} + 3H(\rho + p) &= 0
+    \end{align*}
+\end{example}
+
+\bigskip \noindent
+\begin{extra}
+    There is actually a third way to derive the continuity equation, by using the Local conservation of energy-momentum tensor:
+    \[
+        \nabla_\mu T^{\mu\nu} = 0
+    \]
+    In fact, the derivation from the local conservation of energy-momentum tensor suggest that the continuity equation is just a consequence of local energy-momentum conservation, which gives the physical meaning of the continuity equation. \\
+
+    The proof is left as an exercise for the reader. \\
+    (Hints: watch the Relativity 110f by Eigenchris, \cite{Eigenchris_Relativity_Course})
+\end{extra}
+
+
+% =══════════════════════════════════════════════════════════════════════════════
+\bigskip \noindent \bigskip \noindent \bigskip \noindent
+\section{Cosmological constant and Vacuum Energy}
+\subsection{Origin of Cosmological Constant}
+\begin{intuition}
+    Recall the 2nd Friedmann equation:
+    \[
+        \frac{\ddot{a}}{a} = -\frac{4\pi G}{3}(\rho + 3p) 
+    \]
+    Assume that the universe contains normal matter which $p \geq 0$ and $\rho > 0$, then we have $\ddot{a} < 0$. \\
+
+    When Einstein get this result in 1917, he found the result is unacceptable for his belief of a static universe, which requires $\ddot{a} = \dot{a} = 0$. Thus, he introduced the cosmological constant $\Lambda$, in order to balance the gravity of matter, but he cant give out a physical meaning of $\Lambda$ at that time. \\
+\end{intuition}
+
+
+\bigskip \noindent
+\begin{foundation}
+    After introducing the cosmological constant $\Lambda$, the Einstein's field equation becomes:
+    \[
+        R_{\mu\nu} - \frac{1}{2}Rg_{\mu\nu} + \Lambda g_{\mu\nu} = 8\pi G T_{\mu\nu}
+    \]
+
+    If we treat the extra term $\Lambda g_{\mu\nu}$ as an energy-momentum tensor, we can rewrite the equation as:
+    \[
+        R_{\mu\nu} - \frac{1}{2}Rg_{\mu\nu} = 8\pi G (T_{\mu\nu} + T^{(\Lambda)}_{\mu\nu})
+    \]
+    where $T^{(\Lambda)}_{\mu\nu} = -\frac{\Lambda}{8\pi G} g_{\mu\nu}$ is the energy-momentum tensor of the cosmological constant. \\
+\end{foundation}
+
+\bigskip \noindent
+\begin{intuition}
+    In a physic intuition, the extra term come from cosmological constant can be treated as a perfect fluid with energy density $\rho_\Lambda = \frac{\Lambda}{8\pi G}$ and pressure $p_\Lambda = -\rho_\Lambda$. Thus, the equation of LHS and RHS of the Einstein's field equation are still balanced, we just add an extra contribution of energy apart from the normal matter. \\
+\end{intuition}
+
+\bigskip \noindent
+\begin{theory}
+    The cosmological constant in energy-momentum tensor form can be written as:
+    \[
+        T^{(\Lambda)}_{\mu\nu} = \begin{pmatrix}
+            \rho_\Lambda & 0 & 0 & 0 \\
+            0 & -\rho_\Lambda & 0 & 0 \\
+            0 & 0 & -\rho_\Lambda & 0 \\
+            0 & 0 & 0 & -\rho_\Lambda
+        \end{pmatrix}
+    \]
+    whether:
+    \[
+        \begin{cases}
+            \rho_\Lambda = \frac{\Lambda}{8\pi G} = \text{constant} \\
+            p_\Lambda = -\rho_\Lambda
+        \end{cases}
+    \]
+
+    And we can see that the energy is constant throughout spacetime with negative pressure, and we said that the cosmological constant is equivalent to vacuum energy. \\
+\end{theory}
+
+% explain the difference between cosmological constant and vacuum energy
+\begin{importantnote}
+
+\end{importantnote}
+
+\begin{extra}
+    When Hubble shows that universe is expanding in 1929, the cosmological constant is no longer needed to balance the gravity of matter, thus it is largely abandoned, and Einstein even call it the "biggest blunder" in his life. \\
+
+    Dramatically, the cosmological constant is revived in 1998, when the observation of Type Ia supernovae shows that the universe is accelerating expanding, Astronomers need to introduce the extra term of energy back in EFE to explain the accelerated expansion, and the cosmological constant are revived with a different physical meaning, which is the dark energy.
+\end{extra}
+
+\begin{figure}[htbp]
+    \centering
+    \begin{tikzpicture}[x=1cm,y=1cm]
+        % axis
+        \draw[->, thick, DeepSpace] (0,0) -- (14.2,0)
+            node[right, DeepSpace] {year};
+
+        % event boxes
+        \node[draw=DeepSpace, fill=GoldBG, rounded corners=2pt, align=left, font=\scriptsize, text width=3.8cm] (A) at (2.1,1.9)
+        {\textbf{1917: Introduction of $\Lambda$}\\Einstein adds a positive \\ cosmological constant $\Lambda > 0$ to allow a static universe.};
+
+        \node[draw=DeepSpace, fill=GrayBG, rounded corners=2pt, align=left, font=\scriptsize, text width=4.3cm] (B) at (7.0,-2.0)
+        {\textbf{1929: Expansion discovered}\\Hubble's observation supports an expanding universe, so $\Lambda = 0$ and largely abandoned.};
+
+        \node[draw=DeepSpace, fill=GreenBG, rounded corners=2pt, align=left, font=\scriptsize, text width=3.8cm] (C) at (11.9,1.9)
+        {\textbf{1998: Revival of $\Lambda$}\\Type Ia supernovae reveal accelerated expansion, so $\Lambda$ returns in the standard $\Lambda$CDM model, with $\Lambda > 0$ interpreted as dark energy.};
+
+        % timeline dots and labels
+        \fill[DeepSpace] (2.1,0) circle (1.5pt);
+        \fill[DeepSpace] (7.0,0) circle (1.5pt);
+        \fill[DeepSpace] (11.9,0) circle (1.5pt);
+
+        \node[font=\scriptsize, text=DeepSpace] at (2.1,-0.55) {1917};
+        \node[font=\scriptsize, text=DeepSpace] at (7.0,0.55) {1929};
+        \node[font=\scriptsize, text=DeepSpace] at (11.9,-0.55) {1998};
+
+        % arrows along the timeline
+        %\draw[->, thick, DeepSpace] (2.1,0) -- (7.0,0);
+        \draw[->, thick, DeepSpace] (2.1,0) -- (11.9,0);
+
+        % connectors
+        \draw[thin, DeepSpace] (2.1,0.1) -- (A.south);
+        \draw[thin, DeepSpace] (7.0,-0.1) -- (B.north);
+        \draw[thin, DeepSpace] (11.9,0.1) -- (C.south);
+    \end{tikzpicture}
+    \caption{Three major changes in the historical role of the cosmological constant.}
+    \label{fig:cosmological-constant-history}
+\end{figure}
+
+
+% ──────────────────────────────────────────────────────────────────────────────
+\bigskip \noindent \bigskip \noindent \bigskip \noindent
+\subsection{Friedmann Equations with Cosmological Constant}
+\bigskip \noindent
+\begin{theory}
+    By considering the cosmological constant, the 1st Friedmann equations becomes:
+    \[
+        H^2 = \frac{8\pi G}{3}\rho - \frac{k}{a^2} + \frac{\Lambda}{3}
+    \]
+    and the 2nd Friedmann equations becomes:
+    \[
+        \frac{\ddot{a}}{a} = -\frac{4\pi G}{3}(\rho + 3p) + \frac{\Lambda}{3}
+    \]
+    and the continuity equation is unchanged:
+    \[
+        \dot{\rho} + 3H(\rho + p) = 0
+    \]
+\end{theory}
+
+% -────────────────────────────────────────────────────────────────────────────
+\bigskip \noindent \bigskip \noindent \bigskip \noindent
+\subsection{Newtonian Gravity with Cosmological Constant}
+
+% ──────────────────────────────────────────────────────────────────────────────
+\bigskip \noindent \bigskip \noindent \bigskip \noindent
+\subsection{Evolution of Scale Factor}
+
+
+% =══════════════════════════════════════════════════════════════════════════════
+\bigskip \noindent \bigskip \noindent \bigskip \noindent
+\section{SCDM and $\Lambda$CDM Models}
+
+% =══════════════════════════════════════════════════════════════════════════════
+\bigskip \noindent \bigskip \noindent \bigskip \noindent
+\section{Dark Energy and the Accelerating Universe}
+\subsection{Observational Evidence for Dark Energy}
+
+% ──────────────────────────────────────────────────────────────────────────────
+\bigskip \noindent \bigskip \noindent \bigskip \noindent
+\subsection{Dark Energy Models}
+
+
+
+
+
+% =══════════════════════════════════════════════════════════════════════════════
+\bigskip \noindent \bigskip \noindent \bigskip \noindent
+\section{Fate of Universe}
+

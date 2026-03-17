@@ -207,7 +207,7 @@ And this unified metric is called the \textbf{Robertson-Walker metric}, which ca
     As the scale factor $a(t)$ applied on the metric instead of the coordinates difference $dr$, $d\theta$, and $d\phi$, we can think the measurement of coordinate spatial distance is fixed, but the measurement unit (the ruler itself) is changing with time. \\
 
     \[
-        \Delta D_{proper} = a(t) \Delta D_{coordinate}
+        \Delta D_{proper} = a(t) \Delta D_{comoving}
     \]
     \\
 
@@ -232,8 +232,143 @@ And this unified metric is called the \textbf{Robertson-Walker metric}, which ca
 \bigskip\noindent \bigskip\noindent \bigskip\noindent
 \section{Hubble's Law}
 \subsection{Redshift and Recession Velocity}
+Recall the redshift $z$ can occur when the source is moving away from the observer.
+\begin{foundation}
+\end{foundation}
+
+\bigskip\noindent
+\begin{theory}
+    calculation on \textbf{Doppler redshift}, based on wavelength:
+    \[
+        z = \frac{\lambda_{obs} - \lambda_{emit}}{\lambda_{emit}} = \frac{\lambda_{obs}}{\lambda_{emit}} - 1
+    \]
+    and based on frequency:
+    \[
+        z = \frac{\nu_{emit} - \nu_{obs}}{\nu_{obs}} = \frac{\nu_{emit}}{\nu_{obs}} - 1
+    \]
+    and based on the peculiar velocity of the source:
+    \[
+        z = \sqrt{\frac{1 + v/c}{1 - v/c}} - 1
+    \]
+    where +ve $v$ means the source is moving away from the observer, and -ve $v$ means the source is moving towards the observer. \\
+\end{theory}
+
+\bigskip\noindent
+\begin{intuition}
+    However, in 1929, Edwin Hubble found that most of the galaxies are moving away from us, which does not make sense, if the doppler effect is the only reason for the redshift, then we should expect around half of the galaxies are moving towards us, and the other half are moving away from us, which is not what we observed. \\
+
+    It suggests that there must be another reason for the redshift, and later we know that it is the expansion of the universe that causes the redshift, which dominates over the doppler effect for distant galaxies, and thats why most of the galaxies are moving away from us. \\
+\end{intuition}
+
+\bigskip\noindent
+\begin{theory}
+    Calculation on \textbf{cosmological redshift}, based on the expansion of the universe:
+    \[
+        z = \frac{a(t_{obs})}{a(t_{emit})} - 1 = \frac{\lambda_{obs}}{\lambda_{emit}} - 1 = \frac{\nu_{emit}}{\nu_{obs}} - 1
+    \]
+    and based on the recession velocity of the source:
+    \[
+        z = \sqrt{\frac{1 + v/c}{1 - v/c}} - 1
+    \]
+    where $a(t_{obs})$ is the scale factor at the time of observation, and $a(t_{emit})$ is the scale factor at the time of emission. \\
+
+    If we treat the scale factor $a(t)$ will change with time, and let the time of observation be $t_0$, so that $a(t_0) = a_0 = 1$, then we can rewrite the cosmological redshift as:
+    \[
+        z = \frac{1}{a(t_{emit})} - 1
+    \]
+\end{theory}
+
+\bigskip\noindent
+\begin{remark}
+    The redshift $z$ of galaxies can be contributed by both recession motion(\textbf{cosmological redshift}) and peculiar motion(\textbf{doppler redshift}), but for distant galaxies $ z > 0.01 $, the cosmological redshift dominates over the doppler redshift.
+\end{remark}
+% -─────────────────────────────────────────────────────────────────────────────
+\subsection{Hubble's Law}
+\begin{intuition}
+    In 1823, Olber's paradox was proposed, which states that if the universe is infinite and static, then the night sky should be bright because there are infinite number of stars in the universe.  However, the night sky is dark, which means the universe cannot be infinite and static. \\
+
+    The paradox can not be resolved until the discovery by Edwin Hubble in 1929, who found that the recession velocity of galaxies is proportional to their distance from us, which is now known as Hubble's law. The Hubble's law then become one of the core evidences for the expansion of the universe, and suggest the Big Bang theory as the most plausible model for the origin of the universe, which solves the Olber's paradox by proposing that the universe is neither infinite nor static, but it is expanding from a hot and dense initial state.
+\end{intuition}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.75\textwidth]{images/hubble_diagram.png}
+    \caption{Hubble diagram showing the relationship between the recession velocity of galaxies and their distance from us.}
+    \label{fig:hubble-diagram}
+\end{figure}
+
+\bigskip\noindent
+The left plot show the original data from Hubble's 1929 paper, and the right plot show the modern data from more distinct galaxies, which is more accurate and has more convincing straight line to fit.
+    
+\bigskip\noindent
+\begin{theory}
+    Hubble's Law states that the recession velocity of a galaxy is proportional to its distance from us:
+    \[
+        v = H D
+    \]
+    where $H$ is the Hubble constant, D is the proper distance to the galaxy(true distance between 2 points), and can be changed with time unlike the co-moving distance(the number of marks).
+\end{theory}
+
+\bigskip\noindent
+\begin{theory}
+    Let $D_{proper}$ be the proper distance to a galaxy, and $D_{comoving}$ be the co-moving distance to the galaxy, then we have:
+    \[
+        D_{proper}(t) = a(t) \cdot D_{comoving}
+    \] 
+    Note $D_{comoving}$ is independent to time.\\
+
+    The recession velocity $v$ can also be defined as:
+    \[
+        v \equiv \frac{dD_{proper}}{dt} = \dot{a}(t) \cdot D_{comoving}
+    \]
+    And sub the Hubble's law into the above equation, we can get:
+    \begin{align*}
+        v &= H D_{proper} \\     
+        \dot{a}(t) \cdot D_{comoving} &= H a(t) \cdot D_{comoving} \\
+        \dot{a}(t) &= H a(t)
+    \end{align*} \\
+
+    And we know that the Hubble parameter is equal to:
+    \[
+        H(t) = \frac{\dot{a}(t)}{a(t)}
+    \]
+\end{theory}
+
+\bigskip\noindent
+\begin{remark}
+    Note $a(t) > 0$ for all $t$, which means the scale factor can never be zero(except at the initial singularity), while the observation shows that $H_0 > 0$, which indicates $\dot{a}(t_0) > 0$, which means the universe is expanding at the current time $t_0$.
+\end{remark}
 
 
+\bigskip\noindent
+Now we can finding the relationship between the redshift $z$ and the distance $D$ of a galaxy, by using the Hubble's law and the definition of cosmological redshift:
+\begin{theory}
+    we have cosmological redshift:
+    \[
+        z = \frac{1}{a(t_{emit})} - 1
+    \]
+\end{theory}
 
+\bigskip\noindent
+\begin{importantnote}
+    Hubble's constant $H_0$ is not actually a constant, but it can change with time. \\
 
+    The value of $H(t_0) = H_0$ is the current value of the Hubble parameter, which is measured to be around $67.66 \pm 0.42 \, \mathrm{km/s/Mpc}$ by the Planck Mission in 2018.
+\end{importantnote}
+    
+\bigskip\noindent
+\begin{extra}
+    The Hubble's law get renamed to Hubble-Lemaître law in 2018 by the International Astronomical Union (IAU) to recognize the contribution of Georges Lemaître, who first derived the linear relationship between the recession velocity and distance of galaxies in 1927, two years before Hubble's observational discovery in 1929. However, the name change is still controversial, and many people still refer to it as Hubble's law. 
+\end{extra}
+
+\bigskip\noindent
+\begin{extra}
+    The Hubble's constant can not be measured directly, but it can be inferred indirectly through observations of the universe, and there are two main methods: the distance ladder method and the cosmic microwave background (CMB) method. \\
+
+    The distance ladder method uses standard candles like Cepheid variables and Type Ia supernovae to measure the distance to galaxies, it focus on "late universe", which means the universe at low redshift$z < 0.1$, and get the value of the Hubble constant to be around $73.04 \pm 1.04 \, \mathrm{km/s/Mpc}$ by the SH0ES team in 2021. \\
+
+    The CMB method uses the anisotropies in the cosmic microwave background radiation to infer the value of the Hubble constant, it focus on "early universe", which means the universe at high redshift $z \sim 1100$, and get the value of the Hubble constant to be around $67.66 \pm 0.42 \, \mathrm{km/s/Mpc}$ by the Planck Mission in 2018. \\
+
+    The difference results of $H_0$ obtained by two methods is known as the Hubble tension, which is one of the biggest unsolved problems in cosmology.
+\end{extra}
 \clearpage
