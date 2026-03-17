@@ -305,7 +305,7 @@ As a results, we can further simplified the operations like the dot product and 
   \]
   Then we can calculate the trace:
   \[
-    T = g^{\mu\nu} g_{\mu\nu} = (-1)(-1) + (1)(1) + (r^{-2})(r^2) + (r^{-2} \sin^{-2}\theta)(r^2 \sin^2\theta) = 4.
+    Trace = g^{\mu\nu} g_{\mu\nu} = (-1)(-1) + (1)(1) + (r^{-2})(r^2) + (r^{-2} \sin^{-2}\theta)(r^2 \sin^2\theta) = 4.
   \]
 \end{example}
 
@@ -465,14 +465,29 @@ As a results, we can further simplified the operations like the dot product and 
   \[
     T^{\mu\nu} = \begin{pmatrix}
       \rho & 0 & 0 & 0 \\
-      0 & P & 0 & 0 \\
-      0 & 0 & P & 0 \\
-      0 & 0 & 0 & P
+      0 & -P & 0 & 0 \\
+      0 & 0 & -P & 0 \\
+      0 & 0 & 0 & -P
     \end{pmatrix}
   \]
 \end{theory}
 
-The perfect fluid is a good approximation for many astrophysical and cosmological systems, such as stars, galaxies, and the large-scale structure of the universe. As it is isotropic and has no shear stress, it can be used to model the behavior of matter in these systems without having to consider the complexities of viscosity and heat conduction.
+The perfect fluid is a good approximation for many astrophysical and cosmological systems, such as stars, galaxies, and the large-scale structure of the universe. As it is isotropic and has no shear stress, it can be used to model the behavior of matter in these systems without having to consider the complexities of viscosity and heat conduction. \\
+
+\bigskip\noindent \bigskip\noindent
+\begin{example}{Trace of Energy-Momentum Tensor for Perfect Fluid}{}
+  Calculate the trace of the energy-momentum tensor for a perfect fluid.
+
+  \bigskip\textbf{Solution.}\quad
+  We can calculate the trace by contracting the indices of the energy-momentum tensor with the metric tensor:
+  \[
+    T = g_{\mu\nu} T^{\mu\nu} = g_{00} T^{00} + g_{11} T^{11} + g_{22} T^{22} + g_{33} T^{33}.
+  \]
+  Substituting the values from the perfect fluid energy-momentum tensor, we get:
+  \[
+    T = (-1)(\rho) + (1)(-P) + (1)(-P) + (1)(-P) = -\rho + 3P.
+  \]
+\end{example}
 
 % =═════════════════════════════════════════════════════════════════════════════
 \newpage
