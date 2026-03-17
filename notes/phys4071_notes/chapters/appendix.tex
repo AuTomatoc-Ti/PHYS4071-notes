@@ -34,8 +34,10 @@ the generation or validation of course content itself.
 
 
 
-\clearpage
 
+
+
+\clearpage
 % ══════════════════════════════════════════════════════════════════════════════
 %  APPENDIX B: MATHEMATICAL TOOLS & DERIVATIONS
 % ══════════════════════════════════════════════════════════════════════════════
@@ -80,11 +82,41 @@ The \textbf{Christoffel symbols} (not tensors) are defined as
 \begin{equation}
   \Gamma^\lambda_{\mu\nu} = \tfrac{1}{2}g^{\lambda\sigma}
     (\partial_\mu g_{\nu\sigma} + \partial_\nu g_{\mu\sigma} - \partial_\sigma g_{\mu\nu}).
-\end{equation}
+\end{equation} \\
+
+The Riemann curvature tensor is defined as
+\begin{equation}
+  R^\rho{}_{\sigma\mu\nu} = \partial_\mu \Gamma^\rho_{\nu\sigma} - \partial_\nu \Gamma^\rho_{\mu\sigma} + \Gamma^\rho_{\mu\lambda}\Gamma^\lambda_{\nu\sigma} - \Gamma^\rho_{\nu\lambda}\Gamma^\lambda_{\mu\sigma}.
+\end{equation} \\
+
 The \textbf{Ricci tensor} is the contraction $R_{\mu\nu} = R^\lambda{}_{\mu\lambda\nu}$
-of the Riemann curvature tensor, and the Ricci scalar is $R = g^{\mu\nu}R_{\mu\nu}$.
-These enter the Einstein field equations as
-$G_{\mu\nu} \equiv R_{\mu\nu} - \tfrac{1}{2}g_{\mu\nu}R = (8\pi G/c^4)T_{\mu\nu}$.
+of the Riemann curvature tensor, and the \textbf{Ricci scalar} is $R = g^{\mu\nu}R_{\mu\nu}$. \\
+
+These enter the Einstein field equations as:
+\begin{equation}
+  R_{\mu\nu} - \tfrac{1}{2}g_{\mu\nu}R + \Lambda g_{\mu\nu} = 8\pi G T_{\mu\nu}.
+\end{equation}
+
+%\bigskip\noindent
+\subsection*{Mostly-Plus vs. Mostly-Minus Signatures}
+The choice of metric signature affects the signs of above tensors in below ways:
+\begin{center}
+      \begin{tabular}{@{}lll@{}}
+      \toprule
+      \textbf{Tensor} & \textbf{Symbol} & \textbf{Sign Change} \\
+      \midrule
+      Metric& $g_{\mu\nu}$ & Flips $\(-\)$ \\
+      Inverse metric & $g^{\mu\nu}$ & Flips $\(-\)$ \\
+      Christoffel symbols & $\Gamma^\lambda_{\mu\nu}$ & No change \\
+      Riemann(1,3) & $R^\rho{}_{\sigma\mu\nu}$ & No change \\
+      Riemann(0,4) & $R_{\rho\sigma\mu\nu}$ & Flips $\(-\)$ \\
+      Ricci tensor & $R_{\mu\nu}$ & No change \\
+      Ricci scalar & $R$ & Flips $\(-\)$ \\
+      Einstein tensor & $G_{\mu\nu}$ & No change \\
+      Stress-energy tensor & $T_{\mu\nu}$ & No change \\
+      \bottomrule
+      \end{tabular}
+\end{center}
 
 \section{Relativistic Limits}
 The energy-momentum relation is $E^2 = p^2c^2 + m^2c^4$.
@@ -113,18 +145,19 @@ which any one of the values in left-hand set is much smaller than any one of the
 \midrule
 Speed of light         & $c$       & $2.998 \times 10^8 \,\mathrm{m\,s^{-1}}$           \\
 Gravitational constant & $G$       & $6.674 \times 10^{-11} \,\mathrm{m^3\,kg^{-1}\,s^{-2}}$ \\
-Hubble constant today  & $H_0$     & $67.4 \pm 0.5 \,\mathrm{km\,s^{-1}\,Mpc^{-1}}$     \\
+Hubble constant today  & $H_0$     & $67.8 \pm 0.77 \,\mathrm{km\,s^{-1}\,Mpc^{-1}}$     \\
 Cosmological constant   & $\Lambda$ & $1.11 \times 10^{-52} \,\mathrm{m^{-2}}$           \\
 Cosmological constant &$\Lambda$ & $1.19 \times 10^{-35} \,\mathrm{s^{-2}}$           \\
 Planck constant         & $\hbar$   & $1.055 \times 10^{-34} \,\mathrm{J\,s}$                     \\
 Boltzmann constant      & $k_B$     & $1.381 \times 10^{-23} \,\mathrm{J\,K^{-1}}$                    \\
 Fermi constant           & $G_F$     & $1.166 \times 10^{-5} \,\mathrm{GeV^{-2}}$                    \\
+Fine-structure constant today  & $\alpha$  & $1/137.036$ \\
 \bottomrule
 \end{tabular}
 \end{center}
 
 \section{Conversion Factors}
-
+\subsection*{Astronomical Units}
 \begin{center}
 \begin{tabular}{ll}
 \toprule
@@ -136,6 +169,23 @@ Fermi constant           & $G_F$     & $1.166 \times 10^{-5} \,\mathrm{GeV^{-2}}
 1 parsec (pc)       & $3.262\,\mathrm{ly}$ \\
 1 year (yr)         & $3.156\times10^{7}\,\mathrm{s}$ \\
 \midrule
+1 Solar mass ($M_\odot$) & $1.989 \times 10^{30} \,\mathrm{kg}$ \\
+1 solar radius ($R_\odot$) & $6.957 \times 10^8 \,\mathrm{m}$ \\
+1 Earth mass ($M_\oplus$) & $5.972 \times 10^{24} \,\mathrm{kg}$ \\
+1 Earth radius ($R_\oplus$) & $6.371 \times 10^6 \,\mathrm{m}$ \\
+CMB temperature ($T_\text{CMB}$) & $2.725 \,\mathrm{K}$ \\
+C$\nu$B temperature ($T_{\text{C}\nu\text{B}}$) & $1.95 \,\mathrm{K}$ \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\clearpage
+\subsection*{Energy Units}
+\begin{center}
+\begin{tabular}{ll}
+\toprule
+\textbf{Conversion} & \textbf{Value} \\
+\midrule
 1 eV                & $1.602 \times 10^{-19} \,\mathrm{J}$ \\
 1 electron mass ($m_e$) & $0.511 \,\mathrm{MeV}/c^2$ \\
 1 electron mass ($m_e$) & $9.109 \times 10^{-31} \,\mathrm{kg}$ \\
@@ -143,18 +193,11 @@ Fermi constant           & $G_F$     & $1.166 \times 10^{-5} \,\mathrm{GeV^{-2}}
 1 proton mass ($m_p$) & $1.673 \times 10^{-27} \,\mathrm{kg}$ \\
 1 neutron mass ($m_n$) & $939.6 \,\mathrm{MeV}/c^2$ \\
 1 neutron mass ($m_n$) & $1.675 \times 10^{-27} \,\mathrm{kg}$ \\
-\midrule
-1 Solar mass ($M_\odot$) & $1.989 \times 10^{30} \,\mathrm{kg}$ \\
-1 solar radius ($R_\odot$) & $6.957 \times 10^8 \,\mathrm{m}$ \\
-1 Earth mass ($M_\oplus$) & $5.972 \times 10^{24} \,\mathrm{kg}$ \\
-1 Earth radius ($R_\oplus$) & $6.371 \times 10^6 \,\mathrm{m}$ \\
-CMB temperature ($T_\text{CMB}$) & $2.725 \,\mathrm{K}$ \\
-C$\nu$B temperature ($T_\text{C \nu B}$) & $1.95 \,\mathrm{K}$ \\
 \bottomrule
 \end{tabular}
 \end{center}
 
-\clearpage
+
 \section{SI Unit Prefixes}
 \begin{center}
 \begin{tabular}{lll}
@@ -173,6 +216,7 @@ C$\nu$B temperature ($T_\text{C \nu B}$) & $1.95 \,\mathrm{K}$ \\
 \end{tabular}
 \end{center}
 
+\clearpage
 \section{Main events in universe}
 \begin{center}
 \begin{tabular}{llll}
