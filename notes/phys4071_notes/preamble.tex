@@ -160,6 +160,7 @@
 
 % ─── Chapter & Section Title Style ────────────────────────────────────────────
 \usepackage{titlesec}
+\usepackage{titletoc}
 
 %   ── Chapter Head — navy banner matching title-page colour tone ─────────────
 %   (Bypasses titlesec for \chapter to avoid the "Nested titles" error;
@@ -197,6 +198,22 @@
 
 % ─── Table of Contents depth ─────────────────────────────────────────────────
 \setcounter{tocdepth}{3}
+
+%   ── Table of Contents Indentation ────────────────────────────────────────
+%   Section: flush left; Subsection: indented (number + title together)
+\titlecontents{section}
+  [2em]
+  {}
+  {\contentslabel{2em}}
+  {}
+  {\titlerule*[0.3pc]{.}\contentspage}
+
+\titlecontents{subsection}
+  [4.7em]
+  {}
+  {\contentslabel{2.7em}}
+  {}
+  {\titlerule*[0.3pc]{.}\contentspage}
 
 %   ── Section Style ─────────────────────────────────────────────────────────
 \titleformat{\section}[block]

@@ -17,25 +17,46 @@
   % Solid dark background
   \fill[TitleBG] (current page.south west) rectangle (current page.north east);
 
-  % Starfield — random white dots of varied size and opacity
-  \foreach \i in {1,...,220}{%
-    \pgfmathsetseed{\i * 71 + 13}%
-    \pgfmathsetmacro{\sx}{rand * 10.5 + 10.5}%
-    \pgfmathsetmacro{\sy}{rand * 14.85 + 14.85}%
-    \pgfmathsetmacro{\ro}{0.15 + 0.55 * rnd}%
-    \pgfmathsetmacro{\rr}{0.4 + 1.1 * rnd}%
-    \fill[white, opacity=\ro] (\sx cm, \sy cm) circle (\rr pt);%
+  % Cosmology-inspired concentric pattern (scale-factor growth)
+  \coordinate (InflationCenter) at ($(current page.center)+(-0.1cm,1.0cm)$);
+
+  % Non-uniform rings: spacing increases outward to suggest expansion history
+  \foreach \r/\col/\op/\lw in {
+    1.15/NebulaTeal/0.30/0.70,
+    2.05/NebulaTeal/0.22/0.75,
+    3.20/StarGold/0.20/0.85,
+    4.70/StarGold/0.16/0.90,
+    6.55/StarGold/0.12/0.95,
+    8.75/StarGold/0.09/1.00
+  }{%
+    \draw[\col, opacity=\op, line width=\lw pt] (InflationCenter) circle (\r cm);
   }%
 
-  % Constellation sketch (Orion belt region, schematic)
-  \newcommand{\starpt}[2]{\fill[StarGold, opacity=0.75] (#1 cm, #2 cm) circle (2.2pt);}%
-  \starpt{4.0}{6.0}   \starpt{5.5}{7.8}   \starpt{6.8}{7.0}
-  \starpt{8.2}{8.5}   \starpt{9.0}{7.2}   \starpt{6.8}{5.2}
-  \starpt{5.8}{4.2}
-  \draw[StarGold, opacity=0.25, line width=0.6pt]
-    (4.0cm,6.0cm) -- (5.5cm,7.8cm) -- (6.8cm,7.0cm) --
-    (8.2cm,8.5cm)  (6.8cm,7.0cm) -- (9.0cm,7.2cm)
-    (6.8cm,7.0cm) -- (6.8cm,5.2cm) -- (5.8cm,4.2cm);
+  % Sparse rays for directionality (kept subtle to avoid title distraction)
+  \foreach \ang in {18,42,66,104,141,199,236,272,318}{%
+    \draw[StarGold!75, opacity=0.10, line width=0.45pt]
+      (InflationCenter) -- ++(\ang:8.8cm);
+  }%
+
+  % Primordial seeds on selected shells
+  \foreach \ang/\rad/\op/\sz in {
+    24/2.10/0.65/1.05,
+    58/4.70/0.52/1.20,
+    96/6.55/0.40/1.10,
+    146/3.20/0.60/1.15,
+    214/4.70/0.50/1.10,
+    268/6.55/0.42/1.00,
+    329/8.75/0.35/0.95
+  }{%
+    \fill[white, opacity=\op] ($(InflationCenter)+(\ang:\rad cm)$) circle (\sz pt);
+  }%
+
+  % Time / scale-factor direction cue
+  %\draw[-{Latex[length=2.6mm,width=1.5mm]}, StarGold, opacity=0.65, line width=0.85pt]
+   % ($(InflationCenter)+(228:1.15cm)$) -- ($(InflationCenter)+(228:8.75cm)$);
+
+  % Outer ring hint for late-time Universe structure scale
+  \draw[white, opacity=0.12, line width=0.55pt] (InflationCenter) circle (8.75cm);
 
   % Horizontal gold accent bars
   \draw[StarGold, line width=1.4pt]
