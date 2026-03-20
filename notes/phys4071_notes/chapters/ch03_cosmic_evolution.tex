@@ -19,7 +19,7 @@
     \]
     where $a(t)$ is the scale factor, and $k$ is the curvature constant. \\
 
-    By brunches of tedious calculations from Christoffel symbols, Riemann curvature tensor(If you really want to do the calculation, you can used the equations in the appendix B.2, trust me, it will not be a good idea), we can find out the Ricci tensor and Ricci scalar as below:
+    By brunches of tedious calculations from Christoffel symbols, Riemann curvature tensor(If you really want to do the calculation, you can used the equations in the appendix B.2, trust me, it was not a good time), we can find out the Ricci tensor and Ricci scalar as below:
     \[
         \begin{cases}
             R_{00} = -3\frac{\ddot{a}}{a} \\
@@ -27,7 +27,7 @@
         \end{cases}
     \] \\
 
-    Now plugging above results into the Einstein's field equation, we can get the 1st Friedmann equation as below:
+    Now plugging above results into the Einstein's field equation, we can get the 1st Friedmann equation as below: \\
     \begin{align*}
         R_{00} - \frac{1}{2}g_{00}R &= 8\pi G T_{00} \\
         -3\frac{\ddot{a}}{a} + \frac{1}{2}\frac{6}{a^2}\left( a \ddot{a} + \dot{a}^2 + k \right) &= 8\pi G \rho \\
@@ -52,7 +52,8 @@
 
 
 % ──────────────────────────────────────────────────────────────────────────────
-\bigskip \noindent \bigskip \noindent \bigskip \noindent
+\clearpage
+%\bigskip \noindent \bigskip \noindent \bigskip \noindent
 \subsection{2nd Friedmann Equation}
 \begin{foundation}
     Similarly, we can get the 2nd Friedmann equation by using the results of Ricci tensor and Ricci scalar, and finding the trace of the Einstein's field equation:
@@ -80,13 +81,14 @@
 \end{theory}
 
 \bigskip \noindent
-\begin{remarks}
+\begin{remark}
     The Friedmann equations assumed that the universe is homogeneous and isotropic, which means the energy density $\rho$ and pressure $p$ are the same everywhere in the large scale of universe.
-\end{remarks}
+\end{remark}
 
 
 % ──────────────────────────────────────────────────────────────────────────────
-\bigskip \noindent \bigskip \noindent \bigskip \noindent
+\clearpage
+%\bigskip \noindent \bigskip \noindent \bigskip \noindent
 \subsection{Continuity Equation}
 \begin{intuition}
     Now we have two equations with three unknowns: $a$, $\rho$, and $p$. Thus, we need the "3rd Friedmann equation" to solve for these variables, and we usually call it the continuity equation. 
@@ -118,9 +120,10 @@
     It tell us how the energy(mass) density $\rho$ changes with the size of the universe $a$.
 \end{theory}
 
-\bigskip \noindent
+\clearpage
+%\bigskip \noindent
 \begin{example}{Another proof of the continuity equation}
-    Assuming that the universe is Adiabatic Expansion (i.e. no heat exchange) can you derive the continuity equation by using the first law of thermodynamics?
+    Assuming that the universe is Adiabatic Expansion (i.e. no heat exchange), can you derive the continuity equation by using the first law of thermodynamics?
     \[
         dE + pdV = dQ = 0
     \]
@@ -149,10 +152,25 @@
     (Hints: watch the Relativity 110f by Eigenchris, \cite{Eigenchris_Relativity_Course})
 \end{extra}
 
+% ──────────────────────────────────────────────────────────────────────────────
+%\clearpage
+\bigskip \noindent \bigskip \noindent \bigskip \noindent
+\subsection{Critical Energy Density and Density Parameters}
+
+
+
+
+% ──────────────────────────────────────────────────────────────────────────────
+%\clearpage
+\bigskip \noindent \bigskip \noindent \bigskip \noindent
+\subsection{Equation of State(EoS) and Energy Density Evolution}
+
+
 
 % =══════════════════════════════════════════════════════════════════════════════
+%\clearpage
 \bigskip \noindent \bigskip \noindent \bigskip \noindent
-\section{Cosmological constant and Vacuum Energy}
+\section{Cosmological constant}
 \subsection{Origin of Cosmological Constant}
 \begin{intuition}
     Recall the 2nd Friedmann equation:
@@ -184,7 +202,8 @@
     In a physic intuition, the extra term come from cosmological constant can be treated as a perfect fluid with energy density $\rho_\Lambda = \frac{\Lambda}{8\pi G}$ and pressure $p_\Lambda = -\rho_\Lambda$. Thus, the equation of LHS and RHS of the Einstein's field equation are still balanced, we just add an extra contribution of energy apart from the normal matter. \\
 \end{intuition}
 
-\bigskip \noindent
+%\clearpage
+%\bigskip \noindent
 \begin{theory}
     The cosmological constant in energy-momentum tensor form can be written as:
     \[
@@ -203,14 +222,11 @@
         \end{cases}
     \]
 
-    And we can see that the energy is constant throughout spacetime with negative pressure, and we said that the cosmological constant is equivalent to vacuum energy. \\
+    And we can see that the energy is constant throughout spacetime with negative pressure, and we said that the cosmological constant is conceptually equivalent to vacuum energy. \\
 \end{theory}
 
-% explain the difference between cosmological constant and vacuum energy
-\begin{importantnote}
 
-\end{importantnote}
-
+\bigskip \noindent
 \begin{extra}
     When Hubble shows that universe is expanding in 1929, the cosmological constant is no longer needed to balance the gravity of matter, thus it is largely abandoned, and Einstein even call it the "biggest blunder" in his life. \\
 
@@ -256,13 +272,27 @@
     \label{fig:cosmological-constant-history}
 \end{figure}
 
+%\bigskip \noindent
+% explain the difference between cosmological constant and vacuum energy
+%\clearpage
+\begin{importantnote}
+    Although we said they are equivalent, but the cosmological constant and vaccum energy are not exactly the same thing. \\
+
+    They act like the same way that fills the spacetime with constant energy density and negative pressure, but the cosmological constant based on the observation of expansion of universe, we measure the value of $\Lambda$ as around $10^{-52}\,\mathrm{m}^{-2}$ by using CMB and supernovae. \\
+    
+    However, the vacuum energy is based on the quantum field theory, which predicts a value of vacuum energy density as around $10^{120}$ times larger than the observed value of $\Lambda$. This huge discrepancy is called the \textbf{cosmological constant problem}, which is one of the biggest unsolved problems in physics.
+\end{importantnote}
+
+
 
 % ──────────────────────────────────────────────────────────────────────────────
 \bigskip \noindent \bigskip \noindent \bigskip \noindent
 \subsection{Friedmann Equations with Cosmological Constant}
 \bigskip \noindent
 \begin{theory}
-    By considering the cosmological constant, the 1st Friedmann equations becomes:
+    By considering the cosmological constant in EFE, and using the similar method shown in the previous sections, we can get the modified Friedmann equations as below, \\
+
+    the 1st Friedmann equations becomes:
     \[
         H^2 = \frac{8\pi G}{3}\rho - \frac{k}{a^2} + \frac{\Lambda}{3}
     \]
@@ -277,17 +307,157 @@
 \end{theory}
 
 % -────────────────────────────────────────────────────────────────────────────
-\bigskip \noindent \bigskip \noindent \bigskip \noindent
+%\bigskip \noindent \bigskip \noindent \bigskip \noindent
+\clearpage
 \subsection{Newtonian Gravity with Cosmological Constant}
+\begin{foundation}
+    Let $p = 0$ for non-relativistic matter. Recall 00-component of Trace-formed EFE:
+    \begin{align*}
+        R_{00} &= 8\pi G (T_{00} - \frac{1}{2}g_{00}T) + \Lambda g_{00} \\
+        R_{00} &= 8\pi G (\rho - \frac{1}{2}(-1)(-\rho + 3p)) + \Lambda (-1) \\
+        R_{00} &= 4\pi G (\rho + 3p) - \Lambda \\
+        R_{00} &= 4\pi G \rho - \Lambda
+    \end{align*}
+    In the Weak-Field limit (Newtonian limit), we have $R_{00} \approx - \frac{1}{2}\nabla^2 h_{00}$, and $h_{00} = -2\Phi$, where $\Phi$ is the Newtonian potential, thus we can rewrite above equation as:
+    \[
+        \nabla^2 \Phi = 4\pi G \rho - \Lambda
+    \] \\
+
+    By using superposition principle, we can solve the above equation in mass term and cosmological constant term separately. Mass term:
+    \begin{align*}
+        \nabla^2 \Phi_M &= 4\pi G \rho \\
+        \Phi_M(r) &= -\frac{GM}{r}
+    \end{align*}
+    Then assuming spherical coordinate, the cosmological constant term can be solved as:
+    \begin{align*}
+        \nabla^2 \Phi_\Lambda &= -\Lambda \\
+        \frac{1}{r^2} \frac{d}{dr} \left( r^2 \frac{d\Phi_\Lambda}{dr} \right) &= -\Lambda \\
+        r^2 \frac{d\Phi_\Lambda}{dr} &= -\frac{1}{3}\Lambda r^3 + C_1 \\
+        \frac{d\Phi_\Lambda}{dr} &= -\frac{1}{3}\Lambda r + \frac{C_1}{r^2} \\
+        \Phi_\Lambda(r) &= -\frac{1}{6}\Lambda r^2 - \frac{C_1}{r} + C_2
+    \end{align*}
+    By letting $C_1 = C_2 = 0$, we can get the solution of cosmological constant term as:
+    \[
+        \Phi_\Lambda(r) = -\frac{1}{6}\Lambda r^2
+    \]
+\end{foundation}
+
+\clearpage
+%\bigskip \noindent
+\begin{theory}
+    The introduction of cosmological constant also yields a modification to the Newtonian gravity, which can be written as:
+    \[
+        \Phi(r) = -\frac{GM}{r} - \frac{1}{6}\Lambda r^2
+    \]
+    where the first term is the usual Newtonian potential, and the second term is the contribution of cosmological constant, which is a repulsive potential that grows with distance. \\
+
+    We can also hence get the modified Newtonian force as below:
+    \[
+        F(r) = -m \nabla^2 \Phi(r) = -\frac{GM m}{r^2} + \frac{1}{3}\Lambda r m
+    \]
+    where the first term is the usual Newtonian force, and the second term is the contribution of cosmological constant, which is a repulsive force that grows with distance. \\
+\end{theory}
+
+\bigskip \noindent %
+\begin{example}{Effect of Cosmological Constant}
+    Consider a Sun-Earth like system, \\
+
+    (a). estimate the threshold of $R$ above which the cosmological replusion force will dominate over the gravitational attraction. \\
+    (b). calculate the ratio of the cosmological force to the gravitational force at the distance of Pluto, which is around $40$ AU. \\
+
+    \bigskip\textbf{Solution.}\quad \\
+    (a). The threshold of $R$ can be found by setting the two forces equal:
+    \[
+        \frac{GM m}{R^2} = \frac{1}{3}\Lambda R m
+    \]
+    Solving for $R$, we get:
+    \[
+        R = \left( \frac{3GM}{\Lambda} \right)^{1/3}
+    \]
+    Plugging in the values of $G$, $M$, and $\Lambda$:
+    \begin{align*}
+        R &= \left( \frac{3 \cdot 6.67430 \times 10^{-11} \cdot 1.989 \times 10^{30}}{2.036 \times 10^{-35}} \right)^{1/3} \\
+        &= 2.694 \times 10^{18} \mathrm{m} \\
+    \end{align*}
+    which is around $90$ parsecs, which is much larger than the size of solar system, thus the cosmological constant has negligible effect on the dynamics of solar system. \\
+
+    (b). The ratio of the cosmological force to the gravitational force at the distance of Pluto is:
+    \begin{align*}
+       \frac{F_\Lambda}{F_G} &= \frac{\frac{1}{3}\Lambda r m}{\frac{GM m}{r^2}} \\
+         &= \frac{1}{3} \frac{\Lambda r^3}{GM} \\
+         &= \frac{1}{3} \frac{2.036 \times 10^{-35} \cdot (40 \times 1.496 \times 10^{11})^3}{6.67430 \times 10^{-11} \cdot 1.989 \times 10^{30}} \\
+         &= 1.1 \times 10^{-17}
+    \end{align*}
+    which is an extremely small number, thus the cosmological constant has negligible effect within the solar system, even at the distance of Pluto. \\
+\end{example}
+
+
+
 
 % ──────────────────────────────────────────────────────────────────────────────
 \bigskip \noindent \bigskip \noindent \bigskip \noindent
-\subsection{Evolution of Scale Factor}
+\section{Evolution of Scale Factor}
+\subsection{EoS of Cosmologic Constant}
+\begin{theory}
+    The equation of state of cosmological constant is:
+    \[
+        w_\Lambda = \frac{p_\Lambda}{\rho_\Lambda} = -1 < -\frac{1}{3}
+    \] \\
+
+    Assume flat universe with $k=0$, and the universe is dominated by cosmological constant, then the 1st Friedmann equation becomes:
+    \[
+        H^2 = \frac{8\pi G}{3}\rho_\Lambda = \frac{\Lambda}{3}
+    \]
+    By solving this ODE, we can get the solution of scale factor as below:
+    \[
+        a(t) = a_0 e^{H (t - t_0)} = a_0 e^{\sqrt{\frac{\Lambda}{3}} (t - t_0)}
+    \]
+\end{theory}
+
+% ──────────────────────────────────────────────────────────────────────────────
+\bigskip \noindent \bigskip \noindent \bigskip \noindent
+\subsection{Scale Factor Equation}
+\begin{theory}
+\end{theory}
+
+
+
+
+
+
 
 
 % =══════════════════════════════════════════════════════════════════════════════
 \bigskip \noindent \bigskip \noindent \bigskip \noindent
 \section{SCDM and $\Lambda$CDM Models}
+\begin{theory}
+    The total energy density of the universe can be expressed as:
+    \[
+        \Omega (t) = \Omega_{d}(t) + \Omega_{r}(t) + \Omega_{\Lambda}(t) + \Omega_{K}(t)
+    \]
+    where $\Omega_{d}$ is the contribution of matter, which is the sum of dark matter and ordinary matter $ \Omega_{d} = \Omega_{dm} + \Omega_{om}$, $\Omega_{r}$ is the contribution of radiation, $\Omega_{\Lambda}$ is the contribution of cosmological constant, and $\Omega_{K}$ is the contribution of curvature. \\
+\end{theory}
+
+\bigskip \noindent
+\begin{theory}
+    In a Einstein-de Sitter universe, which is a flat universe with only matter and no cosmological constant, i.e.:
+    \[
+        \Omega_{d} = 1, \quad \Omega_{r} = 0, \quad \Omega_{\Lambda} = 0, \quad \Omega_{K} = 0
+    \]
+    , the total energy density is:
+    \[
+        \Omega = \Omega_{d} = 1
+    \]
+    The model are also known as the \textbf{Standard Cold Dark Matter (SCDM)} model, which is the simplest cosmological model, and it predicts a decelerating universe with $\ddot{a} < 0$. \\
+
+\end{theory}
+
+At the late 1990s, the SCDM model is challenged by the acceleration of universe, thus the \textbf{$\Lambda$CDM} model is proposed, which is a flat universe with matter and cosmological constant $\Omega_{d} + \Omega_{\Lambda} = 1$, with $\Omega_{\Lambda} > 0$.
+
+
+
+
+
 
 % =══════════════════════════════════════════════════════════════════════════════
 \bigskip \noindent \bigskip \noindent \bigskip \noindent
@@ -302,7 +472,33 @@
 
 
 
+
+
 % =══════════════════════════════════════════════════════════════════════════════
 \bigskip \noindent \bigskip \noindent \bigskip \noindent
 \section{Fate of Universe}
+% different combination explain
+\begin{foundation}
+\end{foundation}
 
+% different combination result
+\begin{theory}
+\end{theory}
+
+\bigskip \noindent
+\begin{extra}
+    So, what is the fate of our universe? \\
+
+    Based in the current CMB measurements, we know that our universe is basically flat $k \approx 0$, and the energy density proportion is showed as below:
+    \[
+        \begin{cases}
+            \Omega_\Lambda \approx 0.68 \\
+            \Omega_{dm} \approx 0.27 \\
+            \Omega_{om} \approx 0.05 \\
+            \Omega_{r} \approx 10^{-4} \\
+            \Omega_{K} \approx 0
+        \end{cases}
+    \]
+
+    Thus, our universe is dominated by the cosmological constant, and the scale factor will grow exponentially in the future, which means the universe will expand forever and become colder and darker, which is called the "Big Freeze" scenario. \\
+\end{extra}

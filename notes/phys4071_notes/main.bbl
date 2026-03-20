@@ -19,17 +19,6 @@
 
 \refsection{0}
   \datalist[entry]{none/global//global/global/global}
-    \entry{PHYS4071_2026}{lecturenote}{}{}
-      \list{publisher}{1}{%
-        {HKUST}%
-      }
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
-      \field{labeltitlesource}{title}
-      \field{title}{PHYS4071 Big Bang Cosmology \& Inflation Lecture Notes}
-      \field{year}{2026}
-      \true{nocite}
-    \endentry
     \entry{Eigenchris_Relativity_Course}{misc}{}{}
       \name{author}{1}{}{%
         {{hash=9972d79e0ad21c024bf6a4e1f6a40eb7}{%
@@ -44,19 +33,29 @@
       \strng{authornamehash}{9972d79e0ad21c024bf6a4e1f6a40eb7}
       \strng{authorfullhash}{9972d79e0ad21c024bf6a4e1f6a40eb7}
       \strng{authorfullhashraw}{9972d79e0ad21c024bf6a4e1f6a40eb7}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Relativity by Eigenchris}
       \field{year}{2025}
-      \true{nocite}
       \verb{urlraw}
       \verb https://www.youtube.com/playlist?list=PLJHszsWbB6hqlw73QjgZcFh4DrkQLSCQa
       \endverb
       \verb{url}
       \verb https://www.youtube.com/playlist?list=PLJHszsWbB6hqlw73QjgZcFh4DrkQLSCQa
       \endverb
+    \endentry
+    \entry{PHYS4071_2026}{lecturenote}{}{}
+      \list{publisher}{1}{%
+        {HKUST}%
+      }
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labeltitlesource}{title}
+      \field{title}{PHYS4071 Big Bang Cosmology \& Inflation Lecture Notes}
+      \field{year}{2026}
+      \true{nocite}
     \endentry
     \entry{Carmeli_2001}{inproceedings}{}{}
       \name{author}{1}{}{%
@@ -77,8 +76,8 @@
       \strng{authornamehash}{a567eedd3586ffc9f0058821e4244295}
       \strng{authorfullhash}{a567eedd3586ffc9f0058821e4244295}
       \strng{authorfullhashraw}{a567eedd3586ffc9f0058821e4244295}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{AIP Conference Proceedings}
