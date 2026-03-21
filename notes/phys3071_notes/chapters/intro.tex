@@ -1,0 +1,251 @@
+% ══════════════════════════════════════════════════════════════════════════════
+%  INTRODUCTION
+% ══════════════════════════════════════════════════════════════════════════════
+
+\chapter*{Introduction}
+\addcontentsline{toc}{chapter}{Introduction}
+
+
+% ──────────────────────────────────────────────────────────────────────────────
+\section*{About These Notes}
+\addcontentsline{toc}{section}{About These Notes}
+
+These notes accompany the PHYS3071 Introduction to Stellar Astrophysics course in Hong Kong University of Science and Technology (HKUST).
+They are intended as a self-contained supplement to the lectures,
+providing both conceptual grounding and mathematical rigour at a level
+appropriate for readers with a background in special relativity, basic linear algebra, and basic calculus.
+
+\medskip\noindent
+The material focuses on core stellar-astrophysics topics, including stellar structure,
+energy generation in stars, radiative transport, and observational diagnostics such as
+the Hertzsprung--Russell diagram.
+Each topic is structured to serve different learning objectives---from building
+physical intuition to solving examination-style problems and exploring
+advanced derivations.
+
+\medskip\noindent
+\textit{These notes do not replace lecture slides or the recommended textbooks.
+They are best used alongside them as a structured study companion.}
+
+\medskip\noindent
+If you find any errors or have suggestions for improvement, please feel free to contact me at \texttt{\NoteAuthorEmail}.
+
+% ──────────────────────────────────────────────────────────────────────────────
+\section*{Document Conventions}
+\addcontentsline{toc}{section}{Document Conventions}
+
+\subsection*{Block Components}
+
+Each topic is presented using a consistent
+\textbf{5-component block structure} designed to support multiple learning styles:
+
+\bigskip
+
+\noindent
+\begin{minipage}{0.9\textwidth}
+  \begin{tcolorbox}[breakable, colback=GoldBG, colframe=StarGold,
+                     leftrule=4pt, arc=0pt,
+                     before upper={\textcolor{StarGold}{\textbf{\scshape Physics Intuition}}\par\smallskip}]
+    \textbf{Purpose:} Builds conceptual understanding through plain language explanations.
+
+    This section provides the \emph{motivation} behind the physics concept,
+    explores its \emph{historical development}, and offers \emph{intuitive explanations}
+    that help you grasp what the theory is really about before diving into equations.
+
+    \smallskip
+    \textit{Use this when:} You're first encountering a new concept or need to refresh
+    the ``big picture'' before tackling mathematics.
+  \end{tcolorbox}
+\end{minipage}
+
+\bigskip
+
+\noindent
+\begin{minipage}{0.9\textwidth}
+  \begin{tcolorbox}[colback=TealBG, colframe=NebulaTeal,
+                     leftrule=4pt, arc=0pt,
+                     before upper={\textcolor{NebulaTeal}{\textbf{\scshape Theory}}\par\smallskip}]
+    \textbf{Purpose:} Provides rigorous mathematical treatment of the concept.
+
+    Here you'll find detailed \emph{derivations}, \emph{fundamental assumptions},
+    key \emph{equations}, and connections between \emph{mathematics and physical intuition}.
+    This is the technical foundation required for exams and deeper problem-solving.
+
+    \smallskip
+    \textit{Use this when:} You need to understand how to apply formulas, prepare for exams,
+    or work through problems rigorously.
+  \end{tcolorbox}
+\end{minipage}
+
+\bigskip
+
+\noindent
+\begin{minipage}{0.9\textwidth}
+  \begin{tcolorbox}[breakable, colback=GreenBG, colframe=ForestGreen,
+                     arc=3pt,
+                     before upper={\textcolor{ForestGreen}{\textbf{\scshape Question Examples}}\par\smallskip}]
+    \textbf{Purpose:} Demonstrates practical application through worked problems.
+
+    Each question example mimics exam-style problems and includes complete
+    \emph{solution walkthroughs}. These help you bridge the gap between theory
+    and problem-solving, and expose common pitfalls.
+
+    \smallskip
+    \textit{Use this when:} Practicing problem-solving, preparing for assessments,
+    or checking if you can apply the formulas correctly.
+  \end{tcolorbox}
+\end{minipage}
+
+\bigskip
+
+\noindent
+\begin{minipage}{0.9\textwidth}
+  \begin{tcolorbox}[breakable, colback=PurpleBG, colframe=AmethystPurple,
+                     leftrule=4pt, arc=0pt,
+                     before upper={\textcolor{AmethystPurple}{\textbf{\scshape Foundation}}\par\smallskip}]
+    \textbf{Purpose:} Supplies background knowledge and detailed proof steps
+    that underpin the main content.
+
+    This section presents \emph{prerequisite mathematics or physics},
+    \emph{step-by-step derivations} that are too detailed to include in the Theory block,
+    and \emph{intermediate results} needed for a thorough understanding.
+    Reading this is optional for the exam but essential for genuine mastery.
+
+    \smallskip
+    \textit{Use this when:} A derivation in Theory feels too abrupt, you want to verify
+    an intermediate step, or you need to solidify prerequisite concepts.
+  \end{tcolorbox}
+\end{minipage}
+
+\bigskip
+
+\noindent
+\begin{minipage}{0.9\textwidth}
+  \begin{tcolorbox}[breakable, colback=GrayBG, colframe=SlateGray,
+                     leftrule=2pt, rightrule=2pt, arc=3pt,
+                     before upper={\textcolor{SlateGray}{\textbf{\scshape Extra}}\par\smallskip}]
+    \textbf{Purpose:} Provides supplementary material that extends \emph{beyond}
+    the course syllabus.
+
+    This section offers \emph{interesting asides}, \emph{historical context},
+    \emph{connections to current research}, and citations to deeper references.
+    The content here is intentionally out-of-scope for the course examination
+    but enriches the broader picture of each topic.
+
+    \smallskip
+    \textit{Use this when:} You're curious to explore beyond the syllabus, or when a topic
+    connects to your personal research interests.
+  \end{tcolorbox}
+\end{minipage}
+
+\newpage
+
+\noindent\textbf{Suggested Reading Paths:}
+\begin{enumerate}
+  \item \textbf{Exam Preparation:} \textit{Physics Intuition} $\to$
+        \textit{Theory} $\to$ \textit{Question Examples}
+  \item \textbf{Deep Learning:} \textit{Physics Intuition} $\to$ \textit{Foundation}
+        $\to$ \textit{Theory} $\to$ \textit{Question Examples} $\to$ \textit{Extra}
+  \item \textbf{Quick Review:} \textit{Theory} $\to$ \textit{Question Examples}
+\end{enumerate}
+
+% ──────────────────────────────────────────────────────────────────────────────
+\bigskip \bigskip
+\subsection*{Special Annotations}
+
+In addition to the five block components above, two inline annotations appear
+throughout the text to flag specific types of information:
+
+\bigskip
+
+\noindent
+\begin{minipage}{0.9\textwidth}
+  \begin{importantnote}
+    \textbf{Purpose:} Alerts you to a result, condition, or sign convention that is
+    easy to get wrong or is frequently tested.
+
+    An Important Note signals a \emph{common misconception}, a \emph{critical sign},
+    a \emph{non-obvious condition} (e.g.\ a constraint that must hold for an
+    equation to be valid), or an \emph{exam trap} worth memorising explicitly.
+
+    \smallskip
+    \textit{Treat these as mandatory reading} regardless of which reading path you follow.
+  \end{importantnote}
+\end{minipage}
+
+\bigskip
+
+\noindent
+\begin{minipage}{0.9\textwidth}
+  \begin{remark}
+    \textbf{Purpose:} Highlights a useful observation, connection, or naming convention.
+
+    A Remark draws attention to a \emph{conceptual link} between results, an
+    \emph{elegant reformulation}, a \emph{naming convention} (e.g.\ why a quantity
+    carries its particular name), or a \emph{minor but clarifying point} that does
+    not rise to the level of an Important Note.
+
+    \smallskip
+    \textit{Use this when:} Looking for a deeper understanding of why an equation
+    takes the form it does, or for useful mnemonics.
+  \end{remark}
+\end{minipage}
+
+
+% ──────────────────────────────────────────────────────────────────────────────
+\clearpage
+%\bigskip\bigskip
+\subsection*{Mathematical Conventions}
+
+The following conventions are used throughout these notes:
+
+\medskip
+\noindent\textbf{Metric signature.}\quad
+When relativistic expressions are needed, we adopt the \emph{mostly-plus} (or ``$(-, +, +, +)$'') signature:
+\[
+  g_{\mu\nu} = \operatorname{diag}(-1,\,+1,\,+1,\,+1).
+\]
+
+\begin{importantnote}
+  Many general-relativity textbooks use the opposite, \emph{mostly-minus}
+  $(+,-,-,-)$ signature. The two conventions differ by an overall sign in
+  the Ricci scalar and stress-energy trace.
+  Always check the signature convention when comparing formulae across sources.
+\end{importantnote}
+
+\bigskip
+\noindent\textbf{Natural units.}\quad
+In sections involving high-energy or compact-object estimates,
+we may set $c = \hbar = k_B = 1$.
+Quantities are then expressed in powers of $\mathrm{eV}$ (or $\mathrm{GeV}$).
+Explicit $c$ and $\hbar$ factors are restored when numerical values are quoted
+in SI units.
+
+\bigskip
+\noindent\textbf{Key symbols.}
+\begin{center}
+\begin{tabular}{@{}lll@{}}
+  \toprule
+  Symbol & Meaning & Typical units \\
+  \midrule
+  $M_\odot$                & Solar mass                        & $\mathrm{kg}$ \\
+  $R_\odot$                & Solar radius                      & $\mathrm{m}$ \\
+  $L_\odot$                & Solar luminosity                  & $\mathrm{W}$ \\
+  $T_\mathrm{eff}$         & Effective temperature             & $\mathrm{K}$ \\
+  $\mu$                    & Mean molecular weight             & --- \\
+  $\rho$                   & Mass density                      & $\mathrm{kg\,m^{-3}}$ \\
+  \bottomrule
+\end{tabular}
+\end{center}
+
+\begin{remark}
+  Unless otherwise stated, stellar quantities are quoted in solar-normalised form
+  (for example $M/M_\odot$ and $L/L_\odot$), which makes scaling relations easier
+  to compare across different stellar masses.
+\end{remark}
+
+\bigskip \noindent
+\textbf{differential notation.}\quad
+We use $\dot{x} \equiv \frac{dx}{dt}$ for time derivatives of some variables $x(t)$.
+
+\clearpage

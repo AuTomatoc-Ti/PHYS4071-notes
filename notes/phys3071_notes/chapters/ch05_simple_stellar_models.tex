@@ -1,0 +1,145 @@
+\chapter{Simple Stellar Models and Compact Remnants}
+
+\section{Core Stellar Structure Equations}
+
+\subsection{Four Coupled ODEs}
+\begin{theory}
+For spherical stars:
+\begin{align}
+    \frac{dP}{dr} &= -\frac{Gm\rho}{r^2}, \\
+    \frac{dm}{dr} &= 4\pi r^2\rho, \\
+    \frac{dT}{dr} &= -\frac{3\kappa\rho}{16\pi acT^3}\frac{L(r)}{r^2}, \\
+    \frac{dL}{dr} &= 4\pi r^2\rho\,\varepsilon.
+\end{align}
+Boundary conditions include $m(0)=0$, $L(0)=0$, and photospheric constraints near $r=R$.
+\end{theory}
+
+\subsection{Closure Relations}
+\begin{foundation}
+The structure equations require constitutive inputs:
+\begin{itemize}
+    \item Equation of state: $P=P(\rho,T)$
+    \item Opacity: $\kappa=\kappa(\rho,T,\text{composition})$
+    \item Nuclear source term: $\varepsilon=\varepsilon(\rho,T,\text{composition})$
+\end{itemize}
+\end{foundation}
+
+\section{Equations of State and Opacity}
+
+\subsection{Gas, Radiation, and Degeneracy Pressure}
+\begin{theory}
+\begin{align}
+    P_{\text{gas}} &= \frac{\rho k_B T}{\mu m_H}, \\
+    P_{\text{rad}} &= \frac{1}{3}aT^4, \\
+    P_{\text{NR,deg}} &= K_{\text{NR}}\rho^{5/3}, \\
+    P_{\text{UR,deg}} &= K_{\text{UR}}\rho^{4/3}.
+\end{align}
+Total pressure is the appropriate sum for the relevant regime.
+\end{theory}
+
+\subsection{Mean Molecular Weight}
+\begin{theory}
+For ionized composition fractions $(X,Y,Z)$,
+\begin{equation}
+    \frac{1}{\mu}\approx 2X+\frac{3}{4}Y+\frac{1}{2}Z.
+\end{equation}
+This parameter maps composition directly into the gas-pressure term.
+\end{theory}
+
+\subsection{Opacity and Nuclear Heating Scalings}
+\begin{theory}
+Useful approximations:
+\begin{align}
+    \kappa_{\text{es}} &\approx 0.02(1+X)\,\text{m}^2\text{kg}^{-1}, \\
+    \kappa_{\text{bf+ff}} &\propto \rho T^{-3.5}, \\
+    \varepsilon_{pp} &\propto \rho X^2 T^4.
+\end{align}
+\end{theory}
+
+\begin{remark}
+Opacity controls transport efficiency, while $\varepsilon(T)$ controls how centrally concentrated energy generation is.
+Together they determine whether stellar zones are radiative or convective.
+\end{remark}
+
+\section{Analytic Scaling Models}
+
+\subsection{Parameterized Density Profiles}
+\begin{intuition}
+Exact stellar models are numerical, but simple analytic profiles are valuable for quick estimates and physical intuition.
+They expose which observables mostly constrain central density, pressure, and temperature.
+\end{intuition}
+
+\begin{theory}
+A representative profile is
+\begin{equation}
+    \rho(r)=\rho_c\exp(-r^2/a^2)
+\end{equation}
+or polynomial alternatives.
+With hydrostatic balance and ideal-gas EOS, one derives approximate $P(r)$ and $T(r)$ trends from the center to the surface.
+\end{theory}
+
+\section{Stellar Mass Limits}
+
+\subsection{Minimum Mass for Hydrogen Burning}
+\begin{theory}
+Competition between thermal support and electron degeneracy yields a minimum mass:
+\begin{equation}
+    M_{\min}\approx 0.08\,M_\odot.
+\end{equation}
+Below this threshold, sustained H fusion does not ignite (brown dwarf regime).
+\end{theory}
+
+\subsection{Upper Mass and Radiation Support}
+\begin{theory}
+As mass increases, radiation pressure becomes significant, and instability / strong winds limit long-term growth.
+Observed and theoretical upper masses are typically of order $100$--$150\,M_\odot$.
+\end{theory}
+
+\begin{importantnote}
+The lower mass limit is set by degeneracy suppressing core heating;
+the upper limit is set by radiation-driven instability and mass loss.
+They arise from different physics and should not be conflated.
+\end{importantnote}
+
+\section{Compact Remnants}
+
+\subsection{White Dwarfs}
+\begin{theory}
+White dwarfs are supported by electron degeneracy pressure, with characteristic behavior:
+\begin{equation}
+    R\propto M^{-1/3}\quad(\text{NR degenerate limit}),
+\end{equation}
+and maximum mass near
+\begin{equation}
+    M_{\text{Ch}}\approx 1.44\left(\frac{2}{\mu_e}\right)^2M_\odot.
+\end{equation}
+\end{theory}
+
+\subsection{Cooling of White Dwarfs}
+\begin{theory}
+With ions as main heat reservoir and radiative surface losses,
+\begin{equation}
+    L\propto t^{-7/5}
+\end{equation}
+in simplified cooling models (modified by crystallization and envelope physics).
+\end{theory}
+
+\subsection{Neutron Stars (Overview)}
+\begin{extra}
+Neutron stars are relativistic compact objects requiring TOV hydrostatic balance:
+\begin{equation}
+    \frac{dP}{dr}=-\frac{G[\rho+P/c^2][m+4\pi r^3P/c^2]}{r^2\left[1-2Gm/(rc^2)\right]}.
+\end{equation}
+Observed masses around $2\,M_\odot$ strongly constrain the high-density EOS.
+\end{extra}
+
+\begin{example}{Regime check from mass scale}{ex:regime-check}
+Compare two stars qualitatively:
+\begin{itemize}
+    \item $0.05\,M_\odot$: below H-burning threshold, degeneracy appears early.
+    \item $30\,M_\odot$: strong radiation pressure and high CNO sensitivity.
+\end{itemize}
+
+\smallskip\textbf{Conclusion.}
+Low-mass objects trend toward brown-dwarf behavior, while high-mass stars show luminous, unstable, short-lived evolution.
+\end{example}

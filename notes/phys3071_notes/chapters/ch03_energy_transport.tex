@@ -1,0 +1,138 @@
+\chapter{Stellar Temperature and Gas Statistics}
+
+\section{Characteristic Stellar Temperatures}
+
+\subsection{Internal Temperature Scale}
+\begin{theory}
+Using hydrostatic and virial scaling for an ideal-gas dominated star,
+\begin{equation}
+    k_B T \sim \frac{1}{3}\frac{GM\mu m_u}{R}.
+\end{equation}
+Typical stellar cores satisfy $T_I\sim 10^6$--$10^7\,$K.
+\end{theory}
+
+\subsection{Effective Surface Temperature}
+\begin{theory}
+From Stefan--Boltzmann law,
+\begin{equation}
+    L=4\pi R^2\sigma T_E^4,
+    \qquad
+    T_E=\left(\frac{L}{4\pi R^2\sigma}\right)^{1/4},
+\end{equation}
+with typical values $T_E\sim10^3$--$10^4\,$K.
+\end{theory}
+
+\begin{remark}
+The large gap between $T_I$ and $T_E$ is a direct consequence of optical depth: radiation random-walks through dense stellar matter before escaping.
+\end{remark}
+
+\section{Validity of Ideal-Gas Approximation}
+
+\subsection{Inter-particle Distance and Coulomb Scale}
+\begin{foundation}
+Average spacing is
+\begin{equation}
+    d \approx \left(\frac{\mu m_u}{\rho}\right)^{1/3}.
+\end{equation}
+A rough Coulomb scale is
+\begin{equation}
+    E_C \sim \frac{Z^2e^2}{4\pi\epsilon_0 d}.
+\end{equation}
+When thermal energy exceeds this scale, ideal-gas treatment is often sufficient.
+\end{foundation}
+
+\subsection{Virial Estimate for Thermal Energy}
+\begin{theory}
+For a self-gravitating system,
+\begin{equation}
+    2E_{\text{kin}}+E_{\text{grav}}=0,
+\end{equation}
+and for ideal gas,
+\begin{equation}
+    E_{\text{kin}}=\frac{3}{2}\frac{M}{\mu m_u}k_B T.
+\end{equation}
+Combined with $E_{\text{grav}}\sim -GM^2/R$ gives the standard central-temperature estimate.
+\end{theory}
+
+\section{Classical and Relativistic Ideal Gases}
+
+\subsection{Energy--Pressure Relations}
+\begin{theory}
+General kinetic form:
+\begin{equation}
+    P=\frac{1}{3}n\langle\vec p\cdot\vec v\rangle.
+\end{equation}
+Hence
+\begin{align}
+    P &= \frac{2}{3}u \quad (\text{NR}), \\
+    P &= \frac{1}{3}u \quad (\text{UR}).
+\end{align}
+\end{theory}
+
+\subsection{Maxwell--Boltzmann Limit}
+\begin{theory}
+For classical non-relativistic particles,
+\begin{equation}
+    f(p)=A\exp\left(-\frac{p^2}{2mk_B T}\right),
+\end{equation}
+which leads to the ideal-gas law:
+\begin{equation}
+    PV=Nk_B T.
+\end{equation}
+The same equation of state also holds for ultra-relativistic classical gas, though with different energy scaling.
+\end{theory}
+
+\section{Quantum Statistics and Degeneracy}
+
+\subsection{Fermi--Dirac and Bose--Einstein Distributions}
+\begin{theory}
+\begin{align}
+    f_{\text{FD}}(\epsilon) &= \frac{1}{e^{(\epsilon-\mu)/k_BT}+1}, \\
+    f_{\text{BE}}(\epsilon) &= \frac{1}{e^{(\epsilon-\mu)/k_BT}-1}.
+\end{align}
+Classical limit occurs when $e^{(\epsilon-\mu)/k_BT}\gg1$.
+\end{theory}
+
+\subsection{Quantum Criterion}
+\begin{theory}
+Define quantum concentration
+\begin{equation}
+    n_Q=g_s\left(\frac{2\pi mk_B T}{h^2}\right)^{3/2}.
+\end{equation}
+Then:
+\begin{itemize}
+    \item Classical regime: $n\ll n_Q$
+    \item Quantum regime: $n\gtrsim n_Q$
+\end{itemize}
+\end{theory}
+
+\begin{importantnote}
+Degenerate pressure can dominate even when temperature is low.
+It is set primarily by density through phase-space filling, not by thermal agitation.
+\end{importantnote}
+
+\subsection{Degenerate Fermi Gas at $T\to 0$}
+\begin{theory}
+At $T=0$, states are filled up to $p_F$:
+\begin{equation}
+    p_F=\hbar(3\pi^2 n)^{1/3} \quad (g_s=2).
+\end{equation}
+Degenerate pressure scales as
+\begin{align}
+    P_{\text{NR,deg}} &\propto n^{5/3}\propto \rho^{5/3}, \\
+    P_{\text{UR,deg}} &\propto n^{4/3}\propto \rho^{4/3}.
+\end{align}
+\end{theory}
+
+\begin{example}{Why white dwarfs shrink as mass increases}{ex:wd-mr}
+In the non-relativistic degenerate regime, equilibrium between gravity and
+$P\propto\rho^{5/3}$ leads to the approximate mass--radius trend
+$R\propto M^{-1/3}$.
+
+\smallskip\textbf{Interpretation.}
+Adding mass increases gravity faster than degeneracy support can maintain the same size, so the star compresses.
+\end{example}
+
+\begin{extra}
+The transition from $\rho^{5/3}$ to $\rho^{4/3}$ support explains why there is a maximum white-dwarf mass (Chandrasekhar limit).
+\end{extra}

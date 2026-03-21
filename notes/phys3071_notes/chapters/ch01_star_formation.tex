@@ -1,0 +1,183 @@
+\chapter{Stellar Properties and Formation}
+
+\section{Observational Foundations}
+
+\subsection{Specific Intensity, Flux, and Luminosity}
+\begin{intuition}
+Observed starlight is measured in layers: direction-resolved intensity, surface flux, and finally total emitted power.
+Keeping these definitions separate avoids unit mistakes in later derivations.
+\end{intuition}
+
+\begin{theory}
+\begin{itemize}
+    \item Specific intensity $I_\nu$:
+    \begin{equation}
+        dE = I_\nu \cos\theta \, dA \, dt \, d\nu \, d\Omega
+    \end{equation}
+    \item Monochromatic flux density:
+    \begin{equation}
+        F_\nu = \int I_\nu \cos\theta \, d\Omega
+    \end{equation}
+    \item Bolometric flux:
+    \begin{equation}
+        F = \int_0^\infty F_\nu \, d\nu
+    \end{equation}
+    \item Luminosity:
+    \begin{equation}
+        L = \int F \, dA
+    \end{equation}
+\end{itemize}
+\end{theory}
+
+\begin{importantnote}
+$I_\nu$ is invariant along a ray in vacuum (no absorption/emission), while $F_\nu$ depends on source geometry and distance.
+Do not interchange them in magnitude or distance calculations.
+\end{importantnote}
+
+\subsection{Magnitude System and Distance Modulus}
+\begin{theory}
+\begin{align}
+    M_1 - M_2 &= -2.5 \log_{10}\left(\frac{L_1}{L_2}\right), \\
+    m_1 - m_2 &= -2.5 \log_{10}\left(\frac{F_1}{F_2}\right), \\
+    m - M &= 5 \log_{10}(d/\text{pc}) - 5, \\
+    F &= \frac{L}{4\pi d^2}.
+\end{align}
+\end{theory}
+
+\begin{example}{Distance modulus quick use}{ex:distmod}
+A star has $m=9.0$ and $M=4.0$. Estimate its distance.
+
+\smallskip\textbf{Solution.}
+\begin{align*}
+m-M &= 5\log_{10}(d/\text{pc})-5 = 5 \\
+\Rightarrow \log_{10}(d/\text{pc}) &= 2 \\
+\Rightarrow d &= 10^2\,\text{pc} = 100\,\text{pc}.
+\end{align*}
+\end{example}
+
+\subsection{Parallax and Radius}
+\begin{theory}
+\begin{itemize}
+    \item Parallax distance:
+    \begin{equation}
+        d(\text{pc}) = \frac{1}{\pi(\text{arcsec})}
+    \end{equation}
+    \item Radius from angular diameter $\theta$:
+    \begin{equation}
+        R = \frac{1}{2}\theta d
+    \end{equation}
+\end{itemize}
+\end{theory}
+
+\section{Basic Stellar Parameters}
+
+\subsection{Surface Temperature and Blackbody Radiation}
+\begin{theory}
+\begin{itemize}
+    \item Planck function:
+    \begin{equation}
+        B_\nu(T) = \frac{2h\nu^3}{c^2}\frac{1}{e^{h\nu/k_B T}-1}
+    \end{equation}
+    \item Stefan--Boltzmann law:
+    \begin{equation}
+        F = \sigma T^4, \quad \sigma = \SI{5.67e-8}{\watt\per\square\meter\per\kelvin\tothe{4}}
+    \end{equation}
+    \item Luminosity:
+    \begin{equation}
+        L = 4\pi R^2 \sigma T_{\text{eff}}^4
+    \end{equation}
+    \item Wien's law:
+    \begin{equation}
+        \lambda_{\text{max}}T = \SI{2.9e-3}{\meter\kelvin}
+    \end{equation}
+\end{itemize}
+\end{theory}
+
+\subsection{Mass and Main-Sequence Lifetime}
+\begin{theory}
+\begin{itemize}
+    \item Hydrogen-burning mass window is roughly
+    \begin{equation}
+        \SI{0.08}{}M_\odot \lesssim M \lesssim \SI{100}{}M_\odot.
+    \end{equation}
+    \item Binary stars (Kepler's third law):
+    \begin{equation}
+        \frac{a^3}{P^2} = \frac{G(M_1+M_2)}{4\pi^2}
+    \end{equation}
+    \item Main-sequence scaling:
+    \begin{equation}
+        \tau \propto \frac{M}{L} \propto M^{-2.5}
+    \end{equation}
+\end{itemize}
+\end{theory}
+
+\begin{remark}
+Low-mass stars are dim but long-lived; high-mass stars are bright but short-lived.
+This anti-correlation is central to cluster age dating.
+\end{remark}
+
+\section{From Interstellar Clouds to Protostars}
+
+\subsection{Nebulae and Collapse Triggers}
+\begin{intuition}
+Star formation starts in cold molecular gas where gravity can eventually beat thermal and magnetic support.
+External perturbations often provide the last push.
+\end{intuition}
+
+\begin{theory}
+\begin{itemize}
+    \item Emission nebulae: ionized gas emits line radiation.
+    \item Reflection nebulae: dust scatters short wavelengths more efficiently ($\propto \lambda^{-4}$).
+    \item Dark nebulae: dust extinction blocks background light.
+\end{itemize}
+
+Typical collapse triggers include supernova shocks, cloud--cloud collisions, and compression by nearby young stars.
+\end{theory}
+
+\subsection{Simplified Cloud Model and Hydrostatic Balance}
+\begin{foundation}
+Assume spherical symmetry and radial dependence only.
+Neglect rotation, magnetic fields, and turbulence in the first model to isolate gravity-versus-pressure physics.
+\end{foundation}
+
+\begin{theory}
+\begin{align}
+    dm(r,t) &= 4\pi r^2\rho\,dr, \\
+    \frac{\partial m}{\partial t}+v\frac{\partial m}{\partial r} &= 0, \\
+    \frac{dP}{dr} &= -\frac{Gm(r)\rho}{r^2} = -\rho g.
+\end{align}
+\end{theory}
+
+\section{Virial Theorem and Jeans Criterion}
+
+\subsection{Energetics of Self-Gravitating Gas}
+\begin{theory}
+\begin{align}
+    \langle P\rangle &= -\frac{1}{3}\frac{E_{\text{GR}}}{V}, \\
+    E_{\text{GR}} &= -\int_0^M \frac{Gm}{r}\,dm = -f_{\text{GR}}\frac{GM^2}{R}, \\
+    P &= \frac{1}{3}nm\langle v^2\rangle = \frac{2}{3}n\langle E_k\rangle.
+\end{align}
+For uniform density, $f_{\text{GR}}\approx 3/5$.
+\end{theory}
+
+\subsection{Jeans Instability}
+\begin{theory}
+\begin{align}
+    |E_{\text{GR}}| &> 2E_{\text{th}} \quad \text{(collapse)}, \\
+    M_J &= \left(\frac{5k_B T}{G\mu m_H}\right)^{3/2}\left(\frac{3}{4\pi\rho}\right)^{1/2}, \\
+    \lambda_J &= \sqrt{\frac{\pi c_s^2}{G\rho}}, \\
+    M_J &\propto T^{3/2}\rho^{-1/2}.
+\end{align}
+\end{theory}
+
+\begin{importantnote}
+Lower temperature and higher density both reduce $M_J$.
+This is why cooling strongly promotes fragmentation and cluster formation.
+\end{importantnote}
+
+\subsection{Fragmentation and End of Contraction}
+\begin{extra}
+Massive collapsing clouds fragment when local regions exceed their own Jeans threshold, producing stellar groups rather than a single object.
+As opacity rises and ionization increases, trapped radiation raises pressure and leads to a protostar.
+Contraction ends either by ignition of hydrogen burning ($T\gtrsim 10^7\,$K) or by degeneracy support (brown-dwarf pathway).
+\end{extra}

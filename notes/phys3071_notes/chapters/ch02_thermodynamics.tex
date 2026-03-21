@@ -1,0 +1,157 @@
+\chapter{Thermodynamics and Equation of State}
+
+\section{First Law and Heat Capacities}
+
+\subsection{Fundamental Identity}
+\begin{theory}
+For systems with variable particle number,
+\begin{equation}
+    dQ = dU + dW - \mu dN,
+\end{equation}
+with $dW=P\,dV$. For closed systems ($dN=0$),
+\begin{equation}
+    dQ = dU + P\,dV.
+\end{equation}
+\end{theory}
+
+\begin{importantnote}
+Sign conventions matter. In these notes, $dQ>0$ means heat into the system and $dW=P\,dV$ is work done by the system.
+\end{importantnote}
+
+\subsection{Adiabatic, Isochoric, Isobaric, Isothermal Processes}
+\begin{theory}
+\begin{itemize}
+    \item Adiabatic ($dQ=0$):
+    \begin{equation}
+        dU=-P\,dV
+    \end{equation}
+    \item Isochoric ($dV=0$):
+    \begin{equation}
+        C_V = \left(\frac{\partial U}{\partial T}\right)_V
+    \end{equation}
+    \item Isobaric ($P=\text{const}$, ideal gas):
+    \begin{equation}
+        C_P = C_V + nR
+    \end{equation}
+    \item Isothermal (ideal gas):
+    \begin{equation}
+        dU=0,\quad dQ=dW=\frac{nRT}{V}dV
+    \end{equation}
+\end{itemize}
+\end{theory}
+
+\section{Entropy and Thermodynamic Potentials}
+
+\subsection{Entropy and Fundamental Relation}
+\begin{theory}
+For reversible processes,
+\begin{equation}
+    dS = \frac{dQ_{\text{rev}}}{T},
+\end{equation}
+leading to
+\begin{equation}
+    dU = T\,dS - P\,dV + \mu\,dN.
+\end{equation}
+\end{theory}
+
+\subsection{Helmholtz Free Energy and Maxwell Relations}
+\begin{foundation}
+Define $F=U-TS$. Then
+\begin{equation}
+    dF=-S\,dT-P\,dV+\mu\,dN,
+\end{equation}
+which gives, for example,
+\begin{equation}
+    \left(\frac{\partial S}{\partial V}\right)_{T,N}=\left(\frac{\partial P}{\partial T}\right)_{V,N}.
+\end{equation}
+\end{foundation}
+
+\begin{remark}
+For ideal gas, $(\partial U/\partial V)_T=0$, so internal energy depends only on $T$.
+This fails for interacting gases such as Van der Waals fluids.
+\end{remark}
+
+\section{Photon Gas and Blackbody Radiation}
+
+\subsection{Photon Statistics and EOS}
+\begin{theory}
+Photons are bosons with $\mu=0$ and $\varepsilon=pc$.
+With Bose--Einstein statistics,
+\begin{equation}
+    \langle n_p\rangle = \frac{1}{e^{pc/k_B T}-1}.
+\end{equation}
+The energy density is
+\begin{equation}
+    u=aT^4,\quad a=\frac{8\pi^5k_B^4}{15h^3c^3},
+\end{equation}
+and the pressure is
+\begin{equation}
+    P_{\text{rad}}=\frac{1}{3}u=\frac{1}{3}aT^4.
+\end{equation}
+\end{theory}
+
+\subsection{Adiabatic Expansion of Radiation}
+\begin{theory}
+For photon gas with $dQ=0$,
+\begin{equation}
+    T^3V=\text{const}, \qquad PV^{4/3}=\text{const}.
+\end{equation}
+So the adiabatic index is $\gamma=4/3$.
+\end{theory}
+
+\subsection{Planck Spectrum and Stefan--Boltzmann Law}
+\begin{theory}
+\begin{align}
+    u(\nu)d\nu &= \frac{8\pi h\nu^3}{c^3}\frac{1}{e^{h\nu/k_BT}-1}d\nu, \\
+    I_\nu &= \frac{2h\nu^3}{c^2}\frac{1}{e^{h\nu/k_BT}-1}, \\
+    F &= \sigma T^4,\quad \sigma=\frac{ac}{4}.
+\end{align}
+\end{theory}
+
+\section{Thermodynamics in Stellar Interiors}
+
+\subsection{Gas and Radiation Pressure}
+\begin{theory}
+In a fully ionized plasma,
+\begin{equation}
+    P_{\text{total}} = \frac{\rho k_B T}{\mu m_u} + \frac{1}{3}aT^4.
+\end{equation}
+Radiation pressure becomes important in massive stars.
+\end{theory}
+
+\subsection{Energy Transport Overview}
+\begin{intuition}
+Stellar heat transport transitions between conduction, radiation, and convection depending on opacity and stability of stratification.
+The dominant mechanism is a structural diagnostic for stellar mass and evolutionary stage.
+\end{intuition}
+
+\begin{theory}
+\begin{itemize}
+    \item Mean free path: $\lambda=1/(n\sigma)$.
+    \item Conductive flux: $j=-\kappa\,dT/dx$.
+    \item Radiative diffusion:
+    \begin{equation}
+        F_{\text{rad}} = -\frac{4ac}{3\kappa\rho}T^3\frac{dT}{dr}.
+    \end{equation}
+    \item Convection criterion (Schwarzschild):
+    \begin{equation}
+        \nabla \equiv \frac{d\ln T}{d\ln P} > \nabla_{\text{ad}}.
+    \end{equation}
+\end{itemize}
+\end{theory}
+
+\begin{extra}
+Mass dependence of transport zones (fully convective low-mass stars, solar-type radiative core + convective envelope, massive-star convective cores) can be understood from opacity trends and temperature sensitivity of nuclear burning.
+\end{extra}
+
+\section{Eddington Luminosity}
+\begin{theory}
+Hydrostatic support requires radiative acceleration not to exceed gravity:
+\begin{equation}
+    L < L_{\text{Edd}}\equiv\frac{4\pi GMc}{\kappa_R}.
+\end{equation}
+For electron scattering opacity,
+\begin{equation}
+    L_{\text{Edd}}\approx \SI{1.3e31}{W}\left(\frac{M}{M_\odot}\right).
+\end{equation}
+\end{theory}

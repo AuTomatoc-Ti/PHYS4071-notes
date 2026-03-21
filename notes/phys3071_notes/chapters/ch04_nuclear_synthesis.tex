@@ -1,0 +1,117 @@
+\chapter{Nuclear Synthesis in Stars}
+
+\section{Nuclear Basics}
+
+\subsection{Nuclear Size and Binding Energy}
+\begin{theory}
+\begin{align}
+    R &= R_0A^{1/3}, \qquad R_0\approx1.2\times10^{-15}\,\text{m}, \\
+    BE(Z,N) &= \left[Zm_p+Nm_n-M(Z,N)\right]c^2.
+\end{align}
+Binding energy per nucleon increases for light nuclei and decreases for very heavy nuclei due to Coulomb repulsion.
+\end{theory}
+
+\subsection{Why Fusion Powers Stars}
+\begin{intuition}
+Stars gain energy when fusing light nuclei toward higher binding energy per nucleon.
+This trend reverses near iron, where further fusion is endothermic.
+\end{intuition}
+
+\section{Hydrogen and Helium Burning}
+
+\subsection{Proton--Proton Chain}
+\begin{theory}
+Representative net reaction:
+\begin{equation}
+    4\,{}^1\text{H}\rightarrow{}^4\text{He}+2e^++2\nu_e+\text{energy}.
+\end{equation}
+Total released energy is about $26.7\,$MeV, with part carried away by neutrinos.
+\end{theory}
+
+\subsection{CNO Cycle}
+\begin{theory}
+CNO uses C, N, O as catalysts for H-burning and is much more temperature sensitive than pp burning.
+Near solar-core temperatures, pp-chain is weaker in $T$-sensitivity ($\sim T^4$) while CNO can scale roughly as $T^{\sim 18}$.
+\end{theory}
+
+\subsection{Triple-Alpha Process}
+\begin{theory}
+\begin{equation}
+    3\,{}^4\text{He}\rightarrow{}^{12}\text{C}+\gamma,
+\end{equation}
+enabled by resonance through unstable ${}^8\text{Be}$ and an excited Hoyle state in ${}^{12}\text{C}$.
+Typical ignition requires $T\gtrsim10^8\,$K.
+\end{theory}
+
+\begin{importantnote}
+The first pp step ($p+p\to d+e^++\nu_e$) is a weak-interaction bottleneck.
+It is slow enough to set long stellar main-sequence lifetimes.
+\end{importantnote}
+
+\section{Barrier Penetration and Reaction Rates}
+
+\subsection{Coulomb Barrier and Tunneling}
+\begin{foundation}
+Classically, nuclei with $E<V_C$ cannot fuse.
+Quantum tunneling gives non-zero penetration probability,
+\begin{equation}
+    P\sim \exp\left[-\sqrt{\frac{E_G}{E}}\right],
+\end{equation}
+where $E_G$ is the Gamow energy.
+\end{foundation}
+
+\subsection{Thermally Averaged Cross Section}
+\begin{theory}
+\begin{equation}
+    \langle\sigma v\rangle = \left(\frac{8}{\pi\mu}\right)^{1/2}
+    \frac{1}{(k_BT)^{3/2}}\int_0^\infty S(E)
+    \exp\left[-\frac{E}{k_BT}-\sqrt{\frac{E_G}{E}}\right]dE.
+\end{equation}
+The integrand peaks at the Gamow energy window, balancing high-energy tail abundance and tunneling probability.
+\end{theory}
+
+\subsection{Temperature Sensitivity}
+\begin{theory}
+Near a reference temperature, reaction rates are often approximated by
+\begin{equation}
+    R\propto T^{\nu},
+\end{equation}
+with small $\nu$ for pp-chain and much larger $\nu$ for CNO and triple-alpha.
+This sensitivity drives core structure differences between low-mass and massive stars.
+\end{theory}
+
+\begin{example}{Qualitative core response to heating}{ex:temp-feedback}
+Suppose core temperature rises slightly.
+
+\smallskip\textbf{Discussion.}
+In a pp-dominated core, energy generation increases moderately, giving mild feedback.
+In a CNO-dominated core, generation rises steeply, making burning more centrally concentrated and favoring convective cores.
+\end{example}
+
+\section{Advanced Burning and Stellar Endpoints}
+
+\subsection{Late Burning Stages in Massive Stars}
+\begin{theory}
+After He burning, successive C, Ne, O, and Si burning stages occur at progressively higher temperatures and shorter timescales.
+Fusion energy production terminates near iron-group nuclei.
+\end{theory}
+
+\subsection{Neutrino Cooling and Rapid Evolution}
+\begin{extra}
+At high temperature, neutrino processes (e.g., pair production) carry energy away efficiently.
+This accelerates late-stage evolution and contributes to core collapse in massive stars.
+\end{extra}
+
+\section{Solar Neutrino Problem}
+\begin{theory}
+Historically, measured solar neutrino flux was below early predictions.
+The resolution is flavor oscillation:
+\begin{equation}
+    \nu_e\leftrightarrow\nu_\mu\leftrightarrow\nu_\tau,
+\end{equation}
+so detectors sensitive mostly to $\nu_e$ observed an apparent deficit.
+\end{theory}
+
+\begin{remark}
+Solar neutrino measurements are both a test of stellar fusion models and direct evidence for neutrino mass and mixing.
+\end{remark}

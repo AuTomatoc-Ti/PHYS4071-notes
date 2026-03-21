@@ -1,0 +1,147 @@
+% ╔══════════════════════════════════════════════════════════════════════════════╗
+% ║  PHYS3071 · Stellar Astrophysics — Course Notes                             ║
+% ║  Compile:  cd template/  &&  ./compile.sh                                  ║
+% ║  Or:       pdflatex main → bibtex main → pdflatex main → pdflatex main    ║
+% ╚══════════════════════════════════════════════════════════════════════════════╝
+
+\documentclass[12pt, a4paper, openright]{report}
+
+\input{preamble}
+
+% ══════════════════════════════════════════════════════════════════════════════
+\begin{document}
+\pagestyle{empty}
+
+% ─── Title Page ────────────────────────────────────────────────────────────────
+\begin{tikzpicture}[remember picture, overlay]
+  % Solid dark background
+  \fill[TitleBG] (current page.south west) rectangle (current page.north east);
+
+  % Cosmology-inspired concentric pattern (scale-factor growth)
+  \coordinate (InflationCenter) at ($(current page.center)+(-0.1cm,1.0cm)$);
+
+  % Non-uniform rings: spacing increases outward to suggest expansion history
+  \foreach \r/\col/\op/\lw in {
+    1.15/NebulaTeal/0.30/0.70,
+    2.05/NebulaTeal/0.22/0.75,
+    3.20/StarGold/0.20/0.85,
+    4.70/StarGold/0.16/0.90,
+    6.55/StarGold/0.12/0.95,
+    8.75/StarGold/0.09/1.00
+  }{%
+    \draw[\col, opacity=\op, line width=\lw pt] (InflationCenter) circle (\r cm);
+  }%
+
+  % Sparse rays for directionality (kept subtle to avoid title distraction)
+  \foreach \ang in {18,42,66,104,141,199,236,272,318}{%
+    \draw[StarGold!75, opacity=0.10, line width=0.45pt]
+      (InflationCenter) -- ++(\ang:8.8cm);
+  }%
+
+  % Primordial seeds on selected shells
+  \foreach \ang/\rad/\op/\sz in {
+    24/2.10/0.65/1.05,
+    58/4.70/0.52/1.20,
+    96/6.55/0.40/1.10,
+    146/3.20/0.60/1.15,
+    214/4.70/0.50/1.10,
+    268/6.55/0.42/1.00,
+    329/8.75/0.35/0.95
+  }{%
+    \fill[white, opacity=\op] ($(InflationCenter)+(\ang:\rad cm)$) circle (\sz pt);
+  }%
+
+  % Outer ring hint for late-time Universe structure scale
+  \draw[white, opacity=0.12, line width=0.55pt] (InflationCenter) circle (8.75cm);
+
+  % Decorative accent bar (bottom of title area)
+  \draw[StarGold, line width=1.4pt]
+    ([shift={(2.0cm,-12.5cm)}]current page.north west) --
+    ([shift={(-2.0cm,-12.5cm)}]current page.north east);
+  \draw[StarGold!35, line width=0.5pt]
+    ([shift={(2.0cm,-12.72cm)}]current page.north west) --
+    ([shift={(-2.0cm,-12.72cm)}]current page.north east);
+
+\end{tikzpicture}
+
+\null\vspace{4.8cm}
+
+\begin{center}
+  {\small\color{StarGold}\textsc{\large P\kern1pt H\kern1pt Y\kern1pt S\kern2pt 3\kern1pt 0\kern1pt 7\kern1pt 1}}\\[1.2em]
+  {\fontsize{32}{38}\selectfont\bfseries\color{white}Introduction to}\\[0.2em]
+  {\fontsize{32}{38}\selectfont\bfseries\color{white}Stellar Astrophysics}\\[1.2em]
+  {\color{StarGold!55}\rule{5.5cm}{0.5pt}}\\[1.0em]
+  {\color{white!65}\normalsize Course Notes}\\[0.5em]
+\end{center}
+
+\vfill
+
+\begin{center}
+  {\small\color{white!50}Author: \textit{\NoteAuthor}}\\[0.3em]
+  {\small\color{white!50}Compiled: \textit{\CompileDate}}
+
+  {
+    \vspace*{1em}
+    \small \color{white!50}
+    Licensed under \href{https://creativecommons.org/licenses/by-nc-sa/4.0/}{CC BY-NC-SA 4.0}.\\
+    \vspace{0.5em}
+  }
+\end{center}
+
+\clearpage
+\pagestyle{fancy}
+
+% ─── Table of Contents ────────────────────────────────────────────────────────
+\phantomsection
+\begin{center}
+  {\color{StarGold}\rule{0.4\textwidth}{0.5pt}}
+\end{center}
+\vspace{0.8cm}
+{\centering\Large\bfseries\color{DeepSpace}TABLE OF CONTENTS\par}
+\vspace{0.8cm}
+\begin{center}
+  {\color{StarGold}\rule{0.4\textwidth}{0.5pt}}
+\end{center}
+\vspace{1.2cm}
+% Contents are output directly (avoids the \chapter*{} page-break that comes
+% from \tableofcontents in the report class).
+{%
+  \hypersetup{linkcolor=DeepSpace}%
+  \makeatletter\@starttoc{toc}\makeatother
+}
+\clearpage
+
+% ─── Chapters ─────────────────────────────────────────────────────────────────
+\input{chapters/intro}
+\input{chapters/ch01_star_formation} % lecture 
+\input{chapters/ch02_thermodynamics} % lecture 
+\input{chapters/ch03_energy_transport} % lecture
+\input{chapters/ch04_nuclear_synthesis} % lecture
+\input{chapters/ch05_simple_stellar_models} % lecture
+\input{chapters/ch06_stellar_evolution} % lecture
+
+
+% ─── Appendices ───────────────────────────────────────────────────────────────
+\appendix
+\input{chapters/appendix}
+
+% ─── References ───────────────────────────────────────────────────────────────
+\clearpage
+
+\begin{center}
+  {\color{StarGold}\rule{0.4\textwidth}{0.5pt}}
+\end{center}
+\vspace{0.8cm}
+{\centering\Large\bfseries\color{DeepSpace}REFERENCES\par}
+\vspace{0.8cm}
+\begin{center}
+  {\color{StarGold}\rule{0.4\textwidth}{0.5pt}}
+\end{center}
+\vspace{1.2cm}
+
+\nocite{*}
+\phantomsection\label{bibliography}
+\printbibliography[heading=none]
+
+% ══════════════════════════════════════════════════════════════════════════════
+\end{document}

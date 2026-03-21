@@ -1,0 +1,246 @@
+
+% ══════════════════════════════════════════════════════════════════════════════
+%  APPENDIX A: DECLARATION OF AI ASSISTANCE
+% ══════════════════════════════════════════════════════════════════════════════
+
+\chapter{Declaration of AI Assistance}
+
+\section{Use of Artificial Intelligence in This Document}
+
+This course guide was developed with assistance from artificial intelligence (AI)
+in the following capacities:
+
+\begin{itemize}
+  \item \textbf{Template Design:} AI provided guidance on structuring the document layout,
+        choosing appropriate color schemes.
+
+  \item \textbf{LaTeX Code Generation:} AI assisted in writing and refactoring LaTeX code,
+        including package configurations, box styling (tcolorbox), TikZ decorations,
+        and custom command definitions.
+
+  \item \textbf{LaTeX Structure Refactoring:} AI helped reorganize and optimize the document
+        structure for maintainability, readability, and professional presentation.
+
+  \item \textbf{Mathematical Formula Formatting:} AI provided assistance in formatting and
+        presenting mathematical equations in clear, readable notation aligned with
+        conventions.
+\end{itemize}
+
+\bigskip\noindent
+\textbf{Author Verification:} All content, including scientific accuracy, theoretical derivations,
+example problems, and pedagogical choices, has been carefully reviewed and verified by the author.
+The AI assistance was limited to technical formatting and structural optimization, not to
+the generation or validation of course content itself.
+
+
+
+
+
+
+\clearpage
+% ══════════════════════════════════════════════════════════════════════════════
+%  APPENDIX B: MATHEMATICAL TOOLS & DERIVATIONS
+% ══════════════════════════════════════════════════════════════════════════════
+
+\chapter{Mathematical Tools \& Derivations}
+
+\section{Useful Identities}
+
+\subsection*{Trigonometric}
+$\sin^2\theta + \cos^2\theta = 1$,\quad
+$\tan\theta = \sin\theta/\cos\theta$,\quad
+$\sin(A\pm B) = \sin A\cos B \pm \cos A\sin B$.
+
+\subsection*{Hyperbolic}
+$\cosh^2 x - \sinh^2 x = 1$,\quad
+$\sinh(x\pm y) = \sinh x\cosh y \pm \cosh x\sinh y$.
+
+\subsection*{Common Integrals}
+\begin{align*}
+  \int x^n\,dx &= \tfrac{x^{n+1}}{n+1} + C \quad (n\neq-1), &
+  \int e^{ax}\,dx &= \tfrac{1}{a}e^{ax}+C,\\
+  \int \frac{dx}{x} &= \ln|x|+C, &
+  \int \sin x\,dx &= -\cos x + C.
+\end{align*}
+
+\subsection*{Taylor Expansions}
+\begin{align*}
+      f(x) &= f(a) + f'(a)(x-a) + \tfrac{f''(a)}{2!}(x-a)^2 + \cdots\\
+\end{align*}
+\begin{align*}
+      \sin x &= \sum_{n=0}^\infty \frac{(-1)^n x^{2n+1}}{(2n+1)!} = x - \tfrac{x^3}{3!} + \tfrac{x^5}{5!} - \cdots\\
+      \cos x &= \sum_{n=0}^\infty \frac{(-1)^n x^{2n}}{(2n)!} = 1 - \tfrac{x^2}{2!} + \tfrac{x^4}{4!} - \cdots \\
+      e^x &= \sum_{n=0}^\infty \frac{x^n}{n!} = 1 + x + \tfrac{x^2}{2!} + \cdots \\
+      \sqrt{1+x} &= \sum_{n=0}^\infty \binom{1/2}{n} x^n = 1 + \tfrac{1}{2}x - \tfrac{1}{8}x^2 + \cdots
+\end{align*}
+
+\section{Differential Geometry Primer}
+
+The \textbf{metric tensor} $g_{\mu\nu}$ encodes the geometry of spacetime:
+$ds^2 = g_{\mu\nu}\,dx^\mu\,dx^\nu$.
+The \textbf{Christoffel symbols} (not tensors) are defined as
+\begin{equation}
+  \Gamma^\lambda_{\mu\nu} = \tfrac{1}{2}g^{\lambda\sigma}
+    (\partial_\mu g_{\nu\sigma} + \partial_\nu g_{\mu\sigma} - \partial_\sigma g_{\mu\nu}).
+\end{equation} \\
+
+The Riemann curvature tensor is defined as
+\begin{equation}
+  R^\rho{}_{\sigma\mu\nu} = \partial_\mu \Gamma^\rho_{\nu\sigma} - \partial_\nu \Gamma^\rho_{\mu\sigma} + \Gamma^\rho_{\mu\lambda}\Gamma^\lambda_{\nu\sigma} - \Gamma^\rho_{\nu\lambda}\Gamma^\lambda_{\mu\sigma}.
+\end{equation} \\
+
+The \textbf{Ricci tensor} is the contraction $R_{\mu\nu} = R^\lambda{}_{\mu\lambda\nu}$
+of the Riemann curvature tensor, and the \textbf{Ricci scalar} is $R = g^{\mu\nu}R_{\mu\nu}$. \\
+
+These enter the Einstein field equations as:
+\begin{equation}
+  R_{\mu\nu} - \tfrac{1}{2}g_{\mu\nu}R + \Lambda g_{\mu\nu} = 8\pi G T_{\mu\nu}.
+\end{equation}
+
+%\bigskip\noindent
+\subsection*{Mostly-Plus vs. Mostly-Minus Signatures}
+The choice of metric signature affects the signs of above tensors in below ways:
+\begin{center}
+      \begin{tabular}{@{}lll@{}}
+      \toprule
+      \textbf{Tensor} & \textbf{Symbol} & \textbf{Sign Change} \\
+      \midrule
+      Metric& $g_{\mu\nu}$ & Flips $(-)$ \\
+      Inverse metric & $g^{\mu\nu}$ & Flips $(-)$ \\
+      Christoffel symbols & $\Gamma^\lambda_{\mu\nu}$ & No change \\
+      Riemann(1,3) & $R^\rho{}_{\sigma\mu\nu}$ & No change \\
+      Riemann(0,4) & $R_{\rho\sigma\mu\nu}$ & Flips $(-)$ \\
+      Ricci tensor & $R_{\mu\nu}$ & No change \\
+      Ricci scalar & $R$ & Flips $(-)$ \\
+      Einstein tensor & $G_{\mu\nu}$ & No change \\
+      Stress-energy tensor & $T_{\mu\nu}$ & No change \\
+      \bottomrule
+      \end{tabular}
+\end{center}
+
+\section{Relativistic Limits}
+The energy-momentum relation is $E^2 = p^2c^2 + m^2c^4$.
+So in a relativistic limit, we can have:
+\[
+      \{ E, m, \rho\} \ll \{p, T\}
+\]
+which any one of the values in left-hand set is much smaller than any one of the values in the right-hand set.
+\clearpage
+
+
+
+
+% ══════════════════════════════════════════════════════════════════════════════
+%  APPENDIX C: CONSTANTS & CONVERSION FACTORS
+% ══════════════════════════════════════════════════════════════════════════════
+
+\chapter{Constants \& Conversion Factors}
+
+\section{Physical Constants}
+
+\begin{center}
+\begin{tabular}{lll}
+\toprule
+\textbf{Quantity} & \textbf{Symbol} & \textbf{Value (SI)} \\
+\midrule
+Speed of light         & $c$       & $2.998 \times 10^8 \,\mathrm{m\,s^{-1}}$           \\
+Gravitational constant & $G$       & $6.674 \times 10^{-11} \,\mathrm{m^3\,kg^{-1}\,s^{-2}}$ \\
+Hubble constant today  & $H_0$     & $67.8 \pm 0.77 \,\mathrm{km\,s^{-1}\,Mpc^{-1}}$     \\
+Cosmological constant   & $\Lambda$ & $1.11 \times 10^{-52} \,\mathrm{m^{-2}}$           \\
+Cosmological constant &$\Lambda$ & $2.036 \times 10^{-35} \,\mathrm{s^{-2}}$           \\
+Planck constant         & $\hbar$   & $1.055 \times 10^{-34} \,\mathrm{J\,s}$                     \\
+Boltzmann constant      & $k_B$     & $1.381 \times 10^{-23} \,\mathrm{J\,K^{-1}}$                    \\
+Fermi constant           & $G_F$     & $1.166 \times 10^{-5} \,\mathrm{GeV^{-2}}$                    \\
+Fine-structure constant today  & $\alpha$  & $1/137.036$ \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\section{Conversion Factors}
+\subsection*{Astronomical Units}
+\begin{center}
+\begin{tabular}{ll}
+\toprule
+\textbf{Conversion} & \textbf{Value} \\
+\midrule
+1 astronomical unit (AU) & $1.496 \times 10^{11} \,\mathrm{m}$ \\
+1 light-year (ly)   & $9.461\times10^{15}\,\mathrm{m}$ \\
+1 parsec (pc)       & $3.086\times10^{16}\,\mathrm{m}$ \\
+1 parsec (pc)       & $3.262\,\mathrm{ly}$ \\
+1 year (yr)         & $3.156\times10^{7}\,\mathrm{s}$ \\
+\midrule
+1 Solar mass ($M_\odot$) & $1.989 \times 10^{30} \,\mathrm{kg}$ \\
+1 solar radius ($R_\odot$) & $6.957 \times 10^8 \,\mathrm{m}$ \\
+1 Earth mass ($M_\oplus$) & $5.972 \times 10^{24} \,\mathrm{kg}$ \\
+1 Earth radius ($R_\oplus$) & $6.371 \times 10^6 \,\mathrm{m}$ \\
+CMB temperature ($T_\text{CMB}$) & $2.725 \,\mathrm{K}$ \\
+C$\nu$B temperature ($T_{\text{C}\nu\text{B}}$) & $1.95 \,\mathrm{K}$ \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\clearpage
+\subsection*{Energy Units}
+\begin{center}
+\begin{tabular}{ll}
+\toprule
+\textbf{Conversion} & \textbf{Value} \\
+\midrule
+1 eV                & $1.602 \times 10^{-19} \,\mathrm{J}$ \\
+1 electron mass ($m_e$) & $0.511 \,\mathrm{MeV}/c^2$ \\
+1 electron mass ($m_e$) & $9.109 \times 10^{-31} \,\mathrm{kg}$ \\
+1 proton mass ($m_p$) & $938.3 \,\mathrm{MeV}/c^2$ \\
+1 proton mass ($m_p$) & $1.673 \times 10^{-27} \,\mathrm{kg}$ \\
+1 neutron mass ($m_n$) & $939.6 \,\mathrm{MeV}/c^2$ \\
+1 neutron mass ($m_n$) & $1.675 \times 10^{-27} \,\mathrm{kg}$ \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+
+\section{SI Unit Prefixes}
+\begin{center}
+\begin{tabular}{lll}
+\toprule
+\textbf{Prefix} & \textbf{Name} & \textbf{Factor} \\
+\midrule
+      $10^{-12}$ & pico (p)   & $10^{-12}$ \\
+      $10^{-9}$ & nano (n)  & $10^{-9}$ \\
+      $10^{-6}$ & micro ($\mu$) & $10^{-6}$ \\
+      $10^{-3}$ & milli (m)  & $10^{-3}$ \\
+      $10^{3}$  & kilo (k)   & $10^{3}$ \\
+      $10^{6}$  & mega (M)   & $10^{6}$ \\
+      $10^{9}$  & giga (G)   & $10^{9}$ \\
+      $10^{12}$ & tera (T)   & $10^{12}$ \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\clearpage
+\section{Main events in universe}
+\begin{center}
+\begin{tabular}{llll}
+\toprule
+\textbf{Event} & \textbf{Time $t$} & \textbf{Redshift $z$} & \textbf{Temperature $T$ (eV)} \\
+\midrule
+Planck epoch & $10^{-43}\,\mathrm{s}$ & -- & -- \\
+Grand unification & $10^{-36}\,\mathrm{s}$ & -- & -- \\
+Inflation & $10^{-34}\,\mathrm{s}$ (?) & -- & -- \\
+Baryogenesis & ? & ? & ? \\
+EW phase transition & $2\times10^{-11}\,\mathrm{s}$ & $10^{15}$ & $10^{11}$ \\
+QCD phase transition & $2\times10^{-5}\,\mathrm{s}$ & $10^{12}$ & $1.5\times10^{8}$ \\
+Dark matter freeze-out & ? & ? & ? \\
+Neutrino decoupling & $1\,\mathrm{s}$ & $6\times10^{9}$ & $10^{6}$ \\
+Electron-positron annihilation & $6\,\mathrm{s}$ & $2\times10^{9}$ & $5\times10^{5}$ \\
+Big Bang nucleosynthesis & $3\,\mathrm{min}$ & $4\times10^{8}$ & $10^{5}$ \\
+Matter-radiation equality & $6\times10^{4}\,\mathrm{yr}$ & $3400$ & $0.75$ \\
+Recombination & $(2.6\text{--}3.8)\times10^{5}\,\mathrm{yr}$ & $1100\text{--}1400$ & $0.26\text{--}0.33$ \\
+Photon decoupling & $3.8\times10^{5}\,\mathrm{yr}$ & $1000\text{--}1200$ & $0.23\text{--}0.28$ \\
+Reionization & $(1\text{--}4)\times10^{8}\,\mathrm{yr}$ & $11\text{--}30$ & $(2.6\text{--}7.0)\times10^{-3}$ \\
+Dark energy-matter equality & $9\times10^{9}\,\mathrm{yr}$ & $0.4$ & $3.3\times10^{-4}$ \\
+Present & $1.38\times10^{10}\,\mathrm{yr}$ & $0$ & $2.4\times10^{-4}$ \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\clearpage

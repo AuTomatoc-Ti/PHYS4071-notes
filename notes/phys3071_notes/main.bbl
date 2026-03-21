@@ -1,0 +1,78 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\datalist[entry]{none/global//global/global/global}
+  \entry{PHYS3071_2026}{misc}{}{}
+    \list{publisher}{1}{%
+      {HKUST}%
+    }
+    \field{labeltitlesource}{title}
+    \field{title}{PHYS3071 Introduction to Stellar Astrophysics Lecture Notes}
+    \field{year}{2026}
+  \endentry
+
+  \entry{Eigenchris_Relativity_Course}{misc}{}{}
+    \name{author}{1}{}{%
+      {{hash=E}{%
+         family={Eigenchris},
+         familyi={E\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{E1}
+    \strng{fullhash}{E1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Relativity by Eigenchris}
+    \verb{url}
+    \verb https://www.youtube.com/playlist?list=PLJHszsWbB6hqlw73QjgZcFh4DrkQLS
+    \verb CQa
+    \endverb
+    \field{year}{2025}
+  \endentry
+
+  \entry{Carmeli_2001}{inproceedings}{}{}
+    \name{author}{1}{}{%
+      {{hash=CM}{%
+         family={Carmeli},
+         familyi={C\bibinitperiod},
+         given={Moshe},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {AIP}%
+    }
+    \strng{namehash}{CM1}
+    \strng{fullhash}{CM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{AIP Conference Proceedings}
+    \verb{doi}
+    \verb 10.1063/1.1419571
+    \endverb
+    \field{issn}{0094-243X}
+    \field{pages}{316\bibrangedash 318}
+    \field{title}{Value of the cosmological constant: Theory versus experiment}
+    \verb{url}
+    \verb http://dx.doi.org/10.1063/1.1419571
+    \endverb
+    \field{volume}{586}
+    \field{year}{2001}
+  \endentry
+\enddatalist
+\endinput
