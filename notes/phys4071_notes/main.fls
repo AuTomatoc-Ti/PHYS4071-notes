@@ -722,6 +722,7 @@ INPUT ./images/BBN_interaction_chain.jpg
 INPUT ./images/BBN_interaction_chain.jpg
 INPUT ./images/BBN_interaction_chain.jpg
 INPUT ./images/BBN_interaction_chain.jpg
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/vf/adobe/palatino/pplr8t.vf
 INPUT ./images/time_evolution_abundance.png
 INPUT ./images/time_evolution_abundance.png
 INPUT ./images/time_evolution_abundance.png

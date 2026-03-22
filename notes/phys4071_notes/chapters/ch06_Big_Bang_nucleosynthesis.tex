@@ -271,19 +271,21 @@ If $\eta$ were zero, we would expect equal amounts of matter and antimatter to a
 \bigskip \noindent \bigskip \noindent \bigskip \noindent
 \section{BBN processes}
 \subsection{Deuterium Bottleneck Effect and Start of BBN}
+\begin{intuition}
+    All the light nuclei(except hydrogen) are formed through the intermediate state of deuterium(${}^2\text{H}$), which formed by the reaction:
+    \[
+        p + n \leftrightarrow {}^2\text{H} + \gamma
+    \] 
+    However, at the early universe, the universe is filled with high-energy photons. Due to the low binding energy of deuterium, these high-energy photons can easily photodissociate the deuterium back into free protons and neutrons, which prevent the formation of heavier nuclei. This phenomenon is known as the \textbf{"deuterium bottleneck effect"}. \\
+\end{intuition}
 
+\clearpage
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.8\textwidth]{images/BBN_interaction_chain.jpg}
     \caption{BBN interaction chain.}
     \label{fig:BBN_chain}
 \end{figure}
-
-
-
-% ──────────────────────────────────────────────────────────────────────────────
-\bigskip \noindent \bigskip \noindent \bigskip \noindent
-\subsection{Shutdown of BBN}
 
 \begin{extra}
     \begin{center}
@@ -307,10 +309,54 @@ If $\eta$ were zero, we would expect equal amounts of matter and antimatter to a
     \label{tab:binding_energies}
 \end{extra}
 
-% -─────────────────────────────────────────────────────────────────────────────
-\bigskip \noindent \bigskip \noindent \bigskip \noindent
-\subsection{Evolution of Elemental Abundances}
+\bigskip \noindent
+\begin{theory}
+    As a result, we defined the start of the BBN as the time when large amount of deuterium can survive without being photodissociated, which can be calculated by the relic abundance equation in above section:
+    \begin{align*}
+         X_i = \frac{A_i n_i}{n_B} = \frac{1}{2}g_i \cdot \left(A_i^{5/2} \epsilon^{A_i - 1}\right) \cdot \left( X_p^{Z_i} X_n^{A_i - Z_i} \right) \cdot e^{B_i / T}
+    \end{align*}
+    given $B_{{}^2\text{H}} = 2.2245 \text{ MeV}$, we can get $\epsilon e^{B_{{}^2\text{H}} / T} \sim 1$ at around $T \sim 0.06 - 0.07 \text{ MeV}$, which is the start of BBN.
+\end{theory}
 
+\bigskip \noindent
+\begin{foundation}
+    The detailed steps of getting the above result is as below:
+    \begin{align*}
+        X_{{}^2\text{H}} &= \frac{1}{2}g_{{}^2\text{H}} \cdot \left(A_{{}^2\text{H}}^{5/2} \epsilon^{A_{{}^2\text{H}} - 1}\right) \cdot \left( X_p^{Z_{{}^2\text{H}}} X_n^{A_{{}^2\text{H}} - Z_{{}^2\text{H}}} \right) \cdot e^{B_{{}^2\text{H}} / T} \\
+    \end{align*}
+    By given $g_{{}^2\text{H}} = 3$, $A_{{}^2\text{H}} = 2$, $Z_{{}^2\text{H}} = 1$, and $B_{{}^2\text{H}} = 2.2245 \text{ MeV}$, we can further rearrange the expression to get:
+    \begin{align*}
+        X_{{}^2\text{H}} &\approx 0.928 \cdot \epsilon \cdot e^{B_{{}^2\text{H}} / T} \\
+         X_{{}^2\text{H}} &\approx 1 \cdot \frac{\zeta(3) \eta}{\pi^2} \left( \frac{2\pi T}{m_N} \right)^{3/2} e^{B_{{}^2\text{H}} / T}
+    \end{align*}
+    And using $\eta \approx 6 \times 10^{-10}$, $\zeta(3) \approx 1.202$, and $m_N \approx 939 \text{ MeV}$:
+    \begin{align*}
+        X_{{}^2\text{H}} &\approx 1 \cdot \frac{1.202 \cdot 6 \times 10^{-10}}{\pi^2} \left( \frac{2\pi T}{939} \right)^{3/2} e^{2.2245 / T} \\
+        X_{{}^2\text{H}} &\approx 7.3 \times 10^{-11} \cdot 5.474 \times 10^{-4} \cdot T^{3/2} \cdot 9.44^{1/T} \\
+    \end{align*}
+
+    Hence, to solve $X_{{}^2\text{H}} \sim 1$, we get $T \sim 0.0642 \text{ MeV}$ through the above expression.
+\end{foundation}
+
+\bigskip \noindent
+\begin{extra}
+    The history of BBN research began with George Gamow's work in abundances of elements in the universe, he suggested that the early universe was hot and dense enough for nuclear reactions to occur, leading to the formation of light elements. His student Ralph Alpher further developed the theory through calculations. Later, in April 1, 1948, the results was announced in the letter to Physical Review , which signed by Alpher, Bethe, and Gamow, where Hans Bethe's name was added as a pun of "alpha, beta, gamma". 
+\end{extra}
+
+
+
+% ──────────────────────────────────────────────────────────────────────────────
+\bigskip \noindent %\bigskip \noindent %\bigskip \noindent
+\subsection{Shutdown of BBN}
+\begin{intuition}
+    The shutdown of BBN is mainly due to the expansion and cooling of the universe. As the universe expands, the temperature falls below $T \sim 30 \text{ keV}$, the energy of light nuclei and protons becomes too low to overcome the Coulomb barrier for nuclear reactions, and hence the nuclear reactions effectively stop, and the heavier nuclei($A > 7$) did not have enough time to form before the universe cools down, which is why we only have light elements from BBN. \\
+\end{intuition}
+
+
+% -─────────────────────────────────────────────────────────────────────────────
+\clearpage
+%\bigskip \noindent \bigskip \noindent \bigskip \noindent
+\subsection{Evolution of Elemental Abundances}
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.8\textwidth]{images/time_evolution_abundance.png}
@@ -318,6 +364,51 @@ If $\eta$ were zero, we would expect equal amounts of matter and antimatter to a
     \label{fig:time_evolution_abundance}
 \end{figure}
 
-\begin{extra}
-    The history of BBN research began with George Gamow's work in abundances of elements in the universe, he suggested that the early universe was hot and dense enough for nuclear reactions to occur, leading to the formation of light elements. His student Ralph Alpher further developed the theory through calculations. Later, in April 1, 1948, the results was announced in the letter to Physical Review , which signed by Alpher, Bethe, and Gamow, where Hans Bethe's name was added as a pun of "alpha, beta, gamma". 
-\end{extra}
+\begin{intuition}
+    From the figure above, we can have some qualitative understanding of the evolution of elemental abundances during BBN:
+    \begin{itemize}
+        \item At the beginning of BBN, the neutron-to-proton ratio is around $1/7$, but when nuclearsynthesis starts, the neutrons are quickly used up to form light nuclei, and hence the neutron abundance compared to proton abundance drops rapidly; And at the end of BBN, the neutron abundance to proton abundance can be negligible, which is around $10^-10$.
+        \item The ${}^2\text{H}$ (deuterium) and ${}^3\text{H}$ (tritium) is intermediate states through reaction towards ${}^4\text{He}$, so their abundance quickly rise at the beginning of BBN, and reach highest at the time when the reaction rate of forming ${}^4\text{He}$ is the highest, and then quickly drop to a very low level at the end of BBN.
+        \item The ${}^3\text{He}$ is also an intermediate state towards ${}^4\text{He}$, however, it required ${}^2\text{H}$ or $n$ to do the reactions, which these two reactants are quickly used up at the beginning of BBN, so the abundance of ${}^3\text{He}$  didn't fall as the ${}^2\text{H}$ and ${}^3\text{H}$, but instead keep a similar level until the end of BBN.
+        \item The ${}^4\text{He}$ is the most stable nucleus among the light nuclei, so almost all neutrons end up in ${}^4\text{He}$, and hence the abundance of ${}^4\text{He}$ is around $25\%$ at the end of BBN; 
+        \item The ${}^7\text{Li}$ is produced through ${}^7 \text{Be}$, and have a reaction ${}^7\text{Li} + p \leftarrow {}^4\text{He} + {}^4\text{He}$; However, the average binding energy per nucleon of ${}^7\text{Li}$ is around $5.6 \text{ MeV}$, which is much lower than the binding energy per nucleon of ${}^4\text{He}$, which is around $7.1 \text{ MeV}$, so ${}^7 \text{Li}$ tends to return into $^{4}\text{He}$; As a result, its abundance quickly raised at the beginning of BBN due to high temperature, but then soon drop due to the formation of ${}^4\text{He}$.
+        \item At the sametime, as the reformation of ${}^4\text{He}$ by ${}^7\text{Be}$ required the middle steps of ${}^7 \text{Be} + n \leftarrow {}^7\text{Li} + p$, but the neutron abundance is quickly used up at the beginning of BBN, so the abundance of ${}^7\text{Be}$ did not drop as the ${}^7\text{Li}$, but instead keep a similar level until the end of BBN.
+    \end{itemize}
+\end{intuition}
+
+\bigskip \noindent 
+\begin{intuition}
+    Now you may have a question even our observational result match the theoretical relic abundance predicted by BBN, how can we be sure that the observed abundance is indeed the relic abundance from BBN, rather than the abundance produced by some other processes after BBN?(e.g. the abundance of helium-4 can be produced by stars, and the abundance of deuterium can be produced by cosmic ray spallation). \\
+
+    The answer is that we can check the variance of the abundance in different astrophysical environments, for example, all star and interstellar gas contain at least $23\%$ of ${}^4\text{He}$; To compare, other elements like C,N,O that need to be produced by stars have a significant variance in their abundance in different stars and interstellar gas, with some regions contain almost no C,N,O. The universality minimum abundance of ${}^4\text{He}$ strongly suggest that the observed abundance of ${}^4\text{He}$ is indeed the relic abundance from BBN, rather than the abundance produced by some other processes after BBN. \\
+
+    Another key evidence is the existence of significant amount of deuterium in the universe, as deuterium is fragile and can be easily destroyed due to its low binding energy, the fusion in stars will destroy deuterium rather than produce it, while the cosmic ray spallation can only produce a very small amount of deuterium, therefore the observed abundance of deuterium can only be explained by the relic abundance from BBN, rather than the abundance produced by stars.
+\end{intuition}
+
+\bigskip \noindent
+\begin{remark}
+    In fact, the nucleosynthesis process in the early universe suggest that universe is once hot and dense, which is also a key piece of evidence for the Big Bang model. 
+\end{remark}
+
+\clearpage
+\begin{foundation}
+    As we know that the neutron is the bottleneck for the formation of light nuclei, and almost all neutrons end up in ${}^4\text{He}$, so we can estimate the relic abundance of ${}^4\text{He}$ by the neutron-to-proton ratio at the start of BBN:
+    \begin{align*}
+        X_{{}^4\text{He}} &= \frac{4 n_{{}^4\text{He}}}{n_B} \\
+        &\approx \frac{4 n_n / 2}{n_p + n_n} \\
+        &= \frac{2 n_n}{n_p + n_n} \\
+        &= \frac{2}{1 + n_p / n_n} \\
+        &= \frac{2}{1 + e^{\frac{m_n - m_p}{T}}} \\
+        &\approx \frac{2}{1 + 7} \\
+        &= \frac{2}{8} \\
+        &= 0.25
+    \end{align*}
+    Note as ${}^4\text{He}$ is formed by 2 protons and 2 neutrons, so the number density of ${}^4\text{He}$ is around half of the neutron number density, and we have $n_{{}^4\text{He}} \approx \frac{1}{2} n_n$.
+\end{foundation}
+
+\bigskip \noindent
+\begin{importantnote}
+   The chemical equilibrium assumption is only valid at the beginning of BBN; During the stage of BBN, the chemical equilibrium is broken and relic abundance is changed, and we cant simply use the chemical equilibrium expression to calculate the relic abundance; \\
+
+   To calculate the relic abundance during BBN, we need to solving the group of diffusion equations that describe the time evolution of the number density of each species, which is a more complex calculation and require numerical methods to solve. As a matter of fact, the cross sections of these reactions are usually measured in laboratory experiments.
+\end{importantnote}

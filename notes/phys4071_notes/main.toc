@@ -74,21 +74,21 @@
 \contentsline {section}{\numberline {6.3}Neutron-to-Proton Ratio}{92}{section.6.3}%
 \contentsline {section}{\numberline {6.4}BBN processes}{93}{section.6.4}%
 \contentsline {subsection}{\numberline {6.4.1}Deuterium Bottleneck Effect and Start of BBN}{93}{subsection.6.4.1}%
-\contentsline {subsection}{\numberline {6.4.2}Shutdown of BBN}{93}{subsection.6.4.2}%
-\contentsline {subsection}{\numberline {6.4.3}Evolution of Elemental Abundances}{94}{subsection.6.4.3}%
-\contentsline {chapter}{\numberline {7}Cosmic Microwave Background (CMB) (Lecture 15-19)}{96}{chapter.7}%
-\contentsline {chapter}{\numberline {8}Dark Matter (Lecture 20-22)}{97}{chapter.8}%
-\contentsline {chapter}{\numberline {9}Inflation (Lecture 23-24)}{98}{chapter.9}%
-\contentsline {chapter}{\numberline {A}Declaration of AI Assistance}{99}{appendix.A}%
-\contentsline {section}{\numberline {A.1}Use of Artificial Intelligence in This Document}{99}{section.A.1}%
-\contentsline {chapter}{\numberline {B}Mathematical Tools \& Derivations}{100}{appendix.B}%
-\contentsline {section}{\numberline {B.1}Useful Identities}{100}{section.B.1}%
-\contentsline {section}{\numberline {B.2}Differential Geometry Primer}{101}{section.B.2}%
-\contentsline {section}{\numberline {B.3}Relativistic Limits}{101}{section.B.3}%
-\contentsline {chapter}{\numberline {C}Constants \& Conversion Factors}{102}{appendix.C}%
-\contentsline {section}{\numberline {C.1}Physical Constants}{102}{section.C.1}%
-\contentsline {section}{\numberline {C.2}Conversion Factors}{102}{section.C.2}%
-\contentsline {section}{\numberline {C.3}SI Unit Prefixes}{103}{section.C.3}%
-\contentsline {section}{\numberline {C.4}Main Events in Universe}{104}{section.C.4}%
-\contentsline {section}{\numberline {C.5}Nuclei Binding Energies & Atomic Masses}{105}{section.C.5}%
+\contentsline {subsection}{\numberline {6.4.2}Shutdown of BBN}{95}{subsection.6.4.2}%
+\contentsline {subsection}{\numberline {6.4.3}Evolution of Elemental Abundances}{96}{subsection.6.4.3}%
+\contentsline {chapter}{\numberline {7}Cosmic Microwave Background (CMB) (Lecture 15-19)}{99}{chapter.7}%
+\contentsline {chapter}{\numberline {8}Dark Matter (Lecture 20-22)}{100}{chapter.8}%
+\contentsline {chapter}{\numberline {9}Inflation (Lecture 23-24)}{101}{chapter.9}%
+\contentsline {chapter}{\numberline {A}Declaration of AI Assistance}{102}{appendix.A}%
+\contentsline {section}{\numberline {A.1}Use of Artificial Intelligence in This Document}{102}{section.A.1}%
+\contentsline {chapter}{\numberline {B}Mathematical Tools \& Derivations}{103}{appendix.B}%
+\contentsline {section}{\numberline {B.1}Useful Identities}{103}{section.B.1}%
+\contentsline {section}{\numberline {B.2}Differential Geometry Primer}{104}{section.B.2}%
+\contentsline {section}{\numberline {B.3}Relativistic Limits}{104}{section.B.3}%
+\contentsline {chapter}{\numberline {C}Constants \& Conversion Factors}{105}{appendix.C}%
+\contentsline {section}{\numberline {C.1}Physical Constants}{105}{section.C.1}%
+\contentsline {section}{\numberline {C.2}Conversion Factors}{105}{section.C.2}%
+\contentsline {section}{\numberline {C.3}SI Unit Prefixes}{106}{section.C.3}%
+\contentsline {section}{\numberline {C.4}Main Events in Universe}{107}{section.C.4}%
+\contentsline {section}{\numberline {C.5}Nuclei Binding Energies & Atomic Masses}{108}{section.C.5}%
 \contentsfinish 

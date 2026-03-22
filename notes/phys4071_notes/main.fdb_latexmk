@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber main"] 1773902765.0423 "main.bcf" "main.bbl" "main" 1774125933.70147 0
-  "main.bcf" 1774125933.4806 107836 d1f6c503cec8cd464c159b7cc781d432 "pdflatex"
+["biber main"] 1773902765.0423 "main.bcf" "main.bbl" "main" 1774173220.16268 0
+  "main.bcf" 1774173219.93882 107836 d1f6c503cec8cd464c159b7cc781d432 "pdflatex"
   "references.bib" 1773671425.748 679 1a04154e98c2050d93c421e9d776d686 ""
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1774125928.22697 "main.tex" "main.pdf" "main" 1774125933.70262 2
+["pdflatex"] 1774173215.07241 "main.tex" "main.pdf" "main" 1774173220.16313 2
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1136849721 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -264,7 +264,7 @@
   "chapters/ch03_cosmic_evolution.tex" 1773906465.6557 24823 7c5862bdfa2652b383c26f8abb550534 ""
   "chapters/ch04_standard_model.tex" 1773736305.35272 12245 ebd0b67eaab560202040499637fcd84e ""
   "chapters/ch05_thermodynamics_and_primordial_soup.tex" 1774098874.25702 65504 d8b26317400b80a8501bbdef2ccff042 ""
-  "chapters/ch06_Big_Bang_nucleosynthesis.tex" 1774125926.71664 20528 69dcf929116792328a5c1c635feb286b ""
+  "chapters/ch06_Big_Bang_nucleosynthesis.tex" 1774173211.06088 29435 df30acf51690727a030517b254bffc49 ""
   "chapters/ch07_Cosmic_Microwave_Background.tex" 1773801037.15547 815 7a3996fee69e0f9fa1c22275cbeec649 ""
   "chapters/ch08_dark_matter.tex" 1773083177.69057 777 488d157e491b95205af67ac01acc6ac8 ""
   "chapters/ch09_inflation.tex" 1773083199.73765 773 5ba7527e787fc9632bd12124086922cc ""
@@ -279,12 +279,12 @@
   "images/particles_mass.png" 1773248196.6187 339098 00ce1c2c3f7ff5ad713d07cea3c35623 ""
   "images/standard_model.png" 1773246928.0192 212825 744ec51c55b61fc2c5a8663a0cf00568 ""
   "images/time_evolution_abundance.png" 1774090146.24133 606118 08aa8195a29d50feec9fd203fe3f0d2a ""
-  "main.aux" 1774125933.47575 17823 812eacc6f47c1cb2cd290db8294b4bde "pdflatex"
+  "main.aux" 1774173219.932 17850 8c4d2d1a1f3aadbe67c288df4ddaf06c "pdflatex"
   "main.bbl" 1773902770.82213 3615 9b37762d68fb75a24e61a514ca3ca637 "biber main"
-  "main.out" 1774125933.47762 18254 e53309f3682bf691e77a52a03cc538e4 "pdflatex"
-  "main.run.xml" 1774125933.48194 2339 1ed341041bd1fbe5a1f3b1992463a6cc "pdflatex"
+  "main.out" 1774173219.9339 18254 e53309f3682bf691e77a52a03cc538e4 "pdflatex"
+  "main.run.xml" 1774173219.94045 2339 1ed341041bd1fbe5a1f3b1992463a6cc "pdflatex"
   "main.tex" 1773905785.25251 6709 a8d3928126569c95966960d4eefcb336 ""
-  "main.toc" 1774125933.48216 8497 501155384938a535cb35d4a8a22ad8fb "pdflatex"
+  "main.toc" 1774173219.94058 8501 6b9c0597f541a674d8e75c4eb912d7ab "pdflatex"
   "preamble.tex" 1773903728.25739 13952 76e7316839e5ae9d3e8b922372cb1a2b ""
   (generated)
   "main.aux"
