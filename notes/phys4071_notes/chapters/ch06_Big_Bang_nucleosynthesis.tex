@@ -45,7 +45,7 @@ The abundances of these elements provide crucial evidence for the Big Bang model
 \bigskip \noindent \bigskip \noindent \bigskip \noindent
 \subsection{number density of nuclei in chemical equilibrium}
 \begin{foundation}
-    Notes the proton, neutron, and electron in this stage are all non-relativistic, so we can use the Maxwell-Boltzmann distribution to describe their number densities. Recall:
+    Notes the proton, neutron in this stage are all non-relativistic, so we can use the Maxwell-Boltzmann distribution to describe their number densities. Recall:
     \[
         n_i = g_i \left( \frac{m_i k_B T}{2\pi \hbar^2} \right)^{3/2} e^{-(m_i c^2 - \mu_i)/k_B T}
     \]
@@ -73,11 +73,11 @@ The abundances of these elements provide crucial evidence for the Big Bang model
             &= g_i \left( \frac{m_i T}{2 \pi} \right)^{3/2} \frac{n_p}{g_p}^{Z_i} \frac{n_n}{g_n}^{A_i - Z_i} \frac{2\pi}{m_p T}^{3Z_i / 2} \frac{2\pi}{m_n T}^{3(A_i - Z_i) / 2} e^{(Z_i m_p + (A_i - Z_i) m_n - m_i) / T} \\
             &= g_i \left( \frac{m_i T}{2 \pi} (\frac{2\pi}{m_p T})^{Z_i} (\frac{2\pi}{m_n T})^{A_i - Z_i} \right)^{3/2} \left(n_p^{Z_i} n_n^{A_i - Z_i}\right) \left( g_p^{-Z_i} g_n^{-(A_i - Z_i)} \right) \left( e^{B_i / T} \right) \\
             &= g_i \left( (\frac{2\pi}{T})^{A_i - 1} \frac{m_i}{m_p^{Z_i} m_n^{A_i - Z_i}} \right)^{3/2} \left(n_p^{Z_i} n_n^{A_i - Z_i}\right) \left( 2^{-Z_i} 2^{-(A_i - Z_i)} \right) \left( e^{B_i / T} \right) \\
-            &= g_i \left( (\frac{2\pi}{T})^{A_i - 1} \frac{m_N}{m_N^{Z_i} m_N^{A_i - Z_i}} \right)^{3/2} \left(n_p^{Z_i} n_n^{A_i - Z_i}\right) \left( 2^{-A_i} \right) \left( e^{B_i / T} \right) \\
-            &= g_i \left( \frac{2\pi}{T}^{A_i - 1} \frac{A_i}{m_N} \right)^{3/2} \left(n_p^{Z_i} n_n^{A_i - Z_i}\right) 2^{-A_i} e^{B_i / T} \\
+            &= g_i \left( (\frac{2\pi}{T})^{A_i - 1} \frac{m_N A_i}{m_N^{Z_i} m_N^{A_i - Z_i}} \right)^{3/2} \left(n_p^{Z_i} n_n^{A_i - Z_i}\right) \left( 2^{-A_i} \right) \left( e^{B_i / T} \right) \\
+            &= g_i \left( (\frac{2\pi}{T})^{A_i - 1} \frac{A_i}{m_N^{A_i - 1}} \right)^{3/2} \left(n_p^{Z_i} n_n^{A_i - Z_i}\right) 2^{-A_i} e^{B_i / T} \\
             &= g_i A_i^{3/2} \left( \frac{2\pi}{m_N T} \right)^{\frac{3}{2}(A_i - 1)} \left(n_p^{Z_i} n_n^{A_i - Z_i}\right) 2^{-A_i} e^{B_i / T}
     \end{align*}
-    where we have used the approximation of $m_p \approx m_n \approx \frac{m_i}{A_i} \equiv m_N$ in the last step. \\
+    where we have used the approximation of $m_p \approx m_n \approx \frac{m_i}{A_i} \equiv m_N$ in the last part. \\
 \end{foundation}
 
 \bigskip \noindent
@@ -144,7 +144,7 @@ The abundances of these elements provide crucial evidence for the Big Bang model
 
     Hence, we can further rearrange the expression to get:
     \begin{align*}
-        X_i &= g_i \cdot \left(A_i^{5/2} 2^{-A_i}\right) \cdot  \left(X_p^{Z_i} X_n^{A_i - Z_i}\right) \cdot \left( 2^{A_i - 1} n_B^{A_i - 1} (\frac{2\pi}{m_N T})^{\frac{3}{2}(A_i - 1)} e^{B_i / T} \right) \\
+        X_i &= g_i \cdot \left(A_i^{5/2} 2^{-A_i}\right) \cdot  \left(X_p^{Z_i} X_n^{A_i - Z_i}\right) \cdot \left( 2^{A_i - 1} (\frac{n_B}{2})^{A_i - 1} (\frac{2\pi}{m_N T})^{\frac{3}{2}(A_i - 1)} e^{B_i / T} \right) \\
             &= g_i \cdot \left(A_i^{5/2} 2^{-A_i+ A_i - 1}\right) \cdot  \left(X_p^{Z_i} X_n^{A_i - Z_i}\right) \cdot \left( \epsilon^{A_i - 1} e^{B_i / T} \right) \\
             &= \frac{1}{2} g_i \cdot \left(A_i^{5/2} \epsilon^{A_i - 1}\right) \cdot \left(X_p^{Z_i} X_n^{A_i - Z_i}\right) \cdot e^{B_i / T}
     \end{align*}
@@ -231,13 +231,14 @@ If $\eta$ were zero, we would expect equal amounts of matter and antimatter to a
 
 \bigskip \noindent
 \begin{foundation}
-    To estimate the chemical potential of neutrino and electron, we assume $T > m_e$, and have:
+    To estimate the chemical potential of neutrino and electron, we assume $T \gg m_e$, and have:
     \begin{align*}
         n_{e^-} - n_{e^+} &= \frac{2}{2\pi^2} \int_0^\infty \left(\frac{1}{e^{\frac{E_{e^-} - \mu_{e^-}}{T}} + 1} - \frac{1}{e^{\frac{E_{e^+} - \mu_{e^+}}{T}} + 1}\right) E^2 dE \\
         &= \frac{2 T^3}{6 \pi^2} \left( \pi^2 \frac{\mu_{e^-}}{T} + \left( \frac{\mu_{e^-}}{T} \right)^3 \right)
     \end{align*}
     and as the universe is electrically neutral, we have $n_{e^-} - n_{e^+} = n_p^*$, and by $n_B = n_p^* + n_n^*$, we can get:
     \begin{align*}
+        n_{e^-} - n_{e^+} &= n_p^* < n_p^* + n_n^*\\
         n_{e^-} - n_{e^+} &< n_B \\
         n_{e^-} - n_{e^+} &< \eta n_\gamma  \\
         n_{e^-} - n_{e^+} &< \eta \cdot \frac{2\zeta(3)}{\pi^2} T^3
@@ -378,11 +379,11 @@ If $\eta$ were zero, we would expect equal amounts of matter and antimatter to a
 
 \bigskip \noindent 
 \begin{intuition}
-    Now you may have a question even our observational result match the theoretical relic abundance predicted by BBN, how can we be sure that the observed abundance is indeed the relic abundance from BBN, rather than the abundance produced by some other processes after BBN?(e.g. the abundance of helium-4 can be produced by stars, and the abundance of deuterium can be produced by cosmic ray spallation). \\
+    Now you may have a question that even our observational result match the theoretical relic abundance predicted by BBN, how can we be sure that the observed abundance is indeed the relic abundance from BBN, rather than the abundance produced by some other processes after BBN?(e.g. the abundance of helium-4 can be produced by stars, and the abundance of deuterium can be produced by cosmic ray spallation). \\
 
     The answer is that we can check the variance of the abundance in different astrophysical environments, for example, all star and interstellar gas contain at least $23\%$ of ${}^4\text{He}$; To compare, other elements like C,N,O that need to be produced by stars have a significant variance in their abundance in different stars and interstellar gas, with some regions contain almost no C,N,O. The universality minimum abundance of ${}^4\text{He}$ strongly suggest that the observed abundance of ${}^4\text{He}$ is indeed the relic abundance from BBN, rather than the abundance produced by some other processes after BBN. \\
 
-    Another key evidence is the existence of significant amount of deuterium in the universe, as deuterium is fragile and can be easily destroyed due to its low binding energy, the fusion in stars will destroy deuterium rather than produce it, while the cosmic ray spallation can only produce a very small amount of deuterium, therefore the observed abundance of deuterium can only be explained by the relic abundance from BBN, rather than the abundance produced by stars.
+    Another key evidence is the existence of significant amount of deuterium in the universe, as deuterium is fragile and can be easily destroyed due to its low binding energy, the fusion in stars will destroy deuterium rather than produce it, while the cosmic ray spallation can only produce a very small amount of deuterium, therefore the observed abundance of deuterium can only be explained by the relic abundance from BBN, rather than the abundance produced by stars and cosmic ray spallation.
 \end{intuition}
 
 \bigskip \noindent
@@ -398,7 +399,7 @@ If $\eta$ were zero, we would expect equal amounts of matter and antimatter to a
         &\approx \frac{4 n_n / 2}{n_p + n_n} \\
         &= \frac{2 n_n}{n_p + n_n} \\
         &= \frac{2}{1 + n_p / n_n} \\
-        &= \frac{2}{1 + e^{\frac{m_n - m_p}{T}}} \\
+        &\approx \frac{2}{1 + e^{\frac{m_n - m_p}{T}}} \\
         &\approx \frac{2}{1 + 7} \\
         &= \frac{2}{8} \\
         &= 0.25
