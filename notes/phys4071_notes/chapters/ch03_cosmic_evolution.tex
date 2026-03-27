@@ -81,6 +81,11 @@
 \end{theory}
 
 \bigskip \noindent
+\begin{intuition}
+    From the 2nd Friedmann equation, we can see that the expansion of universe is decelerating by matter and pressure, as the term $\rho + 3p$ has -ve contribution to the expansion acceleration $\ddot{a}$. 
+\end{intuition}
+
+\bigskip \noindent
 \begin{remark}
     The Friedmann equations assumed that the universe is homogeneous and isotropic, which means the energy density $\rho$ and pressure $p$ are the same everywhere in the large scale of universe.
 \end{remark}
@@ -122,7 +127,7 @@
 
 \clearpage
 %\bigskip \noindent
-\begin{example}{Another proof of the continuity equation}
+\begin{example}{Another proof of the continuity equation}{}
     Assuming that the universe is Adiabatic Expansion (i.e. no heat exchange), can you derive the continuity equation by using the first law of thermodynamics?
     \[
         dE + pdV = dQ = 0
@@ -152,24 +157,15 @@
     (Hints: watch the Relativity 110f by Eigenchris, \cite{Eigenchris_Relativity_Course})
 \end{extra}
 
-% ──────────────────────────────────────────────────────────────────────────────
-%\clearpage
-\bigskip \noindent \bigskip \noindent \bigskip \noindent
-\subsection{Critical Energy Density and Density Parameters}
 
 
 
-
-% ──────────────────────────────────────────────────────────────────────────────
-%\clearpage
-\bigskip \noindent \bigskip \noindent \bigskip \noindent
-\subsection{Equation of State(EoS) and Energy Density Evolution}
 
 
 
 % =══════════════════════════════════════════════════════════════════════════════
-%\clearpage
-\bigskip \noindent \bigskip \noindent \bigskip \noindent
+\clearpage
+%\bigskip \noindent \bigskip \noindent \bigskip \noindent
 \section{Cosmological constant}
 \subsection{Origin of Cosmological Constant}
 \begin{intuition}
@@ -202,7 +198,7 @@
     In a physic intuition, the extra term come from cosmological constant can be treated as a perfect fluid with energy density $\rho_\Lambda = \frac{\Lambda}{8\pi G}$ and pressure $p_\Lambda = -\rho_\Lambda$. Thus, the equation of LHS and RHS of the Einstein's field equation are still balanced, we just add an extra contribution of energy apart from the normal matter. \\
 \end{intuition}
 
-%\clearpage
+\clearpage
 %\bigskip \noindent
 \begin{theory}
     The cosmological constant in energy-momentum tensor form can be written as:
@@ -274,7 +270,7 @@
 
 %\bigskip \noindent
 % explain the difference between cosmological constant and vacuum energy
-%\clearpage
+\clearpage
 \begin{importantnote}
     Although we said they are equivalent, but the cosmological constant and vaccum energy are not exactly the same thing. \\
 
@@ -288,7 +284,7 @@
 % ──────────────────────────────────────────────────────────────────────────────
 \bigskip \noindent \bigskip \noindent \bigskip \noindent
 \subsection{Friedmann Equations with Cosmological Constant}
-\bigskip \noindent
+%\bigskip \noindent
 \begin{theory}
     By considering the cosmological constant in EFE, and using the similar method shown in the previous sections, we can get the modified Friedmann equations as below, \\
 
@@ -359,8 +355,8 @@
 \end{theory}
 
 \bigskip \noindent %
-\begin{example}{Effect of Cosmological Constant}
-    Consider a Sun-Earth like system, \\
+\begin{example}{Effect of Cosmological Constant}{}
+    Consider a Sun-Earth like system, 
 
     (a). estimate the threshold of $R$ above which the cosmological replusion force will dominate over the gravitational attraction. \\
     (b). calculate the ratio of the cosmological force to the gravitational force at the distance of Pluto, which is around $40$ AU. \\
@@ -377,9 +373,9 @@
     Plugging in the values of $G$, $M$, and $\Lambda$:
     \begin{align*}
         R &= \left( \frac{3 \cdot 6.67430 \times 10^{-11} \cdot 1.989 \times 10^{30}}{2.036 \times 10^{-35}} \right)^{1/3} \\
-        &= 2.694 \times 10^{18} \mathrm{m} \\
+        &= 2.694 \times 10^{18} \mathrm{m} 
     \end{align*}
-    which is around $90$ parsecs, which is much larger than the size of solar system, thus the cosmological constant has negligible effect on the dynamics of solar system. \\
+    which is around $90$ parsecs, and is much larger than the size of solar system, thus cosmological constant has negligible effect on dynamics of solar system. \\
 
     (b). The ratio of the cosmological force to the gravitational force at the distance of Pluto is:
     \begin{align*}
@@ -396,7 +392,140 @@
 
 % ──────────────────────────────────────────────────────────────────────────────
 \bigskip \noindent \bigskip \noindent \bigskip \noindent
+\bigskip \noindent \bigskip \noindent \bigskip \noindent \bigskip \noindent
+\bigskip \noindent \bigskip \noindent \bigskip \noindent \bigskip \noindent
 \section{Evolution of Scale Factor}
+% ──────────────────────────────────────────────────────────────────────────────
+%\clearpage
+%\bigskip \noindent \bigskip \noindent \bigskip \noindent
+\subsection{Equation of State(EoS)}
+\begin{intuition}
+    The equation of state (EoS) is used to describe the relationship between pressure and energy density of a fluid, in cosmology, we usually use a simple linear EoS as below:
+    \[
+        p = w \rho
+    \]
+    where $w$ is the EoS parameter, which can be used to characterize different types of matter and energy in the universe. \\
+\end{intuition}
+
+\bigskip \noindent
+\begin{foundation}
+    From the continuity equation:
+    \[
+        \dot{\rho} = - 3H(\rho + p) 
+    \]
+    sub the $p = w \rho$ into the above equation, we can get:
+    \begin{align*}
+        \dot{\rho} &= - 3H \rho (1 + w) \\
+        \frac{d\rho}{dt} &= - 3 \frac{\dot{a}}{a} \rho (1 + w) \\
+        \frac{d\rho}{\rho} &= - 3 (1 + w) \frac{da}{a} \\
+        \int \frac{d\rho}{\rho} &= - 3 (1 + w) \int \frac{da}{a} \\
+        \ln \rho &= - 3 (1 + w) \ln a + C \\
+        \rho &= \rho_0 \cdot a^{-3(1+w)} \\
+        \rho &\propto a^{-3(1+w)}
+    \end{align*}
+\end{foundation}
+
+\bigskip \noindent
+\begin{theory}
+    The energy density evolution with scale factor can be written as:
+    \begin{align*}
+        \rho(a) \propto a(t)^{-3(1+w)}
+    \end{align*}
+    where $w = \frac{p}{\rho}$ is the EoS parameter. \\
+
+    For different types of matter and energy, we have different values of $w$ as below:
+    \[
+        \begin{cases}
+            w = 0, & \text{for non-relativistic matter (dust)} \\
+            w = \frac{1}{3}, & \text{for relativistic matter (radiation)} \\
+            w = - \frac{1}{3}, & \text{for curvature} \\
+            w = -1, & \text{for cosmological constant (dark energy)}
+        \end{cases}
+    \]
+    Therefore, we can get their relationship between energy density and scale factor:
+    \[
+        \begin{cases}
+            \rho_{d} &\propto a^{-3} \\
+            \rho_{r} &\propto a^{-4} \\
+            \rho_{k} &\propto a^{-2} \\
+            \rho_{\Lambda} &= \text{constant}
+        \end{cases}
+    \]
+\end{theory}
+
+\begin{remark}
+    For these who are interested in the calculation of EoS parameter of dust and radiation, you can check chp 5.2.2 about the kinetic theory of non-relativistic and relativistic particles correspondingly in this book. We will just give the result here without the detailed calculation. \\
+\end{remark}
+
+
+\clearpage
+%\bigskip \noindent
+\begin{example}{Effective Energy Density and Pressure of Curvature}{}
+    (a). By treating the curvature term in the Friedmann equations as energy density and pressure, can you derive the EoS parameter of curvature? \\
+    (b). Rewrite the Friedmann equations and continuity equation by effective energy density and pressure of curvature, which are the combination of the original energy density and pressure and the effective energy density and pressure of curvature. (i.e. $\rho_{\text{eff}} = \rho + \rho_K$, $p_{\text{eff}} = p + p_K$) \\
+    
+    \bigskip\textbf{Solution.}\quad \\
+    (a). If we treat the curvature term in the Friedmann equations as some terms in energy density and pressure, we can rewrite the Friedmann equations as below: \\
+    The 1st Friedmann equation can be rewritten as:
+    \[
+        H^2 = \frac{8\pi G}{3}\rho - \frac{k}{a^2} = \frac{8\pi G}{3}(\rho + \rho_K)
+    \]
+    And hence we get:
+    \[
+        \rho_K = -\frac{3}{8\pi G} \frac{k}{a(t)^2}
+    \]
+    The continuity equation can be rewritten as:
+    \[
+        \dot{\rho_K} + 3H(\rho_K + p_K) = 0
+    \]
+    where $p_K$ is the effective pressure of curvature. \\
+
+    By substituting the expression of $\rho_K$ into the above equation, we can get:
+    \begin{align*}
+       -\frac{3}{8\pi G} \left( -2\frac{k}{a^3}\dot{a} \right) &= -3H \left( -\frac{3}{8\pi G} \frac{k}{a^2} + p_K \right)\\
+        \frac{6}{8\pi G} \frac{k}{a^2} H &= \frac{9}{8\pi G} \frac{k}{a^2} H - 3H p_K \\
+        3H p_K &= \frac{3}{8\pi G} \frac{k}{a^2} H \\
+        p_K &= \frac{1}{8\pi G} \frac{k}{a^2}
+    \end{align*}
+    Thus, we can get the EoS parameter of curvature as:
+    \[
+        w_K = \frac{p_K}{\rho_K} = -\frac{1}{3} 
+    \] \\
+
+    (b). using part a result and the equation provided in question, we get:
+    \begin{align*}
+        \begin{cases}
+            H^2 &= \frac{8\pi G}{3}(\rho_{\text{eff}}) \\
+            \frac{\ddot{a}}{a} &= -\frac{4\pi G}{3}(\rho_{\text{eff}} + 3p_{\text{eff}}) \\
+            \dot{\rho}_{\text{eff}} &= - 3H(\rho_{\text{eff}} + p_{\text{eff}})
+        \end{cases}
+    \end{align*}
+\end{example}
+
+\clearpage
+%\bigskip \noindent
+\begin{intuition}
+    \begin{itemize}
+        \item \textbf{Dust ($w=0$)}: \\
+            In astrophysics, we often call non-relativistic matter as "dust", for these particles, their energy density is dominated by their rest mass energy, and their pressure is negligible compared to their energy density, on other hand, $v \ll c$, so $p \approx 0$, thus we have $w = 0$. \\
+            
+            In a physical intuition, the energy density of dust will dilute as the universe expands, as the number of particles in a comoving volume is constant, thus $\rho \propto a^{-3}$. \\
+        \item \textbf{Radiation ($w=\frac{1}{3}$)}: \\
+            For relativistic matter, their energy density is dominated by their kinetic energy, and their pressure is not negligible compared to their energy density, on other hand, $v \approx c$, so $p \approx \frac{1}{3}\rho$, thus we have $w = \frac{1}{3}$. \\
+
+            In a physical intuition, the cosmological redshift will cause the wavelength of photons to stretch as the universe expands, thus the energy of radiaition have an extra factor of $a^{-1}$ compared to dust, thus $\rho \propto a^{-4}$. \\
+        \item \textbf{Curvature ($w=-\frac{1}{3}$)}: \\
+            The curvature term in the Friedmann equations can be treated as an effective energy density and pressure, and we can get the EoS parameter of curvature as $w = -\frac{1}{3}$. \\
+
+            In a physical intuition, the curvature term can be expressed as $\frac{1}{R^2}$ in differential geometry, where $R$ is the radius of curvature, and the radius of curvature will grow with the expansion of universe, thus the energy density of curvature will dilute as $\rho \propto a^{-2}$. \\
+        \item \textbf{Cosmological Constant ($w=-1$)}: \\
+            The cosmological constant behave like property of empty space itself, when the universe expands, the scale factor $a$ will grow, but the total amount of vacuum energy also grows, thus the energy density of it is scale factor independent, thus we have $\rho = \text{constant}$.
+    \end{itemize}
+\end{intuition}
+
+% ──────────────────────────────────────────────────────────────────────────────
+%\clearpage
+\bigskip \noindent \bigskip \noindent \bigskip \noindent
 \subsection{EoS of Cosmologic Constant}
 \begin{theory}
     The equation of state of cosmological constant is:
@@ -430,29 +559,85 @@
 % =══════════════════════════════════════════════════════════════════════════════
 \bigskip \noindent \bigskip \noindent \bigskip \noindent
 \section{SCDM and $\Lambda$CDM Models}
+% ──────────────────────────────────────────────────────────────────────────────
+%\clearpage
+\bigskip \noindent \bigskip \noindent \bigskip \noindent
+\subsection{Critical Energy Density and Density Parameters}
+\begin{intuition}
+    The Friedmann equations tell us that for the evolution of universe depends on energy density of different components, but they contribute different value at the same time, thus we introduce the concept of critical energy density and density parameters to characterize the ratio of contribution of different components to the total energy density of universe. \\
+\end{intuition}
+
+\bigskip \noindent
+\begin{theory}
+    By defining the critical energy density as:
+    \[
+        \rho_c = \frac{3H^2}{8\pi G}
+    \]
+    and the density parameter of each component as:
+    \[
+        \Omega_i = \frac{\rho_i}{\rho_c}
+    \]
+    where $i$ can be matter, radiation, cosmological constant, curvature, etc. \\
+
+    We can rewrite the 1st Friedmann equation as:
+    \begin{align*}
+        H^2 &= \frac{8\pi G}{3}\rho - \frac{k}{a^2} + \frac{\Lambda}{3} \\
+        \frac{3H^2}{8\pi G} &= \rho - \frac{3k}{8\pi G a^2} + \frac{\Lambda}{8\pi G} \\
+        \rho_c &= \rho + \rho_K + \rho_\Lambda \\
+        1 &= \Omega_{mr} + \Omega_\Lambda + \Omega_K \\
+         &= \Omega_{m} + \Omega_{r} + \Omega_\Lambda + \Omega_K
+    \end{align*}
+    where $\frac{\rho}{\rho_c} = \Omega_{mr} = \Omega_{m} + \Omega_{r}$ is the contribution of matter and radiation, $\Omega_\Lambda = \frac{\rho_\Lambda}{\rho_c}$ is the contribution of cosmological constant, and $\Omega_K = \frac{\rho_K}{\rho_c} = -\frac{3k}{8\pi G a^2 \rho_c}$ is the contribution of curvature. \\
+
+    And we can get the total energy density of universe as:
+    \[
+        \Omega = \sum_i \Omega_i = \Omega_{m} + \Omega_{r} + \Omega_\Lambda + \Omega_K
+    \]
+    with $\Omega = 1$ obviously.
+\end{theory}
+
+\bigskip \noindent
+\begin{remark}
+    In some textbooks, they define the $\Omega$ as the sum of all density parameters except curvature, i.e. $\Omega(t) = \Omega_{m}(t) + \Omega_{r}(t) + \Omega_{\Lambda}(t)$, and then the curvature density parameter can be written as $\Omega_K(t) = 1 - \Omega(t)$. \\
+
+    Further, we can also get the relationship between curvature density parameter and total energy density as:
+    \[
+        \Omega_K(t) = 1 - \Omega(t)
+    \]
+    Thus:
+    \begin{itemize}
+        \item If $\Omega(t) < 1$, then $\Omega_K(t) > 0$, and $k < 0$, which means the universe is open and negatively curved. \\
+        \item If $\Omega(t) = 1$, then $\Omega_K(t) = 0$, and $k = 0$, which means the universe is flat. \\
+        \item If $\Omega(t) > 1$, then $\Omega_K(t) < 0$, and $k > 0$, which means the universe is closed and positively curved. \\
+    \end{itemize}
+\end{remark}
+% ──────────────────────────────────────────────────────────────────────────────
+%\clearpage
+\bigskip \noindent \bigskip \noindent \bigskip \noindent
+\subsection{Total Energy Density of Universe}
 \begin{theory}
     The total energy density of the universe can be expressed as:
     \[
-        \Omega (t) = \Omega_{d}(t) + \Omega_{r}(t) + \Omega_{\Lambda}(t) + \Omega_{K}(t)
+        1 = \Omega = \Omega_{m}(t) + \Omega_{r}(t) + \Omega_{\Lambda}(t) + \Omega_{K}(t)
     \]
-    where $\Omega_{d}$ is the contribution of matter, which is the sum of dark matter and ordinary matter $ \Omega_{d} = \Omega_{dm} + \Omega_{om}$, $\Omega_{r}$ is the contribution of radiation, $\Omega_{\Lambda}$ is the contribution of cosmological constant, and $\Omega_{K}$ is the contribution of curvature. \\
+    where $\Omega_{m}$ is the contribution of matter, which is the sum of dark matter $(d)$ and ordinary/baryonic matter $(b)$: $\Omega_{m} = \Omega_{d} + \Omega_{b}$, $\Omega_{r}$ is the contribution of radiation, $\Omega_{\Lambda}$ is the contribution of cosmological constant, and $\Omega_{K}$ is the contribution of curvature. \\
 \end{theory}
 
 \bigskip \noindent
 \begin{theory}
     In a Einstein-de Sitter universe, which is a flat universe with only matter and no cosmological constant, i.e.:
     \[
-        \Omega_{d} = 1, \quad \Omega_{r} = 0, \quad \Omega_{\Lambda} = 0, \quad \Omega_{K} = 0
+        \Omega_{m} = 1, \quad \Omega_{r} = 0, \quad \Omega_{\Lambda} = 0, \quad \Omega_{K} = 0
     \]
-    , the total energy density is:
+    , the total energy density is dominated by matter:
     \[
-        \Omega = \Omega_{d} = 1
+        \Omega = \Omega_{m}(t) = 1
     \]
     The model are also known as the \textbf{Standard Cold Dark Matter (SCDM)} model, which is the simplest cosmological model, and it predicts a decelerating universe with $\ddot{a} < 0$. \\
 
 \end{theory}
 
-At the late 1990s, the SCDM model is challenged by the acceleration of universe, thus the \textbf{$\Lambda$CDM} model is proposed, which is a flat universe with matter and cosmological constant $\Omega_{d} + \Omega_{\Lambda} = 1$, with $\Omega_{\Lambda} > 0$.
+At the late 1990s, the SCDM model is challenged by the acceleration of universe, thus the \textbf{$\Lambda$CDM} model is proposed, which is a flat universe with matter and cosmological constant $\Omega_{m} + \Omega_{\Lambda} = 1$, with $\Omega_{\Lambda} > 0$.
 
 
 
@@ -493,8 +678,8 @@ At the late 1990s, the SCDM model is challenged by the acceleration of universe,
     \[
         \begin{cases}
             \Omega_\Lambda \approx 0.68 \\
-            \Omega_{dm} \approx 0.27 \\
-            \Omega_{om} \approx 0.05 \\
+            \Omega_{d} \approx 0.27 \\
+            \Omega_{b} \approx 0.05 \\
             \Omega_{r} \approx 10^{-4} \\
             \Omega_{K} \approx 0
         \end{cases}

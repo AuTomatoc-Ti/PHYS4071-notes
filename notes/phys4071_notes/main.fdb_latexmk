@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber main"] 1773902765.0423 "main.bcf" "main.bbl" "main" 1774173220.16268 0
-  "main.bcf" 1774173219.93882 107836 d1f6c503cec8cd464c159b7cc781d432 "pdflatex"
+["biber main"] 1773902765.0423 "main.bcf" "main.bbl" "main" 1774644881.32294 0
+  "main.bcf" 1774644881.10002 107836 d1f6c503cec8cd464c159b7cc781d432 "pdflatex"
   "references.bib" 1773671425.748 679 1a04154e98c2050d93c421e9d776d686 ""
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1774173215.07241 "main.tex" "main.pdf" "main" 1774173220.16313 2
+["pdflatex"] 1774644876.12718 "main.tex" "main.pdf" "main" 1774644881.32327 2
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1136849721 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -43,6 +43,7 @@
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb" 1248133631 36299 5f9df58c2139e7edcf37c8fca4bd384d ""
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1248133631 35752 024fb6c41858982481f6968b5fc26508 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1248133631 32569 5e5ddc8df908dea60932f3c484a54c0d ""
+  "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb" 1248133631 31764 459c573c03a4949a528c2cc7f557e217 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb" 1215737283 167085 68de377d2744a68a88fa40a1f610615a ""
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb" 1136849748 9356 a3851bc942e9b6995883193472ba1847 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb" 1136849748 15213 d999bbe8bd9c8f231f3f66a737c76478 ""
@@ -261,14 +262,12 @@
   "chapters/appendix.tex" 1774096451.06799 12696 367b02065c472e5f13c79bbac2e4bfbb ""
   "chapters/ch01_fundamentals.tex" 1773896579.51972 26200 9987f29b0e855a232632aa8ba7f96e43 ""
   "chapters/ch02_Hubble_law_and_cosmological_redshift.tex" 1773595057.30583 19847 cb2f9c792c38b837e6e20fd12fc9c42c ""
-  "chapters/ch03_cosmic_evolution.tex" 1773906465.6557 24823 7c5862bdfa2652b383c26f8abb550534 ""
+  "chapters/ch03_cosmic_evolution.tex" 1774644874.55823 34974 e4649293aca00cff5540668d3149807c ""
   "chapters/ch04_standard_model.tex" 1773736305.35272 12245 ebd0b67eaab560202040499637fcd84e ""
   "chapters/ch05_thermodynamics_and_primordial_soup.tex" 1774098874.25702 65504 d8b26317400b80a8501bbdef2ccff042 ""
-  "chapters/ch06_Big_Bang_nucleosynthesis.tex" 1774173211.06088 29435 df30acf51690727a030517b254bffc49 ""
-  "chapters/ch07_Cosmic_Microwave_Background.tex" 1773801037.15547 815 7a3996fee69e0f9fa1c22275cbeec649 ""
-  "chapters/ch08_dark_matter.tex" 1773083177.69057 777 488d157e491b95205af67ac01acc6ac8 ""
-  "chapters/ch09_inflation.tex" 1773083199.73765 773 5ba7527e787fc9632bd12124086922cc ""
+  "chapters/ch06_Big_Bang_nucleosynthesis.tex" 1774616335.99145 29541 39b096178e2e8a58e9dfe893c437c5d5 ""
   "chapters/intro.tex" 1773900302.76027 10844 3bece527b1b8250fffbf1e7a45df329a ""
+  "chapters/questions.tex" 1774633538.62833 11283 ed6b739ae0c53adbcf2ae34adb100284 ""
   "images/BBN_interaction_chain.jpg" 1774090497.97524 27630 bf0344b852fb4fa3e27ec5618e9a35fd ""
   "images/balloon_expansion.png" 1773037233.41575 679578 e88bb03972d3a92485f2676285fb1fb9 ""
   "images/baryon_to_photon_ratio.png" 1774089969.37489 609123 5739a343f49eab305fa1ad7b791872e7 ""
@@ -279,12 +278,12 @@
   "images/particles_mass.png" 1773248196.6187 339098 00ce1c2c3f7ff5ad713d07cea3c35623 ""
   "images/standard_model.png" 1773246928.0192 212825 744ec51c55b61fc2c5a8663a0cf00568 ""
   "images/time_evolution_abundance.png" 1774090146.24133 606118 08aa8195a29d50feec9fd203fe3f0d2a ""
-  "main.aux" 1774173219.932 17850 8c4d2d1a1f3aadbe67c288df4ddaf06c "pdflatex"
+  "main.aux" 1774644881.09577 20086 f1e99ba9c74e6ef02a76952bc7ec19c0 "pdflatex"
   "main.bbl" 1773902770.82213 3615 9b37762d68fb75a24e61a514ca3ca637 "biber main"
-  "main.out" 1774173219.9339 18254 e53309f3682bf691e77a52a03cc538e4 "pdflatex"
-  "main.run.xml" 1774173219.94045 2339 1ed341041bd1fbe5a1f3b1992463a6cc "pdflatex"
-  "main.tex" 1773905785.25251 6709 a8d3928126569c95966960d4eefcb336 ""
-  "main.toc" 1774173219.94058 8501 6b9c0597f541a674d8e75c4eb912d7ab "pdflatex"
+  "main.out" 1774644881.0975 20428 74c9612d54a0d87360b51be83e3ca7f4 "pdflatex"
+  "main.run.xml" 1774644881.10073 2339 1ed341041bd1fbe5a1f3b1992463a6cc "pdflatex"
+  "main.tex" 1774622268.85773 6711 e3ea3b9c24953b1758b3ee93d40d24ff ""
+  "main.toc" 1774644881.10082 9855 3371f4ebc4f50a21594d4d334768938b "pdflatex"
   "preamble.tex" 1773903728.25739 13952 76e7316839e5ae9d3e8b922372cb1a2b ""
   (generated)
   "main.aux"
