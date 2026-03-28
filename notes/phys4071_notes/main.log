@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2026.2.19)  28 MAR 2026 04:54
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2026.2.19)  28 MAR 2026 05:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -512,6 +512,14 @@ File: tikzlibrarybackgrounds.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgf@layerbox@background=\box66
 \pgf@layerboxsaved@background=\box67
 )
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.
+meta.code.tex
+File: pgflibraryarrows.meta.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfarrowinset=\dimen268
+\pgfarrowlength=\dimen269
+\pgfarrowwidth=\dimen270
+\pgfarrowlinewidth=\dimen271
+)
 (/usr/local/texlive/2025/texmf-dist/tex/latex/tcolorbox/tcolorbox.sty
 Package: tcolorbox 2024/10/22 version 6.4.1 text color boxes
 
@@ -535,7 +543,7 @@ Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 \c@tcblayer=\count311
 \c@tcolorbox@number=\count312
 \l__tcobox_tmpa_box=\box72
-\l__tcobox_tmpa_dim=\dimen268
+\l__tcobox_tmpa_dim=\dimen272
 \tcb@temp=\box73
 \tcb@temp=\box74
 \tcb@temp=\box75
@@ -585,9 +593,9 @@ Library (tcolorbox): 'tcbhooks.code.tex' version '6.4.1'
 Library (tcolorbox): 'tcbtheorems.code.tex' version '6.4.1'
 ) (/usr/local/texlive/2025/texmf-dist/tex/latex/tcolorbox/tcbfitting.code.tex
 Library (tcolorbox): 'tcbfitting.code.tex' version '6.4.1'
-\tcbfitdim=\dimen269
-\tcb@lowerfitdim=\dimen270
-\tcb@upperfitdim=\dimen271
+\tcbfitdim=\dimen273
+\tcb@lowerfitdim=\dimen274
+\tcb@upperfitdim=\dimen275
 \tcb@cur@hbadness=\count317
 )
 (/usr/local/texlive/2025/texmf-dist/tex/latex/tcolorbox/tcblistingsutf8.code.te
@@ -600,14 +608,14 @@ Library (tcolorbox): 'tcblistings.code.tex' version '6.4.1'
 \lst@gtempboxa=\box81
 \lst@token=\toks42
 \lst@length=\count319
-\lst@currlwidth=\dimen272
+\lst@currlwidth=\dimen276
 \lst@column=\count320
 \lst@pos=\count321
-\lst@lostspace=\dimen273
-\lst@width=\dimen274
+\lst@lostspace=\dimen277
+\lst@width=\dimen278
 \lst@newlines=\count322
 \lst@lineno=\count323
-\lst@maxwidth=\dimen275
+\lst@maxwidth=\dimen279
 
 (/usr/local/texlive/2025/texmf-dist/tex/latex/listings/lstpatch.sty
 File: lstpatch.sty 2024/09/23 1.10c (Carsten Heinz)
@@ -670,16 +678,16 @@ Package: titlesec 2025/01/04 v2.17 Sectioning titles
 \ttl@box=\box83
 \beforetitleunit=\skip55
 \aftertitleunit=\skip56
-\ttl@plus=\dimen276
-\ttl@minus=\dimen277
+\ttl@plus=\dimen280
+\ttl@minus=\dimen281
 \ttl@toksa=\toks43
-\titlewidth=\dimen278
-\titlewidthlast=\dimen279
-\titlewidthfirst=\dimen280
+\titlewidth=\dimen282
+\titlewidthlast=\dimen283
+\titlewidthfirst=\dimen284
 )
 (/usr/local/texlive/2025/texmf-dist/tex/latex/titlesec/titletoc.sty
 Package: titletoc 2025/01/04 v2.17 TOC entries
-\ttl@leftsep=\dimen281
+\ttl@leftsep=\dimen285
 )
 (/usr/local/texlive/2025/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
@@ -726,7 +734,7 @@ Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
 ))
 \c@section@level=\count328
 )
-\@linkdim=\dimen282
+\@linkdim=\dimen286
 \Hy@linkcounter=\count329
 \Hy@pagecounter=\count330
 
@@ -759,7 +767,7 @@ Package hyperref Info: Bookmarks ON on input line 4424.
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 4763.
-\XeTeXLinkMargin=\dimen283
+\XeTeXLinkMargin=\dimen287
 
 (/usr/local/texlive/2025/texmf-dist/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
@@ -769,8 +777,8 @@ Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
 \Fld@menulength=\count333
-\Field@Width=\dimen284
-\Fld@charsize=\dimen285
+\Field@Width=\dimen288
+\Fld@charsize=\dimen289
 Package hyperref Info: Hyper figures OFF on input line 6042.
 Package hyperref Info: Link nesting OFF on input line 6047.
 Package hyperref Info: Hyper index ON on input line 6050.
@@ -1068,7 +1076,7 @@ Package: blx-case-expl3 2024/03/21 v3.20 expl3 case changing code for biblatex
 (/usr/local/texlive/2025/texmf-dist/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2025/02/06 v3.11 Customized lists
 \labelindent=\skip94
-\enit@outerparindent=\dimen286
+\enit@outerparindent=\dimen290
 \enit@toks=\toks45
 \enit@inbox=\box85
 \enit@count@id=\count466
@@ -1076,23 +1084,23 @@ Package: enumitem 2025/02/06 v3.11 Customized lists
 )
 (/usr/local/texlive/2025/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
-\heavyrulewidth=\dimen287
-\lightrulewidth=\dimen288
-\cmidrulewidth=\dimen289
-\belowrulesep=\dimen290
-\belowbottomsep=\dimen291
-\aboverulesep=\dimen292
-\abovetopsep=\dimen293
-\cmidrulesep=\dimen294
-\cmidrulekern=\dimen295
-\defaultaddspace=\dimen296
+\heavyrulewidth=\dimen291
+\lightrulewidth=\dimen292
+\cmidrulewidth=\dimen293
+\belowrulesep=\dimen294
+\belowbottomsep=\dimen295
+\aboverulesep=\dimen296
+\abovetopsep=\dimen297
+\cmidrulesep=\dimen298
+\cmidrulekern=\dimen299
+\defaultaddspace=\dimen300
 \@cmidla=\count468
 \@cmidlb=\count469
-\@aboverulesep=\dimen297
-\@belowrulesep=\dimen298
+\@aboverulesep=\dimen301
+\@belowrulesep=\dimen302
 \@thisruleclass=\count470
 \@lastruleclass=\count471
-\@thisrulewidth=\dimen299
+\@thisrulewidth=\dimen303
 )
 (/usr/local/texlive/2025/texmf-dist/tex/latex/datetime/datetime.sty
 Package: datetime 2015/03/20 v2.60 Date Time Package
@@ -1238,13 +1246,13 @@ File: mt-ppl.cfg 2005/11/16 v1.6 microtype config. file: Palatino (RS)
 (/usr/local/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count500
-\scratchdimen=\dimen300
+\scratchdimen=\dimen304
 \scratchbox=\box86
 \nofMPsegments=\count501
 \nofMParguments=\count502
 \everyMPshowfont=\toks50
 \MPscratchCnt=\count503
-\MPscratchDim=\dimen301
+\MPscratchDim=\dimen305
 \MPnumerator=\count504
 \makeMPintoPDFobject=\count505
 \everyMPtoPDFconversion=\toks51
@@ -1363,32 +1371,7 @@ LaTeX Font Info:    Font shape `U/msb/m/n' will be
 
 ]
 
-[3]
-! Misplaced alignment tab character &.
-<argument> ...rline {C.5}Nuclei Binding Energies &
-                                                   Atomic Masses}\Hy@toclink...
-l.109 ...ergies & Atomic Masses}{116}{section.C.5}
-                                                  %
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-<argument> ...rline {C.5}Nuclei Binding Energies &
-                                                   Atomic Masses}\Hy@toclink...
-l.109 ...ergies & Atomic Masses}{116}{section.C.5}
-                                                  %
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-)
+[3])
 \tf@toc=\write6
 \openout6 = `main.toc'.
 
@@ -1473,7 +1456,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 358--360
 
  []
 
-<images/energy_momentum_tensor.png, id=772, 452.69125pt x 254.9525pt>
+<images/energy_momentum_tensor.png, id=778, 452.69125pt x 254.9525pt>
 File: images/energy_momentum_tensor.png Graphic file (type png)
 <use images/energy_momentum_tensor.png>
 Package pdftex.def Info: images/energy_momentum_tensor.png  used on input line 
@@ -1493,47 +1476,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 429--431
  []
 
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.433       \item
-                  Reason 1: Energy flux and momentum density are equal, so $...
-
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.433       \item R
-                   eason 1: Energy flux and momentum density are equal, so $...
-
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 436--438
 
  []
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.439     \end{itemize}
-                       
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 445--446
@@ -1614,61 +1559,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 139--140
 
  []
 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.152 
-      
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
 
-! Display math should end with $$.
-<to be read again> 
-                   \tex_par:D 
-l.152 
-      
-The `$' that I just saw supposedly matches a previous `$$'.
-So I shall assume that you typed `$$' both times.
-
-
-! LaTeX Error: Bad math environment delimiter.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.153     \]
-            
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.153     \]
-            
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Display math should end with $$.
-<to be read again> 
-                   \endgroup 
-l.153     \]
-            
-The `$' that I just saw supposedly matches a previous `$$'.
-So I shall assume that you typed `$$' both times.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 153--156
+Underfull \hbox (badness 10000) in paragraph at lines 154--157
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 167--168
+Underfull \hbox (badness 10000) in paragraph at lines 168--169
 
  []
 
@@ -1679,116 +1576,116 @@ Underfull \hbox (badness 10000) in paragraph at lines 167--168
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 196.
+(hyperref)                removing `math shift' on input line 197.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 196.
+(hyperref)                removing `math shift' on input line 197.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 198--199
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 207--208
+Underfull \hbox (badness 10000) in paragraph at lines 199--200
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 211--213
+Underfull \hbox (badness 10000) in paragraph at lines 208--209
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 214--215
+Underfull \hbox (badness 10000) in paragraph at lines 212--214
 
  []
 
-<images/balloon_expansion.png, id=820, 705.63625pt x 266.9975pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 215--216
+
+ []
+
+<images/balloon_expansion.png, id=826, 705.63625pt x 266.9975pt>
 File: images/balloon_expansion.png Graphic file (type png)
 <use images/balloon_expansion.png>
-Package pdftex.def Info: images/balloon_expansion.png  used on input line 220.
+Package pdftex.def Info: images/balloon_expansion.png  used on input line 221.
 (pdftex.def)             Requested size: 284.8093pt x 107.76672pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 226--227
+Underfull \hbox (badness 10000) in paragraph at lines 227--228
 
  []
 
 
 
 [27]
-Underfull \hbox (badness 10000) in paragraph at lines 252--254
+Underfull \hbox (badness 10000) in paragraph at lines 253--255
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 258--259
+Underfull \hbox (badness 10000) in paragraph at lines 259--260
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 260--261
+Underfull \hbox (badness 10000) in paragraph at lines 261--262
 
  []
 
 
 
 [28 <./images/balloon_expansion.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 272--274
+Underfull \hbox (badness 10000) in paragraph at lines 273--275
 
  []
 
 
-Underfull \hbox (badness 2495) in paragraph at lines 283--284
+Underfull \hbox (badness 2495) in paragraph at lines 284--285
 []\T1/ppl/m/n/12 (+20) The red-shift $\OML/zplm/m/it/12 z$ \T1/ppl/m/n/12 (+20)
  of galax-ies can be con-tributed by both re-ces-sion mo-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 288--289
+Underfull \hbox (badness 10000) in paragraph at lines 289--290
 
  []
 
 
 
 [29]
-<images/hubble_diagram.png, id=835, 912.40875pt x 443.6575pt>
+<images/hubble_diagram.png, id=841, 912.40875pt x 443.6575pt>
 File: images/hubble_diagram.png Graphic file (type png)
 <use images/hubble_diagram.png>
-Package pdftex.def Info: images/hubble_diagram.png  used on input line 295.
+Package pdftex.def Info: images/hubble_diagram.png  used on input line 296.
 (pdftex.def)             Requested size: 328.6292pt x 159.79103pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 317--319
+Underfull \hbox (badness 10000) in paragraph at lines 318--320
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 329--330
+Underfull \hbox (badness 10000) in paragraph at lines 330--331
 
  []
 
 
 
 [30 <./images/hubble_diagram.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 354--355
+Underfull \hbox (badness 10000) in paragraph at lines 355--356
 
  []
 
 
 
 [31]
-Underfull \hbox (badness 10000) in paragraph at lines 366--367
+Underfull \hbox (badness 10000) in paragraph at lines 367--368
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 368--369
+Underfull \hbox (badness 10000) in paragraph at lines 369--370
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 370--371
+Underfull \hbox (badness 10000) in paragraph at lines 371--372
 
  []
 
@@ -2115,7 +2012,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 688--689
 
 [51]
 Chapter 4.
-<images/standard_model.png, id=937, 853.1875pt x 640.3925pt>
+<images/standard_model.png, id=943, 853.1875pt x 640.3925pt>
 File: images/standard_model.png Graphic file (type png)
 <use images/standard_model.png>
 Package pdftex.def Info: images/standard_model.png  used on input line 17.
@@ -2132,20 +2029,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 35--36
  <./images/standard_model.png>]
 
 [53]
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.60 
-     
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
 
 [54
 
@@ -2184,7 +2067,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 96--97
 [55
 
 ]
-<images/particles_mass.png, id=957, 739.76375pt x 433.62pt>
+<images/particles_mass.png, id=963, 739.76375pt x 433.62pt>
 File: images/particles_mass.png Graphic file (type png)
 <use images/particles_mass.png>
 Package pdftex.def Info: images/particles_mass.png  used on input line 112.
@@ -2269,25 +2152,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 66--67
 
 
 [59]
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.86 
-     
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 98--99
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 103--104
 
  []
@@ -2297,20 +2161,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 103--104
 [60
 
 ]
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.126 
-      
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
 
 [61
 
@@ -2328,33 +2178,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 148--150
 [63
 
 ]
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.247 
-      
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.277 
-      
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
 
 [64
 
@@ -2403,21 +2226,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 389--391
 
  []
 
-! Undefined control sequence.
-l.402 \midskip
-              \noindent
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
 
 
 [69
 
 ]
-<images/g*_evolution.png, id=1019, 739.76375pt x 457.71pt>
+<images/g*_evolution.png, id=1025, 739.76375pt x 457.71pt>
 File: images/g*_evolution.png Graphic file (type png)
 <use images/g*_evolution.png>
 Package pdftex.def Info: images/g*_evolution.png  used on input line 416.
@@ -2578,45 +2392,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 674--675
  []
 
 
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.683     \end{itemize} \\ \\
-                             
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.684 
-      
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.692 
-      
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
 
 [77
 
@@ -2654,7 +2429,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 745--746
 
  []
 
-<images/dependence_interaction_strength.png, id=1060, 736.7525pt x 395.4775pt>
+<images/dependence_interaction_strength.png, id=1066, 736.7525pt x 395.4775pt>
 File: images/dependence_interaction_strength.png Graphic file (type png)
 <use images/dependence_interaction_strength.png>
 Package pdftex.def Info: images/dependence_interaction_strength.png  used on in
@@ -2716,157 +2491,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 802--803
 [81
 
 ]
-
-! Package pgf Error: Unknown arrow tip kind 'Latex'.
-
-See the pgf package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.854 ...w[-{Latex[length=2mm]}, thick, DeepSpace]
-                                                   (1.0,0) -- (3.0,0);
-This error message was generated by an \errmessage
-command, so I can't give any explicit help.
-Pretend that you're Hercule Poirot: Examine all clues,
-and deduce the truth by order and method.
-
-Missing character: There is no [ in font nullfont!
-Missing character: There is no ] in font nullfont!
-Missing character: There is no p in font nullfont!
-Missing character: There is no g in font nullfont!
-Missing character: There is no f in font nullfont!
-Missing character: There is no @ in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no p in font nullfont!
-
-! Package pgf Error: Unknown arrow tip kind 'Latex'.
-
-See the pgf package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.855 ...w[-{Latex[length=2mm]}, thick, DeepSpace]
-                                                   (3.0,0) -- (5.0,0);
-(That was another \errmessage.)
-
-Missing character: There is no [ in font nullfont!
-Missing character: There is no ] in font nullfont!
-Missing character: There is no p in font nullfont!
-Missing character: There is no g in font nullfont!
-Missing character: There is no f in font nullfont!
-Missing character: There is no @ in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no p in font nullfont!
-
-! Package pgf Error: Unknown arrow tip kind 'Latex'.
-
-See the pgf package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.856 ...w[-{Latex[length=2mm]}, thick, DeepSpace]
-                                                   (5.0,0) -- (7.0,0);
-(That was another \errmessage.)
-
-Missing character: There is no [ in font nullfont!
-Missing character: There is no ] in font nullfont!
-Missing character: There is no p in font nullfont!
-Missing character: There is no g in font nullfont!
-Missing character: There is no f in font nullfont!
-Missing character: There is no @ in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no p in font nullfont!
-
-! Package pgf Error: Unknown arrow tip kind 'Latex'.
-
-See the pgf package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.857 ...w[-{Latex[length=2mm]}, thick, DeepSpace]
-                                                   (7.0,0) -- (9.0,0);
-(That was another \errmessage.)
-
-Missing character: There is no [ in font nullfont!
-Missing character: There is no ] in font nullfont!
-Missing character: There is no p in font nullfont!
-Missing character: There is no g in font nullfont!
-Missing character: There is no f in font nullfont!
-Missing character: There is no @ in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no p in font nullfont!
-
-! Package pgf Error: Unknown arrow tip kind 'Latex'.
-
-See the pgf package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.858 ...w[-{Latex[length=2mm]}, thick, DeepSpace]
-                                                   (9.0,0) -- (11.0,0);
-(That was another \errmessage.)
-
-Missing character: There is no [ in font nullfont!
-Missing character: There is no ] in font nullfont!
-Missing character: There is no p in font nullfont!
-Missing character: There is no g in font nullfont!
-Missing character: There is no f in font nullfont!
-Missing character: There is no @ in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no p in font nullfont!
-
-! Package pgf Error: Unknown arrow tip kind 'Latex'.
-
-See the pgf package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.859 ...w[-{Latex[length=2mm]}, thick, DeepSpace]
-                                                   (11.0,0) -- (13.0,0);
-(That was another \errmessage.)
-
-Missing character: There is no [ in font nullfont!
-Missing character: There is no ] in font nullfont!
-Missing character: There is no p in font nullfont!
-Missing character: There is no g in font nullfont!
-Missing character: There is no f in font nullfont!
-Missing character: There is no @ in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no p in font nullfont!
-
-! Package pgf Error: Unknown arrow tip kind 'Latex'.
-
-See the pgf package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.860 ...w[-{Latex[length=2mm]}, thick, DeepSpace]
-                                                   (13.0,0) -- (14.0,0);
-(That was another \errmessage.)
-
-Missing character: There is no [ in font nullfont!
-Missing character: There is no ] in font nullfont!
-Missing character: There is no p in font nullfont!
-Missing character: There is no g in font nullfont!
-Missing character: There is no f in font nullfont!
-Missing character: There is no @ in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no p in font nullfont!
-
 Overfull \hbox (49.12872pt too wide) in paragraph at lines 872--873
  [][] 
  []
@@ -2968,19 +2592,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 980--981
 Underfull \hbox (badness 10000) in paragraph at lines 982--983
 
  []
-
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.984 
-      
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
 
 
 
@@ -3091,34 +2702,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 1141--1142
 
  []
 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.1147     which n_
-                   chi is the number density of WIMPs, $\sigma$ is the cross...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.1147 ... is the number density of WIMPs, $\sigma
-                                                  $ is the cross section of ...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-
-Underfull \hbox (badness 1226) in paragraph at lines 1146--1148
-\T1/ppl/m/n/12 (+20) which n$[]\OML/zplm/m/it/12 hiisthenumberdensityofWIMPs\OT
-1/ppl/m/n/12 (+20) ,$$\OML/zplm/m/it/12 ^^[$ \T1/ppl/m/n/12 (+20) is the cross 
-sec-tion of WIMPs
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1146--1148
-
- []
-
 ) (./chapters/ch06_Big_Bang_nucleosynthesis.tex
 
 [90
@@ -3222,7 +2805,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 187--188
 
 
 [96]
-<images/baryon_to_photon_ratio.png, id=1141, 412.54124pt x 508.90125pt>
+<images/baryon_to_photon_ratio.png, id=1147, 412.54124pt x 508.90125pt>
 File: images/baryon_to_photon_ratio.png Graphic file (type png)
 <use images/baryon_to_photon_ratio.png>
 Package pdftex.def Info: images/baryon_to_photon_ratio.png  used on input line 
@@ -3248,17 +2831,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 206--207
 [97
 
  <./images/baryon_to_photon_ratio.png>]
-! Misplaced alignment tab character &.
-l.224         \mu_n + \mu_{\nu_e} &
-                                   = \mu_p + \mu_{e^-}
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-
 
 [98]
 Underfull \hbox (badness 10000) in paragraph at lines 262--264
@@ -3273,7 +2845,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 279--281
 
 
 [99]
-<images/BBN_interaction_chain.jpg, id=1157, 602.25pt x 383.4325pt>
+<images/BBN_interaction_chain.jpg, id=1163, 602.25pt x 383.4325pt>
 File: images/BBN_interaction_chain.jpg Graphic file (type jpg)
 <use images/BBN_interaction_chain.jpg>
 Package pdftex.def Info: images/BBN_interaction_chain.jpg  used on input line 2
@@ -3291,7 +2863,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 353--354
 
 
 [101]
-<images/time_evolution_abundance.png, id=1167, 544.0325pt x 465.74pt>
+<images/time_evolution_abundance.png, id=1173, 544.0325pt x 465.74pt>
 File: images/time_evolution_abundance.png Graphic file (type png)
 <use images/time_evolution_abundance.png>
 Package pdftex.def Info: images/time_evolution_abundance.png  used on input lin
@@ -3384,28 +2956,10 @@ Z \OMS/zplm/m/n/12 ^^@ \OT1/ppl/m/n/12 1.5\OML/zplm/m/it/12 ^^Z \OT1/zplm/m/n/1
 
 
 
-[107])
-Runaway argument?
-{ \par \end {enumerate} \par \subsection {Solutions} \par \par \par \par \ETC.
-! File ended while scanning use of \textbf .
-<inserted text> 
-                \par 
-l.129 \input{chapters/questions}
-                                 % extra questions for practice
-I suspect you have forgotten a `}', causing me
-to read past where you wanted me to stop.
-I'll try to recover; but if the error is serious,
-you'd better type `E' or `X' now and fix your file.
-
-(./chapters/appendix.tex
+[107]) (./chapters/appendix.tex
 
 [108]
 Appendix A.
-
-Overfull \hbox (20.87494pt too wide) in paragraph at lines 6--6
-[][][][][][] 
- []
-
 
 
 [109
@@ -3413,12 +2967,7 @@ Overfull \hbox (20.87494pt too wide) in paragraph at lines 6--6
 ]
 Appendix B.
 
-Overfull \hbox (20.87494pt too wide) in paragraph at lines 45--45
-[][][][][][] 
- []
-
-
-Overfull \hbox (6.12302pt too wide) in paragraph at lines 50--53
+Overfull \hbox (2.8729pt too wide) in paragraph at lines 50--53
 []$[][] \OML/zplm/m/it/12 ^^R \OT1/zplm/m/n/12 + [][] \OML/zplm/m/it/12 ^^R \OT
 1/zplm/m/n/12 = \OT1/ppl/m/n/12 (-20) 1$\T1/ppl/m/n/12 (-20) , $[] \OML/zplm/m/
 it/12 ^^R \OT1/zplm/m/n/12 = [] \OML/zplm/m/it/12 ^^R\OT1/zplm/m/n/12 / [] \OML
@@ -3449,243 +2998,35 @@ Underfull \hbox (badness 10000) in paragraph at lines 92--94
  []
 
 
-! LaTeX Error: Bad math environment delimiter.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.108       Metric& $g_{\mu\nu}$ & Flips $\(
-                                            -\)$ \\
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-! Extra }, or forgotten $.
-<template> \unskip \hfil }
-                          \endtemplate 
-l.109       I
-             nverse metric & $g^{\mu\nu}$ & Flips $\(-\)$ \\
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.109       I
-             nverse metric & $g^{\mu\nu}$ & Flips $\(-\)$ \\
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.109       I
-             nverse metric & $g^{\mu\nu}$ & Flips $\(-\)$ \\
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-
-! LaTeX Error: Bad math environment delimiter.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.109 ...Inverse metric & $g^{\mu\nu}$ & Flips $\(
-                                                  -\)$ \\
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-! Extra }, or forgotten $.
-<template> \unskip \hfil }
-                          \endtemplate 
-l.110       C
-             hristoffel symbols & $\Gamma^\lambda_{\mu\nu}$ & No change \\
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.110       C
-             hristoffel symbols & $\Gamma^\lambda_{\mu\nu}$ & No change \\
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.110       C
-             hristoffel symbols & $\Gamma^\lambda_{\mu\nu}$ & No change \\
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-
-! LaTeX Error: Bad math environment delimiter.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.112 ...0,4) & $R_{\rho\sigma\mu\nu}$ & Flips $\(
-                                                  -\)$ \\
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-! Extra }, or forgotten $.
-<template> \unskip \hfil }
-                          \endtemplate 
-l.113       R
-             icci tensor & $R_{\mu\nu}$ & No change \\
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.113       R
-             icci tensor & $R_{\mu\nu}$ & No change \\
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.113       R
-             icci tensor & $R_{\mu\nu}$ & No change \\
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-
-! LaTeX Error: Bad math environment delimiter.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.114       Ricci scalar & $R$ & Flips $\(
-                                          -\)$ \\
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-! Extra }, or forgotten $.
-<template> \unskip \hfil }
-                          \endtemplate 
-l.115       E
-             instein tensor & $G_{\mu\nu}$ & No change \\
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.115       E
-             instein tensor & $G_{\mu\nu}$ & No change \\
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.115       E
-             instein tensor & $G_{\mu\nu}$ & No change \\
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-
 
 [111]
-
-[112]
 Appendix C.
 
-Overfull \hbox (20.87494pt too wide) in paragraph at lines 137--137
-[][][][][][] 
- []
+
+[112
 
 
+]
 
 [113
 
-
 ]
-
-[114
-
-]
-Overfull \hbox (44.32964pt too wide) in paragraph at lines 222--244
+Overfull \hbox (23.4547pt too wide) in paragraph at lines 222--244
  [] 
  []
 
 
 
-[115
+[114
 
 ]
-! Misplaced alignment tab character &.
-<argument> Nuclei Binding Energies &
-                                     Atomic Masses
-l.247 ...{Nuclei Binding Energies & Atomic Masses}
-                                                  
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `alignment tab' on input line 247.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 280--281
 
  []
 
 
 
-! Misplaced alignment tab character &.
-<argument> ... \enspace  Nuclei Binding Energies &
-                                                   Atomic Masses
-l.287 \clearpage
-                
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-[116
+[115
 
 ])
 
@@ -3694,73 +3035,43 @@ Package biblatex Warning: No driver for 'lecturenote'.
 
 
 
-! Misplaced alignment tab character &.
-<argument> ... \enspace  Nuclei Binding Energies &
-                                                   Atomic Masses
-l.155 \end{document}
-                    
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-[117
+[116
 
 
-]
-
-! LaTeX Error: \begin{enumerate} on input line 232 ended by \end{document}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.155 \end{document}
-                    
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-(./main.aux)
+] (./main.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 74C9612D54A0D87360B51BE83E3CA7F4;20428.
+(rerunfilecheck)             Checksum: E8BE1D6D6AC93FDCB6250C5ADB50350C;20544.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
- )
-(\end occurred inside a group at level 1)
-
-### semi simple group (level 1) entered at line 232 (\begingroup)
-### bottom level 
+ ) 
 Here is how much of TeX's memory you used:
- 41001 strings out of 473190
- 803945 string characters out of 5715800
- 1692306 words of memory out of 5000000
- 62714 multiletter control sequences out of 15000+600000
- 667039 words of font info for 565 fonts, out of 8000000 for 9000
+ 41302 strings out of 473190
+ 812473 string characters out of 5715800
+ 1703565 words of memory out of 5000000
+ 63026 multiletter control sequences out of 15000+600000
+ 666376 words of font info for 555 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 92i,20n,99p,1036b,1683s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmex10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/mathpazo/fplm
-r.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/mathpazo/fplmri.pf
-b></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msam1
-0.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sftt1200.
-pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></u
-sr/local/texlive/2025/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/loca
-l/texlive/2025/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (117 pages, 3586649 bytes).
+ 92i,20n,99p,1036b,1437s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
+></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb>
+</usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></
+usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></u
+sr/local/texlive/2025/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb></usr/lo
+cal/texlive/2025/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb></usr/local/
+texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/lo
+cal/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb></usr/loca
+l/texlive/2025/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texli
+ve/2025/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2025
+/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on main.pdf (116 pages, 3586219 bytes).
 PDF statistics:
- 1411 PDF objects out of 1440 (max. 8388607)
- 1117 compressed objects within 12 object streams
+ 1413 PDF objects out of 1440 (max. 8388607)
+ 1119 compressed objects within 12 object streams
  299 named destinations out of 1000 (max. 500000)
- 139831 words of extra memory for PDF output out of 154059 (max. 10000000)
+ 139839 words of extra memory for PDF output out of 154059 (max. 10000000)
 

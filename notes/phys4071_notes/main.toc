@@ -95,16 +95,17 @@
 \contentsline {subsection}{\numberline {7.5.2}Solutions}{108}{subsection.7.5.2}%
 \contentsline {section}{\numberline {7.6}Chapter 6: Big Bang Nucleosynthesis}{108}{section.7.6}%
 \contentsline {subsection}{\numberline {7.6.1}Questions}{108}{subsection.7.6.1}%
+\contentsline {subsection}{\numberline {7.6.2}Solutions}{108}{subsection.7.6.2}%
 \contentsline {chapter}{\numberline {A}Declaration of AI Assistance}{109}{appendix.A}%
 \contentsline {section}{\numberline {A.1}Use of Artificial Intelligence in This Document}{109}{section.A.1}%
 \contentsline {chapter}{\numberline {B}Mathematical Tools \& Derivations}{110}{appendix.B}%
 \contentsline {section}{\numberline {B.1}Useful Identities}{110}{section.B.1}%
 \contentsline {section}{\numberline {B.2}Differential Geometry Primer}{111}{section.B.2}%
-\contentsline {section}{\numberline {B.3}Relativistic Limits}{112}{section.B.3}%
-\contentsline {chapter}{\numberline {C}Constants \& Conversion Factors}{113}{appendix.C}%
-\contentsline {section}{\numberline {C.1}Physical Constants}{113}{section.C.1}%
-\contentsline {section}{\numberline {C.2}Conversion Factors}{113}{section.C.2}%
-\contentsline {section}{\numberline {C.3}SI Unit Prefixes}{114}{section.C.3}%
-\contentsline {section}{\numberline {C.4}Main Events in Universe}{115}{section.C.4}%
-\contentsline {section}{\numberline {C.5}Nuclei Binding Energies & Atomic Masses}{116}{section.C.5}%
+\contentsline {section}{\numberline {B.3}Relativistic Limits}{111}{section.B.3}%
+\contentsline {chapter}{\numberline {C}Constants \& Conversion Factors}{112}{appendix.C}%
+\contentsline {section}{\numberline {C.1}Physical Constants}{112}{section.C.1}%
+\contentsline {section}{\numberline {C.2}Conversion Factors}{112}{section.C.2}%
+\contentsline {section}{\numberline {C.3}SI Unit Prefixes}{113}{section.C.3}%
+\contentsline {section}{\numberline {C.4}Main Events in Universe}{114}{section.C.4}%
+\contentsline {section}{\numberline {C.5}Nuclei Binding Energies \& Atomic Masses}{115}{section.C.5}%
 \contentsfinish 
