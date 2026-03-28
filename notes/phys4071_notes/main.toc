@@ -1,6 +1,6 @@
-\contentsline {chapter}{Introduction}{5}{chapter*.2}%
-\contentsline {section}{About These Notes}{5}{section*.3}%
-\contentsline {section}{Document Conventions}{5}{section*.3}%
+\contentsline {chapter}{Introduction}{5}{section*.3}%
+\contentsline {section}{About These Notes}{5}{section*.4}%
+\contentsline {section}{Document Conventions}{5}{section*.5}%
 \contentsline {chapter}{\numberline {1}Fundamentals (lecture 1-2)}{9}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Natural Units}{9}{section.1.1}%
 \contentsline {section}{\numberline {1.2}4-Vectors and Tensors}{11}{section.1.2}%
@@ -55,7 +55,7 @@
 \contentsline {section}{\numberline {5.4}Entropy}{70}{section.5.4}%
 \contentsline {subsection}{\numberline {5.4.1}Definition of Entropy}{70}{subsection.5.4.1}%
 \contentsline {subsection}{\numberline {5.4.2}Conservation of Entropy}{74}{subsection.5.4.2}%
-\contentsline {subsection}{\numberline {5.4.3} $g_*$ and $g_{*s}$ in the early universe}{77}{subsection.5.4.3}%
+\contentsline {subsection}{\numberline {5.4.3}$g_*$ and $g_{*s}$ in the early universe}{77}{subsection.5.4.3}%
 \contentsline {section}{\numberline {5.5}Decoupling of Particles}{79}{section.5.5}%
 \contentsline {subsection}{\numberline {5.5.1}Asymptotic Freedom}{79}{subsection.5.5.1}%
 \contentsline {subsection}{\numberline {5.5.2}Decoupling}{81}{subsection.5.5.2}%
