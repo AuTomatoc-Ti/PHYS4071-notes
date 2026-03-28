@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber main"] 1773902765.0423 "main.bcf" "main.bbl" "main" 1774689578.10616 0
-  "main.bcf" 1774689577.91245 107836 d1f6c503cec8cd464c159b7cc781d432 "pdflatex"
+["biber main"] 1773902765.0423 "main.bcf" "main.bbl" "main" 1774690047.00003 0
+  "main.bcf" 1774690046.80227 107836 d1f6c503cec8cd464c159b7cc781d432 "pdflatex"
   "references.bib" 1773671425.748 679 1a04154e98c2050d93c421e9d776d686 ""
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1774689573.41132 "main.tex" "main.pdf" "main" 1774689578.10652 0
+["pdflatex"] 1774690041.88543 "main.tex" "main.pdf" "main" 1774690047.00034 0
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1136849721 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -268,13 +268,13 @@
   "chapters/ch05_thermodynamics_and_primordial_soup.tex" 1774686814.29995 65502 556acf843d43355b5c89adb3a3335451 ""
   "chapters/ch06_Big_Bang_nucleosynthesis.tex" 1774678862.49262 29539 62da7b9558bef200a8ccf995e6c91d20 ""
   "chapters/intro.tex" 1774686359.97775 10892 c91d4b717fbdd6682b504c62d9e0bb68 ""
-  "chapters/questions.tex" 1774689490.2012 1307 04c4d62649d30955021714ee4769455b ""
-  "chapters/questions/ch01_fundamentals.tex" 1774689566.57033 7568 04c775dee2f889fe6c4e2fc6a8295729 ""
-  "chapters/questions/ch02_hubble_law_and_redshift.tex" 1774689479.43947 4072 ffa65e56b0dbf8e7ef8613761699054f ""
-  "chapters/questions/ch03_cosmic_evolution.tex" 1774689479.45021 4456 bcb36448abd6cbd2eb4e69a06ab1a36f ""
-  "chapters/questions/ch04_standard_model.tex" 1774689479.46022 3129 e9aca68dff413d07109a9aefbb9bbff0 ""
-  "chapters/questions/ch05_thermo_and_primordial_soup.tex" 1774689479.4714 4023 62b2c0250f601fe65af8ba5eabad1d46 ""
-  "chapters/questions/ch06_big_bang_nucleosynthesis.tex" 1774689479.48435 4221 cba684f475ba8eb861e11b195012634a ""
+  "chapters/questions.tex" 1774690038.70918 1325 c666c9d39e1cd7b5c7f1f937393c9b6f ""
+  "chapters/questions/q_ch01_fundamentals.tex" 1774689566.57033 7568 04c775dee2f889fe6c4e2fc6a8295729 ""
+  "chapters/questions/q_ch02_hubble_law_and_redshift.tex" 1774689479.43947 4072 ffa65e56b0dbf8e7ef8613761699054f ""
+  "chapters/questions/q_ch03_cosmic_evolution.tex" 1774689479.45021 4456 bcb36448abd6cbd2eb4e69a06ab1a36f ""
+  "chapters/questions/q_ch04_standard_model.tex" 1774689479.46022 3129 e9aca68dff413d07109a9aefbb9bbff0 ""
+  "chapters/questions/q_ch05_thermo_and_primordial_soup.tex" 1774689479.4714 4023 62b2c0250f601fe65af8ba5eabad1d46 ""
+  "chapters/questions/q_ch06_big_bang_nucleosynthesis.tex" 1774689479.48435 4221 cba684f475ba8eb861e11b195012634a ""
   "images/BBN_interaction_chain.jpg" 1774090497.97524 27630 bf0344b852fb4fa3e27ec5618e9a35fd ""
   "images/balloon_expansion.png" 1773037233.41575 679578 e88bb03972d3a92485f2676285fb1fb9 ""
   "images/baryon_to_photon_ratio.png" 1774089969.37489 609123 5739a343f49eab305fa1ad7b791872e7 ""
@@ -285,12 +285,12 @@
   "images/particles_mass.png" 1773248196.6187 339098 00ce1c2c3f7ff5ad713d07cea3c35623 ""
   "images/standard_model.png" 1773246928.0192 212825 744ec51c55b61fc2c5a8663a0cf00568 ""
   "images/time_evolution_abundance.png" 1774090146.24133 606118 08aa8195a29d50feec9fd203fe3f0d2a ""
-  "main.aux" 1774689577.90795 20650 a1cde84813a1eb7fc1d23080752c17d5 "pdflatex"
+  "main.aux" 1774690046.79792 20650 a1cde84813a1eb7fc1d23080752c17d5 "pdflatex"
   "main.bbl" 1773902770.82213 3615 9b37762d68fb75a24e61a514ca3ca637 "biber main"
-  "main.out" 1774689577.90984 20566 1438819f7156d51c6aa83f9f56e9293f "pdflatex"
-  "main.run.xml" 1774689577.91337 2339 1ed341041bd1fbe5a1f3b1992463a6cc "pdflatex"
+  "main.out" 1774690046.79969 20566 1438819f7156d51c6aa83f9f56e9293f "pdflatex"
+  "main.run.xml" 1774690046.80293 2339 1ed341041bd1fbe5a1f3b1992463a6cc "pdflatex"
   "main.tex" 1774622268.85773 6711 e3ea3b9c24953b1758b3ee93d40d24ff ""
-  "main.toc" 1774689577.91345 9936 0545f1f4026eca1da39b75f6bf9bd173 "pdflatex"
+  "main.toc" 1774690046.803 9936 0545f1f4026eca1da39b75f6bf9bd173 "pdflatex"
   "preamble.tex" 1774686359.5372 14010 f12fdc68b1b126321a770ff73050c267 ""
   (generated)
   "main.aux"

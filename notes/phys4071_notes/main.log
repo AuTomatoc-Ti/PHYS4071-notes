@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2026.2.19)  28 MAR 2026 17:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2026.2.19)  28 MAR 2026 17:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2846,7 +2846,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 412--413
 
 ]
 Chapter 7.
-(./chapters/questions/ch01_fundamentals.tex
+(./chapters/questions/q_ch01_fundamentals.tex
 
 [105
 
@@ -2854,13 +2854,13 @@ Chapter 7.
 
 [106]
 
-[107]) (./chapters/questions/ch02_hubble_law_and_redshift.tex
+[107]) (./chapters/questions/q_ch02_hubble_law_and_redshift.tex
 
 [108]
 
 [109
 
-]) (./chapters/questions/ch03_cosmic_evolution.tex
+]) (./chapters/questions/q_ch03_cosmic_evolution.tex
 
 [110]
 
@@ -2868,13 +2868,13 @@ Chapter 7.
 
 ]
 
-[112]) (./chapters/questions/ch04_standard_model.tex
+[112]) (./chapters/questions/q_ch04_standard_model.tex
 
 [113]
 
 [114
 
-]) (./chapters/questions/ch05_thermo_and_primordial_soup.tex
+]) (./chapters/questions/q_ch05_thermo_and_primordial_soup.tex
 
 [115]
 
@@ -2882,7 +2882,7 @@ Chapter 7.
 
 ]
 
-[117]) (./chapters/questions/ch06_big_bang_nucleosynthesis.tex
+[117]) (./chapters/questions/q_ch06_big_bang_nucleosynthesis.tex
 
 [118]
 
@@ -2983,8 +2983,8 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 41495 strings out of 473190
- 816016 string characters out of 5715800
+ 41498 strings out of 473190
+ 816169 string characters out of 5715800
  1703897 words of memory out of 5000000
  63070 multiletter control sequences out of 15000+600000
  667580 words of font info for 571 fonts, out of 8000000 for 9000
