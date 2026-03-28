@@ -33,7 +33,7 @@
 \contentsline {subsection}{\numberline {3.3.2}EoS of Cosmologic Constant}{47}{subsection.3.3.2}%
 \contentsline {subsection}{\numberline {3.3.3}Scale Factor Equation}{47}{subsection.3.3.3}%
 \contentsline {section}{\numberline {3.4}SCDM and $\Lambda $CDM Models}{47}{section.3.4}%
-\contentsline {subsection}{\numberline {3.4.1}Critical Energy Density and Density Parameters}{47}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.1}Critical Energy Density and Density Parameters}{48}{subsection.3.4.1}%
 \contentsline {subsection}{\numberline {3.4.2}Total Energy Density of Universe}{49}{subsection.3.4.2}%
 \contentsline {section}{\numberline {3.5}Dark Energy and the Accelerating Universe}{50}{section.3.5}%
 \contentsline {subsection}{\numberline {3.5.1}Observational Evidence for Dark Energy}{50}{subsection.3.5.1}%
@@ -81,31 +81,31 @@
 \contentsline {section}{\numberline {7.1}Chapter 1: Fundamentals}{105}{section.7.1}%
 \contentsline {subsection}{\numberline {7.1.1}Questions}{105}{subsection.7.1.1}%
 \contentsline {subsection}{\numberline {7.1.2}Solutions}{106}{subsection.7.1.2}%
-\contentsline {section}{\numberline {7.2}Chapter 2: Hubble Law \& Cosmological Redshift}{108}{section.7.2}%
-\contentsline {subsection}{\numberline {7.2.1}Questions}{108}{subsection.7.2.1}%
-\contentsline {subsection}{\numberline {7.2.2}Solutions}{108}{subsection.7.2.2}%
-\contentsline {section}{\numberline {7.3}Chapter 3: Cosmic Evolution}{108}{section.7.3}%
-\contentsline {subsection}{\numberline {7.3.1}Questions}{108}{subsection.7.3.1}%
-\contentsline {subsection}{\numberline {7.3.2}Solutions}{108}{subsection.7.3.2}%
-\contentsline {section}{\numberline {7.4}Chapter 4: Standard Model}{108}{section.7.4}%
-\contentsline {subsection}{\numberline {7.4.1}Questions}{108}{subsection.7.4.1}%
-\contentsline {subsection}{\numberline {7.4.2}Solutions}{108}{subsection.7.4.2}%
-\contentsline {section}{\numberline {7.5}Chapter 5: Thermodynamics \& Primordial Soup}{108}{section.7.5}%
-\contentsline {subsection}{\numberline {7.5.1}Questions}{108}{subsection.7.5.1}%
-\contentsline {subsection}{\numberline {7.5.2}Solutions}{109}{subsection.7.5.2}%
-\contentsline {section}{\numberline {7.6}Chapter 6: Big Bang Nucleosynthesis}{109}{section.7.6}%
-\contentsline {subsection}{\numberline {7.6.1}Questions}{109}{subsection.7.6.1}%
-\contentsline {subsection}{\numberline {7.6.2}Solutions}{109}{subsection.7.6.2}%
-\contentsline {chapter}{\numberline {A}Declaration of AI Assistance}{110}{appendix.A}%
-\contentsline {section}{\numberline {A.1}Use of Artificial Intelligence in This Document}{110}{section.A.1}%
-\contentsline {chapter}{\numberline {B}Mathematical Tools \& Derivations}{111}{appendix.B}%
-\contentsline {section}{\numberline {B.1}Useful Identities}{111}{section.B.1}%
-\contentsline {section}{\numberline {B.2}Differential Geometry Primer}{113}{section.B.2}%
-\contentsline {section}{\numberline {B.3}Relativistic Limits}{113}{section.B.3}%
-\contentsline {chapter}{\numberline {C}Constants \& Conversion Factors}{114}{appendix.C}%
-\contentsline {section}{\numberline {C.1}Physical Constants}{114}{section.C.1}%
-\contentsline {section}{\numberline {C.2}Conversion Factors}{114}{section.C.2}%
-\contentsline {section}{\numberline {C.3}SI Unit Prefixes}{115}{section.C.3}%
-\contentsline {section}{\numberline {C.4}Main Events in Universe}{116}{section.C.4}%
-\contentsline {section}{\numberline {C.5}Nuclei Binding Energies \& Atomic Masses}{117}{section.C.5}%
+\contentsline {section}{\numberline {7.2}Chapter 2: Hubble Law \& Cosmological Redshift}{109}{section.7.2}%
+\contentsline {subsection}{\numberline {7.2.1}Questions}{109}{subsection.7.2.1}%
+\contentsline {subsection}{\numberline {7.2.2}Solutions}{109}{subsection.7.2.2}%
+\contentsline {section}{\numberline {7.3}Chapter 3: Cosmic Evolution}{111}{section.7.3}%
+\contentsline {subsection}{\numberline {7.3.1}Questions}{111}{subsection.7.3.1}%
+\contentsline {subsection}{\numberline {7.3.2}Solutions}{112}{subsection.7.3.2}%
+\contentsline {section}{\numberline {7.4}Chapter 4: Standard Model}{114}{section.7.4}%
+\contentsline {subsection}{\numberline {7.4.1}Questions}{114}{subsection.7.4.1}%
+\contentsline {subsection}{\numberline {7.4.2}Solutions}{114}{subsection.7.4.2}%
+\contentsline {section}{\numberline {7.5}Chapter 5: Thermodynamics \& Primordial Soup}{116}{section.7.5}%
+\contentsline {subsection}{\numberline {7.5.1}Questions}{116}{subsection.7.5.1}%
+\contentsline {subsection}{\numberline {7.5.2}Solutions}{116}{subsection.7.5.2}%
+\contentsline {section}{\numberline {7.6}Chapter 6: Big Bang Nucleosynthesis}{119}{section.7.6}%
+\contentsline {subsection}{\numberline {7.6.1}Questions}{119}{subsection.7.6.1}%
+\contentsline {subsection}{\numberline {7.6.2}Solutions}{120}{subsection.7.6.2}%
+\contentsline {chapter}{\numberline {A}Declaration of AI Assistance}{121}{appendix.A}%
+\contentsline {section}{\numberline {A.1}Use of Artificial Intelligence in This Document}{121}{section.A.1}%
+\contentsline {chapter}{\numberline {B}Mathematical Tools \& Derivations}{122}{appendix.B}%
+\contentsline {section}{\numberline {B.1}Useful Identities}{122}{section.B.1}%
+\contentsline {section}{\numberline {B.2}Differential Geometry Primer}{124}{section.B.2}%
+\contentsline {section}{\numberline {B.3}Relativistic Limits}{124}{section.B.3}%
+\contentsline {chapter}{\numberline {C}Constants \& Conversion Factors}{125}{appendix.C}%
+\contentsline {section}{\numberline {C.1}Physical Constants}{125}{section.C.1}%
+\contentsline {section}{\numberline {C.2}Conversion Factors}{125}{section.C.2}%
+\contentsline {section}{\numberline {C.3}SI Unit Prefixes}{126}{section.C.3}%
+\contentsline {section}{\numberline {C.4}Main Events in Universe}{127}{section.C.4}%
+\contentsline {section}{\numberline {C.5}Nuclei Binding Energies \& Atomic Masses}{128}{section.C.5}%
 \contentsfinish 

@@ -1,0 +1,127 @@
+\clearpage
+\section{Chapter 5: Thermodynamics \& Primordial Soup}
+
+\subsection{Questions}
+
+\begin{enumerate}[label=5.\arabic*]
+  \item \label{q:5.1} \textbf{Thermal Distributions}
+
+  Assume $\mu=0$ and $E=5T$.
+  \begin{enumerate}[label=(\alph*)]
+    \item Compute $f_{FD}=1/(e^{E/T}+1)$.
+    \item Compute $f_{BE}=1/(e^{E/T}-1)$.
+    \item Compare both with Maxwell-Boltzmann $f_{MB}=e^{-E/T}$ and explain why they are close in this limit.
+  \end{enumerate}
+
+  \item \label{q:5.2} \textbf{Relativistic Densities and Equation of State}
+
+  For one relativistic boson species with degeneracy $g=2$:
+  \begin{enumerate}[label=(\alph*)]
+    \item Write $\rho(T)$ and $P(T)$.
+    \item Evaluate $\rho$ at $T=1\,\mathrm{MeV}$ in natural units (leave answer in $\mathrm{MeV}^4$).
+    \item Show that $w\equiv P/\rho=1/3$.
+  \end{enumerate}
+
+  \item \label{q:5.3} \textbf{Neutrino-Photon Temperature Split}
+
+  \begin{enumerate}[label=(\alph*)]
+    \item \textit{(Use the instantaneous neutrino decoupling approximation)} Using entropy conservation around $e^+e^-$ annihilation, derive
+    \[
+      \frac{T_\nu}{T_\gamma}=\left(\frac{4}{11}\right)^{1/3}.
+    \]
+    \item Compute the numerical value of this ratio.
+    \item Using
+    \[
+      g_*=2+\frac{7}{8}\cdot 6\left(\frac{T_\nu}{T_\gamma}\right)^4,
+      \quad
+      g_{*s}=2+\frac{7}{8}\cdot 6\left(\frac{T_\nu}{T_\gamma}\right)^3,
+    \]
+    evaluate $g_*$ and $g_{*s}$ today.
+  \end{enumerate}
+\end{enumerate}
+
+\bigskip
+\bigskip
+\bigskip
+
+\subsection{Solutions}
+
+\subsubsection*{Solution 5.1: Thermal Distributions}
+
+\begin{enumerate}[label=(\alph*)]
+  \item
+  \[
+    f_{FD}=\frac{1}{e^5+1}=\frac{1}{148.413+1}\approx 6.69\times 10^{-3}.
+  \]
+
+  \item
+  \[
+    f_{BE}=\frac{1}{e^5-1}=\frac{1}{148.413-1}\approx 6.78\times 10^{-3}.
+  \]
+
+  \item
+  \[
+    f_{MB}=e^{-5}\approx 6.74\times 10^{-3}.
+  \]
+  Since $E/T=5\gg1$, the $\pm1$ in FD/BE denominators is negligible, so both approach MB.
+\end{enumerate}
+
+\subsubsection*{Solution 5.2: Relativistic Densities and Equation of State}
+
+\begin{enumerate}[label=(\alph*)]
+  \item For relativistic bosons:
+  \[
+    \rho = \frac{\pi^2}{30}gT^4,
+    \qquad
+    P = \frac{1}{3}\rho.
+  \]
+
+  \item With $g=2$, $T=1\,\mathrm{MeV}$:
+  \[
+    \rho = \frac{\pi^2}{30}\cdot 2\cdot (1\,\mathrm{MeV})^4
+    = \frac{\pi^2}{15}\,\mathrm{MeV}^4
+    \approx 0.658\,\mathrm{MeV}^4.
+  \]
+
+  \item
+  \[
+    w\equiv\frac{P}{\rho}=\frac{1}{3}.
+  \]
+\end{enumerate}
+
+\subsubsection*{Solution 5.3: Neutrino-Photon Temperature Split}
+
+\begin{enumerate}[label=(\alph*)]
+  \item Under the instantaneous neutrino decoupling approximation, entropy in the coupled $(\gamma,e^\pm)$ plasma is conserved:
+  \[
+    g_{*s}^{\mathrm{before}}T_{\mathrm{before}}^3a^3
+    = g_{*s}^{\gamma,\mathrm{after}}T_\gamma^3a^3.
+  \]
+  Before annihilation, for the coupled plasma,
+  \[
+    g_{*s}^{\mathrm{before}} = 2 + \frac{7}{8}\times 4 = \frac{11}{2},
+  \]
+  after annihilation only photons remain coupled: $g_{*s}^{\gamma,\mathrm{after}}=2$.
+  Since neutrinos are decoupled, $T_\nu\propto a^{-1}$ and effectively track $T_{\mathrm{before}}a$:
+  \[
+    \frac{T_\nu}{T_\gamma} = \left(\frac{2}{11/2}\right)^{1/3} = \left(\frac{4}{11}\right)^{1/3}.
+  \]
+
+  \item
+  \[
+    \left(\frac{4}{11}\right)^{1/3} \approx 0.714.
+  \]
+
+  \item
+  \[
+    g_* = 2 + \frac{7}{8}\cdot 6\left(\frac{4}{11}\right)^{4/3} \approx 3.36,
+  \]
+  \[
+    g_{*s} = 2 + \frac{7}{8}\cdot 6\left(\frac{4}{11}\right) \approx 3.91.
+  \]
+  So today $g_*\neq g_{*s}$ because $T_\nu\neq T_\gamma$.
+  \textit{Rigorous note:} beyond the instantaneous-decoupling approximation, small corrections from non-instantaneous decoupling and QED effects exist (often encoded via $N_\mathrm{eff}\simeq 3.046$), but they do not change the leading-order conclusion.
+\end{enumerate}
+
+
+% ─────────────────────────────────────────────────────────────────────────────

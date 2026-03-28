@@ -1,0 +1,125 @@
+\clearpage
+\section{Chapter 2: Hubble Law \& Cosmological Redshift}
+
+\subsection{Questions}
+
+\begin{enumerate}[label=2.\arabic*]
+  \item \label{q:2.1} \textbf{Redshift and Scale Factor}
+
+  A galaxy is observed at redshift $z=2.5$.
+  \begin{enumerate}[label=(\alph*)]
+    \item Find the scale factor at emission, $a(t_{\mathrm{emit}})$, assuming $a_0=1$ today.
+    \item If the emitted wavelength is $\lambda_{\mathrm{emit}}=121.6\,\mathrm{nm}$ (Lyman-$\alpha$), find $\lambda_{\mathrm{obs}}$.
+    \item If its comoving distance is $D_{\mathrm{com}}=1.2\,\mathrm{Gpc}$, compute the proper distance at emission and at present.
+  \end{enumerate}
+
+  \item \label{q:2.2} \textbf{Hubble Law in Practice}
+
+  Take $H_0 = 67.66\,\mathrm{km\,s^{-1}\,Mpc^{-1}}$.
+  \begin{enumerate}[label=(\alph*)]
+    \item Convert $H_0$ to SI units ($\mathrm{s^{-1}}$), using $1\,\mathrm{Mpc}=3.086\times 10^{22}\,\mathrm{m}$.
+    \item Estimate the Hubble time $t_H = 1/H_0$ in Gyr.
+    \item For a nearby galaxy at $D=100\,\mathrm{Mpc}$, estimate recession speed $v$ from Hubble's law, and then estimate $z\approx v/c$ (low-$z$ limit).
+  \end{enumerate}
+
+  \item \label{q:2.3} \textbf{Hubble Tension as a Significance Test}
+
+  Two measurements are reported:
+  \[
+    H_0^{\mathrm{SH0ES}} = 73.04 \pm 1.04,\qquad
+    H_0^{\mathrm{Planck}} = 67.66 \pm 0.42
+    \quad (\mathrm{km\,s^{-1}\,Mpc^{-1}}).
+  \]
+  \begin{enumerate}[label=(\alph*)]
+    \item Compute the absolute difference $\Delta H_0$.
+    \item \textit{(Hint: use independent Gaussian errors)} Compute combined uncertainty
+    $\sigma_{\Delta} = \sqrt{\sigma_1^2+\sigma_2^2}$.
+    \item Compute significance $N_\sigma = \Delta H_0/\sigma_\Delta$ and interpret briefly.
+  \end{enumerate}
+\end{enumerate}
+
+\bigskip
+\bigskip
+\bigskip
+
+\subsection{Solutions}
+
+\subsubsection*{Solution 2.1: Redshift and Scale Factor}
+
+\begin{enumerate}[label=(\alph*)]
+  \item Using
+  \[
+    z = \frac{1}{a_{\mathrm{emit}}}-1,
+  \]
+  we get
+  \[
+    a_{\mathrm{emit}} = \frac{1}{1+z} = \frac{1}{3.5} \approx 0.286.
+  \]
+
+  \item Cosmological redshift gives
+  \[
+    \lambda_{\mathrm{obs}} = (1+z)\lambda_{\mathrm{emit}} = 3.5\times 121.6\,\mathrm{nm}
+    = 425.6\,\mathrm{nm}.
+  \]
+
+  \item Proper distance is $D_{\mathrm{proper}}(t)=a(t)D_{\mathrm{com}}$:
+  \[
+    D_{\mathrm{proper,emit}} = a_{\mathrm{emit}}D_{\mathrm{com}} \approx 0.286\times 1.2 = 0.343\,\mathrm{Gpc},
+  \]
+  \[
+    D_{\mathrm{proper,0}} = a_0 D_{\mathrm{com}} = 1\times 1.2 = 1.2\,\mathrm{Gpc}.
+  \]
+\end{enumerate}
+
+\subsubsection*{Solution 2.2: Hubble Law in Practice}
+
+\begin{enumerate}[label=(\alph*)]
+  \item
+  \[
+    H_0 = 67.66\,\frac{\mathrm{km}}{\mathrm{s\,Mpc}}
+    = \frac{67.66\times 10^3\,\mathrm{m/s}}{3.086\times 10^{22}\,\mathrm{m}}
+    \approx 2.19\times 10^{-18}\,\mathrm{s^{-1}}.
+  \]
+
+  \item
+  \[
+    t_H = \frac{1}{H_0} \approx \frac{1}{2.19\times 10^{-18}} = 4.56\times 10^{17}\,\mathrm{s}.
+  \]
+  With $1\,\mathrm{Gyr}=3.156\times 10^{16}\,\mathrm{s}$,
+  \[
+    t_H \approx 14.4\,\mathrm{Gyr}.
+  \]
+
+  \item
+  \[
+    v=H_0D = 67.66\times 100\,\mathrm{km/s} = 6766\,\mathrm{km/s}.
+  \]
+  For low redshift ($v\ll c$),
+  \[
+    z\approx \frac{v}{c} \approx \frac{6766}{3.0\times 10^5} \approx 2.26\times 10^{-2}.
+  \]
+  Since $v/c\approx 0.0226\ll 1$, the low-$z$ approximation is self-consistent.
+\end{enumerate}
+
+\subsubsection*{Solution 2.3: Hubble Tension as a Significance Test}
+
+\begin{enumerate}[label=(\alph*)]
+  \item
+  \[
+    \Delta H_0 = 73.04-67.66 = 5.38\,\mathrm{km\,s^{-1}\,Mpc^{-1}}.
+  \]
+
+  \item
+  \[
+    \sigma_\Delta = \sqrt{1.04^2+0.42^2} = \sqrt{1.258} \approx 1.12.
+  \]
+
+  \item
+  \[
+    N_\sigma = \frac{5.38}{1.12} \approx 4.8\sigma.
+  \]
+  A $\sim 4.8\sigma$ discrepancy is statistically significant, consistent with the notes' statement that this is the ``Hubble tension'' problem.
+\end{enumerate}
+
+
+% ─────────────────────────────────────────────────────────────────────────────

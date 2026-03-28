@@ -1,0 +1,182 @@
+%\clearpage
+\section{Chapter 1: Fundamentals}
+
+\subsection{Questions}
+
+\begin{enumerate}[label=1.\arabic*]
+  
+  \item \label{q:1.1} \textbf{Natural Units Conversion}
+  
+  The rest energy of a proton is approximately $m_p c^2 = 938.3 \, \text{MeV}$.
+  \begin{enumerate}[label=(\alph*)]
+    \item In natural units (where $c = 1$), what is the mass of the proton expressed in MeV?
+    \item Convert the Hubble parameter $H_0 = 70 \, \text{km/s/Mpc}$ to natural units. 
+    
+    \textit{(Hint: Use the conversion } $1 \, \text{Mpc} = 3.086 \times 10^{22} \, \text{m}$ \textit{).}
+    \item If a photon has energy $E_\gamma = 1 \, \text{eV}$ in SI units, what is its energy in natural units (numerically)?
+  \end{enumerate}
+  
+  \item \label{q:1.2} \textbf{4-Vectors and Lorentz Transformations}
+  
+  Consider a particle at rest in the lab frame with mass $m = 1 \, \text{GeV}$ (in natural units). The particle is moving with velocity $v = 0.6c$, along the x-axis in another frame (the moving frame).
+  \begin{enumerate}[label=(\alph*)]
+    \item Calculate the Lorentz factor $\gamma$ for this particle in the moving frame.
+    \item Find the 4-momentum $p^\mu = (\gamma m, \gamma m \vec{v})$ of the particle.
+    \item Use the Lorentz invariant scalar product to show that $p^\mu p_\mu = -m^2$ (in Minkowski metric with signature $(-,+,+,+)$).
+  \end{enumerate}
+  
+  \item \label{q:1.3} \textbf{Metric Tensor and Index Manipulation}
+  
+  Given the Minkowski metric $g_{\mu\nu} = \operatorname{diag}(-1, 1, 1, 1)$ and a contravariant vector $A^\mu = (2, 1, -1, 3)$:
+  \begin{enumerate}[label=(\alph*)]
+    \item Lower the indices to find $A_\mu = g_{\mu\nu} A^\nu$.
+    \item Calculate the scalar product $A_\mu A^\mu$.
+    \item If another vector is $B^\mu = (1, 0, 1, 0)$, compute the dot product $A \cdot B = g_{\mu\nu} A^\mu B^\nu$.
+  \end{enumerate}
+  
+  \item \label{q:1.4} \textbf{Energy-Momentum Tensor of Perfect Fluid}
+  
+  For a perfect fluid with energy density $\rho = 1 \times 10^{-27} \, \text{kg/m}^3$ and pressure $P = 0.5 c^2 \rho$ (in SI units), consider the energy-momentum tensor in the comoving frame:
+  \begin{enumerate}[label=(\alph*)]
+    \item Write down the explicit form of $T^{\mu\nu}$ for this perfect fluid.
+    \item Calculate the trace $T = g_{\mu\nu} T^{\mu\nu}$.
+    \item Verify the conservation law $\partial_0 T^{00} + \partial_i T^{i0} = 0$ (assuming uniform density).
+  \end{enumerate}
+  
+  \item \label{q:1.5} \textbf{Tensor Types and Rank}
+  
+  Classify each of the following as either a tensor or not, and if it is a tensor, identify its type (p,q) and rank:
+  \begin{enumerate}[label=(\alph*)]
+    \item The Kronecker delta $\delta^\mu{}_\nu$
+    \item The scalar curvature $R$
+    \item A product of two contravariant vectors: $V^\mu W^\nu$
+    \item The contraction of a mixed tensor with a vector: $T^{\mu\nu} V_\nu$
+  \end{enumerate}
+
+\end{enumerate}
+
+\bigskip
+\bigskip
+\bigskip
+
+\subsection{Solutions}
+
+\subsubsection*{Solution 1.1: Natural Units Conversion}
+
+\begin{enumerate}[label=(\alph*)]
+  \item In natural units where $c = 1$, the mass of a proton is simply equal to its rest energy divided by $c^2$, which equals its rest energy in natural units. Therefore, the mass is directly:
+  \[
+    m_p = 938.3 \, \text{MeV}.
+  \]
+  
+  \item The Hubble parameter in natural units: We need to convert $H_0 = 70 \, \text{km/s/Mpc}$ to SI units first, then to natural units.
+  \[
+    H_0 = 70 \, \frac{\text{km/s}}{\text{Mpc}} = 70 \times 10^3 \, \frac{\text{m/s}}{3.086 \times 10^{22} \, \text{m}} = 2.27 \times 10^{-18} \, \text{s}^{-1}.
+  \]
+  In natural units, a rate has dimension of energy ($E^1$), so we use $E = \hbar \omega$:
+  \[
+    H_0 = 2.27 \times 10^{-18} \, \text{s}^{-1} \times 6.582 \times 10^{-25} \, \text{GeV}\cdot\text{s}
+    \approx 1.49 \times 10^{-42} \, \text{GeV}.
+  \]
+  Therefore, $H_0 \approx 1.5 \times 10^{-42} \, \text{GeV}$.
+  
+  \item A photon with energy $E_\gamma = 1 \, \text{eV}$ in SI units is the same as $1 \, \text{eV}$ in natural units, since energy is directly expressed in eV. Numerically, the energy is:
+  \[
+    E_\gamma = 1 \, \text{eV}.
+  \]
+\end{enumerate}
+
+\subsubsection*{Solution 1.2: 4-Vectors and Lorentz Transformations}
+
+\begin{enumerate}[label=(\alph*)]
+  \item The Lorentz factor is calculated as:
+  \[
+    \gamma = \frac{1}{\sqrt{1 - v^2/c^2}} = \frac{1}{\sqrt{1 - 0.6^2}} = \frac{1}{\sqrt{1 - 0.36}} = \frac{1}{\sqrt{0.64}} = \frac{1}{0.8} = 1.25.
+  \]
+  
+  \item The 4-momentum is:
+  \[
+    \begin{aligned}
+      p^\mu &= (\gamma m, \gamma m v_x, \gamma m v_y, \gamma m v_z) \\
+           &= (1.25 \times 1, 1.25 \times 1 \times 0.6, 0, 0) \\
+           &= (1.25, 0.75, 0, 0) \, \text{GeV}.
+    \end{aligned}
+  \]
+  
+  \item The Lorentz invariant is:
+  \[
+    \begin{aligned}
+      p^\mu p_\mu &= g_{\mu\nu} p^\mu p^\nu \\
+                   &= (-1)(1.25)^2 + (1)(0.75)^2 + 0 + 0 \\
+                   &= -1.5625 + 0.5625 = -1.0 = -m^2. \quad \checkmark
+    \end{aligned}
+  \]
+\end{enumerate}
+
+\subsubsection*{Solution 1.3: Metric Tensor and Index Manipulation}
+
+\begin{enumerate}[label=(\alph*)]
+  \item Lowering the indices:
+  \[
+    A_\mu = g_{\mu\nu} A^\nu = (-1, 1, 1, 1) \cdot (2, 1, -1, 3) = (-2, 1, -1, 3).
+  \]
+  
+  \item The scalar product:
+  \[
+    A_\mu A^\mu = (-2)(2) + (1)(1) + (-1)(-1) + (3)(3) = -4 + 1 + 1 + 9 = 7.
+  \]
+  
+  \item The dot product:
+  \[
+    \begin{aligned}
+      A \cdot B &= g_{\mu\nu} A^\mu B^\nu \\
+                 &= (-1)(2)(1) + (1)(1)(0) + (1)(-1)(1) + (1)(3)(0) \\
+                 &= -2 + 0 - 1 + 0 = -3.
+    \end{aligned}
+  \]
+\end{enumerate}
+
+\subsubsection*{Solution 1.4: Energy-Momentum Tensor of Perfect Fluid}
+
+\begin{enumerate}[label=(\alph*)]
+  \item In natural units where $c = 1$, and in the comoving frame where the fluid is at rest:
+  \[
+    T^{\mu\nu} = \begin{pmatrix}
+      \rho & 0 & 0 & 0 \\
+      0 & P & 0 & 0 \\
+      0 & 0 & P & 0 \\
+      0 & 0 & 0 & P
+    \end{pmatrix} = \begin{pmatrix}
+      \rho & 0 & 0 & 0 \\
+      0 & 0.5\rho & 0 & 0 \\
+      0 & 0 & 0.5\rho & 0 \\
+      0 & 0 & 0 & 0.5\rho
+    \end{pmatrix}.
+  \]
+  
+  \item The trace is:
+  \[
+    \begin{aligned}
+      T &= g_{\mu\nu} T^{\mu\nu} \\
+        &= (-1)(\rho) + (1)(P) + (1)(P) + (1)(P) \\
+        &= -\rho + 3P = -\rho + 1.5\rho = 0.5\rho.
+    \end{aligned}
+  \]
+  
+  \item For a uniform perfect fluid at rest, $\partial_0 T^{00} = 0$ (since $\rho$ is constant) and $\partial_i T^{i0} = 0$ (since there are no spatial derivatives of zero components). The conservation law is satisfied: $0 + 0 = 0$. \checkmark
+\end{enumerate}
+
+\subsubsection*{Solution 1.5: Tensor Types and Rank}
+
+\begin{enumerate}[label=(\alph*)]
+  \item \textbf{Kronecker delta } $\delta^\mu{}_\nu$: This is a mixed tensor of type $(1,1)$ with rank 2. It represents the identity linear transformation.
+  
+  \item \textbf{Scalar curvature } $R$: This is a tensor of type $(0,0)$ (a scalar) with rank 0. It is a Lorentz invariant.
+  
+  \item \textbf{Product of contravariant vectors} $V^\mu W^\nu$: This is a contravariant tensor of type $(2,0)$ with rank 2. It represents the outer product of two vectors.
+  
+  \item \textbf{Contraction } $T^{\mu\nu} V_\nu$: This is a contravariant vector of type $(1,0)$ with rank 1. The summation over the repeated index $\nu$ (one upper, one lower) reduces the rank by 2.
+\end{enumerate}
+
+
+% ─────────────────────────────────────────────────────────────────────────────

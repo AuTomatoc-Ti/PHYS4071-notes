@@ -1,0 +1,129 @@
+\clearpage
+\section{Chapter 6: Big Bang Nucleosynthesis}
+
+\subsection{Questions}
+
+\begin{enumerate}[label=6.\arabic*]
+  \item \label{q:6.1} \textbf{Neutron-to-Proton Ratio at Freeze-out}
+
+  Use
+  \[
+    \frac{n_n}{n_p}=e^{-\Delta m/T},\qquad \Delta m = m_n-m_p \approx 1.293\,\mathrm{MeV}.
+  \]
+  \begin{enumerate}[label=(\alph*)]
+    \item Evaluate $n_n/n_p$ at $T_f=0.7\,\mathrm{MeV}$.
+    \item Convert it to neutron fraction $X_n = n_n/(n_n+n_p)$.
+    \item Briefly explain why this ratio decreases further before nuclei formation.
+  \end{enumerate}
+
+  \item \label{q:6.2} \textbf{Deuterium Bottleneck Condition}
+
+  The notes use the criterion
+  \[
+    \epsilon e^{B_D/T}\sim 1,
+  \]
+  with
+  \[
+    \epsilon = \frac{\zeta(3)\eta}{\pi^2}\left(\frac{2\pi T}{m_N}\right)^{3/2},
+    \quad B_D=2.2245\,\mathrm{MeV},\ \eta=6\times10^{-10},\ m_N=939\,\mathrm{MeV}.
+  \]
+  \begin{enumerate}[label=(\alph*)]
+    \item Estimate $\epsilon$ at $T=0.07\,\mathrm{MeV}$.
+    \item Estimate $\epsilon e^{B_D/T}$ at the same $T$.
+    \item From your result, is deuterium survival efficient yet at $0.07\,\mathrm{MeV}$?
+  \end{enumerate}
+
+  \item \label{q:6.3} \textbf{Helium-4 Mass Fraction Estimate}
+
+  Assume nearly all surviving neutrons end up in ${}^4\mathrm{He}$.
+  \begin{enumerate}[label=(\alph*)]
+    \item Show that the helium-4 mass fraction can be approximated by
+    \[
+      Y_p \approx \frac{2(n_n/n_p)}{1+n_n/n_p}.
+    \]
+    \item Using $n_n/n_p=1/7$, compute $Y_p$.
+    \item Compare your estimate with the commonly quoted BBN value $Y_p\sim 0.25$ and comment.
+  \end{enumerate}
+\end{enumerate}
+
+\bigskip
+\bigskip
+\bigskip
+
+\subsection{Solutions}
+
+\subsubsection*{Solution 6.1: Neutron-to-Proton Ratio at Freeze-out}
+
+\begin{enumerate}[label=(\alph*)]
+  \item
+  \[
+    \frac{n_n}{n_p}=e^{-1.293/0.7}=e^{-1.847}\approx 0.158\approx \frac{1}{6.3}.
+  \]
+
+  \item Let $r\equiv n_n/n_p$:
+  \[
+    X_n = \frac{n_n}{n_n+n_p} = \frac{r}{1+r}
+    = \frac{0.158}{1.158} \approx 0.136.
+  \]
+
+  \item After weak freeze-out, free neutrons can beta-decay ($n\to p+e^-+\bar\nu_e$), so $n_n/n_p$ keeps decreasing until nucleosynthesis proceeds efficiently.
+  This is why the ratio near BBN onset is often quoted closer to $\sim 1/7$ than the immediate freeze-out estimate.
+\end{enumerate}
+
+\subsubsection*{Solution 6.2: Deuterium Bottleneck Condition}
+
+\begin{enumerate}[label=(\alph*)]
+  \item At $T=0.07\,\mathrm{MeV}$,
+  \[
+    \epsilon = \frac{1.202\times 6\times10^{-10}}{\pi^2}
+    \left(\frac{2\pi\times0.07}{939}\right)^{3/2}
+    \approx 7.4\times10^{-16}.
+  \]
+
+  \item
+  \[
+    e^{B_D/T}=e^{2.2245/0.07}=e^{31.78}\approx 6.3\times10^{13},
+  \]
+  so
+  \[
+    \epsilon e^{B_D/T}\approx (7.4\times10^{-16})(6.3\times10^{13})\approx 4.7\times10^{-2}.
+  \]
+
+  \item Since this is still below unity, deuterium survival is not yet fully efficient at $0.07\,\mathrm{MeV}$; the onset is expected at slightly lower temperature, consistent with the notes' $\sim 0.06$--$0.07\,\mathrm{MeV}$ window.
+  Numerically this is close enough to indicate the transition region (order-of-magnitude criterion), not a sharp threshold.
+\end{enumerate}
+
+\subsubsection*{Solution 6.3: Helium-4 Mass Fraction Estimate}
+
+\begin{enumerate}[label=(\alph*)]
+  \item If almost all neutrons go into ${}^4\mathrm{He}$, each He nucleus uses 2 neutrons and 2 protons. The helium mass fraction is approximately
+  \[
+    Y_p \equiv \frac{4n_{\mathrm{He}}}{n_p+n_n}
+    \approx \frac{2n_n}{n_p+n_n}
+    = \frac{2r}{1+r},\quad r\equiv\frac{n_n}{n_p}.
+  \]
+
+  \item For $r=1/7$:
+  \[
+    Y_p \approx \frac{2/7}{1+1/7}=\frac{2}{8}=0.25.
+  \]
+
+  \item This matches the canonical BBN prediction $Y_p\sim 0.25$, showing why helium-4 abundance is mainly controlled by the freeze-out neutron fraction.
+\end{enumerate}
+
+
+% ─────────────────────────────────────────────────────────────────────────────
+% \section{Chapter 7: Cosmic Microwave Background}
+
+% \subsection{Questions}
+
+% \begin{enumerate}[label=7.\arabic*]
+%   \item \label{q:7.1} 
+  
+% \end{enumerate}
+
+% \subsection{Solutions}
+
+% Solution for 7.1: ...
+
+
