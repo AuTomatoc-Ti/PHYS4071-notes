@@ -198,6 +198,7 @@
     In a physic intuition, the extra term come from cosmological constant can be treated as a perfect fluid with energy density $\rho_\Lambda = \frac{\Lambda}{8\pi G}$ and pressure $p_\Lambda = -\rho_\Lambda$. Thus, the equation of LHS and RHS of the Einstein's field equation are still balanced, we just add an extra contribution of energy apart from the normal matter. \\
 \end{intuition}
 
+
 \clearpage
 %\bigskip \noindent
 \begin{theory}
@@ -279,7 +280,10 @@
     However, the vacuum energy is based on the quantum field theory, which predicts a value of vacuum energy density as around $10^{120}$ times larger than the observed value of $\Lambda$. This huge discrepancy is called the \textbf{cosmological constant problem}, which is one of the biggest unsolved problems in physics.
 \end{importantnote}
 
-
+\bigskip \noindent 
+\begin{importantnote}
+    The existence of cosmological constant yields a curvature 4D-spacetime called de Sitter space. However, it does not implies that the 3d curvature $k$ is non-zero, and vice versa, $k = 0$ does not implies $\Lambda = 0$. Thus, the cosmological constant and curvature are two independent parameters in the Friedmann equations.
+\end{importantnote}
 
 % ──────────────────────────────────────────────────────────────────────────────
 \bigskip \noindent \bigskip \noindent \bigskip \noindent
@@ -534,34 +538,109 @@
     \] \\
 
     Assume flat universe with $k=0$, and the universe is dominated by cosmological constant, then the 1st Friedmann equation becomes:
-    \[
-        H^2 = \frac{8\pi G}{3}\rho_\Lambda = \frac{\Lambda}{3}
-    \]
+    \begin{align*}
+        H^2 &= \frac{8\pi G}{3}\rho_\Lambda \\
+        H^2 &= \frac{\Lambda}{3} \\
+        \frac{\dot{a}}{a} &= \sqrt{\frac{\Lambda}{3}} \\
+        \dot{a}(t) &= a(t) \sqrt{\frac{\Lambda}{3}} \\
+    \end{align*}
     By solving this ODE, we can get the solution of scale factor as below:
-    \[
-        a(t) = a_0 e^{H (t - t_0)} = a_0 e^{\sqrt{\frac{\Lambda}{3}} (t - t_0)}
-    \]
+    \begin{align*}
+        a(t) &= a_0 e^{H (t - t_0)} = a_0 e^{\sqrt{\frac{\Lambda}{3}} (t - t_0)} \\
+        \dot{a}(t) &= H \cdot a_0 e^{H (t - t_0)} = \sqrt{\frac{\Lambda}{3}} \cdot a_0 e^{\sqrt{\frac{\Lambda}{3}} (t - t_0)}
+    \end{align*}
 \end{theory}
+
+\bigskip \noindent
+\begin{intuition}
+    From the above solution of the cosmological constant dominated universe, we can see that the scale factor grows exponentially with time, which means the universe will become larger and larger with time (i.e. $a(t) \to \infty$ as $t \to \infty$), and the expansion of universe will become faster and faster with time (i.e. $\dot{a}(t) \to \infty$ as $t \to \infty$), thus we say that the universe is accelerating expanding in this case. \\
+\end{intuition}
+
 
 % ──────────────────────────────────────────────────────────────────────────────
-\bigskip \noindent \bigskip \noindent \bigskip \noindent
+\clearpage
+%\bigskip \noindent \bigskip \noindent \bigskip \noindent
 \subsection{Scale Factor Equation}
+\begin{foundation}
+    For the case of $w \neq -1$, we can rewrite the 1st Friedmann equation as:
+    \[
+        H^2 \equiv \frac{\dot{a}^2}{a^2} = \frac{8\pi G}{3}\rho
+    \]
+    while we have the matter-energy density as:
+    \[
+        \rho(a) = \rho_0 a^{-3(1+w)}
+    \]
+    thus we can get the equation of scale factor as:
+    \begin{align*}
+        \left( \frac{\dot{a}}{a} \right)^2 &= \frac{8\pi G}{3} \rho_0 a^{-3(1+w)} \\
+        \frac{\dot{a}}{a} &= \sqrt{\frac{8\pi G}{3} \rho_0} a^{-\frac{3(1+w)}{2}} \\
+        \dot{a} &= \sqrt{\frac{8\pi G}{3} \rho_0} a^{-\frac{3(1+w)}{2} + 1} \\
+         &= \sqrt{\frac{8\pi G}{3} \rho_0} a^{-\frac{1 + 3w}{2}}
+    \end{align*} \\
+
+    Let $\sqrt{\frac{8\pi G}{3} \rho_0} = C$, we can rewrite the above equation as:
+    \begin{align*}
+        \dot{a} &= C a^{-\frac{1 + 3w}{2}} \\
+        \int a^{\frac{1 + 3w}{2}} da &= \int C dt \\
+        \frac{2}{3(1+w)} a^{\frac{3(1+w)}{2}} &= Ct + D \\
+        a(t) &= \left( \frac{3(1+w)}{2} (Ct + D) \right)^{\frac{2}{3(1+w)}}
+    \end{align*} \\
+
+    If we consider the boundary condition that at time $t = t_0$, the scale factor is $a(t_0) = a_0$, we can get the constant $D$ as:
+    \begin{align*}
+        0 &= \left( \frac{3(1+w)}{2} (0 + D) \right)^{\frac{2}{3(1+w)}} \\
+        D &= 0
+    \end{align*} \\
+
+    Now we set the reference scale factor $a_0$ at time $t_0$ as:
+    \[
+        a_0 = \left( \frac{3(1+w)}{2} (Ct_0) \right)^{\frac{2}{3(1+w)}}
+    \]
+    And we will conclude the solution of scale factor as:
+    \begin{align*}
+        a(t) &= \left( \frac{3(1+w)}{2} (Ct) \right)^{\frac{2}{3(1+w)}} \\
+             &= \left( \frac{3(1+w)}{2} (Ct_0) \right)^{\frac{2}{3(1+w)}} \left( \frac{t}{t_0} \right)^{\frac{2}{3(1+w)}} \\
+             &= a_0 \left( \frac{t}{t_0} \right)^{\frac{2}{3(1+w)}}
+    \end{align*}
+\end{foundation}
+
+\bigskip \noindent
 \begin{theory}
+    In fact, in general case that $w \neq -1$, we can get the scale factor equation as below:
+    \[
+        a(t) = a_0 \left( \frac{t}{t_0} \right)^{\frac{2}{3(1+w)}}
+    \]
+    where $t_0$ is the reference time, and $a_0$ is the scale factor at time $t_0$
 \end{theory}
 
+\begin{remark}
+    You may notice that at $t = 0$, the scale factor $a(t) = 0$, and hence $\rho(t) = \infty$, which means the energy density diverges at the beginning of universe, and the spacetime singularity is called the Big Bang singularity. \\
 
+    In this singularity, the spacetime did not continue before $t = 0$, and the general relativity breaks down due to infinite energy density and infinite small scale factor, thus we need a theory of quantum gravity to describe the physics at very near the beginning of universe, which is still an open problem in physics. \\
+\end{remark}
 
-
-
-
-
+\bigskip \noindent
+\begin{theory}
+    In summary, we can get the energy density sources yield table:
+    \begin{center}
+        \begin{tabular}{p{5.5cm}| r | l| l}
+            \hline
+            \textbf{Energy Density Source} & \textbf{$w$} & \textbf{$\rho(a)$} & \textbf{$a(t)$} \\
+            \hline
+            Dust & $0$ & $\propto a^{-3}$ & $\propto t^{2/3}$ \\
+            Radiation & $\frac{1}{3}$ & $\propto a^{-4}$ & $\propto t^{1/2}$ \\
+            Curvature & $-\frac{1}{3}$ & $\propto a^{-2}$ & $\propto t$ \\
+            Cosmological Constant & $-1$ & Constant & $\propto e^{Ht}$
+        \end{tabular}
+    \end{center}
+\end{theory}
 
 % =══════════════════════════════════════════════════════════════════════════════
 \bigskip \noindent \bigskip \noindent \bigskip \noindent
 \section{SCDM and \texorpdfstring{$\Lambda$}{Lambda}CDM Models}
 % ──────────────────────────────────────────────────────────────────────────────
 %\clearpage
-\bigskip \noindent \bigskip \noindent \bigskip \noindent
+%\bigskip \noindent \bigskip \noindent \bigskip \noindent
 \subsection{Critical Energy Density and Density Parameters}
 \begin{intuition}
     The Friedmann equations tell us that for the evolution of universe depends on energy density of different components, but they contribute different value at the same time, thus we introduce the concept of critical energy density and density parameters to characterize the ratio of contribution of different components to the total energy density of universe. \\
@@ -587,7 +666,13 @@
         1 &= \Omega_{mr} + \Omega_\Lambda + \Omega_K \\
          &= \Omega_{m} + \Omega_{r} + \Omega_\Lambda + \Omega_K
     \end{align*}
-    where $\frac{\rho}{\rho_c} = \Omega_{mr} = \Omega_{m} + \Omega_{r}$ is the contribution of matter and radiation, $\Omega_\Lambda = \frac{\rho_\Lambda}{\rho_c}$ is the contribution of cosmological constant, and $\Omega_K = \frac{\rho_K}{\rho_c} = -\frac{3k}{8\pi G a^2 \rho_c}$ is the contribution of curvature. \\
+    with:
+    \begin{align*}
+         \Omega_{mr} &= \frac{\rho}{\rho_c} = \Omega_{m} + \Omega_{r} \\
+         \Omega_\Lambda &= \frac{\rho_\Lambda}{\rho_c} = \frac{\Lambda}{3H^2} \\
+         \Omega_K &= \frac{\rho_K}{\rho_c} = -\frac{k}{a^2 \cdot H^2} = -\frac{k}{\dot{a}^2}
+    \end{align*}
+     where $\Omega_{mr}$ is the contribution of matter and radiation, $\Omega_\Lambda$ is the contribution of cosmological constant, and $\Omega_K$ is the contribution of curvature. \\
 
     And we can get the total energy density of universe as:
     \[
@@ -633,15 +718,26 @@
     \[
         \Omega = \Omega_{m}(t) = 1
     \]
-    The model are also known as the \textbf{Standard Cold Dark Matter (SCDM)} model, which is the simplest cosmological model, and it predicts a decelerating universe with $\ddot{a} < 0$. \\
-
+    The model are also known as the \textbf{Standard Cold Dark Matter (SCDM)} model, which is the simplest cosmological model, and it predicts a decelerating universe with $\ddot{a} < 0$. 
 \end{theory}
 
+\bigskip \noindent
 At the late 1990s, the SCDM model is challenged by the acceleration of universe, thus the \textbf{$\Lambda$CDM} model is proposed, which is a flat universe with matter and cosmological constant $\Omega_{m} + \Omega_{\Lambda} = 1$, with $\Omega_{\Lambda} > 0$.
 
+\begin{theory}
+    In a $\Lambda$CDM model, the friedmann equations can be written as:
+    \begin{align*}
+        H^2 &= \frac{8\pi G}{3} \left( \frac{\rho_{m}^0}{f_m(a)} +  \frac{\rho_{r}^0}{f_r(a)} + \frac{\rho_{k}^0}{a^2} + \rho_{\Lambda}^0 \right)
+    \end{align*}
+    where $f_m(a)$ and $f_r(a)$ are the functions of scale factor that describe the evolution of matter and radiation energy density with scale factor. Note we can not treat $f_m(a) = a^3$ and $f_r(a) = a^4$ without the assumption of independent evolution of matter and radiation, which is not the case in the early universe when matter and radiation are coupled together. \\
+\end{theory}
 
-
-
+\bigskip \noindent
+\begin{importantnote}
+    Actually, we can still have $\Lambda = 0$ and exist some other kind of special matter with EoS parameter $w < -\frac{1}{3}$ to drive the acceleration of universe, so that we don not need to introduce the cosmological constant to explain the acceleration of universe. \\
+    
+    Therefore, the $\Lambda$CDM model is not the unique model to explain dark energy, but just the most pervasive one among all dark energy models.
+\end{importantnote}
 
 
 % =══════════════════════════════════════════════════════════════════════════════
