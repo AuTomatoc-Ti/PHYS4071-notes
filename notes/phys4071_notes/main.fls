@@ -741,6 +741,8 @@ INPUT ./chapters/appendix.tex
 INPUT ./chapters/appendix.tex
 INPUT ./chapters/appendix.tex
 INPUT chapters/appendix.tex
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/adobe/palatino/pplr8t.tfm
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/vf/adobe/palatino/pplr7t.vf
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/adobe/palatino/pplrc8t.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/vf/adobe/palatino/pplrc8t.vf
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/adobe/palatino/pplr8r.tfm

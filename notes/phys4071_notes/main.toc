@@ -81,8 +81,8 @@
 \contentsline {section}{\numberline {7.1}Chapter 1: Fundamentals}{105}{section.7.1}%
 \contentsline {subsection}{\numberline {7.1.1}Questions}{105}{subsection.7.1.1}%
 \contentsline {subsection}{\numberline {7.1.2}Solutions}{106}{subsection.7.1.2}%
-\contentsline {section}{\numberline {7.2}Chapter 2: Hubble Law \& Cosmological Redshift}{107}{section.7.2}%
-\contentsline {subsection}{\numberline {7.2.1}Questions}{107}{subsection.7.2.1}%
+\contentsline {section}{\numberline {7.2}Chapter 2: Hubble Law \& Cosmological Redshift}{108}{section.7.2}%
+\contentsline {subsection}{\numberline {7.2.1}Questions}{108}{subsection.7.2.1}%
 \contentsline {subsection}{\numberline {7.2.2}Solutions}{108}{subsection.7.2.2}%
 \contentsline {section}{\numberline {7.3}Chapter 3: Cosmic Evolution}{108}{section.7.3}%
 \contentsline {subsection}{\numberline {7.3.1}Questions}{108}{subsection.7.3.1}%
@@ -92,20 +92,20 @@
 \contentsline {subsection}{\numberline {7.4.2}Solutions}{108}{subsection.7.4.2}%
 \contentsline {section}{\numberline {7.5}Chapter 5: Thermodynamics \& Primordial Soup}{108}{section.7.5}%
 \contentsline {subsection}{\numberline {7.5.1}Questions}{108}{subsection.7.5.1}%
-\contentsline {subsection}{\numberline {7.5.2}Solutions}{108}{subsection.7.5.2}%
-\contentsline {section}{\numberline {7.6}Chapter 6: Big Bang Nucleosynthesis}{108}{section.7.6}%
-\contentsline {subsection}{\numberline {7.6.1}Questions}{108}{subsection.7.6.1}%
-\contentsline {subsection}{\numberline {7.6.2}Solutions}{108}{subsection.7.6.2}%
-\contentsline {chapter}{\numberline {A}Declaration of AI Assistance}{109}{appendix.A}%
-\contentsline {section}{\numberline {A.1}Use of Artificial Intelligence in This Document}{109}{section.A.1}%
-\contentsline {chapter}{\numberline {B}Mathematical Tools \& Derivations}{110}{appendix.B}%
-\contentsline {section}{\numberline {B.1}Useful Identities}{110}{section.B.1}%
-\contentsline {section}{\numberline {B.2}Differential Geometry Primer}{111}{section.B.2}%
-\contentsline {section}{\numberline {B.3}Relativistic Limits}{111}{section.B.3}%
-\contentsline {chapter}{\numberline {C}Constants \& Conversion Factors}{112}{appendix.C}%
-\contentsline {section}{\numberline {C.1}Physical Constants}{112}{section.C.1}%
-\contentsline {section}{\numberline {C.2}Conversion Factors}{112}{section.C.2}%
-\contentsline {section}{\numberline {C.3}SI Unit Prefixes}{113}{section.C.3}%
-\contentsline {section}{\numberline {C.4}Main Events in Universe}{114}{section.C.4}%
-\contentsline {section}{\numberline {C.5}Nuclei Binding Energies \& Atomic Masses}{115}{section.C.5}%
+\contentsline {subsection}{\numberline {7.5.2}Solutions}{109}{subsection.7.5.2}%
+\contentsline {section}{\numberline {7.6}Chapter 6: Big Bang Nucleosynthesis}{109}{section.7.6}%
+\contentsline {subsection}{\numberline {7.6.1}Questions}{109}{subsection.7.6.1}%
+\contentsline {subsection}{\numberline {7.6.2}Solutions}{109}{subsection.7.6.2}%
+\contentsline {chapter}{\numberline {A}Declaration of AI Assistance}{110}{appendix.A}%
+\contentsline {section}{\numberline {A.1}Use of Artificial Intelligence in This Document}{110}{section.A.1}%
+\contentsline {chapter}{\numberline {B}Mathematical Tools \& Derivations}{111}{appendix.B}%
+\contentsline {section}{\numberline {B.1}Useful Identities}{111}{section.B.1}%
+\contentsline {section}{\numberline {B.2}Differential Geometry Primer}{112}{section.B.2}%
+\contentsline {section}{\numberline {B.3}Relativistic Limits}{113}{section.B.3}%
+\contentsline {chapter}{\numberline {C}Constants \& Conversion Factors}{114}{appendix.C}%
+\contentsline {section}{\numberline {C.1}Physical Constants}{114}{section.C.1}%
+\contentsline {section}{\numberline {C.2}Conversion Factors}{114}{section.C.2}%
+\contentsline {section}{\numberline {C.3}SI Unit Prefixes}{115}{section.C.3}%
+\contentsline {section}{\numberline {C.4}Main Events in Universe}{116}{section.C.4}%
+\contentsline {section}{\numberline {C.5}Nuclei Binding Energies \& Atomic Masses}{117}{section.C.5}%
 \contentsfinish 

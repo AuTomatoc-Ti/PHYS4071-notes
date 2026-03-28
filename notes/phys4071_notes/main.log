@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2026.2.19)  28 MAR 2026 16:13
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2026.2.19)  28 MAR 2026 16:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2440,7 +2440,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 802--803
 [81
 
 ]
-Overfull \hbox (49.12872pt too wide) in paragraph at lines 872--873
+Overfull \hbox (1.67159pt too wide) in paragraph at lines 872--873
  [][] 
  []
 
@@ -2850,136 +2850,72 @@ Chapter 7.
 [105
 
 ]
-Overfull \hbox (32.18176pt too wide) detected at line 101
-\OML/zplm/m/it/12 p[] \OT1/zplm/m/n/12 = (\OML/zplm/m/it/12 ^^Mm\OT1/ppl/m/n/12
- , \OML/zplm/m/it/12 ^^Mmv[]\OT1/ppl/m/n/12 , \OML/zplm/m/it/12 ^^Mmv[]\OT1/ppl
-/m/n/12 , \OML/zplm/m/it/12 ^^Mmv[]\OT1/zplm/m/n/12 ) = (\OT1/ppl/m/n/12 1.25 \
-OMS/zplm/m/n/12 ^^B \OT1/ppl/m/n/12 1, 1.25 \OMS/zplm/m/n/12 ^^B \OT1/ppl/m/n/1
-2 1 \OMS/zplm/m/n/12 ^^B \OT1/ppl/m/n/12 0.6, 0, 0\OT1/zplm/m/n/12 ) = (\OT1/pp
-l/m/n/12 1.25, 0.75, 0, 0\OT1/zplm/m/n/12 ) []\OT1/ppl/m/n/12 .
- []
-
-
-Overfull \hbox (69.57567pt too wide) detected at line 106
-\OML/zplm/m/it/12 p[]p[] \OT1/zplm/m/n/12 = \OML/zplm/m/it/12 g[]p[]p[] \OT1/zp
-lm/m/n/12 = (\OMS/zplm/m/n/12 ^^@\OT1/ppl/m/n/12 1\OT1/zplm/m/n/12 )(\OT1/ppl/m
-/n/12 1.25\OT1/zplm/m/n/12 )[] + (\OT1/ppl/m/n/12 1\OT1/zplm/m/n/12 )(\OT1/ppl/
-m/n/12 0.75\OT1/zplm/m/n/12 )[] + \OT1/ppl/m/n/12 0 \OT1/zplm/m/n/12 + \OT1/ppl
-/m/n/12 0 \OT1/zplm/m/n/12 = \OMS/zplm/m/n/12 ^^@\OT1/ppl/m/n/12 1.5625 \OT1/zp
-lm/m/n/12 + \OT1/ppl/m/n/12 0.5625 \OT1/zplm/m/n/12 = \OMS/zplm/m/n/12 ^^@\OT1/
-ppl/m/n/12 1.0 \OT1/zplm/m/n/12 = \OMS/zplm/m/n/12 ^^@\OML/zplm/m/it/12 m[]\OT1
-/ppl/m/n/12 . []
- []
-
-
 
 [106]
-Overfull \hbox (72.09721pt too wide) detected at line 125
-\OML/zplm/m/it/12 A \OMS/zplm/m/n/12 ^^A \OML/zplm/m/it/12 B \OT1/zplm/m/n/12 =
- \OML/zplm/m/it/12 g[]A[]B[] \OT1/zplm/m/n/12 = (\OMS/zplm/m/n/12 ^^@\OT1/ppl/m
-/n/12 1\OT1/zplm/m/n/12 )(\OT1/ppl/m/n/12 2\OT1/zplm/m/n/12 )(\OT1/ppl/m/n/12 1
-\OT1/zplm/m/n/12 ) + (\OT1/ppl/m/n/12 1\OT1/zplm/m/n/12 )(\OT1/ppl/m/n/12 1\OT1
-/zplm/m/n/12 )(\OT1/ppl/m/n/12 0\OT1/zplm/m/n/12 ) + (\OT1/ppl/m/n/12 1\OT1/zpl
-m/m/n/12 )(\OMS/zplm/m/n/12 ^^@\OT1/ppl/m/n/12 1\OT1/zplm/m/n/12 )(\OT1/ppl/m/n
-/12 1\OT1/zplm/m/n/12 ) + (\OT1/ppl/m/n/12 1\OT1/zplm/m/n/12 )(\OT1/ppl/m/n/12 
-3\OT1/zplm/m/n/12 )(\OT1/ppl/m/n/12 0\OT1/zplm/m/n/12 ) = \OMS/zplm/m/n/12 ^^@\
-OT1/ppl/m/n/12 2 \OT1/zplm/m/n/12 + \OT1/ppl/m/n/12 0 \OMS/zplm/m/n/12 ^^@ \OT1
-/ppl/m/n/12 1 \OT1/zplm/m/n/12 + \OT1/ppl/m/n/12 0 \OT1/zplm/m/n/12 = \OMS/zplm
-/m/n/12 ^^@\OT1/ppl/m/n/12 3.
- []
 
+[107]
 
-Overfull \hbox (58.97256pt too wide) detected at line 149
-\OML/zplm/m/it/12 T \OT1/zplm/m/n/12 = \OML/zplm/m/it/12 g[]T[] \OT1/zplm/m/n/1
-2 = (\OMS/zplm/m/n/12 ^^@\OT1/ppl/m/n/12 1\OT1/zplm/m/n/12 )(\OML/zplm/m/it/12 
-^^Z\OT1/zplm/m/n/12 ) + (\OT1/ppl/m/n/12 1\OT1/zplm/m/n/12 )(\OMS/zplm/m/n/12 ^
-^@\OML/zplm/m/it/12 P\OT1/zplm/m/n/12 ) + (\OT1/ppl/m/n/12 1\OT1/zplm/m/n/12 )(
-\OMS/zplm/m/n/12 ^^@\OML/zplm/m/it/12 P\OT1/zplm/m/n/12 ) + (\OT1/ppl/m/n/12 1\
-OT1/zplm/m/n/12 )(\OMS/zplm/m/n/12 ^^@\OML/zplm/m/it/12 P\OT1/zplm/m/n/12 ) = \
-OMS/zplm/m/n/12 ^^@\OML/zplm/m/it/12 ^^Z \OMS/zplm/m/n/12 ^^@ \OT1/ppl/m/n/12 3
-\OML/zplm/m/it/12 P \OT1/zplm/m/n/12 = \OMS/zplm/m/n/12 ^^@\OML/zplm/m/it/12 ^^
-Z \OMS/zplm/m/n/12 ^^@ \OT1/ppl/m/n/12 1.5\OML/zplm/m/it/12 ^^Z \OT1/zplm/m/n/1
-2 = \OMS/zplm/m/n/12 ^^@\OT1/ppl/m/n/12 2.5\OML/zplm/m/it/12 ^^Z\OT1/ppl/m/n/12
- .
- []
+[108]) (./chapters/appendix.tex
 
-
-
-[107]) (./chapters/appendix.tex
-
-[108]
+[109]
 Appendix A.
-
-
-[109
-
-]
-Appendix B.
-
-Overfull \hbox (2.8729pt too wide) in paragraph at lines 50--53
-[]$[][] \OML/zplm/m/it/12 ^^R \OT1/zplm/m/n/12 + [][] \OML/zplm/m/it/12 ^^R \OT
-1/zplm/m/n/12 = \OT1/ppl/m/n/12 (-20) 1$\T1/ppl/m/n/12 (-20) , $[] \OML/zplm/m/
-it/12 ^^R \OT1/zplm/m/n/12 = [] \OML/zplm/m/it/12 ^^R\OT1/zplm/m/n/12 / [] \OML
-/zplm/m/it/12 ^^R$\T1/ppl/m/n/12 (-20) , $[]\OT1/zplm/m/n/12 (\OML/zplm/m/it/12
- A \OMS/zplm/m/n/12 ^^F \OML/zplm/m/it/12 B\OT1/zplm/m/n/12 ) = [] \OML/zplm/m/
-it/12 A [] B \OMS/zplm/m/n/12 ^^F [] \OML/zplm/m/it/12 A [] B$\T1/ppl/m/n/12 (-
-20) . 
- []
-
 
 
 [110
 
+]
+Appendix B.
+
+
+[111
+
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 85--86
+Underfull \hbox (badness 10000) in paragraph at lines 93--94
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 90--91
+Underfull \hbox (badness 10000) in paragraph at lines 98--99
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 92--94
+Underfull \hbox (badness 10000) in paragraph at lines 100--102
 
  []
 
 
 
-[111]
+[112]
+
+[113]
 Appendix C.
-
-
-[112
-
-
-]
-
-[113
-
-]
-Overfull \hbox (23.4547pt too wide) in paragraph at lines 222--244
- [] 
- []
-
 
 
 [114
 
+
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 280--281
+
+[115
+
+]
+
+[116
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 291--292
 
  []
 
 
 
-[115
+[117
 
 ])
 
-[116
+[118
 
 
 ] (./main.aux)
@@ -2994,11 +2930,11 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 41306 strings out of 473190
- 812524 string characters out of 5715800
- 1702569 words of memory out of 5000000
- 63028 multiletter control sequences out of 15000+600000
- 666376 words of font info for 555 fonts, out of 8000000 for 9000
+ 41316 strings out of 473190
+ 812667 string characters out of 5715800
+ 1702512 words of memory out of 5000000
+ 63032 multiletter control sequences out of 15000+600000
+ 667469 words of font info for 558 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  92i,20n,99p,1036b,1437s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
@@ -3012,10 +2948,10 @@ cal/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb></usr/loca
 l/texlive/2025/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texli
 ve/2025/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2025
 /texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (116 pages, 3586254 bytes).
+Output written on main.pdf (118 pages, 3587016 bytes).
 PDF statistics:
- 1416 PDF objects out of 1440 (max. 8388607)
- 1122 compressed objects within 12 object streams
- 301 named destinations out of 1000 (max. 500000)
- 139839 words of extra memory for PDF output out of 154059 (max. 10000000)
+ 1424 PDF objects out of 1440 (max. 8388607)
+ 1128 compressed objects within 12 object streams
+ 303 named destinations out of 1000 (max. 500000)
+ 141887 words of extra memory for PDF output out of 154059 (max. 10000000)
 
