@@ -55,6 +55,12 @@ $\sin(A\pm B) = \sin A\cos B \pm \cos A\sin B$.
 $\cosh^2 x - \sinh^2 x = 1$,\quad
 $\sinh(x\pm y) = \sinh x\cosh y \pm \cosh x\sinh y$.
 
+\begin{align*}
+      \sinh x &= \frac{e^x - e^{-x}}{2}, &
+      \cosh x &= \frac{e^x + e^{-x}}{2}, &
+      \tanh x &= \frac{\sinh x}{\cosh x} = \frac{e^x - e^{-x}}{e^x + e^{-x}}.
+\end{align*}
+
 \subsection*{Common Integrals}
 \begin{align*}
   \int x^n\,dx &= \tfrac{x^{n+1}}{n+1} + C \quad (n\neq-1), &
@@ -63,6 +69,20 @@ $\sinh(x\pm y) = \sinh x\cosh y \pm \cosh x\sinh y$.
   \int \sin x\,dx &= -\cos x + C.
 \end{align*}
 
+\textbf{Gamma--Zeta Integrals}
+\begin{align*}
+      \int_0^\infty \frac{x^{s-1}}{e^x-1}\,dx &= \Gamma(s)\zeta(s), && \Re(s)>1,\\
+      \int_0^\infty \frac{x^{s-1}}{e^x+1}\,dx &= \bigl(1-2^{1-s}\bigr)\Gamma(s)\zeta(s), && \Re(s)>0.
+\end{align*}
+\begin{align*}
+      \int_0^\infty \frac{x^2}{e^x-1}\,dx &= 2\zeta(3), &
+      \int_0^\infty \frac{x^2}{e^x+1}\,dx &= \tfrac{3}{2}\zeta(3),\\
+      \int_0^\infty \frac{x^3}{e^x-1}\,dx &= \frac{\pi^4}{15}=6\zeta(4), &
+      \int_0^\infty \frac{x^3}{e^x+1}\,dx &= \frac{7\pi^4}{120}=\tfrac{7}{8}\,6\zeta(4).
+\end{align*}
+
+
+\clearpage
 \subsection*{Taylor Expansions}
 \begin{align*}
       f(x) &= f(a) + f'(a)(x-a) + \tfrac{f''(a)}{2!}(x-a)^2 + \cdots\\
@@ -74,6 +94,32 @@ $\sinh(x\pm y) = \sinh x\cosh y \pm \cosh x\sinh y$.
       \sqrt{1+x} &= \sum_{n=0}^\infty \binom{1/2}{n} x^n = 1 + \tfrac{1}{2}x - \tfrac{1}{8}x^2 + \cdots
 \end{align*}
 
+\subsection*{Common Approximations}
+\textbf{Small-argument limits} ($|x|\ll 1$):
+\begin{align*}
+      \sin x &\approx x, &
+      \cos x &\approx 1 - \frac{x^2}{2}, &
+      \tan x &\approx x,\\
+      \sinh x &\approx x, &
+      \cosh x &\approx 1 + \frac{x^2}{2}, &
+      \tanh x &\approx x.
+\end{align*}
+
+\textbf{Large positive argument} ($x\gg 1$):
+\begin{align*}
+      \sinh x &\approx \frac{1}{2}e^x, &
+      \cosh x &\approx \frac{1}{2}e^x, &
+      \tanh x &\approx 1.
+\end{align*}
+
+\textbf{Large negative argument} ($x\ll -1$):
+\begin{align*}
+      \sinh x &\approx -\frac{1}{2}e^{-x}, &
+      \cosh x &\approx \frac{1}{2}e^{-x}, &
+      \tanh x &\approx -1.
+\end{align*}
+
+\clearpage
 \section{Differential Geometry Primer}
 
 The \textbf{metric tensor} $g_{\mu\nu}$ encodes the geometry of spacetime:
@@ -118,6 +164,7 @@ The choice of metric signature affects the signs of above tensors in below ways:
       \end{tabular}
 \end{center}
 
+\bigskip\noindent
 \section{Relativistic Limits}
 The energy-momentum relation is $E^2 = p^2c^2 + m^2c^4$.
 So in a relativistic limit, we can have:

@@ -100,7 +100,7 @@
 \contentsline {section}{\numberline {A.1}Use of Artificial Intelligence in This Document}{110}{section.A.1}%
 \contentsline {chapter}{\numberline {B}Mathematical Tools \& Derivations}{111}{appendix.B}%
 \contentsline {section}{\numberline {B.1}Useful Identities}{111}{section.B.1}%
-\contentsline {section}{\numberline {B.2}Differential Geometry Primer}{112}{section.B.2}%
+\contentsline {section}{\numberline {B.2}Differential Geometry Primer}{113}{section.B.2}%
 \contentsline {section}{\numberline {B.3}Relativistic Limits}{113}{section.B.3}%
 \contentsline {chapter}{\numberline {C}Constants \& Conversion Factors}{114}{appendix.C}%
 \contentsline {section}{\numberline {C.1}Physical Constants}{114}{section.C.1}%
