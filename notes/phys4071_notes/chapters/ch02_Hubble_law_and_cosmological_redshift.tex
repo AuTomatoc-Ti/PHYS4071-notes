@@ -205,15 +205,18 @@ And this unified metric is called the \textbf{Robertson-Walker metric}, which ca
 
 \bigskip\noindent
 \begin{intuition}
-    As the scale factor $a(t)$ applied on the metric instead of the coordinates difference $dr$, $d\theta$, and $d\phi$, we can think the measurement of coordinate spatial distance is fixed, but the measurement unit (the ruler itself) is changing with time. \\
-
+    As the scale factor $a(t)$ applied on the metric instead of the coordinates difference $dr$, $d\theta$, and $d\phi$, we can think the measurement of coordinate spatial distance is fixed, but the measurement unit (the ruler itself) is changing with time. Given:
+    \begin{align*}
+         ds^2 &= -dt^2 + a^2(t) \left[ \frac{dr^2}{1 - kr^2} + r^2 (d\theta^2 + \sin^2\theta d\phi^2) \right] \\
+         &= -dt^2 + a^2(t) d\chi^2
+    \end{align*}
+    and we can get:
     \[
-        \Delta D_{proper} = a(t) \Delta D_{comoving}
+        \Delta D_{proper} = a(t) \Delta \chi
     \]
-    \\
+    which $D_{proper}$ is the $ds$ term, and $\chi$ is the comoving distance coordinate. \\
 
-    For example, if we have 2 points on balloon, we draw the marks on the balloon to measure the distance between the two points, when the balloon is expanding, the number of marks between the two points is fixed, but the distance between each mark is increasing with time, which means the proper distance between the two points is increasing with time. \\
-
+    For example, if we have 2 points on balloon, we draw the marks on the balloon to measure the distance between the two points, when the balloon is expanding, the number of marks between the two points is fixed, but the distance between each mark is increasing with time, which means the proper distance between the two points is increasing with time.
 \end{intuition}
 
 \begin{figure}[htbp]
@@ -227,6 +230,35 @@ And this unified metric is called the \textbf{Robertson-Walker metric}, which ca
     Although scale factor $a(t)$ can change with time, we assume that the curvature constant $k$ does not change with time, which means the geometry of the universe is fixed. \\
 \end{remark}
 
+\bigskip\noindent
+\begin{foundation}
+    If we consider the distance light travel from source to observer, that means $ds^2 = 0$ as light travels along null geodesics, and we can get:
+    \begin{align*}
+         0 &= -dt^2 + a^2(t) d\chi^2 \\
+         dt &= \pm a(t) d\chi
+    \end{align*}
+    Note when time increase $(dt > 0)$, the light is traveling towards the observer $(d\chi < 0)$, so we need to choose the -ve sign to get the correct direction of light travel. \\
+
+    Hence, we can get the relation between the comoving distance $\chi$ of 2 points and the time of travel $t$:
+    \begin{align*}
+        dt &= - a(t) d\chi \\
+        \int_{\chi_0}^{\chi_{source}} d\chi  &= - \int_{t_{obs}}^{t_{emit}} \frac{dt}{a(t)} \\
+        - \chi_{source} &= - \int_{t_{obs}}^{t_{emit}} \frac{dt}{a(t)} \\
+        \chi_{source} &= \int_{t_{emit}}^{t_{obs}} \frac{dt}{a(t)} 
+    \end{align*}
+    where $\chi_{source}$ is the comoving coordinate of the source, $\chi_0$ is the comoving coordinate of the observer, and we can set $\chi_0 = 0$ for simplicity. \\
+\end{foundation}
+
+\bigskip\noindent
+\begin{theory}
+    To calculate the \textbf{time-independent} comoving distance $\chi$ between the source and the observer, we can use the following formula:
+    \[
+        \chi = \int_{t_{emit}}^{t_{obs}} \frac{dt}{a(t)} 
+    \]
+    which is the integral of the inverse of the scale factor over the time of travel. \\
+
+    Note that the comoving distance $\chi$ is fixed once we defined a specific source and observer, and it does not change with time or changing scale factor, which quites counter-intuitive, but it is because the comoving distance is defined in a way that it is not affected by the expansion of the universe, and it is a measure of the distance between two points in the universe that is independent of the expansion. \\
+\end{theory}
 
 % ═════════════════════════════════════════════════════════════════════════════
 %\newpage
@@ -235,6 +267,54 @@ And this unified metric is called the \textbf{Robertson-Walker metric}, which ca
 \subsection{Redshift and Recession Velocity}
 Recall the redshift $z$ can occur when the source is moving away from the observer.
 \begin{foundation}
+    To derive the Doppler redshift formula in special relativity, we define:
+    \[
+        \beta \equiv \frac{v}{c}, \qquad \gamma \equiv \frac{1}{\sqrt{1-\beta^2}}
+    \]
+    where $v>0$ means the source is receding from the observer. \\
+
+    Let two successive wave crests be emitted with proper time interval $\Delta\tau_{emit}$ in the source rest frame:
+    \[
+        \Delta\tau_{emit} = \frac{1}{\nu_{emit}}
+    \]
+    In the observer frame, this emission interval is time-dilated:
+    \[
+        \Delta t_{emit} = \gamma\,\Delta\tau_{emit}
+    \] \\
+    
+    \textbf{Why do we need the extra travel time?} \\
+    The key insight is that between the emission of the first crest at time $t_1$ and the second crest at time $t_1 + \Delta t_{emit}$, the source is \textit{moving away} from the observer. 
+    Therefore, the second crest is emitted from a point that is farther from the observer by a distance $\Delta d = v\Delta t_{emit}$.
+    Since the second crest must travel this extra distance at the speed of light $c$, 
+    it requires an additional time to reach the observer. \\
+    
+    During this interval, the source moves farther by $v\Delta t_{emit}$, so the second crest has extra travel time:
+    \[
+        \Delta t_{extra} = \frac{v\Delta t_{emit}}{c} = \frac{v}{c}\Delta t_{emit} = \beta\,\Delta t_{emit}
+    \]
+    This is the additional travel time caused by the source's recession --- the source ``runs away'' from its own light.
+    Hence the observed arrival interval is:
+    \[
+        \Delta t_{obs} = \Delta t_{emit} + \Delta t_{extra} = \Delta t_{emit}(1+\beta)
+        = \gamma\Delta\tau_{emit}(1+\beta)
+    \]
+    Therefore,
+    \[
+        \nu_{obs} = \frac{1}{\Delta t_{obs}} = \frac{1}{\gamma\Delta\tau_{emit}(1+\beta)} =\frac{\nu_{emit}}{\gamma(1+\beta)}
+        = \nu_{emit}\sqrt{\frac{1-\beta}{1+\beta}}
+    \] \\
+
+    Using $\lambda = c/\nu$, we get:
+    \[
+        \frac{\lambda_{obs}}{\lambda_{emit}} = \frac{\nu_{emit}}{\nu_{obs}} = \sqrt{\frac{1+\beta}{1-\beta}}
+    \]
+    By definition of redshift,
+    \[
+        z \equiv \frac{\lambda_{obs}-\lambda_{emit}}{\lambda_{emit}} = \frac{\lambda_{obs}}{\lambda_{emit}} - 1
+        = \sqrt{\frac{1+\beta}{1-\beta}} - 1
+        = \sqrt{\frac{1+v/c}{1-v/c}} - 1
+    \]
+    Note $\nu$ and $v$ are 2 different things, $\nu$ is the frequency of the light wave, while $v$ is the velocity of the source. Don't mix them even they look like same!
 \end{foundation}
 
 \bigskip\noindent
@@ -254,12 +334,61 @@ Recall the redshift $z$ can occur when the source is moving away from the observ
     where +ve $v$ means the source is moving away from the observer, and -ve $v$ means the source is moving towards the observer. \\
 \end{theory}
 
-\bigskip\noindent
+% -─────────────────────────────────────────────────────────────────────────────
+\bigskip\noindent \bigskip\noindent \bigskip\noindent
+\subsection{Cosmological Redshift}
+%\bigskip\noindent
 \begin{intuition}
     However, in 1929, Edwin Hubble found that most of the galaxies are moving away from us, which does not make sense, if the doppler effect is the only reason for the redshift, then we should expect around half of the galaxies are moving towards us, and the other half are moving away from us, which is not what we observed. \\
 
     It suggests that there must be another reason for the redshift, and later we know that it is the expansion of the universe that causes the redshift, which dominates over the doppler effect for distant galaxies, and thats why most of the galaxies are moving away from us. \\
 \end{intuition}
+
+\bigskip\noindent
+\begin{foundation}
+    Start from the FLRW metric and consider radial light propagation ($d\Omega = 0$):
+    \[
+        ds^2 = -dt^2 + a^2(t) d\chi^2
+    \]
+    For photons, $ds^2 = 0$, so:
+    \[
+        d\chi = \frac{dt}{a(t)}
+    \] \\
+
+    Let a source at fixed comoving coordinate $\chi_s$ emit two successive crests. \\
+    For the first crest (emitted at $t_{emit}$, observed at $t_{obs}$):
+    \[
+        \int_{t_{emit}}^{t_{obs}} \frac{dt}{a(t)} = \chi_s
+    \]
+    For the second crest (emitted at $t_{emit}+\Delta t_{emit}$, observed at $t_{obs}+\Delta t_{obs}$):
+    \[
+        \int_{t_{emit}+\Delta t_{emit}}^{t_{obs}+\Delta t_{obs}} \frac{dt}{a(t)} = \chi_s
+    \]
+    Because both crests travel between the same source and observer, the comoving distance is the same. Subtract the two equations:
+    \[
+        \int_{t_{emit}}^{t_{emit}+\Delta t_{emit}} \frac{dt}{a(t)}
+        =
+        \int_{t_{obs}}^{t_{obs}+\Delta t_{obs}} \frac{dt}{a(t)}
+    \]
+    For two \,successive crests, $\Delta t$ is very small, so $a(t)$ is nearly constant during each small interval:
+    \[
+        \frac{\Delta t_{emit}}{a(t_{emit})} \approx \frac{\Delta t_{obs}}{a(t_{obs})}
+        \quad \Rightarrow \quad
+        \frac{\Delta t_{obs}}{\Delta t_{emit}} = \frac{a(t_{obs})}{a(t_{emit})}
+    \] \\
+
+    Now convert to wavelength. For a locally measured light wave, $\lambda = c\,\Delta t$ (or $\lambda \propto \Delta t$ in $c=1$ units), therefore:
+    \[
+        \frac{\lambda_{obs}}{\lambda_{emit}} = \frac{\Delta t_{obs}}{\Delta t_{emit}} = \frac{a(t_{obs})}{a(t_{emit})}
+    \]
+    By the definition of redshift:
+    \[
+        z \equiv \frac{\lambda_{obs}-\lambda_{emit}}{\lambda_{emit}}
+        = \frac{\lambda_{obs}}{\lambda_{emit}} - 1
+        = \frac{a(t_{obs})}{a(t_{emit})} - 1
+    \]
+\end{foundation}
+
 
 \bigskip\noindent
 \begin{theory}
@@ -279,11 +408,13 @@ Recall the redshift $z$ can occur when the source is moving away from the observ
     \]
 \end{theory}
 
-\bigskip\noindent
+\clearpage
+%\bigskip\noindent
 \begin{remark}
     The redshift $z$ of galaxies can be contributed by both recession motion(\textbf{cosmological redshift}) and peculiar motion(\textbf{doppler redshift}), but for distant galaxies $ z > 0.01 $, the cosmological redshift dominates over the doppler redshift.
 \end{remark}
 % -─────────────────────────────────────────────────────────────────────────────
+\bigskip \noindent \bigskip \noindent \bigskip \noindent 
 \subsection{Hubble's Law}
 \begin{intuition}
     In 1823, Olber's paradox was proposed, which states that if the universe is infinite and static, then the night sky should be bright because there are infinite number of stars in the universe.  However, the night sky is dark, which means the universe cannot be infinite and static. \\
@@ -312,36 +443,38 @@ The left plot show the original data from Hubble's 1929 paper, and the right plo
 
 \bigskip\noindent
 \begin{theory}
-    Let $D_{proper}$ be the proper distance to a galaxy, and $D_{comoving}$ be the co-moving distance to the galaxy, then we have:
+    Let $D_{proper}$ be the proper distance to a galaxy, and $\chi$ be the co-moving distance coordinate to the galaxy, then we have:
     \[
-        D_{proper}(t) = a(t) \cdot D_{comoving}
+        D_{proper}(t) = a(t) \cdot \chi
     \] 
-    Note $D_{comoving}$ is independent to time.\\
+    Note $\chi$ is independent to time.\\
 
     The recession velocity $v$ can also be defined as:
     \[
-        v \equiv \frac{dD_{proper}}{dt} = \dot{a}(t) \cdot D_{comoving}
+        v \equiv \frac{dD_{proper}}{dt} = \dot{a}(t) \cdot \chi
     \]
     And sub the Hubble's law into the above equation, we can get:
     \begin{align*}
         v &= H D_{proper} \\     
-        \dot{a}(t) \cdot D_{comoving} &= H a(t) \cdot D_{comoving} \\
+        \dot{a}(t) \cdot \chi &= H a(t) \cdot \chi \\
         \dot{a}(t) &= H a(t)
-    \end{align*} \\
+    \end{align*} 
 
     And we know that the Hubble parameter is equal to:
     \[
-        H(t) = \frac{\dot{a}(t)}{a(t)}
+        H(t) = \frac{\dot{a}(t)}{a(t)} = - \frac{\dot{z}(t)}{1 + z(t)}
     \]
 \end{theory}
 
 \bigskip\noindent
 \begin{remark}
-    Note $a(t) > 0$ for all $t$, which means the scale factor can never be zero(except at the initial singularity), while the observation shows that $H_0 > 0$, which indicates $\dot{a}(t_0) > 0$, which means the universe is expanding at the current time $t_0$.
+   For $t > 0$ (after Big Bang), $a(t) > 0$, except at the initial singularity$(t = 0, a(0) = 0)$; \\
+   
+   while the observation shows that $H_0 > 0$, which indicates $\dot{a}(t_0) > 0$, which means the universe is expanding at the current time $t_0$.
 \end{remark}
 
-
-\bigskip\noindent
+\clearpage
+%\bigskip\noindent
 Now we can finding the relationship between the redshift $z$ and the distance $D$ of a galaxy, by using the Hubble's law and the definition of cosmological redshift:
 \begin{theory}
     we have cosmological redshift:

@@ -586,6 +586,11 @@ INPUT ./chapters/ch02_Hubble_law_and_cosmological_redshift.tex
 INPUT ./chapters/ch02_Hubble_law_and_cosmological_redshift.tex
 INPUT ./chapters/ch02_Hubble_law_and_cosmological_redshift.tex
 INPUT chapters/ch02_Hubble_law_and_cosmological_redshift.tex
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/vf/public/mathpazo/zplmr7m.vf
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/mathpazo/fplmri.tfm
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/vf/public/mathpazo/zplmr7t.vf
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
 INPUT ./images/balloon_expansion.png
 INPUT ./images/balloon_expansion.png
 INPUT ./images/balloon_expansion.png
@@ -594,8 +599,7 @@ INPUT ./images/balloon_expansion.png
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/vf/public/mathpazo/zplmr7m.vf
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/mathpazo/fplmri.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/vf/public/mathpazo/zplmr7t.vf
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/adobe/palatino/pplri8r.tfm
 INPUT ./images/hubble_diagram.png
 INPUT ./images/hubble_diagram.png
 INPUT ./images/hubble_diagram.png
@@ -638,10 +642,6 @@ INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/mathpazo/fplmr.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/vf/public/mathpazo/zplmr7t.vf
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/vf/public/mathpazo/zplmr7m.vf
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/mathpazo/fplmri.tfm
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/adobe/palatino/pplri8r.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/adobe/palatino/pplr7t.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/adobe/palatino/pplr7t.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/mathpazo/zplmr7m.tfm
