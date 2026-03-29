@@ -578,7 +578,23 @@ Now we can finding the relationship between the redshift $z$ and the distance $D
     \]
 \end{theory}
 
+% \bigskip\noindent
+% \begin{remark}
+%     luminousity distance is not just geometric distance. It is the ``effective distance'' inferred from brightness, and expansion makes sources dimmer than pure geometry predicts. One $(1+z)$ comes from lower energy per photon, and one $(1+z)$ comes from slower photon arrival rate; together they produce the extra dimming encoded in $d_L=(1+z)\chi$. 
+% \end{remark}
+
 \bigskip\noindent
-\begin{intuition}
-    luminousity distance is not just geometric distance. It is the ``effective distance'' inferred from brightness, and expansion makes sources dimmer than pure geometry predicts. One $(1+z)$ comes from lower energy per photon, and one $(1+z)$ comes from slower photon arrival rate; together they produce the extra dimming encoded in $d_L=(1+z)\chi$. 
-\end{intuition}
+\begin{importantnote}
+    The equation $d_L=(1+z)\chi$ is assuming a flat universe ($k=0$). For non-flat universe, we need a generalized formula:
+    \[
+        d_L = (1+z) \cdot S_k(\chi)
+    \]
+    where $S_k(\chi)$ is the comoving angular diameter distance, which depends on the curvature of the universe:
+    \[
+        S_k(\chi) = \begin{cases}
+            \chi & ,k = 0 \\
+            \frac{1}{\sqrt{k}} \sin(\sqrt{k}\chi) & ,k > 0 \\
+            \frac{1}{\sqrt{-k}} \sinh(\sqrt{-k}\chi) & ,k < 0
+        \end{cases}
+    \]
+\end{importantnote}

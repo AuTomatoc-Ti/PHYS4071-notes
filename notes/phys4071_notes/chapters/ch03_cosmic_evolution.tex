@@ -739,9 +739,265 @@ At the late 1990s, the SCDM model is challenged by the acceleration of universe,
     Therefore, the $\Lambda$CDM model is not the unique model to explain dark energy, but just the most pervasive one among all dark energy models.
 \end{importantnote}
 
+% -────────────────────────────────────────────────────────────────────────────
+\clearpage
+\subsection{Related Equations in Energy Density Parameters}
+
+\begin{foundation}
+    We now derive the Hubble parameter as a function of redshift by using the 1st Friedmann equation and the density parameters defined in previous section.
+    Starting from:
+    \[
+        H^2 = \frac{8\pi G}{3}(\rho_m + \rho_r + \rho_K + \rho_\Lambda)
+    \]
+    and using:
+    \[
+        \rho_m = \rho_m^0 a^{-3}, \qquad \rho_r = \rho_r^0 a^{-4}, \qquad \rho_K = \rho_K^0 a^{-2}, \qquad \rho_\Lambda = \rho_\Lambda^0,
+    \]
+    with
+    \[
+        \rho_c^0 = \frac{3H_0^2}{8\pi G},
+        \quad
+        \Omega_m^0 = \frac{\rho_m^0}{\rho_c^0},
+        \quad
+        \Omega_r^0 = \frac{\rho_r^0}{\rho_c^0},
+        \quad
+        \Omega_K^0 = \frac{\rho_K^0}{\rho_c^0},
+        \quad
+        \Omega_\Lambda^0 = \frac{\rho_\Lambda^0}{\rho_c^0},
+    \]
+    we get:
+    \begin{align*}
+        \frac{H^2}{\rho_c^0} &= \frac{8\pi G}{3} \left( \frac{\rho_m^0}{a^3} + \frac{\rho_r^0}{a^4} + \frac{\rho_K^0}{a^2} + \rho_\Lambda^0 \right) \cdot \frac{1}{\rho_c^0} \\
+        \frac{H^2}{H_0^2} &= \Omega_m^0 a^{-3} + \Omega_r^0 a^{-4} + \Omega_K^0 a^{-2} + \Omega_\Lambda^0 
+    \end{align*}
+    Using $a_0 = 1$, we have $a = \frac{1}{1+z}$. Therefore:
+    \[
+        H(z) = H_0 E(z) ,
+    \]
+    where:
+    \[
+        E(z) = \sqrt{\Omega_m^0 (1+z)^3 + \Omega_r^0 (1+z)^4 + \Omega_K^0 (1+z)^2 + \Omega_\Lambda^0}
+    \]
+\end{foundation}
+
+\bigskip \noindent
+\begin{foundation}
+    Next, we derive the emitting time in both scale-factor form $t(a)$ and redshift form $t(z)$.
+    From the definition of Hubble parameter:
+    \[
+        H \equiv \frac{\dot{a}}{a},
+    \]
+    we get:
+    \begin{align*}
+        \dot{a} &= aH(a) \\
+        dt &= \frac{da}{aH(a)}
+    \end{align*}
+    Therefore, for a source emitted at $a_{emit}$ and observed today at $a_0 = 1$:
+    \begin{align*}
+        t_0 - t(a_{emit})
+        &= \int_{a_{emit}}^{1} \frac{da'}{a'H(a')}
+    \end{align*}
+    Equivalently, by choosing Big Bang as $t=0$ at $a=0$, we have:
+    \[
+        t(a) = \int_{0}^{a} \frac{da'}{a'H(a')}
+    \] \\
+
+    Now use the redshift relation:
+    \[
+        z = \frac{1}{a} - 1
+    \]
+    Differentiate with respect to time:
+    \begin{align*}
+        \frac{dz}{dt}
+        &= -\frac{1}{a^2}\dot{a}
+        = -\left(\frac{1}{a}\right)\left(\frac{\dot{a}}{a}\right)
+        = -(1+z)H(z)
+    \end{align*}
+    Therefore:
+    \[
+        dt = -\frac{dz}{(1+z)H(z)}.
+    \]
+    For a source emitted at redshift $z$ and observed today ($z=0$):
+    \begin{align*}
+        t_0 - t(z)
+        &= \int_{t(z)}^{t_0} dt
+        = \int_0^z \frac{dz'}{(1+z')H(z')}
+    \end{align*}
+    So equivalently:
+    \[
+        t(z) = t_0 - \int_0^z \frac{dz'}{(1+z')H(z')}
+    \]
+\end{foundation}
+
+\bigskip \noindent
+\begin{foundation}
+    Finally, we convert the comoving distance from the time form in chapter 2.1.3 to the redshift form.
+    Recall:
+    \[
+        \chi = \int_{t_{emit}}^{t_0} \frac{dt}{a(t)}
+    \]
+    Using $a = \frac{1}{1+z}$ and $dt = -\frac{dz}{(1+z)H(z)}$, we have:
+    \[
+        \frac{dt}{a(t)} = (1+z)dt = -\frac{dz}{H(z)}
+    \]
+    Therefore:
+    \begin{align*}
+        \chi(z)
+        &= \int_{t(z)}^{t_0} \frac{dt}{a(t)}
+        = \int_z^0 \left(-\frac{dz'}{H(z')}\right)
+        = \int_0^z \frac{dz'}{H(z')}
+    \end{align*}
+    Writing $H(z) = H_0 E(z)$, we get the common form:
+    \[
+        \chi(z) = \frac{1}{H_0}\int_0^z \frac{dz'}{E(z')}
+    \]
+\end{foundation}
+
+\bigskip \noindent
+\begin{theory}
+    In real-world cosmological research, the redshift is one of the easiest observable quantity, thus we can express the equations we have learned in previous sections in terms of redshift, which is more convenient for data analysis and comparison with observations. \\
+
+    The Hubble parameter as a function of redshift can be expressed as:
+    \begin{align*}
+        H(z) &= H_0\sqrt{\Omega_m^0 (1+z)^3 + \Omega_r^0 (1+z)^4 + \Omega_K^0 (1+z)^2 + \Omega_\Lambda^0} \\
+        H(a) &= H_0\sqrt{\Omega_m^0 a^{-3} + \Omega_r^0 a^{-4} + \Omega_K^0 a^{-2} + \Omega_\Lambda^0}
+    \end{align*} \\
+
+    The emitting time can be expressed as:
+    \begin{align*}
+        t(a_{emit}) &= t_0 - \int_{a_{emit}}^{1} \frac{da'}{a'H(a')} \\
+        t(z) &= t_0 - \int_0^z \frac{dz'}{(1+z')H(z')}
+    \end{align*} \\
+
+    The comoving distance can be expressed as:
+    \[
+        \chi(z) = \int_0^z \frac{dz'}{H(z')} = \frac{1}{H_0}\int_0^z \frac{dz'}{E(z')}
+    \]
+    And hence the luminosity distance can be expressed as:
+    \[
+        d_L(z) = (1+z) \cdot \chi(z) = (1+z) \cdot \frac{1}{H_0}\int_0^z \frac{dz'}{E(z')}
+    \]
+\end{theory}
+
+\clearpage
+%\bigskip \noindent
+\begin{example}{Age of Universe from}{age-from-ta-lcdm}
+    Consider a flat $\Lambda$CDM-like universe with parameters:
+    \[
+        \Omega_d^0 = 0.3, \qquad \Omega_r^0 = 0, \qquad \Omega_K^0 = 0, \qquad \Omega_\Lambda^0 = 0.7,
+    \]
+    and let:
+    \[
+        H_0 = 70\ \mathrm{km\ s^{-1}\ Mpc^{-1}}.
+    \]
+    Use the $t(a)$ equation to estimate the present age $t_0$ of the universe. \\
+
+    \bigskip\textbf{Hints.}\quad \\
+    In this problem, using the redshift form directly is less convenient because the Big Bang limit corresponds to $z \to \infty$.
+    Using $a$-integration gives cleaner boundary conditions: $a=0 \to t=0$ and $a=1 \to t=t_0$. \\
+
+    \bigskip\textbf{Solution.}\quad \\
+    Here we treat the matter term as $\Omega_m^0 = 0.3$ (using the given $\Omega_d^0$ value), so:
+    \[
+        H(a) = H_0\sqrt{0.3a^{-3} + 0.7}.
+    \]
+    Hence:
+    \begin{align*}
+        t_0 &= t(a=1) = \int_0^1 \frac{da}{aH(a)} \\
+            &= \frac{1}{H_0}\int_0^1 \frac{da}{a\sqrt{0.3a^{-3}+0.7}} \\
+            &= \frac{2}{3H_0\sqrt{0.7}}\sinh^{-1}\!\left(\sqrt{\frac{0.7}{0.3}}\right) \\
+            &\approx 0.964\,H_0^{-1}.
+    \end{align*}
+    Convert $H_0$ to SI unit:
+    \[
+        H_0 = 70\frac{\mathrm{km}}{\mathrm{s\,Mpc}}
+        = 70\frac{10^3\,\mathrm{m/s}}{3.086\times10^{22}\,\mathrm{m}}
+        \approx 2.268\times10^{-18}\,\mathrm{s^{-1}},
+    \]
+    so:
+    \[
+        H_0^{-1} \approx 4.41\times10^{17}\,\mathrm{s} \approx 13.97\,\mathrm{Gyr}.
+    \]
+    Therefore:
+    \[
+        t_0 \approx 0.964\times 13.97\,\mathrm{Gyr} \approx 13.5\,\mathrm{Gyr}
+        \approx 1.35\times10^{10}\,\mathrm{yr}.
+    \]
+\end{example}
+
+\bigskip \noindent
+\begin{example}{LCDM Energy-Budget Milestones}{lcdm-energy-budget-milestones}
+    Assume a near-flat universe with:
+    \[
+        \Omega_d^0 = 0.315,\qquad \Omega_r^0 = 9.4\times 10^{-5},\qquad \Omega_\Lambda^0 = 0.685,\qquad \Omega_K^0 = -9.4\times10^{-5}\approx 0
+    \]
+    (a). Find $z_1$ at radiation--dust equality. \\
+    (b). Find $z_2$ at dust--$\Lambda$ equality. \\
+    (c). Write down the equations of $\Omega_i(z)$ in terms of $E(z)$ and $\Omega_i^0$. \\
+
+    \bigskip\textbf{Solution.}\quad \\
+    First write:
+    \[
+        E^2(z) = \Omega_r^0(1+z)^4 + \Omega_d^0(1+z)^3 + \Omega_K^0(1+z)^2 + \Omega_\Lambda^0
+    \]
+
+    (a). Radiation--dust equality means:
+    \[
+        \Omega_r^0(1+z_1)^4 = \Omega_d^0(1+z_1)^3
+        \Rightarrow 1+z_1 = \frac{\Omega_d^0}{\Omega_r^0}
+    \]
+    So:
+    \[
+        1+z_1 = \frac{0.315}{9.4\times10^{-5}} \approx 3351
+        \Rightarrow z_1 \approx 3.35\times10^3
+    \]
+
+    (b). Dust--$\Lambda$ equality means:
+    \[
+        \Omega_d^0(1+z_2)^3 = \Omega_\Lambda^0
+        \Rightarrow 1+z_2 = \left(\frac{\Omega_\Lambda^0}{\Omega_d^0}\right)^{1/3}
+    \]
+    Therefore:
+    \[
+        1+z_2 = \left(\frac{0.685}{0.315}\right)^{1/3} \approx 1.295
+        \Rightarrow z_2 \approx 0.295
+    \]
+
+    (c). In general, each density parameter at redshift $z$ is:
+    \[
+        \Omega_i(z) = \frac{\rho_i(z)}{\rho_c(z)} = \frac{\Omega_i^0 f_i(z)}{E^2(z)},
+    \]
+    with
+    \[
+        f_r(z)=(1+z)^4,\quad f_d(z)=(1+z)^3,\quad f_K(z)=(1+z)^2,\quad f_\Lambda(z)=1
+    \]
+    Hence:
+    \begin{align*}
+         \Omega_r(z) &= \frac{\Omega_r^0(1+z)^4}{E^2(z)}, \\
+         \Omega_d(z) &= \frac{\Omega_d^0(1+z)^3}{E^2(z)}, \\
+         \Omega_K(z) &= \frac{\Omega_K^0(1+z)^2}{E^2(z)}, \\
+         \Omega_\Lambda(z) &= \frac{\Omega_\Lambda^0}{E^2(z)}
+    \end{align*}
+\end{example}
+
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=0.8\textwidth]{images/lcdm_energy_budget_z_log.png}
+    \caption{Visual interpretation of the LCDM energy-budget transitions: radiation--dust equality, dust--$\Lambda$ equality, and redshift evolution of $\Omega_i(z)$.}
+    \label{fig:lcdm-energy-budget}
+\end{figure}
+
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=0.75\textwidth]{images/energy_density_evolution.png}
+    \caption{Same as previous figure but it showing the exact values of energy density $\rho_i(z)$ instead of density parameters $\Omega_i(z)$.}
+    \label{fig:lcdm-energy-budget-log}
+\end{figure}
+
 
 % =══════════════════════════════════════════════════════════════════════════════
-\bigskip \noindent \bigskip \noindent \bigskip \noindent
+\newpage
+%\bigskip \noindent \bigskip \noindent \bigskip \noindent
 \section{Dark Energy and the Accelerating Universe}
 \subsection{Observational Evidence for Dark Energy}
 

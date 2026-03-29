@@ -667,6 +667,16 @@ INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/mathpazo/zplmb7t.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/vf/public/mathpazo/zplmr7t.vf
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/mathpazo/fplmr.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
+INPUT ./images/lcdm_energy_budget_z_log.png
+INPUT ./images/lcdm_energy_budget_z_log.png
+INPUT ./images/lcdm_energy_budget_z_log.png
+INPUT ./images/lcdm_energy_budget_z_log.png
+INPUT ./images/lcdm_energy_budget_z_log.png
+INPUT ./images/energy_density_evolution.png
+INPUT ./images/energy_density_evolution.png
+INPUT ./images/energy_density_evolution.png
+INPUT ./images/energy_density_evolution.png
+INPUT ./images/energy_density_evolution.png
 INPUT ./images/type_Ia_supernova.png
 INPUT ./images/type_Ia_supernova.png
 INPUT ./images/type_Ia_supernova.png
