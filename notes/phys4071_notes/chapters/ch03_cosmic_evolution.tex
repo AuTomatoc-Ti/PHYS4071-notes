@@ -745,10 +745,194 @@ At the late 1990s, the SCDM model is challenged by the acceleration of universe,
 \section{Dark Energy and the Accelerating Universe}
 \subsection{Observational Evidence for Dark Energy}
 
-% ──────────────────────────────────────────────────────────────────────────────
-\bigskip \noindent \bigskip \noindent \bigskip \noindent
-\subsection{Dark Energy Models}
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.8\textwidth]{images/type_Ia_supernova.png}
+    \caption{The progenitor of type Ia supernova.}
+    \label{fig:type_Ia_supernova}
+\end{figure}
 
+\begin{intuition}
+    A Type Ia supernova is a stellar explosion that happens when a white dwarf in a binary system gains too much mass (close to the Chandrasekhar limit) and undergoes runaway thermonuclear burning. Because this explosion is triggered at nearly the same critical mass(the Chandrasekhar limit), Type Ia supernovae have very similar intrinsic peak luminosities after calibration. \\
+
+    This makes them "standard candles": if we know how bright they truly are, and we measure how bright they look from Earth, then the inverse-square law of light gives their distance. By comparing this distance with the observed redshift, astronomers can map the expansion history of the universe.\\
+\end{intuition}
+
+\bigskip \noindent
+\begin{foundation}
+    In astronomy, we express absolute magnitude $M$ and apparent magnitude $m$ of an object as:
+    \begin{align*}
+        M &= -2.5 \log_{10} \left( \frac{L}{L_0} \right) \\
+        m &= -2.5 \log_{10} \left( \frac{F}{F_0} \right)
+    \end{align*}
+    where $L$ is the intrinsic luminosity of the object, $F$ is the observed flux:
+    \begin{align*}
+        F &= \frac{L}{4\pi d_L^2}
+    \end{align*}
+    Let $L_0$ and $F_0$ are reference luminosity and flux, which are $L_0 = 3.0128 \times 10^{28} \mathrm{W}$ and $F_0 = \frac{L_0}{4\pi d_0^2} = 2.518 \times 10^{-8} \mathrm{W/m^2}$ with $d_0 = 10 \mathrm{pc}$. \\
+
+    By using the above definition, we can get the distance modulus $\mu$ as:
+    \begin{align*}
+        \mu &= m - M  \\
+            &= -2.5 \log_{10} \left( \frac{F}{F_0} \right) + 2.5 \log_{10} \left( \frac{L}{L_0} \right) \\
+            &= -2.5 \log_{10} \left( \frac{L}{4\pi d_L^2} \frac{4\pi d_0^2}{L_0} \right) + 2.5 \log_{10} \left( \frac{L}{L_0} \right) \\
+            &= -2.5 \left( \log_{10} \left( \frac{Ld_0^2}{L_0 d_L^2} \right) - \log_{10} \left( \frac{L}{L_0} \right) \right)\\
+            &= -2.5 \log_{10} \left( \frac{d_0^2}{d_L^2} \right) \\
+            &= -2.5 \log_{10} \left( \frac{(10 \mathrm{pc})^2}{d_L^2} \right) \\
+            &= 5 \log_{10} \left( \frac{d_L}{10 \mathrm{pc}} \right) \\
+            &= 5 \log_{10} \left( \frac{d_L}{1 \mathrm{pc}} \right) - 5
+    \end{align*} \\
+
+    Recall that the comoving distance $D_{\text{Com}}$ is defined as:
+    \[
+        D_{\text{Com}} = \int_{t_e}^{t_0} \frac{dt}{a(t)} = \int_0^z \frac{dz'}{H_0 E(z')}
+    \]
+    where $E(z) = \sqrt{\Omega_{m}(1+z)^3 + \Omega_{r}(1+z)^4 + \Omega_{\Lambda} + \Omega_{K}(1+z)^2 + \Omega_{\Lambda}}$. \\
+
+    At the sametime, we also know that:
+    \[
+        d_L = (1+z) a_0 D_{\text{Com}} = (1+z) D_{\text{Com}}
+    \]
+    Therefore, we know that:
+    \[
+        d_L = (1+z) \int_0^z \frac{dz'}{H_0 E(z')}
+    \]
+\end{foundation}
+
+\bigskip \noindent
+\begin{theory}
+    By using equation of distance modulus $\mu$ :
+    \[
+        \mu = m - M = 5 \log_{10} \left( \frac{d_L}{1 \mathrm{pc}} \right) - 5
+    \]
+     and the equation of luminosity distance $d_L$:
+    \[
+        d_L(z) = \frac{(1+z)}{H_0} \int_0^z \frac{dz'}{E(z')}
+    \]
+    with E(z) as the energy density evolution function in different cosmological models, we can get the theoretical prediction of distance modulus $\mu$ for different cosmological models, and then we can compare the theoretical prediction with the observational data of type Ia supernovae to test the cosmological models. \\
+\end{theory}
+
+
+\bigskip \noindent
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.65\textwidth]{images/luminousity_distance.png}
+    \caption{ $m - M$ and $\Delta (m - M)$ v.s. $z$ of the type Ia supernovae.}
+    \label{fig:luminousity_distance}
+\end{figure}
+
+\begin{intuition}
+    From the above figure, we can see that the distance modulus $\mu$ of type Ia supernovae v.s. logarithm of redshift $z$, the upper sub-figure shows the distance modulus of supernovae, and the lower sub-figure shows distance modulus difference $\Delta \mu$ between the observed data and the theoretical prediction of model with $\Omega_m = 0.3$ and $\Omega_\Lambda = 0.0$. \\
+
+    For each sub-figure, we have 3 curves/lines, the upper curve\textbf{ (curve 1)} is $\Omega_m = 0.3$ and $\Omega_\Lambda = 0.7$ which including the dark energy, the middle curve\textbf{ (curve 2)} is $\Omega_m = 0.3$ and $\Omega_\Lambda = 0$ which is the SCDM model without dark energy, and the lower curve\textbf{ (curve 3)} is $\Omega_m = 1$ and $\Omega_\Lambda = 0$ which is the Einstein-de Sitter universe. \\
+
+    We can see that the data points of type Ia supernovae are more consistent with the upper curve, which means the universe is accelerating expanding, and the SCDM model without dark energy is disfavored by the data. \\
+\end{intuition}
+
+\bigskip \noindent
+\begin{intuition}
+    For the curve 1 with $\Omega_m = 0.3$ and $\Omega_\Lambda = 0.7$, we get E(z) as:
+    \[
+        E_{1}(z) = \sqrt{0.3(1+z)^3 + 0.7}
+    \]
+    and for the curve 2 with $\Omega_m = 0.3$ and $\Omega_\Lambda = 0$, we get:
+    \[
+        E_{2}(z) = \sqrt{0.3(1+z)^3 + 0.7(1+z)^2}
+    \]
+    where the extra term $0.7(1+z)^2$ is the contribution of curvature.\\
+    and for the curve 3 with $\Omega_m = 1$ and $\Omega_\Lambda = 0$, we get:
+    \[
+        E_{3}(z) = \sqrt{1(1+z)^3} = (1+z)^{3/2}
+    \] \\
+
+    It is easily to see that for the same redshift $z$, we have:
+    \[
+        E_{1}(z) < E_{2}(z) < E_{3}(z)
+    \]
+    Hence by $d_L(z) = \frac{(1+z)}{H_0} \int_0^z \frac{dz'}{E(z')}$, we can get:
+    \[
+        d_{L,1}(z) > d_{L,2}(z) > d_{L,3}(z)
+    \]
+    And thus:
+    \[
+        \mu_1(z) > \mu_2(z) > \mu_3(z)
+    \]
+    which is consistent with the above figure. \\
+\end{intuition}
+
+\bigskip \noindent
+\begin{intuition}
+    In the other words, since we know that $\ddot{a}_1(t) > \ddot{a}_2(t) > \ddot{a}_3(t)$ for $t < t_0$, and $\dot{a}_0 = H_0$ for all models, by:
+    \[
+        \dot{a}(t) = \dot{a}_0 - \int_{t}^{t_0} \ddot{a}(t') dt'
+    \]
+    we can get:
+    \[
+        \dot{a}_1(t) < \dot{a}_2(t) < \dot{a}_3(t)
+    \] \\
+
+    and using $a_0 = a(t_0) = 1$, by:
+    \[
+        a(t) = a_0 - \int_{t}^{t_0} \dot{a}(t') dt'
+    \]
+    we can get, for same time $t < t_0$:
+    \[
+        a_1(t) > a_2(t) > a_3(t)
+    \] \\
+
+    Hence, for the same redshift $z = \frac{1}{a} - 1$, we have:
+    \[
+        a_1(t_1) = a_2(t_2) = a_3(t_3) = a
+    \]
+    and thus:
+    \[
+        t_1 < t_2 < t_3
+    \]
+    Note if we received a light that with a known redshift $z$, we can know that in three models, the light is emitted at time $t_1$, $t_2$ and $t_3$ respectively; \\
+
+    Let light travel time be $t_L^i = t_0 - t_s^i$ with $t_s^i$ is the time when the light is emitted, we can get:
+    \[
+        t_L^1 > t_L^2 > t_L^3
+    \]
+    Therefore, the light travel time is longer in the model with dark energy, which means the luminosity distance is larger in the model with dark energy, and thus the distance modulus is larger(dimmer for the same redshift) in the model with dark energy, which is consistent with the above figure. \\
+\end{intuition}
+
+
+\bigskip \noindent
+\begin{remark}
+    Note although the density of dark energy is very small $\approx 1.67 \times 10^{-27} \mathrm{kg/m^3}$, but it is still the dominant component of energy density in the universe, which is around $68\%$ of the total energy density of universe, that mainly because the energy density of matter and radiation dilute with the expansion of universe, while the energy density of dark energy is constant, thus it will become dominant at late time. \\
+\end{remark}
+
+\bigskip \noindent
+\begin{extra}
+    The discovery of the acceleration mainly attributed to two independent teams, the High-z Supernova Search Team(1998) and the Supernova Cosmology Project(1999), for this work, the leaders of these two teams, Saul Perlmutter, Brian P. Schmidt and Adam G. Riess are awarded the Nobel Prize in Physics in 2011. \\
+\end{extra}
+
+% ──────────────────────────────────────────────────────────────────────────────
+\clearpage
+%\bigskip \noindent \bigskip \noindent \bigskip \noindent
+\subsection{Dark Energy Models}
+We have mentioned that the $\Lambda$CDM model is one of the model that using cosmological constant to explain the acceleration of universe, but there are also some other models that can explain the acceleration of universe without introducing the cosmological constant, such as quintessence model, phantom energy model, etc. \\
+
+\begin{theory}
+    The \textbf{Quintessence model} is a scalar field model that can explain the acceleration of universe, the scalar field $\phi$ has a potential $V(\phi)$, and the energy density and pressure of the scalar field can be written as:
+    \begin{align*}
+        \rho_\phi &= \frac{1}{2} \dot{\phi}^2 + V(\phi) \\
+        p_\phi &= \frac{1}{2} \dot{\phi}^2 - V(\phi)
+    \end{align*}
+    Thus, the EoS parameter of quintessence can be written as:
+    \[
+        w_\phi = \frac{p_\phi}{\rho_\phi} = \frac{\frac{1}{2} \dot{\phi}^2 - V(\phi)}{\frac{1}{2} \dot{\phi}^2 + V(\phi)}
+    \]
+    If the potential energy dominates over the kinetic energy, i.e. $V(\phi) \gg \frac{1}{2} \dot{\phi}^2$, then we have $w_\phi \approx -1$, which can drive the acceleration of universe. \\
+
+    Unlike the cosmological constant, the quintessence model can have a time-varying EoS parameter, which suggested the quintessence can be either attracting or repulsive depending on the value of $\dot{\phi}^2$ and $V(\phi)$, and thus produce a dynamic dark energy that can evolve with time.
+\end{theory}
+
+\bigskip \noindent
+\begin{theory}
+    The \textbf{phantom energy model} is a scalar field model that can explain the acceleration of universe, but it has a EoS parameter $w < -1$, which means the energy density of phantom energy will increase with the expansion of universe, and the acceleration of universe will become faster and faster with time, which can lead to a future singularity called "Big Rip", where the scale factor and energy density will diverge in a finite time. \\
+\end{theory}
 
 
 
@@ -756,17 +940,36 @@ At the late 1990s, the SCDM model is challenged by the acceleration of universe,
 
 
 % =══════════════════════════════════════════════════════════════════════════════
-\bigskip \noindent \bigskip \noindent \bigskip \noindent
+\clearpage
+%\bigskip \noindent \bigskip \noindent \bigskip \noindent
 \section{Fate of Universe}
+%\bigskip \noindent
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.8\textwidth]{images/universe_evolution.png}
+    \caption{The evolution of scale factor with different combination of energy density.}
+    \label{fig:universe_evolution}
+\end{figure}
+
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.45\textwidth]{images/universe_evolution_3.png}
+    \caption{The evolution of scale factor with different combination of energy density.}
+    \label{fig:universe_evolution_3}
+\end{figure}
+
 % different combination explain
-\begin{foundation}
-\end{foundation}
+%\begin{foundation}
+%\end{foundation}
+
 
 % different combination result
-\begin{theory}
-\end{theory}
+%\begin{theory}
+%\end{theory}
 
-\bigskip \noindent
+\clearpage
+%\bigskip \noindent
 \begin{extra}
     So, what is the fate of our universe? \\
 
@@ -781,5 +984,20 @@ At the late 1990s, the SCDM model is challenged by the acceleration of universe,
         \end{cases}
     \]
 
-    Thus, our universe is dominated by the cosmological constant, and the scale factor will grow exponentially in the future, which means the universe will expand forever and become colder and darker, which is called the "Big Freeze" scenario. \\
+    Thus, our universe is dominated by the cosmological constant, and the scale factor will grow exponentially in the future, which means the universe will expand forever and become colder and darker, which is called the "Big Freeze" scenario.
 \end{extra}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.5\textwidth]{images/energy_density_budget.png}
+    \caption{The energy density budget of our universe.}
+    \label{fig:energy_density_budget}
+\end{figure}
+
+\bigskip \noindent
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.55\textwidth]{images/universe_evolution_2.png}
+    \caption{The evolution of scale factor of our universe.}
+    \label{fig:universe_evolution}
+\end{figure}
