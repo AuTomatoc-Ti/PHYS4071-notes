@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber main"] 1773902765.0423 "main.bcf" "main.bbl" "main" 1774801653.29594 0
-  "main.bcf" 1774801652.87457 107836 d1f6c503cec8cd464c159b7cc781d432 "pdflatex"
+["biber main"] 1773902765.0423 "main.bcf" "main.bbl" "main" 1774802539.19122 0
+  "main.bcf" 1774802538.98951 107836 d1f6c503cec8cd464c159b7cc781d432 "pdflatex"
   "references.bib" 1773671425.748 679 1a04154e98c2050d93c421e9d776d686 ""
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1774801647.00901 "main.tex" "main.pdf" "main" 1774801653.29628 0
+["pdflatex"] 1774802532.55871 "main.tex" "main.pdf" "main" 1774802539.19161 0
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1136849721 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -263,15 +263,15 @@
   "chapters/appendix.tex" 1774687915.63832 14165 f15ebe6cfa9f3d0f81b5fc049d66776a ""
   "chapters/ch01_fundamentals.tex" 1774678663.72228 26218 bf58a89dc2c35be22f98d3dfee7d9b2b ""
   "chapters/ch02_Hubble_law_and_cosmological_redshift.tex" 1774801571.59216 30740 672d167f47c257ae000e44c479fcdcbc ""
-  "chapters/ch03_cosmic_evolution.tex" 1774801644.61538 60842 fadd6989215af07ba62aa4b8d74872fe ""
+  "chapters/ch03_cosmic_evolution.tex" 1774802288.87896 60844 d323636ce63b970b8c25e5b50194c7a7 ""
   "chapters/ch04_standard_model.tex" 1774678746.93787 12242 cf2a674ffe9475d5a3613f8fdca46c76 ""
   "chapters/ch05_thermodynamics_and_primordial_soup.tex" 1774686814.29995 65502 556acf843d43355b5c89adb3a3335451 ""
   "chapters/ch06_Big_Bang_nucleosynthesis.tex" 1774678862.49262 29539 62da7b9558bef200a8ccf995e6c91d20 ""
   "chapters/intro.tex" 1774686359.97775 10892 c91d4b717fbdd6682b504c62d9e0bb68 ""
   "chapters/questions.tex" 1774690100.44408 1325 c666c9d39e1cd7b5c7f1f937393c9b6f ""
   "chapters/questions/q_ch01_fundamentals.tex" 1774689566.57033 7568 04c775dee2f889fe6c4e2fc6a8295729 ""
-  "chapters/questions/q_ch02_hubble_law_and_redshift.tex" 1774796111.68027 4024 343c95c6fff7c11e470283f50783e9e6 ""
-  "chapters/questions/q_ch03_cosmic_evolution.tex" 1774689479.45021 4456 bcb36448abd6cbd2eb4e69a06ab1a36f ""
+  "chapters/questions/q_ch02_hubble_law_and_redshift.tex" 1774802053.3263 5695 a82f64e216371c2eda298af6bc8f2486 ""
+  "chapters/questions/q_ch03_cosmic_evolution.tex" 1774802190.24275 7980 7ba2db22caf0f66c889b6d4517e8a76e ""
   "chapters/questions/q_ch04_standard_model.tex" 1774689479.46022 3129 e9aca68dff413d07109a9aefbb9bbff0 ""
   "chapters/questions/q_ch05_thermo_and_primordial_soup.tex" 1774689479.4714 4023 62b2c0250f601fe65af8ba5eabad1d46 ""
   "chapters/questions/q_ch06_big_bang_nucleosynthesis.tex" 1774689479.48435 4221 cba684f475ba8eb861e11b195012634a ""
@@ -293,12 +293,12 @@
   "images/universe_evolution.png" 1774723003.76484 757297 224958546c16d20f4b0aa0aa62e91708 ""
   "images/universe_evolution_2.png" 1774773105.75897 786377 292aeddda7243d1b771c93d57f91c214 ""
   "images/universe_evolution_3.png" 1774783004.9567 346275 faa3ee519acf57e5e9dfb973953a9408 ""
-  "main.aux" 1774801652.86976 23965 8855bc44fd230a54dd16ebe803fe3de9 "pdflatex"
+  "main.aux" 1774802538.98507 24135 cc14715fcd66817dc08ae876910aaec9 "pdflatex"
   "main.bbl" 1773902770.82213 3615 9b37762d68fb75a24e61a514ca3ca637 "biber main"
-  "main.out" 1774801652.87181 21211 c8fdee9e7cab7e8a38eaf747b218cc1b "pdflatex"
-  "main.run.xml" 1774801652.87534 2339 1ed341041bd1fbe5a1f3b1992463a6cc "pdflatex"
+  "main.out" 1774802538.98696 21211 c8fdee9e7cab7e8a38eaf747b218cc1b "pdflatex"
+  "main.run.xml" 1774802538.99024 2339 1ed341041bd1fbe5a1f3b1992463a6cc "pdflatex"
   "main.tex" 1774622268.85773 6711 e3ea3b9c24953b1758b3ee93d40d24ff ""
-  "main.toc" 1774801652.87543 10255 3dbe66c744550e2ab08ffd7c2e0beb4b "pdflatex"
+  "main.toc" 1774802538.99031 10255 49b95924e8cb1ab031c1b524c9225532 "pdflatex"
   "preamble.tex" 1774686359.5372 14010 f12fdc68b1b126321a770ff73050c267 ""
   (generated)
   "main.aux"

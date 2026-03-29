@@ -46,6 +46,40 @@
     $\Lambda=1.1\times10^{-52}\,\mathrm{m^{-2}}$.
     \item Estimate $F_\Lambda/F_G$ at $r=1\,\mathrm{AU}$.
   \end{enumerate}
+
+  \item \label{q:3.4} \textbf{Redshift-Form $\Lambda$CDM and Equality Epochs}
+
+  Assume a near-flat universe with
+  \[
+    \Omega_{m0}=0.315,\qquad
+    \Omega_{r0}=9.4\times10^{-5},\qquad
+    \Omega_{\Lambda0}=0.685,
+  \]
+  and ignore curvature in this exercise.
+  \begin{enumerate}[label=(\alph*)]
+    \item Write $E(z)\equiv H(z)/H_0$.
+    \item Find the redshift $z_{\mathrm{eq}}^{(mr)}$ where matter and radiation are equal.
+    \item Find the redshift $z_{\mathrm{eq}}^{(m\Lambda)}$ where matter and cosmological constant are equal.
+  \end{enumerate}
+
+  \item \label{q:3.5} \textbf{Onset of Accelerated Expansion}
+
+  Assume a flat universe with negligible radiation and
+  \[
+    \Omega_{m0}=0.315,\qquad \Omega_{\Lambda0}=0.685.
+  \]
+  \begin{enumerate}[label=(\alph*)]
+    \item Starting from
+    \[
+      q(z)=\frac{\frac12\Omega_{m0}(1+z)^3-\Omega_{\Lambda0}}{\Omega_{m0}(1+z)^3+\Omega_{\Lambda0}},
+    \]
+    find the transition redshift $z_{\mathrm{acc}}$ where expansion changes from deceleration to acceleration.
+    \item Compare $z_{\mathrm{acc}}$ with the matter--$\Lambda$ equality redshift
+    \[
+      z_{\mathrm{eq}}^{(m\Lambda)}=\left(\frac{\Omega_{\Lambda0}}{\Omega_{m0}}\right)^{1/3}-1,
+    \]
+    and explain physically why the two redshifts are different.
+  \end{enumerate}
 \end{enumerate}
 
 \bigskip
@@ -149,6 +183,90 @@
     \frac{F_\Lambda}{F_G}\approx 3\times10^{-23}.
   \]
   So $\Lambda$ is negligible for planetary dynamics.
+\end{enumerate}
+
+\subsubsection*{Solution 3.4: Redshift-Form $\Lambda$CDM and Equality Epochs}
+
+\begin{enumerate}[label=(\alph*)]
+  \item Ignoring curvature,
+  \[
+    E(z)=\sqrt{\Omega_{m0}(1+z)^3+\Omega_{r0}(1+z)^4+\Omega_{\Lambda0}}.
+  \]
+  With given numbers:
+  \[
+    E(z)=\sqrt{0.315(1+z)^3+9.4\times10^{-5}(1+z)^4+0.685}.
+  \]
+
+  \item Matter--radiation equality:
+  \[
+    \Omega_{m0}(1+z)^3=\Omega_{r0}(1+z)^4
+    \Rightarrow
+    1+z_{\mathrm{eq}}^{(mr)}=\frac{\Omega_{m0}}{\Omega_{r0}}.
+  \]
+  Therefore
+  \[
+    1+z_{\mathrm{eq}}^{(mr)}=\frac{0.315}{9.4\times10^{-5}}\approx 3351
+    \Rightarrow
+    z_{\mathrm{eq}}^{(mr)}\approx 3.35\times10^3.
+  \]
+
+  \item Matter--$\Lambda$ equality:
+  \[
+    \Omega_{m0}(1+z)^3=\Omega_{\Lambda0}
+    \Rightarrow
+    1+z_{\mathrm{eq}}^{(m\Lambda)}=\left(\frac{\Omega_{\Lambda0}}{\Omega_{m0}}\right)^{1/3}.
+  \]
+  Hence
+  \[
+    1+z_{\mathrm{eq}}^{(m\Lambda)}=\left(\frac{0.685}{0.315}\right)^{1/3}\approx 1.295
+    \Rightarrow
+    z_{\mathrm{eq}}^{(m\Lambda)}\approx 0.295.
+  \]
+\end{enumerate}
+
+\subsubsection*{Solution 3.5: Onset of Accelerated Expansion}
+
+\begin{enumerate}[label=(\alph*)]
+  \item The transition occurs at $q(z_{\mathrm{acc}})=0$, so the numerator must vanish:
+  \[
+    \frac12\Omega_{m0}(1+z_{\mathrm{acc}})^3-\Omega_{\Lambda0}=0.
+  \]
+  Hence
+  \[
+    (1+z_{\mathrm{acc}})^3 = \frac{2\Omega_{\Lambda0}}{\Omega_{m0}}
+    \Rightarrow
+    z_{\mathrm{acc}} = \left(\frac{2\Omega_{\Lambda0}}{\Omega_{m0}}\right)^{1/3}-1.
+  \]
+  Numerically,
+  \[
+    z_{\mathrm{acc}}=\left(\frac{2\times0.685}{0.315}\right)^{1/3}-1
+    = (4.349)^{1/3}-1
+    \approx 1.633-1
+    \approx 0.633.
+  \]
+
+  \item Matter--$\Lambda$ equality is
+  \[
+    z_{\mathrm{eq}}^{(m\Lambda)}=\left(\frac{\Omega_{\Lambda0}}{\Omega_{m0}}\right)^{1/3}-1
+    \approx 0.295.
+  \]
+  Therefore
+  \[
+    z_{\mathrm{acc}}\approx 0.633 > z_{\mathrm{eq}}^{(m\Lambda)}\approx 0.295.
+  \]
+  This is physically expected: acceleration requires
+  \[
+    \rho+3p<0.
+  \]
+  For matter plus $\Lambda$,
+  \[
+    \rho+3p = \rho_m + \rho_\Lambda + 3(0-\rho_\Lambda)=\rho_m-2\rho_\Lambda.
+  \]
+  So the threshold is not $\rho_m=\rho_\Lambda$, but
+  \[
+    \rho_m=2\rho_\Lambda,
+  \]
+  which happens at higher redshift.
 \end{enumerate}
 
 

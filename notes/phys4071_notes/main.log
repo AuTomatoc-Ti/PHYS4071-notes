@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2026.2.19)  30 MAR 2026 00:27
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2026.2.19)  30 MAR 2026 00:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1167,11 +1167,7 @@ LaTeX Font Info:    Trying to load font information for T1+ppl on input line 12
 .
 (/usr/local/texlive/2025/texmf-dist/tex/latex/psnfss/t1ppl.fd
 File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
-) (./main.aux
-
-LaTeX Warning: Label `fig:universe_evolution' multiply defined.
-
-)
+) (./main.aux)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
@@ -1209,7 +1205,8 @@ LaTeX Info: Redefining \showhyphens on input line 12.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
- (/usr/local/texlive/2025/texmf-dist/tex/latex/microtype/mt-ppl.cfg
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/microtype/mt-ppl.cfg
 File: mt-ppl.cfg 2005/11/16 v1.6 microtype config. file: Palatino (RS)
 )
 *geometry* driver: auto-detecting
@@ -3210,41 +3207,47 @@ Chapter 7.
 
 [130
 
-]) (./chapters/questions/q_ch03_cosmic_evolution.tex
-
-[131]
-
-[132
-
 ]
 
-[133]) (./chapters/questions/q_ch04_standard_model.tex
+[131]) (./chapters/questions/q_ch03_cosmic_evolution.tex
+
+[132]
+
+[133
+
+]
 
 [134]
 
-[135
+[135]
+
+[136]) (./chapters/questions/q_ch04_standard_model.tex
+
+[137]
+
+[138
 
 ]) (./chapters/questions/q_ch05_thermo_and_primordial_soup.tex
-
-[136]
-
-[137
-
-]
-
-[138]) (./chapters/questions/q_ch06_big_bang_nucleosynthesis.tex
 
 [139]
 
 [140
 
+]
+
+[141]) (./chapters/questions/q_ch06_big_bang_nucleosynthesis.tex
+
+[142]
+
+[143
+
 ])) (./chapters/appendix.tex
 
-[141]
+[144]
 Appendix A.
 
 
-[142
+[145
 
 ]
 Appendix B.
@@ -3261,12 +3264,12 @@ it/12 A [] B \OMS/zplm/m/n/12 ^^F [] \OML/zplm/m/it/12 A [] B$\T1/ppl/m/n/12 (-
 
 
 
-[143
+[146
 
 
 ]
 
-[144
+[147
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 131--132
@@ -3285,18 +3288,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 138--140
 
 
 
-[145
+[148
 
 ]
 Appendix C.
 
 
-[146
+[149
 
 
 ]
 
-[147
+[150
 
 ]
 Overfull \hbox (23.4547pt too wide) in paragraph at lines 269--291
@@ -3305,7 +3308,7 @@ Overfull \hbox (23.4547pt too wide) in paragraph at lines 269--291
 
 
 
-[148
+[151
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 327--328
@@ -3314,11 +3317,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 327--328
 
 
 
-[149
+[152
 
 ])
 
-[150
+[153
 
 
 ] (./main.aux)
@@ -3326,10 +3329,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 327--328
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
-
-
-LaTeX Warning: There were multiply-defined labels.
-
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: C8FDEE9E7CAB7E8A38EAF747B218CC1B;21211.
 Package logreq Info: Writing requests to 'main.run.xml'.
@@ -3337,10 +3336,10 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 41639 strings out of 473190
- 819565 string characters out of 5715800
- 1704763 words of memory out of 5000000
- 63172 multiletter control sequences out of 15000+600000
+ 41665 strings out of 473190
+ 819788 string characters out of 5715800
+ 1704942 words of memory out of 5000000
+ 63176 multiletter control sequences out of 15000+600000
  667735 words of font info for 573 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  92i,20n,99p,1036b,1437s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -3355,10 +3354,10 @@ cal/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb></usr/loca
 l/texlive/2025/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texli
 ve/2025/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2025
 /texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (150 pages, 6687223 bytes).
+Output written on main.pdf (153 pages, 6694753 bytes).
 PDF statistics:
- 1725 PDF objects out of 1728 (max. 8388607)
- 1379 compressed objects within 14 object streams
- 444 named destinations out of 1000 (max. 500000)
+ 1762 PDF objects out of 2073 (max. 8388607)
+ 1412 compressed objects within 15 object streams
+ 466 named destinations out of 1000 (max. 500000)
  139903 words of extra memory for PDF output out of 154059 (max. 10000000)
 
