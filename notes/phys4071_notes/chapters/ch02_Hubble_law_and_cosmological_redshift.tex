@@ -505,4 +505,80 @@ Now we can finding the relationship between the redshift $z$ and the distance $D
 
     The difference results of $H_0$ obtained by two methods is known as the Hubble tension, which is one of the biggest unsolved problems in cosmology.
 \end{extra}
+
+
+% -─────────────────────────────────────────────────────────────────────────────
 \clearpage
+\subsection{Luminousity Distance}
+\begin{intuition}
+    In real observations, we cannot directly measure the geometric distance of a distant galaxy, what we directly measure is its brightness (flux). \\
+
+    So we define \textbf{luminousity distance}: the distance an object \emph{appears} to have if we infer distance only from how bright it looks. \\
+
+    In a static Euclidean world, brightness only drops because light is spread over larger area ($\propto 1/4\pi r^2$), so we can directly infer distance $r$. \\
+
+    But in an expanding universe, light is dimmed not only by geometric spreading, but also by redshift effects during travel. Therefore this brightness-based distance is not exactly the same as simple geometric distance, and that is why we introduce $d_L$ as a separate and useful distance definition in cosmology.
+\end{intuition}
+
+\bigskip \noindent
+\begin{foundation}
+  Start from the observational definition of luminousity distance:
+  \[
+    F \equiv \frac{L}{4\pi d_L^2},
+  \]
+  where $L$ is the source intrinsic luminousity (energy emitted per unit source proper time), and $F$ is the observed flux (energy received per unit detector area per unit observer time). \\
+
+  In FLRW, a source at comoving coordinate $\chi$ has present-day proper radius $a_0\chi$ from us, so photons are spread over area
+  \[
+    A = 4\pi (a_0\chi)^2.
+  \]
+  With $a_0=1$, this becomes $A=4\pi\chi^2$. \\
+
+  The key point is that cosmological expansion changes both photon energy and arrival rate:
+  \begin{enumerate}[label=(\roman*)]
+    \item \textbf{Photon energy redshift:} from $1+z = \lambda_{obs}/\lambda_{emit} = \nu_{emit}/\nu_{obs}$,
+    each photon has
+    \[
+      E_{obs} = h\nu_{obs} = \frac{h\nu_{emit}}{1+z} = \frac{E_{emit}}{1+z}.
+    \]
+    So detected energy gets one suppression factor $1/(1+z)$.
+
+    \item \textbf{Arrival-time dilation:} from previous section,
+    \[
+      \frac{\Delta t_{obs}}{\Delta t_{emit}} = \frac{a_0}{a_{emit}} = 1+z.
+    \]
+    So the same emitted wave train is received over a longer observer interval by factor $(1+z)$, giving another suppression factor $1/(1+z)$ in energy-per-time.
+  \end{enumerate}
+
+  Therefore, compared with naive inverse-square spreading, observed flux is reduced by
+  \[
+    \frac{1}{(1+z)^2} = \frac{1}{1+z}\times\frac{1}{1+z}.
+  \]
+  Hence
+  \begin{align*}
+    F
+    &= \frac{L}{4\pi (a_0\chi)^2}\cdot\frac{1}{(1+z)^2} \\
+    &= \frac{L}{4\pi\left[(1+z)a_0\chi\right]^2}.
+  \end{align*}
+  Compare with $F=L/(4\pi d_L^2)$, we identify
+  \[
+    d_L=(1+z)a_0\chi.
+  \]
+  Using the chapter convention $a_0=1$:
+  \[
+    \boxed{d_L=(1+z)\chi.}
+  \]
+\end{foundation}
+
+\bigskip\noindent
+\begin{theory}
+    The luminousity distance $d_L$ is related to the comoving distance $\chi$ and the redshift $z$ by the formula:
+    \[
+        d_L = (1+z) \chi
+    \]
+\end{theory}
+
+\bigskip\noindent
+\begin{intuition}
+    luminousity distance is not just geometric distance. It is the ``effective distance'' inferred from brightness, and expansion makes sources dimmer than pure geometry predicts. One $(1+z)$ comes from lower energy per photon, and one $(1+z)$ comes from slower photon arrival rate; together they produce the extra dimming encoded in $d_L=(1+z)\chi$. 
+\end{intuition}
