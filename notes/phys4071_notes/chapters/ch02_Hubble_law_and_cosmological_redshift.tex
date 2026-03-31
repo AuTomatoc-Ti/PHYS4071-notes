@@ -598,3 +598,233 @@ Now we can finding the relationship between the redshift $z$ and the distance $D
         \end{cases}
     \]
 \end{importantnote}
+
+% -─────────────────────────────────────────────────────────────────────────────
+\clearpage
+\section{Cosmological Horizons}
+\subsection{Hubble Horizon}
+
+\begin{intuition}
+    The Hubble horizon is the distance scale where the recession speed from cosmic expansion equals the speed of light. \\
+
+    If a galaxy is at proper distance $D$, its recession velocity is $v_{rec}=H(t)D$. So there is a special distance where $v_{rec}=c$. \\
+
+    This gives us a useful characteristic scale of the universe at each epoch, but it is not exactly the same as a strict causal horizon.
+\end{intuition}
+
+\bigskip\noindent
+\begin{foundation}
+    From Hubble's law in proper distance form:
+    \[
+        v_{rec}(t)=H(t)D_{proper}(t)
+    \]
+    define the Hubble horizon by $v_{rec}=c$:
+    \[
+        c=H(t)D_H(t)
+        \quad \Rightarrow \quad
+        D_H(t)=\frac{c}{H(t)}
+    \]
+    If we use chapter natural unit $c=1$:
+    \[
+        D_H(t)=\frac{1}{H(t)}
+    \]
+    and corresponding comoving Hubble radius is
+    \[
+        \chi_H(t)=\frac{D_H(t)}{a(t)}=\frac{c}{a(t)H(t)}.
+    \]
+\end{foundation}
+
+\bigskip\noindent
+\begin{theory}
+    Calculation on \textbf{Hubble horizon}:
+    \[
+        D_H(t)=\frac{c}{H(t)} \qquad (c=1 \Rightarrow D_H=1/H)
+    \]
+    and in comoving coordinate:
+    \[
+        \chi_H(t)=\frac{c}{a(t)H(t)}.
+    \]
+\end{theory}
+
+\bigskip\noindent
+\begin{remark}
+    Hubble horizon is a \textbf{kinematic scale}, not always a strict causal boundary. In many cosmological models, photons can cross the Hubble horizon when $H(t)$ changes with time.
+\end{remark}
+
+
+
+% -─────────────────────────────────────────────────────────────────────────────
+\bigskip\noindent \bigskip\noindent \bigskip\noindent
+\subsection{Event Horizon}
+\begin{intuition}
+    The cosmological event horizon answers a future question: \textbf{which regions can ever send a signal to us, even if we wait forever?} \\
+
+    If a source is currently too far away, light emitted \emph{now} may never reach us because expansion can stretch space too fast at late time.
+\end{intuition}
+
+\bigskip\noindent
+\begin{foundation}
+    For radial light in FLRW, $ds^2=0$ gives:
+    \[
+        d\chi=\frac{dt}{a(t)}.
+    \]
+    At cosmic time $t$, the maximum comoving distance that can still communicate with us in the infinite future is
+    \[
+        \chi_{eh}(t)=\int_t^{\infty}\frac{dt'}{a(t')}.
+    \]
+    Therefore the proper event-horizon distance at time $t$ is
+    \[
+        D_{eh}(t)=a(t)\chi_{eh}(t)=a(t)\int_t^{\infty}\frac{dt'}{a(t')}.
+    \]
+\end{foundation}
+
+\bigskip\noindent
+\begin{theory}
+    Calculation on \textbf{event horizon}:
+    \[
+        \chi_{eh}(t)=\int_t^{\infty}\frac{dt'}{a(t')},
+        \qquad
+        D_{eh}(t)=a(t)\int_t^{\infty}\frac{dt'}{a(t')}.
+    \]
+    Event horizon exists only if the integral converges.
+\end{theory}
+
+
+\begin{importantnote}
+    The event horizon here is not the same things as the event horizon of a black hole we usually talk about in general relativity, but they are similar concepts. The event horizon of a black hole is the boundary beyond which nothing can escape from the black hole, while the cosmological event horizon is the boundary beyond which events cannot affect an observer at a given time.
+\end{importantnote}
+
+\bigskip\noindent
+\begin{extra}
+    In a universe with late-time accelerated expansion (e.g. with dark energy domination), an event horizon is expected. In contrast, in a purely decelerating universe, this horizon may not exist.
+\end{extra}
+
+
+
+% -─────────────────────────────────────────────────────────────────────────────
+\bigskip\noindent \bigskip\noindent \bigskip\noindent
+\subsection{Particle Horizon}
+
+\begin{intuition}
+    The particle horizon answers a past question: \textbf{how far can we see by now?} \\
+
+    Because the universe has finite age, light has only had finite time to travel since the Big Bang. So there is a largest observable distance at time $t$.
+\end{intuition}
+
+\bigskip\noindent
+\begin{foundation}
+    Again use radial null geodesic in FLRW:
+    \[
+        d\chi=\frac{dt}{a(t)}.
+    \]
+    The largest comoving distance from which light could have reached us by time $t$ is
+    \[
+        \chi_{ph}(t)=\int_{0}^{t}\frac{dt'}{a(t')}.
+    \]
+    Thus the proper particle-horizon distance is
+    \[
+        D_{ph}(t)=a(t)\chi_{ph}(t)=a(t)\int_{0}^{t}\frac{dt'}{a(t')}.
+    \]
+\end{foundation}
+
+\clearpage
+%\bigskip\noindent
+\begin{theory}
+    Calculation on \textbf{particle horizon}:
+    \[
+        \chi_{ph}(t)=\int_{0}^{t}\frac{dt'}{a(t')},
+        \qquad
+        D_{ph}(t)=a(t)\int_{0}^{t}\frac{dt'}{a(t')}.
+    \]
+    At present time $t_0$:
+    \[
+        \chi_{ph,0}=\int_{0}^{t_0}\frac{dt'}{a(t')},
+        \qquad
+        D_{ph,0}=a_0\chi_{ph,0}=\chi_{ph,0}\quad(a_0=1).
+    \]
+\end{theory}
+
+\bigskip\noindent
+\begin{remark}
+    Particle horizon is about \textbf{past light cone} (what has been observable), while event horizon is about \textbf{future light cone} (what can ever become observable).
+\end{remark}
+
+\bigskip\noindent
+\begin{example}{Numerical Comparison of Three Horizons in Our Universe}{three-horizons-lcdm}
+    Use a flat $\Lambda$CDM background with present parameters close to Planck values:
+    \[
+        H_0\approx 67.66\,\mathrm{km\,s^{-1}\,Mpc^{-1}},\qquad
+        \Omega_m^0\approx 0.315,\qquad
+        \Omega_\Lambda^0\approx 0.685.
+    \]
+
+    (a). Estimate present-day values of the three horizons. \\
+    (b). Compare their order and explain the physical meaning. \\
+    (c). In the limit $t\to\infty$, discuss what happens to the three horizons and whether the order swaps. \\
+
+    \bigskip\textbf{Solution.}\quad \\
+    (a). \textbf{Present-day values} ($t=t_0$): \\
+    \textit{Hubble horizon}
+    \[
+        D_H(t_0)=\frac{c}{H_0}
+        \approx \frac{299792\,\mathrm{km/s}}{67.66\,\mathrm{km\,s^{-1}\,Mpc^{-1}}}
+        \approx 4.43\,\mathrm{Gpc}
+        \approx 14.4\,\mathrm{Gly}.
+    \]
+
+    \textit{Particle horizon}
+    \[
+        D_{ph}(t_0)=a_0\int_0^{t_0}\frac{dt'}{a(t')}
+        \quad (a_0=1).
+    \]
+    Numerically (for the above $\Lambda$CDM parameters):
+    \[
+        D_{ph}(t_0)\approx 14.2\,\mathrm{Gpc}\approx 46.3\,\mathrm{Gly}.
+    \]
+
+    \textit{Event horizon}
+    \[
+        D_{eh}(t_0)=a_0\int_{t_0}^{\infty}\frac{dt'}{a(t')}
+        \quad (a_0=1).
+    \]
+    Numerically:
+    \[
+        D_{eh}(t_0)\approx 5.0\,\mathrm{Gpc}\approx 16.3\,\mathrm{Gly}.
+    \]
+
+    Therefore, at present we have approximately
+    \[
+        D_{ph}(t_0) > D_{eh}(t_0) > D_H(t_0).
+    \] \\
+
+    (b). \textbf{Physical intuition for this order}: \\
+    $D_{ph}$ is largest because it accumulates all past light-travel from the Big Bang until now. \\
+    $D_{eh}$ is smaller because it is limited by future accelerated expansion, so only a finite region can ever communicate with us. \\
+    $D_H$ is a local expansion scale $c/H_0$, so it is typically smaller than the full causal-history scale $D_{ph}$. \\
+
+    (c). \textbf{Future limit} $t\to\infty$ in our $\Lambda$-dominated universe: \\
+    At late time, $a(t)\sim e^{H_\Lambda t}$ with
+    \[
+        H_\Lambda = H_0\sqrt{\Omega_\Lambda^0}.
+    \]
+    So
+    \[
+        D_H(t)\to \frac{c}{H_\Lambda},
+        \qquad
+        D_{eh}(t)\to \frac{c}{H_\Lambda},
+    \]
+    i.e. Hubble horizon and event horizon approach the same constant (about $17\,\mathrm{Gly}$ for the above parameters). \\
+    Meanwhile
+    \[
+        D_{ph}(t)=a(t)\int_0^t\frac{dt'}{a(t')}\to\infty,
+    \]
+    because $a(t)$ keeps growing exponentially while the comoving particle-horizon integral approaches a finite constant. \\
+
+    Hence the asymptotic order is
+    \[
+        D_{ph}(\infty)\gg D_{eh}(\infty)=D_H(\infty).
+    \]
+    So in our universe there is \textbf{no full order swap}; instead, the present inequality $D_{eh}>D_H$ gradually shrinks to equality.
+\end{example}
+
+
