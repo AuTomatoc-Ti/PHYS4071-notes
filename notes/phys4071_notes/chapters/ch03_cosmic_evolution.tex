@@ -1193,8 +1193,6 @@ We have mentioned that the $\Lambda$CDM model is one of the model that using cos
 
 
 
-
-
 % =══════════════════════════════════════════════════════════════════════════════
 \clearpage
 %\bigskip \noindent \bigskip \noindent \bigskip \noindent
@@ -1223,6 +1221,152 @@ We have mentioned that the $\Lambda$CDM model is one of the model that using cos
 % different combination result
 %\begin{theory}
 %\end{theory}
+
+\clearpage
+\begin{example}{Matter-Only ($\Lambda=0$) Universe: $k>0,\ k=0,\ k<0$ Cases}{}
+    Assume a matter-only universe ($p=0$) and $\Lambda=0$. Recall the 1st Friedmann equation:
+    \[
+        H^2 = \frac{\dot{a}^2}{a^2} = \frac{8\pi G}{3}\rho - \frac{k}{a^2}
+    \]
+    and use $\rho(a)=\rho_* a^{-3}$, where $\rho_*$ is a constant.
+
+    (a). For each curvature case $k>0$, $k=0$, $k<0$, calculate the late-time behavior of $\dot{a}$ (as $t\to\infty$, or explain if that limit does not exist) and describe the physical meaning. \\
+    (b). For each case, solve the scale factor function $a(t)$. \\
+    (c). In the $k>0$ case, find $a_{\max}$ and $t_f$ where $a$ reaches maximum and then returns to zero; explain the physical meaning of $t_f$. \\
+
+    \bigskip\textbf{Solution.}\quad \\
+    Define:
+    \[
+        A \equiv \frac{8\pi G}{3}\rho_* > 0
+    \]
+    Then:
+    \[
+        \dot{a}^2 = \frac{A}{a} - k
+    \]
+
+    (a). Late-time behavior of $\dot{a}$:
+    \begin{itemize}
+        \item \textbf{$k=0$:}
+        \[
+            \dot{a}^2 = \frac{A}{a} \Rightarrow \dot{a} \to 0 \quad (t\to\infty)
+        \]
+        Physical meaning: expansion never stops, but keeps decelerating and becomes slower and slower.
+
+        \item \textbf{$k<0$} (write $k=-|k|$):
+        \[
+            \dot{a}^2 = \frac{A}{a} + |k| \Rightarrow \dot{a} \to \sqrt{|k|} \quad (t\to\infty)
+        \]
+        Physical meaning: expansion continues forever and asymptotically approaches a constant expansion speed (curvature-dominated coasting).
+
+        \item \textbf{$k>0$:}
+        \[
+            \dot{a}^2 = \frac{A}{a} - k
+        \]
+        There is a turning point $\dot{a}=0$; the universe reaches a maximum size and then recollapses. So a physical $t\to\infty$ branch does not exist.
+    \end{itemize}
+
+    (b). Scale factor solutions (step-by-step):
+    \begin{itemize}
+        \item \textbf{$k=0$:}
+        Start from:
+        \[
+            \dot{a}^2 = \frac{A}{a}
+            \Rightarrow
+            \dot{a} = \frac{\sqrt{A}}{\sqrt{a}}
+            \Rightarrow
+            \sqrt{a}\,da = \sqrt{A}\,dt
+        \]
+        Integrate both sides:
+        \[
+            \int \sqrt{a}\,da = \int \sqrt{A}\,dt
+            \Rightarrow
+            \frac{2}{3}a^{3/2} = \sqrt{A}\,t + C
+        \]
+        Use Big Bang initial condition $a(0)=0$ so $C=0$:
+        \[
+            a^{3/2} = \frac{3}{2}\sqrt{A}\,t
+            \Rightarrow
+            a(t) = \left(\frac{3}{2}\sqrt{A}\,t\right)^{2/3} \propto t^{2/3}
+        \]
+
+        \item \textbf{$k>0$ (closed, parametric form):}
+        Start from
+        \[
+            \dot{a}^2 = \frac{A}{a} - k
+            \Rightarrow
+            dt = \frac{da}{\sqrt{A/a-k}} = \frac{\sqrt{a}\,da}{\sqrt{A-ka}}.
+        \]
+        Use substitution
+        \[
+            a = \frac{A}{2k}(1-\cos\eta)=\frac{A}{k}\sin^2\frac{\eta}{2},
+            \qquad
+            da = \frac{A}{2k}\sin\eta\,d\eta.
+        \]
+        Then
+        \[
+            \sqrt{a}=\sqrt{\frac{A}{k}}\sin\frac{\eta}{2},
+            \qquad
+            \sqrt{A-ka}=\sqrt{A}\cos\frac{\eta}{2},
+        \]
+        so
+        \[
+            dt
+            = \frac{\sqrt{a}\,da}{\sqrt{A-ka}}
+            = \frac{A}{2k^{3/2}}(1-\cos\eta)\,d\eta.
+        \]
+        Integrate and choose $t=0$ at $\eta=0$:
+        \[
+            t(\eta)=\frac{A}{2k^{3/2}}\int_0^{\eta}(1-\cos u)\,du
+            = \frac{A}{2k^{3/2}}(\eta-\sin\eta).
+        \]
+        Therefore
+        \[
+            a(\eta) = \frac{A}{2k}(1-\cos\eta), \qquad
+            t(\eta) = \frac{A}{2k^{3/2}}(\eta-\sin\eta), \quad 0\le\eta\le2\pi
+        \]
+
+        \item \textbf{$k<0$ (open, parametric form):}
+        Write $k=-|k|$, then
+        \[
+            \dot{a}^2 = \frac{A}{a} + |k|
+            \Rightarrow
+            dt = \frac{da}{\sqrt{A/a+|k|}} = \frac{\sqrt{a}\,da}{\sqrt{A+|k|a}}.
+        \]
+        Use substitution
+        \[
+            a = \frac{A}{2|k|}(\cosh\eta-1),
+            \qquad
+            da = \frac{A}{2|k|}\sinh\eta\,d\eta.
+        \]
+        From this substitution, one gets
+        \[
+            dt = \frac{A}{2|k|^{3/2}}(\cosh\eta-1)\,d\eta.
+        \]
+        Integrate and choose $t=0$ at $\eta=0$:
+        \[
+            t(\eta)=\frac{A}{2|k|^{3/2}}\int_0^{\eta}(\cosh u-1)\,du
+            = \frac{A}{2|k|^{3/2}}(\sinh\eta-\eta).
+        \]
+        Therefore
+        \[
+            a(\eta) = \frac{A}{2|k|}(\cosh\eta-1), \qquad
+            t(\eta) = \frac{A}{2|k|^{3/2}}(\sinh\eta-\eta), \quad \eta\ge0
+        \]
+    \end{itemize}
+
+    (c). For $k>0$:
+    \[
+        \dot{a}=0 \Rightarrow \frac{A}{a_{\max}}-k=0 \Rightarrow a_{\max}=\frac{A}{k}
+    \]
+    In the closed-universe parametric solution, recollapse to $a=0$ occurs at $\eta=2\pi$, hence:
+    \[
+        t_f = t(2\pi) = \frac{A\pi}{k^{3/2}}
+    \]
+    Physical meaning of $t_f$: it is the finite lifetime from Big Bang to Big Crunch for this matter-only, closed, $\Lambda=0$ universe.
+\end{example}
+
+
+
 
 \clearpage
 %\bigskip \noindent

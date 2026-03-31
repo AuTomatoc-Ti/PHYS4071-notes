@@ -38,6 +38,21 @@
     \]
     evaluate $g_*$ and $g_{*s}$ today.
   \end{enumerate}
+
+  \item \label{q:5.4} \textbf{Modified Neutrino Decoupling: Massive Photon Scenario}
+
+  Reconsider the neutrino-photon decoupling process (Question 5.3), but now examine a modified scenario where the photon has acquired a small mass (a pedagogical thought experiment). Before $e^+e^-$ annihilation, both neutrinos and the ``massive'' photon participate in the thermal bath alongside $e^\pm$ pairs. \textit{Note: Consider three families of neutrinos, as is standard in particle physics.}
+  
+  \begin{enumerate}[label=(\alph*)]
+    \item 
+    In the standard scenario (massless photon), count the degrees of freedom: photons ($g=2$), three neutrino families ($g_\nu=2$ each, so $3 \times 2 = 6$ total), and $e^\pm$ pairs ($g_{e^\pm}=4$). With the $\frac{7}{8}$ entropy weighting for fermions:
+    \[
+      g_{*s}^{\mathrm{before}} = 2 + \frac{7}{8}\times(6+4) = 2 + \frac{7}{8}\times 10 = 2 + 8.75 = 10.75.
+    \]
+    Now consider a ``massive photon'' scenario where the photon, as a massive vector boson, has $g_\gamma = 3$ degrees of freedom (one longitudinal + two transverse modes). Modify the calculation to find $g_{*s,1}^{\mathrm{before}}$ (massive photon case) and $g_{*s,2}^{\mathrm{after}}$ (after annihilation, when only the photon remains). Then derive the new neutrino-photon temperature ratio $T_\nu/T_\gamma$ under these conditions.
+    
+    \item If the baryon-to-photon ratio today is $\eta \equiv n_B/n_\gamma = 2.0 \times 10^{-10}$ (where $n_\gamma \propto T^3$), estimate the present-day CMB temperature $T_{\gamma}^{(0)}$ in this modified scenario and compare with the standard value of $T_{\gamma}^{(0)} \approx 2.725\,\mathrm{K}$. (Hint: Use $n_\gamma \approx 0.2437\, T_\gamma^3$ in natural units.)
+  \end{enumerate}
 \end{enumerate}
 
 \bigskip
@@ -121,6 +136,72 @@
   \]
   So today $g_*\neq g_{*s}$ because $T_\nu\neq T_\gamma$.
   \textit{Rigorous note:} beyond the instantaneous-decoupling approximation, small corrections from non-instantaneous decoupling and QED effects exist (often encoded via $N_\mathrm{eff}\simeq 3.046$), but they do not change the leading-order conclusion.
+\end{enumerate}
+
+\subsubsection*{Solution 5.4: Modified Neutrino Decoupling: Massive Photon Scenario}
+
+\begin{enumerate}[label=(\alph*)]
+  \item \textbf{Standard scenario (massless photon) with three neutrino families:}
+  
+  Count the relativistic degrees of freedom before $e^+e^-$ annihilation:
+  \begin{itemize}
+    \item Photons: $g_\gamma=2$
+    \item Three neutrino families: each with $g_\nu=2$, so $3 \times 2 = 6$ total
+    \item Electron-positron pairs: $g_{e^\pm}=4$
+  \end{itemize}
+  
+  For entropy, fermions contribute with a factor $\frac{7}{8}$ relative to bosons:
+  \[
+    g_{*s}^{\mathrm{before,std}} = 2 + \frac{7}{8}\times(6+4) = 2 + \frac{7}{8}\times 10 = 2 + 8.75 = 10.75.
+  \]
+  
+  After $e^+e^-$ annihilation, only photons remain (massless case):
+  \[
+    g_{*s}^{\mathrm{after,std}} = 2.
+  \]
+  
+  \textbf{Massive photon scenario:}
+  
+  A massive photon (as a massive vector boson) has three polarization states instead of two: one longitudinal plus two transverse modes, so $g_\gamma^{\mathrm{massive}} = 3$.
+  
+  Before annihilation:
+  \[
+    g_{*s,1}^{\mathrm{before}} = 3 + \frac{7}{8}\times(6+4) = 3 + 8.75 = 11.75.
+  \]
+  
+  After annihilation (only the massive photon):
+  \[
+    g_{*s,2}^{\mathrm{after}} = 3.
+  \]
+  
+  From entropy conservation, the neutrino-photon temperature ratio is:
+  \[
+    \frac{T_\nu}{T_\gamma} = \left(\frac{g_{*s,2}^{\mathrm{after}}}{g_{*s,1}^{\mathrm{before}}}\right)^{1/3} = \left(\frac{3}{11.75}\right)^{1/3} = \left(0.2553\right)^{1/3} \approx 0.635.
+  \]
+  
+  For comparison, the standard result with two families (as used in earlier solutions) would give $(2/10.75)^{1/3} \approx 0.613$, and the three-family standard massless case gives $(2/10.75)^{1/3} \approx 0.613$ as well. The massive photon scenario yields a slightly higher temperature ratio due to the additional photon polarization state after annihilation.
+
+  \item The photon number density in thermal equilibrium scales as:
+  \[
+    n_\gamma(T) = 0.2437\, T_\gamma^3 \quad \text{(in natural units)}.
+  \]
+  
+  For baryon-to-photon ratio $\eta = n_B/n_\gamma = 2.0 \times 10^{-10}$, this ratio is fixed by Big Bang Nucleosynthesis (BBN) observations and remains independent of the photon mass scenario in this thought experiment.
+  
+  The present-day CMB temperature is an empirically measured quantity from blackbody observations:
+  \[
+    T_\gamma^{(0)} \approx 2.725\,\mathrm{K}.
+  \]
+  
+  In this pedagogical massive-photon scenario, the CMB temperature would remain essentially unchanged at $T_{\gamma}^{(0)} \approx 2.725\,\mathrm{K}$ because the temperature is determined by direct observation of the CMB blackbody spectrum, not derived from thermodynamic calculations alone.
+  
+  The key educational insight is:
+  \begin{itemize}
+    \item The **temperature ratio** $T_\nu/T_\gamma$ depends on the degrees of freedom at decoupling and changes if the photon properties change.
+    \item The **absolute CMB temperature** is an observational constraint that remains fixed regardless of the theoretical scenario.
+    \item In reality, the photon mass is constrained to be negligibly small by multiple observations, making this scenario purely pedagogical.
+  \end{itemize}
+
 \end{enumerate}
 
 

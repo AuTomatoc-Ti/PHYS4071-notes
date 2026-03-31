@@ -697,6 +697,7 @@ INPUT ./images/universe_evolution_3.png
 INPUT ./images/universe_evolution_3.png
 INPUT ./images/universe_evolution_3.png
 INPUT ./images/universe_evolution_3.png
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/vf/adobe/palatino/pplr7t.vf
 INPUT ./images/energy_density_budget.png
 INPUT ./images/energy_density_budget.png
 INPUT ./images/energy_density_budget.png
@@ -791,6 +792,11 @@ INPUT ./chapters/questions/q_ch03_cosmic_evolution.tex
 INPUT ./chapters/questions/q_ch03_cosmic_evolution.tex
 INPUT ./chapters/questions/q_ch03_cosmic_evolution.tex
 INPUT chapters/questions/q_ch03_cosmic_evolution.tex
+INPUT ./chapters/images/acceleration_plot.pdf
+INPUT ./chapters/images/acceleration_plot.pdf
+INPUT ./chapters/images/acceleration_plot.pdf
+INPUT ./chapters/images/acceleration_plot.pdf
+INPUT ./chapters/images/acceleration_plot.pdf
 INPUT ./chapters/questions/q_ch04_standard_model.tex
 INPUT ./chapters/questions/q_ch04_standard_model.tex
 INPUT ./chapters/questions/q_ch04_standard_model.tex

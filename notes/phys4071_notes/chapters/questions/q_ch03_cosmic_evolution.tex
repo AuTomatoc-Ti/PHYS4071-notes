@@ -80,6 +80,31 @@
     \]
     and explain physically why the two redshifts are different.
   \end{enumerate}
+
+  \item \label{q:3.6} \textbf{Parameterized Equation of State and Cosmic Acceleration}
+
+  Many dark-energy models can be characterized by a redshift-dependent equation of state parameter:
+  \[
+    w(z) = w_0 + w_a \frac{z}{1+z},
+  \]
+  where $w_0\equiv w(z=0)$ is the present-day value and $w_a$ describes the evolution.
+  
+  \begin{enumerate}[label=(\alph*)]
+    \item 
+    For the $\Lambda$CDM model with a cosmological constant ($\rho_\Lambda = \text{const.}$, so $w_\Lambda = -1$ for all $z$), determine the position of $\Lambda$CDM on the $(w_0, w_a)$ plane. Then sketch or describe the location of other well-known models:
+    \begin{itemize}
+      \item Quintessence with $w_\text{qu} = 0.5$ (constant)
+      \item Phantom dark energy with $w_\text{ph}=-1.5$ (constant)
+    \end{itemize}
+    
+    \item 
+    Recall the second Friedmann equation:
+    \[
+      \frac{\ddot{a}}{a}=-\frac{4\pi G}{3}\left(\rho_m+\rho_\Lambda + 3p\right).
+    \]
+    For a flat $\Lambda$CDM universe with $\Omega_{m0}=0.315$ and $\Omega_{\Lambda0}=0.685$, derive $\ddot{a}(z)$ using the continuity equation $\rho_m(z)=\rho_{m0}(1+z)^3$ and $\rho_\Lambda=\text{const.}$ Then sketch the behavior of $\ddot{a}$ as a function of redshift $z$. At what redshift does the transition from $\ddot{a}<0$ (deceleration) to $\ddot{a}>0$ (acceleration) occur?
+  \end{enumerate}
+
 \end{enumerate}
 
 \bigskip
@@ -269,5 +294,79 @@
   which happens at higher redshift.
 \end{enumerate}
 
+\subsubsection*{Solution 3.6: Parameterized Equation of State and Cosmic Acceleration}
+
+\begin{enumerate}[label=(\alph*)]
+  \item For $\Lambda$CDM, the cosmological constant has a constant equation of state $w_\Lambda=-1$ at all redshifts. Substituting into the parameterization $w(z)=w_0+w_a\frac{z}{1+z}$:
+  
+  At $z=0$: $w(0)=w_0=-1$.
+  
+  At arbitrary $z$: $-1 = -1 + w_a\frac{z}{1+z}$, which requires $w_a=0$.
+  
+  Therefore, **$\Lambda$CDM is located at $(w_0, w_a)=(-1, 0)$** on the $(w_0, w_a)$ plane.
+  
+  Other models:
+  \begin{itemize}
+    \item \textbf{Quintessence} ($w_\text{qu}=0.5$, constant): Located at $(w_0, w_a)=(0.5, 0)$, a point on the horizontal line $w_a=0$ above $\Lambda$CDM.
+    \item \textbf{Phantom dark energy} ($w_\text{ph}=-1.5$, constant): Located at $(w_0, w_a)=(-1.5, 0)$, also on the horizontal line $w_a=0$, below $\Lambda$CDM.
+  \end{itemize}
+  
+  Models with evolving equations of state (where $w$ changes with redshift) populate the $(w_0, w_a)$ plane away from the line $w_a=0$. For example, coupled dark energy or modified gravity theories often have non-zero $w_a$.
+
+  \item \textbf{Derivation of $\ddot{a}(z)$:}
+  
+  From the second Friedmann equation with $p_m=0$ and $p_\Lambda=-\rho_\Lambda$:
+  \[
+    \frac{\ddot{a}}{a}=-\frac{4\pi G}{3}\left(\rho_m + \rho_\Lambda - 3\rho_\Lambda\right)=-\frac{4\pi G}{3}\left(\rho_m - 2\rho_\Lambda\right).
+  \]
+  
+  Express density in terms of redshift using the continuity equation:
+  \[
+    \rho_m(z)=\rho_{m0}(1+z)^3,\quad \rho_\Lambda=\rho_{\Lambda0}.
+  \]
+  
+  From the Friedmann constraint in a flat universe:
+  \[
+    H_0^2=\frac{8\pi G}{3}(\rho_{m0}+\rho_{\Lambda0})
+    \Rightarrow
+    \frac{4\pi G}{3}=\frac{H_0^2}{2(\Omega_{m0}+\Omega_{\Lambda0})}=\frac{H_0^2}{2}.
+  \]
+  
+  Thus:
+  \[
+    \frac{\ddot{a}}{a}=-\frac{H_0^2}{2}\left[\Omega_{m0}(1+z)^3-2\Omega_{\Lambda0}\right].
+  \]
+  
+  \textbf{Behavior and transition redshift:}
+  
+  The transition from deceleration to acceleration ($\ddot{a}=0$) occurs when:
+  \[
+    \Omega_{m0}(1+z_{\mathrm{trans}})^3 = 2\Omega_{\Lambda0}
+    \Rightarrow
+    z_{\mathrm{trans}}=\left(\frac{2\Omega_{\Lambda0}}{\Omega_{m0}}\right)^{1/3}-1,
+  \]
+  which matches the acceleration transition redshift from Question 3.5: $z_{\mathrm{acc}}\approx 0.633$.
+  
+  \textbf{Graphical representation:}
+  
+  The plot below shows $\frac{\ddot{a}}{aH_0^2}$ as a function of redshift. Key features:
+  \begin{itemize}
+    \item \textbf{High redshift} ($z\gg 1$): The term $\Omega_{m0}(1+z)^3$ dominates, yielding large negative acceleration (strong deceleration). The scale goes as $(1+z)^3$.
+    \item \textbf{Intermediate redshift} ($z\approx 0.633$): The acceleration transitions from negative to positive at the crossing point.
+    \item \textbf{Low redshift} ($z\to 0$): The cosmological constant dominates. We approach $\ddot{a}/a \approx -\frac{H_0^2}{2}(\Omega_{m0}-2\Omega_{\Lambda0})>0$, a small positive constant representing accelerated expansion.
+  \end{itemize}
+
+  \begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.9\textwidth]{chapters/images/acceleration_plot.pdf}
+    \caption{\label{fig:accel_plot}
+    Left: Acceleration parameter $\ddot{a}/(aH_0^2)$ vs redshift, showing the transition from deceleration (red shading) to acceleration (green shading) at $z_{\mathrm{acc}}\approx 0.633$. 
+    Right: Magnitude of acceleration on a logarithmic scale to illustrate the smooth transition and the dominance of matter at high redshift.
+    }
+  \end{figure}
+
+  The curve is monotonically increasing with decreasing $z$, reflecting the smooth transition from matter-dominated deceleration to dark-energy-dominated acceleration. This transition represents one of the most significant discoveries in modern cosmology (Nobel Prize winners: Riess, Schmidt, Perlmutter, 2011).
+
+\end{enumerate}
 
 % ─────────────────────────────────────────────────────────────────────────────
