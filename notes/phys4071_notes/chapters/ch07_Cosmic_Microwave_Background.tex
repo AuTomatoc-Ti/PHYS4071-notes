@@ -3,5 +3,177 @@
 % ══════════════════════════════════════════════════════════════════════════════
 
 \chapter{Cosmic Microwave Background (CMB) (Lecture 15-19)}
+% =══════════════════════════════════════════════════════════════════════════════
+\section{Recombination and photon decoupling}
+% -──────────────────────────────────────────────────────────────────────────────
+\subsection{Recombination}
+\begin{intuition}
+    Recombination is the process where free electrons and protons combine to form neutral hydrogen atoms. 
+    \[
+        p + e^- \leftrightarrow H + \gamma
+    \]
+    This occurs when the universe cools down to about $T\sim 3000$ K, which corresponds to a redshift of $z\sim 1100$. \\
+    
+    Before recombination, the universe is a hot plasma that is opaque to photons due to Thomson scattering. After recombination, the universe becomes transparent, allowing photons to travel freely. This is the epoch when the CMB photons were last scattered, and hence we can observe them today as a snapshot of the universe at that time.
+\end{intuition}
 
-% ──────────────────────────────────────────────────────────────────────────────
+\bigskip \noindent
+\begin{foundation}
+    Recall, the number density of particles i in non-relativistic thermal equilibrium is given by:
+    \[
+        n_i = g_i \left( \frac{m_i T}{2\pi} \right)^{3/2} e^{-(m_i - \mu_i)/T}
+    \]
+    Using $m_p \approx m_H$ and $\mu_p + \mu_e = \mu_H$ (as $\mu_\gamma = 0$), we can get the number density of H atoms:
+    \small \begin{align*}
+        n_H &= g_H \left( \frac{m_H T}{2\pi} \right)^{3/2} e^{-(m_H - \mu_H)/T} \\
+        &= g_H \left( \frac{m_p T}{2\pi} \right)^{3/2} e^{-(m_p + m_e - B - \mu_p - \mu_e)/T} \\
+        &= \frac{g_H}{g_p g_e} \left( g_p \left( \frac{m_p T}{2\pi} \right)^{3/2} e^{-(m_p - \mu_p)/T} \right) \left( g_e \left( \frac{m_e T}{2\pi} \right)^{3/2} e^{-(m_e - \mu_e)/T} \right)  \frac{2\pi}{m_e T}^{3/2} e^{B/T} \\
+        &= \frac{g_H}{g_p g_e} n_p n_e \left( \frac{2\pi}{m_e T} \right)^{3/2} e^{B/T}
+    \end{align*}
+    \normalsize where $B = m_p + m_e - m_H \approx 13.6$ eV is the binding energy of hydrogen.\\
+
+    For a H atom, it is combined by the nucleus (with spin 1/2) and the electron (with spin 1/2), thus it has a total degeneracy spin state as:
+    \[
+        g_H = g_p + g_e = 2 + 2 = 4
+    \] \\
+
+    Defining the ionization fraction for hydrogen only plasma as:
+    \[
+        Y_p = \frac{n_p}{n_B} 
+    \]
+    and using the above results of $g_H$, and approximation $n_H = n_B - n_p = (1 - Y_p) n_B$, we can rewrite it as:
+    \begin{align*}
+        (1 - Y_p) n_B &= \frac{4}{2 \times 2} n_p n_e \left( \frac{2\pi}{m_e T} \right)^{3/2} e^{B/T} \\
+        (1 - Y_p) n_B &= n_p n_e \left( \frac{2\pi}{m_e T} \right)^{3/2} e^{B/T} 
+    \end{align*} 
+    Note using the charge neutrality condition $n_p = n_e$, and the baryon-to-photon ratio $\eta = n_B/n_\gamma$, we can simplify the equation as:
+    \begin{align*}
+       (1 - Y_p) n_B &= (Y_p n_B) (Y_p n_B) \left( \frac{2\pi}{m_e T} \right)^{3/2} e^{B/T} \\
+       \frac{1 - Y_p}{Y_p^2} &= \eta \n_\gamma \left( \frac{2\pi}{m_e T} \right)^{3/2} e^{B/T}
+    \end{align*}
+    Further, using the photon number density for a blackbody radiation $n_\gamma = 2 \zeta(3) T^3/\pi^2$, we can get the Saha equation for recombination:
+    \begin{align*}
+        \frac{1 - Y_p}{Y_p^2} &= \eta \frac{2 \zeta(3)}{\pi^2} T^3 \left( \frac{2\pi}{m_e T} \right)^{3/2} e^{B/T} \\
+        &= \eta \frac{2^{5/2} \zeta(3)}{\pi^{1/2}} \left( \frac{T}{m_e} \right)^{3/2} e^{B/T}
+    \end{align*}
+\end{foundation}
+
+\bigskip \noindent
+\begin{theory}
+    Under the assumption of chemical equilibrium of the recombination process, we get:
+    \[
+        n_H = \frac{g_H}{g_p g_e} n_p n_e \left( \frac{2\pi}{m_e T} \right)^{3/2} e^{B/T}
+    \]
+    And hence the \textbf{Saha equation} for ionization fraction of hydrogen is:
+    \[
+        \frac{1 - Y_p}{Y_p^2} = \eta \frac{2^{5/2} \zeta(3)}{\pi^{1/2}} \left( \frac{T}{m_e} \right)^{3/2} e^{B/T}
+    \]
+\end{theory}
+
+\bigskip \noindent
+\begin{intuition}
+    From the above equations, we know that when $B \ll T$, the RHS $ \ll 1$, thus $Y_p \approx 1$, which means almost all the hydrogen is ionized (i.e. all protons and electrons are free). \\
+
+    When temperature drops to $T \ll B$, the ratio of $Y_p$ finally starts to drop. Notice that as $\eta \sim 10^{-9}$ is very small, there are very many photons per baryon, so even when $E > B$, there are still enough photons with energy greater than $B$ to ionize the hydrogen atoms, until $E \ll B$ (around $T \sim 0.3$ eV $\ll 13.6$ eV). 
+\end{intuition}
+
+\bigskip \noindent
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=0.8\textwidth]{images/saha_equation.png}
+    \caption{The ionization fraction of hydrogen $x$ (upper) and the exact value of $n_e \& \lambda_\gamma$ (lower) as a function of redshift $z$.}
+    \label{fig:saha_equation}
+\end{figure}
+
+\begin{intuition}
+    From the above figure, the upper panel show the ionization fraction, the dashed curve represents the Saha equation, which calculate assuming universe is in \textbf{perfect chemical equilibrium}, while the solid curve represent the Peebles equation, which more accurate as accounting for the fact that the universe is expanding rapidly and faster than the atoms can recombine, thus the chemical equilibrium is \textbf{not perfectly} maintained, and the recombination process is "lagging behind". Hence, the Peebles equation gives a more gentle drop of the ionization fraction, and a slightly later recombination time. \\
+    
+    \pagebreak
+    In the lower panel, the dotted curve represents the number density of free electrons $n_e$, which as the universe expands and recombines, the number density of free electrons drops significantly (from $1e+09$ to $1e+06$); At the same time, the mean free path of photons $\lambda_\gamma$ increases dramatically (from 1 Mpc to 1000 Mpc), which means the universe becomes transparent to photons, and the CMB photons can travel freely without being scattered by free electrons.
+\end{intuition}
+
+\bigskip \noindent
+\begin{theory}
+    Let us define the recombination $T_{rec}$ as the temperature when the ionization fraction drops to $Y_p = 0.5$, which means half of the hydrogen is ionized and half is neutral. \\
+    
+    Note that by Wien's law, temperature is inversely proportional to the wavelength, and hence inversely proportional to scale factor, thus we can also define the recombination redshift $z_{rec}$ as:
+    \[
+        1 + z_{rec} = \frac{a_0}{a_{rec}} = \frac{T_{rec}}{T_0}
+    \]
+
+    From the above figure, we can find that:
+    \[
+        z_{rec} \approx 1300, \quad T_{rec} \approx 0.3 \text{ eV}
+    \]
+\end{theory}
+
+
+% -──────────────────────────────────────────────────────────────────────────────
+\bigskip \noindent \bigskip \noindent \bigskip \noindent
+\subsection{Photon decoupling and CMB}
+\begin{intuition}
+    Although the recombination process starts at $z \sim 1300$, the universe is still not completely transparent to photons, as there are still some free electrons that can scatter photons. The photon decoupling occurs when the mean free path of photons $\lambda_\gamma$ becomes larger than the Hubble radius $H^{-1}$, which in other words, the characteristic interaction become comparable to the expansion rate of the universe $\Gamma_\gamma \sim H$. \\
+
+    Thus, the decoupling temperature is around:
+    \[
+        T_{dec} \approx 0.26 \text{ eV}, \quad z_{dec} \approx 1100
+    \]
+    so we can say after the photon decoupling, the "first light" in the universe is emitted at around $z \sim 1100$ with a temperature of $T \sim 3000$ K, and as it no longer interacts with matter, it can travel through the spacetime and reach us today. \\
+    
+    However, due to the expansion of the universe, the wavelength of the photons is stretched, and hence the temperature of the light ray is much lower than the original temperature at the time of decoupling, which is now redshifted to the microwave band, which is what we call the Cosmic Microwave Background (CMB) radiation. \\
+\end{intuition}
+
+\bigskip \noindent
+\begin{theory}
+    We can use the relationship between the redshift and temperature to calculate the CMB temperature today. Let $T_{dec} = 0.26 \text{ eV } = 3000$ K and $z_{dec} = 1100$, we can get:
+    \[
+        T_{CMB} = \frac{T_{dec}}{1 + z_{dec}} \approx 2.727 \text{ K}
+    \]
+\end{theory}
+
+\bigskip \noindent
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=0.8\textwidth]{images/CMB_frequency_spectrum.png}
+    \caption{The CMB frequency spectrum measured by the COBE satellite with FIRAS instruments.}
+    \label{fig:CMB_frequency_spectrum}
+\end{figure}
+
+\clearpage
+\begin{extra}
+    From the figure, the red crosses (COBE data) shows the actual measurement taken by FIRAS instruments on the COBE satellite, the tiny bars represent the incredibly small error margins; Meanwhile, the green curve represent the theoretical curve calculated by the Planck blackbody radiation formula for perfect blackbody radiation, which is given by:
+    \[
+        I_\nu = \frac{2 h \nu^3}{c^2} \frac{1}{e^{h\nu/k_B T} - 1}
+    \]
+    where $I_\nu$ is the intensity of radiation at frequency $\nu$, $h$ is the Planck constant, $c$ is the speed of light, $k_B$ is the Boltzmann constant, and $T$ is the temperature of the blackbody. \\
+
+    We can see that red crosses perfectly match the green curve, which means the CMB radiation is an almost perfect blackbody radiation, and the temperature of the CMB can be determined by fitting the data to the Planck formula, which gives $T \approx 2.725 \pm 0.002$ K with $95\%$ confidence level. \\
+
+    In fact, the result was so significant that it led to John Mather and George Smoot being awarded the Nobel Prize in Physics in 2006 for their work on the COBE satellite and the measurement of the CMB spectrum.
+\end{extra}
+
+
+\bigskip \noindent
+\begin{remark}
+    The CMB is a snapshot of the universe at the time of photon decoupling, which occurred about 380,000 years after the Big Bang. In fact, it is the oldest light we can observe, and hence is the earliest direct evidence we can "observed".
+\end{remark}
+
+\bigskip \noindent
+\begin{extra}
+    The CMB was first predicted by Ralph Alpher and Robert Herman in 1948, as a consequence of the Big Bang theory. Later, it was accidentally discovered by Arno Penzias and Robert Wilson in 1965, who were awarded the Nobel Prize in Physics in 1978 for their discovery. The CMB is a crucial piece of evidence for the Big Bang theory, and has been extensively studied by various experiments, such as COBE, WMAP, and Planck satellites.
+\end{extra}
+
+% -──────────────────────────────────────────────────────────────────────────────
+%\bigskip \noindent \bigskip \noindent \bigskip \noindent
+\clearpage
+\subsection{Dark ages and reionization}
+\begin{intuition}
+    After photon decoupling, the universe becomes transparent to photons, and is still hot ($T\sim 3000$ K), hence showing a uniform red glow colour. After that, the universe become cooler and darker, and the photons are redshifted towards to infrared and microwave bands. As a results, the universe enters a ``dark age'' as nearly no visible light is emitted. \\
+
+    The dark age last several hundred million years until the first stars and galaxies form ($z \sim 10$), which emit UV photons that reionize the intergalactic medium. This process is called \textbf{reionization}. Note that in this stage the gas cloud already has a very low density, thus the universe remains transparent to photons, and the CMB photons can still reach us without being scattered by the gas. \\
+\end{intuition}
+
+\bigskip \noindent
+\begin{remark}
+    In fact, there is no direct observation of the dark ages currently, astrophysicists are still trying different methods to probe this era, for example, using 21-cm line observations, which can trace the neutral hydrogen gas before reionization. Overall, the dark ages still remains a large observational gap in our understanding of cosmic history.
+\end{remark}
