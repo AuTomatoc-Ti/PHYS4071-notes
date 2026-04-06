@@ -110,7 +110,7 @@
 
 % -──────────────────────────────────────────────────────────────────────────────
 \bigskip \noindent \bigskip \noindent \bigskip \noindent
-\subsection{Photon decoupling and CMB}
+\subsection{Photon Decoupling and CMB}
 \begin{intuition}
     Although the recombination process starts at $z \sim 1300$, the universe is still not completely transparent to photons, as there are still some free electrons that can scatter photons. The photon decoupling occurs when the mean free path of photons $\lambda_\gamma$ becomes larger than the Hubble radius $H^{-1}$, which in other words, the characteristic interaction become comparable to the expansion rate of the universe $\Gamma_\gamma \sim H$ (\textbf{see chapter 5.6.5}). \\
 
@@ -166,7 +166,7 @@
 % -──────────────────────────────────────────────────────────────────────────────
 %\bigskip \noindent \bigskip \noindent \bigskip \noindent
 \clearpage
-\subsection{Dark ages and reionization}
+\subsection{Dark Ages and Reionization}
 \begin{intuition}
     After photon decoupling, the universe becomes transparent to photons, and is still hot ($T\sim 3000$ K), hence showing a uniform red glow colour. After that, the universe become cooler and darker, and the photons are redshifted towards to infrared and microwave bands. As a results, the universe enters a ``dark age'' as nearly no visible light is emitted. \\
 
@@ -177,3 +177,605 @@
 \begin{remark}
     In fact, there is no direct observation of the dark ages currently, astrophysicists are still trying different methods to probe this era, for example, using 21-cm line observations, which can trace the neutral hydrogen gas before reionization. Overall, the dark ages still remains a large observational gap in our understanding of cosmic history.
 \end{remark}
+
+
+% =══════════════════════════════════════════════════════════════════════════════
+%\clearpage
+\bigskip \noindent \bigskip \noindent \bigskip \noindent
+\section{CMB anisotropies}
+% -──────────────────────────────────────────────────────────────────────────────
+%\subsection{Introduction of anisotropies}
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=0.7\textwidth]{images/CMB_anisotropies.png}
+    \caption{The CMB anisotropies measured by the COBE.}
+    \label{fig:CMB_anisotropies}
+\end{figure}
+
+\begin{intuition}
+    When the COBE satellite first returned the data of the CMB, Scientists found out that there are tiny fluctuations in the temperature of the CMB across the sky, which is called \textbf{CMB anisotropies}. These anisotropies are on the order of $10^{-5}$ K, which means the temperature of the CMB is not perfectly uniform, but has tiny variations. \\
+
+    The anisotropies provide crucial information about the early universe, as they are the seeds of the large scale structure we see today. The tiny fluctuations in the CMB temperature correspond to the density fluctuations in the early universe, which eventually grow into galaxies and clusters of galaxies due to gravitational instability.
+\end{intuition}
+
+\bigskip \noindent
+\begin{theory}
+    Define the temperature fluctuation of any point $(\theta, \phi)$ on the sky as:
+    \[
+        \frac{\Delta T (\theta, \phi) }{T_0} = \frac{T(\theta, \phi) - T_0}{T_0} \sim 10^{-5}
+    \]
+    where $T_0$ is the average temperature of the CMB:
+    \[
+        T_0 = \frac{1}{4\pi} \int T(\theta, \phi) d\Omega \approx 2.725 \text{ K}
+    \]
+    with $d\Omega = \sin \theta d\theta d\phi$ is the solid angle element. \\
+\end{theory}
+
+
+\bigskip \noindent
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=0.8\textwidth]{images/CMB_comparison.png}
+    \caption{The CMB anisotropies measured by the COBE, WMAP and Planck satellites.}
+    \label{fig:CMB_comparison}
+\end{figure}
+
+\begin{extra}
+    The anisotropies were first detected by the COBE satellite in 1992, however, as the angular resolution of COBE was quite low (about 7 degrees), it could only detect the anisotropies on scales larger than that. \\
+
+    To get a higher resolution map of the CMB anisotropies, NASA launched the WMAP satellite in 2001, which had an angular resolution of about 13 arcminutes, and hence could detect the anisotropies on smaller scales. The WMAP data provided a much more detailed map of the CMB anisotropies, and allowed scientists to measure the cosmological parameters with much higher precision. \\
+
+    After that, the Planck satellite was launched in 2009, which had an even higher angular resolution of about 5 arcminutes, and hence could detect the anisotropies on even smaller scales. The Planck data provided the most detailed map of the CMB anisotropies to date, and allowed scientists to measure the cosmological parameters with unprecedented precision. \\
+\end{extra}
+
+% -──────────────────────────────────────────────────────────────────────────────
+\bigskip \noindent \bigskip \noindent \bigskip \noindent
+\subsection{Spherical Harmonic Decomposition}
+\begin{intuition}
+    Recall Fourier decomposition, when we want to analyze a function $y = f(x)$ defined on a line, we can decompose it into a sum of sine and cosine functions with different frequencies, which is called Fourier decomposition. \\
+
+    In the case of CMB anisotropies, we can use a similar method to decompose the temperature fluctuations on the sky, but this time is defined on a sphere, thus we need to use spherical harmonics instead of sine and cosine functions. 
+\end{intuition}
+
+\begin{foundation}
+    Just like Fourier decomposition, we can approximate the CMB by a sum of periodic functions, which in this case are the spherical harmonics $Y_{lm}(\theta, \phi)$, where $l$ is the degree of the spherical harmonic, and $m$ is the order of the spherical harmonic. \\
+
+    In details, the $l$ represent how many times the function oscillates, in other words, $2 \times$ the number of crossing zeros(nodal lines); while the $m$ represent how many times the function oscillates in the azimuthal direction, in details, the number of nodal lines in the azimuthal direction(meridians) is $|m|$, and the number of nodal lines in the polar direction(parallels) is $l - |m|$.
+\end{foundation}
+
+%% Explain the Y_lm term
+\bigskip \noindent
+\begin{foundation}
+    Let $Y_{lm}(\theta, \phi)$ be the spherical harmonic function, we want it have below properties:
+    \begin{itemize}
+        \item Smooth everywhere 
+        \item Single-valued, which means $Y_{lm}(\theta, \phi) = Y_{lm}(\theta, \phi + 2\pi)$
+        \item Orthonormal, which means $\int Y_{lm}(\theta, \phi) Y_{l'm'}^*(\theta, \phi) d\Omega = \delta_{ll'} \delta_{mm'}$
+    \end{itemize} 
+    
+    In a spherical coordinates, the Laplacian operator of smooth angular functions can be written as:
+    \begin{align*}
+        \nabla^2 &= \frac{1}{r^2} \frac{\partial}{\partial r} \left( r^2 \frac{\partial}{\partial r} \right) + \frac{1}{r^2 \sin \theta} \frac{\partial}{\partial \theta} \left( \sin \theta \frac{\partial}{\partial \theta} \right) + \frac{1}{r^2 \sin^2 \theta} \frac{\partial^2}{\partial \phi^2}
+    \end{align*}
+    As we only care about the angular part of the function, we can ignore the radial part, and hence we can write the angular part of the Laplacian operator as:
+    \begin{align*}
+        \nabla^2_{\text{angular}}(Y) &= \frac{1}{\sin \theta} \frac{\partial}{\partial \theta} \left( \sin \theta \frac{\partial Y}{\partial \theta} \right) + \frac{1}{\sin^2 \theta} \frac{\partial^2 Y}{\partial \phi^2} \\
+        - \lambda Y &= \frac{1}{\sin \theta} \frac{\partial}{\partial \theta} \left( \sin \theta \frac{\partial Y}{\partial \theta} \right) + \frac{1}{\sin^2 \theta} \frac{\partial^2 Y}{\partial \phi^2}
+    \end{align*}
+    where $\lambda$ is the eigenvalue of the Laplacian operator.  \\
+    And further separation of variables gives us:
+    \begin{align*}
+        Y(\theta, \phi) &= \Theta(\theta) \Phi(\phi) \\
+        -\lambda \Theta \Phi &= \frac{1}{\sin \theta} \frac{d}{d\theta} \left( \sin \theta \frac{d\Theta}{d\theta} \right) \Phi + \frac{1}{\sin^2 \theta} \Theta \frac{d^2\Phi}{d\phi^2} \\
+        \frac{\sin \theta}{\Theta} \frac{d}{d\theta} \left( \sin \theta \frac{d\Theta}{d\theta} \right) + \lambda \sin^2 \theta &= -\frac{1}{\Phi} \frac{d^2\Phi}{d\phi^2}
+    \end{align*}
+    As the LHS only depends on $\theta$ and the RHS only depends on $\phi$, to make the equation hold for all $\theta$ and $\phi$, both sides must be equal to a constant, which we can denote as $m^2$. Hence, we can get two separate equations:
+    \begin{align*}
+        \frac{d^2\Phi}{d\phi^2} + m^2 \Phi &= 0 \\
+        \sin \theta \frac{d}{d\theta} \left( \sin \theta \frac{d\Theta}{d\theta} \right) + (\lambda \sin^2 \theta - m^2) \Theta &= 0
+    \end{align*} \\
+
+    First, we can solve the $\phi$ part of the equation, which gives us:
+    \[
+        \Phi(\phi) = A e^{i m \phi} + B e^{-i m \phi}
+    \]
+    where $A$ and $B$ are constants. To satisfy the single-valued condition, we need $\Phi(\phi) = \Phi(\phi + 2\pi)$, which gives us:
+    \[
+        A e^{i m \phi} + B e^{-i m \phi} = A e^{i m (\phi + 2\pi)} + B e^{-i m (\phi + 2\pi)} \implies m \in \mathbb{Z}
+    \]
+    Hence, with the fact that $m$ is integer, we can get the solution for $\Phi(\phi)$ as:
+    \[
+        \Phi(\phi) = e^{i m \phi}
+    \] \\
+
+    Next, we will handle the $\theta$ part of the equation, let $x = \cos \theta$, we can rewrite the equation as:
+    \begin{align*}
+        \sin \theta \frac{d}{d\theta} \left( \sin \theta \frac{d\Theta}{d\theta} \right) + (\lambda \sin^2 \theta - m^2) \Theta &= 0 \\
+        \frac{d}{d\theta} \left( \sin \theta \frac{d\Theta}{d\theta} \right) + \left( \lambda - \frac{m^2}{\sin^2 \theta} \right) \Theta &= 0 \\
+        \frac{d}{dx} \left( (1 - x^2) \frac{d\Theta}{dx} \right) + \left( \lambda - \frac{m^2}{1 - x^2} \right) \Theta &= 0 \\
+        (1 - x^2) \frac{d^2\Theta}{dx^2} - 2x \frac{d\Theta}{dx} + \left( \lambda - \frac{m^2}{1 - x^2} \right) \Theta &= 0
+    \end{align*} 
+    Which is the associated Legendre equation. \\
+
+    We then introduce the constraints of setting the at $theta = 0$ (i.e. poles of sphere), the function should be finite, which means $\Theta(\theta = 0) < \infty$, which only happens when $\lambda = l(l + 1)$, where $l$ is a non-negative integer and $|m| \leq l$. Hence, we can get the solution for $\Theta(\theta)$ as:
+    \[
+        \Theta(\theta) = P_l^m(\cos \theta)
+    \]
+    where $P_l^m(x)$ is the associated Legendre polynomial, which is defined as:
+    \[
+        P_l^m(x) = (-1)^m (1 - x^2)^{m/2} \frac{d^m}{dx^m} P_l(x)
+    \]
+    where $P_l(x)$ is the Legendre polynomial of degree $l$, which is defined as:
+    \[
+        P_l(x) = \frac{1}{2^l l!} \frac{d^l}{dx^l} (x^2 - 1)^l
+    \] \\
+
+    Finally, to keep the spherical harmonics orthonormal, we need to introduce a normalization constant $N_{lm}$, which is given by:
+    \[
+        N_{lm} = \sqrt{\frac{(2l + 1)}{4\pi} \frac{(l - m)!}{(l + m)!}}
+    \]
+\end{foundation}
+
+\begin{theory}
+    we can decompose the temperature fluctuations into spherical harmonics as:
+    \[
+        \frac{\Delta T(\theta, \phi)}{T_0} = \sum_{l=0}^{\infty} \sum_{m=-l}^{l} a_{lm} Y_{lm}(\theta, \phi)
+    \] 
+    where $a_{lm}$ are the coefficients of the decomposition. \\
+
+    And the complex form of the general equation for spherical harmonic is:
+    \[
+        Y_{lm}(\theta, \phi) = N_{lm} P_l^m(\cos \theta) e^{i m \phi}
+    \]
+    where:
+    \begin{itemize}
+        \item $l$ is the degree of the spherical harmonic, which determines the angular scale of the fluctuation, with $l = 0, 1, 2, \dots$;
+        \item $m$ is the order of the spherical harmonic, which determines the azimuthal dependence of the fluctuation, with $m = -l, -l + 1, \dots, 0, \dots, l - 1, l$;
+        \item $P_l^m(\cos \theta)$ is the associated Legendre polynomial, which is a function of $\cos \theta$ and depends on $l$ and $m$:
+        \[
+            P_l^m(x) = (-1)^m (1 - x^2)^{m/2} \frac{d^m}{dx^m} P_l(x)
+        \]
+        where $P_l(x)$ is the Legendre polynomial of degree $l$:
+        \[
+            P_l(x) = \frac{1}{2^l l!} \frac{d^l}{dx^l} (x^2 - 1)^l
+        \]
+        \item $N_{lm}$ is the normalization constant, which ensures that the spherical harmonics are orthonormal:
+        \[
+            N_{lm} = \sqrt{\frac{(2l + 1)}{4\pi} \frac{(l - m)!}{(l + m)!}}
+        \]
+    \end{itemize}
+\end{theory}
+
+%% Explain why the Y_lm form is orthonormal and complete, and hence the summation of Y_lm over m with same l have the closure relation
+\bigskip \noindent
+\begin{foundation}
+    Recall in Fourier decomposition, the sine and cosine functions form an orthonormal basis for functions defined on a line. Now lets check if the spherical harmonics $Y_{lm}(\theta, \phi)$ also form an orthonormal basis for functions defined on the sphere with below inner product:
+    \begin{align*}
+        \int Y_{lm}(\theta, \phi) Y_{l'm'}^*(\theta, \phi) d\Omega
+        &= \delta_{ll'} \delta_{mm'}
+    \end{align*}
+    where $\delta_{ll'}$ and $\delta_{mm'}$ are the Kronecker delta functions, and the result should be zero if any 2 different basis functions are multiplied together, and should be one if the same basis function is multiplied together. Hence, by proving the above equation, we can show that the spherical harmonics form an orthonormal basis for functions defined on the sphere. \\
+
+    Starts from L.H.S, we can get:
+    \begin{align*}
+        I &= \int^{2\pi}_0 \int^\pi_0 Y_{lm}(\theta, \phi) Y_{l'm'}^*(\theta, \phi) \sin \theta d\theta d\phi \\
+        &= \int^{2\pi}_0 \int^\pi_0 N_{lm} P_l^m(\cos \theta) e^{i m \phi} N_{l'm'} P_{l'}^{m'}(\cos \theta) e^{-i m' \phi} \sin \theta d\theta d\phi \\
+        &= N_{lm} N_{l'm'} \int^{2\pi}_0 e^{i (m - m') \phi} d\phi \int^\pi_0 P_l^m(\cos \theta) P_{l'}^{m'}(\cos \theta) \sin \theta d\theta \\
+    \end{align*} \\
+
+    Now, we can evaluate the first integral:
+    \begin{itemize}
+        \item If $m = m'$, then the first integral becomes $\int^{2\pi}_0 d\phi = 2\pi$;
+        \item If $m \neq m'$, then the first integral becomes:
+        \begin{align*}
+            \int^{2\pi}_0 e^{i (m - m') \phi} d\phi &= \left[ \frac{e^{i (m - m') \phi}}{i (m - m')} \right]^{2\pi}_0 \\
+            &= \frac{1}{i (m - m')} (e^{i (m - m') 2\pi} - 1) \\
+            &= 0
+        \end{align*}
+    \end{itemize} \\
+    And we can write the general result of the first integral as:
+    \[
+        \int^{2\pi}_0 e^{i (m - m') \phi} d\phi = 2\pi \delta_{mm'}
+    \]
+
+    Then, for the second integral, we can use the orthogonality of the associated Legendre polynomials, which states that the Legendre polynomials are also orthogonal:
+    \begin{align*}
+        \int^\pi_0 P_l^m(\cos \theta) P_{l'}^{m'}(\cos \theta) \sin \theta d\theta &= \int^1_{-1} P_l^m(x) P_{l'}^{m'}(x) dx \\
+        &= \frac{2}{2l + 1} \frac{(l + m)!}{(l - m)!} \delta_{ll'} \delta_{mm'}
+    \end{align*} \\
+
+    Combined the above results, we can get:
+    \begin{align*}
+        I &= N_{lm} N_{l'm'} \int^{2\pi}_0 e^{i (m - m') \phi} d\phi \int^\pi_0 P_l^m(\cos \theta) P_{l'}^{m'}(\cos \theta) \sin \theta d\theta \\
+        &= N_{lm} N_{l'm'} \cdot 2\pi \cdot \frac{2}{2l + 1} \frac{(l + m)!}{(l - m)!} \delta_{ll'} \delta_{mm'}
+    \end{align*}
+
+    Because when $l \neq l'$ or $m \neq m'$, the result is zero, we can just focus on the case when $l = l'$ and $m = m'$, which gives us:
+    \begin{align*}
+        I &= N_{lm}^2 \cdot 2\pi \cdot \frac{2}{2l + 1} \frac{(l + m)!}{(l - m)!} \\
+        &= \frac{(2l + 1)}{4\pi} \frac{(l - m)!}{(l + m)!} \cdot 2\pi \cdot \frac{2}{2l + 1} \frac{(l + m)!}{(l - m)!} \\
+        &= 1
+    \end{align*}
+    Hence, we have shown that the spherical harmonics form an orthonormal basis for functions defined on the sphere:
+    \[
+        \int Y_{lm}(\theta, \phi) Y_{l'm'}^*(\theta, \phi) d\Omega = \delta_{ll'} \delta_{mm'}
+    \] \\
+
+    Further, we can used the general addition theorem for spherical harmonics to get the closure relation:
+    \[
+        P_l(\cos \gamma) &= \frac{4\pi}{2l + 1} \sum_{m=-l}^{l} Y_{lm}(\theta_1, \phi_1) Y_{lm}^*(\theta_2, \phi_2) \\
+    \]
+    where $\gamma$ is the angle between the two points $(\theta_1, \phi_1)$ and $(\theta_2, \phi_2)$ on the sphere. Setting $\gamma = 0$, we can get:
+    \begin{align*}
+        P_l(1) &= \frac{4\pi}{2l + 1} \sum_{m=-l}^{l} Y_{lm}(\theta, \phi) Y_{lm}^*(\theta, \phi) \\
+        1 &= \frac{4\pi}{2l + 1} \sum_{m=-l}^{l} |Y_{lm}(\theta, \phi)|^2 \\
+        \frac{2l + 1}{4\pi} &= \sum_{m=-l}^{l} |Y_{lm}(\theta, \phi)|^2 
+    \end{align*}
+    This is the \textbf{Unsöld's theorem}, which in physical meaning, states that the sum of the squares of the spherical harmonics with the same degree $l$ is a constant, which is independent of the angles $\theta$ and $\phi$. This theorem is a direct consequence of the orthonormality of the spherical harmonics, and it shows a rotational symmetry in the spherical harmonics, which is a fundamental property of the functions defined on the sphere.
+\end{foundation}
+
+\clearpage
+\begin{theory}
+    The functions $Y_{lm}(\theta, \phi)$ form an orthonormal basis for functions defined on the sphere, which:
+    \[
+        \int Y_{lm}(\theta, \phi) Y_{l'm'}^*(\theta, \phi) d\Omega = \delta_{ll'} \delta_{mm'}
+    \]
+    Therefore, summing over $m$ for a fixed $l$ gives us the closure relation:
+    \[
+        \sum_{m=-l}^{l} |Y_{lm}(\theta, \phi)|^2 = \frac{2l + 1}{4\pi}
+    \]
+\end{theory}
+
+%% Convert Y_lm to real form
+\bigskip \noindent
+\begin{foundation}
+    Start from the complex form of the spherical harmonics:
+    \[
+        Y_{lm}(\theta, \phi) = N_{lm} P_l^m(\cos \theta) \left( \cos(m \phi) + i \sin(m \phi) \right)
+    \]
+
+    Next, we can get:
+    \begin{align*}
+        P^{-m}_l(x) &= \frac{(-1)^{-m}}{2^l l!} (1 - x^2)^{-m/2} \frac{d^{l-m}}{dx^{l-m}} (x^2 - 1)^l \\
+        &= \frac{(-1)^{-m}}{2^l l!} (1 - x^2)^{-m/2}  \left( (-1)^{-m} \frac{(l-m)!}{(l+m)!} (1-x^2)^m \frac{d^{l+m}}{dx^{l+m}} (x^2 - 1)^l \right) \\
+        &= \frac{1}{2^l l!} (1 - x^2)^{m/2} \frac{(l-m)!}{(l+m)!} \frac{d^{l+m}}{dx^{l+m}} (x^2 - 1)^l \\
+        &= \frac{(l-m)!}{(l+m)!} \left( \frac{1}{2^l l!} (1 - x^2)^{m/2} \frac{d^{l+m}}{dx^{l+m}} (x^2 - 1)^l \right) \\
+        &= \frac{(l-m)!}{(l+m)!} \left( (-1)^m P_l^m(x) \right) \\
+        &= (-1)^m \frac{(l-m)!}{(l+m)!} P_l^m(x)
+    \end{align*}
+    And hence:
+    \begin{align*}
+       N_{l,-m} P_l^{-m}(x) &= N_{l,-m} (-1)^m \frac{(l-m)!}{(l+m)!} P_l^m(x) \\
+         &= \sqrt{\frac{(2l + 1)}{4\pi} \frac{(l - (-m))!}{(l + (-m))!}} (-1)^m \frac{(l-m)!}{(l+m)!} P_l^m(x) \\
+         &= \sqrt{\frac{(2l + 1)}{4\pi} \frac{(l - m)!}{(l + m)!}} (-1)^m P_l^m(x) \\
+         &= N_{lm} P_l^m(x) (-1)^m
+    \end{align*} \\
+
+    Then, we get the $ Y_{l,-m}(\theta, \phi)$ in terms of conjugate of $Y_{lm}(\theta, \phi)$:
+    \begin{align*}
+        Y_{l,-m}(\theta, \phi) &= N_{l,-m} P_l^{-m}(\cos \theta) e^{i m \phi} \\
+        &= (-1)^m N_{lm} P_l^m(\cos \theta) e^{-i m \phi} \\
+        &= (-1)^m Y_{lm}^*(\theta, \phi)
+    \end{align*}
+    Or we can said that $\forall m \in \Z$, we have:
+    \[
+        Y_{l,m}(\theta, \phi) = N_{l,|m|} P_l^{|m|}(\cos \theta) e^{-i m \phi}
+    \] \\
+
+    However, up to now, we only still get the complex form with:
+    \begin{align*}
+        \begin{cases}
+             Y_{lm}(\theta, \phi) = N_{lm} P_l^m(\cos \theta) e^{i m \phi}, & m \geq 0 \\
+             Y_{l,-m}(\theta, \phi) = N_{l,-m} P_l^{-m}(\cos \theta) e^{-i m \phi}, & m < 0
+        \end{cases}
+    \end{align*}
+    with $A_{l,|m|}(\theta) = N_{l,|m|} P_l^{|m|}(\cos \theta)$ is the amplitude of the spherical harmonic. \\
+
+    To get the real form of the spherical harmonics, we can take the linear combination of $Y_{lm}(\theta, \phi)$ and $Y_{l,-m}(\theta, \phi)$:
+    \begin{align*}
+        \begin{cases}
+            Y_{lm}(\theta, \phi) + Y_{l,-m}(\theta, \phi) &= A_{l,|m|}(\theta) \left(e^{i m \phi} + e^{-i m \phi} \right) = 2 A_{l,|m|}(\theta) \cos(m \phi) \\
+            Y_{lm}(\theta, \phi) - Y_{l,-m}(\theta, \phi) &= A_{l,|m|}(\theta) \left(e^{i m \phi} - e^{-i m \phi} \right) = 2 i A_{l,|m|}(\theta) \sin(m \phi)
+        \end{cases}
+    \end{align*}
+    And then we take the magnitude of the above 2 functions and normalize them to get the new basis functions:
+    \begin{align*}
+        \begin{cases}
+            2 A_{l,|m|}(\theta) \cos(m \phi) \rightarrow \sqrt{2} N_{l,|m|} P_l^{|m|}(\cos \theta) \cos(m \phi), & m > 0 \\
+            2 i A_{l,|m|}(\theta) \sin(m \phi) \rightarrow \sqrt{2} N_{l,|m|} P_l^{|m|}(\cos \theta) \sin(|m| \phi), & m < 0
+        \end{cases}
+    \end{align*}
+    Some may now ask do we miss the $m = 0$ case? Actually, for $m = 0$, we have:
+    \[
+        Y_{l0}(\theta, \phi) = N_{l0} P_l^0(\cos \theta) e^{i \cdot 0 \cdot \phi} = N_{l0} P_l^0(\cos \theta)
+    \]
+    Therefore, we get the real form of the spherical harmonics in 3 cases!!
+\end{foundation}
+
+\begin{theory}
+    As temperature fluctuation $\Delta T(\theta, \phi)/T_0$ is always a real function, to have a easier analysis, we can defined the real spherical harmonics as:
+    \[
+        Y_{lm}(\theta, \phi) = \begin{cases}
+            \sqrt{2} N_{l|m|} P_l^{|m|}(\cos \theta) \sin(|m| \phi), & m < 0 \\
+            N_{l0} P_l^0(\cos \theta), & m = 0 \\
+            \sqrt{2} N_{lm} P_l^m(\cos \theta) \cos(m \phi), & m > 0
+        \end{cases}
+    \] 
+    where $N_{lm}$ is the normalization factor:
+    \[
+        N_{lm} = \sqrt{\frac{(2l + 1)}{4\pi} \frac{(l - m)!}{(l + m)!}}
+    \]
+    And the associated Legendre polynomial $P_l^m(x)$ is defined as:
+    \[
+        P_l^m(x) = (-1)^m (1 - x^2)^{m/2} \frac{d^m}{dx^m} P_l(x)
+    \]
+    which is related to the Legendre polynomial $P_l(x)$ by:
+    \[
+        P_l(x) = \frac{1}{2^l l!} \frac{d^l}{dx^l} (x^2 - 1)^l
+    \] 
+\end{theory}
+
+%% Calculation of coefficients a_lm
+\bigskip \noindent
+\begin{foundation}
+    Start with the expression and by orthogonality of the spherical harmonics, we can get the coefficients $a_{lm}$ as:
+    \begin{align*}
+        \frac{\Delta T(\theta, \phi)}{T_0} &= \sum_{l=0}^{\infty} \sum_{m=-l}^{l} a_{lm} Y_{lm}(\theta, \phi) \\
+        Y_{l'm'}^*(\theta, \phi) \frac{\Delta T(\theta, \phi)}{T_0} &= \sum_{l=0}^{\infty} \sum_{m=-l}^{l} a_{lm} Y_{l'm'}^*(\theta, \phi) Y_{lm}(\theta, \phi) \\
+        \int Y_{l'm'}^*(\theta, \phi) \frac{\Delta T(\theta, \phi)}{T_0} d\Omega &= \sum_{l=0}^{\infty} \sum_{m=-l}^{l} a_{lm} \int Y_{l'm'}^*(\theta, \phi) Y_{lm}(\theta, \phi) d\Omega \\
+        \int Y_{l'm'}^*(\theta, \phi) \frac{\Delta T(\theta, \phi)}{T_0} d\Omega &= \sum_{l=0}^{\infty} \sum_{m=-l}^{l} a_{lm} \delta_{ll'} \delta_{mm'} \\
+        \int Y_{l'm'}^*(\theta, \phi) \frac{\Delta T(\theta, \phi)}{T_0} d\Omega &= a_{l'm'}
+    \end{align*}
+\end{foundation}
+
+\begin{theory}
+    Besides, we can express the coefficients $a_{lm}$ as:
+    \[
+        a_{lm} = \int Y_{lm}^*(\theta, \phi) \frac{\Delta T(\theta, \phi)}{T_0} d\Omega
+    \]
+    The $a_{lm}$ are dimensionless, but sometimes we also defined as $T_0 a_{lm}$, which has the unit of temperature (i.e. in units of $\mu$K, with $\mu$ is the micro symbol, which means $10^{-6}$). \\
+
+    Besides, as $Y_{00}$ is constant and only contribute to the isotropic part of the CMB(the average temperature), we can ignore the $l = 0$ term and let $a_{00} = 0$ for simplicity.
+\end{theory}
+
+
+
+\clearpage
+\begin{extra}
+    The below three figures show the real spherical harmonics $Y_{lm}(\theta, \phi)$ in different representations. The first figure shows the 2D map of the spherical harmonics, where the colour represents the value of the function at each point on the sphere. The second figure shows the polar plot of the spherical harmonics, where the colour represents the value of the function at each point on the sphere. The third figure shows the radial plot of the spherical harmonics, where the radius represents the value of the function at each point on the sphere, and the angle represents the azimuthal direction. \\
+    
+    For interested readers, you can check an interactive online tool to visualize the spherical harmonics in different representations: \url{https://automatoc-ti.github.io/Spherical-Harmonics-Visualizer/}.
+\end{extra}
+
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=1.0\textwidth]{images/Real_Spherical_Harmonics_Figure_Table_Complex_2D.png}
+    \caption{The real spherical harmonics $Y_{lm}(\theta, \phi)$ in the 2D map.}
+    \label{fig:real_spherical_harmonics}
+\end{figure}
+
+%\clearpage
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=0.9\textwidth]{images/Real_Spherical_Harmonics_Figure_Table_Complex_Polar_Plot.png}
+    \caption{The real spherical harmonics $Y_{lm}(\theta, \phi)$ in the polar plot.}
+    \label{fig:real_spherical_harmonics_polar}
+\end{figure}
+
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=0.9\textwidth]{images/Real_Spherical_Harmonics_Figure_Table_Complex_Radial_Magnitude.png}
+    \caption{The real spherical harmonics $Y_{lm}(\theta, \phi)$ in the radial plot.}
+    \label{fig:real_spherical_harmonics_radial}
+\end{figure}
+
+
+
+
+
+
+% -──────────────────────────────────────────────────────────────────────────────
+\clearpage
+%\bigskip \noindent \bigskip \noindent \bigskip \noindent
+\subsection{Theoretical Power Spectrum}
+\begin{intuition}
+    In the previous section, we have shown that the temperature fluctuations can be described by the spherical harmonics, now it is time to analyze the statistical properties of the temperature fluctuations, which is the power spectrum. \\
+
+    The \textbf{angular power spectrum} represents the variance of the temperature fluctuations exists in a specific angular scale, or in other words, it tells us "how rough" the CMB map when we look at patches of the sky with a specific angular size $\theta \approx 180^\circ / l$. Note that by cosmological principle, the CMB should be statistically isotropic, so we expect all orientations $m$ at the same scale $l$ should have the same average power spectrum $C_l$, and can be written as:
+    \[
+        C_l \equiv \frac{1}{2l + 1} \sum_{m=-l}^{l} \langle |a_{lm}|^2 \rangle
+    \]
+    which we sum over all $m$ for a fixed $l$ to get the average power spectrum at scale $l$. \\
+
+    Further, we can let $\langle |a_{l,-l}|^2 \rangle = \dots = \langle |a_{l0}|^2 \rangle = \dots = \langle |a_{l,l}|^2 \rangle$ due to the isotropy of the CMB, and hence we can get:
+    \[
+        C_l = \langle |a_{lm}|^2 \rangle
+    \]
+\end{intuition}
+
+\bigskip \noindent
+\begin{remark}
+    The power spectrum $C_l$ we defined here is a \textbf{theoretical power spectrum}, which is the average power spectrum we expect to see in the CMB map, thus in the equation, we used the bracket $\langle \cdot \rangle$ to represent the average over all possible realizations of the CMB map. 
+\end{remark}
+
+\bigskip \noindent
+\begin{foundation}
+    By the cosmological principle, for a different combination of $l$ and $m$, their coefficients $a_{lm}$ are independent and identically distributed random variables, which we have below properties:
+    \begin{itemize}
+        \item $\langle a_{lm} \rangle = 0$, which means the average of the coefficients is zero, which is expected as the temperature fluctuations should be around the average temperature $T_0$;
+        \item if $l \neq l'$ or $m \neq m'$, then $\langle a_{lm} a_{l'm'}^* \rangle = \langle a_{lm} \rangle \langle a_{l'm'}^* \rangle = 0$, which means the coefficients are uncorrelated with each other;
+        \item if $l = l'$ and $m = m'$, then $\langle a_{lm} a_{l'm'}^* \rangle = \langle |a_{lm}|^2 \rangle = C_l$, which means the variance of the coefficients is equal to the power spectrum at scale $l$.
+    \end{itemize} \\
+
+    Therefore, we can get the average temperature variance at scale $l$ as:
+    \begin{align*}
+        \langle \left( \frac{\Delta T}{T_0} \right)^2 \rangle &= \langle \left( \sum_{l=0}^{\infty} \sum_{m=-l}^{l} a_{lm} Y_{lm}(\theta, \phi) \right) \left( \sum_{l'=0}^{\infty} \sum_{m'=-l'}^{l'} a_{l'm'}^* Y_{l'm'}^*(\theta, \phi) \right) \rangle \\
+        &= \sum_{l=0}^{\infty} \sum_{m=-l}^{l} \sum_{l'=0}^{\infty} \sum_{m'=-l'}^{l'} \langle a_{lm} a_{l'm'}^* \rangle Y_{lm}(\theta, \phi) Y_{l'm'}^*(\theta, \phi) \\
+        &= \sum_{l=0}^{\infty} \sum_{m=-l}^{l} C_l Y_{lm}(\theta, \phi) Y_{lm}^*(\theta, \phi) \\
+        &= \sum_{l=0}^{\infty} C_l \sum_{m=-l}^{l} |Y_{lm}(\theta, \phi)|^2 \\
+        &= \sum_{l=0}^{\infty} C_l \cdot \frac{2l + 1}{4\pi} \\
+         &= \frac{1}{4\pi} \sum_{l=0}^{\infty} (2l + 1) C_l
+    \end{align*}
+\end{foundation}
+
+%% average temperature variance
+\bigskip \noindent
+\begin{theory}
+    The average temperature variance at scale $l$ can be expressed as:
+    \[
+        \langle \left( \frac{\Delta T}{T_0} \right)^2 \rangle = \frac{1}{4\pi} \sum_{l=0}^{\infty} (2l + 1) C_l
+    \]
+    with $C_l = \langle |a_{lm}|^2 \rangle$ is the theoretical power spectrum at scale $l$.
+\end{theory}
+
+% -──────────────────────────────────────────────────────────────────────────────
+\bigskip \noindent \bigskip \noindent \bigskip \noindent
+\subsection{Observed Power Spectrum}
+\begin{intuition}
+    However, in reality, we can only observe one realization of the CMB map, which means we can only get one set of coefficients $a_{lm}$, and hence we can only get one set of power spectrum. Therefore, we need to define the \textbf{observed power spectrum} as:
+    \[
+        \hat{C}_l = \frac{1}{2l + 1} \sum_{m=-l}^{l} |a_{lm}|^2
+    \]
+    which is the power spectrum we can get from the observed CMB map. \\
+\end{intuition}
+
+\bigskip \noindent
+\begin{foundation}
+    Again, we can calculate the variance of the temperature fluctuations at scale $l$ using the observed power spectrum:
+    \small
+    \begin{align*}
+        \frac{1}{4\pi} \int \left( \frac{\Delta T}{T_0} \right)^2 d\Omega &= \frac{1}{4\pi} \int \left( \sum_{l=0}^{L} \sum_{m=-l}^{l} a_{lm} Y_{lm}(\theta, \phi) \right) \left( \sum_{l'=0}^{L} \sum_{m'=-l'}^{l'} a_{l'm'}^* Y_{l'm'}^*(\theta, \phi) \right) d\Omega \\
+        &= \frac{1}{4\pi} \sum_{l=0}^{L} \sum_{m=-l}^{l} \sum_{l'=0}^{L} \sum_{m'=-l'}^{l'} a_{lm} a_{l'm'}^* \int Y_{lm}(\theta, \phi) Y_{l'm'}^*(\theta, \phi) d\Omega \\
+        &= \frac{1}{4\pi} \sum_{l=0}^{L} \sum_{m=-l}^{l} |a_{lm}|^2 \\
+        &= \frac{1}{4\pi} \sum_{l=0}^{L} (2l + 1) \hat{C}_l
+    \end{align*}
+    \normalsize
+
+    Note here actually $a_{lm} a_{l'm'}^* \neq 0$ when $l \neq l'$ or $m \neq m'$ in a single realization, the reason why here we can just ignore those terms and simplified the summation into $\sum_{l=0}^{L} \sum_{m=-l}^{l} |a_{lm}|^2$ is because the orthogonality of the spherical harmonic basis. It isolates the diagonal terms and hence we can just focus on the diagonal terms when we calculate the variance of the temperature fluctuations.
+\end{foundation}
+
+\bigskip \noindent
+\begin{theory}
+    The variance of the temperature fluctuations at scale $l$ can be expressed as:
+    \[
+        \frac{1}{4\pi} \int \left( \frac{\Delta T}{T_0} \right)^2 d\Omega = \frac{1}{4\pi} \sum_{l=0}^{L} (2l + 1) \hat{C}_l
+    \]  
+    with $\hat{C}_l = \frac{1}{2l + 1} \sum_{m=-l}^{l} |a_{lm}|^2$ is the observed power spectrum at scale $l$. And L is the maximum scale we can observe, which is determined by the resolution of the CMB map.
+\end{theory}
+
+\bigskip \noindent
+\begin{importantnote}
+    The \textbf{observed power spectrum} $\hat{C}_l$ is an estimator of the \textbf{theoretical power spectrum} $C_l$, which means $\hat{C}_l$ is a random variable that depends on the specific realization of the CMB map we observed, be aware that $\hat{C}_l$ is not equal to $C_l$, and there is a statistical uncertainty in the estimation of $C_l$ by $\hat{C}_l$, which is called \textbf{cosmic variance}.
+\end{importantnote}
+
+% -──────────────────────────────────────────────────────────────────────────────
+\clearpage
+%\bigskip \noindent \bigskip \noindent \bigskip \noindent
+\subsection{Cosmic variance}
+\begin{intuition}
+    Now lets define the variance of the difference between the observed power spectrum $\hat{C}_l$ and the theoretical power spectrum $C_l$ as:
+    \[
+        \sigma_{C_l}^2 = \langle (\hat{C}_l - C_l)^2 \rangle
+    \]
+    which is the variance of the estimation of $C_l$ by $\hat{C}_l$. This variance is called \textbf{cosmic variance}, which is the fundamental statistical uncertainty in the estimation of the power spectrum due to the fact that we can only observe one realization of the universe. \\
+
+    By intuition, we can expect that the cosmic variance should be larger at larger scales (smaller $l$) because we have fewer independent modes to average over, and hence the estimation of $C_l$ is more uncertain. On the other hand, at smaller scales (larger $l$), we have more independent modes to average over, and hence the estimation of $C_l$ is more accurate, which means the cosmic variance should be smaller at smaller scales.
+\end{intuition}
+
+\bigskip \noindent
+\begin{foundation}
+    Start with the definition of the cosmic variance:
+    \begin{align*}
+        \sigma_{C_l}^2 &= \langle (\hat{C}_l - C_l)^2 \rangle \\
+        &= \langle \hat{C}_l^2 - 2 \hat{C}_l C_l + C_l^2 \rangle \\
+        &= \langle \hat{C}_l^2 \rangle - 2 C_l \langle \hat{C}_l \rangle + C_l^2 \\
+        &= \langle \hat{C}_l^2 \rangle - C_l^2
+    \end{align*} 
+
+    Since:
+    \[
+        \langle \hat{C}_l \rangle = \langle \frac{1}{2l + 1} \sum_{m=-l}^{l} |a_{lm}|^2 \rangle = C_l
+    \]
+    we can write $\langle \hat{C}_l^2 \rangle$ as:
+    \begin{align*}
+        \langle \hat{C}_l^2 \rangle &= \frac{1}{(2l + 1)^2} \sum_{m=-l}^{l} \sum_{m'=-l}^{l} \langle |a_{lm}|^2 |a_{lm'}|^2 \rangle \\
+    \end{align*} \\
+
+    \pagebreak
+    And by assuming the CMB fluctuations are Gaussian random fields, we can get the following properties of the coefficients $a_{lm}$:
+    \begin{align*}
+        \langle |a_{lm}|^2 \rangle &= C_l \\
+        \langle |a_{lm}|^4 \rangle &= \begin{cases}
+            3 C_l^2, & m = 0 \text{ (real case)} \\
+            2 C_l^2, & m \neq 0 \text{ (complex case)}
+        \end{cases}
+    \end{align*}
+    We can further simplify $\langle \hat{C}_l^2 \rangle$ in 2 cases:
+    \begin{itemize}
+        \item For $m = m'$,
+        \begin{itemize}
+            \item if $m = 0$, then $\langle |a_{l0}|^4 \rangle = 3 C_l^2$; The number of zero diagonal term $m$ is 1.
+            \item if $m \neq 0$, then $\langle |a_{lm}|^4 \rangle = 2 C_l^2$; The number of non-zero diagonal terms $m$ is $2l$.
+        \end{itemize}
+        \item For $m \neq m'$, we have $\langle |a_{lm}|^2 |a_{lm'}|^2 \rangle = \langle |a_{lm}|^2 \rangle \langle |a_{lm'}|^2 \rangle = C_l^2$; The number of off-diagonal terms is $(2l + 1)^2 - 1 - 2l$.
+    \end{itemize} \\
+
+    Hence, we can get:
+    \begin{align*}
+        \sum_{m=-l}^{l} \sum_{m'=-l}^{l} \langle |a_{lm}|^2 |a_{lm'}|^2 \rangle &= (3 C_l^2) \cdot 1 + (2 C_l^2) \cdot 2l + C_l^2 \cdot ((2l + 1)^2 - 1 - 2l) \\
+        &=  ( 3 + 4l + 4l^2 + 4l + 1 - 1 - 2l ) C_l^2 \\
+        &= (4l^2 + 6l + 3) C_l^2 \\
+        &= (2l + 3)(2l + 1) C_l^2
+    \end{align*}
+    As a result, we get $\langle \hat{C}_l^2 \rangle$ as:
+    \begin{align*}
+        \langle \hat{C}_l^2 \rangle &= \frac{1}{(2l + 1)^2} \sum_{m=-l}^{l} \sum_{m'=-l}^{l} \langle |a_{lm}|^2 |a_{lm'}|^2 \rangle \\
+        &= \frac{1}{(2l + 1)^2} (2l + 3)(2l + 1) C_l^2 \\
+        &= \frac{2l + 3}{2l + 1} C_l^2
+    \end{align*}
+    
+    Therefore, the cosmic variance is:
+    \begin{align*}
+        \sigma_{C_l}^2 &= \langle (\hat{C}_l - C_l)^2 \rangle \\
+        &= \langle \hat{C}_l^2 \rangle - C_l^2 \\
+        &= \left( \frac{2l + 3}{2l + 1} - 1 \right) C_l^2 \\
+        &= \frac{2}{2l + 1} C_l^2
+    \end{align*}
+\end{foundation}
+
+\bigskip \noindent
+\begin{theory}
+    The cosmic variance can be expressed as:
+    \[
+        \sigma_{C_l}^2 = \langle (\hat{C}_l - C_l)^2 \rangle = \frac{2}{2l + 1} C_l^2
+    \]
+    And the equation matches our intuition that the cosmic variance is larger at larger scales (smaller $l$) and smaller at smaller scales (larger $l$).
+\end{theory}
+
+\bigskip \noindent
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=1.0\textwidth]{images/angular_power_spectrum.png}
+    \caption{The angular power spectrum of the CMB}
+    \label{fig:angular_power_spectrum}
+\end{figure}
+
+\clearpage
+\begin{extra}
+    The above figure shows the angular power spectrum of the CMB. The x-axis represents the multipole moment $l$ (top) and the corresponding angular scale $\theta$ (bottom), related approximately by $\theta \approx 180^\circ / l$. The y-axis represents the scaled power spectrum, typically plotted as $\frac{l(l+1)C_l}{2\pi}$, which quantifies the variance of temperature fluctuations at scale $l$. \\
+
+    The red dots with error bars represent the observed power spectrum $\hat{C}_l$ derived from CMB maps, while the green solid line represents the theoretical power spectrum predicted by the best-fit $\Lambda$CDM model. The green shaded region represents \textbf{cosmic variance}, the fundamental statistical uncertainty arising because we can only observe one realization of the universe. \\
+
+    On the far left (low $l$), the curve is relatively flat. This is the \textbf{Sachs-Wolfe plateau}, which corresponds to super-horizon scales (larger than the causal horizon at recombination). These fluctuations are primordial, originating from quantum fluctuations stretched by inflation. \\
+
+    In the middle region ($30 < l < 1000$), we see a series of \textbf{acoustic peaks}. These correspond to sound waves (oscillations) in the photon-baryon fluid before recombination.
+    \begin{itemize}
+        \item The \textbf{First Peak} ($l \approx 200$) represents the fundamental mode of oscillation—the maximum compression of the fluid. Its position at $1^\circ$ indicates that the universe is geometrically \textbf{flat}.
+        \item The \textbf{Second Peak} represents the first rarefaction (expansion) phase.
+        \item The \textbf{Third Peak} represents the second compression phase. The relative heights of these peaks (specifically the ratio of odd to even peaks) provide a precise measurement of the \textbf{baryon density} ($\Omega_b$) of the universe.
+    \end{itemize} \\
+
+    On the far right ($l > 1000$), the curve drops sharply. This is the \textbf{damping tail} (or Silk damping). On these very small scales, photons could diffuse through the plasma before recombination, effectively "smoothing out" the temperature fluctuations and erasing the signal. \\
+
+    Further details about the meaning of above features will be discussed in next few sections, but here we just want to give a brief introduction about the shape of the angular power spectrum and its physical meaning.
+\end{extra}

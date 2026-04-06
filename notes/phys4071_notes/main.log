@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2026.2.19)  2 APR 2026 11:40
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2026.2.19)  7 APR 2026 03:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1371,31 +1371,29 @@ LaTeX Font Info:    Font shape `U/msb/m/n' will be
 
 ]
 
-[3]
-
-[4])
+[3])
 \tf@toc=\write6
 \openout6 = `main.toc'.
 
 
 
-[5] (./chapters/intro.tex
+[4] (./chapters/intro.tex
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
 
-[6
+[5
 
 
 {/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}]
 
+[6]
+
 [7]
 
-[8]
-
-[9
+[8
 
 ]) (./chapters/ch01_fundamentals.tex
 Chapter 1.
@@ -1411,30 +1409,30 @@ Underfull \hbox (badness 10000) in paragraph at lines 11--12
 
 
 
-[10
+[9
 
 
 ]
 
-[11]
+[10]
 Underfull \hbox (badness 10000) in paragraph at lines 110--111
 
  []
 
 
 
-[12]
+[11]
 Underfull \hbox (badness 10000) in paragraph at lines 131--135
 
  []
 
 
 
+[12]
+
 [13]
 
 [14]
-
-[15]
 Underfull \hbox (badness 10000) in paragraph at lines 299--300
 []\T1/ppl/m/n/12 (+20) Calculate the trace of the spher-i-cal Minkowski met-ric
  $\OML/zplm/m/it/12 g[] \OT1/zplm/m/n/12 =
@@ -1442,19 +1440,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 299--300
 
 
 
-[16]
+[15]
 Underfull \hbox (badness 10000) in paragraph at lines 329--331
 
  []
 
 
 
-[17]
+[16]
 Underfull \hbox (badness 10000) in paragraph at lines 358--360
 
  []
 
-<images/energy_momentum_tensor.png, id=855, 452.69125pt x 254.9525pt>
+<images/energy_momentum_tensor.png, id=774, 452.69125pt x 254.9525pt>
 File: images/energy_momentum_tensor.png Graphic file (type png)
 <use images/energy_momentum_tensor.png>
 Package pdftex.def Info: images/energy_momentum_tensor.png  used on input line 
@@ -1466,9 +1464,9 @@ LaTeX Font Info:    Trying to load font information for TS1+ppl on input line 4
 File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
 )
 
-[18 <./images/energy_momentum_tensor.png>]
+[17 <./images/energy_momentum_tensor.png>]
 
-[19]
+[18]
 Underfull \hbox (badness 10000) in paragraph at lines 429--431
 
  []
@@ -1490,23 +1488,23 @@ Underfull \hbox (badness 10000) in paragraph at lines 447--448
 
 
 
-[20]
+[19]
 Underfull \hbox (badness 10000) in paragraph at lines 475--476
 
  []
 
 
 
-[21]
+[20]
 Underfull \hbox (badness 10000) in paragraph at lines 502--504
 
  []
 
 
 
-[22]
+[21]
 
-[23]) (./chapters/ch02_Hubble_law_and_cosmological_redshift.tex
+[22]) (./chapters/ch02_Hubble_law_and_cosmological_redshift.tex
 Chapter 2.
 
 Underfull \hbox (badness 10000) in paragraph at lines 6--8
@@ -1520,7 +1518,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 26--29
 
 
 
-[24
+[23
 
 
 ]
@@ -1545,9 +1543,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 93--95
 
 
 
-[25]
+[24]
 
-[26]
+[25]
 Underfull \hbox (badness 10000) in paragraph at lines 134--135
 
  []
@@ -1569,7 +1567,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 168--169
 
 
 
-[27
+[26
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 199--200
@@ -1583,8 +1581,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 216--218
 
 
 
-[28]
-<images/balloon_expansion.png, id=907, 705.63625pt x 266.9975pt>
+[27]
+<images/balloon_expansion.png, id=826, 705.63625pt x 266.9975pt>
 File: images/balloon_expansion.png Graphic file (type png)
 <use images/balloon_expansion.png>
 Package pdftex.def Info: images/balloon_expansion.png  used on input line 224.
@@ -1616,7 +1614,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 260--261
 
 
 
-[29 <./images/balloon_expansion.png>]
+[28 <./images/balloon_expansion.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 273--275
 
  []
@@ -1638,14 +1636,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 305--306
 
 
 
-[30]
+[29]
 Underfull \hbox (badness 10000) in paragraph at lines 333--335
 
  []
 
 
 
-[31]
+[30]
 Underfull \hbox (badness 10000) in paragraph at lines 342--343
 
  []
@@ -1667,14 +1665,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 378--379
 
 
 
-[32]
+[31]
 Underfull \hbox (badness 10000) in paragraph at lines 402--404
 
  []
 
 
 
-[33]
+[32]
 Underfull \hbox (badness 2495) in paragraph at lines 414--415
 []\T1/ppl/m/n/12 (+20) The red-shift $\OML/zplm/m/it/12 z$ \T1/ppl/m/n/12 (+20)
  of galax-ies can be con-tributed by both re-ces-sion mo-
@@ -1685,14 +1683,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 420--421
 
  []
 
-<images/hubble_diagram.png, id=932, 912.40875pt x 443.6575pt>
+<images/hubble_diagram.png, id=850, 912.40875pt x 443.6575pt>
 File: images/hubble_diagram.png Graphic file (type png)
 <use images/hubble_diagram.png>
 Package pdftex.def Info: images/hubble_diagram.png  used on input line 427.
 (pdftex.def)             Requested size: 328.6292pt x 159.79103pt.
 
 
-[34
+[33
 
  <./images/hubble_diagram.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 449--451
@@ -1706,7 +1704,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 471--472
 
 
 
-[35]
+[34]
 Underfull \hbox (badness 10000) in paragraph at lines 488--489
 
  []
@@ -1728,7 +1726,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 504--505
 
 
 
-[36
+[35
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 514--515
@@ -1757,11 +1755,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 534--536
 
 
 
-[37
+[36
 
 ]
 
-[38]
+[37]
 Underfull \hbox (badness 10000) in paragraph at lines 608--609
 
  []
@@ -1773,7 +1771,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 610--611
 
 
 
-[39
+[38
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 660--661
@@ -1782,14 +1780,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 660--661
 
 
 
-[40]
+[39]
 Underfull \hbox (badness 10000) in paragraph at lines 709--710
 
  []
 
 
 
-[41]
+[40]
 Underfull \hbox (badness 10000) in paragraph at lines 761--764
 
  []
@@ -1811,11 +1809,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 820--822
 
 
 
-[42
+[41
 
 ]) (./chapters/ch03_cosmic_evolution.tex
 
-[43]
+[42]
 Chapter 3.
 
 Underfull \hbox (badness 10000) in paragraph at lines 19--21
@@ -1834,7 +1832,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 30--31
 
 
 
-[44
+[43
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 47--49
@@ -1843,18 +1841,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 47--49
 
 
 
-[45]
+[44]
 Underfull \hbox (badness 10000) in paragraph at lines 77--79
 
  []
 
 
 
-[46
+[45
 
 ]
 
-[47
+[46
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 136--137
@@ -1868,7 +1866,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 153--155
 
 
 
-[48
+[47
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 175--177
@@ -1892,7 +1890,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 198--199
 
 
 
-[49
+[48
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 222--223
@@ -1910,7 +1908,7 @@ LaTeX Font Info:    Font shape `U/msb/m/n' will be
 (Font)              scaled to size 5.21004pt on input line 242.
 
 
-[50
+[49
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 276--277
@@ -1929,7 +1927,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 293--294
 
 
 
-[51
+[50
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 324--325
@@ -1938,7 +1936,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 324--325
 
 
 
-[52
+[51
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 351--353
@@ -1967,7 +1965,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 390--392
 
 
 
-[53
+[52
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 410--412
@@ -1976,7 +1974,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 410--412
 
 
 
-[54]
+[53]
 Underfull \hbox (badness 10000) in paragraph at lines 437--439
 
  []
@@ -1988,7 +1986,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 461--462
 
 
 
-[55]
+[54]
 Underfull \hbox (badness 10000) in paragraph at lines 468--470
 
  []
@@ -2005,7 +2003,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 497--498
 
 
 
-[56
+[55
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 513--515
@@ -2039,7 +2037,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 524--525
 
 
 
-[57
+[56
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 538--539
@@ -2053,7 +2051,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 556--557
 
 
 
-[58
+[57
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 579--580
@@ -2072,7 +2070,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 593--594
 
 
 
-[59
+[58
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 617--618
@@ -2086,7 +2084,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 619--620
 
 
 
-[60]
+[59]
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
 (Font)              scaled to size 15.0049pt on input line 640.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
@@ -2112,7 +2110,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 674--676
 
 
 
-[61]
+[60]
 Underfull \hbox (badness 10000) in paragraph at lines 686--687
 
  []
@@ -2139,7 +2137,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 707--709
 
 
 
-[62]
+[61]
 Underfull \hbox (badness 10000) in paragraph at lines 731--733
 
  []
@@ -2151,14 +2149,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 737--738
 
 
 
-[63]
+[62]
 Underfull \hbox (badness 10000) in paragraph at lines 803--804
 
  []
 
 
 
-[64
+[63
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 858--859
@@ -2177,9 +2175,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 870--871
 
 
 
-[65]
+[64]
 
-[66]
+[65]
 Underfull \hbox (badness 10000) in paragraph at lines 892--894
 
  []
@@ -2196,10 +2194,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 933--937
 
 
 
-[67
+[66
 
 ]
-<images/lcdm_energy_budget_z_log.png, id=1088, 722.7pt x 505.89pt>
+<images/lcdm_energy_budget_z_log.png, id=1006, 722.7pt x 505.89pt>
 File: images/lcdm_energy_budget_z_log.png Graphic file (type png)
 <use images/lcdm_energy_budget_z_log.png>
 Package pdftex.def Info: images/lcdm_energy_budget_z_log.png  used on input lin
@@ -2207,8 +2205,8 @@ e 985.
 (pdftex.def)             Requested size: 350.53915pt x 245.3795pt.
 
 
-[68]
-<images/energy_density_evolution.png, id=1094, 601.7682pt x 520.344pt>
+[67]
+<images/energy_density_evolution.png, id=1013, 601.7682pt x 520.344pt>
 File: images/energy_density_evolution.png Graphic file (type png)
 <use images/energy_density_evolution.png>
 Package pdftex.def Info: images/energy_density_evolution.png  used on input lin
@@ -2216,9 +2214,9 @@ e 992.
 (pdftex.def)             Requested size: 328.6292pt x 284.16542pt.
 
 
-[69 <./images/lcdm_energy_budget_z_log.png> <./images/energy_density_evolution.
+[68 <./images/lcdm_energy_budget_z_log.png> <./images/energy_density_evolution.
 png>]
-<images/type_Ia_supernova.png, id=1102, 835.12pt x 855.195pt>
+<images/type_Ia_supernova.png, id=1021, 835.12pt x 855.195pt>
 File: images/type_Ia_supernova.png Graphic file (type png)
 <use images/type_Ia_supernova.png>
 Package pdftex.def Info: images/type_Ia_supernova.png  used on input line 1006.
@@ -2251,14 +2249,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 1045--1047
 
 
 
-[70 <./images/type_Ia_supernova.png (PNG copy)>]
+[69 <./images/type_Ia_supernova.png (PNG copy)>]
 
-[71]
+[70]
 Underfull \hbox (badness 10000) in paragraph at lines 1067--1069
 
  []
 
-<images/luminousity_distance.png, id=1112, 591.20876pt x 663.47874pt>
+<images/luminousity_distance.png, id=1031, 591.20876pt x 663.47874pt>
 File: images/luminousity_distance.png Graphic file (type png)
 <use images/luminousity_distance.png>
 Package pdftex.def Info: images/luminousity_distance.png  used on input line 10
@@ -2294,9 +2292,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 1115--1117
 
 
 
-[72]
+[71]
 
-[73 <./images/luminousity_distance.png>]
+[72 <./images/luminousity_distance.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 1128--1129
 
  []
@@ -2323,14 +2321,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 1159--1160
 
 
 
-[74]
+[73]
 Underfull \hbox (badness 10000) in paragraph at lines 1164--1165
 
  []
 
 
 
-[75]
+[74]
 Underfull \hbox (badness 10000) in paragraph at lines 1171--1172
 
  []
@@ -2347,16 +2345,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 1190--1191
 
 
 
-[76
+[75
 
 ]
-<images/universe_evolution.png, id=1136, 1445.4pt x 813.0375pt>
+<images/universe_evolution.png, id=1055, 1445.4pt x 813.0375pt>
 File: images/universe_evolution.png Graphic file (type png)
 <use images/universe_evolution.png>
 Package pdftex.def Info: images/universe_evolution.png  used on input line 1203
 .
 (pdftex.def)             Requested size: 350.53915pt x 197.17996pt.
-<images/universe_evolution_3.png, id=1137, 1117.17375pt x 1003.75pt>
+<images/universe_evolution_3.png, id=1056, 1117.17375pt x 1003.75pt>
 File: images/universe_evolution_3.png Graphic file (type png)
 <use images/universe_evolution_3.png>
 Package pdftex.def Info: images/universe_evolution_3.png  used on input line 12
@@ -2364,7 +2362,7 @@ Package pdftex.def Info: images/universe_evolution_3.png  used on input line 12
 (pdftex.def)             Requested size: 197.17618pt x 177.14453pt.
 
 
-[77
+[76
 
  <./images/universe_evolution.png> <./images/universe_evolution_3.png (PNG copy
 )>]
@@ -2374,24 +2372,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 1233--1236
 
 
 
-[78
+[77
 
 ]
 
-[79]
+[78]
 
-[80]
+[79]
 Underfull \hbox (badness 10000) in paragraph at lines 1374--1375
 
  []
 
-<images/energy_density_budget.png, id=1159, 553.06625pt x 398.48875pt>
+<images/energy_density_budget.png, id=1078, 553.06625pt x 398.48875pt>
 File: images/energy_density_budget.png Graphic file (type png)
 <use images/energy_density_budget.png>
 Package pdftex.def Info: images/energy_density_budget.png  used on input line 1
 392.
 (pdftex.def)             Requested size: 219.08614pt x 157.84824pt.
-<images/universe_evolution_2.png, id=1160, 1445.4pt x 813.0375pt>
+<images/universe_evolution_2.png, id=1079, 1445.4pt x 813.0375pt>
 File: images/universe_evolution_2.png Graphic file (type png)
 <use images/universe_evolution_2.png>
 Package pdftex.def Info: images/universe_evolution_2.png  used on input line 14
@@ -2399,11 +2397,11 @@ Package pdftex.def Info: images/universe_evolution_2.png  used on input line 14
 (pdftex.def)             Requested size: 240.99608pt x 135.55968pt.
 ) (./chapters/ch04_standard_model.tex
 
-[81
+[80
 
  <./images/energy_density_budget.png> <./images/universe_evolution_2.png>]
 Chapter 4.
-<images/standard_model.png, id=1170, 853.1875pt x 640.3925pt>
+<images/standard_model.png, id=1088, 853.1875pt x 640.3925pt>
 File: images/standard_model.png Graphic file (type png)
 <use images/standard_model.png>
 Package pdftex.def Info: images/standard_model.png  used on input line 17.
@@ -2415,13 +2413,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 35--36
 
 
 
-[82
+[81
 
  <./images/standard_model.png>]
 
-[83]
+[82]
 
-[84
+[83
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 74--75
@@ -2455,17 +2453,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 96--97
 
 
 
-[85
+[84
 
 ]
-<images/particles_mass.png, id=1190, 739.76375pt x 433.62pt>
+<images/particles_mass.png, id=1107, 739.76375pt x 433.62pt>
 File: images/particles_mass.png Graphic file (type png)
 <use images/particles_mass.png>
 Package pdftex.def Info: images/particles_mass.png  used on input line 112.
 (pdftex.def)             Requested size: 350.53915pt x 205.46878pt.
 
 
-[86 <./images/particles_mass.png>]
+[85 <./images/particles_mass.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 121--122
 
  []
@@ -2487,7 +2485,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 127--128
 
 ) (./chapters/ch05_thermodynamics_and_primordial_soup.tex
 
-[87
+[86
 
 ]
 Chapter 5.
@@ -2513,7 +2511,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 20--22
 
 
 
-[88
+[87
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 37--38
@@ -2542,18 +2540,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 66--67
 
 
 
-[89]
+[88]
 Underfull \hbox (badness 10000) in paragraph at lines 103--104
 
  []
 
 
 
-[90
+[89
 
 ]
 
-[91
+[90
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 148--150
@@ -2561,6 +2559,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 148--150
  []
 
 
+
+[91
+
+]
 
 [92
 
@@ -2570,13 +2572,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 148--150
 
 ]
 
-[94
-
-]
+[94]
 
 [95]
-
-[96]
 Underfull \hbox (badness 10000) in paragraph at lines 318--318
 []\T1/ppl/m/n/10.95 (+20) Relativistic
  []
@@ -2603,7 +2601,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 351--352
 
 
 
-[97
+[96
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 376--377
@@ -2612,17 +2610,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 376--377
 
 
 
-[98]
+[97]
 Underfull \hbox (badness 10000) in paragraph at lines 389--391
 
  []
 
 
 
-[99
+[98
 
 ]
-<images/g*_evolution.png, id=1251, 739.76375pt x 457.71pt>
+<images/g*_evolution.png, id=1170, 739.76375pt x 457.71pt>
 File: images/g*_evolution.png Graphic file (type png)
 <use images/g*_evolution.png>
 Package pdftex.def Info: images/g*_evolution.png  used on input line 416.
@@ -2649,7 +2647,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 441--442
 
 
 
-[100
+[99
 
  <./images/g*_evolution.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 459--460
@@ -2663,7 +2661,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 461--462
 
 
 
-[101]
+[100]
 Underfull \hbox (badness 10000) in paragraph at lines 474--476
 
  []
@@ -2695,7 +2693,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 491--493
 
 
 
-[102
+[101
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 514--515
@@ -2709,7 +2707,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 532--533
 
 
 
-[103]
+[102]
 Underfull \hbox (badness 10000) in paragraph at lines 543--547
 
  []
@@ -2736,11 +2734,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 592--594
 
 
 
-[104
+[103
 
 ]
 
-[105]
+[104]
 Underfull \hbox (badness 10000) in paragraph at lines 650--651
 
  []
@@ -2752,14 +2750,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 664--665
 
 
 
-[106]
+[105]
 Underfull \hbox (badness 10000) in paragraph at lines 674--675
 
  []
 
 
 
-[107
+[106
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 715--716
@@ -2778,7 +2776,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 731--733
 
 
 
-[108
+[107
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 741--742
@@ -2795,7 +2793,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 745--746
 
  []
 
-<images/dependence_interaction_strength.png, id=1293, 736.7525pt x 395.4775pt>
+<images/dependence_interaction_strength.png, id=1211, 736.7525pt x 395.4775pt>
 File: images/dependence_interaction_strength.png Graphic file (type png)
 <use images/dependence_interaction_strength.png>
 Package pdftex.def Info: images/dependence_interaction_strength.png  used on in
@@ -2813,7 +2811,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 767--768
 
 
 
-[109
+[108
 
  <./images/dependence_interaction_strength.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 774--775
@@ -2827,7 +2825,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 776--777
 
 
 
-[110]
+[109]
 Underfull \hbox (badness 10000) in paragraph at lines 789--790
 
  []
@@ -2854,7 +2852,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 802--803
 
 
 
-[111
+[110
 
 ]
 Overfull \hbox (1.67159pt too wide) in paragraph at lines 872--873
@@ -2883,7 +2881,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 884--885
 
 
 
-[112
+[111
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 890--891
@@ -2927,7 +2925,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 936--937
 
 
 
-[113]
+[112]
 Underfull \hbox (badness 10000) in paragraph at lines 949--951
 
  []
@@ -2939,7 +2937,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 958--960
 
 
 
-[114]
+[113]
 Underfull \hbox (badness 10000) in paragraph at lines 968--969
 
  []
@@ -2961,7 +2959,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 982--983
 
 
 
-[115]
+[114]
 Underfull \hbox (badness 10000) in paragraph at lines 996--997
 
  []
@@ -2983,7 +2981,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1029--1030
 
 
 
-[116
+[115
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 1051--1053
@@ -2997,7 +2995,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1055--1056
 
 
 
-[117]
+[116]
 Underfull \hbox (badness 10000) in paragraph at lines 1061--1062
 
  []
@@ -3039,7 +3037,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1115--1117
 
 
 
-[118
+[117
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 1124--1125
@@ -3053,7 +3051,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1126--1127
 
 
 
-[119]
+[118]
 Underfull \hbox (badness 10000) in paragraph at lines 1134--1136
 
  []
@@ -3070,7 +3068,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1141--1142
 
 ) (./chapters/ch06_Big_Bang_nucleosynthesis.tex
 
-[120
+[119
 
 ]
 Chapter 6.
@@ -3106,7 +3104,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 38--40
 
 
 
-[121
+[120
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 65--66
@@ -3120,9 +3118,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 79--81
 
 
 
-[122]
+[121]
 
-[123]
+[122]
 Underfull \hbox (badness 10000) in paragraph at lines 105--107
 
  []
@@ -3149,7 +3147,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 143--144
 
 
 
-[124
+[123
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 162--164
@@ -3163,15 +3161,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 173--174
 
 
 
-[125]
+[124]
 Underfull \hbox (badness 10000) in paragraph at lines 187--188
 
  []
 
 
 
-[126]
-<images/baryon_to_photon_ratio.png, id=1373, 412.54124pt x 508.90125pt>
+[125]
+<images/baryon_to_photon_ratio.png, id=1292, 412.54124pt x 508.90125pt>
 File: images/baryon_to_photon_ratio.png Graphic file (type png)
 <use images/baryon_to_photon_ratio.png>
 Package pdftex.def Info: images/baryon_to_photon_ratio.png  used on input line 
@@ -3194,11 +3192,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 206--207
 
 
 
-[127
+[126
 
  <./images/baryon_to_photon_ratio.png>]
 
-[128]
+[127]
 Underfull \hbox (badness 10000) in paragraph at lines 262--264
 
  []
@@ -3210,8 +3208,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 279--281
 
 
 
-[129]
-<images/BBN_interaction_chain.jpg, id=1389, 602.25pt x 383.4325pt>
+[128]
+<images/BBN_interaction_chain.jpg, id=1308, 602.25pt x 383.4325pt>
 File: images/BBN_interaction_chain.jpg Graphic file (type jpg)
 <use images/BBN_interaction_chain.jpg>
 Package pdftex.def Info: images/BBN_interaction_chain.jpg  used on input line 2
@@ -3219,7 +3217,7 @@ Package pdftex.def Info: images/BBN_interaction_chain.jpg  used on input line 2
 (pdftex.def)             Requested size: 350.53915pt x 223.18669pt.
 
 
-[130
+[129
 
  <./images/BBN_interaction_chain.jpg>]
 Underfull \hbox (badness 10000) in paragraph at lines 353--354
@@ -3228,8 +3226,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 353--354
 
 
 
-[131]
-<images/time_evolution_abundance.png, id=1399, 544.0325pt x 465.74pt>
+[130]
+<images/time_evolution_abundance.png, id=1318, 544.0325pt x 465.74pt>
 File: images/time_evolution_abundance.png Graphic file (type png)
 <use images/time_evolution_abundance.png>
 Package pdftex.def Info: images/time_evolution_abundance.png  used on input lin
@@ -3237,7 +3235,7 @@ e 363.
 (pdftex.def)             Requested size: 350.53915pt x 300.10507pt.
 
 
-[132
+[131
 
  <./images/time_evolution_abundance.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 382--383
@@ -3251,14 +3249,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 384--385
 
 
 
-[133]
+[132]
 Underfull \hbox (badness 10000) in paragraph at lines 412--413
 
  []
 
 ) (./chapters/ch07_Cosmic_Microwave_Background.tex
 
-[134
+[133
 
 ]
 Chapter 7.
@@ -3301,16 +3299,16 @@ and I'll forget about whatever was undefined.
 
 
 
-[135
+[134
 
 ]
 
-[136]
+[135]
 Underfull \hbox (badness 10000) in paragraph at lines 75--76
 
  []
 
-<images/saha_equation.png, id=1424, 700.6175pt x 434.62375pt>
+<images/saha_equation.png, id=1342, 700.6175pt x 434.62375pt>
 File: images/saha_equation.png Graphic file (type png)
 <use images/saha_equation.png>
 Package pdftex.def Info: images/saha_equation.png  used on input line 83.
@@ -3322,7 +3320,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 89--90
 
 
 
-[137 <./images/saha_equation.png>]
+[136 <./images/saha_equation.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 97--98
 
  []
@@ -3344,8 +3342,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 123--124
 
 
 
-[138]
-<images/CMB_frequency_spectrum.png, id=1435, 713.66624pt x 537.00626pt>
+[137]
+<images/CMB_frequency_spectrum.png, id=1353, 713.66624pt x 537.00626pt>
 File: images/CMB_frequency_spectrum.png Graphic file (type png)
 <use images/CMB_frequency_spectrum.png>
 Package pdftex.def Info: images/CMB_frequency_spectrum.png  used on input line 
@@ -3353,7 +3351,7 @@ Package pdftex.def Info: images/CMB_frequency_spectrum.png  used on input line
 (pdftex.def)             Requested size: 350.53915pt x 263.76631pt.
 
 
-[139 <./images/CMB_frequency_spectrum.png>]
+[138 <./images/CMB_frequency_spectrum.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 147--149
 
  []
@@ -3365,7 +3363,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 150--151
 
 
 
-[140
+[139
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 171--172
@@ -3377,90 +3375,333 @@ Underfull \hbox (badness 10000) in paragraph at lines 173--174
 
  []
 
-) (./chapters/questions.tex
+<images/CMB_anisotropies.png, id=1365, 757.83125pt x 376.40625pt>
+File: images/CMB_anisotropies.png Graphic file (type png)
+<use images/CMB_anisotropies.png>
+Package pdftex.def Info: images/CMB_anisotropies.png  used on input line 190.
+(pdftex.def)             Requested size: 306.71924pt x 152.34605pt.
 
-[141
+Underfull \hbox (badness 10000) in paragraph at lines 196--197
 
-]
-Chapter 8.
-(./chapters/questions/q_ch01_fundamentals.tex
-
-[142
-
-]
-
-[143]
-
-[144]) (./chapters/questions/q_ch02_hubble_law_and_redshift.tex
-
-[145]
-
-[146
-
-]
-
-[147]) (./chapters/questions/q_ch03_cosmic_evolution.tex
-
-[148]
-
-[149
-
-]
-
-[150]
-
-[151]
-
-[152]
-Overfull \hbox (2.06387pt too wide) in paragraph at lines 311--312
-[]\T1/ppl/b/n/12 (-20) Phantom dark en-ergy \T1/ppl/m/n/12 (-20) ($\OML/zplm/m/
-it/12 w[] \OT1/zplm/m/n/12 = \OMS/zplm/m/n/12 ^^@\OT1/ppl/m/n/12 (-20) 1.5$\T1/
-ppl/m/n/12 (-20) , con-stant): Lo-cated at $\OT1/zplm/m/n/12 (\OML/zplm/m/it/12
- w[]\OT1/ppl/m/n/12 (-20) , \OML/zplm/m/it/12 w[]\OT1/zplm/m/n/12 ) = (\OMS/zpl
-m/m/n/12 ^^@\OT1/ppl/m/n/12 (-20) 1.5, 0\OT1/zplm/m/n/12 )$\T1/ppl/m/n/12 (-20)
- ,
  []
 
 
 
-[153]
-<chapters/images/acceleration_plot.png, id=1605, 1004.553pt x 388.8126pt>
-File: chapters/images/acceleration_plot.png Graphic file (type png)
-<use chapters/images/acceleration_plot.png>
-Package pdftex.def Info: chapters/images/acceleration_plot.png  used on input l
-ine 361.
-(pdftex.def)             Requested size: 394.35236pt x 152.63301pt.
-) (./chapters/questions/q_ch04_standard_model.tex
+[140
 
-[154]
+ <./images/CMB_anisotropies.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 210--212
 
-[155 <./chapters/images/acceleration_plot.png>]
+ []
 
-[156
+<images/CMB_comparison.png, id=1372, 813.0375pt x 456.70625pt>
+File: images/CMB_comparison.png Graphic file (type png)
+<use images/CMB_comparison.png>
+Package pdftex.def Info: images/CMB_comparison.png  used on input line 218.
+(pdftex.def)             Requested size: 350.53915pt x 196.90251pt.
 
-]) (./chapters/questions/q_ch05_thermo_and_primordial_soup.tex
+Underfull \hbox (badness 10000) in paragraph at lines 224--225
 
-[157]
+ []
 
-[158
+
+Underfull \hbox (badness 10000) in paragraph at lines 226--227
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 228--229
+
+ []
+
+
+
+[141 <./images/CMB_comparison.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 235--236
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 241--242
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 276--277
+
+ []
+
+LaTeX Font Info:    Trying to load font information for U+fplmbb on input line 
+284.
+(/usr/local/texlive/2025/texmf-dist/tex/latex/psnfss/ufplmbb.fd
+File: ufplmbb.fd 2003/10/30 Fontinst v1.914 font definitions for U/fplmbb.
+)
+Underfull \hbox (badness 10000) in paragraph at lines 289--290
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 297--299
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 311--312
+
+ []
+
+
+
+[142]
+
+[143]
+
+[144]
+Underfull \hbox (badness 10000) in paragraph at lines 323--325
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 356--358
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 364--365
+
+ []
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.376     A
+           nd we can write the general result of the first integral as:
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 385--386
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 402--403
+
+ []
+
+! Misplaced alignment tab character &.
+l.406         P_l(\cos \gamma) &
+                                = \frac{4\pi}{2l + 1} \sum_{m=-l}^{l} Y_{lm}...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+
+
+[145
 
 ]
 
-[159]
+[146]
 
-[160]) (./chapters/questions/q_ch06_big_bang_nucleosynthesis.tex
+[147]
+Underfull \hbox (badness 10000) in paragraph at lines 452--453
 
-[161]
+ []
 
-[162
+! Undefined control sequence.
+l.460     Or we can said that $\forall m \in \Z
+                                               $, we have:
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
-])) (./chapters/appendix.tex
 
-[163]
+Underfull \hbox (badness 10000) in paragraph at lines 463--464
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 471--473
+
+ []
+
+
+
+[148
+
+]
+
+[149]
+Underfull \hbox (badness 10000) in paragraph at lines 535--537
+
+ []
+
+
+
+[150]
+Underfull \hbox (badness 10000) in paragraph at lines 545--546
+
+ []
+
+<images/Real_Spherical_Harmonics_Figure_Table_Complex_2D.png, id=1419, 1927.2pt
+ x 1009.7725pt>
+File: images/Real_Spherical_Harmonics_Figure_Table_Complex_2D.png Graphic file 
+(type png)
+<use images/Real_Spherical_Harmonics_Figure_Table_Complex_2D.png>
+Package pdftex.def Info: images/Real_Spherical_Harmonics_Figure_Table_Complex_2
+D.png  used on input line 552.
+(pdftex.def)             Requested size: 438.17227pt x 229.57722pt.
+<images/Real_Spherical_Harmonics_Figure_Table_Complex_Polar_Plot.png, id=1420, 
+2055.68pt x 1541.76pt>
+File: images/Real_Spherical_Harmonics_Figure_Table_Complex_Polar_Plot.png Graph
+ic file (type png)
+<use images/Real_Spherical_Harmonics_Figure_Table_Complex_Polar_Plot.png>
+Package pdftex.def Info: images/Real_Spherical_Harmonics_Figure_Table_Complex_P
+olar_Plot.png  used on input line 560.
+(pdftex.def)             Requested size: 394.35236pt x 295.76048pt.
+<images/Real_Spherical_Harmonics_Figure_Table_Complex_Radial_Magnitude.png, id=
+1421, 1284.8pt x 963.6pt>
+File: images/Real_Spherical_Harmonics_Figure_Table_Complex_Radial_Magnitude.png
+ Graphic file (type png)
+<use images/Real_Spherical_Harmonics_Figure_Table_Complex_Radial_Magnitude.png>
+
+Package pdftex.def Info: images/Real_Spherical_Harmonics_Figure_Table_Complex_R
+adial_Magnitude.png  used on input line 567.
+(pdftex.def)             Requested size: 394.35236pt x 295.75754pt.
+
+
+[151
+
+ <./images/Real_Spherical_Harmonics_Figure_Table_Complex_2D.png>]
+
+[152 <./images/Real_Spherical_Harmonics_Figure_Table_Complex_Polar_Plot.png> <.
+/images/Real_Spherical_Harmonics_Figure_Table_Complex_Radial_Magnitude.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 582--583
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 587--589
+
+ []
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.609 
+      
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+
+[153
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 638--640
+
+ []
+
+
+
+[154]
+
+[155]
+Underfull \hbox (badness 10000) in paragraph at lines 679--681
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 702--703
+
+ []
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.722 
+      
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+
+[156
+
+]
+
+[157]
+<images/angular_power_spectrum.png, id=1459, 660.4675pt x 367.3725pt>
+File: images/angular_power_spectrum.png Graphic file (type png)
+<use images/angular_power_spectrum.png>
+Package pdftex.def Info: images/angular_power_spectrum.png  used on input line 
+758.
+(pdftex.def)             Requested size: 438.17227pt x 243.73346pt.
+
+
+[158 <./images/angular_power_spectrum.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 765--766
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 767--768
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 769--770
+
+ []
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.777 
+      
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 778--779
+
+ []
+
+) (./chapters/appendix.tex
+
+[159
+
+]
 Appendix A.
 
 
-[164
+[160
 
 ]
 Appendix B.
@@ -3477,12 +3718,12 @@ it/12 A [] B \OMS/zplm/m/n/12 ^^F [] \OML/zplm/m/it/12 A [] B$\T1/ppl/m/n/12 (-
 
 
 
-[165
+[161
 
 
 ]
 
-[166
+[162
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 131--132
@@ -3501,40 +3742,48 @@ Underfull \hbox (badness 10000) in paragraph at lines 138--140
 
 
 
-[167
+[163
+
+]
+
+[164
+
+]
+
+[165
 
 ]
 Appendix C.
 
 
-[168
+[166
 
 
 ]
 
-[169
+[167
 
 ]
-Overfull \hbox (23.4547pt too wide) in paragraph at lines 269--291
+Overfull \hbox (23.4547pt too wide) in paragraph at lines 336--358
  [] 
  []
 
 
 
-[170
+[168
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 327--328
+Underfull \hbox (badness 10000) in paragraph at lines 394--395
 
  []
 
 
 
-[171
+[169
 
 ])
 
-[172
+[170
 
 
 ] (./main.aux)
@@ -3543,34 +3792,34 @@ LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: BE8CB0BEA60A06A75C760AABA3E4E70A;22872.
+(rerunfilecheck)             Checksum: BF0B8EEA5C982F1C30FCBF258D99F55F;21200.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 41808 strings out of 473190
- 822441 string characters out of 5715800
- 1705709 words of memory out of 5000000
- 63254 multiletter control sequences out of 15000+600000
- 669335 words of font info for 587 fonts, out of 8000000 for 9000
+ 41609 strings out of 473190
+ 821098 string characters out of 5715800
+ 1704928 words of memory out of 5000000
+ 63274 multiletter control sequences out of 15000+600000
+ 668614 words of font info for 575 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  92i,20n,99p,1036b,1437s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
 ></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb>
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></
 usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></u
-sr/local/texlive/2025/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb></usr/lo
-cal/texlive/2025/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb></usr/local/
-texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/lo
-cal/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb></usr/loca
-l/texlive/2025/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texli
-ve/2025/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2025
-/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (172 pages, 7223289 bytes).
+sr/local/texlive/2025/texmf-dist/fonts/type1/public/mathpazo/fplmbb.pfb></usr/l
+ocal/texlive/2025/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb></usr/local/
+texlive/2025/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb></usr/local/texl
+ive/2025/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb></usr/local/texliv
+e/2025/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2025/
+texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2025/texmf-d
+ist/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on main.pdf (170 pages, 12079243 bytes).
 PDF statistics:
- 1925 PDF objects out of 2073 (max. 8388607)
- 1541 compressed objects within 16 object streams
- 509 named destinations out of 1000 (max. 500000)
- 139990 words of extra memory for PDF output out of 154059 (max. 10000000)
+ 1657 PDF objects out of 1728 (max. 8388607)
+ 1280 compressed objects within 13 object streams
+ 335 named destinations out of 1000 (max. 500000)
+ 139911 words of extra memory for PDF output out of 154059 (max. 10000000)
 

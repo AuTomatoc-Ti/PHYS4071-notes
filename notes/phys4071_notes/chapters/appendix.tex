@@ -172,6 +172,73 @@ So in a relativistic limit, we can have:
       \{ E, m, \rho\} \ll \{p, T\}
 \]
 which any one of the values in left-hand set is much smaller than any one of the values in the right-hand set.
+
+\clearpage
+\section{Spherical Harmonics \& Associated Legendre Polynomials}
+
+We adopt the Condon--Shortley phase convention:
+\begin{align*}
+      Y_l^m(\theta,\phi) &= N_{lm}\,P_l^m(\cos\theta)\,e^{im\phi},\\
+      N_{lm} &= \sqrt{\frac{2l+1}{4\pi}\frac{(l-m)!}{(l+m)!}},\\
+      Y_l^{-m}(\theta,\phi) &= (-1)^m N_{lm}\,P_l^m(\cos\theta)\,e^{-im\phi},\qquad (m>0).
+\end{align*}
+
+The real spherical harmonics are constructed as
+\begin{align*}
+      Y_{l,m}^{(c)}(\theta,\phi) &= \frac{1}{\sqrt2}\Bigl(Y_l^{-m}+(-1)^mY_l^m\Bigr)
+      = \sqrt2\,N_{lm}\,P_l^m(\cos\theta)\cos(m\phi),\qquad m>0,\\
+      Y_{l,m}^{(s)}(\theta,\phi) &= \frac{1}{i\sqrt2}\Bigl(Y_l^{-m}-(-1)^mY_l^m\Bigr)
+      = \sqrt2\,N_{lm}\,P_l^m(\cos\theta)\sin(m\phi),\qquad m<0,\\
+      Y_{l,0}(\theta,\phi) &= N_{l0}\,P_l(\cos\theta).
+\end{align*}
+
+\subsection*{Associated Legendre Polynomials $P_l^m(x)$ for $0\le l\le4$}
+Let $x\equiv\cos\theta$.
+\begin{align*}
+      l=0:&\quad P_0^0(x)=1.\\
+      l=1:&\quad P_1^0(x)=x,\qquad P_1^1(x)=-(1-x^2)^{1/2}.\\
+      l=2:&\quad P_2^0(x)=\tfrac12(3x^2-1),\qquad P_2^1(x)=-3x(1-x^2)^{1/2},\qquad P_2^2(x)=3(1-x^2).\\
+      l=3:&\quad P_3^0(x)=\tfrac12(5x^3-3x),\qquad P_3^1(x)=-\tfrac32(5x^2-1)(1-x^2)^{1/2},\\
+                  &\quad P_3^2(x)=15x(1-x^2),\qquad P_3^3(x)=-15(1-x^2)^{3/2}.\\
+      l=4:&\quad P_4^0(x)=\tfrac18(35x^4-30x^2+3),\qquad P_4^1(x)=-\tfrac52(7x^3-3x)(1-x^2)^{1/2},\\
+                  &\quad P_4^2(x)=\tfrac{15}{2}(7x^2-1)(1-x^2),\qquad P_4^3(x)=-105x(1-x^2)^{3/2},\\
+                  &\quad P_4^4(x)=105(1-x^2)^2.
+\end{align*}
+
+\clearpage
+\subsection*{Real Spherical Harmonics Table for $0\le l\le4$}
+\begin{align*}
+      l=0:\quad &Y_{0,0}=\sqrt{\frac{1}{4\pi}}.\\
+      l=1:\quad &Y_{1,0}=\sqrt{\frac{3}{4\pi}}\,P_1^0(\cos\theta),\\
+                                    &Y_{1,1}^{(c)}=\sqrt{\frac{3}{4\pi}}\,P_1^1(\cos\theta)\cos\phi,\qquad
+                                     Y_{1,1}^{(s)}=\sqrt{\frac{3}{4\pi}}\,P_1^1(\cos\theta)\sin\phi.\\
+      l=2:\quad &Y_{2,0}=\sqrt{\frac{5}{4\pi}}\,P_2^0(\cos\theta),\\
+                                    &Y_{2,1}^{(c)}=\sqrt{\frac{5}{12\pi}}\,P_2^1(\cos\theta)\cos\phi,\qquad
+                                     Y_{2,1}^{(s)}=\sqrt{\frac{5}{12\pi}}\,P_2^1(\cos\theta)\sin\phi,\\
+                                    &Y_{2,2}^{(c)}=\sqrt{\frac{5}{48\pi}}\,P_2^2(\cos\theta)\cos(2\phi),\qquad
+                                     Y_{2,2}^{(s)}=\sqrt{\frac{5}{48\pi}}\,P_2^2(\cos\theta)\sin(2\phi).\\
+      l=3:\quad &Y_{3,0}=\sqrt{\frac{7}{4\pi}}\,P_3^0(\cos\theta),\\
+                                    &Y_{3,1}^{(c)}=\sqrt{\frac{7}{24\pi}}\,P_3^1(\cos\theta)\cos\phi,\qquad
+                                     Y_{3,1}^{(s)}=\sqrt{\frac{7}{24\pi}}\,P_3^1(\cos\theta)\sin\phi,\\
+                                    &Y_{3,2}^{(c)}=\sqrt{\frac{7}{240\pi}}\,P_3^2(\cos\theta)\cos(2\phi),\qquad
+                                     Y_{3,2}^{(s)}=\sqrt{\frac{7}{240\pi}}\,P_3^2(\cos\theta)\sin(2\phi),\\
+                                    &Y_{3,3}^{(c)}=\sqrt{\frac{7}{2880\pi}}\,P_3^3(\cos\theta)\cos(3\phi),\qquad
+                                     Y_{3,3}^{(s)}=\sqrt{\frac{7}{2880\pi}}\,P_3^3(\cos\theta)\sin(3\phi).\\
+      l=4:\quad &Y_{4,0}=\sqrt{\frac{9}{4\pi}}\,P_4^0(\cos\theta),\\
+                                    &Y_{4,1}^{(c)}=\sqrt{\frac{9}{40\pi}}\,P_4^1(\cos\theta)\cos\phi,\qquad
+                                     Y_{4,1}^{(s)}=\sqrt{\frac{9}{40\pi}}\,P_4^1(\cos\theta)\sin\phi,\\
+                                    &Y_{4,2}^{(c)}=\sqrt{\frac{1}{80\pi}}\,P_4^2(\cos\theta)\cos(2\phi),\qquad
+                                     Y_{4,2}^{(s)}=\sqrt{\frac{1}{80\pi}}\,P_4^2(\cos\theta)\sin(2\phi),\\
+                                    &Y_{4,3}^{(c)}=\sqrt{\frac{1}{1120\pi}}\,P_4^3(\cos\theta)\cos(3\phi),\qquad
+                                     Y_{4,3}^{(s)}=\sqrt{\frac{1}{1120\pi}}\,P_4^3(\cos\theta)\sin(3\phi),\\
+                                    &Y_{4,4}^{(c)}=\sqrt{\frac{1}{8960\pi}}\,P_4^4(\cos\theta)\cos(4\phi),\qquad
+                                     Y_{4,4}^{(s)}=\sqrt{\frac{1}{8960\pi}}\,P_4^4(\cos\theta)\sin(4\phi).
+\end{align*}
+
+\bigskip
+\noindent
+The above keeps the exact $\sqrt{\cdot}$ normalization and explicit angular dependence
+$(\theta,\phi)$, while using a real-valued basis.
 \clearpage
 
 
