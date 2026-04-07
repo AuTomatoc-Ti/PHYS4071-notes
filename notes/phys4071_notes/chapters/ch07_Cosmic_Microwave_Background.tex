@@ -702,7 +702,24 @@
     \end{align*} \\
 
     \pagebreak
-    And by assuming the CMB fluctuations are Gaussian random fields, we can get the following properties of the coefficients $a_{lm}$:
+    By assuming the CMB fluctuations are Gaussian random fields, we can get the following properties of the coefficients $a_{lm}$:
+    \begin{itemize}
+        \item $m = 0$ case, we have $\langle |a_{l0}|^2 \rangle = \sigma^2 = C_l$, and hence we can get: 
+            \begin{align*}
+                \langle |a_{l0}|^4 \rangle &= \frac{1}{\sqrt{2\pi} \sigma} \int_{-\infty}^{\infty} x^4 e^{-\frac{x^2}{2\sigma^2}} dx \\
+                &= 3 \sigma^4 \\
+                &= 3 C_l^2
+            \end{align*}
+        \item $m \neq 0$ case, let $a_{lm} = x + i y$, where $x$ and $y$ are independent Gaussian random variables with mean 0 and variance $\sigma^2 = C_l/2$, we can get:
+            \begin{align*}
+                \langle |a_{lm}|^4 \rangle &= \langle (x^2 + y^2)^2 \rangle \\
+                &= \langle x^4 + 2 x^2 y^2 + y^4 \rangle \\
+                &= 3 \sigma^4 + 2 \sigma^4 + 3 \sigma^4 \\
+                &= 8 \sigma^4 \\
+                &= 2 C_l^2
+            \end{align*}
+    \end{itemize}
+    And we get:
     \begin{align*}
         \langle |a_{lm}|^2 \rangle &= C_l \\
         \langle |a_{lm}|^4 \rangle &= \begin{cases}
@@ -755,7 +772,7 @@
 \bigskip \noindent
 \begin{figure}[!htbp]
     \centering
-    \includegraphics[width=1.0\textwidth]{images/angular_power_spectrum.png}
+    \includegraphics[width=0.8\textwidth]{images/angular_power_spectrum.png}
     \caption{The angular power spectrum of the CMB}
     \label{fig:angular_power_spectrum}
 \end{figure}
