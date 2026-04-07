@@ -796,3 +796,94 @@
 
     Further details about the meaning of above features will be discussed in next few sections, but here we just want to give a brief introduction about the shape of the angular power spectrum and its physical meaning.
 \end{extra}
+
+
+
+% =══════════════════════════════════════════════════════════════════════════════
+\clearpage
+\section{Acoustic Oscillations and Acoustic Peaks}
+% -──────────────────────────────────────────────────────────────────────────────
+%\bigskip \noindent \bigskip \noindent \bigskip \noindent
+\subsection{Damped Harmonic Oscillator}
+\begin{foundation}
+    Recall about the equation of motion for a damped harmonic oscillator, in such a system, the total force is given 2 components: the restoring force $F_r = - k x$ and the damping force by friction $F_d = - b \frac{dx}{dt}$, where $k$ is the stiffness factor and $b$ is the viscous damping coefficient. The equation of motion can be written as:
+    \[
+        F = m \frac{d^2 x}{dt^2} = - k x - b \frac{dx}{dt}
+    \]
+    And can be rearranged into the standard form:
+    \[
+        \frac{d^2 x}{dt^2} + 2 \zeta \omega_0 \frac{dx}{dt} + \omega_0^2 x = 0
+    \]
+    where:
+    \[
+        \omega_0 = \sqrt{\frac{k}{m}}
+    \] 
+    is the natural angular frequency of the undamped system, and 
+    \[
+        \zeta = \frac{b}{2 \sqrt{km}}
+    \]
+    is the damping ratio.
+\end{foundation}
+
+\bigskip \noindent
+\begin{theory} 
+    By solving the damped harmonic oscillator equation, we can get the general solution as:
+    \[
+        x(t) = Ae^{-\zeta \omega_0 t} \sin(\sqrt{1 - \zeta^2} \omega_0 t + \phi)
+    \]
+    where $A$ is the amplitude of the oscillation, and $\phi$ is the phase constant. The term $e^{-\zeta \omega_0 t}$ represents the exponential decay of the amplitude due to damping, while the term $\sin(\sqrt{1 - \zeta^2} \omega_0 t + \phi)$ represents the oscillatory behavior of the system. \\
+\end{theory}
+
+\clearpage
+%\bigskip \noindent
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=0.8\textwidth]{images/damped_harmonic_oscillator.png}
+    \caption{The motion of a damped harmonic oscillator for different values of the damping ratio $\zeta$.}
+    \label{fig:damped_harmonic_oscillator}
+\end{figure}
+
+\begin{intuition}
+    There is 4 types of damped harmonic oscillator:
+    \begin{itemize}
+        \item \textbf{Undamped} ($\zeta = 0$): the system oscillates indefinitely with a constant amplitude and a natural frequency $\omega_0$. A common example is a mass-spring system without any friction.
+        \item \textbf{Underdamped} ($\zeta < 1, \zeta > 0$): the system oscillates with the amplitude gradually decreasing to zero over time. Besides, it oscillates(with a slightly lower frequency than the natural frequency $\omega_0$) because the damping is not strong enough to stop the oscillation immediately:
+        \[
+            \omega_u = \sqrt{1 - \zeta^2} \omega_0
+        \]
+        A common example is a mass-spring system with a small amount of friction.
+        \item \textbf{Critically damped} ($\zeta = 1$): the system returns to equilibrium as quickly as possible without oscillating. It does not oscillate because the damping is just strong enough to prevent any oscillation. A common example is a door closer that brings the door to a stop without bouncing.
+        \item \textbf{Overdamped} ($\zeta > 1$): the system returns to equilibrium in exponentially decaying without oscillating, but more slowly than in the critically damped case. The larger the damping ratio $\zeta$, the slower the system returns to equilibrium. A common example is a car shock absorber that is too stiff, causing the car to return to its normal position very slowly after hitting a bump.
+    \end{itemize}
+\end{intuition}
+
+\bigskip \noindent
+\begin{remark}
+    We ignore the case of $\zeta < 0$ because it shows a system that gain energy from the environment, which will diverge and hence is not stable. 
+\end{remark}
+
+% -──────────────────────────────────────────────────────────────────────────────
+\bigskip \noindent \bigskip \noindent \bigskip \noindent
+\subsection{Acoustic Oscillations in CMB}
+
+
+% -──────────────────────────────────────────────────────────────────────────────
+\bigskip \noindent \bigskip \noindent \bigskip \noindent
+\subsection{Acoustic Peaks in the Power Spectrum}
+
+% -──────────────────────────────────────────────────────────────────────────────
+\bigskip \noindent \bigskip \noindent \bigskip \noindent
+\subsection{Comoving Diameter Distance}
+
+
+% -──────────────────────────────────────────────────────────────────────────────
+\bigskip \noindent \bigskip \noindent \bigskip \noindent
+\subsection{Comoving Sound Horizon}
+
+
+% =══════════════════════════════════════════════════════════════════════════════
+\clearpage
+%\bigskip \noindent \bigskip \noindent \bigskip \noindent
+\section{More Features of the Power Spectrum}
+% -──────────────────────────────────────────────────────────────────────────────
+\subsection{Sachs-Wolfe Effect}
