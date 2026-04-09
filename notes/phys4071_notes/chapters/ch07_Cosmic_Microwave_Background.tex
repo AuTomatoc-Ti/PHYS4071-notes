@@ -188,7 +188,7 @@
 \begin{figure}[!htbp]
     \centering
     \includegraphics[width=0.7\textwidth]{images/CMB_anisotropies.png}
-    \caption{The CMB anisotropies measured by the COBE.}
+    \caption{The CMB anisotropies measured by the Planck satellite.}
     \label{fig:CMB_anisotropies}
 \end{figure}
 
@@ -862,9 +862,197 @@
     We ignore the case of $\zeta < 0$ because it shows a system that gain energy from the environment, which will diverge and hence is not stable. 
 \end{remark}
 
+
+
+
+
+
+
 % -──────────────────────────────────────────────────────────────────────────────
 \bigskip \noindent \bigskip \noindent \bigskip \noindent
 \subsection{Acoustic Oscillations in CMB}
+\begin{intuition}
+    Before recombination, the universe is filled with a hot, dense plasma of photons, electrons, and baryons. The photons are tightly coupled to the electrons through Thomson scattering, and the electrons are coupled to the baryons through Coulomb interactions. This photon-baryon fluid can support sound waves (acoustic oscillations) due to the interplay between the pressure of the photons and the gravitational attraction of the baryons. \\
+
+    The acoustic oscillations in the photon-baryon fluid before recombination can be described by a damped harmonic oscillator equation, where the restoring force is provided by the pressure of the photons, and the damping is caused by the expansion of the universe and the diffusion of photons (Silk damping). The solutions to this equation give rise to the characteristic peaks in the CMB power spectrum, known as acoustic peaks. \\
+
+    Finally, after recombination, the photons decouple and the acoustic oscillations are frozen in, leaving an imprint on the CMB that we can observe today. 
+\end{intuition}
+
+\bigskip \noindent
+\begin{foundation}
+    considering a \textbf{fixed volume} bounded by surface, we can get the total number of photons in the volume as:
+    \[
+        N_\gamma(t) = \int_V n_\gamma(\vec{x},t) dV = \int_V n_\gamma(x,t) d^3 x
+    \]
+    At the same time, the net change of the number of photons in the volume is given by the flux of photons across the surface:
+    \[
+        \frac{dN_\gamma}{dt} = - \oint_S n_\gamma(\vec{x},t) \vec{v} \cdot d\vec{S}
+    \]
+    Then we can write the 2 equations together as:
+    \begin{align*}
+        \frac{d}{dt} \int_V n_\gamma(\vec{x},t) d^3 x &= - \oint_S n_\gamma(\vec{x},t) \vec{v} \cdot d\vec{S} \\
+        \int_V \frac{\partial n_\gamma(\vec{x},t)}{\partial t} d^3 x &= - \oint_S n_\gamma(\vec{x},t) \vec{v} \cdot d\vec{S}
+    \end{align*}
+
+    By applying the divergence theorem:
+    \[
+        \oint_S n_\gamma(\vec{x},t) \vec{v} \cdot d\vec{S} = \int_V \nabla \cdot (n_\gamma(\vec{x},t) \vec{v}) d^3 x
+    \]
+    we have:
+    \begin{align*}
+        \int_V \frac{\partial n_\gamma(\vec{x},t)}{\partial t} d^3 x &= - \int_V \nabla \cdot (n_\gamma(\vec{x},t) \vec{v}) d^3 x \\
+        \int_V \left( \frac{\partial n_\gamma(\vec{x},t)}{\partial t} + \nabla \cdot (n_\gamma(\vec{x},t) \vec{v}) \right) d^3 x &= 0
+    \end{align*}
+    Since the above equation holds for any arbitrary volume, we can get the continuity equation for the number density of photons as:
+    \[
+        \frac{\partial n_\gamma(\vec{x},t)}{\partial t} + \nabla \cdot (n_\gamma(\vec{x},t) \vec{v}) = 0
+    \]
+\end{foundation}
+
+\bigskip \noindent
+\begin{foundation}
+    The above equation assume a fixed volume, but we know that the \textbf{universe is expanding}, so we need to consider the scale factor in the equation:
+    \[
+        N_\gamma(t) = n_\gamma(t) a^3(t) = \text{constant}
+    \]
+    Then by conservation of the number of photons, we can get:
+    \begin{align*}
+        \frac{dN_\gamma}{dt} &= 0\\
+        \frac{d}{dt} (n_\gamma(t) a^3(t)) &= 0 \\
+        \dot{n}_\gamma(t) a^3(t) + 3 n_\gamma(t) a^2(t) \dot{a}(t) &= 0\\
+        \dot{n}_\gamma(t) + 3 n_\gamma(t) \frac{\dot{a}(t)}{a(t)} &= 0 \\
+        \dot{n}_\gamma(t) + 3 n_\gamma(t) H(t) &= 0
+    \end{align*}
+    And substituting the above equation into the continuity equation, we can get:
+    \begin{align*}
+        \frac{dN_\gamma}{dt} &= -\oint_S n_\gamma(\vec{x},t) \vec{v} \cdot d\vec{S} \\
+        \int_V \left( \frac{\partial \left( n_\gamma(\vec{x},t) a^3(t) \right)}{\partial t} + \nabla \cdot (n_\gamma(\vec{x},t) \vec{v}) \right) d^3 x &= 0 \\
+        \int_V \left( \dot{n}_\gamma(t) + 3 n_\gamma(t) H(t) + \nabla \cdot (n_\gamma(\vec{x},t) \vec{v}) \right) d^3 x &= 0 \\
+        \dot{n}_\gamma(t) + 3 n_\gamma(t) H(t) + \nabla \cdot (n_\gamma(\vec{x},t) \vec{v}) &= 0
+    \end{align*}
+\end{foundation}
+
+\bigskip \noindent
+\begin{theory}
+    The continuity equation for the number density of photons in an expanding universe can be expressed as:
+    \[
+        \dot{n}_\gamma(t) + 3 n_\gamma(t) H(t) + \nabla \cdot (n_\gamma(\vec{x},t) \vec{v}) = 0
+    \]
+    where $n_\gamma(t)$ is the number density of photons, $H(t)$ is the Hubble parameter, and $\vec{v}$ is the velocity field of the photons. \\
+
+    In a special case of static universe where $H(t) = 0$, the above equation reduces to the standard continuity equation:
+    \[
+        \dot{n}_\gamma(t) + \nabla \cdot (n_\gamma(\vec{x},t) \vec{v}) = 0
+    \]
+\end{theory}
+
+\bigskip \noindent
+\begin{foundation}
+    As we only interested in the small scale perturbations of the number density of photons, we can linearize the number desnity of photons as:
+    \[
+        n_\gamma(\vec{x},t) \approx \bar{n}_\gamma(t) + \delta n_\gamma(\vec{x},t)
+    \]
+    where $\bar{n}_\gamma(t)$ is the average number density of photons, and $\delta n_\gamma(\vec{x},t)$ is the perturbation of the number density of photons. Substituting the above equation into the continuity equation, we can get:
+    \small
+    \begin{align*}
+        \dot{\bar{n}}_\gamma(t) + \dot{\delta n}_\gamma(\vec{x},t) + 3 (\bar{n}_\gamma(t) + \delta n_\gamma(\vec{x},t)) H(t) + \nabla \cdot ((\bar{n}_\gamma(t) + \delta n_\gamma(\vec{x},t)) \vec{v}) &= 0 \\
+        \dot{\bar{n}}_\gamma(t) + 3 \bar{n}_\gamma(t) H(t) + \dot{\delta n}_\gamma(\vec{x},t)   + 3 \delta n_\gamma(\vec{x},t) H(t) + \nabla \cdot (\bar{n}_\gamma(t) \vec{v}) + \nabla \cdot (\delta n_\gamma(\vec{x},t) \vec{v}) &= 0
+    \end{align*}
+    \normalsize
+    Since $\bar{n}_\gamma(t)$ is the average number density of photons, it should satisfy the background continuity equation:
+    \[
+        \dot{\bar{n}}_\gamma(t) + 3 \bar{n}_\gamma(t) H(t) = 0
+    \]
+    we can simplify the above equation into:
+    \[
+        \dot{\delta n}_\gamma(\vec{x},t) + 3 \delta n_\gamma(\vec{x},t) H(t) + \nabla \cdot (\bar{n}_\gamma(t) \vec{v}) + \nabla \cdot (\delta n_\gamma(\vec{x},t) \vec{v}) = 0 
+    \] \\
+
+    Furthermore, consider the last 2 terms in the above equation:
+    \begin{itemize}
+        \item $\nabla \cdot (\bar{n}_\gamma(t) \vec{v})$: since $\bar{n}_\gamma(t)$ is only a function of time, we can take it out of the divergence operator, and we have $\nabla \cdot (\bar{n}_\gamma(t) \vec{v}) = \bar{n}_\gamma(t) \nabla \cdot \vec{v}$. We keep this term because $\nabla \cdot \vec{v}$ is a first order perturbation, and hence it is not negligible in the linear approximation.
+        \item $\nabla \cdot (\delta n_\gamma(\vec{x},t) \vec{v})$: since both $\delta n_\gamma(\vec{x},t)$ and $\vec{v}$ are small perturbations, we can ignore the second order term $\nabla \cdot (\delta n_\gamma(\vec{x},t) \vec{v})$ in the linear approximation.
+    \end{itemize} \\
+
+    At the sametime, we compare the magnitude of the remaining 3 terms, we know that $\dot{\delta n}_\gamma(\vec{x},t)$ is the time derivative of the perturbation, which is expected to be of the same order of magnitude as $\delta n_\gamma(\vec{x},t)$; \\
+    And $3 \delta n_\gamma(\vec{x},t) H(t)$ is the expansion term, which is expected to be smaller than $\dot{\delta n}_\gamma(\vec{x},t)$ because the expansion of the universe is relatively slow compared to the time evolution of the perturbations. Therefore, we can also ignore the expansion term $3 \delta n_\gamma(\vec{x},t) H(t)$ in the linear approximation. \\
+
+    As a result, we can simplify the above equation into:
+    \begin{align*}
+        \dot{\delta n}_\gamma(\vec{x},t) + \bar{n}_\gamma(t) \nabla \cdot \vec{v} &\approx 0 \\
+        \dot{\delta n}_\gamma(\vec{x},t) &\approx - \bar{n}_\gamma(t) \nabla \cdot \vec{v} \\
+        \frac{\dot{\delta n}_\gamma(\vec{x},t)}{\bar{n}_\gamma(t)} &\approx - \nabla \cdot \vec{v}
+    \end{align*} \\
+
+    Recall that $n_\gamma = \frac{2 \zeta(3)}{\pi^2} T^3$, we can get $\bar{n}_\gamma(t) = C T^3(t)$, and hence we can write the above equation as:
+    \[
+        \frac{\delta n_\gamma(\vec{x},t)}{\bar{n}_\gamma(t)} = \frac{3C T_0^2(t) \delta T(\vec{x},t)}{C T_0^3(t)} = 3 \frac{\delta T(\vec{x},t)}{T_0(t)} \equiv 3 \Theta(\vec{x},t)
+    \]
+    Substituting the above equation into the previous equation, we can get:
+    \[
+        \dot{\Theta}(\vec{x},t) \approx - \frac{1}{3} \nabla \cdot \vec{v}
+    \]  
+\end{foundation}
+
+\bigskip \noindent
+\begin{theory}
+    By considering the small scale perturbations of the number density of photons in an expanding universe, we can derive the following equation:
+    \[
+        \dot{\Theta}(\vec{x},t) = - \frac{1}{3} \nabla \cdot \vec{v}
+    \]
+    where $\Theta(\vec{x},t) = \frac{\delta T(\vec{x},t)}{T_0(t)}$ is the temperature perturbation, and $\vec{v}$ is the velocity field of the photons. 
+\end{theory}
+
+\clearpage
+%\bigskip \noindent
+\begin{foundation}
+    Fourier transforming the temperature perturbation equation:
+    \begin{align*}
+        \dot{\Theta}(\vec{k},t) &\approx - \frac{1}{3} \nabla \cdot \vec{v}(\vec{k},t) \\
+        \dot{\Theta}(\vec{k},t) &\approx - \frac{1}{3} i \vec{k} \cdot \vec{v}(\vec{k},t) \\
+        \dot{\Theta}(\vec{k},t) &\approx - \frac{1}{3} i k v(\vec{k},t)
+    \end{align*} \\
+
+    At same time, we can also derive the Euler equation for the velocity field of the photons. Ignoring gravity and expansion of universe first, so that we can focus on the small scale oscillatory behavior of the system:
+    \begin{align*}
+        \dot{v} &= - \frac{\nabla \delta P_\gamma}{\rho_\gamma + P_\gamma} \\
+        \dot{v} &= - \frac{\nabla \delta P_\gamma}{\frac{4}{3} \rho_\gamma} \\
+    \end{align*}
+    While the pressure perturbation $\delta P_\gamma$ is in terms of $\Theta$ as:
+    \begin{align*}
+        \frac{\delta P_\gamma}{\bar{P}_\gamma} &= 4 \frac{\delta T}{T_0} = 4 \Theta \\
+        \delta P_\gamma &= 4 \Theta \bar{P}_\gamma = 4 \Theta \frac{1}{3} \bar{\rho}_\gamma = \\
+        \delta P_\gamma &= \frac{4}{3} \Theta \bar{\rho}_\gamma
+    \end{align*}
+    Substituting the above equation into the Euler equation, we can get:
+    \begin{align*}
+        \dot{v} &= - \frac{\nabla \delta P_\gamma}{\frac{4}{3} \rho_\gamma} \\
+        \dot{v} &= - \frac{\nabla \left( \frac{4}{3} \Theta \bar{\rho}_\gamma \right)}{\frac{4}{3} \rho_\gamma} \\
+        \dot{v} &= - \nabala \Theta \\
+        \dot{v} &= - i k \Theta
+    \end{align*} \\
+
+    Finally, by taking the time derivative of the temperature perturbation equation, we can get:
+    \begin{align*}
+        \ddot{\Theta}(\vec{k},t) &\approx - \frac{1}{3} i k \dot{v}(\vec{k},t) \\
+        \ddot{\Theta}(\vec{k},t) + \frac{1}{3} k^2 \Theta(\vec{k},t) &\approx 0
+    \end{align*}
+\end{foundation}
+
+\bigskip \noindent
+\begin{theory}
+    We can derive the equation of temperature perturbation into a simple harmonic oscillator equation as:
+    \[
+        \ddot{\Theta}(\vec{k},t) + c_s^2 k^2 \Theta(\vec{k},t) = 0
+    \]
+    with the sound speed $c_s = \frac{1}{\sqrt{3}}$, and hence $\omega_0 = c_s k = \frac{k}{\sqrt{3}}$. \\
+
+    By comparing the equation and the harmonic oscillator equation, we can see that it miss the damping term(friction term) in the equation, we will discuss more about this in next few sections.
+\end{theory}
+
+
+
 
 
 % -──────────────────────────────────────────────────────────────────────────────

@@ -97,22 +97,22 @@
 \contentsline {section}{\numberline {7.3}Acoustic Oscillations and Acoustic Peaks}{160}{section.7.3}%
 \contentsline {subsection}{\numberline {7.3.1}Damped Harmonic Oscillator}{160}{subsection.7.3.1}%
 \contentsline {subsection}{\numberline {7.3.2}Acoustic Oscillations in CMB}{162}{subsection.7.3.2}%
-\contentsline {subsection}{\numberline {7.3.3}Acoustic Peaks in the Power Spectrum}{162}{subsection.7.3.3}%
-\contentsline {subsection}{\numberline {7.3.4}Comoving Diameter Distance}{162}{subsection.7.3.4}%
-\contentsline {subsection}{\numberline {7.3.5}Comoving Sound Horizon}{162}{subsection.7.3.5}%
-\contentsline {section}{\numberline {7.4}More Features of the Power Spectrum}{163}{section.7.4}%
-\contentsline {subsection}{\numberline {7.4.1}Sachs-Wolfe Effect}{163}{subsection.7.4.1}%
-\contentsline {chapter}{\numberline {A}Declaration of AI Assistance}{164}{appendix.A}%
-\contentsline {section}{\numberline {A.1}Use of Artificial Intelligence in This Document}{164}{section.A.1}%
-\contentsline {chapter}{\numberline {B}Mathematical Tools \& Derivations}{165}{appendix.B}%
-\contentsline {section}{\numberline {B.1}Useful Identities}{165}{section.B.1}%
-\contentsline {section}{\numberline {B.2}Differential Geometry Primer}{167}{section.B.2}%
-\contentsline {section}{\numberline {B.3}Relativistic Limits}{167}{section.B.3}%
-\contentsline {section}{\numberline {B.4}Spherical Harmonics \& Associated Legendre Polynomials}{168}{section.B.4}%
-\contentsline {chapter}{\numberline {C}Constants \& Conversion Factors}{170}{appendix.C}%
-\contentsline {section}{\numberline {C.1}Physical Constants}{170}{section.C.1}%
-\contentsline {section}{\numberline {C.2}Conversion Factors}{170}{section.C.2}%
-\contentsline {section}{\numberline {C.3}SI Unit Prefixes}{171}{section.C.3}%
-\contentsline {section}{\numberline {C.4}Main Events in Universe}{172}{section.C.4}%
-\contentsline {section}{\numberline {C.5}Nuclei Binding Energies \& Atomic Masses}{173}{section.C.5}%
+\contentsline {subsection}{\numberline {7.3.3}Acoustic Peaks in the Power Spectrum}{167}{subsection.7.3.3}%
+\contentsline {subsection}{\numberline {7.3.4}Comoving Diameter Distance}{167}{subsection.7.3.4}%
+\contentsline {subsection}{\numberline {7.3.5}Comoving Sound Horizon}{167}{subsection.7.3.5}%
+\contentsline {section}{\numberline {7.4}More Features of the Power Spectrum}{168}{section.7.4}%
+\contentsline {subsection}{\numberline {7.4.1}Sachs-Wolfe Effect}{168}{subsection.7.4.1}%
+\contentsline {chapter}{\numberline {A}Declaration of AI Assistance}{169}{appendix.A}%
+\contentsline {section}{\numberline {A.1}Use of Artificial Intelligence in This Document}{169}{section.A.1}%
+\contentsline {chapter}{\numberline {B}Mathematical Tools \& Derivations}{170}{appendix.B}%
+\contentsline {section}{\numberline {B.1}Useful Identities}{170}{section.B.1}%
+\contentsline {section}{\numberline {B.2}Differential Geometry Primer}{172}{section.B.2}%
+\contentsline {section}{\numberline {B.3}Relativistic Limits}{172}{section.B.3}%
+\contentsline {section}{\numberline {B.4}Spherical Harmonics \& Associated Legendre Polynomials}{173}{section.B.4}%
+\contentsline {chapter}{\numberline {C}Constants \& Conversion Factors}{175}{appendix.C}%
+\contentsline {section}{\numberline {C.1}Physical Constants}{175}{section.C.1}%
+\contentsline {section}{\numberline {C.2}Conversion Factors}{175}{section.C.2}%
+\contentsline {section}{\numberline {C.3}SI Unit Prefixes}{176}{section.C.3}%
+\contentsline {section}{\numberline {C.4}Main Events in Universe}{177}{section.C.4}%
+\contentsline {section}{\numberline {C.5}Nuclei Binding Energies \& Atomic Masses}{178}{section.C.5}%
 \contentsfinish 
