@@ -1,4 +1,17 @@
 *.ds_store
+.DS_Store
+
+# local environments
+.venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# local recovery backups
+.git_corrupt_backup_*/
+*.unreadable_backup_*
+
 notes/phys4071_notes/phys4071_notes_midterm.pdf
 notes/phys4071_notes/chapters/images/acceleration_plot.pdf
 notes/phys4071_notes/images/螢幕截圖 2026-04-02 下午2.42.02.png
