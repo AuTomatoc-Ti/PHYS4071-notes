@@ -1001,7 +1001,10 @@
     \[
         \dot{\Theta}(\vec{x},t) = - \frac{1}{3} \nabla \cdot \vec{v}
     \]
-    where $\Theta(\vec{x},t) = \frac{\delta T(\vec{x},t)}{T_0(t)}$ is the temperature perturbation, and $\vec{v}$ is the velocity field of the photons. 
+    where:\[
+        \Theta(\vec{x},t) = \frac{\delta T(\vec{x},t)}{T_0(t)} = \frac{1}{3} \frac{\delta n_\gamma(\vec{x},t)}{\bar{n}_\gamma(t)}
+    \]
+    is the temperature perturbation, and $\vec{v}$ is the velocity field of the photons. 
 \end{theory}
 
 \clearpage
@@ -1022,8 +1025,7 @@
     While the pressure perturbation $\delta P_\gamma$ is in terms of $\Theta$ as:
     \begin{align*}
         \frac{\delta P_\gamma}{\bar{P}_\gamma} &= 4 \frac{\delta T}{T_0} = 4 \Theta \\
-        \delta P_\gamma &= 4 \Theta \bar{P}_\gamma = 4 \Theta \frac{1}{3} \bar{\rho}_\gamma = \\
-        \delta P_\gamma &= \frac{4}{3} \Theta \bar{\rho}_\gamma
+        \delta P_\gamma &= 4 \Theta \bar{P}_\gamma = 4 \Theta \frac{1}{3} \bar{\rho}_\gamma = \frac{4}{3} \Theta \bar{\rho}_\gamma\\
     \end{align*}
     Substituting the above equation into the Euler equation, we can get:
     \begin{align*}
@@ -1051,27 +1053,621 @@
     By comparing the equation and the harmonic oscillator equation, we can see that it miss the damping term(friction term) in the equation, we will discuss more about this in next few sections.
 \end{theory}
 
+\bigskip \noindent
+\begin{remark}
+    Although it is oscillation of photon-baryon fluid, we can still call it "acoustic oscillation" because the sound waves in the photon-baryon fluid are analogous to the sound waves in air, and they both involve the propagation of pressure perturbations through a medium. The term "acoustic" is used to emphasize the wave-like nature of these oscillations and their role in shaping the CMB power spectrum.
+\end{remark}
 
+\bigskip \noindent
+\begin{importantnote}
+    The above model is an oversimplified model that ignores the damping effect and effect of baryons, but it can still capture the essential physics and provide a good intuition about the acoustic oscillations in the photon-baryon fluid before recombination. Therefore, we will still use the above model to discuss about the acoustic peaks in the power spectrum, and we will discuss more about the damping effect and effect of baryons in next few sections.
+\end{importantnote}
 
 
 
 % -──────────────────────────────────────────────────────────────────────────────
+%\clearpage
 \bigskip \noindent \bigskip \noindent \bigskip \noindent
 \subsection{Acoustic Peaks in the Power Spectrum}
+\begin{intuition}
+    After making the model of acoustic oscillation in the photon-baryon fluid, we can now try to understand how the acoustic peaks in the CMB power spectrum are formed. The acoustic peaks correspond to the modes of oscillation that have reached either maximum compression or maximum rarefaction at the time of recombination. These modes will leave a strong imprint on the CMB power spectrum, resulting in the characteristic peaks that we observe. \\
+\end{intuition}
+
+%\bigskip \noindent
+\clearpage
+\begin{foundation}
+    Recall the relationship between physical wavelength $\lambda$ and the comoving wavelength $\lambda_c$:
+    \[
+        \lambda = a(t) \lambda_c
+    \]
+    as $k \propto \frac{1}{\lambda}$, we can get the relationship between physical angular wave number $k$ and comoving angular wave number $k^c$ as:
+    \begin{align*}
+        k^c &= a(t) k
+    \end{align*}
+
+    Let $\omega_0$ be the angular frequency, and $c_s$ be the sound speed, we get:
+    \begin{align*}
+        \omega_0 &= c_s k \\
+        \omega_0 &= c_s \frac{k^c}{a} \\
+        \omega_0 &= \frac{c_s }{a} k^c \\
+        \omega_0 &= c_s^c k^c
+    \end{align*}
+    where $c_s^c = \frac{c_s}{a}$ is the comoving sound speed. \\
+
+    Then, recall the relationship between agnular scale $\theta$ and multipole moment $l$:
+    \[
+        \theta = \frac{2\pi}{l}
+    \]
+    And with long enough distance assumption, we let $\frac{\lambda}{d_A} = \tan \theta \approx \theta$, which $d_A$ is the angular diameter distance, so we can get:
+    \begin{align*}
+        \frac{\lambda}{d_A} &= \frac{2\pi}{l} \\
+        \frac{2\pi}{k d_A} &= \frac{2\pi}{l} \\
+        k &= \frac{l}{d_A} \\
+        k^c &= l \frac{a}{d_A} \\
+        k^c &= \frac{l}{d_A^c}
+    \end{align*}
+    where $d_A^c = \frac{d_A}{a}$ is the comoving angular diameter distance. \\
+
+    Substituting the above equation back to the $\omega_0$ equation, and considering the $i$-th mode of the oscillation, we can get:
+    \begin{align*}
+        \omega_0^i &= c_s^c k^c_i \\
+        \omega_0^i &= c_s^c \frac{l_i}{d_A^c} \\
+        \omega_0^i &= \frac{c_s^c}{d_A^c} l(k_i)
+    \end{align*}
+    where $l(k_i) = l_i$ is the mode number of the oscillation.
+\end{foundation}
+
+\begin{theory}
+    The $i$-th mode of angular wave number $k_i$ in the acoustic oscillation corresponds to a multipole moment $l_i$ in the CMB power spectrum, and the relationship can be expressed as:
+    \[
+        k^c_i = \frac{l_i}{d_A^c}
+    \]
+    where $d_A^c$ is the comoving angular diameter distance. \\
+
+    And hence, the angular frequency of the $i-th$ mode can be expressed as:
+    \[
+        \omega_0^i = \frac{c_s^c}{d_A^c} l(k_i)
+    \]
+    where $c_s^c$ is the comoving sound speed, and $l(k_i)$ is the mode number of the oscillation.
+\end{theory}
+
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=0.5\textwidth]{images/angle_multipoles.png}
+    \caption{The rough relationship between the angular scale $\theta$ and the multipole moment $l$.}
+    \label{fig:angle_multipoles}
+\end{figure}
+
+\bigskip \noindent
+\begin{foundation}
+    Now lets define the sound horizon $r_s^c$ as the comoving distance that a sound wave can travel from the beginning of the universe to the time of recombination $t_{rec}$:
+    \begin{align*}
+        r_s^c(t_{rec}) &= \int_0^{t_{rec}} c_s^c dt = \int_0^{t_{rec}} \frac{c_s}{a} dt \\
+    \end{align*}
+    
+    Further, assume that for a specific mode $i$, it achieves the maximum compression or maximum rarefaction at the time of recombination $t_{rec}$, its angular frequency $\omega_0^i$ must be an integer multiple of $\pi$:
+    \begin{align*}
+        \omega_0^i t_{rec} &= n \pi \quad, n = 1, 2, 3, \dots \\
+    \end{align*}
+    And hence:
+    \begin{align*}
+        \frac{c_s^c}{d_A^c} l(k_i) t_{rec} &= n \pi \\
+        l(k_i) &= n \pi \frac{d_A^c}{c_s^c t_{rec}} \\
+        l(k_i) &\approx n \pi \frac{d_A^c}{r_s^c(t_{rec})} \\
+        l(k_i) &= n l_A
+    \end{align*}
+    where we used the approximation that $r_s^c(t_{rec}) \approx c_s^c t_{rec}$, and we defined the acoustic scale $l_A$ as:
+    \[
+        l_A = \pi \frac{d_A^c}{r_s^c(t_{rec})} = \frac{\pi}{\theta_s} \sim 220
+    \]
+    with $\theta_s$ is sound horizon angle, which is the angular size of the sound horizon at the time of recombination, and it is defined as:
+    \[
+        \theta_s = \frac{r_s^c(t_{rec})}{d_A^c}
+    \]
+\end{foundation}
+
+\begin{theory}
+    The multipole moments of the acoustic peaks in the CMB power spectrum can be expressed as integer multiples of the acoustic scale $l_A$:
+    \[
+        l(k_i) = n l_A
+    \]
+    where $n$ is a positive integer, and $l_A$ is defined as:
+    \[
+        l_A = \pi \frac{d_A^c}{r_s^c(t_{rec})} = \frac{\pi}{\theta_s} \sim 220
+    \]
+    with $d_A^c$ is the comoving angular diameter distance, and $r_s^c(t_{rec})$ is the comoving sound horizon at the time of recombination.
+\end{theory}
+
+\clearpage
+%\bigskip \noindent
+\begin{intuition}
+    The above equation shows that the positions of the acoustic peaks in the CMB power spectrum are determined by 2 important factors: the comoving angular diameter distance $d_A^c$ and the comoving sound horizon $r_s^c(t_{rec})$. \\
+    
+    The comoving angular diameter distance $d_A^c$ depends on the geometry of the universe and the expansion history, while the comoving sound horizon $r_s^c(t_{rec})$ depends on the physical conditions of the early universe, such as the baryon density and the radiation density. \\
+    
+    Therefore, by measuring the positions of the acoustic peaks in the CMB power spectrum, we can infer important information about the geometry and composition of the universe.
+\end{intuition}
+
+\begin{figure}[!htbp]
+    \centering
+    \begin{tikzpicture}[scale=1.0, >=Latex]
+        % Vertices of the right triangle
+        \coordinate (O) at (0,0);      % Observer
+        \coordinate (B) at (8,0);      % Base endpoint on LSS
+        \coordinate (T) at (8,2.8);    % Top endpoint (sound horizon)
+
+        % Triangle edges
+        \draw[thick] (O) -- (B) -- (T) -- cycle;
+
+        % Right-angle marker at B
+        \draw[thick] (7.65,0) -- (7.65,0.35) -- (8,0.35);
+
+        % Observer eye icon (simple stylized)
+        \fill (O) circle (1.2pt);
+        %\draw[thick] (-0.65,0.16) .. controls (-0.35,0.45) and (0.35,0.45) .. (0.65,0.16);
+        %\draw[thick] (-0.65,-0.16) .. controls (-0.35,-0.45) and (0.35,-0.45) .. (0.65,-0.16);
+        \fill (0,0) circle (1.8pt);
+
+        % Labels for points
+        \node[below left] at (O) {Observer};
+        \node[below] at (B) {Last-scattering surface};
+
+        % Side labels
+        \node[below] at (4,0) {$d_A^c$};
+        \node[right] at (8,1.4) {$r_s^c(t_{rec})$};
+
+        % Angle arc at observer
+        \draw[thick] (1.2,0) arc[start angle=0,end angle=19.3,radius=1.2];
+        \node at (1.85,0.25) {$\theta_s$};
+
+        % Optional line-of-sight note
+        \node[below] at (4,-0.75) {line of sight};
+    \end{tikzpicture}
+    \caption{Analogy of right-triangle geometry for the sound-horizon angle.}
+    \label{fig:sound_horizon_triangle}
+\end{figure}
+
 
 % -──────────────────────────────────────────────────────────────────────────────
 \bigskip \noindent \bigskip \noindent \bigskip \noindent
 \subsection{Comoving Diameter Distance}
+\begin{intuition}
+    The comoving angular diameter distance $d_A^c(t_{rec})$ shows the comoving distance that light travels from the last-scattering surface to us. Note it is dependent on spacetime evolution \textbf{after} recombination.
+\end{intuition}
 
+\bigskip \noindent
+\begin{foundation}
+    In general case where space can be flat or non-flat, we defined:
+    \[
+        \Omega_0 = \Omega_{m,0} + \Omega_{\Lambda,0} + \Omega_{r,0} + \Omega_{k,0}
+    \]
+    As radiation-dominated era end much earlier than recombination (around 50,000 years after the big bang), we can ignore the contribution of radiation to the total energy density of the universe at the time of recombination, and hence we can write $\Omega_0$ as:
+    \[
+        \Omega_0 = \Omega_{m,0} + \Omega_{\Lambda,0} + \Omega_{k,0}
+    \]
+    with $\Omega_{k,0} = 1 - \Omega_{m,0} - \Omega_{\Lambda,0}$ is the curvature density parameter. \\
+
+    Using above definition, we can write the comoving angular diameter distance as:
+    \begin{align*}
+        d_A^c(t_{rec}) &= \int_{t_{rec}}^{t_0} \frac{dt}{a(t)} \\
+        d_A^c(a_{rec}) &= \int_{a_{rec}}^{a_0} \frac{da}{a^2 H(a)} \\
+         &= \int_{a_{rec}}^{a_0} \frac{da}{a^2 H_0 \sqrt{\Omega_{m,0} a^{-3} + \Omega_{\Lambda,0} + \Omega_{k,0} a^{-2}}} \\
+         &= \frac{1}{H_0} \int_{a_{rec}}^{a_0} \frac{da}{a^2 \sqrt{\Omega_{m,0} a^{-3} + \Omega_{\Lambda,0} + (\1 - \Omega_{m,0} - \Omega_{\Lambda,0}) a^{-2}}} \\
+         &= \frac{1}{H_0} \int_{a_{rec}}^{a_0} \frac{da}{a^2 \sqrt{\Omega_{m,0} (a^{-3} - a^{-2}) + \Omega_{\Lambda,0} (1 - a^{-2}) + a^{-2}}} \\
+         &= \frac{1}{H_0} \int_{a_{rec}}^{a_0} \frac{da}{\sqrt{\Omega_{m,0} (a - a^2) - \Omega_{\Lambda,0} (a^2 - a^4) + a^2}} \\
+         &= \frac{1}{H_0} \int_{a_{rec}}^{a_0} \frac{da}{\sqrt{\Omega_{0}^{'}(a - a^2) - \Omega_{\Lambda,0} (a - a^4) + a^2}}
+    \end{align*}
+    if we define $\Omega_{0}^{'} = 1 - \Omega_{m,0} - \Omega_{\Lambda,0}$ as the curvature density parameter.
+\end{foundation}
+
+\bigskip \noindent
+\begin{theory}
+    The comoving angular diameter distance from the last-scattering surface to us can be expressed as:
+    \[
+        d_A^c(t_{rec}) = \frac{1}{H_0} \int_{a_{rec}}^{a_0} \frac{da}{\sqrt{\Omega_{m,0} (a - a^2) - \Omega_{\Lambda,0} (a^2 - a^4) + a^2}}
+    \]
+    where $H_0$ is the Hubble constant, $\Omega_{m,0}$ is the matter density parameter, $\Omega_{\Lambda,0}$ is the dark energy density parameter, and $a_{rec}$ and $a_0$ are the scale factors at the time of recombination and today, respectively.
+\end{theory}
+
+\clearpage
+%\bigskip \noindent
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=0.9\textwidth]{images/omega_0_angular_power_spectrum.png}
+    \caption{The effect of different values of $\Omega_0$ on the CMB power spectrum.}
+    \label{fig:omega_0_angular_power_spectrum}
+\end{figure}
+
+%\clearpage
+\bigskip \noindent
+\begin{intuition}
+    The above figure show the results of the CMB power spectrum for different values of $\Omega_0^{'}$ (the figure used $\Omega_0$ to represent $\Omega_0^{'}$ as different notations are used). \\
+    
+    With a fixed value of $\Omega_{\Lambda,0}$, we know the increasing value of $\Omega_0^{'}$ will cause a decrease of $d_A^c$, it make sense as it implies increasing of $\Omega_{m,0}$, which means more matter in the universe, and stronger deceleration of the expansion of the universe, and hence less distance and time that light can travel from the last-scattering surface to us. \\
+
+    On the other hand, with a fixed value of $\Omega_{0}^{'}$, we know the increasing value of $\Omega_{\Lambda,0}$ will cause an increase of $d_A^c$, it also make sense as it implies more dark energy in the universe, which means stronger acceleration of the expansion of the universe, and hence more distance and time that light can travel from the last-scattering surface to us. \\
+
+    Therefore, by measuring the positions of the acoustic peaks in the CMB power spectrum, we can infer important information about the curvature of the universe and the ratio of matter and dark energy in the universe. \\
+\end{intuition}
+
+\clearpage
+%\bigskip \noindent
+\begin{extra}
+    you may wonder how we can measure the ratio of matter $\Omega_{m,0}$ and dark energy $\Omega_{\Lambda,0}$ and curvature $\Omega_{k,0}$ in the universe by just looking at the positions of the acoustic peaks in the CMB power spectrum, as there is 2 degree of freedom in the parameters, but we only have 1 degree of freedom in the positions of the acoustic peaks. \\
+
+    The answer is we also measure other features in the CMB power spectrum, such as the relative heights of the acoustic peaks,  damping tail at small scales, and the Sachs-Wolfe effect at large scales, which can provide us more information about the universe, and help us to break the degeneracy between the parameters. We will discuss more about these features in next few sections.
+\end{extra}
 
 % -──────────────────────────────────────────────────────────────────────────────
-\bigskip \noindent \bigskip \noindent \bigskip \noindent
+\clearpage
+%\bigskip \noindent \bigskip \noindent \bigskip \noindent
 \subsection{Comoving Sound Horizon}
+\begin{intuition}
+    The comoving sound horizon $r_s(t_{rec})$ shows the comoving distance that a sound wave can travel from the beginning of the universe to the time of recombination. Note it is dependent on spacetime evolution \textbf{before} recombination.
+\end{intuition}
+
+\bigskip \noindent
+\begin{foundation}
+    The definition of the comoving sound horizon can be written as:
+    \begin{align*}
+        r_s^c(t_{rec}) &= \int_0^{t_{rec}} c_s^c(t) dt \\
+        &= \int_0^{t_{rec}} \frac{c_s(t)}{a(t)} dt \\
+        r_s^c(t_{rec}) &= \int_0^{a_{rec}} \frac{c_s(a)}{a^2 H(a)} da \\
+        &= \int_0^{a_{rec}} \frac{c_s(a)}{a^2 H_0 \sqrt{\Omega_{m,0} a^{-3} + \Omega_{\Lambda,0} + \Omega_{k,0} a^{-2} + \Omega_{r,0} a^{-4}}} da \\
+        &= \frac{1}{H_0} \int_0^{a_{rec}} \frac{c_s(a)}{\sqrt{\Omega_{m,0} a + \Omega_{\Lambda,0} a^4 + \Omega_{k,0} a^2 + \Omega_{r,0}}} da \\
+            &= \frac{1}{H_0} \int_0^{a_{rec}} \frac{c_s(a)}{\sqrt{\Omega_{\Lambda,0} a^4 + (1 - \Omega_{0}^{'}) a^2 + \Omega_{m,0} a + \Omega_{r,0}}} da
+    \end{align*}
+    where $c_s(a)$ is the sound speed as a function of scale factor, and $H(a)$ is the Hubble parameter as a function of scale factor, and we used the definition of $\Omega_0^{'} = 1 - \Omega_{m,0} - \Omega_{\Lambda,0} - \Omega_{r,0}$ as the curvature density parameter. \\
+
+    We can further take the assumption that in early stage of the universe $a \ll 1$, we can ignore the contribution of dark energy and curvature to the total energy density of the universe, and hence we can write $r_s^c(t_{rec})$ as:
+    \begin{align*}
+        r_s^c(t_{rec}) &= \frac{1}{H_0} \int_0^{a_{rec}} \frac{c_s(a)}{\sqrt{\Omega_{m,0} a + \Omega_{r,0}}} da
+    \end{align*}
+\end{foundation}
+
+\clearpage
+\begin{foundation}
+    From the previous sections, we know the $c_s = \frac{1}{\sqrt{3}}$, but this is only true for the pure photon fluid, while in the real universe, we have baryons as well, which will affect the sound speed. The sound speed in the photon-baryon fluid can be expressed as:
+    \begin{align*}
+        c_s^2(a) &= \frac{\dot{P}}{\dot{\rho}} \\
+        c_s^2(a) &= \frac{\dot{P}_\gamma + \dot{P}_b}{\dot{\rho}_\gamma + \dot{\rho}_b} \\
+        c_s^2(a) &= \frac{\dot{P}_\gamma + 0}{\dot{\rho}_\gamma + \dot{\rho}_b} \\
+        c_s^2(a) &= \frac{\dot{\rho}_\gamma / 3}{\dot{\rho}_\gamma + \dot{\rho}_b}
+    \end{align*}
+
+    Using the fluid continuity $\dot{\rho} = -3 H (\rho + P)$, we can get:
+    \begin{align*}
+        \begin{cases}
+            \dot{\rho}_\gamma = -4 H \rho_\gamma \\
+            \dot{\rho}_b = -3 H \rho_b
+        \end{cases}
+    \end{align*}
+    Substituting the above equation back to the sound speed equation, we can get:
+    \begin{align*}
+        c_s^2(a) &= \frac{\dot{\rho}_\gamma / 3}{\dot{\rho}_\gamma + \dot{\rho}_b} \\
+        c_s^2(a) &= \frac{\frac{-4 H \rho_\gamma}{3}}{-4 H \rho_\gamma - 3 H \rho_b} \\
+        c_s^2(a) &= \frac{1}{3} \frac{4 \rho_\gamma}{4 \rho_\gamma + 3 \rho_b} \\
+        c_s^2(a) &= \frac{1}{3} \frac{1}{1 + \frac{3 \rho_b}{4 \rho_\gamma}} \\
+        c_s^2(a) &= \frac{1}{3} \frac{1}{1 + \frac{3}{4} \frac{\Omega_{b,0} a^{-3}}{\Omega_{\gamma,0} a^{-4}}} \\
+        c_s^2(a) &= \frac{1}{3} \frac{1}{1 + \frac{3}{4} \frac{\Omega_{b,0}}{\Omega_{\gamma,0}} a}
+    \end{align*}
+
+    Therefore, we have the sound speed in the photon-baryon fluid as:
+    \begin{align*}
+        c_s^2(a) &= \begin{cases}
+            \frac{1}{3} & \quad \text{, for pure photon fluid} \\
+            \frac{1}{3} \frac{1}{1 + \frac{3}{4} \frac{\Omega_{b,0}}{\Omega_{\gamma,0}} a} & \quad \text{, for photon-baryon fluid}
+        \end{cases}
+    \end{align*}
+\end{foundation}
+
+%\clearpage
+\begin{foundation}
+    We can actually writing above equations in terms of physical density parameters $\omega_i = \Omega_{i,0} h^2$, where $h$ is the dimensionless Hubble parameter:
+    \[
+        h = \frac{H_0}{100\,\mathrm{km/s/Mpc}}
+    \]
+    and we can get:
+    \begin{align*}
+        c_s^2(a) &= \frac{1}{3} \frac{1}{1 + \frac{3}{4} \frac{\Omega_{b,0}}{\Omega_{\gamma,0}} a} \\
+        c_s^2(a) &= \frac{1}{3} \frac{1}{1 + \frac{3}{4} \frac{\omega_b / h^2}{\omega_\gamma / h^2} a} \\
+        c_s^2(a) &= \frac{1}{3} \frac{1}{1 + \frac{3}{4} \frac{\omega_b}{\omega_\gamma} a}
+    \end{align*}
+    substituting the above equation back to the $r_s^c(t_{rec})$ equation, we can get:
+    \begin{align*}
+        r_s^c(t_{rec}) &= \frac{1}{H_0} \int_0^{a_{rec}} \frac{c_s(a)}{\sqrt{\Omega_{m,0} a + \Omega_{r,0}}} da \\
+        &= \frac{1}{100 h} \int_0^{a_{rec}} \frac{\frac{1}{\sqrt{3}} \frac{1}{\sqrt{1 + \frac{3}{4} \frac{\omega_b}{\omega_\gamma} a}}}{\sqrt{\omega_{m} \frac{a}{h^2} + \omega_{r} \frac{1}{h^2}}} da \\
+        &= \frac{1}{100} \int_0^{a_{rec}} \frac{\frac{1}{\sqrt{3}} \frac{1}{\sqrt{1 + \frac{3}{4} \frac{\omega_b}{\omega_\gamma} a}}}{\sqrt{\omega_{m} a + \omega_{r}}} da \\
+        &= \frac{1}{100} \int_0^{a_{rec}} \frac{1}{\sqrt{3}} \frac{1}{\sqrt{1 + \frac{3}{4} \frac{\omega_b}{\omega_\gamma} a}} \frac{1}{\sqrt{\omega_{m} a + \omega_{r}}} da \\
+        &\approx 3000 \text{Mpc} \frac{1}{\sqrt{3 \omega_{r}}} \int_0^{a_{rec}} \frac{1}{\sqrt{1 + \frac{3}{4} \frac{\omega_b}{\omega_\gamma} a}} \frac{1}{\sqrt{1 + \frac{\omega_{m}}{\omega_{r}} a}} da
+    \end{align*}
+\end{foundation}
+
+%\clearpage
+\bigskip \noindent
+\begin{theory}
+    The comoving sound horizon at the time of recombination can be expressed as:
+    \[
+        r_s^c(t_{rec}) = r_s^c(\omega_b, \omega_d) =  \frac{3000 \text{Mpc}}{\sqrt{3 \omega_{r}}} \int_0^{a_{rec}} \frac{1}{\sqrt{1 + \frac{3}{4} \frac{\omega_b}{\omega_\gamma} a}} \frac{1}{\sqrt{1 + \frac{\omega_{m}}{\omega_{r}} a}} da
+    \]
+    where $\omega_b$ is the physical baryon density parameter, $\omega_\gamma$ is the physical photon density parameter ($ \approx 2.4702 \times 10^{-5}$ by CMB); $\omega_m$ is the physical matter density parameter, and $\omega_r$ is the physical radiation density parameter ($ \approx 4.1756 \times 10^{-5}$ by CMB).
+\end{theory}
+
+\bigskip \noindent
+\begin{intuition}
+    From the above equation, by given $\omega_\gamma$ and $\omega_r$ we can see that the roles of baryons and photons in the acoustic peaks; when $\omega_b$ increases, the baryon slow down the sound speed, it can be think as the more baryons in the photon-baryon fluid, the more inertia the fluid has, and hence the slower the sound speed. \\
+
+    On the other hand, when $\omega_\gamma$ increases, the photons speed up the sound speed, it can be think as the more photons in the photon-baryon fluid, the more pressure the fluid has, and hence the faster the sound speed. \\
+
+    Meanwhile, when $\omega_m$ increases, by Friedmann equation we can see that the expansion rate of the universe will increase, and hence the recombination time $t_{rec}$ happens earlier, hence a shorter time for the sound wave to travel, and hence a smaller sound horizon $r_s^c(t_{rec})$. And same for $\omega_r$ as well.
+\end{intuition}
+
+\clearpage
+%\bigskip \noindent
+\begin{example}{Numerical Estimate of the Acoustic Scale $l_A$}{acoustic-scale-estimate}
+    Use representative values near recombination and Planck-like parameters:
+    \[
+        z_{rec}\approx 1090,
+        \quad \Omega_{m,0}\approx 0.315,
+        \quad \Omega_{\Lambda,0}\approx 0.685,
+        \quad h\approx 0.674,
+        \quad \omega_b\approx 0.0224.
+    \]
+    Break the estimate into three steps: \\
+    (a). compute $d_A^c$; \\
+    (b). compute $r_s^c$; \\
+    (c). compute the acoustic peak scale.
+
+    \bigskip\textbf{Solution.}\quad \\
+    (a). \textbf{Comoving angular diameter distance} \\
+    Use
+    \[
+        d_A^c(z_{rec}) = \int_0^{z_{rec}} \frac{dz}{H(z)},
+        \qquad
+        H(z)=H_0\sqrt{\Omega_{m,0}(1+z)^3+\Omega_{\Lambda,0}}
+    \]
+    (radiation gives only a small correction for this distance integral near late times). Numerically:
+    \[
+        d_A^c(z_{rec}) \approx 13.9\,\mathrm{Gpc} = 1.39\times 10^4\,\mathrm{Mpc}.
+    \]
+
+    (b). \textbf{Comoving sound horizon} \\
+    Use
+    \[
+        r_s^c(t_{rec}) = \int_0^{a_{rec}} \frac{c_s(a)}{a^2 H(a)}\,da,
+        \qquad
+        c_s(a)=\frac{1}{\sqrt{3\left(1+\frac{3}{4}\frac{\omega_b}{\omega_\gamma}a\right)}}.
+    \]
+    Numerically (with the above Planck-like parameters):
+    \[
+        r_s^c(t_{rec}) \approx 144\,\mathrm{Mpc}.
+    \]
+
+    (c). \textbf{Acoustic peak scale} \\
+    First compute
+    \[
+        \theta_s = \frac{r_s^c}{d_A^c}
+        \approx \frac{144}{1.39\times 10^4}
+        \approx 1.04\times 10^{-2}\,\mathrm{rad}
+        \approx 0.60^\circ.
+    \]
+    Then
+    \[
+        l_A = \frac{\pi}{\theta_s}
+        = \pi\frac{d_A^c}{r_s^c}
+        \approx \frac{3.1416}{1.04\times10^{-2}}
+        \approx 302 \approx 300.
+    \]
+    Therefore, the fundamental acoustic spacing scale is $l_A\sim 300$, while the first temperature peak is observed near $l\sim 220$ due to phase-shift/projection effects.
+\end{example}
+
 
 
 % =══════════════════════════════════════════════════════════════════════════════
 \clearpage
 %\bigskip \noindent \bigskip \noindent \bigskip \noindent
 \section{More Features of the Power Spectrum}
+From the previous section, we have discussed about the acoustic peaks in the power spectrum, which is the most prominent feature in the power spectrum. However, you may noticed we have ignored the damping term in the equation of temperature perturbation, which is not our real case. In fact, during the oscillation of the photon-baryon fluid, the oscillation is not perfect, but is damped by the expansion of the universe and the diffusion of photons (Silk damping). Therefore, we need to consider the damping term in the equation of temperature perturbation, which will give us more features in the power spectrum, such as the damping tail at small scales. \\
+
+Besides, there are also other features in the power spectrum, such as the Sachs-Wolfe effect at large scales, and the relative heights of the acoustic peaks, which can provide us more information about the universe, such as the geometry of the universe, we will discuss more about these features in below subsections.
+
 % -──────────────────────────────────────────────────────────────────────────────
+\bigskip \noindent \bigskip \noindent %\bigskip \noindent
+\subsection{Damping Tail}
+\begin{intuition}
+    If we further consider the damping term, we can write the oscillation equation of the photon-baryon fluid as:
+    \[
+        \ddot{\Theta} + c_s^2 k^2 f(c_i) \Theta + c_s^2 k^2 \Theta = g(c_i)
+    \]
+    where $f(c_i)$ is the damping term by the expansion of the universe and the diffusion of photons, and $g(c_i)$ is the source term by the gravitational potential. The $c_i$ are the parameters that affect the damping and source terms, such as the baryon density, the matter density, the dark matter density, etc. \\
+
+    We can simply write the damping coeffcient as:
+    \[
+        c \propto k^2 \propto l^2
+    \]
+    Therefore, for the small scales (large $l$), the damping term will be more significant, and hence the amplitude of the oscillation will be smaller, which will give us a damping tail in the power spectrum at small scales.
+\end{intuition}
+
+\bigskip \noindent
+\begin{foundation}
+    To connect the above oscillator picture with the observed power spectrum, we can separate damping into two intuitive effects:
+    \begin{itemize}
+        \item \textbf{Expansion damping (Hubble friction):} the expansion of the universe removes energy from oscillations, similar to friction in a damped oscillator.
+        \item \textbf{Diffusion damping (Silk damping):} before decoupling, photons still scatter many times and perform a random walk, so they can leak from hot regions to cold regions and smooth out temperature contrast.
+    \end{itemize}
+
+    The second effect is the dominant reason for the sharp small-scale suppression. A useful way to state it is: modes with wavelength smaller than the photon diffusion scale are exponentially erased. In $k$-space, this is often written schematically as:
+    \[
+        \Theta(k,\eta_*) \simeq \Theta_{\mathrm{osc}}(k,\eta_*)\,\exp\!\left[-\left(\frac{k}{k_D}\right)^2\right]
+    \]
+    where $k_D$ is the diffusion-damping scale (evaluated near recombination), and $\eta_*$ is recombination time. \newline
+
+    Since larger $k$ means smaller physical scale, the exponential factor suppresses high-$k$ modes much more strongly. This is exactly the same trend as your earlier statement $c\propto k^2\propto l^2$: higher-$k$ (thus higher-$l$) modes damp faster.
+\end{foundation}
+
+\bigskip \noindent
+\begin{theory}
+    A compact way to summarize the damping-tail physics is:
+    \[
+        \Theta(k)\;\text{is multiplied by}\;\exp\!\left[-\left(\frac{k}{k_D}\right)^2\right]
+        \quad\Longrightarrow\quad
+        C_l\;\text{is suppressed at large }l.
+    \]
+
+    Using the projection relation $l\sim k\,d_A^c$ (with $d_A^c$ the comoving angular-diameter distance to last scattering), we define a damping multipole $l_D\sim k_D d_A^c$. Then the observed spectrum is often approximated by:
+    \[
+        C_l \simeq C_l^{\mathrm{(no\ damping)}}\,\exp\!\left[-2\left(\frac{l}{l_D}\right)^2\right]
+    \]
+    up to order-one modeling details.
+
+    Therefore, the high-$l$ side of the CMB spectrum is not another acoustic peak sequence, but a progressively damped tail: the smaller the angular scale, the stronger the suppression by photon diffusion (plus expansion damping).
+\end{theory}
+
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=0.9\textwidth]{images/damping_tail.png}
+    \caption{The effect of damping on the CMB power spectrum.}
+    \label{fig:damping_tail}
+\end{figure}
+
+
+% -──────────────────────────────────────────────────────────────────────────────
+\bigskip \noindent \bigskip \noindent \bigskip \noindent
 \subsection{Sachs-Wolfe Effect}
+\begin{intuition}
+    The Sachs-Wolfe (SW) effect describes how gravity changes the observed CMB temperature when photons travel from the last-scattering surface to us. \\
+
+    A simple picture is: imagine photons are emitted from different ``gravitational landscapes'' (potential wells and hills). If a photon climbs out from a potential well, it loses energy (gravitational redshift), so we observe it colder; if it is emitted from a potential hill, it gains relative energy and looks hotter. This converts gravitational potential perturbations directly into temperature anisotropies. \\
+
+    There are two related contributions:
+    \begin{itemize}
+        \item \textbf{Ordinary Sachs-Wolfe (OSW):} set at recombination, mainly important on very large angular scales.
+        \item \textbf{Integrated Sachs-Wolfe (ISW):} accumulated during photon propagation when gravitational potentials evolve with time.
+    \end{itemize}
+    Therefore, the SW effect is the key physical reason why the low-$l$ (large-angle) part of the CMB power spectrum carries direct information about primordial metric perturbations and late-time expansion history.
+\end{intuition}
+
+\bigskip \noindent
+\begin{foundation}
+    Let the line-of-sight direction be $\hat{n}$ and conformal time be $\eta$. The observed temperature perturbation can be written schematically as:
+    \[
+        \Theta(\hat{n}) \equiv \frac{\Delta T}{T_0}(\hat{n})
+        = \left[\Theta_0 + \Psi\right]_{*}
+        + \int_{\eta_*}^{\eta_0} \left(\dot{\Psi} + \dot{\Phi}\right) d\eta
+    \]
+    where:
+    \begin{itemize}
+        \item $\Theta_0$ is the intrinsic photon temperature perturbation at last scattering;
+        \item $\Psi$ and $\Phi$ are metric (gravitational potential) perturbations;
+        \item subscript $*$ means evaluated at recombination;
+        \item the integral term is along the photon path from recombination to today.
+    \end{itemize}
+
+    The first bracket term is the \textbf{ordinary SW} contribution, while the line-of-sight integral is the \textbf{ISW} contribution. \\
+
+    For super-horizon modes at recombination in matter domination (and negligible anisotropic stress, so $\Phi \simeq \Psi$), the ordinary SW term reduces to the well-known approximation:
+    \[
+        \left(\frac{\Delta T}{T_0}\right)_{\mathrm{OSW}} \simeq \frac{1}{3}\Psi_*
+    \]
+    (up to sign convention of the potential). \\
+
+    Physically, this means large-angle CMB anisotropy is roughly one-third of the primordial gravitational potential perturbation at last scattering. \\
+
+    For the ISW term:
+    \begin{itemize}
+        \item During strict matter domination, potentials are nearly constant, so $\dot{\Psi}+\dot{\Phi}\approx 0$, and ISW is small.
+        \item Near radiation-matter transition (early ISW) and in dark-energy domination (late ISW), potentials evolve, so ISW becomes non-zero.
+    \end{itemize}
+\end{foundation}
+
+\bigskip \noindent
+\begin{theory}
+    The Sachs-Wolfe contribution to CMB anisotropy can be summarized as:
+    \[
+        \Theta(\hat{n})
+        = \underbrace{\left[\Theta_0 + \Psi\right]_*}_{\text{ordinary SW}}
+        + \underbrace{\int_{\eta_*}^{\eta_0} (\dot{\Psi}+\dot{\Phi}) d\eta}_{\text{integrated SW}}
+    \]
+    and for large scales at recombination:
+    \[
+        \left(\frac{\Delta T}{T_0}\right)_{\mathrm{OSW}} \simeq \frac{1}{3}\Psi_*
+    \]
+
+    In the angular power spectrum, this physics appears as the low-$l$ Sachs-Wolfe plateau (roughly $l \lesssim 30$), where:
+    \[
+        \frac{l(l+1)C_l}{2\pi} \approx \text{constant}
+    \]
+    while late-time ISW slightly modifies the largest scales and provides sensitivity to dark energy and spatial curvature.
+\end{theory}
+
+% -──────────────────────────────────────────────────────────────────────────────
+\bigskip \noindent \bigskip \noindent \bigskip \noindent
+\subsection{Relative Heights of the Acoustic Peaks}
+\begin{intuition}
+    To understand why different peaks have different heights, we only need three physical ideas that we already introduced in previous sections: \textbf{compression vs rarefaction}, \textbf{baryon inertia}, and \textbf{gravitational potential wells}. \\
+
+    Before recombination, each Fourier mode of the photon-baryon fluid oscillates like a driven oscillator. At decoupling, we take a ``snapshot'' of all modes:
+    \begin{itemize}
+        \item modes caught at \textbf{maximum compression} (odd peaks: 1st, 3rd, 5th, ...) produce one set of peak heights;
+        \item modes caught at \textbf{maximum rarefaction} (even peaks: 2nd, 4th, ...) produce another set.
+    \end{itemize}
+
+    If we add more baryons, the fluid has more mass (inertia). This shifts the oscillation zero-point toward compression, so compressions become deeper while rarefactions become shallower. Therefore, increasing baryon density enhances \textbf{odd peaks relative to even peaks}. \\
+
+    Dark matter contributes mainly through gravity: it deepens potential wells and changes how strongly modes are driven around horizon entry. This affects the overall peak envelope and, in particular, the height of higher peaks (for example the third peak) relative to lower ones. \\
+
+    So the pattern of peak heights is not random: odd-even contrast mainly traces baryons, while the broader peak-height pattern across multiple peaks is sensitive to total matter and dark matter.
+\end{intuition}
+
+\bigskip \noindent
+\begin{foundation}
+    A useful approximate form of the photon temperature perturbation for one mode is:
+    \[
+        \Theta_0(k,\eta_*) + \Psi(k,\eta_*)
+        \approx A(k) \cos\!\big(k\,r_s(\eta_*)\big) - R_*\,\Psi(k,\eta_*)
+    \]
+    where:
+    \begin{itemize}
+        \item $r_s(\eta_*)$ is the sound horizon at recombination;
+        \item $R_* \equiv \frac{3\rho_b}{4\rho_\gamma}\big|_{*}$ measures baryon loading;
+        \item $A(k)$ encodes driving effects from the evolving gravitational potentials.
+    \end{itemize}
+
+    The cosine term gives the alternating compression/rarefaction phases, while the $-R_*\Psi$ term is the baryon-loading shift. As $R_*$ increases:
+    \begin{itemize}
+        \item compression extrema (odd peaks) are boosted;
+        \item rarefaction extrema (even peaks) are suppressed.
+    \end{itemize}
+
+    Meanwhile, matter content controls potential evolution around horizon entry:
+    \begin{itemize}
+        \item more matter (especially non-baryonic dark matter) makes potentials decay less during the radiation-to-matter transition;
+        \item this changes the driving efficiency and therefore the relative heights among the first few peaks, especially the third peak compared with the first two.
+    \end{itemize}
+\end{foundation}
+
+\bigskip \noindent
+\begin{theory}
+    The relative peak heights provide complementary parameter sensitivity:
+    \begin{align*}
+        \text{odd/even contrast} &\longrightarrow \omega_b \;(=\Omega_{b,0}h^2), \\
+        \text{higher-peak pattern (e.g. 3rd vs 1st/2nd)} &\longrightarrow \omega_m \;(=\Omega_{m,0}h^2), \\
+        \text{with }\omega_m-\omega_b &\text{ isolating dark matter density }\omega_c.
+    \end{align*}
+
+    In practice, CMB fits use the full spectrum shape, but an intuitive summary is:
+    \begin{itemize}
+        \item larger $\omega_b$ $\Rightarrow$ stronger odd peaks relative to even peaks;
+        \item larger $\omega_c$ (or total $\omega_m$ at fixed $\omega_b$) $\Rightarrow$ modified driving and a characteristic change in the third and higher peaks.
+    \end{itemize}
+
+    Therefore, combining peak positions (geometry) with peak heights (dynamics) lets us separately constrain baryons, dark matter, and total matter in the standard cosmological model.
+\end{theory}
+
+% =══════════════════════════════════════════════════════════════════════════════
+\clearpage
+%\bigskip \noindent \bigskip \noindent \bigskip \noindent
+\section{CMB and $\Lambda$CDM-Standard Model}
+\begin{extra}
+
+\end{extra}
