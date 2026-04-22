@@ -1402,6 +1402,16 @@
     Meanwhile, when $\omega_m$ increases, by Friedmann equation we can see that the expansion rate of the universe will increase, and hence the recombination time $t_{rec}$ happens earlier, hence a shorter time for the sound wave to travel, and hence a smaller sound horizon $r_s^c(t_{rec})$. And same for $\omega_r$ as well.
 \end{intuition}
 
+\bigskip \noindent
+\begin{example}{free parameters}
+    By $ \theta_s = \frac{r_s^c(t_{rec})}{d_A^c}$, and the equation of $r_s^c(t_{rec})$ and $d_A^c$, we can see that the acoustic scale $l_A$ is dependent on the parameters $\Omega_{k,0}$, $\Omega_{\Lambda,0}$, $\omega_b$, and $\omega_d$. But why ignore the dependence on $\omega_\gamma$ and $\omega_r$ and Hubble constant $H_0$? \\
+
+    \bigskip \textbf{Solution.}\quad \\
+    The reason is that $\omega_\gamma$ are well constrained by the CMB temperature, while the radiation density $\omega_r$ is depends by photon density $\omega_\gamma$ and neutrino density $\omega_\nu$, and the neutrino density is also well constrained by the CMB (by $(\frac{4}{11})^{\frac{1}{3}}$), hence we can treat $\omega_\gamma$ and $\omega_r$ as fixed parameters. \\
+
+    On the other hand, the Hubble constant $H_0$ is depends on other energy density parameters through the Friedmann equation, and hence we can also treat it as a derived parameter, and ignore its dependence in the acoustic scale $l_A$.
+\end{example}
+
 \clearpage
 %\bigskip \noindent
 \begin{example}{Numerical Estimate of the Acoustic Scale $l_A$}{acoustic-scale-estimate}
@@ -1477,9 +1487,9 @@ Besides, there are also other features in the power spectrum, such as the Sachs-
 \begin{intuition}
     If we further consider the damping term, we can write the oscillation equation of the photon-baryon fluid as:
     \[
-        \ddot{\Theta} + c_s^2 k^2 f(c_i) \Theta + c_s^2 k^2 \Theta = g(c_i)
+        \ddot{\Theta} + c_s^2 k^2 f(c_i) \dot{\Theta} + c_s^2 k^2 \Theta = g(c_i)
     \]
-    where $f(c_i)$ is the damping term by the expansion of the universe and the diffusion of photons, and $g(c_i)$ is the source term by the gravitational potential. The $c_i$ are the parameters that affect the damping and source terms, such as the baryon density, the matter density, the dark matter density, etc. \\
+    where $f(c_i)$ is the damping term by the expansion of the universe and the diffusion of photons, and $g(c_i)$ is the force driven term. The $c_i$ are the parameters that affect the damping and source terms, such as the baryon density, the matter density, the dark matter density, etc. \\
 
     We can simply write the damping coeffcient as:
     \[
