@@ -1312,7 +1312,7 @@
     \begin{align*}
         r_s^c(t_{rec}) &= \int_0^{t_{rec}} c_s^c(t) dt \\
         &= \int_0^{t_{rec}} \frac{c_s(t)}{a(t)} dt \\
-        r_s^c(t_{rec}) &= \int_0^{a_{rec}} \frac{c_s(a)}{a^2 H(a)} da \\
+        r_s^c(a_{rec}) &= \int_0^{a_{rec}} \frac{c_s(a)}{a^2 H(a)} da \\
         &= \int_0^{a_{rec}} \frac{c_s(a)}{a^2 H_0 \sqrt{\Omega_{m,0} a^{-3} + \Omega_{\Lambda,0} + \Omega_{k,0} a^{-2} + \Omega_{r,0} a^{-4}}} da \\
         &= \frac{1}{H_0} \int_0^{a_{rec}} \frac{c_s(a)}{\sqrt{\Omega_{m,0} a + \Omega_{\Lambda,0} a^4 + \Omega_{k,0} a^2 + \Omega_{r,0}}} da \\
             &= \frac{1}{H_0} \int_0^{a_{rec}} \frac{c_s(a)}{\sqrt{\Omega_{\Lambda,0} a^4 + (1 - \Omega_{0}^{'}) a^2 + \Omega_{m,0} a + \Omega_{r,0}}} da
@@ -1321,7 +1321,7 @@
 
     We can further take the assumption that in early stage of the universe $a \ll 1$, we can ignore the contribution of dark energy and curvature to the total energy density of the universe, and hence we can write $r_s^c(t_{rec})$ as:
     \begin{align*}
-        r_s^c(t_{rec}) &= \frac{1}{H_0} \int_0^{a_{rec}} \frac{c_s(a)}{\sqrt{\Omega_{m,0} a + \Omega_{r,0}}} da
+        r_s^c(a_{rec}) &= \frac{1}{H_0} \int_0^{a_{rec}} \frac{c_s(a)}{\sqrt{\Omega_{m,0} a + \Omega_{r,0}}} da
     \end{align*}
 \end{foundation}
 
@@ -1373,9 +1373,9 @@
         c_s^2(a) &= \frac{1}{3} \frac{1}{1 + \frac{3}{4} \frac{\omega_b / h^2}{\omega_\gamma / h^2} a} \\
         c_s^2(a) &= \frac{1}{3} \frac{1}{1 + \frac{3}{4} \frac{\omega_b}{\omega_\gamma} a}
     \end{align*}
-    substituting the above equation back to the $r_s^c(t_{rec})$ equation, we can get:
+    substituting the above equation back to the $r_s^c(a_{rec})$ equation, we can get:
     \begin{align*}
-        r_s^c(t_{rec}) &= \frac{1}{H_0} \int_0^{a_{rec}} \frac{c_s(a)}{\sqrt{\Omega_{m,0} a + \Omega_{r,0}}} da \\
+        r_s^c(a_{rec}) &= \frac{1}{H_0} \int_0^{a_{rec}} \frac{c_s(a)}{\sqrt{\Omega_{m,0} a + \Omega_{r,0}}} da \\
         &= \frac{1}{100 h} \int_0^{a_{rec}} \frac{\frac{1}{\sqrt{3}} \frac{1}{\sqrt{1 + \frac{3}{4} \frac{\omega_b}{\omega_\gamma} a}}}{\sqrt{\omega_{m} \frac{a}{h^2} + \omega_{r} \frac{1}{h^2}}} da \\
         &= \frac{1}{100} \int_0^{a_{rec}} \frac{\frac{1}{\sqrt{3}} \frac{1}{\sqrt{1 + \frac{3}{4} \frac{\omega_b}{\omega_\gamma} a}}}{\sqrt{\omega_{m} a + \omega_{r}}} da \\
         &= \frac{1}{100} \int_0^{a_{rec}} \frac{1}{\sqrt{3}} \frac{1}{\sqrt{1 + \frac{3}{4} \frac{\omega_b}{\omega_\gamma} a}} \frac{1}{\sqrt{\omega_{m} a + \omega_{r}}} da \\
@@ -1470,6 +1470,188 @@
     \]
     Therefore, the fundamental acoustic spacing scale is $l_A\sim 300$, while the first temperature peak is observed near $l\sim 220$ due to phase-shift/projection effects.
 \end{example}
+
+\clearpage
+%\bigskip \noindent \bigskip \noindent \bigskip \noindent
+\begin{example}{More related questions}{}
+    For below questions, we used the \textbf{rec} subscript to represent the time of decoupling, but some textbooks may use \textbf{dec} subscript to representing it. \\
+    (a). Calculate the physical sound horizon at decoupling moment:
+    \[
+        r_s(t_{rec}) = a_{rec} r_s^c(t_{rec}) = a_{rec} \int_0^{t_{rec}} c_s^c(t) dt
+    \]
+    in terms of $z_{rec}$, $H_0$, $h$, $\omega_x = \Omega_{x,0} h^2$. Include the effect of radiation and dust components in expansion law. \\
+    (b). What is the seperation between the two neighbored acoustic peaks in the CMB angular power spectrum for the case $\Omega_{\Lambda,0} = 0$ and $\Omega_{\Lambda,0} = 1 - \Omega_{d,0}$ respectively? \\
+    (c). Calculate the numerical value of $r_s$ and $l_A$ for $z_{rec} = 1090$, $\Omega_{d,0} = 0.3$, $\Omega_{\Lambda,0} = 0.0$, $h = 0.7$, and $\omega_b = 0.02$.
+
+    \bigskip\textbf{Solution.}\quad \\
+    (a). First, recall the equation of comoving sound horizon:
+    \[
+         r_s^c(t_{rec}) =  \frac{3000 \text{Mpc}}{\sqrt{3 \omega_{r}}} \int_0^{a_{rec}} \frac{1}{\sqrt{1 + \frac{3}{4} \frac{\omega_b}{\omega_\gamma} a}} \frac{1}{\sqrt{1 + \frac{\omega_{m}}{\omega_{r}} a}} da
+    \]
+    The using the relation of $a = \frac{1}{1+z}$, and $ 3000 \text{Mpc} \approx \frac{h c}{H_0} = \frac{h}{H_0}$, we can get:
+    \begin{align*}
+        r_s(t_{rec}) &= a_{rec} r_s^c(t_{rec}) \\
+        &= \frac{1}{1+z_{rec}} \frac{h}{H_0 \sqrt{3 \omega_{r}}} \int_\infty^{z_{rec}} \frac{1}{\sqrt{1 + \frac{3}{4} \frac{\omega_b}{\omega_\gamma} \frac{1}{1+z}}} \frac{1}{\sqrt{1 + \frac{\omega_{m}}{\omega_{r}} \frac{1}{1+z}}} \frac{-dz}{(1+z)^2} \\
+        &= \frac{1}{1+z_{rec}} \frac{h}{H_0 \sqrt{3 \omega_{r}}} \int_{z_{rec}}^\infty \frac{1}{\sqrt{1 + z + \frac{3}{4} \frac{\omega_b}{\omega_\gamma}}} \frac{1}{\sqrt{1 + z + \frac{\omega_{m}}{\omega_{r}}}} \frac{dz}{(1+z)} \\
+        &= \frac{1}{1+z_{rec}} \frac{h}{H_0 \sqrt{3 \omega_{r}}} \int_{z_{rec}}^\infty \frac{\sqrt{4 \omega_\gamma} \sqrt{\omega_r}}{\sqrt{4(1 + z) \omega_{\gamma} + 3 \omega_b} \sqrt{(1 + z) \omega_{r} + \omega_{m}}} \frac{dz}{(1+z)}\\
+        &= \frac{2 h \sqrt{\omega_\gamma}}{H_0 \sqrt{3} (1+z_{rec})} \int_{z_{rec}}^\infty \frac{1}{\sqrt{4(1 + z) \omega_{\gamma} + 3 \omega_b} \sqrt{(1 + z) \omega_{r} + \omega_{m}}} \frac{dz}{(1+z)}
+    \end{align*}
+    Hence we get the integral expression that the question asked for. However, in case you are a stubborn mathematician that want to ge tthe analytical expression of the above integral, i will show you the detailed steps also:
+    Let's define $A = \omega_r$, $B = \omega_m$, $C = 4 \omega_\gamma$, and $D = 3 \omega_b$, and $u = 1 + z$, then we can write the above integral as:
+    \small
+    \begin{align*}
+        I &= \int_{u_{rec}}^\infty \frac{1}{\sqrt{C u + D} \sqrt{A u + B}} \frac{du}{u} \\
+        &\xrightarrow{\,v=1/u\,} \int_{1/u_{rec}}^0 \frac{-dv/v^2}{(1/v)\sqrt{\frac{C + Dv}{v}}\sqrt{\frac{A + Bv}{v}}} \\
+        &= \int_{1/u_{rec}}^0 \frac{-dv}{\sqrt{(A + Bv)(C + Dv)}} \\
+        &= \int_{0}^{1/u_{rec}} \frac{dv}{\sqrt{(A + Bv)(C + Dv)}} \\
+        &= \int_{0}^{1/u_{rec}} \frac{dv}{\sqrt{BD v^2 + (AD + BC)v + AC}}
+    \end{align*}
+    \normalsize
+
+    Given $BD > 0$, we can use the standard primitive
+    \small
+    \begin{align*}
+        \int \frac{dv}{\sqrt{(A + Bv)(C + Dv)}}
+        &= \frac{1}{\sqrt{BD}}\ln\left|2\sqrt{BD}\sqrt{(A + Bv)(C + Dv)} + 2BDv + AD + BC\right| \\
+        &\quad + \text{const}
+    \end{align*}
+    \normalsize
+    and hence:
+    \small
+    \begin{align*}
+        I &= \frac{1}{\sqrt{BD}} \ln\left| 2 \sqrt{BD} \sqrt{(A + B v)(C + D v)} + 2 BD v + AD + BC \right|\Bigg|_{0}^{1/u_{rec}} \\
+        &= \frac{1}{\sqrt{BD}} \ln \!
+        \left[
+            \frac{2 \sqrt{BD} \sqrt{\left(A + \frac{B}{u_{rec}}\right)\left(C + \frac{D}{u_{rec}}\right)} + \frac{2BD}{u_{rec}} + AD + BC}{2\sqrt{ABCD} + AD + BC}
+        \right]
+    \end{align*}
+    \normalsize
+    Writing it back in terms of $u_{rec}$ inside radicals:
+    \small
+    \begin{align*}
+        I
+        &= \frac{1}{\sqrt{BD}} \ln \!
+        \left[
+            \frac{2 \sqrt{BD}\,\sqrt{(Au_{rec}+B)(Cu_{rec}+D)} + 2BD + (AD+BC)u_{rec}}{u_{rec}\,(2\sqrt{ABCD}+AD+BC)}
+        \right]
+    \end{align*}
+    \normalsize
+    where $u_{rec}=1+z_{rec}$, $A=\omega_r$, $B=\omega_m$, $C=4\omega_\gamma$, $D=3\omega_b$.
+
+    Therefore, substituting this $I$ back to the physical sound horizon expression gives:
+    \small
+    \begin{align*}
+        r_s(t_{rec})
+        &= \frac{2 h \sqrt{\omega_\gamma}}{H_0 \sqrt{3}(1+z_{rec})} \, I \\
+        &= \frac{2 h \sqrt{\omega_\gamma}}{H_0 \sqrt{3}(1+z_{rec})\sqrt{BD}}
+        \ln \!
+        \left[
+            \frac{2 \sqrt{BD}\,\sqrt{(Au_{rec}+B)(Cu_{rec}+D)}}{u_{rec}\,(2\sqrt{ABCD}+AD+BC)} \\
+            & \quad +
+            \frac{2BD + (AD+BC)u_{rec}}{u_{rec}\,(2\sqrt{ABCD}+AD+BC)}
+        \right]
+    \end{align*}
+    \normalsize
+    In terms of the cosmological parameters only ($u_{rec}=1+z_{rec}$):
+    \small
+    \begin{align*}
+        r_s(t_{rec})
+        &= \frac{2 h \sqrt{\omega_\gamma}}{H_0 \sqrt{3}(1+z_{rec})\sqrt{3\omega_b\omega_m}}
+        \ln \!\left[
+            \frac{2\sqrt{3\omega_b\omega_m}\,\sqrt{(\omega_r u_{rec}+\omega_m)(4\omega_\gamma u_{rec}+3\omega_b)}}
+            {u_{rec}\left(4\sqrt{3\omega_r\omega_m\omega_\gamma\omega_b}+3\omega_r\omega_b+4\omega_m\omega_\gamma\right)} \\
+            & \quad +
+            \frac{6\omega_b\omega_m + (3\omega_r\omega_b+4\omega_m\omega_\gamma)u_{rec}}
+            {u_{rec}\left(4\sqrt{3\omega_r\omega_m\omega_\gamma\omega_b}+3\omega_r\omega_b+4\omega_m\omega_\gamma\right)}
+        \right]
+    \end{align*}
+    \normalsize
+
+    (b). \textbf{Separation between neighboring acoustic peaks} \\
+    \textbf{Assumptions.}\quad \\
+    1. We use the leading-order peak-location relation $l_n \simeq n l_A$, so the neighboring-peak separation is
+    \[
+        \Delta l \equiv l_{n+1}-l_n \simeq l_A.
+    \]
+    2. Keep pre-recombination parameters fixed ($z_{rec}$, $\omega_b$, $\omega_r$, $\omega_\gamma$, $\Omega_{d,0}$, $h$), so $r_s^c(t_{rec})$ is the same in both models. \\
+    3. Only late-time geometry changes through $\Omega_{\Lambda,0}$ via $d_A^c$:
+    \[
+        l_A = \pi\frac{d_A^c}{r_s^c}.
+    \]
+
+    With $\Omega_{d,0}=0.3$ and $h=0.7$, using
+    \[
+        d_A^c = \frac{3000}{h}\int_{a_{rec}}^1 \frac{da}{a^2\sqrt{\Omega_{d,0}a^{-3}+\Omega_{\Lambda,0}+\Omega_{k,0}a^{-2}}},
+        \quad \Omega_{k,0}=1-\Omega_{d,0}-\Omega_{\Lambda,0},
+    \]
+    and $r_s^c \approx 144.93\,\mathrm{Mpc}$ (from part (c) setup below), we obtain:
+    \begin{align*}
+        \Omega_{\Lambda,0}=0\,\,(\Omega_{k,0}=0.7):\quad
+        &d_A^c \approx 1.192\times 10^4\,\mathrm{Mpc},\quad
+        l_A \approx 258.4, \\
+        \Omega_{\Lambda,0}=1-\Omega_{d,0}=0.7\,\,(\Omega_{k,0}=0):\quad
+        &d_A^c \approx 1.369\times 10^4\,\mathrm{Mpc},\quad
+        l_A \approx 296.8.
+    \end{align*}
+    Therefore, the neighboring-peak separations are approximately:
+    \[
+        \Delta l\big|_{\Omega_{\Lambda,0}=0} \approx 258,
+        \qquad
+        \Delta l\big|_{\Omega_{\Lambda,0}=0.7} \approx 297.
+    \]
+    So adding $\Lambda$ (at fixed $\Omega_{d,0}$) increases the peak spacing by about
+    \[
+        \frac{297-258}{258}\approx 15\%.
+    \]
+
+    (c). \textbf{Numerical values of $r_s$ and $l_A$ for the given set} \\
+    \textbf{Assumptions.}\quad \\
+    1. Use the parameter set in the question:
+    \[
+        z_{rec}=1090,\quad \Omega_{d,0}=0.3,\quad \Omega_{\Lambda,0}=0,
+        \quad h=0.7,\quad \omega_b=0.02.
+    \]
+    2. Use $\omega_\gamma=2.4702\times 10^{-5}$ and $\omega_r=4.1756\times 10^{-5}$ (as adopted earlier in this chapter), and $\omega_m=\Omega_{d,0}h^2=0.147$. \\
+    3. Keep the chapter approximation for sound horizon integral:
+    \[
+        r_s^c(t_{rec}) = \frac{3000\,\mathrm{Mpc}}{\sqrt{3\omega_r}}
+        \int_0^{a_{rec}} \frac{da}{\sqrt{1+\frac{3}{4}\frac{\omega_b}{\omega_\gamma}a}\,\sqrt{1+\frac{\omega_m}{\omega_r}a}},
+        \quad a_{rec}=\frac{1}{1+z_{rec}}.
+    \]
+
+    Numerically,
+    \[
+        a_{rec}=\frac{1}{1091}\approx 9.166\times10^{-4},
+        \qquad
+        r_s^c(t_{rec})\approx 144.93\,\mathrm{Mpc}.
+    \]
+    Hence the physical sound horizon is
+    \[
+        r_s(t_{rec})=a_{rec}\,r_s^c(t_{rec})
+        \approx \frac{1}{1091}\times 144.93
+        \approx 0.133\,\mathrm{Mpc}
+        \approx 133\,\mathrm{kpc}.
+    \]
+
+    For $\Omega_{\Lambda,0}=0$ and $\Omega_{k,0}=0.7$,
+    \[
+        d_A^c \approx 1.192\times10^4\,\mathrm{Mpc},
+    \]
+    so
+    \[
+        l_A = \pi\frac{d_A^c}{r_s^c}
+        \approx \pi\frac{1.192\times10^4}{144.93}
+        \approx 258.4\approx 258.
+    \]
+
+    Therefore, for the given parameter set:
+    \[
+        r_s(t_{rec})\approx 0.133\,\mathrm{Mpc},
+        \qquad
+        l_A\approx 258.
+    \]
+\end{example}
+
 
 
 

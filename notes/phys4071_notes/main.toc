@@ -100,40 +100,40 @@
 \contentsline {subsection}{\numberline {7.3.3}Acoustic Peaks in the Power Spectrum}{168}{subsection.7.3.3}%
 \contentsline {subsection}{\numberline {7.3.4}Comoving Diameter Distance}{172}{subsection.7.3.4}%
 \contentsline {subsection}{\numberline {7.3.5}Comoving Sound Horizon}{176}{subsection.7.3.5}%
-\contentsline {section}{\numberline {7.4}More Features of the Power Spectrum}{181}{section.7.4}%
-\contentsline {subsection}{\numberline {7.4.1}Damping Tail}{181}{subsection.7.4.1}%
-\contentsline {subsection}{\numberline {7.4.2}Sachs-Wolfe Effect}{183}{subsection.7.4.2}%
-\contentsline {subsection}{\numberline {7.4.3}Relative Heights of the Acoustic Peaks}{185}{subsection.7.4.3}%
-\contentsline {section}{\numberline {7.5}CMB and $\Lambda $CDM-Standard Model}{187}{section.7.5}%
-\contentsline {chapter}{\numberline {8}Dark Matter (Lecture 20-22)}{188}{chapter.8}%
-\contentsline {section}{\numberline {8.1}Evidence for Dark Matter}{188}{section.8.1}%
-\contentsline {subsection}{\numberline {8.1.1}Galaxy Rotation Curves}{189}{subsection.8.1.1}%
-\contentsline {subsection}{\numberline {8.1.2}Modified Newtonian Dynamics (MOND)}{191}{subsection.8.1.2}%
-\contentsline {section}{\numberline {8.2}Properties of Dark Matter}{195}{section.8.2}%
-\contentsline {subsection}{\numberline {8.2.1}Baryonic and Non-baryonic Dark Matter}{195}{subsection.8.2.1}%
-\contentsline {subsection}{\numberline {8.2.2}Cold and Hot Dark Matter}{197}{subsection.8.2.2}%
-\contentsline {subsection}{\numberline {8.2.3}Stableness and Lifetime}{198}{subsection.8.2.3}%
-\contentsline {subsection}{\numberline {8.2.4}Decoupling and Interactions}{199}{subsection.8.2.4}%
-\contentsline {subsection}{\numberline {8.2.5}Boltzmann Equation for DM Relic Abundance}{200}{subsection.8.2.5}%
-\contentsline {subsection}{\numberline {8.2.6}Freeze-out Temperature}{202}{subsection.8.2.6}%
-\contentsline {subsection}{\numberline {8.2.7}Relic Abundance}{204}{subsection.8.2.7}%
-\contentsline {subsection}{\numberline {8.2.8}WIMP Miracle}{207}{subsection.8.2.8}%
-\contentsline {section}{\numberline {8.3}Non-gravitational Detections of Dark Matter}{208}{section.8.3}%
-\contentsline {subsection}{\numberline {8.3.1}Direct Detection}{208}{subsection.8.3.1}%
-\contentsline {subsection}{\numberline {8.3.2}Indirect Detection}{208}{subsection.8.3.2}%
-\contentsline {subsection}{\numberline {8.3.3}Collider Detection}{208}{subsection.8.3.3}%
-\contentsline {section}{\numberline {8.4}Other Candidates for Dark Matter}{209}{section.8.4}%
-\contentsline {chapter}{\numberline {A}Declaration of AI Assistance}{211}{appendix.A}%
-\contentsline {section}{\numberline {A.1}Use of Artificial Intelligence in This Document}{211}{section.A.1}%
-\contentsline {chapter}{\numberline {B}Mathematical Tools \& Derivations}{212}{appendix.B}%
-\contentsline {section}{\numberline {B.1}Useful Identities}{212}{section.B.1}%
-\contentsline {section}{\numberline {B.2}Differential Geometry Primer}{214}{section.B.2}%
-\contentsline {section}{\numberline {B.3}Relativistic Limits}{214}{section.B.3}%
-\contentsline {section}{\numberline {B.4}Spherical Harmonics \& Associated Legendre Polynomials}{215}{section.B.4}%
-\contentsline {chapter}{\numberline {C}Constants \& Conversion Factors}{217}{appendix.C}%
-\contentsline {section}{\numberline {C.1}Physical Constants}{217}{section.C.1}%
-\contentsline {section}{\numberline {C.2}Conversion Factors}{217}{section.C.2}%
-\contentsline {section}{\numberline {C.3}SI Unit Prefixes}{218}{section.C.3}%
-\contentsline {section}{\numberline {C.4}Main Events in Universe}{219}{section.C.4}%
-\contentsline {section}{\numberline {C.5}Nuclei Binding Energies \& Atomic Masses}{220}{section.C.5}%
+\contentsline {section}{\numberline {7.4}More Features of the Power Spectrum}{185}{section.7.4}%
+\contentsline {subsection}{\numberline {7.4.1}Damping Tail}{185}{subsection.7.4.1}%
+\contentsline {subsection}{\numberline {7.4.2}Sachs-Wolfe Effect}{187}{subsection.7.4.2}%
+\contentsline {subsection}{\numberline {7.4.3}Relative Heights of the Acoustic Peaks}{189}{subsection.7.4.3}%
+\contentsline {section}{\numberline {7.5}CMB and $\Lambda $CDM-Standard Model}{191}{section.7.5}%
+\contentsline {chapter}{\numberline {8}Dark Matter (Lecture 20-22)}{192}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Evidence for Dark Matter}{192}{section.8.1}%
+\contentsline {subsection}{\numberline {8.1.1}Galaxy Rotation Curves}{193}{subsection.8.1.1}%
+\contentsline {subsection}{\numberline {8.1.2}Modified Newtonian Dynamics (MOND)}{195}{subsection.8.1.2}%
+\contentsline {section}{\numberline {8.2}Properties of Dark Matter}{199}{section.8.2}%
+\contentsline {subsection}{\numberline {8.2.1}Baryonic and Non-baryonic Dark Matter}{199}{subsection.8.2.1}%
+\contentsline {subsection}{\numberline {8.2.2}Cold and Hot Dark Matter}{201}{subsection.8.2.2}%
+\contentsline {subsection}{\numberline {8.2.3}Stableness and Lifetime}{202}{subsection.8.2.3}%
+\contentsline {subsection}{\numberline {8.2.4}Decoupling and Interactions}{203}{subsection.8.2.4}%
+\contentsline {subsection}{\numberline {8.2.5}Boltzmann Equation for DM Relic Abundance}{204}{subsection.8.2.5}%
+\contentsline {subsection}{\numberline {8.2.6}Freeze-out Temperature}{206}{subsection.8.2.6}%
+\contentsline {subsection}{\numberline {8.2.7}Relic Abundance}{208}{subsection.8.2.7}%
+\contentsline {subsection}{\numberline {8.2.8}WIMP Miracle}{211}{subsection.8.2.8}%
+\contentsline {section}{\numberline {8.3}Non-gravitational Detections of Dark Matter}{212}{section.8.3}%
+\contentsline {subsection}{\numberline {8.3.1}Direct Detection}{212}{subsection.8.3.1}%
+\contentsline {subsection}{\numberline {8.3.2}Indirect Detection}{212}{subsection.8.3.2}%
+\contentsline {subsection}{\numberline {8.3.3}Collider Detection}{212}{subsection.8.3.3}%
+\contentsline {section}{\numberline {8.4}Other Candidates for Dark Matter}{213}{section.8.4}%
+\contentsline {chapter}{\numberline {A}Declaration of AI Assistance}{215}{appendix.A}%
+\contentsline {section}{\numberline {A.1}Use of Artificial Intelligence in This Document}{215}{section.A.1}%
+\contentsline {chapter}{\numberline {B}Mathematical Tools \& Derivations}{216}{appendix.B}%
+\contentsline {section}{\numberline {B.1}Useful Identities}{216}{section.B.1}%
+\contentsline {section}{\numberline {B.2}Differential Geometry Primer}{218}{section.B.2}%
+\contentsline {section}{\numberline {B.3}Relativistic Limits}{218}{section.B.3}%
+\contentsline {section}{\numberline {B.4}Spherical Harmonics \& Associated Legendre Polynomials}{219}{section.B.4}%
+\contentsline {chapter}{\numberline {C}Constants \& Conversion Factors}{221}{appendix.C}%
+\contentsline {section}{\numberline {C.1}Physical Constants}{221}{section.C.1}%
+\contentsline {section}{\numberline {C.2}Conversion Factors}{221}{section.C.2}%
+\contentsline {section}{\numberline {C.3}SI Unit Prefixes}{222}{section.C.3}%
+\contentsline {section}{\numberline {C.4}Main Events in Universe}{223}{section.C.4}%
+\contentsline {section}{\numberline {C.5}Nuclei Binding Energies \& Atomic Masses}{224}{section.C.5}%
 \contentsfinish 

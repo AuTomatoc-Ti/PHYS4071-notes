@@ -846,6 +846,7 @@ INPUT ./images/omega_0_angular_power_spectrum.png
 INPUT ./images/omega_0_angular_power_spectrum.png
 INPUT ./images/omega_0_angular_power_spectrum.png
 INPUT ./images/omega_0_angular_power_spectrum.png
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/adobe/palatino/pplr8t.tfm
 INPUT ./images/damping_tail.png
 INPUT ./images/damping_tail.png
 INPUT ./images/damping_tail.png
