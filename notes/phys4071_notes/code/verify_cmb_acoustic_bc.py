@@ -2,7 +2,7 @@
 
 This script reproduces the acoustic-scale calculations used in:
 - part (b): neighboring-peak separation for two choices of Omega_Lambda,0
-- part (c): numerical values of r_s and l_A for the given parameter set
+- part (c): numerical values of r_s and l_A for both geometry choices
 
 No third-party packages are required.
 """
@@ -10,6 +10,10 @@ No third-party packages are required.
 from __future__ import annotations
 
 import math
+
+
+def header(title: str) -> None:
+    print(f"\n=== {title} ===")
 
 
 def simpson(f, a: float, b: float, n: int = 200_000) -> float:
@@ -50,11 +54,82 @@ def d_a_comoving_mpc(z_rec: float, h: float, omega_m0: float, omega_lambda0: flo
     return d_a_c, i_d
 
 
+def compute_case(
+    *,
+    case_name: str,
+    z_rec: float,
+    omega_d0: float,
+    omega_lambda0: float,
+    h: float,
+    omega_b: float,
+    omega_gamma: float,
+    omega_r: float,
+) -> dict[str, float]:
+    """Compute chapter-style (r_s^c, r_s, d_A^c, l_A) for one cosmology."""
+    omega_k0 = 1.0 - omega_d0 - omega_lambda0
+    omega_m = omega_d0 * h * h
+
+    r_s_c, a_rec, i_s, pref_s = sound_horizon_comoving_mpc(
+        z_rec=z_rec,
+        omega_b=omega_b,
+        omega_gamma=omega_gamma,
+        omega_r=omega_r,
+        omega_m=omega_m,
+    )
+    r_s_phys = a_rec * r_s_c
+
+    d_a_c, i_d = d_a_comoving_mpc(
+        z_rec=z_rec,
+        h=h,
+        omega_m0=omega_d0,
+        omega_lambda0=omega_lambda0,
+    )
+    l_a = math.pi * d_a_c / r_s_c
+
+    return {
+        "omega_lambda0": omega_lambda0,
+        "omega_k0": omega_k0,
+        "omega_m": omega_m,
+        "a_rec": a_rec,
+        "r_b": 0.75 * omega_b / omega_gamma,
+        "r_m": omega_m / omega_r,
+        "i_s": i_s,
+        "pref_s": pref_s,
+        "r_s_c": r_s_c,
+        "r_s_phys": r_s_phys,
+        "i_d": i_d,
+        "d_a_c": d_a_c,
+        "l_a": l_a,
+        "case_name": case_name,
+    }
+
+
+def print_case_result(case: dict[str, float]) -> None:
+    print(
+        f"Case {case['case_name']}: "
+        f"Omega_Lambda,0={case['omega_lambda0']:.1f}, "
+        f"Omega_k,0={case['omega_k0']:.1f}"
+    )
+    print(f"  omega_m = Omega_d,0 * h^2 = {case['omega_m']:.6f}")
+    print(f"  a_rec = 1/(1+z_rec) = {case['a_rec']:.12e}")
+    print(f"  R_b = (3/4)(omega_b/omega_gamma) = {case['r_b']:.6f}")
+    print(f"  R_m = omega_m/omega_r = {case['r_m']:.6f}")
+    print(f"  I_s = integral_0^a_rec [...] da = {case['i_s']:.12e}")
+    print(f"  prefactor = 3000/sqrt(3*omega_r) = {case['pref_s']:.6f}")
+    print(f"  r_s^c = prefactor * I_s = {case['r_s_c']:.6f} Mpc")
+    print(
+        f"  r_s = a_rec * r_s^c = {case['r_s_phys']:.6f} Mpc "
+        f"= {case['r_s_phys'] * 1e3:.3f} kpc"
+    )
+    print(f"  I_d = integral_a_rec^1 [...] da = {case['i_d']:.6f}")
+    print(f"  d_A^c = (3000/h) * I_d = {case['d_a_c']:.6f} Mpc")
+    print(f"  l_A = pi * d_A^c / r_s^c = {case['l_a']:.6f}")
+
+
 def main() -> None:
     # Given/assumed constants from the chapter and question
     z_rec = 1090.0
     omega_d0 = 0.3
-    omega_lambda0 = 0.0
     h = 0.7
     omega_b = 0.02
 
@@ -65,65 +140,68 @@ def main() -> None:
     print("=== Inputs ===")
     print(f"z_rec = {z_rec}")
     print(f"Omega_d,0 = {omega_d0}")
-    print(f"Omega_Lambda,0 = {omega_lambda0}")
+    print("Omega_Lambda,0 cases = {0.0, 0.7}")
     print(f"h = {h}")
     print(f"omega_b = {omega_b}")
     print(f"omega_gamma = {omega_gamma}")
     print(f"omega_r = {omega_r}")
-    print(f"omega_m = Omega_d,0 * h^2 = {omega_m}")
+    print(f"omega_m = Omega_d,0 * h^2 = {omega_m:.6f}")
 
-    print("\n=== Part (c): r_s and l_A for Omega_Lambda,0 = 0 ===")
-    r_s_c, a_rec, i_s, pref_s = sound_horizon_comoving_mpc(
+    case_open = compute_case(
+        case_name="A (open)",
         z_rec=z_rec,
+        omega_d0=omega_d0,
+        omega_lambda0=0.0,
+        h=h,
         omega_b=omega_b,
         omega_gamma=omega_gamma,
         omega_r=omega_r,
-        omega_m=omega_m,
     )
-    r_s_phys = a_rec * r_s_c
-
-    print(f"a_rec = 1/(1+z_rec) = {a_rec:.12e}")
-    print(f"R_b = (3/4)(omega_b/omega_gamma) = {0.75 * omega_b / omega_gamma:.6f}")
-    print(f"R_m = omega_m/omega_r = {omega_m / omega_r:.6f}")
-    print(f"I_s = integral_0^a_rec [...] da = {i_s:.12e}")
-    print(f"prefactor = 3000/sqrt(3*omega_r) = {pref_s:.6f}")
-    print(f"r_s^c = prefactor * I_s = {r_s_c:.6f} Mpc")
-    print(f"r_s = a_rec * r_s^c = {r_s_phys:.6f} Mpc = {r_s_phys * 1e3:.3f} kpc")
-
-    d_open, i_d_open = d_a_comoving_mpc(
+    case_flat = compute_case(
+        case_name="B (flat)",
         z_rec=z_rec,
-        h=h,
-        omega_m0=omega_d0,
-        omega_lambda0=0.0,
-    )
-    l_a_open = math.pi * d_open / r_s_c
-    print(f"I_d (Omega_Lambda,0=0) = integral_a_rec^1 [...] da = {i_d_open:.6f}")
-    print(f"d_A^c (Omega_Lambda,0=0) = (3000/h) * I_d = {d_open:.6f} Mpc")
-    print(f"l_A (Omega_Lambda,0=0) = pi * d_A^c / r_s^c = {l_a_open:.6f}")
-
-    print("\n=== Part (b): neighboring-peak separation ===")
-    d_flat, i_d_flat = d_a_comoving_mpc(
-        z_rec=z_rec,
-        h=h,
-        omega_m0=omega_d0,
+        omega_d0=omega_d0,
         omega_lambda0=1.0 - omega_d0,
+        h=h,
+        omega_b=omega_b,
+        omega_gamma=omega_gamma,
+        omega_r=omega_r,
     )
-    l_a_flat = math.pi * d_flat / r_s_c
 
-    delta_l_open = l_a_open
-    delta_l_flat = l_a_flat
+    header("Part (c): r_s and l_A for both Omega_Lambda,0 choices")
+    print_case_result(case_open)
+    print_case_result(case_flat)
 
-    print(f"I_d (Omega_Lambda,0=0.7) = integral_a_rec^1 [...] da = {i_d_flat:.6f}")
-    print(f"d_A^c (Omega_Lambda,0=0.7) = {d_flat:.6f} Mpc")
+    header("Part (b): neighboring-peak separation")
+    delta_l_open = case_open["l_a"]
+    delta_l_flat = case_flat["l_a"]
+    print(
+        "Using matched r_s^c from part (c): "
+        "Delta l ~= pi * d_A^c / r_s^c for each cosmology"
+    )
+    print(
+        f"Delta l ~= l_A (Omega_Lambda,0=0.0; r_s^c={case_open['r_s_c']:.6f} Mpc)   "
+        f"= {delta_l_open:.6f}"
+    )
+    print(
+        f"Delta l ~= l_A (Omega_Lambda,0=0.7; r_s^c={case_flat['r_s_c']:.6f} Mpc) "
+        f"= {delta_l_flat:.6f}"
+    )
     print(f"Delta l ~= l_A (Omega_Lambda,0=0)   = {delta_l_open:.6f}")
     print(f"Delta l ~= l_A (Omega_Lambda,0=0.7) = {delta_l_flat:.6f}")
     print(f"relative increase = {(delta_l_flat - delta_l_open) / delta_l_open * 100:.3f}%")
+    print(
+        "note: with fixed pre-recombination inputs (z_rec, omega_b, omega_gamma, "
+        "omega_r, omega_m), r_s^c is the same in both cases to displayed precision"
+    )
 
     # Loose sanity checks against values quoted in the notes.
-    assert abs(r_s_c - 144.93) < 0.5
-    assert abs(r_s_phys - 0.133) < 0.005
-    assert abs(l_a_open - 258.4) < 1.5
-    assert abs(l_a_flat - 296.8) < 1.5
+    assert abs(case_open["r_s_c"] - 144.93) < 0.5
+    assert abs(case_flat["r_s_c"] - 144.93) < 0.5
+    assert abs(case_open["r_s_phys"] - 0.133) < 0.005
+    assert abs(case_flat["r_s_phys"] - 0.133) < 0.005
+    assert abs(case_open["l_a"] - 258.4) < 1.5
+    assert abs(case_flat["l_a"] - 296.8) < 1.5
 
     print("\nAll checks passed.")
 

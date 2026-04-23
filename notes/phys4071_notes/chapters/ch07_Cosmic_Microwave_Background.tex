@@ -1573,7 +1573,13 @@
     \[
         \Delta l \equiv l_{n+1}-l_n \simeq (n+1)l_A-nl_A=l_A.
     \]
-    2. For comparing the two cosmologies, keep pre-recombination physics fixed ($z_{rec}$, $\omega_b$, $\omega_\gamma$, $\omega_r$, $\omega_m$), so the same $r_s^c(t_{rec})$ is used in both cases.
+    2. For comparing the two cosmologies, use the corresponding $r_s^c$ from part (c):
+    \[
+        r_s^{c,(0)}\equiv r_s^c\big|_{\Omega_{\Lambda,0}=0},
+        \qquad
+        r_s^{c,(0.7)}\equiv r_s^c\big|_{\Omega_{\Lambda,0}=0.7}.
+    \]
+    With fixed pre-recombination inputs ($z_{rec}$, $\omega_b$, $\omega_\gamma$, $\omega_r$, $\omega_m$), these two values are numerically the same to the shown precision, but we still keep the case matching explicit. \\
     3. Geometry difference enters through $d_A^c$ only:
     \[
         l_A = \pi\frac{d_A^c}{r_s^c},
@@ -1603,13 +1609,15 @@
         &d_A^c\approx \frac{3000}{0.7}\times 3.1945 \approx 1.369\times10^4\,\mathrm{Mpc}.
     \end{align*}
 
-    Using $r_s^c\approx 144.93\,\mathrm{Mpc}$ (computed in part (c)):
+    Using the matched values from part (c),
+    $r_s^{c,(0)}\approx 144.93\,\mathrm{Mpc}$ and
+    $r_s^{c,(0.7)}\approx 144.93\,\mathrm{Mpc}$:
     \begin{align*}
         \Delta l\big|_{\Omega_{\Lambda,0}=0}
-        &\simeq l_A=\pi\frac{1.192\times10^4}{144.93}
+        &\simeq l_A=\pi\frac{1.192\times10^4}{r_s^{c,(0)}}
         \approx 258.4, \\
         \Delta l\big|_{\Omega_{\Lambda,0}=0.7}
-        &\simeq l_A=\pi\frac{1.369\times10^4}{144.93}
+        &\simeq l_A=\pi\frac{1.369\times10^4}{r_s^{c,(0.7)}}
         \approx 296.8.
     \end{align*}
     Therefore,
@@ -1620,20 +1628,26 @@
     \]
     and the fractional increase is
     \[
-        \frac{296.8-258.4}{258.4}\approx 14.9\%\approx 15\%.
+        \frac{296.8-258.4}{258.4}\approx 14.84\%\approx 15\%.
     \]
 
-    (c). \textbf{Numerical values of $r_s$ and $l_A$ for the given set} \\
+    (c). \textbf{Numerical values of $r_s$ and $l_A$ for two $\Omega_{\Lambda,0}$ choices} \\
     \textbf{Assumptions.}\quad \\
     1. Use the problem parameters:
     \[
-        z_{rec}=1090,\quad \Omega_{d,0}=0.3,\quad \Omega_{\Lambda,0}=0,\quad h=0.7,\quad \omega_b=0.02.
+        z_{rec}=1090,\quad \Omega_{d,0}=0.3,\quad h=0.7,\quad \omega_b=0.02.
     \]
-    2. Adopt chapter constants:
+    2. Evaluate two background cases:
+    \[
+        \text{Case A: }\Omega_{\Lambda,0}=0\;(\Omega_{k,0}=0.7),
+        \qquad
+        \text{Case B: }\Omega_{\Lambda,0}=0.7\;(\Omega_{k,0}=0).
+    \]
+    3. Adopt chapter constants:
     \[
         \omega_\gamma=2.4702\times10^{-5},\qquad \omega_r=4.1756\times10^{-5}.
     \]
-    3. Use $\omega_m=\Omega_{d,0}h^2=0.147$ and the chapter approximation formula
+    4. Use $\omega_m=\Omega_{d,0}h^2=0.147$ and the chapter approximation formula
     \[
         r_s^c(t_{rec})=\frac{3000\,\mathrm{Mpc}}{\sqrt{3\omega_r}}
         \int_0^{a_{rec}}
@@ -1642,7 +1656,7 @@
         a_{rec}=\frac{1}{1+z_{rec}}.
     \]
 
-    First evaluate the dimensionless factors in the integrand:
+    First evaluate the dimensionless factors in the integrand (same in both cases, since $\Omega_{d,0},h,\omega_b,\omega_\gamma,\omega_r$ are unchanged):
     \begin{align*}
         a_{rec}&=\frac{1}{1+1090}=\frac{1}{1091}\approx 9.166\times10^{-4}, \\
         R_b&\equiv \frac{3}{4}\frac{\omega_b}{\omega_\gamma}
@@ -1656,7 +1670,7 @@
     \[
         r_s^c=\frac{3000}{\sqrt{3\omega_r}}\underbrace{\int_0^{a_{rec}}\frac{da}{\sqrt{1+R_ba}\sqrt{1+R_ma}}}_{I_s}.
     \]
-    Numerically,
+    Numerically (both cases),
     \begin{align*}
         I_s&\approx 5.407\times10^{-4}, \\
         \frac{3000}{\sqrt{3\omega_r}}&\approx 2.680\times10^5\,\mathrm{Mpc}, \\
@@ -1664,7 +1678,7 @@
         \approx 144.93\,\mathrm{Mpc}.
     \end{align*}
 
-    Then physical sound horizon:
+    Then physical sound horizon (both cases):
     \begin{align*}
         r_s(t_{rec})&=a_{rec}r_s^c
         =\frac{1}{1091}\times 144.93\,\mathrm{Mpc}
@@ -1672,22 +1686,25 @@
         \approx 133\,\mathrm{kpc}.
     \end{align*}
 
-    Next compute $l_A$ for the same parameter set ($\Omega_{\Lambda,0}=0$):
+    Next compute $l_A$ for each background geometry:
     \begin{align*}
-        \Omega_{k,0}&=1-\Omega_{d,0}-\Omega_{\Lambda,0}=1-0.3-0=0.7, \\
-        d_A^c&=\frac{3000}{0.7}\int_{a_{rec}}^1\frac{da}{a^2\sqrt{0.3a^{-3}+0.7a^{-2}}}
-        \approx 1.192\times10^4\,\mathrm{Mpc}, \\
-        l_A&=\pi\frac{d_A^c}{r_s^c}
-        \approx \pi\frac{1.192\times10^4}{144.93}
-        \approx 258.4.
+        \text{Case A }(\Omega_{\Lambda,0}=0):\quad
+        &d_A^c\approx 1.192\times10^4\,\mathrm{Mpc},
+        \qquad
+        l_A\approx \pi\frac{1.192\times10^4}{144.93}\approx 258.4, \\
+        \text{Case B }(\Omega_{\Lambda,0}=0.7):\quad
+        &d_A^c\approx 1.369\times10^4\,\mathrm{Mpc},
+        \qquad
+        l_A\approx \pi\frac{1.369\times10^4}{144.93}\approx 296.8.
     \end{align*}
 
     Therefore, for the given parameter set,
-    \[
-        r_s(t_{rec})\approx 0.133\,\mathrm{Mpc}\;(\approx 133\,\mathrm{kpc}),
-        \qquad
-        l_A\approx 258.
-    \]
+    \begin{align*}
+        r_s(t_{rec})&\approx 0.133\,\mathrm{Mpc}\;(\approx 133\,\mathrm{kpc}) \\
+        \quad \text{(both cases)}, \\
+        l_A&\approx 258 \quad \text{for }\Omega_{\Lambda,0}=0, \\
+        l_A&\approx 297 \quad \text{for }\Omega_{\Lambda,0}=0.7.
+    \end{align*}
     (A verification script is provided in \texttt{code/verify\_cmb\_acoustic\_bc.py}.)
 \end{example}
 
