@@ -1573,14 +1573,7 @@
     \[
         \Delta l \equiv l_{n+1}-l_n \simeq (n+1)l_A-nl_A=l_A.
     \]
-    2. For comparing the two cosmologies, use the corresponding $r_s^c$ from part (c):
-    \[
-        r_s^{c,(0)}\equiv r_s^c\big|_{\Omega_{\Lambda,0}=0},
-        \qquad
-        r_s^{c,(0.7)}\equiv r_s^c\big|_{\Omega_{\Lambda,0}=0.7}.
-    \]
-    With fixed pre-recombination inputs ($z_{rec}$, $\omega_b$, $\omega_\gamma$, $\omega_r$, $\omega_m$), these two values are numerically the same to the shown precision, but we still keep the case matching explicit. \\
-    3. Geometry difference enters through $d_A^c$ only:
+    2. Use the same integral definitions of $d_A^c$ and $r_s^c$ as part (a), and write each cosmology explicitly:
     \[
         l_A = \pi\frac{d_A^c}{r_s^c},
         \qquad
@@ -1588,48 +1581,39 @@
         \qquad
         E(a)=\sqrt{\Omega_{d,0}a^{-3}+\Omega_{\Lambda,0}+\Omega_{k,0}a^{-2}}.
     \]
+    with
+    \[
+        r_s^c(t_{rec})=\frac{3000\,\mathrm{Mpc}}{\sqrt{3\omega_r}}
+        \int_0^{a_{rec}}
+        \frac{da}{\sqrt{1+\frac{3}{4}\frac{\omega_b}{\omega_\gamma}a}\,\sqrt{1+\frac{\omega_m}{\omega_r}a}},
+        \qquad
+        a_{rec}=\frac{1}{1+z_{rec}}.
+    \]
 
-    For this question, $\Omega_{d,0}=0.3$, $h=0.7$, $a_{rec}=1/(1+1090)=1/1091$, and
+    For this question ($\Omega_{d,0}=0.3$, $h=0.7$, $a_{rec}=1/1091$),
     \[
         \Omega_{k,0}=1-\Omega_{d,0}-\Omega_{\Lambda,0}.
     \]
-    Define
+    Define case-matched quantities
     \[
-        I_d(\Omega_{\Lambda,0})\equiv \int_{a_{rec}}^1\frac{da}{a^2E(a)},
+        r_s^{c,(0)}\equiv r_s^c\big|_{\Omega_{\Lambda,0}=0},
         \qquad
-        d_A^c=\frac{3000}{h}I_d.
+        r_s^{c,(0.7)}\equiv r_s^c\big|_{\Omega_{\Lambda,0}=0.7}.
     \]
-    Then numerically:
-    \begin{align*}
-        \Omega_{\Lambda,0}=0\; (\Omega_{k,0}=0.7):\quad
-        &I_d\approx 2.7818, \\
-        &d_A^c\approx \frac{3000}{0.7}\times 2.7818 \approx 1.192\times10^4\,\mathrm{Mpc}. \\
-        \Omega_{\Lambda,0}=1-\Omega_{d,0}=0.7\; (\Omega_{k,0}=0):\quad
-        &I_d\approx 3.1945, \\
-        &d_A^c\approx \frac{3000}{0.7}\times 3.1945 \approx 1.369\times10^4\,\mathrm{Mpc}.
-    \end{align*}
-
-    Using the matched values from part (c),
-    $r_s^{c,(0)}\approx 144.93\,\mathrm{Mpc}$ and
-    $r_s^{c,(0.7)}\approx 144.93\,\mathrm{Mpc}$:
+    Then the required analytic integral forms are:
     \begin{align*}
         \Delta l\big|_{\Omega_{\Lambda,0}=0}
-        &\simeq l_A=\pi\frac{1.192\times10^4}{r_s^{c,(0)}}
-        \approx 258.4, \\
-        \Delta l\big|_{\Omega_{\Lambda,0}=0.7}
-        &\simeq l_A=\pi\frac{1.369\times10^4}{r_s^{c,(0.7)}}
-        \approx 296.8.
+        &\simeq \pi\,
+        \frac{\frac{3000}{h}\displaystyle\int_{a_{rec}}^1
+        \frac{da}{a^2\sqrt{\Omega_{d,0}a^{-3}+(1-\Omega_{d,0})a^{-2}}}}
+        {r_s^{c,(0)}}, \\
+        \Delta l\big|_{\Omega_{\Lambda,0}=1-\Omega_{d,0}}
+        &\simeq \pi\,
+        \frac{\frac{3000}{h}\displaystyle\int_{a_{rec}}^1
+        \frac{da}{a^2\sqrt{\Omega_{d,0}a^{-3}+(1-\Omega_{d,0})}}}
+        {r_s^{c,(0.7)}}.
     \end{align*}
-    Therefore,
-    \[
-        \Delta l\big|_{\Omega_{\Lambda,0}=0}\approx 258,
-        \qquad
-        \Delta l\big|_{\Omega_{\Lambda,0}=0.7}\approx 297,
-    \]
-    and the fractional increase is
-    \[
-        \frac{296.8-258.4}{258.4}\approx 14.84\%\approx 15\%.
-    \]
+   The part (b) only shows the integral forms of the peak separation $\Delta l$ for the two cases, we will evaluate the numerical values in part (c) below. \\
 
     (c). \textbf{Numerical values of $r_s$ and $l_A$ for two $\Omega_{\Lambda,0}$ choices} \\
     \textbf{Assumptions.}\quad \\
@@ -1686,16 +1670,18 @@
         \approx 133\,\mathrm{kpc}.
     \end{align*}
 
-    Next compute $l_A$ for each background geometry:
+    Next compute $d_A^c$ and then $l_A$ for each background geometry:
     \begin{align*}
         \text{Case A }(\Omega_{\Lambda,0}=0):\quad
-        &d_A^c\approx 1.192\times10^4\,\mathrm{Mpc},
-        \qquad
-        l_A\approx \pi\frac{1.192\times10^4}{144.93}\approx 258.4, \\
+        &I_d\equiv\int_{a_{rec}}^1\frac{da}{a^2\sqrt{0.3a^{-3}+0.7a^{-2}}}\approx 2.7818, \\
+        &d_A^c\approx \frac{3000}{0.7}\times 2.7818 \approx 1.192\times10^4\,\mathrm{Mpc},
+        \\
+        &l_A\approx \pi\frac{1.192\times10^4}{144.93}\approx 258.4, \\
         \text{Case B }(\Omega_{\Lambda,0}=0.7):\quad
-        &d_A^c\approx 1.369\times10^4\,\mathrm{Mpc},
-        \qquad
-        l_A\approx \pi\frac{1.369\times10^4}{144.93}\approx 296.8.
+        &I_d\equiv\int_{a_{rec}}^1\frac{da}{a^2\sqrt{0.3a^{-3}+0.7}}\approx 3.1945, \\
+        &d_A^c\approx \frac{3000}{0.7}\times 3.1945 \approx 1.369\times10^4\,\mathrm{Mpc},
+        \\
+        &l_A\approx \pi\frac{1.369\times10^4}{144.93}\approx 296.8.
     \end{align*}
 
     Therefore, for the given parameter set,

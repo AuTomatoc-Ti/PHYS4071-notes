@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber main"] 1775976302.11986 "main.bcf" "main.bbl" "main" 1776925123.49425 0
-  "main.bcf" 1776925123.2197 107836 d1f6c503cec8cd464c159b7cc781d432 "pdflatex"
+["biber main"] 1775976302.11986 "main.bcf" "main.bbl" "main" 1776925683.793 0
+  "main.bcf" 1776925683.51862 107836 d1f6c503cec8cd464c159b7cc781d432 "pdflatex"
   "references.bib" 1776241173.16209 934 9b09add498f96af99eb954d9d9bf1083 ""
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1776925112.67676 "main.tex" "main.pdf" "main" 1776925123.49459 2
+["pdflatex"] 1776925674.2126 "main.tex" "main.pdf" "main" 1776925683.79338 2
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1136849721 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -270,7 +270,7 @@
   "chapters/ch04_standard_model.tex" 1776241173.05055 12242 cf2a674ffe9475d5a3613f8fdca46c76 ""
   "chapters/ch05_thermodynamics_and_primordial_soup.tex" 1776241173.05069 65502 556acf843d43355b5c89adb3a3335451 ""
   "chapters/ch06_Big_Bang_nucleosynthesis.tex" 1776241173.0508 29539 c3d8b2aa0b0d4e965b319cedcb8155de ""
-  "chapters/ch07_Cosmic_Microwave_Background.tex" 1776925110.09521 118880 beefa257c55762b52c11f7f1ee0dc152 ""
+  "chapters/ch07_Cosmic_Microwave_Background.tex" 1776925672.5811 118601 2a8256d88980344e65a27187d10167c6 ""
   "chapters/ch08_dark_matter.tex" 1776848616.07272 47149 ffbcfd4367ef2781cc5ce21f51ed9a4c ""
   "chapters/intro.tex" 1776241173.05171 10892 c91d4b717fbdd6682b504c62d9e0bb68 ""
   "images/BBN_interaction_chain.jpg" 1776241173.05327 27630 bf0344b852fb4fa3e27ec5618e9a35fd ""
@@ -307,12 +307,12 @@
   "images/universe_evolution.png" 1776241173.10261 757297 224958546c16d20f4b0aa0aa62e91708 ""
   "images/universe_evolution_2.png" 1776241173.10567 786377 292aeddda7243d1b771c93d57f91c214 ""
   "images/universe_evolution_3.png" 1776241173.10875 346275 faa3ee519acf57e5e9dfb973953a9408 ""
-  "main.aux" 1776925123.21405 33887 fb9e24f5705eca56d41602520ad3b336 "pdflatex"
+  "main.aux" 1776925683.5108 33887 fb9e24f5705eca56d41602520ad3b336 "pdflatex"
   "main.bbl" 1776241173.10963 4798 ca19d4cd5fbf1163c84ad8dd33caa9c6 "biber main"
-  "main.out" 1776925123.217 27041 8fbb42d7bd2146e84159a1c28813a734 "pdflatex"
-  "main.run.xml" 1776925123.22076 2339 1ed341041bd1fbe5a1f3b1992463a6cc "pdflatex"
+  "main.out" 1776925683.51421 27041 8fbb42d7bd2146e84159a1c28813a734 "pdflatex"
+  "main.run.xml" 1776925683.52031 2339 1ed341041bd1fbe5a1f3b1992463a6cc "pdflatex"
   "main.tex" 1776337050.60922 6710 5fb691df26b50a1616c701221f32e5ed ""
-  "main.toc" 1776925123.22082 12809 c10dc7d648aa54ec1e1ae19978fd35c0 "pdflatex"
+  "main.toc" 1776925683.52039 12809 c10dc7d648aa54ec1e1ae19978fd35c0 "pdflatex"
   "preamble.tex" 1776241173.16188 14010 f12fdc68b1b126321a770ff73050c267 ""
   (generated)
   "main.aux"

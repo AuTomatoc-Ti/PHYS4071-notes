@@ -1,7 +1,7 @@
 """Verify Chapter 7 example results for parts (b) and (c).
 
 This script reproduces the acoustic-scale calculations used in:
-- part (b): neighboring-peak separation for two choices of Omega_Lambda,0
+- part (b): analytic integral-form expressions for neighboring-peak separation
 - part (c): numerical values of r_s and l_A for both geometry choices
 
 No third-party packages are required.
@@ -126,6 +126,23 @@ def print_case_result(case: dict[str, float]) -> None:
     print(f"  l_A = pi * d_A^c / r_s^c = {case['l_a']:.6f}")
 
 
+def print_part_b_analytic_form() -> None:
+    """Print part (b) in analytic integral form only (no numerical evaluation)."""
+    header("Part (b): neighboring-peak separation (analytic form only)")
+    print("Assume leading-order peak spacing: Delta l ~= l_A = pi * d_A^c / r_s^c")
+    print("with")
+    print("  d_A^c = (3000/h) * integral_{a_rec}^1 da / [a^2 E(a)]")
+    print("  E(a) = sqrt(Omega_d,0 a^{-3} + Omega_Lambda,0 + Omega_k,0 a^{-2})")
+    print("  Omega_k,0 = 1 - Omega_d,0 - Omega_Lambda,0")
+    print("  r_s^c = (3000/sqrt(3 omega_r)) * integral_0^{a_rec} da / [sqrt(1+R_b a) sqrt(1+R_m a)]")
+    print("  R_b = (3/4)(omega_b/omega_gamma), R_m = omega_m/omega_r")
+    print("Case A (Omega_Lambda,0 = 0):")
+    print("  Delta l_A ~= pi * [(3000/h) * integral_{a_rec}^1 da / (a^2 sqrt(Omega_d,0 a^{-3} + (1-Omega_d,0) a^{-2}))] / r_s^{c,(0)}")
+    print("Case B (Omega_Lambda,0 = 1 - Omega_d,0):")
+    print("  Delta l_B ~= pi * [(3000/h) * integral_{a_rec}^1 da / (a^2 sqrt(Omega_d,0 a^{-3} + (1-Omega_d,0)))] / r_s^{c,(0.7)}")
+    print("No numerical substitution in part (b).")
+
+
 def main() -> None:
     # Given/assumed constants from the chapter and question
     z_rec = 1090.0
@@ -172,30 +189,9 @@ def main() -> None:
     print_case_result(case_open)
     print_case_result(case_flat)
 
-    header("Part (b): neighboring-peak separation")
-    delta_l_open = case_open["l_a"]
-    delta_l_flat = case_flat["l_a"]
-    print(
-        "Using matched r_s^c from part (c): "
-        "Delta l ~= pi * d_A^c / r_s^c for each cosmology"
-    )
-    print(
-        f"Delta l ~= l_A (Omega_Lambda,0=0.0; r_s^c={case_open['r_s_c']:.6f} Mpc)   "
-        f"= {delta_l_open:.6f}"
-    )
-    print(
-        f"Delta l ~= l_A (Omega_Lambda,0=0.7; r_s^c={case_flat['r_s_c']:.6f} Mpc) "
-        f"= {delta_l_flat:.6f}"
-    )
-    print(f"Delta l ~= l_A (Omega_Lambda,0=0)   = {delta_l_open:.6f}")
-    print(f"Delta l ~= l_A (Omega_Lambda,0=0.7) = {delta_l_flat:.6f}")
-    print(f"relative increase = {(delta_l_flat - delta_l_open) / delta_l_open * 100:.3f}%")
-    print(
-        "note: with fixed pre-recombination inputs (z_rec, omega_b, omega_gamma, "
-        "omega_r, omega_m), r_s^c is the same in both cases to displayed precision"
-    )
+    print_part_b_analytic_form()
 
-    # Loose sanity checks against values quoted in the notes.
+    # Sanity checks for part (c) numerical values quoted in the notes.
     assert abs(case_open["r_s_c"] - 144.93) < 0.5
     assert abs(case_flat["r_s_c"] - 144.93) < 0.5
     assert abs(case_open["r_s_phys"] - 0.133) < 0.005
