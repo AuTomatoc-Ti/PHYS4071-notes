@@ -1569,87 +1569,126 @@
 
     (b). \textbf{Separation between neighboring acoustic peaks} \\
     \textbf{Assumptions.}\quad \\
-    1. We use the leading-order peak-location relation $l_n \simeq n l_A$, so the neighboring-peak separation is
+    1. Use leading-order peak locations $l_n\simeq n l_A$ (ignore phase-shift corrections from driving/projection):
     \[
-        \Delta l \equiv l_{n+1}-l_n \simeq l_A.
+        \Delta l \equiv l_{n+1}-l_n \simeq (n+1)l_A-nl_A=l_A.
     \]
-    2. Keep pre-recombination parameters fixed ($z_{rec}$, $\omega_b$, $\omega_r$, $\omega_\gamma$, $\Omega_{d,0}$, $h$), so $r_s^c(t_{rec})$ is the same in both models. \\
-    3. Only late-time geometry changes through $\Omega_{\Lambda,0}$ via $d_A^c$:
+    2. For comparing the two cosmologies, keep pre-recombination physics fixed ($z_{rec}$, $\omega_b$, $\omega_\gamma$, $\omega_r$, $\omega_m$), so the same $r_s^c(t_{rec})$ is used in both cases.
+    3. Geometry difference enters through $d_A^c$ only:
     \[
-        l_A = \pi\frac{d_A^c}{r_s^c}.
+        l_A = \pi\frac{d_A^c}{r_s^c},
+        \qquad
+        d_A^c=\frac{3000}{h}\int_{a_{rec}}^1\frac{da}{a^2E(a)},
+        \qquad
+        E(a)=\sqrt{\Omega_{d,0}a^{-3}+\Omega_{\Lambda,0}+\Omega_{k,0}a^{-2}}.
     \]
 
-    With $\Omega_{d,0}=0.3$ and $h=0.7$, using
+    For this question, $\Omega_{d,0}=0.3$, $h=0.7$, $a_{rec}=1/(1+1090)=1/1091$, and
     \[
-        d_A^c = \frac{3000}{h}\int_{a_{rec}}^1 \frac{da}{a^2\sqrt{\Omega_{d,0}a^{-3}+\Omega_{\Lambda,0}+\Omega_{k,0}a^{-2}}},
-        \quad \Omega_{k,0}=1-\Omega_{d,0}-\Omega_{\Lambda,0},
+        \Omega_{k,0}=1-\Omega_{d,0}-\Omega_{\Lambda,0}.
     \]
-    and $r_s^c \approx 144.93\,\mathrm{Mpc}$ (from part (c) setup below), we obtain:
-    \begin{align*}
-        \Omega_{\Lambda,0}=0\,\,(\Omega_{k,0}=0.7):\quad
-        &d_A^c \approx 1.192\times 10^4\,\mathrm{Mpc},\quad
-        l_A \approx 258.4, \\
-        \Omega_{\Lambda,0}=1-\Omega_{d,0}=0.7\,\,(\Omega_{k,0}=0):\quad
-        &d_A^c \approx 1.369\times 10^4\,\mathrm{Mpc},\quad
-        l_A \approx 296.8.
-    \end{align*}
-    Therefore, the neighboring-peak separations are approximately:
+    Define
     \[
-        \Delta l\big|_{\Omega_{\Lambda,0}=0} \approx 258,
+        I_d(\Omega_{\Lambda,0})\equiv \int_{a_{rec}}^1\frac{da}{a^2E(a)},
         \qquad
-        \Delta l\big|_{\Omega_{\Lambda,0}=0.7} \approx 297.
+        d_A^c=\frac{3000}{h}I_d.
     \]
-    So adding $\Lambda$ (at fixed $\Omega_{d,0}$) increases the peak spacing by about
+    Then numerically:
+    \begin{align*}
+        \Omega_{\Lambda,0}=0\; (\Omega_{k,0}=0.7):\quad
+        &I_d\approx 2.7818, \\
+        &d_A^c\approx \frac{3000}{0.7}\times 2.7818 \approx 1.192\times10^4\,\mathrm{Mpc}. \\
+        \Omega_{\Lambda,0}=1-\Omega_{d,0}=0.7\; (\Omega_{k,0}=0):\quad
+        &I_d\approx 3.1945, \\
+        &d_A^c\approx \frac{3000}{0.7}\times 3.1945 \approx 1.369\times10^4\,\mathrm{Mpc}.
+    \end{align*}
+
+    Using $r_s^c\approx 144.93\,\mathrm{Mpc}$ (computed in part (c)):
+    \begin{align*}
+        \Delta l\big|_{\Omega_{\Lambda,0}=0}
+        &\simeq l_A=\pi\frac{1.192\times10^4}{144.93}
+        \approx 258.4, \\
+        \Delta l\big|_{\Omega_{\Lambda,0}=0.7}
+        &\simeq l_A=\pi\frac{1.369\times10^4}{144.93}
+        \approx 296.8.
+    \end{align*}
+    Therefore,
     \[
-        \frac{297-258}{258}\approx 15\%.
+        \Delta l\big|_{\Omega_{\Lambda,0}=0}\approx 258,
+        \qquad
+        \Delta l\big|_{\Omega_{\Lambda,0}=0.7}\approx 297,
+    \]
+    and the fractional increase is
+    \[
+        \frac{296.8-258.4}{258.4}\approx 14.9\%\approx 15\%.
     \]
 
     (c). \textbf{Numerical values of $r_s$ and $l_A$ for the given set} \\
     \textbf{Assumptions.}\quad \\
-    1. Use the parameter set in the question:
+    1. Use the problem parameters:
     \[
-        z_{rec}=1090,\quad \Omega_{d,0}=0.3,\quad \Omega_{\Lambda,0}=0,
-        \quad h=0.7,\quad \omega_b=0.02.
+        z_{rec}=1090,\quad \Omega_{d,0}=0.3,\quad \Omega_{\Lambda,0}=0,\quad h=0.7,\quad \omega_b=0.02.
     \]
-    2. Use $\omega_\gamma=2.4702\times 10^{-5}$ and $\omega_r=4.1756\times 10^{-5}$ (as adopted earlier in this chapter), and $\omega_m=\Omega_{d,0}h^2=0.147$. \\
-    3. Keep the chapter approximation for sound horizon integral:
+    2. Adopt chapter constants:
     \[
-        r_s^c(t_{rec}) = \frac{3000\,\mathrm{Mpc}}{\sqrt{3\omega_r}}
-        \int_0^{a_{rec}} \frac{da}{\sqrt{1+\frac{3}{4}\frac{\omega_b}{\omega_\gamma}a}\,\sqrt{1+\frac{\omega_m}{\omega_r}a}},
-        \quad a_{rec}=\frac{1}{1+z_{rec}}.
+        \omega_\gamma=2.4702\times10^{-5},\qquad \omega_r=4.1756\times10^{-5}.
     \]
-
-    Numerically,
+    3. Use $\omega_m=\Omega_{d,0}h^2=0.147$ and the chapter approximation formula
     \[
-        a_{rec}=\frac{1}{1091}\approx 9.166\times10^{-4},
+        r_s^c(t_{rec})=\frac{3000\,\mathrm{Mpc}}{\sqrt{3\omega_r}}
+        \int_0^{a_{rec}}
+        \frac{da}{\sqrt{1+\frac{3}{4}\frac{\omega_b}{\omega_\gamma}a}\,\sqrt{1+\frac{\omega_m}{\omega_r}a}},
         \qquad
-        r_s^c(t_{rec})\approx 144.93\,\mathrm{Mpc}.
+        a_{rec}=\frac{1}{1+z_{rec}}.
     \]
-    Hence the physical sound horizon is
+
+    First evaluate the dimensionless factors in the integrand:
+    \begin{align*}
+        a_{rec}&=\frac{1}{1+1090}=\frac{1}{1091}\approx 9.166\times10^{-4}, \\
+        R_b&\equiv \frac{3}{4}\frac{\omega_b}{\omega_\gamma}
+        =\frac{3}{4}\frac{0.02}{2.4702\times10^{-5}}
+        \approx 607.24, \\
+        R_m&\equiv \frac{\omega_m}{\omega_r}
+        =\frac{0.147}{4.1756\times10^{-5}}
+        \approx 3520.45.
+    \end{align*}
+    So
     \[
-        r_s(t_{rec})=a_{rec}\,r_s^c(t_{rec})
-        \approx \frac{1}{1091}\times 144.93
-        \approx 0.133\,\mathrm{Mpc}
+        r_s^c=\frac{3000}{\sqrt{3\omega_r}}\underbrace{\int_0^{a_{rec}}\frac{da}{\sqrt{1+R_ba}\sqrt{1+R_ma}}}_{I_s}.
+    \]
+    Numerically,
+    \begin{align*}
+        I_s&\approx 5.407\times10^{-4}, \\
+        \frac{3000}{\sqrt{3\omega_r}}&\approx 2.680\times10^5\,\mathrm{Mpc}, \\
+        r_s^c&\approx \left(2.680\times10^5\right)\left(5.407\times10^{-4}\right)
+        \approx 144.93\,\mathrm{Mpc}.
+    \end{align*}
+
+    Then physical sound horizon:
+    \begin{align*}
+        r_s(t_{rec})&=a_{rec}r_s^c
+        =\frac{1}{1091}\times 144.93\,\mathrm{Mpc}
+        \approx 0.13285\,\mathrm{Mpc}
         \approx 133\,\mathrm{kpc}.
-    \]
+    \end{align*}
 
-    For $\Omega_{\Lambda,0}=0$ and $\Omega_{k,0}=0.7$,
-    \[
-        d_A^c \approx 1.192\times10^4\,\mathrm{Mpc},
-    \]
-    so
-    \[
-        l_A = \pi\frac{d_A^c}{r_s^c}
+    Next compute $l_A$ for the same parameter set ($\Omega_{\Lambda,0}=0$):
+    \begin{align*}
+        \Omega_{k,0}&=1-\Omega_{d,0}-\Omega_{\Lambda,0}=1-0.3-0=0.7, \\
+        d_A^c&=\frac{3000}{0.7}\int_{a_{rec}}^1\frac{da}{a^2\sqrt{0.3a^{-3}+0.7a^{-2}}}
+        \approx 1.192\times10^4\,\mathrm{Mpc}, \\
+        l_A&=\pi\frac{d_A^c}{r_s^c}
         \approx \pi\frac{1.192\times10^4}{144.93}
-        \approx 258.4\approx 258.
-    \]
+        \approx 258.4.
+    \end{align*}
 
-    Therefore, for the given parameter set:
+    Therefore, for the given parameter set,
     \[
-        r_s(t_{rec})\approx 0.133\,\mathrm{Mpc},
+        r_s(t_{rec})\approx 0.133\,\mathrm{Mpc}\;(\approx 133\,\mathrm{kpc}),
         \qquad
         l_A\approx 258.
     \]
+    (A verification script is provided in \texttt{code/verify\_cmb\_acoustic\_bc.py}.)
 \end{example}
 
 

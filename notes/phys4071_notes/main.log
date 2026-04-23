@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2026.2.19)  23 APR 2026 03:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2026.2.19)  23 APR 2026 10:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -4252,6 +4252,14 @@ the current column of the current alignment.
 Try to go on, since this might almost work.
 
 
+Overfull \hbox (6.19984pt too wide) detected at line 1584
+\OML/zplm/m/it/12 l[] \OT1/zplm/m/n/12 = \OML/zplm/m/it/12 ^^Y[]\OT1/ppl/m/n/12
+ ,  \OML/zplm/m/it/12 d[] \OT1/zplm/m/n/12 = [] [][] []\OT1/ppl/m/n/12 ,  \OML/
+zplm/m/it/12 E\OT1/zplm/m/n/12 (\OML/zplm/m/it/12 a\OT1/zplm/m/n/12 ) = []\OT1/
+ppl/m/n/12 .
+ []
+
+
 
 [181
 
@@ -4262,17 +4270,17 @@ Try to go on, since this might almost work.
 [183]
 
 [184]
-Underfull \hbox (badness 10000) in paragraph at lines 1662--1663
+Underfull \hbox (badness 10000) in paragraph at lines 1701--1702
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1673--1675
+Underfull \hbox (badness 10000) in paragraph at lines 1712--1714
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1694--1696
+Underfull \hbox (badness 10000) in paragraph at lines 1733--1735
 
  []
 
@@ -4280,36 +4288,37 @@ Underfull \hbox (badness 10000) in paragraph at lines 1694--1696
 
 [185
 
+
 ]
 <images/damping_tail.png, id=1765, 540.0175pt x 373.395pt>
 File: images/damping_tail.png Graphic file (type png)
 <use images/damping_tail.png>
-Package pdftex.def Info: images/damping_tail.png  used on input line 1720.
+Package pdftex.def Info: images/damping_tail.png  used on input line 1759.
 (pdftex.def)             Requested size: 394.35236pt x 272.67863pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1730--1731
+Underfull \hbox (badness 10000) in paragraph at lines 1769--1770
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1732--1733
+Underfull \hbox (badness 10000) in paragraph at lines 1771--1772
 
  []
 
 
 
 [186]
-Underfull \hbox (badness 10000) in paragraph at lines 1758--1759
+Underfull \hbox (badness 10000) in paragraph at lines 1797--1798
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1763--1765
+Underfull \hbox (badness 10000) in paragraph at lines 1802--1804
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1766--1767
+Underfull \hbox (badness 10000) in paragraph at lines 1805--1806
 
  []
 
@@ -4318,17 +4327,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 1766--1767
 [187 <./images/damping_tail.png>]
 
 [188]
-Underfull \hbox (badness 10000) in paragraph at lines 1799--1800
+Underfull \hbox (badness 10000) in paragraph at lines 1838--1839
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1807--1808
+Underfull \hbox (badness 10000) in paragraph at lines 1846--1847
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1809--1810
+Underfull \hbox (badness 10000) in paragraph at lines 1848--1849
 
  []
 
@@ -4339,28 +4348,28 @@ Underfull \hbox (badness 10000) in paragraph at lines 1809--1810
 [190]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1862.
+(hyperref)                removing `math shift' on input line 1901.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\Lambda' on input line 1862.
+(hyperref)                removing `\Lambda' on input line 1901.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1862.
+(hyperref)                removing `math shift' on input line 1901.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1865--1866
+Underfull \hbox (badness 10000) in paragraph at lines 1904--1905
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1867--1868
+Underfull \hbox (badness 10000) in paragraph at lines 1906--1907
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1869--1870
+Underfull \hbox (badness 10000) in paragraph at lines 1908--1909
 
  []
 
@@ -4906,7 +4915,7 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 Here is how much of TeX's memory you used:
  42003 strings out of 473190
  828852 string characters out of 5715800
- 1705661 words of memory out of 5000000
+ 1711662 words of memory out of 5000000
  63549 multiletter control sequences out of 15000+600000
  670494 words of font info for 590 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -4923,7 +4932,7 @@ texlive/2025/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb></usr/local/te
 xlive/2025/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2
 025/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2025/tex
 mf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (225 pages, 16930606 bytes).
+Output written on main.pdf (225 pages, 16932681 bytes).
 PDF statistics:
  2117 PDF objects out of 2487 (max. 8388607)
  1637 compressed objects within 17 object streams
