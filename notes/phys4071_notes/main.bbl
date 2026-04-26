@@ -124,6 +124,40 @@
       \field{year}{2024}
       \true{nocite}
     \endentry
+    \entry{PhysicsGurus_Energies_Accelerator_Collision}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=0948c62d4ef509db8ed8ae415fa5413b}{%
+           family={Gurus},
+           familyi={G\bibinitperiod},
+           given={Physics},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{0948c62d4ef509db8ed8ae415fa5413b}
+      \strng{fullhash}{0948c62d4ef509db8ed8ae415fa5413b}
+      \strng{fullhashraw}{0948c62d4ef509db8ed8ae415fa5413b}
+      \strng{bibnamehash}{0948c62d4ef509db8ed8ae415fa5413b}
+      \strng{authorbibnamehash}{0948c62d4ef509db8ed8ae415fa5413b}
+      \strng{authornamehash}{0948c62d4ef509db8ed8ae415fa5413b}
+      \strng{authorfullhash}{0948c62d4ef509db8ed8ae415fa5413b}
+      \strng{authorfullhashraw}{0948c62d4ef509db8ed8ae415fa5413b}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{What happens when protons collide at high energies in a particle accelerator like the Large Hadron Collider (LHC)? How would their collision be different from that of two electrons colliding, for example?}
+      \field{urlday}{26}
+      \field{urlmonth}{4}
+      \field{urlyear}{2026}
+      \field{year}{2023}
+      \field{urldateera}{ce}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://www.physicsgurus.com/39757/energies-accelerator-collision-different-electrons-colliding#:~:text=The%20protons%20are%20accelerated%20in%20opposite%20directions%20within,then%20brought%20into%20collision%20at%20designated%20interaction%20points
+      \endverb
+      \verb{url}
+      \verb https://www.physicsgurus.com/39757/energies-accelerator-collision-different-electrons-colliding#:~:text=The%20protons%20are%20accelerated%20in%20opposite%20directions%20within,then%20brought%20into%20collision%20at%20designated%20interaction%20points
+      \endverb
+    \endentry
   \enddatalist
 \endrefsection
 \endinput

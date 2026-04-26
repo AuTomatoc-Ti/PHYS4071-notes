@@ -520,21 +520,95 @@ In the below sub-sections, we will discuss the properties of dark matter in a in
 \clearpage
 %\bigskip \noindent \bigskip \noindent \bigskip \noindent
 \section{Non-gravitational Detections of Dark Matter}
+The "WIMP miracle" shows the DM particles interact with regular matter with a strength comparable to the weak interaction, which means that we can search for DM particles through their non-gravitational interactions with ordinary matter. There are three main methods for non-gravitational detection of dark matter: 
+\begin{itemize}
+    \item \textbf{Direct Detection}: measuring the interactions between baryonic matter with DM particles.
+    \item \textbf{Indirect Detection}: looking for the products of DM annihilation or decay (e.g. gamma rays, neutrinos, cosmic rays) in astrophysical observations.
+    \item \textbf{Collider Detection}: searching for the production of DM particles in high-energy particle collisions (e.g. at the Large Hadron Collider), where DM particles would manifest as missing energy and momentum in the detector.
+\end{itemize}
+
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=0.55\textwidth]{images/non_gravitational_DM_detection.png}
+    \caption{The three main methods for non-gravitational detection of dark matter: direct detection, indirect detection, and collider detection.}
+    \label{fig:dark_matter_detection}
+\end{figure}
+
 % ──────────────────────────────────────────────────────────────────────────────
-%\clearpage
+\clearpage
 %\bigskip \noindent \bigskip \noindent \bigskip \noindent
 \subsection{Direct Detection}
 
+
 % ──────────────────────────────────────────────────────────────────────────────
-%\clearpage
-\bigskip \noindent \bigskip \noindent \bigskip \noindent
+\clearpage
+%\bigskip \noindent \bigskip \noindent \bigskip \noindent
 \subsection{Indirect Detection}
 
 
 % ──────────────────────────────────────────────────────────────────────────────
-%\clearpage
-\bigskip \noindent \bigskip \noindent \bigskip \noindent
+\clearpage
+%\bigskip \noindent \bigskip \noindent \bigskip \noindent
 \subsection{Collider Detection}
+\begin{intuition}
+    Further, we can using a particle accelerator (e.g. LHC in CERN) to create WIMP particle by colliding high-energy particles together. Since WIMPs are weakly interacting and electrically neutral, they would not leave a direct signal in the detector, but we can infer their existence by looking for missing energy and momentum in the collision events. Given that the initial momentum conserved in the \textbf{transverse plane} (perpendicular to the beam axis) is zero:
+    \[
+        \sum_{\text{vis}} p_{\perp} + \sum_{\text{invis}} p_{\perp} = 0
+    \]
+    Then, if after collision:
+    \[
+        \sum_{\text{vis}} p_{\perp} \neq 0
+    \]
+    i.e. the summation of the transverse momentum of all visible particles is not zero, it indicates that there are invisible particles (e.g. WIMPs) carrying away the missing transverse momentum, which can be a signal for the production of dark matter particles in the collider:
+    \[
+        \text{Missing Transverse Momentum} = - \sum_{\text{vis}} p_{\perp} = \sum_{\text{invis}} p_{\perp}
+    \]
+\end{intuition}
+
+\bigskip \noindent
+\begin{intuition}
+    Some may ask how about using the momentum along the beam axis (i.e. \textbf{longitudinal momentum})? Actually conservation of longitudinal momentum is not useful for detecting WIMPs in collider experiments. \\
+    
+    In the accelerator, the colliding particles (e.g. protons) are composite particles made up of quarks and gluons, and each of these constituent partons can carry a different fraction of the proton's total momentum. Further, the actual hard collision happens between partons(e.g. gluons and quarks) inside the protons, not the protons themselves \cite{PhysicsGurus_Energies_Accelerator_Collision}, hence:
+    \begin{align*}
+        \sum_{\text{vis}} p_{\parallel} &\neq 0 \\
+        | \sum_{\text{vis}} p_{\parallel} + \sum_{\text{invis}} p_{\parallel} | & \gg 0
+    \end{align*}
+    As a result, Even we can assume the initial longitudinal momentum of the colliding partons is zero, but we cannot precisely determine the initial longitudinal momentum of the system, and we cant tell the non-zero longitudinal momentum of the visible particles is due to the production of WIMPs or just due to the initial momentum of the partons. Therefore, we focus on the missing transverse momentum, which is well-defined and can be used to infer the presence of invisible particles like WIMPs.
+\end{intuition}
+
+\bigskip \noindent
+\begin{remark}
+    You may ask why the \textbf{transverse momentum} doesn't have the same problem as the \textbf{longitudinal momentum}? Actually, the initial transverse momentum of the colliding partons is effectively zero because the protons are accelerated along the beam axis, and any transverse momentum they have(and their constituent partons have) is negligible compared to the longitudinal momentum. Therefore, any significant missing transverse momentum observed in the detector can be attributed to the production of invisible particles like WIMPs, rather than uncertainties in the initial state of the collision.
+\end{remark}
+
+%\bigskip \noindent
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=0.7\textwidth]{images/collider_detection.png}
+    \caption{A proton-proton collision event in a collider experiment, with potential production of WIMPs (invisible particles) leading to missing transverse momentum.}
+    \label{fig:collider_detection}
+\end{figure}
+
+\bigskip \noindent
+\begin{importantnote}
+    However, it is important to note that missing energy signals can also arise from other sources (e.g. neutrinos), so careful analysis and background estimation are required to identify potential dark matter signals in collider experiments.
+\end{importantnote}
+
+\bigskip \noindent
+\begin{extra}
+    In a brief summary, although we have these methods to search for dark matter particles, we have not yet found any conclusive evidence for their existence through non-gravitational interactions. The current search often need combine the results from multiple detection methods (e.g. direct, indirect, and collider) to constrain the properties of dark matter particles and to rule out certain models.
+\end{extra}
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -542,21 +616,80 @@ In the below sub-sections, we will discuss the properties of dark matter in a in
 \clearpage
 %\bigskip \noindent \bigskip \noindent \bigskip \noindent
 \section{Other Candidates for Dark Matter}
+As mentioned before, we still don not know what really dark matter is, so except for the WIMP candidates, there are still many hypothetical candidates for dark matter, and we will briefly introduce some of them below. Note that the candidates we will introduce are not exhaustive, and there are many other candidates that are proposed in the literature.
 % ──────────────────────────────────────────────────────────────────────────────
 %\clearpage
+\bigskip \noindent \bigskip \noindent \bigskip \noindent
+\subsection{Theoretical Candidates}
+%\bigskip \noindent
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=0.85\textwidth]{images/DM_candidates.png}
+    \caption{Some of the hypothetical candidates for dark matter.}
+    \label{fig:DM_candidates}
+\end{figure}
+
+\begin{extra}
+    The above figure show some of the hypothetical candidates for dark matter, which x-axis is the mass of the candidate in different energy scale, and y-axis is the interaction strength of the candidate with ordinary matter. The most bottom of y-axis is $G_N$, which means the candidate only interact with ordinary matter through gravity, and when we go up, the particles interact stronger (e.g. via weak nuclear force, or "new dark force"). \\
+
+    We can see that the graph divided into 3 regions, lets start with the \textbf{left region} first, which is the region of Wave-like DM candidates, which are very light particles with very weak interactions. The Paulin exclusion principle prevents these particles from being packed too closely together, so they must be the bosons, and they act like fluid or field and have wave-like properties, they also have very large de Broglie wavelength, which can be comparable to the size of galaxies. Some key candidates in this region include:
+    \begin{itemize}
+        \item \textbf{QCD Axions}: These are hypothetical particles that arise from the Peccei-Quinn solution to the strong CP problem in quantum chromodynamics (QCD). It locate the transition between the wave-like DM and particle-like DM.
+        \item \textbf{Fuzzy DM}: These are ultra-light bosonic particles that behave like oscillating field.
+    \end{itemize}
+    \\
+
+    The \textbf{right region} is the region of Particle-like DM candidates, which are heavier particles with shorter de Broglie wavelength, and they behave more like distinct particles rather than a fluid. Some key candidates in this region include:
+    \begin{itemize}
+        \item \textbf{WIMPs}: The classic "Holy Grail" of dark matter candidates, sit in the $GeV$ to $TeV$ mass range, and interact with weak-force strength.
+        \item \textbf{Sterile Neutrinos ($\nu_s$ DM )}: A heavier cousin of the known neutrinos, these particles are "warm" dark matter candidates, which means they have a non-negligible velocity dispersion that can affect structure formation on small scales.
+    \end{itemize}
+
+    Besides, there is also the \textbf{hidden corners} region (Green regions), it can break to 2 parts: the far right green region is the region of Macroscopic DM/ MACHOs (Massive Compact Halo Objects), which are astrophysical objects that can be made up of ordinary matter but are dark because they do not emit light (e.g. primordial black holes, brown dwarfs, neutron stars, etc.). They are usually massive ($> 1 M_\odot$). \\
+
+    While the bottom green striped region is the region of Secluded Dark Sectors, it is like a "shadow universe" that contains its own particles and forces, they may have their own self-interactions and dark radiation, but they seldom "talk" to our standard model particles, make it hiding in the noise of the universe. As a results, these particles have a wide range of possible masses but only interact with ordinary matter by gravity.
+\end{extra}
+
+% ──────────────────────────────────────────────────────────────────────────────
+\clearpage
 %\bigskip \noindent \bigskip \noindent \bigskip \noindent
-%\subsection{Candidates for Dark Matter}
-As mentioned before, we still don not know what really dark matter is, so except for the WIMP candidates, there are still many hypothetical candidates for dark matter, and we will briefly introduce some of them below. Note that the candidates we will introduce are not exhaustive, and there are many other candidates that are proposed in the literature.
-\begin{extra}
-    () Axions: Axions are hypothetical particles that were originally proposed to solve the strong CP problem in quantum chromodynamics (QCD). They are very light, neutral, and weakly interacting particles that could be produced in the early universe and could account for dark matter. Axions can be detected through their coupling to photons, which allows them to convert into photons in the presence of a strong magnetic field. Experiments such as ADMX (Axion Dark Matter Experiment) are currently searching for axions by looking for this conversion process. While axions are a well-motivated dark matter candidate, they have not yet been detected, and their existence remains speculative.
-\end{extra}
+\subsection{Primordial Black Holes (PBHs)}
+%\bigskip \noindent
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=0.7\textwidth]{images/PBH.png}
+    \caption{Mass of Primordial Black Holes (PBHs) and corresponding constraints on their abundance as dark matter candidates.}
+    \label{fig:PBH_constraints}
+\end{figure}
 
-\bigskip \noindent
 \begin{extra}
-    () Sterile Neutrinos: Sterile neutrinos are hypothetical particles that do not interact via the weak force, unlike the three known active neutrino flavors (electron, muon, and tau neutrinos). They are called "sterile" because they do not participate in standard weak interactions, making them difficult to detect. However, they can mix with active neutrinos and could be produced in the early universe through this mixing. If sterile neutrinos have a mass in the keV range, they could be a viable candidate for warm dark matter. They can be detected indirectly through their decay into active neutrinos and photons, which would produce a characteristic X-ray signal. While there have been some tentative hints of sterile neutrinos from X-ray observations, their existence has not been confirmed, and they remain a speculative dark matter candidate.
-\end{extra}
+    From the above figure, we can see the theoretical fraction of dark matter that can be made up of PBHs(y-axis) against the mass of the PBHs in solar mass(x-axis). While The coloured regions represent the constraints from various observational methods: \\
 
-\bigskip \noindent
-\begin{extra}
-    () Primordial Black Holes: Primordial black holes (PBHs) are hypothetical black holes that could have formed in the early universe due to high-density fluctuations. They are considered potential candidates for dark matter. While PBHs with masses around $10^{15}$~g would be evaporating today via Hawking radiation (and are thus constrained by gamma-ray observations), there is a viable mass window roughly between $10^{17}$ and $10^{23}$~g (asteroid masses) where they could constitute all or a significant fraction of dark matter while evading current observational constraints. However, their existence remains speculative and unconfirmed. Unlike classical MACHOs, which are baryonic objects formed through stellar evolution, PBHs formed in the early universe and are typically treated as a distinct dark matter candidate category.
+    \begin{itemize}
+        \item \textbf{(1) Microlensing} (Middle "dip" around $10^{-10} M_\odot$):
+        \begin{itemize}
+            \item intuition: Microlensing occurs when a massive compact object (like a PBH) passes in front of a distant star, causing a temporary increase in the star's brightness due to gravitational lensing. By monitoring the brightness of many stars, we can detect these microlensing events and constrain the abundance of PBHs in certain mass ranges.
+            \item constraints: Microlensing surveys (e.g. MACHO, EROS, Kepler, HSC) have placed strong constraints on PBHs in the mass range of approximately $10^{-10} M_\odot$ to $10^{-2} M_\odot$, ruling out PBHs as the dominant component of dark matter in this mass range.
+        \end{itemize}
+        \item \textbf{(2) Femtolensing \& Evaporation} (Far left):
+        \begin{itemize}
+            \item intuition: tiny PBHs with masses less than about $10^{-15} M_\odot$ too small to lens stars, but they can still lens high-energy gamma rays from distant sources; while these tiny PBHs can also evaporate via Hawking radiation, producing gamma rays that can be detected by gamma-ray telescopes. If there were enough tiny PBHs, we would expect to see gamma-ray background(i.e. the sky glowing with gamma rays) from their evaporation.
+            \item constraints: Femtolensing of gamma-ray bursts and the evaporation detected by Extragalactic Gamma-Ray Background (EGB) measurements can not observed interference patterns or excess gamma rays matching the expected signatures from PBHs, which places strong constraints on PBHs with masses less than about $10^{-15} M_\odot$.
+        \end{itemize} 
+        \item \textbf{(3) Dynamical Effects \& cosmic Heating}  (Far right):
+        \begin{itemize}
+            \item intuition: Heavy PBHs with masses greater than about $10^2 M_\odot$ can have significant gravitational effects on their surroundings:
+            \begin{itemize}
+                \item Cosmic Heating: When heavy PBHs fly around the galaxy (e.g. Eridanus II/ Eri-II), their gravitational interactions can accrete surrounding gas and heat up the gas in the galaxy, which can be observed through X-ray emissions. 
+                \item Early Universe Dynamics: If heavy PBHs were abundant in the early universe, their gravitational interactions could heat up the universe and distorting the CMB power spectrum, which can be observed through CMB measurements.
+                \item Widely separated binary systems(WB): If heavy PBHs were abundant, they could disrupt widely separated binary systems (e.g. wider binaries in the Milky Way), which can be observed through stellar surveys.
+            \end{itemize}
+            \item constraints: 
+                By looking for the absence of excess X-ray emissions from galaxies such as Eri-II, the lack of distortions in the CMB power spectrum, and the survival of widely separated binary systems, we can place strong constraints on PBHs with masses greater than about $10^2 M_\odot$, ruling out PBHs as the dominant component of dark matter in this mass range.
+        \end{itemize}
+    \end{itemize}
+
+    Meanwhile, the dashed arch in the middle (around $0.01$ to $1000 M_\odot$) represents the special constraint from the LIGO/Virgo gravitational wave direct detection of binary black hole mergers. If PBHs were abundant in this mass range, we would expect to see a significant number of mergers with masses corresponding to the PBH mass range. However, the observed merger rates and mass distributions from LIGO/Virgo do not match the expected signatures from PBHs, which places additional constraints on PBHs as dark matter candidates in this mass range (i.e. PBHs within this mass range ceiled by the dashed arch and can only make up a small fraction of the total dark matter density). \\
+
+    Still, there is window at around $10^{-13} M_\odot$ to $10^{-14} M_\odot$ where PBHs can potentially make up significant fraction of dark matter $> 10\%$, which is not yet ruled out by current observations.
 \end{extra}

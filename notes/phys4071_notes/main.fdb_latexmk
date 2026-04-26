@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber main"] 1775976302.11986 "main.bcf" "main.bbl" "main" 1776925683.793 0
-  "main.bcf" 1776925683.51862 107836 d1f6c503cec8cd464c159b7cc781d432 "pdflatex"
-  "references.bib" 1776241173.16209 934 9b09add498f96af99eb954d9d9bf1083 ""
+["biber main"] 1777188825.52119 "main.bcf" "main.bbl" "main" 1777218312.17305 0
+  "main.bcf" 1777218311.91533 107934 20128dd802b13788287101915e07400b "pdflatex"
+  "references.bib" 1777188816.00681 1532 7eaae76049ee050fdda279c75ae9aeec ""
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1776925674.2126 "main.tex" "main.pdf" "main" 1776925683.79338 2
+["pdflatex"] 1777218302.24776 "main.tex" "main.pdf" "main" 1777218312.17343 2
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1136849721 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -270,13 +270,15 @@
   "chapters/ch04_standard_model.tex" 1776241173.05055 12242 cf2a674ffe9475d5a3613f8fdca46c76 ""
   "chapters/ch05_thermodynamics_and_primordial_soup.tex" 1776241173.05069 65502 556acf843d43355b5c89adb3a3335451 ""
   "chapters/ch06_Big_Bang_nucleosynthesis.tex" 1776241173.0508 29539 c3d8b2aa0b0d4e965b319cedcb8155de ""
-  "chapters/ch07_Cosmic_Microwave_Background.tex" 1776925672.5811 118601 2a8256d88980344e65a27187d10167c6 ""
-  "chapters/ch08_dark_matter.tex" 1776848616.07272 47149 ffbcfd4367ef2781cc5ce21f51ed9a4c ""
+  "chapters/ch07_Cosmic_Microwave_Background.tex" 1776925884.31686 118601 2a8256d88980344e65a27187d10167c6 ""
+  "chapters/ch08_dark_matter.tex" 1777218301.232 58222 96d012457e6eddbf1f0f3f6d91bf4acf ""
   "chapters/intro.tex" 1776241173.05171 10892 c91d4b717fbdd6682b504c62d9e0bb68 ""
   "images/BBN_interaction_chain.jpg" 1776241173.05327 27630 bf0344b852fb4fa3e27ec5618e9a35fd ""
   "images/CMB_anisotropies.png" 1776241173.05457 1525993 4b6f6089fe9d019323aa9f5feccdcbca ""
   "images/CMB_comparison.png" 1776241173.05751 1650935 7a5e251fb44874d761a57b34a66c87d1 ""
   "images/CMB_frequency_spectrum.png" 1776241173.06034 218139 aeeff69206fbfe11e0e720acefeb7cdf ""
+  "images/DM_candidates.png" 1777197170.16992 952331 7b90aef57f9dd764d8a74dd827b2c570 ""
+  "images/PBH.png" 1777211148.81214 216671 e84750d62c5d9ea832c9464260191baa ""
   "images/Real_Spherical_Harmonics_Figure_Table_Complex_2D.png" 1776241173.06642 793953 d7dd3d884bd0aa2598bc6071a210ba52 ""
   "images/Real_Spherical_Harmonics_Figure_Table_Complex_Polar_Plot.png" 1776241173.06745 326761 d36064bd40b2d69efeae449f52744e73 ""
   "images/Real_Spherical_Harmonics_Figure_Table_Complex_Radial_Magnitude.png" 1776241173.06795 96556 fee469a991d55bccbaf6d1594807eeba ""
@@ -285,6 +287,7 @@
   "images/balloon_expansion.png" 1776241173.07002 679578 e88bb03972d3a92485f2676285fb1fb9 ""
   "images/baryon_to_photon_ratio.png" 1776241173.07134 609123 5739a343f49eab305fa1ad7b791872e7 ""
   "images/bullet_cluster.png" 1776609585.65452 1536890 233fe671dcc964bbadbb5e2139af8c21 ""
+  "images/collider_detection.png" 1777188164.59127 1722368 31e09d69a9687d4dce7767840b54f621 ""
   "images/comoving_number_density.png" 1776841923.52126 275916 27cc9387e1cc91feb3b01791a10833e0 ""
   "images/damped_harmonic_oscillator.png" 1776241173.07432 288889 15b06074c5f6ee8fa4220d6ae81ce54f ""
   "images/damping_tail.png" 1776241173.07525 345023 0f9e00851ff0a76deb39bccd49146d8a ""
@@ -298,6 +301,7 @@
   "images/hubble_diagram.png" 1776241173.08524 148647 2b2a3d7a2f258946af2084e05a3858a4 ""
   "images/lcdm_energy_budget_z_log.png" 1776241173.08621 195068 b6d74b96d716843866bde26b75a64f8b ""
   "images/luminousity_distance.png" 1776241173.08822 418151 18a19c3e7ce2601795573df64a757b31 ""
+  "images/non_gravitational_DM_detection.png" 1777189538.76414 145093 5acb7a4980d540790778fd175b72f9a3 ""
   "images/omega_0_angular_power_spectrum.png" 1776241173.08875 177091 fdd666a1620ce47ca3a2241c7fc968d4 ""
   "images/particles_mass.png" 1776241173.09011 339098 00ce1c2c3f7ff5ad713d07cea3c35623 ""
   "images/saha_equation.png" 1776241173.09091 283152 ff4b1c28a4c008eaa29d00ba8229457a ""
@@ -307,12 +311,12 @@
   "images/universe_evolution.png" 1776241173.10261 757297 224958546c16d20f4b0aa0aa62e91708 ""
   "images/universe_evolution_2.png" 1776241173.10567 786377 292aeddda7243d1b771c93d57f91c214 ""
   "images/universe_evolution_3.png" 1776241173.10875 346275 faa3ee519acf57e5e9dfb973953a9408 ""
-  "main.aux" 1776925683.5108 33887 fb9e24f5705eca56d41602520ad3b336 "pdflatex"
-  "main.bbl" 1776241173.10963 4798 ca19d4cd5fbf1163c84ad8dd33caa9c6 "biber main"
-  "main.out" 1776925683.51421 27041 8fbb42d7bd2146e84159a1c28813a734 "pdflatex"
-  "main.run.xml" 1776925683.52031 2339 1ed341041bd1fbe5a1f3b1992463a6cc "pdflatex"
+  "main.aux" 1777218311.91002 36033 9ea10687b97246d2631c50db52dee9fb "pdflatex"
+  "main.bbl" 1777188827.50996 6723 0e09ab6fdeb0fc9695177cdb18999259 "biber main"
+  "main.out" 1777218311.91259 27440 4be7973689266337085b8052f41af3ac "pdflatex"
+  "main.run.xml" 1777218311.91614 2339 701c5599c28a236675e0b8fb56d35042 "pdflatex"
   "main.tex" 1776337050.60922 6710 5fb691df26b50a1616c701221f32e5ed ""
-  "main.toc" 1776925683.52039 12809 c10dc7d648aa54ec1e1ae19978fd35c0 "pdflatex"
+  "main.toc" 1777218311.91621 13004 1b99b64227d219faf2da9177873a7269 "pdflatex"
   "preamble.tex" 1776241173.16188 14010 f12fdc68b1b126321a770ff73050c267 ""
   (generated)
   "main.aux"
