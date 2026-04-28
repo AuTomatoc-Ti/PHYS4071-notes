@@ -46,12 +46,78 @@
       \verb https://www.youtube.com/playlist?list=PLJHszsWbB6hqlw73QjgZcFh4DrkQLSCQa
       \endverb
     \endentry
+    \entry{LZ_Collaboration_2024}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=9a1cec62abe4004d5b0003d742075908}{%
+           family={LZ\bibnamedelima Collaboration},
+           familyi={L\bibinitperiod\bibinitdelim C\bibinitperiod},
+           given={Lawrence\bibnamedelimb Berkeley\bibnamedelimb National\bibnamedelima Laboratory},
+           giveni={L\bibinitperiod\bibinitdelim B\bibinitperiod\bibinitdelim N\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+      }
+      \strng{namehash}{9a1cec62abe4004d5b0003d742075908}
+      \strng{fullhash}{9a1cec62abe4004d5b0003d742075908}
+      \strng{fullhashraw}{9a1cec62abe4004d5b0003d742075908}
+      \strng{bibnamehash}{9a1cec62abe4004d5b0003d742075908}
+      \strng{authorbibnamehash}{9a1cec62abe4004d5b0003d742075908}
+      \strng{authornamehash}{9a1cec62abe4004d5b0003d742075908}
+      \strng{authorfullhash}{9a1cec62abe4004d5b0003d742075908}
+      \strng{authorfullhashraw}{9a1cec62abe4004d5b0003d742075908}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Latest results from the LZ dark matter experiment}
+      \field{urlday}{16}
+      \field{urlmonth}{9}
+      \field{urlyear}{2024}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://agenda.infn.it/event/40078/contributions/240664/attachments/125147/184470/Patras2024.pdf
+      \endverb
+      \verb{url}
+      \verb https://agenda.infn.it/event/40078/contributions/240664/attachments/125147/184470/Patras2024.pdf
+      \endverb
+    \endentry
+    \entry{PhysicsGurus_Energies_Accelerator_Collision}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=0948c62d4ef509db8ed8ae415fa5413b}{%
+           family={Gurus},
+           familyi={G\bibinitperiod},
+           given={Physics},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{0948c62d4ef509db8ed8ae415fa5413b}
+      \strng{fullhash}{0948c62d4ef509db8ed8ae415fa5413b}
+      \strng{fullhashraw}{0948c62d4ef509db8ed8ae415fa5413b}
+      \strng{bibnamehash}{0948c62d4ef509db8ed8ae415fa5413b}
+      \strng{authorbibnamehash}{0948c62d4ef509db8ed8ae415fa5413b}
+      \strng{authornamehash}{0948c62d4ef509db8ed8ae415fa5413b}
+      \strng{authorfullhash}{0948c62d4ef509db8ed8ae415fa5413b}
+      \strng{authorfullhashraw}{0948c62d4ef509db8ed8ae415fa5413b}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{What happens when protons collide at high energies in a particle accelerator like the Large Hadron Collider (LHC)? How would their collision be different from that of two electrons colliding, for example?}
+      \field{urlday}{26}
+      \field{urlmonth}{4}
+      \field{urlyear}{2026}
+      \field{year}{2023}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.physicsgurus.com/39757/energies-accelerator-collision-different-electrons-colliding#:~:text=The%20protons%20are%20accelerated%20in%20opposite%20directions%20within,then%20brought%20into%20collision%20at%20designated%20interaction%20points
+      \endverb
+      \verb{url}
+      \verb https://www.physicsgurus.com/39757/energies-accelerator-collision-different-electrons-colliding#:~:text=The%20protons%20are%20accelerated%20in%20opposite%20directions%20within,then%20brought%20into%20collision%20at%20designated%20interaction%20points
+      \endverb
+    \endentry
     \entry{PHYS4071_2026}{lecturenote}{}{}
       \list{publisher}{1}{%
         {HKUST}%
       }
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labeltitlesource}{title}
       \field{title}{PHYS4071 Big Bang Cosmology \& Inflation Lecture Notes}
       \field{year}{2026}
@@ -76,8 +142,8 @@
       \strng{authornamehash}{a567eedd3586ffc9f0058821e4244295}
       \strng{authorfullhash}{a567eedd3586ffc9f0058821e4244295}
       \strng{authorfullhashraw}{a567eedd3586ffc9f0058821e4244295}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{AIP Conference Proceedings}
@@ -114,8 +180,8 @@
       \strng{authornamehash}{e2ceeea38f8620383cfbd3e99c5c0cd8}
       \strng{authorfullhash}{e2ceeea38f8620383cfbd3e99c5c0cd8}
       \strng{authorfullhashraw}{e2ceeea38f8620383cfbd3e99c5c0cd8}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{howpublished}{\url{https://en.wikipedia.org/wiki/Table_of_spherical_harmonics}}
@@ -124,38 +190,81 @@
       \field{year}{2024}
       \true{nocite}
     \endentry
-    \entry{PhysicsGurus_Energies_Accelerator_Collision}{misc}{}{}
+    \entry{AMS02}{misc}{}{}
       \name{author}{1}{}{%
-        {{hash=0948c62d4ef509db8ed8ae415fa5413b}{%
-           family={Gurus},
-           familyi={G\bibinitperiod},
-           given={Physics},
-           giveni={P\bibinitperiod}}}%
+        {{hash=89a56b526b2f4543dfb3a23a95f4eb32}{%
+           family={Collaboration},
+           familyi={C\bibinitperiod},
+           given={AMS-02},
+           giveni={A\bibinithyphendelim 0\bibinitperiod}}}%
       }
-      \strng{namehash}{0948c62d4ef509db8ed8ae415fa5413b}
-      \strng{fullhash}{0948c62d4ef509db8ed8ae415fa5413b}
-      \strng{fullhashraw}{0948c62d4ef509db8ed8ae415fa5413b}
-      \strng{bibnamehash}{0948c62d4ef509db8ed8ae415fa5413b}
-      \strng{authorbibnamehash}{0948c62d4ef509db8ed8ae415fa5413b}
-      \strng{authornamehash}{0948c62d4ef509db8ed8ae415fa5413b}
-      \strng{authorfullhash}{0948c62d4ef509db8ed8ae415fa5413b}
-      \strng{authorfullhashraw}{0948c62d4ef509db8ed8ae415fa5413b}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \strng{namehash}{89a56b526b2f4543dfb3a23a95f4eb32}
+      \strng{fullhash}{89a56b526b2f4543dfb3a23a95f4eb32}
+      \strng{fullhashraw}{89a56b526b2f4543dfb3a23a95f4eb32}
+      \strng{bibnamehash}{89a56b526b2f4543dfb3a23a95f4eb32}
+      \strng{authorbibnamehash}{89a56b526b2f4543dfb3a23a95f4eb32}
+      \strng{authornamehash}{89a56b526b2f4543dfb3a23a95f4eb32}
+      \strng{authorfullhash}{89a56b526b2f4543dfb3a23a95f4eb32}
+      \strng{authorfullhashraw}{89a56b526b2f4543dfb3a23a95f4eb32}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{What happens when protons collide at high energies in a particle accelerator like the Large Hadron Collider (LHC)? How would their collision be different from that of two electrons colliding, for example?}
-      \field{urlday}{26}
-      \field{urlmonth}{4}
-      \field{urlyear}{2026}
-      \field{year}{2023}
-      \field{urldateera}{ce}
+      \field{note}{Accessed: 2026-04-27}
+      \field{title}{Towards understanding the origin of cosmic-ray positrons}
+      \field{year}{2017}
       \true{nocite}
       \verb{urlraw}
-      \verb https://www.physicsgurus.com/39757/energies-accelerator-collision-different-electrons-colliding#:~:text=The%20protons%20are%20accelerated%20in%20opposite%20directions%20within,then%20brought%20into%20collision%20at%20designated%20interaction%20points
+      \verb https://ams02.space/physics/towards-understanding-origin-cosmic-ray-positrons
       \endverb
       \verb{url}
-      \verb https://www.physicsgurus.com/39757/energies-accelerator-collision-different-electrons-colliding#:~:text=The%20protons%20are%20accelerated%20in%20opposite%20directions%20within,then%20brought%20into%20collision%20at%20designated%20interaction%20points
+      \verb https://ams02.space/physics/towards-understanding-origin-cosmic-ray-positrons
+      \endverb
+    \endentry
+    \entry{Cholis_2008_PAMELA}{misc}{}{}
+      \name{author}{4}{}{%
+        {{hash=96f54217dc69e9a217c05f74b6d90246}{%
+           family={Cholis},
+           familyi={C\bibinitperiod},
+           given={Ilias},
+           giveni={I\bibinitperiod}}}%
+        {{hash=78c88730594976896ec200535f781e28}{%
+           family={Finkbeiner},
+           familyi={F\bibinitperiod},
+           given={Douglas\bibnamedelima P.},
+           giveni={D\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=47ad519ba46e28948c3f10bcfdf2a1d5}{%
+           family={Goodenough},
+           familyi={G\bibinitperiod},
+           given={Lisa},
+           giveni={L\bibinitperiod}}}%
+        {{hash=7d16786db82d42a4593a3b1194ce6c1d}{%
+           family={Weiner},
+           familyi={W\bibinitperiod},
+           given={Neal},
+           giveni={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{764b30a4d060075bebce6b9ac28f3bf5}
+      \strng{fullhash}{f361f609580fa3f7e4e3442f86bcc6e2}
+      \strng{fullhashraw}{f361f609580fa3f7e4e3442f86bcc6e2}
+      \strng{bibnamehash}{764b30a4d060075bebce6b9ac28f3bf5}
+      \strng{authorbibnamehash}{764b30a4d060075bebce6b9ac28f3bf5}
+      \strng{authornamehash}{764b30a4d060075bebce6b9ac28f3bf5}
+      \strng{authorfullhash}{f361f609580fa3f7e4e3442f86bcc6e2}
+      \strng{authorfullhashraw}{f361f609580fa3f7e4e3442f86bcc6e2}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{arXiv:0810.5344 [astro-ph]; submitted 30 Oct 2008; revised 30 Apr 2009 (v3)}
+      \field{title}{The PAMELA Positron Excess from Annihilations into a Light Boson}
+      \field{year}{2008}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/0810.5344
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/0810.5344
       \endverb
     \endentry
   \enddatalist

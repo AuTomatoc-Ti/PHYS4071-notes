@@ -120,22 +120,23 @@
 \contentsline {subsection}{\numberline {8.2.8}WIMP Miracle}{212}{subsection.8.2.8}%
 \contentsline {section}{\numberline {8.3}Non-gravitational Detections of Dark Matter}{213}{section.8.3}%
 \contentsline {subsection}{\numberline {8.3.1}Direct Detection}{214}{subsection.8.3.1}%
-\contentsline {subsection}{\numberline {8.3.2}Indirect Detection}{215}{subsection.8.3.2}%
-\contentsline {subsection}{\numberline {8.3.3}Collider Detection}{216}{subsection.8.3.3}%
-\contentsline {section}{\numberline {8.4}Other Candidates for Dark Matter}{218}{section.8.4}%
-\contentsline {subsection}{\numberline {8.4.1}Theoretical Candidates}{218}{subsection.8.4.1}%
-\contentsline {subsection}{\numberline {8.4.2}Primordial Black Holes (PBHs)}{220}{subsection.8.4.2}%
-\contentsline {chapter}{\numberline {A}Declaration of AI Assistance}{222}{appendix.A}%
-\contentsline {section}{\numberline {A.1}Use of Artificial Intelligence in This Document}{222}{section.A.1}%
-\contentsline {chapter}{\numberline {B}Mathematical Tools \& Derivations}{223}{appendix.B}%
-\contentsline {section}{\numberline {B.1}Useful Identities}{223}{section.B.1}%
-\contentsline {section}{\numberline {B.2}Differential Geometry Primer}{225}{section.B.2}%
-\contentsline {section}{\numberline {B.3}Relativistic Limits}{225}{section.B.3}%
-\contentsline {section}{\numberline {B.4}Spherical Harmonics \& Associated Legendre Polynomials}{226}{section.B.4}%
-\contentsline {chapter}{\numberline {C}Constants \& Conversion Factors}{228}{appendix.C}%
-\contentsline {section}{\numberline {C.1}Physical Constants}{228}{section.C.1}%
-\contentsline {section}{\numberline {C.2}Conversion Factors}{228}{section.C.2}%
-\contentsline {section}{\numberline {C.3}SI Unit Prefixes}{229}{section.C.3}%
-\contentsline {section}{\numberline {C.4}Main Events in Universe}{230}{section.C.4}%
-\contentsline {section}{\numberline {C.5}Nuclei Binding Energies \& Atomic Masses}{231}{section.C.5}%
+\contentsline {subsection}{\numberline {8.3.2}Indirect Detection: Gamma Rays}{217}{subsection.8.3.2}%
+\contentsline {subsection}{\numberline {8.3.3}Indirect Detection: Charged Cosmic Rays}{220}{subsection.8.3.3}%
+\contentsline {subsection}{\numberline {8.3.4}Collider Detection}{224}{subsection.8.3.4}%
+\contentsline {section}{\numberline {8.4}Other Candidates for Dark Matter}{226}{section.8.4}%
+\contentsline {subsection}{\numberline {8.4.1}Theoretical Candidates}{226}{subsection.8.4.1}%
+\contentsline {subsection}{\numberline {8.4.2}Primordial Black Holes (PBHs)}{228}{subsection.8.4.2}%
+\contentsline {chapter}{\numberline {A}Declaration of AI Assistance}{230}{appendix.A}%
+\contentsline {section}{\numberline {A.1}Use of Artificial Intelligence in This Document}{230}{section.A.1}%
+\contentsline {chapter}{\numberline {B}Mathematical Tools \& Derivations}{231}{appendix.B}%
+\contentsline {section}{\numberline {B.1}Useful Identities}{231}{section.B.1}%
+\contentsline {section}{\numberline {B.2}Differential Geometry Primer}{233}{section.B.2}%
+\contentsline {section}{\numberline {B.3}Relativistic Limits}{233}{section.B.3}%
+\contentsline {section}{\numberline {B.4}Spherical Harmonics \& Associated Legendre Polynomials}{234}{section.B.4}%
+\contentsline {chapter}{\numberline {C}Constants \& Conversion Factors}{236}{appendix.C}%
+\contentsline {section}{\numberline {C.1}Physical Constants}{236}{section.C.1}%
+\contentsline {section}{\numberline {C.2}Conversion Factors}{236}{section.C.2}%
+\contentsline {section}{\numberline {C.3}SI Unit Prefixes}{237}{section.C.3}%
+\contentsline {section}{\numberline {C.4}Main Events in Universe}{238}{section.C.4}%
+\contentsline {section}{\numberline {C.5}Nuclei Binding Energies \& Atomic Masses}{239}{section.C.5}%
 \contentsfinish 

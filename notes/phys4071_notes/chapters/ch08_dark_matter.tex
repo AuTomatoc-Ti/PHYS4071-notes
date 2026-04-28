@@ -538,12 +538,169 @@ The "WIMP miracle" shows the DM particles interact with regular matter with a st
 \clearpage
 %\bigskip \noindent \bigskip \noindent \bigskip \noindent
 \subsection{Direct Detection}
+\begin{intuition}
+    The basic idea of direct detection by E. Witten is to look for the elastic scattering between WIMP and nucleus in a detector. When a WIMP particle passes through the detector, it can interact with the nucleus of an atom in the detector material, causing the nucleus to recoil. By measuring the energy and direction of the recoiling nucleus, we can infer the presence of WIMPs and their properties (e.g. mass and cross section).
+\end{intuition}
+
+\bigskip \noindent
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=1.0\textwidth]{images/DM_exclusion.png}
+    \caption{The current exclusion limits on the WIMP-nucleon cross section as a function of the WIMP mass from various direct detection experiments.}
+    \label{fig:DM_exclusion}
+\end{figure}
+
+\begin{extra}
+    The figure show the dark matter exlusion plot with x-axis is the WIMP mass and y-axis is the WIMP-nucleon cross section of interaction. The bottom yellow shaded region bounded by orange line is the "neutrino floor", which is the region where the background from neutrino interactions becomes significant, making it difficult to distinguish potential WIMP signals from neutrino-induced events, and it is the fundamental limit for direct detection experiments. \\
+
+    Meanwhile, the top green shaded region is the excluded region by current direct detection experiments (i.e. experiments results bounded by these solid lines have been ruled out) in 90\% confidence level; Although there were some signal events have been observed in some experiments (e.g. brown shaded region: DAMA, and blue shaded region: CDMS-Si, and pink shaded region: CRESST), but they are not confirmed by other experiments, which shows there is no significant evidence for WIMP detection in these experiments. \\
+
+    The figure also shows the predicted region for WIMP models: the titled violet oval on top left is Magnetic DM model, the 3 vertical green oval on top left is Asymmetric DM model, and the blue oval on right handside is the Extra Dimension model, the red circle is the predicted region for the WIMP miracle, which predicted by the SUSY MSSM model. Inside the red circle, we can see the 4 label, which represent different scenarios of this theory. For example, the triangle label is the pure higgsino scenario, which predicts the DM is made mostly of super-partner of the Higgs boson. The rhombus label is A funnel scenario, which predicts the DM annihilation is enhanced by the resonance of the CP-odd Higgs boson in early universe. The hexagonal and star label are the co-annihilation scenarios of Bino-stop and Bino-squark respectively, which predict the DM interacts with other heavy particles (e.g. stop and squark) to survive the annihilation in universe today. \\
+
+    Furthermore, we cn also see the dotted lines of experiments in the figure, they represent the future predictions in upcoming experiments at the time of the figure was made, and we can see that the future experiments will further push down the exclusion limits, and will conclude more WIMP models, wether they are working or not.
+\end{extra}
+
+\bigskip \noindent
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=0.8\textwidth]{DM_exclusion_2.png}
+    \caption{The current exclusion limits on the WIMP-nucleon cross section by LZ experiments in 2022 + 2024.}
+    \label{fig:DM_exclusion_2}
+\end{figure}
+
+\begin{extra}
+    The above figure shows the latest exclusion limits on the WIMP-nucleon cross section from the LZ experiment in 2024 \cite{LZ_Collaboration_2024}, which push the limits down to $2.2 \times 10^{-48} \, \mathrm{cm}^2$ at $43$ GeV WIMP mass. Unfortunately, no significant excess of events above the expected background was observed, which means most SUSY WIMP models have been ruled out, and these "evidences" of WIMP detection in previous experiments (e.g. DAMA, CDMS-Si, and CRESST) are likely to be false positives. The results show the classic super-symmetric WIMP models in $10 \mathrm{GeV} - 1000 \mathrm{GeV}$ with "weak-scale" cross section are essentially ruled out. \\
+
+    As a results, physicists are now looking for alternative DM candidates beyond the WIMP paradigm, for example, the LZ collaboration team also searching for low-mass WIMPs \cite{LZ_Collaboration_2024}.
+\end{extra} 
+
+
 
 
 % ──────────────────────────────────────────────────────────────────────────────
 \clearpage
 %\bigskip \noindent \bigskip \noindent \bigskip \noindent
-\subsection{Indirect Detection}
+\subsection{Indirect Detection: Gamma Rays}
+\begin{intuition}
+    Another way to search for DM particles is to look for the products of WIMP annihilation or decay in astrophysical observations. If DM particles can annihilate or decay into Standard Model particles, they can produce high-energy gamma rays, neutrinos, or cosmic rays e.t.c that can be detected by telescopes and detectors on Earth or in space. \\
+
+    One of the most common detection is the gamma rays from WIMP annihilation, it has 2 main advantages compared to other indirect detection methods:
+    \begin{itemize}
+        \item Gamma rays are not deflected by magnetic fields, so they can point back to their source, which allows us to identify potential DM-rich regions (e.g. the center of our galaxy, dwarf spheroidal galaxies, galaxy clusters) where the DM density is expected to be high, and look for excess gamma-ray emission from these regions that could be attributed to DM annihilation.
+        \item The diffusion effect is small for gamma rays, which means the spectrum we observe is close to the original spectrum produced by DM annihilation, which can provide more information about the properties of DM particles (e.g. mass and annihilation channels).
+    \end{itemize}
+\end{intuition}
+
+\bigskip \noindent
+\begin{foundation}
+
+\end{foundation}
+
+\bigskip \noindent
+\begin{theory}
+    The gamma-ray spectrum from WIMP annihilation can be expressed as:
+    \[
+        \Phi_\gamma(E_\gamma, \psi) = \frac{1}{2} \langle \sigma_{\chi \bar{\chi}} |v| \rangle \cdot \frac{dN_\gamma}{dE_\gamma} \frac{1}{4\pi m_\chi^2} \int_{\text{l.o.s}} \rho^2(r, \psi) dl(\psi)
+    \]
+    where $\Phi_\gamma(E_\gamma, \psi)$ is the gamma-ray flux at energy $E_\gamma$ and direction $\psi$, $\langle \sigma_{\chi \bar{\chi}} |v| \rangle$ is the thermally averaged annihilation cross section times velocity, $\frac{dN_\gamma}{dE_\gamma}$ is the gamma-ray spectrum per annihilation, $m_\chi$ is the mass of the DM particle, $\rho(r, \psi)$ is the DM density distribution as a function of distance $r$ and direction $\psi$, and the integral is taken along the line of sight (l.o.s) in the direction $\psi$.
+\end{theory}
+
+\bigskip \noindent
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=0.95\textwidth]{images/gamma_ray_fingerprints.png}
+    \caption{The gamma-ray spectrum per WIMP annihilation for 100 GeV(left) and 500 Gev(right) WIMP mass.}
+    \label{fig:gamma_ray_fingerprints}
+\end{figure}
+
+\begin{extra}
+    The above figure shows the gamma-ray spectrum per WIMP annihilation for 100 GeV(left) and 500 Gev(right) WIMP mass, with X-axis $E_\gamma$ is the energy of gamma rays photons, and Y-axis $E_\gamma^2 \frac{dN_\gamma}{dE_\gamma}$ is the power of energy output per decade of energy. In other words, the y-axis represents the how much of energy is emitted from the photons of that specific energy $E_\gamma$ per WIMP annihilation. \\
+
+    For each graph, we can see there is different colored lines, they represent different theoretical spectrum of gamma rays produced by WIMP annihilation through different channels (i.e. different annihilation products). It can be divided into 3 categories: \\
+
+    The left side is the "soft" spectrum (\textbf{Hadronic channels}), including the solid cyan line ($b \bar{b}$ channel), the magenta dashed line ($Z Z$ channel), and the blue dashed line ($W^+ W^-$ channel). When WIMPs annihilate into these particles, they are unstable and will quickly decay into jets of hadrons (e.g. pions $pi$), and then the neutral pions ($\pi^0$) will decay almost instantly into 2 gamma rays $\pi^0 \to \gamma \gamma$. In above hadronization process, original energy shared among many particles in jet, resulting photons have wide range of energies, which produce a "soft" spectrum that peaks at lower energies. However, they tend to be on lower side of mass(left side of graph), because the energy is shared among many particles, so the photons have less energy than the original WIMP mass. \\
+
+    The right side is the "hard" spectrum (\textbf{Leptonic channels}), including the red dashed line ($\tau^+ \tau^-$ channel), and the green dashed line ($\mu^+ \mu^-$ channel). When WIMPs annihilate into leptons (e.g. $\tau$ and $\mu$), they can produce gamma rays through final state radiation (FSR) or internal bremsstrahlung, instead of undergoing hadronization. Since the leptons are not hadrons, they do not produce jets of particles, and the gamma rays produced from leptonic channels tend to have energies closer to the original WIMP mass, resulting in a "hard" spectrum that peaks at higher energies. Furthermore, the FSR and bremsstrahlung processes is much less rare than the hadronization process, which means the leptonic channels produce fewer gamma rays compared to hadronic channels, resulting in a lower overall intensity of the gamma-ray spectrum. Besides, due to conservation of energy, the gamma rays produced from leptonic channels cannot have energies greater than the WIMP mass, which is why the spectrum cuts off at the WIMP mass in the right side of the graph. \\
+
+    The solid back line between the "soft" and "hard" spectrum is the $\tau^+ \tau^-$ channel, which is a special case because the $\tau$ lepton can decay into hadrons about 65\% of the time, it resulting a mixture of both hadronic and leptonic channels, which produces a spectrum that has characteristics of both "soft" and "hard" spectra, with a peak that is intermediate between the two. \\
+
+    Comparing the left and right graph, we can see that the spectrum for 500 GeV WIMP mass is similar to the spectrum for 100 GeV WIMP mass, but it is shifted to higher energies, which is expected because the energy of the gamma rays produced from WIMP annihilation is related to the mass of the WIMP, so heavier WIMPs will produce higher energy gamma rays. Meanwhile, the shape of the spectrum remains similar, and is determined by the properties of the annihilation channels, rather than the WIMP mass itself.
+\end{extra}
+
+
+
+
+% ──────────────────────────────────────────────────────────────────────────────
+\clearpage
+%\bigskip \noindent \bigskip \noindent \bigskip \noindent
+\subsection{Indirect Detection: Charged Cosmic Rays}
+\begin{intuition}
+    In addition to gamma rays, WIMP annihilation can also produce charged cosmic rays (e.g. positrons, antiprotons, electrons, and protons) that can be detected by cosmic ray detectors (e.g. AMS-02 on the International Space Station). However, the detection of charged cosmic rays from WIMP annihilation is more challenging than gamma rays due to the following reasons:
+    \begin{itemize}
+        \item Charged cosmic rays are deflected by magnetic fields in the galaxy, which diffuse and losing energy, resulting a diffuse spectrum observed at Earth. Hence, we identify the signatures of DM annihilation by study wether the spectrum is distorted and loss angular information, instead of the spectrum amplitude like gamma rays. \\
+    \end{itemize}
+    
+    Compared to antiprotons and antideuterons, positrons are more attractive for DM detection, as it lost most of their energy over a short distance (few kpc or less), the positron spectrum observed at Earth is sampled by local DM distribution and hence less affected by the uncertainties in the DM distribution in the galaxy. They propagate under the influence of the galactic magnetic field, losing energy through processes such as synchrotron emission and inverse Compton scattering, and finally reach the Earth with a spectrum.
+\end{intuition}
+
+\bigskip \noindent
+\begin{foundation}
+
+\end{foundation}
+
+\bigskip \noindent
+\begin{theory}
+    The resulting spectrum at Earth can be calculated by solving the diffusion-loss equation:
+    \[
+        \frac{\partial}{\partial t} \frac{d n_e}{dE_e} = \vec{\nabla} \cdot \left[ K(E_e, \vec{x}) \vec{\nabla} \frac{d n_e}{dE_e} \right] + \frac{\partial}{\partial E_e} \left[ b(E_e, \vec{x}) \frac{d n_e}{dE_e} \right] + Q(E_e, \vec{x})
+    \]
+    where $\frac{d n_e}{dE_e}$ is the number density of positrons per unit energy, $K(E_e, \vec{x})$ is the diffusion coefficient, $b(E_e, \vec{x})$ is the energy loss rate, and $Q(E_e, \vec{x})$ is the source term, which includes the information regarding the DM annihilation modes, cross section, and DM distribution in the galaxy. By solving this equation with appropriate boundary conditions, we can predict the positron spectrum at Earth resulting from DM annihilation, and compare it with the observed spectrum to look for potential signatures of DM.
+\end{theory}
+
+\bigskip \noindent
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.55\textwidth]{images/positron_fraction_energy_spectrum.png}
+    \caption{The positron fraction as a function of energy measured by the AMS-02 experiment.}
+    \label{fig:positron_fraction_energy_spectrum}
+\end{figure}
+
+\begin{extra}
+    The above figure show the AMS-02 measurement(red plot) and other measurement of the positron fraction as a function of energy, with x-axis is the energy of positrons, and y-axis is the positron fraction defined as $\frac{\Phi_{e^+}}{\Phi_{e^+} + \Phi_{e^-}}$. \\
+
+    In standard astrophysical models, the positron fraction is expected to decrease with increasing energy, because positrons are produced as secondary particles from the interactions of primary cosmic rays (mostly protons) with the interstellar medium, and these the higher the energy of the positrons, the more difficult it is for them to be produced and to reach Earth due to energy losses during propagation. Which match the measurements in the graph that the decreasing go through from 1 GeV to around 10 GeV. And these are the background positrons that we expect to see from standard astrophysical processes. \\
+    
+    However, instead of decreasing, the fraction starts to rise after 10 GeV, it can is clearly shown in the AMS-02 measurement, which confirm earlier observations by PAMELA and extend to higher energies (up to $\sim$ 300 GeV). This anomaly hard to be explained by standard astrophysical processes, and 2 main explanations have been proposed: \\
+    \begin{itemize}
+        \item The excess positrons could be produced by nearby astrophysical sources, such as pulsars (rapidly rotating neutron stars with strong magnetic fields) or supernova remnants, which can accelerate particles to high energies and produce positrons through various mechanisms. \\
+        \item The excess positrons could be a signal of dark matter annihilation or decay, where DM particles annihilate or decay into Standard Model particles, including positrons, which can then propagate to Earth and contribute to the observed positron fraction. The energy spectrum and spatial distribution of the excess positrons can provide clues about the properties of the DM particles, such as their mass and annihilation channels.
+    \end{itemize}
+\end{extra}
+
+\bigskip \noindent
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.55\textwidth]{images/cosmic_rays_spectrum_mass.png}
+    \caption{Spectra given by DM annihilation with different WIMP masses.}
+    \label{fig:cosmic_rays_spectrum_mass}
+\end{figure}
+
+\begin{extra}
+    The above figure provides a clear version of the positron fraction spectrum, the green line is the expected background from standard astrophysical processes, and the other lines represent the predicted positron fraction spectra from DM annihilation with different WIMP masses (e.g. 200 GeV, 400GeV, and 800 GeV). \\
+
+    Again, by conservation of energy, the positrons produced from DM annihilation cannot have energies greater than the WIMP mass, which is why the predicted spectra drop off sharply at the WIMP mass in the graph. To compare, the extra fraction of positrons produced by pulsars is expected to be generally softer than that produced by DM annihilation, and it does not have a sharp cutoff at a specific energy, which can be used to distinguish between the two explanations for the positron excess. Currently, the AMS-02 data shows there is a drop-off energy around 800 GeV \cite{AMS02}, which could be consistent with a DM particle of mass around 800 GeV, but it is not conclusive, and further data and analysis are needed to confirm the origin of the positron excess.
+\end{extra}
+
+
+\bigskip \noindent
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.8\textwidth]{images/positron_fraction_energy_spectrum_2.png}
+    \caption{The positron fraction as a function of energy for the 4 annihilation modes considered here: $\chi\chi \to \phi\phi$, followed by, (a) $\phi \to e^+e^-$, (b) $\phi \to \mu^+\mu^-$, (c) $\phi \to e^+e^-, \mu^+\mu^-$ (1:1), (d) $\phi \to \pi^+\pi^-$. The boost factor is defined relative to a cross section $\langle \sigma v \rangle = 3 \times 10^{-26} \text{cm}^3\text{s}^{-1}$ and $\rho_0 = 0.3 \text{GeVcm}^{-3}$. Such a boost reasonably can arise from a Sommerfeld enhancement, without appeals to substructure. \cite{Cholis_2008_PAMELA}}
+    \label{fig:positron_fraction_spectrum_2}
+\end{figure}
+
+
 
 
 % ──────────────────────────────────────────────────────────────────────────────
