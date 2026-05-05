@@ -1,4 +1,4 @@
-PWD /Users/automatocti/Documents/ust/course/PHYS4071-notes/notes/phys4071_notes
+PWD /Users/automatocti/Documents/ust/course/PHYS4071/notes/phys4071_notes
 INPUT /usr/local/texlive/2025/texmf.cnf
 INPUT /usr/local/texlive/2025/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt
@@ -928,6 +928,11 @@ INPUT ./images/PBH.png
 INPUT ./images/PBH.png
 INPUT ./images/PBH.png
 INPUT ./images/PBH.png
+INPUT ./chapters/ch09_inflation.tex
+INPUT ./chapters/ch09_inflation.tex
+INPUT ./chapters/ch09_inflation.tex
+INPUT ./chapters/ch09_inflation.tex
+INPUT chapters/ch09_inflation.tex
 INPUT ./chapters/appendix.tex
 INPUT ./chapters/appendix.tex
 INPUT ./chapters/appendix.tex
