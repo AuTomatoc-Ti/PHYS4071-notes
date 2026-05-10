@@ -122,30 +122,30 @@
 \contentsline {subsection}{\numberline {8.3.1}Direct Detection}{215}{subsection.8.3.1}%
 \contentsline {subsection}{\numberline {8.3.2}Indirect Detection: Gamma Rays}{218}{subsection.8.3.2}%
 \contentsline {subsection}{\numberline {8.3.3}Indirect Detection: Charged Cosmic Rays}{221}{subsection.8.3.3}%
-\contentsline {subsection}{\numberline {8.3.4}Collider Detection}{225}{subsection.8.3.4}%
-\contentsline {section}{\numberline {8.4}Other Candidates for Dark Matter}{227}{section.8.4}%
-\contentsline {subsection}{\numberline {8.4.1}Theoretical Candidates}{227}{subsection.8.4.1}%
-\contentsline {subsection}{\numberline {8.4.2}Primordial Black Holes (PBHs)}{229}{subsection.8.4.2}%
-\contentsline {chapter}{\numberline {9}Inflation (Lecture 23-24)}{231}{chapter.9}%
-\contentsline {section}{\numberline {9.1}Limitations of $\Lambda $CDM Model}{231}{section.9.1}%
-\contentsline {subsection}{\numberline {9.1.1}Cosmological Puzzles: Flatness Problem}{231}{subsection.9.1.1}%
-\contentsline {subsection}{\numberline {9.1.2}Cosmological Puzzles: Horizon Problem}{233}{subsection.9.1.2}%
-\contentsline {subsection}{\numberline {9.1.3}Cosmological Puzzles: Relic Abundance Problem}{235}{subsection.9.1.3}%
-\contentsline {section}{\numberline {9.2}Introduction to Inflation}{237}{section.9.2}%
-\contentsline {subsection}{\numberline {9.2.1}General Idea of Inflation}{237}{subsection.9.2.1}%
-\contentsline {subsection}{\numberline {9.2.2}Analytical Description}{239}{subsection.9.2.2}%
-\contentsline {subsection}{\numberline {9.2.3}Gravitational Wave as Echoes of Inflation}{243}{subsection.9.2.3}%
-\contentsline {chapter}{\numberline {A}Declaration of AI Assistance}{245}{appendix.A}%
-\contentsline {section}{\numberline {A.1}Use of Artificial Intelligence in This Document}{245}{section.A.1}%
-\contentsline {chapter}{\numberline {B}Mathematical Tools \& Derivations}{246}{appendix.B}%
-\contentsline {section}{\numberline {B.1}Useful Identities}{246}{section.B.1}%
-\contentsline {section}{\numberline {B.2}Differential Geometry Primer}{248}{section.B.2}%
-\contentsline {section}{\numberline {B.3}Relativistic Limits}{248}{section.B.3}%
-\contentsline {section}{\numberline {B.4}Spherical Harmonics \& Associated Legendre Polynomials}{249}{section.B.4}%
-\contentsline {chapter}{\numberline {C}Constants \& Conversion Factors}{251}{appendix.C}%
-\contentsline {section}{\numberline {C.1}Physical Constants}{251}{section.C.1}%
-\contentsline {section}{\numberline {C.2}Conversion Factors}{251}{section.C.2}%
-\contentsline {section}{\numberline {C.3}SI Unit Prefixes}{252}{section.C.3}%
-\contentsline {section}{\numberline {C.4}Main Events in Universe}{253}{section.C.4}%
-\contentsline {section}{\numberline {C.5}Nuclei Binding Energies \& Atomic Masses}{254}{section.C.5}%
+\contentsline {subsection}{\numberline {8.3.4}Collider Detection}{227}{subsection.8.3.4}%
+\contentsline {section}{\numberline {8.4}Other Candidates for Dark Matter}{229}{section.8.4}%
+\contentsline {subsection}{\numberline {8.4.1}Theoretical Candidates}{229}{subsection.8.4.1}%
+\contentsline {subsection}{\numberline {8.4.2}Primordial Black Holes (PBHs)}{231}{subsection.8.4.2}%
+\contentsline {chapter}{\numberline {9}Inflation (Lecture 23-24)}{233}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Limitations of $\Lambda $CDM Model}{233}{section.9.1}%
+\contentsline {subsection}{\numberline {9.1.1}Cosmological Puzzles: Flatness Problem}{233}{subsection.9.1.1}%
+\contentsline {subsection}{\numberline {9.1.2}Cosmological Puzzles: Horizon Problem}{235}{subsection.9.1.2}%
+\contentsline {subsection}{\numberline {9.1.3}Cosmological Puzzles: Relic Abundance Problem}{237}{subsection.9.1.3}%
+\contentsline {section}{\numberline {9.2}Introduction to Inflation}{239}{section.9.2}%
+\contentsline {subsection}{\numberline {9.2.1}General Idea of Inflation}{239}{subsection.9.2.1}%
+\contentsline {subsection}{\numberline {9.2.2}Analytical Description}{241}{subsection.9.2.2}%
+\contentsline {subsection}{\numberline {9.2.3}Gravitational Wave as Echoes of Inflation}{245}{subsection.9.2.3}%
+\contentsline {chapter}{\numberline {A}Declaration of AI Assistance}{247}{appendix.A}%
+\contentsline {section}{\numberline {A.1}Use of Artificial Intelligence in This Document}{247}{section.A.1}%
+\contentsline {chapter}{\numberline {B}Mathematical Tools \& Derivations}{248}{appendix.B}%
+\contentsline {section}{\numberline {B.1}Useful Identities}{248}{section.B.1}%
+\contentsline {section}{\numberline {B.2}Differential Geometry Primer}{250}{section.B.2}%
+\contentsline {section}{\numberline {B.3}Relativistic Limits}{250}{section.B.3}%
+\contentsline {section}{\numberline {B.4}Spherical Harmonics \& Associated Legendre Polynomials}{251}{section.B.4}%
+\contentsline {chapter}{\numberline {C}Constants \& Conversion Factors}{253}{appendix.C}%
+\contentsline {section}{\numberline {C.1}Physical Constants}{253}{section.C.1}%
+\contentsline {section}{\numberline {C.2}Conversion Factors}{253}{section.C.2}%
+\contentsline {section}{\numberline {C.3}SI Unit Prefixes}{254}{section.C.3}%
+\contentsline {section}{\numberline {C.4}Main Events in Universe}{255}{section.C.4}%
+\contentsline {section}{\numberline {C.5}Nuclei Binding Energies \& Atomic Masses}{256}{section.C.5}%
 \contentsfinish 

@@ -593,8 +593,24 @@ The "WIMP miracle" shows the DM particles interact with regular matter with a st
 
 \bigskip \noindent
 \begin{foundation}
+    Note the number of Dm annihilation per unit time and unit volume:
+    \begin{align*}
+        \frac{d N_\text{ann}}{dt dV} &= \frac{1}{2} \langle \sigma_{\chi \bar{\chi}} |v| \rangle n_\chi^2
+    \end{align*}
+    where the factor of $\frac{1}{2}$ is to avoid double counting, because each annihilation involves two DM particles. \\
 
-\end{foundation}
+    Then given that each annihilation produces a spectrum of gamma rays by $\frac{dN_\gamma}{dE_\gamma}$, the source term (photon production per unit energy, time, and volume) can be expressed as:
+    \begin{align*}
+        Q(E_\gamma, \vec{r}) &= \frac{1}{2} \langle \sigma_{\chi \bar{\chi}} |v| \rangle n_\chi^2(\vec{r}) \cdot \frac{dN_\gamma}{dE_\gamma} \\
+        &= \frac{1}{2} \langle \sigma_{\chi \bar{\chi}} |v| \rangle \frac{\rho^2(\vec{r}, \psi)}{m_\chi^2} \cdot \frac{dN_\gamma}{dE_\gamma}
+    \end{align*}
+    And hence the flux is:
+    \begin{align*}
+        \Phi_\gamma(E_\gamma, \psi) &= \frac{1}{4 \pi} \int_{\text{l.o.s}} Q(E_\gamma, \vec{r}) dl(\psi) \\
+        &= \frac{1}{2} \langle \sigma_{\chi \bar{\chi}} |v| \rangle \cdot \frac{dN_\gamma}{dE_\gamma} \frac{1}{4\pi m_\chi^2} \int_{\text{l.o.s}} \rho^2(r, \psi) dl(\psi)
+    \end{align*}
+    The first part outside the integral is called the "particle physics factor", which depends on the properties of DM particles (e.g. mass, annihilation cross section, and annihilation channels), and the second part inside the integral is called the "astrophysical factor" or "J-factor", which depends on the distribution of DM in the target region observed.
+\end{foundation} 
 
 \bigskip \noindent
 \begin{theory}
@@ -631,8 +647,8 @@ The "WIMP miracle" shows the DM particles interact with regular matter with a st
 
 
 % ──────────────────────────────────────────────────────────────────────────────
-\clearpage
-%\bigskip \noindent \bigskip \noindent \bigskip \noindent
+%\clearpage
+\bigskip \noindent \bigskip \noindent \bigskip \noindent
 \subsection{Indirect Detection: Charged Cosmic Rays}
 \begin{intuition}
     In addition to gamma rays, WIMP annihilation can also produce charged cosmic rays (e.g. positrons, antiprotons, electrons, and protons) that can be detected by cosmic ray detectors (e.g. AMS-02 on the International Space Station). However, the detection of charged cosmic rays from WIMP annihilation is more challenging than gamma rays due to the following reasons:
@@ -646,6 +662,126 @@ The "WIMP miracle" shows the DM particles interact with regular matter with a st
 \bigskip \noindent
 \begin{foundation}
 
+    The diffusion-loss equation is essentially a \textbf{continuity equation} (number conservation) but written for the \textbf{number density per unit energy}. Below are the steps to derive the diffusion-loss equation: \\
+
+    \textbf{Step 1: Define the quantity we evolve.} \\
+    Let
+    \[
+        \psi(E_e, \vec{x}, t) \equiv \frac{d n_e}{dE_e}(E_e, \vec{x}, t)
+    \]
+    be the positron number density per unit energy. Its unit is $[\psi] = \#\,\mathrm{(energy)}^{-1}\,\mathrm{(volume)}^{-1}$. \\
+
+    Consider an arbitrary fixed spatial volume $V$ bounded by surface $S$, and an arbitrary energy interval $[E_1,E_2]$. The total number of positrons inside $V$ whose energies lie in $[E_1,E_2]$ is
+    \[
+        N_{[E_1,E_2]}(t) = \int_V d^3x \int_{E_1}^{E_2} dE_e\, \psi(E_e, \vec{x}, t)
+    \]
+    Taking a time derivative (the integration limits are fixed) gives
+    \[
+        \frac{dN_{[E_1,E_2]}}{dt} = \int_V d^3x \int_{E_1}^{E_2} dE_e\, \frac{\partial \psi}{\partial t}(E_e, \vec{x}, t)
+    \]
+
+    \textbf{Step 2: Account for transport in real space.} \\
+    Let $\vec{J}(E_e, \vec{x}, t)$ be the spatial number \textbf{current density per unit energy} (units: $\#\,\mathrm{(energy)}^{-1}\,\mathrm{(area)}^{-1}\,\mathrm{time}^{-1}$). The net loss of particles from the volume due to spatial transport is the outward flux through the boundary:
+    \[
+        \left.\frac{dN_{[E_1,E_2]}}{dt}\right|_{\rm space}
+        = - \oint_S d\vec{S}\cdot \int_{E_1}^{E_2} dE_e\, \vec{J}(E_e, \vec{x}, t)
+    \]
+    Apply the divergence theorem (and swap the order of integrals):
+    \begin{align*}
+        - \oint_S d\vec{S}\cdot \int_{E_1}^{E_2} dE_e\, \vec{J}
+        &= - \int_V d^3x\, \vec{\nabla}\cdot \int_{E_1}^{E_2} dE_e\, \vec{J} \\
+        &= - \int_V d^3x\int_{E_1}^{E_2} dE_e\, \vec{\nabla}\cdot \vec{J}(E_e, \vec{x}, t)
+    \end{align*}
+
+    \textbf{Step 3: Account for energy loss as a flux in energy space.} \\
+    Positrons lose energy continuously (synchrotron, inverse Compton, etc.). Write the energy change rate as
+    \[
+        \dot{E}_e \equiv \frac{dE_e}{dt}
+    \]
+    If there is no spatial motion and no sources, particles simply \emph{flow} along the energy axis: they cross the upper boundary $E_2$ into lower energies, and they also cross the lower boundary $E_1$ and leave the interval.
+
+    In a short time $dt$, the number of particles crossing an energy boundary $E$ per unit volume is
+    \[
+        \left(\dot{E}_e\,\psi\right)\,dt
+    \]
+    (this is the "flux" in energy space; it is exactly analogous to a spatial flux $\vec{J}\cdot d\vec{S}$). Therefore, the net change of particle number inside the energy interval due to energy drift is
+    \begin{align*}
+        \left.\frac{dN_{[E_1,E_2]}}{dt}\right|_{\rm loss}
+        &= -\int_V d^3x\, \Big[\dot{E}_e\,\psi(E_e,\vec{x},t)\Big]_{E_1}^{E_2} \\
+        &= -\int_V d^3x\, \left(\dot{E}_e\,\psi\big|_{E_2} - \dot{E}_e\,\psi\big|_{E_1}\right)
+    \end{align*}
+    Use the fundamental theorem of calculus, $f(E_2)-f(E_1)=\int_{E_1}^{E_2} dE\, \frac{\partial f}{\partial E}$, with $f(E_e)=\dot{E}_e\,\psi$:
+    \begin{align*}
+        -\Big[\dot{E}_e\,\psi\Big]_{E_1}^{E_2}
+        &= -\int_{E_1}^{E_2} dE_e\, \frac{\partial}{\partial E_e}\left(\dot{E}_e\,\psi\right)
+    \end{align*}
+    Hence
+    \[
+        \left.\frac{dN_{[E_1,E_2]}}{dt}\right|_{\rm loss}
+        = -\int_V d^3x\int_{E_1}^{E_2} dE_e\, \frac{\partial}{\partial E_e}\left(\dot{E}_e\,\psi\right)
+    \]
+
+    \textbf{Step 4: Add a source term.} \\
+    Let $Q(E_e,\vec{x})$ be the injection rate (number produced per unit energy, volume, and time). Then
+    \[
+        \left.\frac{dN_{[E_1,E_2]}}{dt}\right|_{\rm source} = \int_V d^3x\int_{E_1}^{E_2} dE_e\, Q(E_e, \vec{x})
+    \]
+
+    \textbf{Step 5: Combine all contributions and localize the equation.} \\
+    Putting Step 2--4 together,
+    \begin{align*}
+        \frac{dN_{[E_1,E_2]}}{dt}
+        &= \left.\frac{dN_{[E_1,E_2]}}{dt}\right|_{\rm space}
+        + \left.\frac{dN_{[E_1,E_2]}}{dt}\right|_{\rm loss}
+        + \left.\frac{dN_{[E_1,E_2]}}{dt}\right|_{\rm source} \\
+        \int_V d^3x \int_{E_1}^{E_2} dE_e\, \frac{\partial \psi}{\partial t}
+        &= -\int_V d^3x\int_{E_1}^{E_2} dE_e\, \vec{\nabla}\cdot \vec{J}
+        -\int_V d^3x\int_{E_1}^{E_2} dE_e\, \frac{\partial}{\partial E_e}\left(\dot{E}_e\,\psi\right) \\
+        & +\int_V d^3x\int_{E_1}^{E_2} dE_e\, Q
+    \end{align*}
+    Move everything to one side and factor out the integrals:
+    \[
+        \int_V d^3x\int_{E_1}^{E_2} dE_e\, \left[
+            \frac{\partial \psi}{\partial t}
+            + \vec{\nabla}\cdot \vec{J}
+            + \frac{\partial}{\partial E_e}\left(\dot{E}_e\,\psi\right)
+            - Q
+        \right] = 0
+    \]
+    Since $V$ and $[E_1,E_2]$ are arbitrary, the integrand must vanish pointwise:
+    \[
+        \frac{\partial \psi}{\partial t}
+        = -\vec{\nabla}\cdot \vec{J}
+        - \frac{\partial}{\partial E_e}\left(\dot{E}_e\,\psi\right)
+        + Q
+    \]
+
+    \textbf{Step 6: Diffusion approximation and the sign convention for energy loss.} \\
+    In a turbulent magnetic field, charged particles undergo a random walk, so the spatial transport is modeled as diffusion (Fick's law):
+    \[
+        \vec{J}(E_e,\vec{x},t) = -K(E_e,\vec{x})\, \vec{\nabla}\psi(E_e,\vec{x},t)
+    \]
+    where $K$ is the diffusion coefficient (units: $[K]=\mathrm{length}^2/\mathrm{time}$). Substituting gives
+    \[
+        -\vec{\nabla}\cdot\vec{J} = \vec{\nabla}\cdot\left[K(E_e,\vec{x})\,\vec{\nabla}\psi\right]
+    \]
+    For energy losses, it is conventional to define a \textbf{positive} loss function
+    \[
+        b(E_e,\vec{x}) \equiv -\dot{E}_e = -\frac{dE_e}{dt} \quad (>0\ \text{for energy loss})
+    \]
+    so that
+    \[
+        -\frac{\partial}{\partial E_e}\left(\dot{E}_e\,\psi\right)
+        = -\frac{\partial}{\partial E_e}\left(-b\,\psi\right)
+        = \frac{\partial}{\partial E_e}\left(b\,\psi\right)
+    \]
+    Putting these together and recalling $\psi=\frac{dn_e}{dE_e}$ yields exactly the diffusion-loss equation used below:
+    \[
+        \frac{\partial}{\partial t} \frac{d n_e}{dE_e}
+        = \vec{\nabla} \cdot \left[ K(E_e, \vec{x}) \vec{\nabla} \frac{d n_e}{dE_e} \right]
+        + \frac{\partial}{\partial E_e} \left[ b(E_e, \vec{x}) \frac{d n_e}{dE_e} \right]
+        + Q(E_e, \vec{x})
+    \]
 \end{foundation}
 
 \bigskip \noindent
@@ -677,6 +813,7 @@ The "WIMP miracle" shows the DM particles interact with regular matter with a st
     \end{itemize}
 \end{extra}
 
+
 \bigskip \noindent
 \begin{figure}[htbp]
     \centering
@@ -685,6 +822,7 @@ The "WIMP miracle" shows the DM particles interact with regular matter with a st
     \label{fig:cosmic_rays_spectrum_mass}
 \end{figure}
 
+\clearpage
 \begin{extra}
     The above figure provides a clear version of the positron fraction spectrum, the green line is the expected background from standard astrophysical processes, and the other lines represent the predicted positron fraction spectra from DM annihilation with different WIMP masses (e.g. 200 GeV, 400GeV, and 800 GeV). \\
 
