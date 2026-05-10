@@ -25,129 +25,127 @@
 \contentsline {subsection}{\numberline {2.3.1}Hubble Horizon}{39}{subsection.2.3.1}%
 \contentsline {subsection}{\numberline {2.3.2}Event Horizon}{40}{subsection.2.3.2}%
 \contentsline {subsection}{\numberline {2.3.3}Particle Horizon}{41}{subsection.2.3.3}%
-\contentsline {chapter}{\numberline {3}Cosmic Evolution (Lecture 5-7)}{44}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Dynamical Equations}{44}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}1st Friedmann Equation}{44}{subsection.3.1.1}%
-\contentsline {subsection}{\numberline {3.1.2}2nd Friedmann Equation}{46}{subsection.3.1.2}%
-\contentsline {subsection}{\numberline {3.1.3}Continuity Equation}{47}{subsection.3.1.3}%
-\contentsline {section}{\numberline {3.2}Cosmological constant}{49}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Origin of Cosmological Constant}{49}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}Friedmann Equations with Cosmological Constant}{51}{subsection.3.2.2}%
-\contentsline {subsection}{\numberline {3.2.3}Newtonian Gravity with Cosmological Constant}{52}{subsection.3.2.3}%
-\contentsline {section}{\numberline {3.3}Evolution of Scale Factor}{54}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Equation of State(EoS)}{54}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}EoS of Cosmologic Constant}{58}{subsection.3.3.2}%
-\contentsline {subsection}{\numberline {3.3.3}Scale Factor Equation}{59}{subsection.3.3.3}%
-\contentsline {section}{\numberline {3.4}SCDM and $\Lambda $CDM Models}{61}{section.3.4}%
-\contentsline {subsection}{\numberline {3.4.1}Critical Energy Density and Density Parameters}{61}{subsection.3.4.1}%
-\contentsline {subsection}{\numberline {3.4.2}Total Energy Density of Universe}{62}{subsection.3.4.2}%
-\contentsline {subsection}{\numberline {3.4.3}Related Equations in Energy Density Parameters}{64}{subsection.3.4.3}%
-\contentsline {section}{\numberline {3.5}Dark Energy and the Accelerating Universe}{70}{section.3.5}%
-\contentsline {subsection}{\numberline {3.5.1}Observational Evidence for Dark Energy}{70}{subsection.3.5.1}%
-\contentsline {subsection}{\numberline {3.5.2}Dark Energy Models}{76}{subsection.3.5.2}%
-\contentsline {section}{\numberline {3.6}Fate of Universe}{77}{section.3.6}%
-\contentsline {chapter}{\numberline {4}The Standard Model (Lecture 8)}{82}{chapter.4}%
-\contentsline {section}{\numberline {4.1}The Standard Model of Particle Physics}{82}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Higgs Mechanism and Mass Generation}{85}{section.4.2}%
-\contentsline {section}{\numberline {4.3}SM, GUT, and TOE}{87}{section.4.3}%
-\contentsline {chapter}{\numberline {5}Thermodynamics and Primordial Soup (Lecture 9-12)}{88}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Statistical Distributions}{88}{section.5.1}%
-\contentsline {subsection}{\numberline {5.1.1}Energy-Momentum Relation}{88}{subsection.5.1.1}%
-\contentsline {subsection}{\numberline {5.1.2}Chemical Potential}{89}{subsection.5.1.2}%
-\contentsline {subsection}{\numberline {5.1.3}Thermal Equilibrium Distributions}{90}{subsection.5.1.3}%
-\contentsline {section}{\numberline {5.2}Number Density, Energy Density, and Pressure}{92}{section.5.2}%
-\contentsline {subsection}{\numberline {5.2.1}Spin Degeneracy Factor}{92}{subsection.5.2.1}%
-\contentsline {subsection}{\numberline {5.2.2}Derivation of the 3 equations}{93}{subsection.5.2.2}%
-\contentsline {section}{\numberline {5.3}Effective Number of Relativistic DOF}{99}{section.5.3}%
-\contentsline {section}{\numberline {5.4}Entropy}{100}{section.5.4}%
-\contentsline {subsection}{\numberline {5.4.1}Definition of Entropy}{100}{subsection.5.4.1}%
-\contentsline {subsection}{\numberline {5.4.2}Conservation of Entropy}{104}{subsection.5.4.2}%
-\contentsline {subsection}{\numberline {5.4.3}$g_*$ and $g_{*s}$ in the early universe}{107}{subsection.5.4.3}%
-\contentsline {section}{\numberline {5.5}Decoupling of Particles}{109}{section.5.5}%
-\contentsline {subsection}{\numberline {5.5.1}Asymptotic Freedom}{109}{subsection.5.5.1}%
-\contentsline {subsection}{\numberline {5.5.2}Decoupling}{111}{subsection.5.5.2}%
-\contentsline {section}{\numberline {5.6}Thermal History of the Universe}{112}{section.5.6}%
-\contentsline {subsection}{\numberline {5.6.1}Electroweak Phase Transition}{112}{subsection.5.6.1}%
-\contentsline {subsection}{\numberline {5.6.2}QCD Phase Transition}{113}{subsection.5.6.2}%
-\contentsline {subsection}{\numberline {5.6.3}Neutrino Decoupling}{113}{subsection.5.6.3}%
-\contentsline {subsection}{\numberline {5.6.4}Electron-Positron Annihilation}{116}{subsection.5.6.4}%
-\contentsline {subsection}{\numberline {5.6.5}Photon Decoupling}{117}{subsection.5.6.5}%
-\contentsline {subsection}{\numberline {5.6.6}Dark Matter Freeze-out}{119}{subsection.5.6.6}%
-\contentsline {chapter}{\numberline {6}Big Bang Nucleosynthesis(BBN) (Lecture 13-14)}{121}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Equilibrium}{121}{section.6.1}%
-\contentsline {subsection}{\numberline {6.1.1}Binding Energy}{121}{subsection.6.1.1}%
-\contentsline {subsection}{\numberline {6.1.2}Number Density of Nuclei in Chemical Equilibrium}{122}{subsection.6.1.2}%
-\contentsline {subsection}{\numberline {6.1.3}Abundance of Nuclei in Chemical Equilibrium}{124}{subsection.6.1.3}%
-\contentsline {section}{\numberline {6.2}Baryon-to-photon ratio}{126}{section.6.2}%
-\contentsline {section}{\numberline {6.3}Neutron-to-Proton Ratio}{128}{section.6.3}%
-\contentsline {section}{\numberline {6.4}BBN processes}{129}{section.6.4}%
-\contentsline {subsection}{\numberline {6.4.1}Deuterium Bottleneck Effect and Start of BBN}{129}{subsection.6.4.1}%
-\contentsline {subsection}{\numberline {6.4.2}Shutdown of BBN}{131}{subsection.6.4.2}%
-\contentsline {subsection}{\numberline {6.4.3}Evolution of Elemental Abundances}{132}{subsection.6.4.3}%
-\contentsline {chapter}{\numberline {7}Cosmic Microwave Background (CMB) (Lecture 15-19)}{135}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Recombination and photon decoupling}{135}{section.7.1}%
-\contentsline {subsection}{\numberline {7.1.1}Recombination}{135}{subsection.7.1.1}%
-\contentsline {subsection}{\numberline {7.1.2}Photon Decoupling and CMB}{138}{subsection.7.1.2}%
-\contentsline {subsection}{\numberline {7.1.3}Dark Ages and Reionization}{141}{subsection.7.1.3}%
-\contentsline {section}{\numberline {7.2}CMB anisotropies}{141}{section.7.2}%
-\contentsline {subsection}{\numberline {7.2.1}Spherical Harmonic Decomposition}{143}{subsection.7.2.1}%
-\contentsline {subsection}{\numberline {7.2.2}Theoretical Power Spectrum}{154}{subsection.7.2.2}%
-\contentsline {subsection}{\numberline {7.2.3}Observed Power Spectrum}{155}{subsection.7.2.3}%
-\contentsline {subsection}{\numberline {7.2.4}Cosmic variance}{157}{subsection.7.2.4}%
-\contentsline {section}{\numberline {7.3}Acoustic Oscillations and Acoustic Peaks}{161}{section.7.3}%
-\contentsline {subsection}{\numberline {7.3.1}Damped Harmonic Oscillator}{161}{subsection.7.3.1}%
-\contentsline {subsection}{\numberline {7.3.2}Acoustic Oscillations in CMB}{163}{subsection.7.3.2}%
-\contentsline {subsection}{\numberline {7.3.3}Acoustic Peaks in the Power Spectrum}{168}{subsection.7.3.3}%
-\contentsline {subsection}{\numberline {7.3.4}Comoving Diameter Distance}{172}{subsection.7.3.4}%
-\contentsline {subsection}{\numberline {7.3.5}Comoving Sound Horizon}{176}{subsection.7.3.5}%
-\contentsline {section}{\numberline {7.4}More Features of the Power Spectrum}{186}{section.7.4}%
-\contentsline {subsection}{\numberline {7.4.1}Damping Tail}{186}{subsection.7.4.1}%
-\contentsline {subsection}{\numberline {7.4.2}Sachs-Wolfe Effect}{188}{subsection.7.4.2}%
-\contentsline {subsection}{\numberline {7.4.3}Relative Heights of the Acoustic Peaks}{190}{subsection.7.4.3}%
-\contentsline {section}{\numberline {7.5}CMB and $\Lambda $CDM-Standard Model}{192}{section.7.5}%
-\contentsline {chapter}{\numberline {8}Dark Matter (Lecture 20-22)}{193}{chapter.8}%
-\contentsline {section}{\numberline {8.1}Evidence for Dark Matter}{193}{section.8.1}%
-\contentsline {subsection}{\numberline {8.1.1}Galaxy Rotation Curves}{194}{subsection.8.1.1}%
-\contentsline {subsection}{\numberline {8.1.2}Modified Newtonian Dynamics (MOND)}{196}{subsection.8.1.2}%
-\contentsline {section}{\numberline {8.2}Properties of Dark Matter}{200}{section.8.2}%
-\contentsline {subsection}{\numberline {8.2.1}Baryonic and Non-baryonic Dark Matter}{200}{subsection.8.2.1}%
-\contentsline {subsection}{\numberline {8.2.2}Cold and Hot Dark Matter}{202}{subsection.8.2.2}%
-\contentsline {subsection}{\numberline {8.2.3}Stableness and Lifetime}{203}{subsection.8.2.3}%
-\contentsline {subsection}{\numberline {8.2.4}Decoupling and Interactions}{204}{subsection.8.2.4}%
-\contentsline {subsection}{\numberline {8.2.5}Boltzmann Equation for DM Relic Abundance}{205}{subsection.8.2.5}%
-\contentsline {subsection}{\numberline {8.2.6}Freeze-out Temperature}{207}{subsection.8.2.6}%
-\contentsline {subsection}{\numberline {8.2.7}Relic Abundance}{209}{subsection.8.2.7}%
-\contentsline {subsection}{\numberline {8.2.8}WIMP Miracle}{212}{subsection.8.2.8}%
-\contentsline {section}{\numberline {8.3}Non-gravitational Detections of Dark Matter}{213}{section.8.3}%
-\contentsline {subsection}{\numberline {8.3.1}Direct Detection}{214}{subsection.8.3.1}%
-\contentsline {subsection}{\numberline {8.3.2}Indirect Detection: Gamma Rays}{217}{subsection.8.3.2}%
-\contentsline {subsection}{\numberline {8.3.3}Indirect Detection: Charged Cosmic Rays}{220}{subsection.8.3.3}%
-\contentsline {subsection}{\numberline {8.3.4}Collider Detection}{224}{subsection.8.3.4}%
-\contentsline {section}{\numberline {8.4}Other Candidates for Dark Matter}{226}{section.8.4}%
-\contentsline {subsection}{\numberline {8.4.1}Theoretical Candidates}{226}{subsection.8.4.1}%
-\contentsline {subsection}{\numberline {8.4.2}Primordial Black Holes (PBHs)}{228}{subsection.8.4.2}%
-\contentsline {chapter}{\numberline {9}Inflation (Lecture 23-24)}{230}{chapter.9}%
-\contentsline {section}{\numberline {9.1}Limitations of $\Lambda $CDM Model}{230}{section.9.1}%
-\contentsline {subsection}{\numberline {9.1.1}Penrose Diagram and Horizon}{230}{subsection.9.1.1}%
-\contentsline {subsection}{\numberline {9.1.2}Cosmological Puzzles: Flatness Problem}{230}{subsection.9.1.2}%
-\contentsline {subsection}{\numberline {9.1.3}Cosmological Puzzles: Horizon Problem}{231}{subsection.9.1.3}%
-\contentsline {subsection}{\numberline {9.1.4}Cosmological Puzzles: Relic Abundance Problem}{231}{subsection.9.1.4}%
-\contentsline {section}{\numberline {9.2}Introduction to Inflation}{232}{section.9.2}%
-\contentsline {subsection}{\numberline {9.2.1}General Idea of Inflation}{232}{subsection.9.2.1}%
-\contentsline {subsection}{\numberline {9.2.2}General Idea of Inflation}{232}{subsection.9.2.2}%
-\contentsline {subsection}{\numberline {9.2.3}Analytical Description}{232}{subsection.9.2.3}%
-\contentsline {subsection}{\numberline {9.2.4}Gravitational Wave as Echoes of Inflation}{232}{subsection.9.2.4}%
-\contentsline {chapter}{\numberline {A}Declaration of AI Assistance}{233}{appendix.A}%
-\contentsline {section}{\numberline {A.1}Use of Artificial Intelligence in This Document}{233}{section.A.1}%
-\contentsline {chapter}{\numberline {B}Mathematical Tools \& Derivations}{234}{appendix.B}%
-\contentsline {section}{\numberline {B.1}Useful Identities}{234}{section.B.1}%
-\contentsline {section}{\numberline {B.2}Differential Geometry Primer}{236}{section.B.2}%
-\contentsline {section}{\numberline {B.3}Relativistic Limits}{236}{section.B.3}%
-\contentsline {section}{\numberline {B.4}Spherical Harmonics \& Associated Legendre Polynomials}{237}{section.B.4}%
-\contentsline {chapter}{\numberline {C}Constants \& Conversion Factors}{239}{appendix.C}%
-\contentsline {section}{\numberline {C.1}Physical Constants}{239}{section.C.1}%
-\contentsline {section}{\numberline {C.2}Conversion Factors}{239}{section.C.2}%
-\contentsline {section}{\numberline {C.3}SI Unit Prefixes}{240}{section.C.3}%
-\contentsline {section}{\numberline {C.4}Main Events in Universe}{241}{section.C.4}%
-\contentsline {section}{\numberline {C.5}Nuclei Binding Energies \& Atomic Masses}{242}{section.C.5}%
+\contentsline {chapter}{\numberline {3}Cosmic Evolution (Lecture 5-7)}{45}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Dynamical Equations}{45}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}1st Friedmann Equation}{45}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}2nd Friedmann Equation}{47}{subsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.1.3}Continuity Equation}{48}{subsection.3.1.3}%
+\contentsline {section}{\numberline {3.2}Cosmological constant}{50}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Origin of Cosmological Constant}{50}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Friedmann Equations with Cosmological Constant}{52}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Newtonian Gravity with Cosmological Constant}{53}{subsection.3.2.3}%
+\contentsline {section}{\numberline {3.3}Evolution of Scale Factor}{55}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Equation of State(EoS)}{55}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}EoS of Cosmologic Constant}{59}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.3}Scale Factor Equation}{60}{subsection.3.3.3}%
+\contentsline {section}{\numberline {3.4}SCDM and $\Lambda $CDM Models}{62}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Critical Energy Density and Density Parameters}{62}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}Total Energy Density of Universe}{63}{subsection.3.4.2}%
+\contentsline {subsection}{\numberline {3.4.3}Related Equations in Energy Density Parameters}{65}{subsection.3.4.3}%
+\contentsline {section}{\numberline {3.5}Dark Energy and the Accelerating Universe}{71}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}Observational Evidence for Dark Energy}{71}{subsection.3.5.1}%
+\contentsline {subsection}{\numberline {3.5.2}Dark Energy Models}{77}{subsection.3.5.2}%
+\contentsline {section}{\numberline {3.6}Fate of Universe}{78}{section.3.6}%
+\contentsline {chapter}{\numberline {4}The Standard Model (Lecture 8)}{83}{chapter.4}%
+\contentsline {section}{\numberline {4.1}The Standard Model of Particle Physics}{83}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Higgs Mechanism and Mass Generation}{86}{section.4.2}%
+\contentsline {section}{\numberline {4.3}SM, GUT, and TOE}{88}{section.4.3}%
+\contentsline {chapter}{\numberline {5}Thermodynamics and Primordial Soup (Lecture 9-12)}{89}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Statistical Distributions}{89}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Energy-Momentum Relation}{89}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}Chemical Potential}{90}{subsection.5.1.2}%
+\contentsline {subsection}{\numberline {5.1.3}Thermal Equilibrium Distributions}{91}{subsection.5.1.3}%
+\contentsline {section}{\numberline {5.2}Number Density, Energy Density, and Pressure}{93}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Spin Degeneracy Factor}{93}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Derivation of the 3 equations}{94}{subsection.5.2.2}%
+\contentsline {section}{\numberline {5.3}Effective Number of Relativistic DOF}{100}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Entropy}{101}{section.5.4}%
+\contentsline {subsection}{\numberline {5.4.1}Definition of Entropy}{101}{subsection.5.4.1}%
+\contentsline {subsection}{\numberline {5.4.2}Conservation of Entropy}{105}{subsection.5.4.2}%
+\contentsline {subsection}{\numberline {5.4.3}$g_*$ and $g_{*s}$ in the early universe}{108}{subsection.5.4.3}%
+\contentsline {section}{\numberline {5.5}Decoupling of Particles}{110}{section.5.5}%
+\contentsline {subsection}{\numberline {5.5.1}Asymptotic Freedom}{110}{subsection.5.5.1}%
+\contentsline {subsection}{\numberline {5.5.2}Decoupling}{112}{subsection.5.5.2}%
+\contentsline {section}{\numberline {5.6}Thermal History of the Universe}{113}{section.5.6}%
+\contentsline {subsection}{\numberline {5.6.1}Electroweak Phase Transition}{113}{subsection.5.6.1}%
+\contentsline {subsection}{\numberline {5.6.2}QCD Phase Transition}{114}{subsection.5.6.2}%
+\contentsline {subsection}{\numberline {5.6.3}Neutrino Decoupling}{114}{subsection.5.6.3}%
+\contentsline {subsection}{\numberline {5.6.4}Electron-Positron Annihilation}{117}{subsection.5.6.4}%
+\contentsline {subsection}{\numberline {5.6.5}Photon Decoupling}{118}{subsection.5.6.5}%
+\contentsline {subsection}{\numberline {5.6.6}Dark Matter Freeze-out}{120}{subsection.5.6.6}%
+\contentsline {chapter}{\numberline {6}Big Bang Nucleosynthesis(BBN) (Lecture 13-14)}{122}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Equilibrium}{122}{section.6.1}%
+\contentsline {subsection}{\numberline {6.1.1}Binding Energy}{122}{subsection.6.1.1}%
+\contentsline {subsection}{\numberline {6.1.2}Number Density of Nuclei in Chemical Equilibrium}{123}{subsection.6.1.2}%
+\contentsline {subsection}{\numberline {6.1.3}Abundance of Nuclei in Chemical Equilibrium}{125}{subsection.6.1.3}%
+\contentsline {section}{\numberline {6.2}Baryon-to-photon ratio}{127}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Neutron-to-Proton Ratio}{129}{section.6.3}%
+\contentsline {section}{\numberline {6.4}BBN processes}{130}{section.6.4}%
+\contentsline {subsection}{\numberline {6.4.1}Deuterium Bottleneck Effect and Start of BBN}{130}{subsection.6.4.1}%
+\contentsline {subsection}{\numberline {6.4.2}Shutdown of BBN}{132}{subsection.6.4.2}%
+\contentsline {subsection}{\numberline {6.4.3}Evolution of Elemental Abundances}{133}{subsection.6.4.3}%
+\contentsline {chapter}{\numberline {7}Cosmic Microwave Background (CMB) (Lecture 15-19)}{136}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Recombination and photon decoupling}{136}{section.7.1}%
+\contentsline {subsection}{\numberline {7.1.1}Recombination}{136}{subsection.7.1.1}%
+\contentsline {subsection}{\numberline {7.1.2}Photon Decoupling and CMB}{139}{subsection.7.1.2}%
+\contentsline {subsection}{\numberline {7.1.3}Dark Ages and Reionization}{142}{subsection.7.1.3}%
+\contentsline {section}{\numberline {7.2}CMB anisotropies}{142}{section.7.2}%
+\contentsline {subsection}{\numberline {7.2.1}Spherical Harmonic Decomposition}{144}{subsection.7.2.1}%
+\contentsline {subsection}{\numberline {7.2.2}Theoretical Power Spectrum}{155}{subsection.7.2.2}%
+\contentsline {subsection}{\numberline {7.2.3}Observed Power Spectrum}{156}{subsection.7.2.3}%
+\contentsline {subsection}{\numberline {7.2.4}Cosmic variance}{158}{subsection.7.2.4}%
+\contentsline {section}{\numberline {7.3}Acoustic Oscillations and Acoustic Peaks}{162}{section.7.3}%
+\contentsline {subsection}{\numberline {7.3.1}Damped Harmonic Oscillator}{162}{subsection.7.3.1}%
+\contentsline {subsection}{\numberline {7.3.2}Acoustic Oscillations in CMB}{164}{subsection.7.3.2}%
+\contentsline {subsection}{\numberline {7.3.3}Acoustic Peaks in the Power Spectrum}{169}{subsection.7.3.3}%
+\contentsline {subsection}{\numberline {7.3.4}Comoving Diameter Distance}{173}{subsection.7.3.4}%
+\contentsline {subsection}{\numberline {7.3.5}Comoving Sound Horizon}{177}{subsection.7.3.5}%
+\contentsline {section}{\numberline {7.4}More Features of the Power Spectrum}{187}{section.7.4}%
+\contentsline {subsection}{\numberline {7.4.1}Damping Tail}{187}{subsection.7.4.1}%
+\contentsline {subsection}{\numberline {7.4.2}Sachs-Wolfe Effect}{189}{subsection.7.4.2}%
+\contentsline {subsection}{\numberline {7.4.3}Relative Heights of the Acoustic Peaks}{191}{subsection.7.4.3}%
+\contentsline {section}{\numberline {7.5}CMB and $\Lambda $CDM-Standard Model}{193}{section.7.5}%
+\contentsline {chapter}{\numberline {8}Dark Matter (Lecture 20-22)}{194}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Evidence for Dark Matter}{194}{section.8.1}%
+\contentsline {subsection}{\numberline {8.1.1}Galaxy Rotation Curves}{195}{subsection.8.1.1}%
+\contentsline {subsection}{\numberline {8.1.2}Modified Newtonian Dynamics (MOND)}{197}{subsection.8.1.2}%
+\contentsline {section}{\numberline {8.2}Properties of Dark Matter}{201}{section.8.2}%
+\contentsline {subsection}{\numberline {8.2.1}Baryonic and Non-baryonic Dark Matter}{201}{subsection.8.2.1}%
+\contentsline {subsection}{\numberline {8.2.2}Cold and Hot Dark Matter}{203}{subsection.8.2.2}%
+\contentsline {subsection}{\numberline {8.2.3}Stableness and Lifetime}{204}{subsection.8.2.3}%
+\contentsline {subsection}{\numberline {8.2.4}Decoupling and Interactions}{205}{subsection.8.2.4}%
+\contentsline {subsection}{\numberline {8.2.5}Boltzmann Equation for DM Relic Abundance}{206}{subsection.8.2.5}%
+\contentsline {subsection}{\numberline {8.2.6}Freeze-out Temperature}{208}{subsection.8.2.6}%
+\contentsline {subsection}{\numberline {8.2.7}Relic Abundance}{210}{subsection.8.2.7}%
+\contentsline {subsection}{\numberline {8.2.8}WIMP Miracle}{213}{subsection.8.2.8}%
+\contentsline {section}{\numberline {8.3}Non-gravitational Detections of Dark Matter}{214}{section.8.3}%
+\contentsline {subsection}{\numberline {8.3.1}Direct Detection}{215}{subsection.8.3.1}%
+\contentsline {subsection}{\numberline {8.3.2}Indirect Detection: Gamma Rays}{218}{subsection.8.3.2}%
+\contentsline {subsection}{\numberline {8.3.3}Indirect Detection: Charged Cosmic Rays}{221}{subsection.8.3.3}%
+\contentsline {subsection}{\numberline {8.3.4}Collider Detection}{225}{subsection.8.3.4}%
+\contentsline {section}{\numberline {8.4}Other Candidates for Dark Matter}{227}{section.8.4}%
+\contentsline {subsection}{\numberline {8.4.1}Theoretical Candidates}{227}{subsection.8.4.1}%
+\contentsline {subsection}{\numberline {8.4.2}Primordial Black Holes (PBHs)}{229}{subsection.8.4.2}%
+\contentsline {chapter}{\numberline {9}Inflation (Lecture 23-24)}{231}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Limitations of $\Lambda $CDM Model}{231}{section.9.1}%
+\contentsline {subsection}{\numberline {9.1.1}Cosmological Puzzles: Flatness Problem}{231}{subsection.9.1.1}%
+\contentsline {subsection}{\numberline {9.1.2}Cosmological Puzzles: Horizon Problem}{233}{subsection.9.1.2}%
+\contentsline {subsection}{\numberline {9.1.3}Cosmological Puzzles: Relic Abundance Problem}{235}{subsection.9.1.3}%
+\contentsline {section}{\numberline {9.2}Introduction to Inflation}{237}{section.9.2}%
+\contentsline {subsection}{\numberline {9.2.1}General Idea of Inflation}{237}{subsection.9.2.1}%
+\contentsline {subsection}{\numberline {9.2.2}Analytical Description}{239}{subsection.9.2.2}%
+\contentsline {subsection}{\numberline {9.2.3}Gravitational Wave as Echoes of Inflation}{243}{subsection.9.2.3}%
+\contentsline {chapter}{\numberline {A}Declaration of AI Assistance}{245}{appendix.A}%
+\contentsline {section}{\numberline {A.1}Use of Artificial Intelligence in This Document}{245}{section.A.1}%
+\contentsline {chapter}{\numberline {B}Mathematical Tools \& Derivations}{246}{appendix.B}%
+\contentsline {section}{\numberline {B.1}Useful Identities}{246}{section.B.1}%
+\contentsline {section}{\numberline {B.2}Differential Geometry Primer}{248}{section.B.2}%
+\contentsline {section}{\numberline {B.3}Relativistic Limits}{248}{section.B.3}%
+\contentsline {section}{\numberline {B.4}Spherical Harmonics \& Associated Legendre Polynomials}{249}{section.B.4}%
+\contentsline {chapter}{\numberline {C}Constants \& Conversion Factors}{251}{appendix.C}%
+\contentsline {section}{\numberline {C.1}Physical Constants}{251}{section.C.1}%
+\contentsline {section}{\numberline {C.2}Conversion Factors}{251}{section.C.2}%
+\contentsline {section}{\numberline {C.3}SI Unit Prefixes}{252}{section.C.3}%
+\contentsline {section}{\numberline {C.4}Main Events in Universe}{253}{section.C.4}%
+\contentsline {section}{\numberline {C.5}Nuclei Binding Energies \& Atomic Masses}{254}{section.C.5}%
 \contentsfinish 

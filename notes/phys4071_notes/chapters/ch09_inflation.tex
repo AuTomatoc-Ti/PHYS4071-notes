@@ -8,15 +8,16 @@
 %\clearpage
 %\bigskip \noindent \bigskip \noindent \bigskip \noindent
 \section{Limitations of $\Lambda$CDM Model}
+The $\Lambda$CDM model is the standard model of cosmology, which has been very successful in explaining a wide range of observations. However, it has some limitations and cannot explain certain features of the universe. In this section, we will discuss some of the major limitations of the $\Lambda$CDM model, which are known as the cosmological puzzles. 
 % ──────────────────────────────────────────────────────────────────────────────
 %\clearpage
 %\bigskip \noindent \bigskip \noindent \bigskip \noindent
-\subsection{Penrose Diagram and Horizon}
+%\subsection{Penrose Diagram and Horizon}
 
 
 % ──────────────────────────────────────────────────────────────────────────────
 %\clearpage
-\bigskip \noindent \bigskip \noindent \bigskip \noindent
+%\bigskip \noindent \bigskip \noindent \bigskip \noindent
 \subsection{Cosmological Puzzles: Flatness Problem}
 \begin{intuition}
     Recall the Friedmann equation in energy density form:
@@ -37,6 +38,8 @@
     The $\Lambda$CDM model only directly assume that $\Omega_k$ is close to zero in the early universe as coincidence, but it does not provide a mechanism to explain why $\Omega_k$ is so close to zero. This is known as the \textbf{flatness problem}.
 \end{intuition}
 
+\clearpage
+%\bigskip \noindent
 \begin{example}{Dark Energy in Flatness Problem}{}
     We know that in dark-energy-dominated era, $| \Omega_0^{'} - 1 |$ decreases with time (i.e. $\propto a^{-2}$), can this help to solve the flatness problem? \\
 
@@ -44,24 +47,133 @@
     No, it cannot. The reason is that the dark-energy-dominated era only starts at $z \sim 0.3$, which is very late in the history of the universe. But from the observations of CMB, we know that the universe is already very close to being spatially flat at $z \sim 1100$. Therefore, the dark-energy-dominated era cannot help to solve the flatness problem.
 \end{example}
 
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.8\textwidth]{flatness_problem.png}
+    \caption{Energy density in the Universe today. And the effect of the flatness on the anisotropy of the CMB.}
+    \label{fig:flatness_problem}
+\end{figure}
+
+\begin{example}{Sound Horizon Angle and Flatness Problem}{}
+    why $\Omega_{0}^{'} < 1$ and $\Omega_{0}^{'} > 1$ result in a $\theta_c$ value smaller and larger than what it is in the case of $\Omega_{0}^{'} = 1$, respectively?
+
+    \bigskip\textbf{Solution.}\quad \\
+    Recall the definition of the sound horizon angle $\theta_c$:
+    \[
+        \theta_c = \frac{r_s^c(t_{rec})}{d_A^c}
+    \]
+    with the comoving sound horizon $r_s^c(t_{rec})$ and the comoving angular diameter distance $d_A^c$:
+    \begin{align*}
+        \begin{cases}
+            r_s^c(t_{rec}) = \frac{1}{H_0} \int_0^{a_{rec}} \frac{c_s(a)}{\sqrt{\Omega_{\Lambda,0} a^4 + (1 - \Omega_{0}^{'}) a^2 + \Omega_{m,0} a + \Omega_{r,0}}} da \\
+            d_A^c(t_{rec}) = \frac{1}{H_0} \int_{a_{rec}}^{a_0} \frac{da}{\sqrt{\Omega_{0}^{'}(a - a^2) - \Omega_{\Lambda,0} (a - a^4) + a^2}}
+        \end{cases}
+    \end{align*}
+
+    (a). For $\Omega_{0}^{'} < 1$, the term $(1 - \Omega_{0}^{'}) a^2$ in the denominator of $r_s^c(t_{rec})$ is positive, which makes the denominator larger, and thus $r_s^c(t_{rec})$ smaller. Meanwhile, the term $\Omega_{0}^{'}(a - a^2)$ in the denominator of $d_A^c(t_{rec})$ is also smaller, which makes the denominator smaller, and thus $d_A^c(t_{rec})$ larger. Therefore, $\theta_c$ is smaller than the case of $\Omega_{0}^{'} = 1$. \\
+
+    (b). For $\Omega_{0}^{'} > 1$, the term $(1 - \Omega_{0}^{'}) a^2$ in the denominator of $r_s^c(t_{rec})$ is negative, which makes the denominator smaller, and thus $r_s^c(t_{rec})$ larger. Meanwhile, the term $\Omega_{0}^{'}(a - a^2)$ in the denominator of $d_A^c(t_{rec})$ is also larger, which makes the denominator larger, and thus $d_A^c(t_{rec})$ smaller. Therefore, $\theta_c$ is larger than the case of $\Omega_{0}^{'} = 1$.
+\end{example}
+
+
 % ──────────────────────────────────────────────────────────────────────────────
 %\clearpage
 \bigskip \noindent \bigskip \noindent \bigskip \noindent
 \subsection{Cosmological Puzzles: Horizon Problem}
+\begin{foundation}
+    Recall the comoving horizon:
+    \[
+        \chi (t) = \int_{t_1}^{t_2} \frac{dt}{a(t)} = \frac{1}{H_0} \int_{z_1}^{z_2} \frac{dz}{E(z)}
+    \]
+    For the $\Lambda$CDM model, we have:
+    \[
+        E(z) = \sqrt{\Omega_{\Lambda,0} + \Omega_{m,0} (1 + z)^3 + \Omega_{r,0} (1 + z)^4}
+    \]
+    
+    Therefore, the horizon of the universe at the time of recombination (i.e. $z_{rec} \sim 1100$) can be calculated as:
+    \begin{align*}
+        \chi_{rec} &= \frac{1}{H_0} \int_{z_{rec}}^{\infty} \frac{dz}{E(z)} \\
+        &\approx \frac{1}{H_0} \int_{1100}^{\infty} \frac{dz}{\sqrt{\Omega_{r,0} (1 + z)^4}} \\
+        &= \frac{1}{H_0} \frac{1}{\sqrt{\Omega_{r,0}}} \int_{1100}^{\infty} \frac{dz}{(1 + z)^2} \\
+        &= \frac{1}{H_0} \frac{1}{\sqrt{\Omega_{r,0}}} \frac{1}{1101} \\
+        &\approx 0.095 H_0^{-1}
+    \end{align*}
+    At the same time, the horizon of the universe today can be calculated as:
+    \begin{align*}
+        \chi_0 &= \frac{1}{H_0} \int_{0}^{1100} \frac{dz}{E(z)} \\
+        &\approx \frac{1}{H_0} \int_{0}^{1100} \frac{dz}{\sqrt{\Omega_{m,0} (1 + z)^3}} \\
+        &= \frac{1}{H_0} \frac{1}{\sqrt{\Omega_{m,0}}} \cdot -2 \left( \frac{1}{\sqrt{1101}} - 1 \right) \\
+        &\approx 3.456 H_0^{-1}
+    \end{align*}
+\end{foundation}
+
+\bigskip \noindent
+\begin{intuition}
+    From the above calculations, we get that the horizon of the universe at the time of recombination(light travel before recombination) is $\chi_{rec} \approx 0.095 H_0^{-1}$, while the horizon of the universe today is $\chi_0 \approx 3.456 H_0^{-1}$. \\
+
+    This means that if we observe two points A and B in the CMB that are separated by a distance larger than $\chi_{rec}$, they should be causally disconnected at the time of recombination as light cannot travel to each other before recombination, and thus they cannot exchange information and reach thermal equilibrium. However, we observe that the temperature of the CMB is highly isotropic across the sky, which means that points A and B have the same temperature, even though they are causally disconnected at the time of recombination. This is known as the \textbf{horizon problem}.
+\end{intuition}
+
+\bigskip \noindent
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.8\textwidth]{horizon_problem.png}
+    \caption{The horizon of the universe at the time of recombination (lower part) and the horizon of the universe today (upper part). The two points A and B are causally disconnected at the time of recombination, but they have the same temperature, which is the horizon problem.}
+    \label{fig:horizon_problem}
+\end{figure}
 
 % ──────────────────────────────────────────────────────────────────────────────
-%\clearpage
-\bigskip \noindent \bigskip \noindent \bigskip \noindent
+\clearpage
+%\bigskip \noindent \bigskip \noindent \bigskip \noindent
 \subsection{Cosmological Puzzles: Relic Abundance Problem}
 \begin{intuition}
-    This problem is model-dependent, and is motivated by the Grand Unified Theories (GUTs) in particle physics. In GUTs, the interactions of the Standard Model (i.e. strong, weak, and electromagnetic interactions) are unified into a single interaction at high energy scales (e.g. $10^{16}$ GeV). When universe cools down from the GUT scale, the unified interaction breaks down into the separate interactions (force) we observe today, and this process is called symmetry breaking. During the symmetry breaking, topological defects such as stable magnetic monopoles can be produced, and their relic abundance can be estimated as:
+    This problem is model-dependent, and is motivated by the Grand Unified Theories (GUTs) in particle physics. In GUTs, the interactions of the Standard Model (i.e. strong, weak, and electromagnetic interactions) are unified into a single interaction at high energy scales (e.g. $10^{15}$ GeV). When universe cools down from the GUT scale, the unified interaction breaks down into the separate interactions (force) we observe today, and this process is called symmetry breaking. During the symmetry breaking, topological defects such as stable magnetic monopoles can be produced, and their relic abundance can be estimated as:
     \[
-        \Omega_{0, \text{monopole}} \sim 10^{11} \cdot \left( \frac{T_{\text{GUT}}}{10^{14} \text{ GeV}} \right)^3 \frac{m_{\text{monopole}}}{10^{16} \text{ GeV}}
+        \Omega_{0, \text{mono}} \sim 10^{11} \cdot \left( \frac{T_{\text{GUT}}}{10^{15} \text{ GeV}} \right)^3 \frac{m_{\text{mono}}}{10^{15} \text{ GeV}}
     \]
     which is much larger than the observed total matter abundance $\Omega_{0, \text{matter}} \sim 0.3$. Therefore, the GUTs predict a relic abundance of magnetic monopoles that is inconsistent with observations, and this is known as the \textbf{relic abundance problem}.
 \end{intuition}
 
+\bigskip \noindent
+\begin{foundation}
+    According to the Kibble mechanism, the number density of topological defects (e.g. magnetic monopoles) produced during symmetry breaking is roughly one per Hubble volume at the time of symmetry breaking:
+    \[
+        n_{\text{mono}} \sim \frac{1}{\text{Horizon Volume}} \sim H^3 (T_{\text{GUT}})
+    \]
+    As in radiation-dominated era, we have:
+    \[
+        H^2 = \frac{8 \pi^3 g_*}{90} \frac{T^4}{M_{\text{Pl}}^2}
+    \]
+    where $g_*$ is the effective number of relativistic degrees of freedom at temperature $T$, and $M_{\text{Pl}}$ is the Planck mass. Therefore, we can estimate the number density of magnetic monopoles at the time of symmetry breaking as:
+    \[
+        n_{\text{mono}} \sim H^3 (T_{\text{GUT}}) \sim (\frac{T_{\text{GUT}}^4}{M_{\text{Pl}}^2})^{3/2} = \frac{T_{\text{GUT}}^6}{M_{\text{Pl}}^3}
+    \]
+    by the assumption of $g_*$ does not change significantly around the GUT scale. \\
+    
+    Recall the entropy density of the universe:
+    \[
+        s = \frac{2 \pi^2}{45} g_{*s} T^3 \sim T^3
+    \]
+    we can hence get the monopole-to-entropy ratio as:
+    \[
+        \frac{n_{\text{mono}}}{s} \sim \frac{T_{\text{GUT}}^6 / M_{\text{Pl}}^3}{T_{\text{GUT}}^3} = \frac{T_{\text{GUT}}^3}{M_{\text{Pl}}^3}
+    \]
+    which is constant after the GUT phase transition. \\
 
+    Finally, we can estimate the relic abundance of magnetic monopoles today as:
+    \begin{align*}
+        \Omega_{0, \text{mono}} &= \frac{\rho_{\text{mono, 0}}}{\rho_{\text{c, 0}}} \\
+        &= \frac{1}{\rho_{\text{c, 0}}} \cdot m_{\text{mono}} \cdot n_{\text{mono, 0}} \\
+        &= \frac{m_{\text{mono}}}{\rho_{\text{c, 0}}} \cdot \frac{n_{\text{mono}}}{s} \cdot s_0 \\
+        &\sim \frac{m_{\text{mono}}}{\rho_{\text{c, 0}}} \cdot \frac{T_{\text{GUT}}^3}{M_{\text{Pl}}^3} \cdot s_0
+    \end{align*}
+    Plugin the value of $s_0 \approx 3000 \text{ cm}^{-3}$, $\rho_{\text{c, 0}} \approx 1.05 \times 10^{-5} \text{ GeV cm}^{-3}$, $M_{\text{Pl}} \approx 1.22 \times 10^{19} \text{ GeV}$, and $T_{\text{GUT}} \sim 10^{15} \text{ GeV} \sim m_{\text{mono}}$, we can get:
+    \begin{align*}
+        \Omega_{0, \text{mono}} &\sim \frac{10^{15} \text{ GeV}}{1.05 \times 10^{-5} \text{ GeV cm}^{-3}} \cdot \frac{(10^{15} \text{ GeV})^3}{(1.22 \times 10^{19} \text{ GeV})^3} \cdot 3000 \text{ cm}^{-3} \\
+        &\sim 10^{11}
+    \end{align*}
+    And hence we will get the relic abundance result in intuition section if using $\text{GeV}$ as the unit for $T_{\text{GUT}}$ and $m_{\text{mono}}$.
+\end{foundation}
 
 
 
@@ -73,31 +185,244 @@
 %\clearpage
 %\bigskip \noindent \bigskip \noindent \bigskip \noindent
 \subsection{General Idea of Inflation}
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.8\textwidth]{inflation_model.png}
+    \caption{The scale factor $a(t)$ of radius of observable universe as a function of time $t$ in the $\Lambda$CDM model (blue) and the inflationary model (red).}
+    \label{fig:inflation}
+\end{figure}
 
+\bigskip \noindent
+\begin{intuition}
+    The general idea of inflation is to introduce a new phase of accelerated expansion in the early universe, which can solve the cosmological puzzles we discussed in the previous section. During inflation, the scale factor $a(t)$ grows exponentially with $10^60$ times in a very short period of time (e.g. $10^{-36}$ to $10^{-32}$ seconds), which is much faster than the power-law growth in the $\Lambda$CDM model. \\
+    
+    This accelerated expansion can stretch the universe and make it appear flat and homogeneous on large scales, thus solving the flatness and horizon problems. Moreover, the rapid expansion can dilute any unwanted relics (e.g. magnetic monopoles), thus solving the relic abundance problem.
+\end{intuition}
 
+\clearpage
+%\bigskip \noindent
+\begin{foundation}
+    We will first go through how inflation can solve the \textbf{flatness problem}. \\
 
+    Written the curvature term in the Friedmann equation as:
+    \begin{align*}
+        | \Omega_0^{'} - 1 | &= \frac{|k|}{a(t_0)^2 H(t_0)^2} \\
+        &= \frac{|k|}{\dot{a}(t_{BB})^2} \cdot \frac{\dot{a}(t_{BB})^2}{\dot{a}(t_{\text{init}})^2} \cdot \frac{\dot{a}(t_{\text{init}})^2}{\dot{a}(t_{\text{end}})^2} \cdot \frac{\dot{a}(t_{\text{end}})^2}{\dot{a}(t_0)^2} \\
+        &= (\Omega^{'}(t_{BB}) - 1) \cdot \frac{\dot{a}(t_{BB})^2}{\dot{a}(t_{\text{init}})^2} \cdot \frac{\dot{a}(t_{\text{init}})^2}{\dot{a}(t_{\text{end}})^2} \cdot \frac{\dot{a}(t_{\text{end}})^2}{\dot{a}(t_0)^2}
+    \end{align*}
 
-% ──────────────────────────────────────────────────────────────────────────────
-%\clearpage
-\bigskip \noindent \bigskip \noindent \bigskip \noindent
-\subsection{General Idea of Inflation}
+    For the $\Lambda$CDM model, the three factors are all of order $\mathcal{O}(1)$, which means that $| \Omega_0^{'} - 1 |$ today is of the same order as $| \Omega^{'}(t_{BB}) - 1 |$ at the Big Bang, and thus we need to fine-tune $| \Omega^{'}(t_{BB}) - 1 |$ to be extremely close to zero to get the observed flatness today, that is the \textbf{flatness problem}. \\
 
+    On the other hand, the inflation model suggest that during the period of 2nd term $\frac{\dot{a}(t_{\text{init}})^2}{\dot{a}(t_{\text{end}})^2}$ is exponentially tiny and suppresses the curvature term and other terms, which can make $| \Omega_0^{'} - 1 |$ today very small even if $| \Omega^{'}(t_{BB}) - 1 |$ is non-negligible, thus solving the \textbf{flatness problem} without violating the CMB observations or using fine-tuning.
+\end{foundation}
 
+\bigskip \noindent
+\begin{foundation}
+    Next, we will go through how inflation can solve the \textbf{horizon problem}. \\
+
+    With inflation, the magnitude of $a(t)$ before the inflationary period end is much smaller compared to the $\Lambda$CDM model, which means that the comoving horizon $\chi(t) = \int_{t_1}^{t_2} \frac{dt}{a(t)}$ duringthe inflationary period is much larger than the $\Lambda$CDM model. \\
+    
+    Therefore, points A and B in the CMB that are separated by a distance larger than $\chi_{rec}$ in the $\Lambda$CDM model can be causally connected before the inflationary period end, and thus they can exchange information and reach thermal equilibrium, which solves the \textbf{horizon problem}.
+\end{foundation}
+
+\bigskip \noindent
+\begin{foundation}
+    Finally, we will go through how inflation can solve the \textbf{relic abundance problem}. \\
+
+    If GUT phase transition occur before the inflation start (i.e. $t_{\text{GUT}} < t_{\text{init}}$), and we have number density of monopoles in today as:
+    \begin{align*}
+        n_{\text{mono, 0}} &= n_{\text{mono, GUT}} \cdot \frac{a(t_{\text{GUT}})}{a(t_{0})} \\
+        &= n_{\text{mono, GUT}} \cdot \frac{a(t_{\text{GUT}})}{a(t_{\text{init}})} \cdot \frac{a(t_{\text{init}})}{a(t_{\text{end}})} \cdot \frac{a(t_{\text{end}})}{a(t_{0})} \\
+    \end{align*}
+    
+    we can see the topological defects (e.g. magnetic monopoles) produced during the GUT phase transition can be diluted by the exponential expansion $\frac{a(t_{\text{init}})}{a(t_{\text{end}})} \ll 10^{11}$ during inflation, and thus their relic abundance can be reduced to a negligible level, which solves the \textbf{relic abundance problem}.
+\end{foundation}
+
+\bigskip \noindent
+\begin{remark}
+    In summary, if the universe experience a period of extremely rapid expansion (i.e. inflation) in the early universe, it can solve the cosmological puzzles (i.e. flatness problem, horizon problem, and relic abundance problem) that the $\Lambda$CDM model cannot explain. To achieve this goal, we need $\frac{a(t_{\text{init}})}{a(t_{\text{end}})} \lesssim e^{-60}$, which means that the scale factor $a(t)$ needs to grow by at least $e^{60}$ times during the inflationary period.
+\end{remark}
 
 % ──────────────────────────────────────────────────────────────────────────────
 %\clearpage
 \bigskip \noindent \bigskip \noindent \bigskip \noindent
 \subsection{Analytical Description}
+\begin{intuition}
+    To achieve accelerated expansion (i.e. $\ddot{a} > 0$), the universe must be dominated by a component with state equation parameter $w < -1/3$. One may wonder if we can achieve this by cosmological constant $\Lambda$. The answer is no, because if the inflation is driven by a cosmological constant, the energy density of universe will always be dominated by the cosmological constant, and thus the universe will always be in an accelerated expansion phase. (as $\rho_\Lambda$ is constant, while $\rho_m$ and $\rho_r$ decrease with scale factor $a$, once the universe enters the $\Lambda$-dominated era, it will never exit it, as universe expands and $\rho_m$ and $\rho_r$ keep decreasing). \\
+    
+    However, we know that the universe has undergone a decelerated expansion phase (i.e. matter-dominated era) after inflation, which is inconsistent with the prediction of a cosmological constant-driven inflation. \\
+    
+    Therefore, we need a dynamical component that can drive inflation and then decay away to allow for the subsequent decelerated expansion phase. This is where the scalar field (inflation) comes in.
+\end{intuition} 
 
+\bigskip \noindent
+\begin{foundation}
+    Consider modeling the matter in the early universe as a homogeneous scalar field $\phi$ with a potential $V(\phi)$. The energy density and pressure of the scalar field can be expressed as:
+    \begin{align*}
+        T_{\mu \nu} &= (\nabla_\mu \phi)(\nabla_\nu \phi) - g_{\mu \nu} \left[
+            \frac{1}{2} g^{\alpha \beta} (\nabla_\alpha \phi)(\nabla_\beta \phi) + V(\phi)
+        \right]
+    \end{align*}
+    By assuming all quantities only depend on time (i.e. homogeneous case) and setting curvature $k=0$ for simplicity, we can be further rewritten as:
+    \begin{align*}
+        T_{00} &= (\nabla_0 \phi)(\nabla_0 \phi) - g_{00} \left[
+            \frac{1}{2} g^{\alpha \beta} (\nabla_\alpha \phi)(\nabla_\beta \phi) + V(\phi) \right] \\ 
+            &= \dot{\phi}^2 - (-1) \left[ \frac{1}{2} \left(
+            g^{00} \dot{\phi}^2 + g^{ij} (0)(0) \right) + V(\phi) \right] \\
+            &= \dot{\phi}^2 - \frac{1}{2} \dot{\phi}^2 + V(\phi) \\
+            &= \frac{1}{2} \dot{\phi}^2 + V(\phi) \\
+        T_{ij} &= (\nabla_i \phi)(\nabla_j \phi) - g_{ij} \left[
+            \frac{1}{2} g^{\alpha \beta} (\nabla_\alpha \phi)(\nabla_\beta \phi) + V(\phi) \right] \\
+            &= 0 - g_{ij} \left[ \frac{1}{2} \left(
+            g^{00} \dot{\phi}^2 + g^{ij} (0)(0) \right) + V(\phi) \right] \\
+            &= - g_{ij} \left[ - \frac{1}{2} \dot{\phi}^2 + V(\phi) \right] \\
+            &= g_{ij}\left[ \frac{1}{2} \dot{\phi}^2 - V(\phi) \right]
+    \end{align*}
+    Recalling the energy-momentum tensor of a perfect fluid:
+    \begin{align*}
+        \begin{cases}
+            T_{00} = \rho \\
+            T_{ij} = p g_{ij}
+        \end{cases}
+    \end{align*}
+    we can identify the energy density and pressure of the scalar field as:
+    \begin{align*}
+        \begin{cases}
+            \rho_\phi = \frac{1}{2} \dot{\phi}^2 + V(\phi) \\
+            p_\phi = \frac{1}{2} \dot{\phi}^2 - V(\phi)
+        \end{cases}
+    \end{align*}
 
+    We can further get the equation of motion for the scalar field $\phi$ by using the conservation of energy (continuity equation) for a perfect fluid in an expanding universe:
+    \begin{align*}
+       \dot{\rho}_\phi + 3 H (\rho_\phi + p_\phi) &= 0 \\
+       \frac{d}{dt} \left( \frac{1}{2} \dot{\phi}^2 + V(\phi) \right) + 3 H \left( \frac{1}{2} \dot{\phi}^2 + V(\phi) + \frac{1}{2} \dot{\phi}^2 - V(\phi) \right) &= 0 \\
+       \dot{\phi} \ddot{\phi} + V'(\phi) \dot{\phi} + 3 H \dot{\phi}^2 &= 0 \\
+       \ddot{\phi} + 3 H \dot{\phi} + \frac{dV}{d\phi} &= 0
+    \end{align*}
+    with assuming $\dot{\phi} \neq 0$. This is the equation of motion for the scalar field $\phi$ in an expanding universe, and it is also known as the Klein-Gordon equation in curved spacetime. \\
 
+    Furthermore, the 1st Friedmann equation can be rewritten as:
+    \[
+        H^2 = \frac{8 \pi G}{3} \rho_\phi = \frac{8 \pi G}{3} \left( \frac{1}{2} \dot{\phi}^2 + V(\phi) \right)
+    \]
+    such that we can get the scale factor during inflation as:
+    \begin{align*}
+        \frac{\dot{a}}{a} &= H\\
+        \int_{a_{init}}^{a_{end}} \frac{da}{a} &= \int_{t_{init}}^{t_{end}} H dt \\
+        \ln \left( \frac{a_{end}}{a_{init}} \right) &= \int_{t_{init}}^{t_{end}} H dt \\
+        a(t_{end}) &= a(t_{init}) e^{\int_{t_{init}}^{t_{end}} H dt}
+    \end{align*}
+\end{foundation}
 
+\begin{theory}
+    Assuming the homogeneous case, which all quantities only depend on time and set curvature $k=0$ for simplicity, the energy momentum tensor of the homogeneous scalar field will take the form of a perfect fluid:
+    \begin{align*}
+        \begin{cases}
+            T_{00} = \rho_\phi = \frac{1}{2} \dot{\phi}^2 + V(\phi) \\
+            T_{ii} = p_\phi = \frac{1}{2} \dot{\phi}^2 - V(\phi)
+        \end{cases}
+    \end{align*}
 
+    And we write the continuity equation for the scalar field $\phi$ as:
+    \[
+       \ddot{\phi} + 3 H \dot{\phi} + \frac{dV}{d\phi} = 0
+    \]
+    by the assumption of $\dot{\phi} \neq 0$, and where:
+    \[
+        H^2 = \frac{8 \pi G}{3} \rho_\phi = \frac{8 \pi G}{3} \left( \frac{1}{2} \dot{\phi}^2 + V(\phi) \right)
+    \]
+    such that:
+    \[
+        a(t_{end}) = a(t_{init}) e^{\int_{t_{init}}^{t_{end}} H dt}
+    \]
+\end{theory}
+
+\bigskip \noindent
+\begin{foundation}
+    Meanwhile, the 2nd Friedmann equation can be rewritten as:
+    \begin{align*}
+        \frac{\ddot{a}}{a} &= - \frac{4 \pi G}{3} (\rho_\phi + 3 p_\phi) \\
+        &= - \frac{4 \pi G}{3} \left( \frac{1}{2} \dot{\phi}^2 + V(\phi) + 3 \left( \frac{1}{2} \dot{\phi}^2 - V(\phi) \right) \right) \\
+        &= - \frac{4 \pi G}{3} \left( 2 \dot{\phi}^2 - 2 V(\phi) \right) \\
+        &= - \frac{8 \pi G}{3} \left( \dot{\phi}^2 - V(\phi) \right)
+    \end{align*}
+\end{foundation}
+
+\begin{theory}
+    Hence, the equation of state parameter $w_\phi$ can be expressed as:
+    \[
+    w_\phi = \frac{p_\phi}{\rho_\phi} = \frac{\frac{1}{2} \dot{\phi}^2 - V(\phi)}{\frac{1}{2} \dot{\phi}^2 + V(\phi)}
+    \]
+    and the 2nd Friedmann equation can be rewritten as:
+    \[
+        \frac{\ddot{a}}{a} = \frac{8 \pi G}{3} \left( V(\phi) - \dot{\phi}^2 \right)
+    \]
+
+    Therefore, for inflation-dominated universe, the condition for accelerated expansion (i.e. $\ddot{a} > 0$) is:
+    \[
+        V(\phi) > \dot{\phi}^2
+    \]
+    and the deceleration condition (i.e. $\ddot{a} < 0$) is:
+    \[
+        V(\phi) < \dot{\phi}^2
+    \]
+\end{theory}
+
+\bigskip \noindent
+\begin{intuition}
+    We can see that the condition for inflation (i.e. $V(\phi) > \dot{\phi}^2$) is equivalent to the condition for negative pressure (i.e. $p_\phi < 0$), which is consistent with our previous understanding that negative pressure is required for accelerated expansion. 
+
+    Generally, to achieve successful inflation, we need the "slow-roll" condition:
+    \itemize{
+        \item $V(\phi) \gg \dot{\phi}^2$: the potential energy dominates over the kinetic energy, which ensures that the equation of state parameter $w_\phi$ is close to $-1$, and the universe undergoes accelerated expansion.
+        \item $| \ddot{\phi} | \ll 3 H \dot{\phi}$: the acceleration of the scalar field is negligible compared to the friction term $3 H \dot{\phi}$, which allows the scalar field to slowly roll down the potential, and sustain the inflationary phase for a sufficient duration.
+    }
+\end{intuition}
 
 % ──────────────────────────────────────────────────────────────────────────────
 %\clearpage
 \bigskip \noindent \bigskip \noindent \bigskip \noindent
 \subsection{Gravitational Wave as Echoes of Inflation}
+\begin{intuition}
+    One of the most important predictions of inflation is the generation of primordial gravitational waves, which we can probe by measuring the B-mode polarization of the CMB. Recall Thomson scattering:
+    \[
+        \gamma + e^- \rightarrow \gamma + e^-
+    \]
+    Thomson scattering is the low-energy limit of the more general Compton scattering process, and it is the dominant mechanism for generating CMB polarization at the last scattering surface. When photons Thomson-scatter off free electrons in the presence of a quadrupole temperature anisotropy, linear polarization is produced. This polarization can be decomposed into E-mode and B-mode components. \\
+    
+    At linear order, scalar perturbations (density fluctuations) only generate E-modes, while tensor perturbations (gravitational waves) generate both E- and B-modes. Therefore, a detection of primordial B-mode polarization would directly reveal the presence of inflationary gravitational waves, providing a powerful test of the inflationary paradigm.
+\end{intuition}
+
+\bigskip \noindent
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=0.8\textwidth]{thomson_scattering.png}
+    \caption{Polarization generated by Thomson scattering. The incoming radiation has a quadrupole anisotropy, which leads to the generation of linear polarization in the outgoing radiation.}
+    \label{fig:thomson_scattering}
+\end{figure}
+
+\begin{intuition}
+    WLOG, we consider incoming radiation from the left scattering by 90° out of the screen toward the observer. Since photons cannot be polarized along their direction of propagation (no longitudinal polarization), the incoming radiation from the left can only be polarized in the vertical direction (transverse to propagation). Therefore, the outgoing radiation will be polarized vertically as well.\\
+
+    Similarly, incoming radiation from the top can only be polarized horizontally, producing horizontally polarized outgoing radiation.\\
+
+    Hence, if the incoming radiation from left and top have equal intensity, the outgoing radiation will be unpolarized as the vertical and horizontal components cancel. However, if they have different intensities, the outgoing radiation will be linearly polarized. This polarization pattern encodes the quadrupole anisotropy ($m = 2$) of the incoming CMB radiation.\\
+
+    Crucially, scalar perturbations (density fluctuations) generate only E-mode polarization, while tensor perturbations (primordial gravitational waves from inflation) generate both E-mode and B-mode polarization. Therefore, detecting the characteristic B-mode polarization pattern allows us to isolate the signal from primordial gravitational waves and test inflation.
+\end{intuition}
+
+\bigskip \noindent
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=0.8\textwidth]{B-mode_pattern.png}
+    \caption{Quadrupole anisotropy of CMB and the resulting B-mode polarization pattern of its radiation polarization.}
+    \label{fig:B-mode_pattern}
+\end{figure}
+
+\begin{intuition}
+    The hot spots (red) and cold spots (blue) in the CMB has different photon density (recall $\gamma \propto T^3$), and it leads to the quadrupole anisotropy of the incoming radiation.
+\end{intuition}
 
 
 
