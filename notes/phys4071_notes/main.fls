@@ -884,6 +884,7 @@ INPUT ./images/gravitational_microlensing.png
 INPUT ./images/gravitational_microlensing.png
 INPUT ./images/gravitational_microlensing.png
 INPUT ./images/gravitational_microlensing.png
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/vf/adobe/palatino/pplb7t.vf
 INPUT ./images/comoving_number_density.png
 INPUT ./images/comoving_number_density.png
 INPUT ./images/comoving_number_density.png

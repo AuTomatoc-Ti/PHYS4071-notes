@@ -357,45 +357,10 @@ In the below sub-sections, we will discuss the properties of dark matter in a in
     In real case, the stage of $n_{\chi,\mathrm{eq}} < n_\chi$ is just short as when $m_\chi < T$, the decay rate $\Gamma_\chi \propto n_{\chi,\mathrm{eq}}$ also drops as $e^{-m_\chi/T}$, which means the 2 conditions nearly happen at the same time, and the freeze-out happens immediately after the DM particles are no longer in thermal equilibrium. So we can treat the intermediate stage and freeze-out stage as the same stage.
 \end{remark}
 
-
 % ──────────────────────────────────────────────────────────────────────────────
 %\clearpage
 \bigskip \noindent \bigskip \noindent \bigskip \noindent
-\subsection{Freeze-out Temperature}
-%\bigskip \noindent
-\begin{intuition}
-    Through the above Boltzmann equation, we can see that the term $\langle \sigma_{\chi \bar{\chi}} v \rangle$ is the key parameter that determines the relic abundance of DM particles. If $\langle \sigma_{\chi \bar{\chi}} v \rangle$ is too large, the DM particles will annihilate too efficiently during the $n_{\chi,\mathrm{eq}} < n_\chi$ stage, leading to a very small relic abundance. \\
-
-    On the other hand, if $\langle \sigma_{\chi \bar{\chi}} v \rangle$ is too small, the DM particles will not annihilate efficiently, and they will freeze out with a large number density, leading to a relic abundance that exceeds the observed dark matter density. \\
-
-    Now lets find out the freeze-out temperature and the relic abundance of DM particles by solving the Boltzmann equation. We will see that if $\langle \sigma_{\chi \bar{\chi}} v \rangle$ is around the weak scale, we can get the correct relic abundance that matches the observed dark matter density, which is known as the WIMP miracle.
-\end{intuition}
-
-\bigskip \noindent
-\begin{foundation}
-
-\end{foundation}
-
-\bigskip \noindent
-\begin{theory}
-    The freeze-out temperature $T_{\mathrm{FO}}$ can be expressed as:
-    \[
-        x_{\mathrm{FO}} \equiv \frac{m_\chi}{T_{\mathrm{FO}}} \approx \ln \left[ c(c+2) \cdot \sqrt{\frac{45}{8}} \frac{g_\chi}{2 \pi^3} \cdot \frac{m_\chi M_{\text{Pl}} \left( a + 6b / x_{\mathrm{FO}}  \right)}{\sqrt{g_*} \cdot \sqrt{x_{\mathrm{FO}}}} \right]
-    \]
-    with $c \approx 0.5$ is a numerical determined quantity, $g_\chi$ is the number of internal degrees of freedom of the DM particle, $M_{\text{Pl}}$ is the Planck mass, $g_*$ is the effective number of relativistic degrees of freedom at freeze-out, and $a$ and $b$ are the coefficients in the expansion of the thermally averaged annihilation cross section:
-    \[
-        \langle \sigma_{\chi \bar{\chi}} v \rangle = a + b \langle v^2 \rangle + \mathcal{O}(\langle v^4 \rangle)
-    \]
-\end{theory}
-
-
-
-
-% ──────────────────────────────────────────────────────────────────────────────
-\clearpage
-%\bigskip \noindent \bigskip \noindent \bigskip \noindent
-\subsection{Relic Abundance}
-%\bigskip \noindent
+\subsection{Comoving Abundance}
 \begin{foundation}
     First, define the comoving abundance of DM particles as:
     \[
@@ -464,6 +429,7 @@ In the below sub-sections, we will discuss the properties of dark matter in a in
     where we take the assumption that $g_{*s} \approx g_*$ in last step, which is valid when there is no significant change in the number of relativistic degrees of freedom around the freeze-out temperature (i.e. before the neutrino decoupling). \\
 \end{foundation}
 
+\bigskip \noindent
 \begin{theory}
     The Boltzmann equation for the comoving abundance can be written as:
     \[
@@ -472,12 +438,259 @@ In the below sub-sections, we will discuss the properties of dark matter in a in
     with $\lambda = \langle \sigma_{\chi \bar{\chi}} v \rangle \left( \sqrt{\frac{\pi}{45}} \right) \cdot \sqrt{g_{*}} \cdot M_{\mathrm{Pl}} \cdot m_\chi$.
 \end{theory}
 
+
+
+% ──────────────────────────────────────────────────────────────────────────────
+%\clearpage
+\bigskip \noindent \bigskip \noindent \bigskip \noindent
+\subsection{Freeze-out Temperature}
+%\bigskip \noindent
+\begin{intuition}
+    Through the above Boltzmann equation, we can see that the term $\langle \sigma_{\chi \bar{\chi}} v \rangle$ is the key parameter that determines the relic abundance of DM particles. If $\langle \sigma_{\chi \bar{\chi}} v \rangle$ is too large, the DM particles will annihilate too efficiently during the $n_{\chi,\mathrm{eq}} < n_\chi$ stage, leading to a very small relic abundance. \\
+
+    On the other hand, if $\langle \sigma_{\chi \bar{\chi}} v \rangle$ is too small, the DM particles will not annihilate efficiently, and they will freeze out with a large number density, leading to a relic abundance that exceeds the observed dark matter density. \\
+
+    Now lets find out the freeze-out temperature and the relic abundance of DM particles by solving the Boltzmann equation. We will see that if $\langle \sigma_{\chi \bar{\chi}} v \rangle$ is around the weak scale, we can get the correct relic abundance that matches the observed dark matter density, which is known as the WIMP miracle.
+\end{intuition}
+
 \bigskip \noindent
 \begin{foundation}
+    Recall the comoving abundance Boltzmann equation:
+    \[
+        \frac{dY_\chi}{dx} = - \frac{\lambda}{x^2} (Y_\chi^2 - Y_{\chi,\mathrm{eq}}^2)
+    \]
 
+    Around freeze-out the DM is non-relativistic ($x\gg 1$), so using the Maxwell--Boltzmann form
+    \[
+        n_{\chi,\mathrm{eq}}=g_\chi\left(\frac{m_\chi T}{2\pi}\right)^{3/2}e^{-m_\chi/T}=g_\chi\left(\frac{m_\chi T}{2\pi}\right)^{3/2}e^{-x}
+    \]
+    and the radiation-era entropy density
+    \[
+        s=\frac{2\pi^2}{45}g_{*s}T^3\simeq\frac{2\pi^2}{45}g_*T^3
+    \]
+    we get
+    \begin{align*}
+        Y_{\chi,\mathrm{eq}} &= \frac{n_{\chi,\mathrm{eq}}}{s} \\
+        &=\frac{g_\chi\left(\frac{m_\chi T}{2\pi}\right)^{3/2}e^{-x}}{\frac{2\pi^2}{45}g_*T^3} \\
+        &=\frac{45}{2\pi^2}\frac{g_\chi}{g_*}\left(\frac{m_\chi}{2\pi T}\right)^{3/2}e^{-x} \\
+        &=\frac{45}{2\pi^2}\frac{g_\chi}{g_*}\left(\frac{x}{2\pi}\right)^{3/2}e^{-x}
+    \end{align*}
+    Its logarithmic derivative is
+    \[
+        \frac{d\ln Y_{\chi,\mathrm{eq}}}{dx}=\frac{d}{dx}\left[\frac{3}{2}\ln x - x\right]=\frac{3}{2x}-1
+    \]
+
+    \textbf{Define freeze-out as an $\mathcal{O}(1)$ departure from equilibrium.}\\
+    Define the fractional deviation
+    \[
+        \Delta(x)\equiv\frac{Y_\chi-Y_{\chi,\mathrm{eq}}}{Y_{\chi,\mathrm{eq}}}
+        \quad\Rightarrow\quad
+        Y_\chi=(1+\Delta)Y_{\chi,\mathrm{eq}}
+    \]
+    Then the 2 sides of the comoving abundance Boltzmann equation can be written as:
+    \begin{align*}
+        \begin{cases}
+            \frac{dY_\chi}{dx}
+            &=\frac{d}{dx}\big[(1+\Delta)Y_{\chi,\mathrm{eq}}\big]
+            =(1+\Delta)\frac{dY_{\chi,\mathrm{eq}}}{dx}+Y_{\chi,\mathrm{eq}}\frac{d\Delta}{dx}\\
+            Y_\chi^2-Y_{\chi,\mathrm{eq}}^2
+            &=\big[(1+\Delta)^2-1\big]Y_{\chi,\mathrm{eq}}^2
+            =\Delta(\Delta+2)\,Y_{\chi,\mathrm{eq}}^2
+        \end{cases}
+    \end{align*}
+    Substituting into the $dY/dx$ equation gives
+    \[
+        (1+\Delta)\frac{dY_{\chi,\mathrm{eq}}}{dx}+Y_{\chi,\mathrm{eq}}\frac{d\Delta}{dx}
+        =-\frac{s\langle\sigma_{\chi\bar\chi}v\rangle}{Hx}\,\Delta(\Delta+2)\,Y_{\chi,\mathrm{eq}}^2
+    \]
+    We define freeze-out by $\Delta(x_{\mathrm{FO}})=c$ with $c\approx 0.5$ (an empirical ${\cal O}(1)$ constant), and approximate that $\Delta$ varies slowly right at the transition, i.e.
+    \(\left.\frac{d\Delta}{dx}\right|_{x_{\mathrm{FO}}}\approx 0\). Then at $x=x_{\mathrm{FO}}$:
+    \[
+        (1+c)\left|\frac{dY_{\chi,\mathrm{eq}}}{dx}\right|
+        \simeq \frac{s\langle\sigma_{\chi\bar\chi}v\rangle}{Hx_{\mathrm{FO}}}\,c(c+2)\,Y_{\chi,\mathrm{eq}}^2
+    \]
+    Divide by $Y_{\chi,\mathrm{eq}}$ and use
+    \(\left|\frac{d\ln Y_{\chi,\mathrm{eq}}}{dx}\right|=1-\frac{3}{2x}\simeq 1\) for $x\gg 1$:
+    \[
+        Y_{\chi,\mathrm{eq}}(x_{\mathrm{FO}})
+        \simeq \frac{Hx_{\mathrm{FO}}}{s\langle\sigma_{\chi\bar\chi}v\rangle}\,\frac{1+c}{c(c+2)}
+        \approx \frac{Hx_{\mathrm{FO}}}{s\langle\sigma_{\chi\bar\chi}v\rangle}\,\frac{1}{c(c+2)}
+    \]
+    The $(1+c)$ term is dropped as the pre-factors of order unity(e.g. $c=0.5$) are negligible on the results of $x_{\mathrm{FO}}$. \\
+
+    \textbf{Use radiation-era $H(T)$ and solve for $x_{\mathrm{FO}}$.}\\
+    In radiation domination
+    \[
+        H=\sqrt{\frac{4\pi^3g_*}{45}}\,\frac{T^2}{M_{\text{Pl}}},\qquad s\simeq\frac{2\pi^2}{45}g_*T^3
+    \]
+    and $T=m_\chi/x$, we get:
+    \begin{align*}
+        RHS &= \frac{1}{c(c+2) \langle\sigma_{\chi\bar\chi}v\rangle} \cdot \frac{H}{s} \cdot x_{\mathrm{FO}} \\
+        &= \frac{1}{c(c+2) \langle\sigma_{\chi\bar\chi}v\rangle} \cdot \frac{\sqrt{\frac{4\pi^3 g_*}{45}} \frac{T^2}{M_{\text{Pl}}}}{\frac{2\pi^2}{45} g_* T^3} \cdot x_{\mathrm{FO}} \\
+        &= \frac{1}{c(c+2) \langle\sigma_{\chi\bar\chi}v\rangle} \cdot \sqrt{\frac{45}{\pi g_*}} \cdot \frac{1}{ T M_{\text{Pl}} } \cdot x_{\mathrm{FO}} \\
+        &= \frac{1}{c(c+2) \langle\sigma_{\chi\bar\chi}v\rangle} \cdot \sqrt{\frac{45}{\pi g_*}} \cdot \frac{x_{\mathrm{FO}}}{ m_\chi M_{\text{Pl}} } \cdot x_{\mathrm{FO}} \\
+        &= \frac{1}{c(c+2) \langle\sigma_{\chi\bar\chi}v\rangle} \cdot \sqrt{\frac{45}{\pi g_*}} \cdot \frac{x_{\mathrm{FO}}^2}{ m_\chi M_{\text{Pl}} }
+    \end{align*}
+    Now back to the LHS, we have
+    \begin{align*}
+        LHS &= Y_{\chi,\mathrm{eq}}(x_{\mathrm{FO}}) \\
+        &= \frac{45}{2\pi^2} \frac{g_\chi}{g_*} \left( \frac{x_{\mathrm{FO}}}{2\pi} \right)^{3/2} e^{-x_{\mathrm{FO}}}
+    \end{align*}
+    Equating the 2 sides and rearranging gives:
+    \small
+    \begin{align*}
+        \frac{45}{2\pi^2} \frac{g_\chi}{g_*} \left( \frac{x_{\mathrm{FO}}}{2\pi} \right)^{3/2} e^{-x_{\mathrm{FO}}} &\simeq \frac{1}{c(c+2) \langle\sigma_{\chi\bar\chi}v\rangle} \cdot \sqrt{\frac{45}{\pi g_*}} \cdot \frac{x_{\mathrm{FO}}^2}{ m_\chi M_{\text{Pl}} } \\
+        e^{-x_{\mathrm{FO}}} &\simeq \left[ \frac{1}{c(c+2) \langle\sigma_{\chi\bar\chi}v\rangle} \cdot \sqrt{\frac{45}{\pi g_*}} \cdot \frac{1}{m_\chi M_{\text{Pl}}} \right] \cdot \left[ \frac{2^{\frac{5}{2}}\pi^{\frac{7}{2}}}{45} \frac{g_*}{g_\chi} \right] \cdot \frac{x_{\mathrm{FO}}^2}{x_{\mathrm{FO}}^{3/2}} \\
+        e^{x_{\mathrm{FO}}} &\simeq c(c+2) \cdot \sqrt{\frac{45}{8}} \frac{g_\chi}{2 \pi^3} \cdot \frac{m_\chi M_{\text{Pl}} \left( a + 6b / x_{\mathrm{FO}}  \right)}{\sqrt{g_*} \cdot \sqrt{x_{\mathrm{FO}}}}
+    \end{align*}
+    \normalsize
 \end{foundation}
 
+\bigskip \noindent
+\begin{theory}
+    The freeze-out temperature $T_{\mathrm{FO}}$ can be expressed as:
+    \[
+        x_{\mathrm{FO}} \equiv \frac{m_\chi}{T_{\mathrm{FO}}} \approx \ln \left[ c(c+2) \cdot \sqrt{\frac{45}{8}} \frac{g_\chi}{2 \pi^3} \cdot \frac{m_\chi M_{\text{Pl}} \left( a + 6b / x_{\mathrm{FO}}  \right)}{\sqrt{g_*} \cdot \sqrt{x_{\mathrm{FO}}}} \right]
+    \]
+    with $c \approx 0.5$ is a numerical determined quantity, $g_\chi$ is the number of internal degrees of freedom of the DM particle, $M_{\text{Pl}}$ is the Planck mass, $g_*$ is the effective number of relativistic degrees of freedom at freeze-out, and $a$ and $b$ are the coefficients in the expansion of the thermally averaged annihilation cross section:
+    \[
+        \langle \sigma_{\chi \bar{\chi}} v \rangle = a + b \langle v^2 \rangle + \mathcal{O}(\langle v^4 \rangle)
+    \]
+\end{theory}
+
+\bigskip \noindent
+\begin{remark}
+    For non-relativistic annihilation we expand
+    \(\langle\sigma v\rangle=a+b\langle v_{\mathrm{rel}}^2\rangle+\cdots\).
+    Equipartition for one particle gives $\langle v^2\rangle=3T/m_\chi=3/x$. For two equal-mass particles,
+    $\langle v_{\mathrm{rel}}^2\rangle=\langle|\mathbf v_1-\mathbf v_2|^2\rangle=\langle v_1^2\rangle+\langle v_2^2\rangle=2\langle v^2\rangle=6/x$,
+    hence $\langle\sigma v\rangle\simeq a+6b/x$.
+\end{remark}
+
+
+\bigskip \noindent
+\begin{remark}
+    \textbf{Typical value of $x_{\mathrm{FO}}\sim 20$--$30$.}\\
+    The equation has the schematic form
+    \[
+        x_{\mathrm{FO}}\simeq \ln\!\left(\frac{A}{\sqrt{x_{\mathrm{FO}}}}\right),
+        \qquad
+        A\equiv c(c+2)\,\sqrt{\frac{45}{8}}\,\frac{g_\chi}{2\pi^3}\cdot \frac{m_\chi M_{\text{Pl}}\,\langle\sigma v\rangle}{\sqrt{g_*}}
+    \]
+    For WIMP-like parameters $g_\chi\sim\mathcal{O}(1)$, $g_*\sim 10^2$, $m_\chi\sim 10^2$--$10^3\,\mathrm{GeV}$, and a weak-scale annihilation rate
+    $\langle\sigma v\rangle\sim 3\times 10^{-26}\,\mathrm{cm}^3/\mathrm{s}\sim 10^{-9}\,\mathrm{GeV}^{-2}$,
+    the dimensionless combination $A$ is typically enormous ($A\sim 10^9$--$10^{13}$), so $\ln A\sim 20$--$30$.
+    The extra $-\tfrac{1}{2}\ln x_{\mathrm{FO}}$ term only gives a mild (logarithmic) correction, so iterating once already lands in the same range.
+\end{remark}
+
+
+
+% ──────────────────────────────────────────────────────────────────────────────
+\clearpage
+%\bigskip \noindent \bigskip \noindent \bigskip \noindent
+\subsection{Relic Abundance}
 %\bigskip \noindent
+\begin{foundation}
+
+    Now we derive an analytic estimate for the late-time comoving abundance $Y_\chi(\infty)$ and convert it into $\Omega_\chi h^2$. \\
+
+    \textbf{1. Post freeze-out approximation.}\\
+    Once $x\gtrsim x_{\mathrm{FO}}$, the equilibrium abundance becomes exponentially small, so $Y_{\chi,\mathrm{eq}}\ll Y_\chi$. The Boltzmann equation
+    \[
+        \frac{dY_\chi}{dx} = -\frac{\lambda}{x^2}\left(Y_\chi^2-Y_{\chi,\mathrm{eq}}^2\right)
+    \]
+    simplifies to
+    \[
+        \frac{dY_\chi}{dx}\simeq -\frac{\lambda(x)}{x^2}Y_\chi^2
+    \]
+    Rewrite it as an equation for $1/Y_\chi$ by $\frac{d}{dx}\left(\frac{1}{Y_\chi}\right) = -\frac{1}{Y_\chi^2}\frac{dY_\chi}{dx}$, we get:
+    \begin{align*}
+        \frac{dY_\chi}{dx} &= -\frac{\lambda(x)}{x^2}Y_\chi^2 \\
+        \Rightarrow\quad \frac{d}{dx}\left(\frac{1}{Y_\chi}\right) &= \frac{\lambda(x)}{x^2}
+    \end{align*}
+    Integrating from $x_{\mathrm{FO}}$ to $\infty$ gives
+    \[
+        \frac{1}{Y_\chi(\infty)} = \frac{1}{Y_\chi(x_{\mathrm{FO}})} + \int_{x_{\mathrm{FO}}}^{\infty}\frac{\lambda(x')}{x'^2}\,dx'
+    \]
+    Note that present day abundance is much smaller than the abundance at freeze-out, so $Y_\chi(\infty)\ll Y_\chi(x_{\mathrm{FO}})$, which means $\frac{1}{Y_\chi(\infty)}\gg \frac{1}{Y_\chi(x_{\mathrm{FO}})}$, thus we can neglect the first term on the RHS and get:
+    \[
+        \frac{1}{Y_\chi(\infty)}\simeq \int_{x_{\mathrm{FO}}}^{\infty}\frac{\lambda(x')}{x'^2}\,dx'
+    \]
+
+    \textbf{2. Include the $s$-wave and $p$-wave contributions.}\\
+    For non-relativistic annihilation we expand
+    \[
+        \langle\sigma_{\chi\bar\chi}v\rangle = a + b\,\langle v_{\mathrm{rel}}^2\rangle + \cdots
+    \]
+    Equipartition for one particle gives
+    \[
+        \frac{1}{2}m_\chi\langle v^2\rangle = \frac{3}{2}T
+        \quad\Rightarrow\quad
+        \langle v^2\rangle = \frac{3T}{m_\chi} = \frac{3}{x}
+    \]
+    For two equal-mass particles, $\mathbf{v}_{\mathrm{rel}}=\mathbf{v}_1-\mathbf{v}_2$ and $\langle \mathbf{v}_1\cdot\mathbf{v}_2\rangle=0$, hence
+    \[
+        \langle v_{\mathrm{rel}}^2\rangle = \langle v_1^2\rangle + \langle v_2^2\rangle = 2\langle v^2\rangle = \frac{6}{x}
+    \]
+    Therefore
+    \[
+        \langle\sigma_{\chi\bar\chi}v\rangle(x)\simeq a + \frac{6b}{x}
+    \]
+
+    \textbf{3. Perform the freeze-out integral explicitly.}\\
+    Using $\lambda(x)=\sqrt{\pi/45}\,\sqrt{g_*}\,M_{\mathrm{Pl}}\,m_\chi\,\langle\sigma v\rangle(x)$,
+    \begin{align*}
+        \frac{1}{Y_\chi(\infty)}
+        &\simeq \sqrt{\frac{\pi}{45}}\,\sqrt{g_*}\,M_{\mathrm{Pl}}\,m_\chi
+        \int_{x_{\mathrm{FO}}}^{\infty}\frac{\langle\sigma v\rangle(x')}{x'^2}\,dx' \\
+        &\simeq \sqrt{\frac{\pi}{45}}\,\sqrt{g_*}\,M_{\mathrm{Pl}}\,m_\chi
+        \int_{x_{\mathrm{FO}}}^{\infty}\left(\frac{a}{x'^2}+\frac{6b}{x'^3}\right)dx'
+    \end{align*}
+    Evaluate each integral:
+    \begin{align*}
+        \begin{cases}
+            \int_{x_{\mathrm{FO}}}^{\infty}\frac{a}{x'^2}dx' &= \left[-\frac{a}{x'}\right]_{x_{\mathrm{FO}}}^{\infty}=\frac{a}{x_{\mathrm{FO}}}, \\
+            \int_{x_{\mathrm{FO}}}^{\infty}\frac{6b}{x'^3}dx' &= 6b\left[-\frac{1}{2x'^2}\right]_{x_{\mathrm{FO}}}^{\infty}=\frac{3b}{x_{\mathrm{FO}}^2}
+        \end{cases}
+    \end{align*}
+    Thus
+    \[
+        \frac{1}{Y_\chi(\infty)}\simeq \sqrt{\frac{\pi}{45}}\,\sqrt{g_*}\,M_{\mathrm{Pl}}\,m_\chi\left(\frac{a}{x_{\mathrm{FO}}}+\frac{3b}{x_{\mathrm{FO}}^2}\right)
+        = \sqrt{\frac{\pi}{45}}\,\sqrt{g_*}\,M_{\mathrm{Pl}}\,m_\chi\,\frac{a+3b/x_{\mathrm{FO}}}{x_{\mathrm{FO}}}
+    \]
+    Inverting,
+    \[
+        Y_\chi(\infty)\simeq \frac{x_{\mathrm{FO}}}{\sqrt{\pi/45}\,\sqrt{g_*}\,M_{\mathrm{Pl}}\,m_\chi\left(a+3b/x_{\mathrm{FO}}\right)}
+    \]
+
+    \textbf{4. Convert $Y_\chi(\infty)$ to $\Omega_\chi h^2$.}\\
+    Since $Y\equiv n/s$, the present number density is $n_{\chi,0}=s_0 Y_\chi(\infty)$ and
+    \[
+        \rho_{\chi,0}=m_\chi n_{\chi,0}=m_\chi s_0 Y_\chi(\infty)
+    \]
+    With $\Omega_\chi\equiv \rho_{\chi,0}/\rho_{c,0}$ and $\rho_{c,0}=3H_0^2/(8\pi G)$, we have
+    \[
+        \Omega_\chi h^2 = \frac{\rho_{\chi,0}}{\rho_{c,0}/h^2} = \frac{m_\chi s_0 Y_\chi(\infty)}{\rho_{c,0}/h^2}
+    \]
+    Using the standard present-day values
+    \[
+        s_0\simeq 2.9\times10^3\,\mathrm{cm^{-3}},\qquad \frac{\rho_{c,0}}{h^2}\simeq 1.05\times10^{-5}\,\mathrm{GeV\,cm^{-3}}
+    \]
+    gives
+    \[
+        \Omega_\chi h^2\simeq 2.8\times10^8\left(\frac{m_\chi}{\mathrm{GeV}}\right)Y_\chi(\infty)
+    \]
+    Substituting $Y_\chi(\infty)$ shows the dependence on the annihilation cross section (the factor $m_\chi$ cancels):
+    \[
+        \Omega_\chi h^2 \propto \frac{x_{\mathrm{FO}}}{\sqrt{g_*}\,\left(a+3b/x_{\mathrm{FO}}\right)}
+    \]
+    After inserting numerical constants and expressing $\langle\sigma v\rangle$ in $\mathrm{cm^3/s}$, we obtain the practical estimate:
+    \[
+        \Omega_\chi h^2 \approx 0.1 \left( \frac{x_{\mathrm{FO}}}{20} \right) \left( \frac{g_*}{80} \right)^{-1/2} \left( \frac{a + 3b/x_{\mathrm{FO}}}{3 \times 10^{-26} \, \mathrm{cm}^3/\mathrm{s}} \right)^{-1}
+    \]
+\end{foundation}
+
+\bigskip \noindent
 \begin{theory}
     The relic abundance of DM particles can be expressed as:
     \[

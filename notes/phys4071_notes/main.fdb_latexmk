@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber main"] 1777297762.53284 "main.bcf" "main.bbl" "main" 1778444984.42104 0
-  "main.bcf" 1778444984.13474 108292 59816962e8c6b85c083254c7680d0158 "pdflatex"
+["biber main"] 1777297762.53284 "main.bcf" "main.bbl" "main" 1778518542.61181 0
+  "main.bcf" 1778518542.32864 108292 59816962e8c6b85c083254c7680d0158 "pdflatex"
   "references.bib" 1777899805.26983 2439 3d128f4bd794e756d91ccdf49abe3f45 ""
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1778444971.90573 "main.tex" "main.pdf" "main" 1778444984.4214 2
+["pdflatex"] 1778518530.45279 "main.tex" "main.pdf" "main" 1778518542.61218 2
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1136849721 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -52,6 +52,7 @@
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb" 1136849748 52406 dad2f72863a03727d5f536c64a69c452 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb" 1136849748 52665 661b1e6b26edb5f50dd491f8a701cb57 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb" 1136849748 50022 90249cba7e3e4e9845f80328d6f9bd13 ""
+  "/usr/local/texlive/2025/texmf-dist/fonts/vf/adobe/palatino/pplb7t.vf" 1136768653 1380 798ef26de8f0a21f37c9b1147f4fe5d8 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/vf/adobe/palatino/pplb8t.vf" 1136768653 2316 c3899bd8afb459a9a5a9a546bf3029a2 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/vf/adobe/palatino/pplbc8t.vf" 1136768653 3612 0205664e8a6f7d59ac2e3eb147448710 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/vf/adobe/palatino/pplr7t.vf" 1136768653 1380 037725697594405988999f61172f52de ""
@@ -271,7 +272,7 @@
   "chapters/ch05_thermodynamics_and_primordial_soup.tex" 1774686814.29995 65502 556acf843d43355b5c89adb3a3335451 ""
   "chapters/ch06_Big_Bang_nucleosynthesis.tex" 1775330903.38952 29539 c3d8b2aa0b0d4e965b319cedcb8155de ""
   "chapters/ch07_Cosmic_Microwave_Background.tex" 1777899805.15174 118601 2a8256d88980344e65a27187d10167c6 ""
-  "chapters/ch08_dark_matter.tex" 1778444970.76835 83574 e1f5ff6118dbbe98e8eb8bbdcff995c4 ""
+  "chapters/ch08_dark_matter.tex" 1778518522.64893 95729 dc28f2fb45defd023c2121ba9cf0a154 ""
   "chapters/ch09_inflation.tex" 1778433604.70563 29965 5c063265d704e174dd58c7afde5adc0a ""
   "chapters/intro.tex" 1774686359.97775 10892 c91d4b717fbdd6682b504c62d9e0bb68 ""
   "images/B-mode_pattern.png" 1778417752.25612 174798 e657c551cf7c7cc57dde29766ecfadca ""
@@ -325,12 +326,12 @@
   "images/universe_evolution.png" 1774723003.76484 757297 224958546c16d20f4b0aa0aa62e91708 ""
   "images/universe_evolution_2.png" 1774773105.75897 786377 292aeddda7243d1b771c93d57f91c214 ""
   "images/universe_evolution_3.png" 1774783004.9567 346275 faa3ee519acf57e5e9dfb973953a9408 ""
-  "main.aux" 1778444984.12837 44177 9ade22502dca9f0826a26a698968b6f9 "pdflatex"
+  "main.aux" 1778518542.32261 44308 944a93360c6271ac58db3d187d11d8f7 "pdflatex"
   "main.bbl" 1777899805.17916 11599 f9c143c658625a212dbf0d1ad9b4e100 "biber main"
-  "main.out" 1778444984.13184 29805 3c4657a659264bd8ca1f0e663372c189 "pdflatex"
-  "main.run.xml" 1778444984.13566 2339 701c5599c28a236675e0b8fb56d35042 "pdflatex"
+  "main.out" 1778518542.3258 29961 6dbbdb154e3333a3ebc07333665649dd "pdflatex"
+  "main.run.xml" 1778518542.32932 2339 701c5599c28a236675e0b8fb56d35042 "pdflatex"
   "main.tex" 1777909855.32946 6709 a8d3928126569c95966960d4eefcb336 ""
-  "main.toc" 1778444984.13573 14034 f953dc54754fe2c961a3f845f1d0f51c "pdflatex"
+  "main.toc" 1778518542.3294 14124 0b18de209879c08b56332a65a43b6fb5 "pdflatex"
   "preamble.tex" 1774686359.5372 14010 f12fdc68b1b126321a770ff73050c267 ""
   (generated)
   "main.aux"
