@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2026.2.19)  12 MAY 2026 00:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2026.2.19)  12 MAY 2026 16:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1380,6 +1380,20 @@ LaTeX Font Info:    Font shape `U/msb/m/n' will be
 
 
 [5] (./chapters/intro.tex
+Underfull \hbox (badness 10000) in paragraph at lines 15--19
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 21--26
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 29--30
+
+ []
+
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
@@ -1454,7 +1468,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 358--360
 
  []
 
-<images/energy_momentum_tensor.png, id=1029, 452.69125pt x 254.9525pt>
+<images/energy_momentum_tensor.png, id=1031, 452.69125pt x 254.9525pt>
 File: images/energy_momentum_tensor.png Graphic file (type png)
 <use images/energy_momentum_tensor.png>
 Package pdftex.def Info: images/energy_momentum_tensor.png  used on input line 
@@ -1584,7 +1598,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 216--218
 
 
 [28]
-<images/balloon_expansion.png, id=1081, 705.63625pt x 266.9975pt>
+<images/balloon_expansion.png, id=1083, 705.63625pt x 266.9975pt>
 File: images/balloon_expansion.png Graphic file (type png)
 <use images/balloon_expansion.png>
 Package pdftex.def Info: images/balloon_expansion.png  used on input line 224.
@@ -1685,7 +1699,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 420--421
 
  []
 
-<images/hubble_diagram.png, id=1105, 912.40875pt x 443.6575pt>
+<images/hubble_diagram.png, id=1108, 912.40875pt x 443.6575pt>
 File: images/hubble_diagram.png Graphic file (type png)
 <use images/hubble_diagram.png>
 Package pdftex.def Info: images/hubble_diagram.png  used on input line 427.
@@ -1783,7 +1797,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 660--661
 
 
 [40]
-<images/penrose_event_horizon.png, id=1140, 561.09625pt x 221.82875pt>
+<images/penrose_event_horizon.png, id=1142, 561.09625pt x 221.82875pt>
 File: images/penrose_event_horizon.png Graphic file (type png)
 <use images/penrose_event_horizon.png>
 Package pdftex.def Info: images/penrose_event_horizon.png  used on input line 7
@@ -1797,7 +1811,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 716--717
 
 
 [41 <./images/penrose_event_horizon.png>]
-<images/penrose_particle_horizon.png, id=1147, 504.88625pt x 220.825pt>
+<images/penrose_particle_horizon.png, id=1149, 504.88625pt x 220.825pt>
 File: images/penrose_particle_horizon.png Graphic file (type png)
 <use images/penrose_particle_horizon.png>
 Package pdftex.def Info: images/penrose_particle_horizon.png  used on input lin
@@ -2215,7 +2229,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 933--937
 [68
 
 ]
-<images/lcdm_energy_budget_z_log.png, id=1272, 722.7pt x 505.89pt>
+<images/lcdm_energy_budget_z_log.png, id=1274, 722.7pt x 505.89pt>
 File: images/lcdm_energy_budget_z_log.png Graphic file (type png)
 <use images/lcdm_energy_budget_z_log.png>
 Package pdftex.def Info: images/lcdm_energy_budget_z_log.png  used on input lin
@@ -2224,7 +2238,7 @@ e 985.
 
 
 [69]
-<images/energy_density_evolution.png, id=1278, 601.7682pt x 520.344pt>
+<images/energy_density_evolution.png, id=1280, 601.7682pt x 520.344pt>
 File: images/energy_density_evolution.png Graphic file (type png)
 <use images/energy_density_evolution.png>
 Package pdftex.def Info: images/energy_density_evolution.png  used on input lin
@@ -2234,7 +2248,7 @@ e 992.
 
 [70 <./images/lcdm_energy_budget_z_log.png> <./images/energy_density_evolution.
 png>]
-<images/type_Ia_supernova.png, id=1286, 835.12pt x 855.195pt>
+<images/type_Ia_supernova.png, id=1288, 835.12pt x 855.195pt>
 File: images/type_Ia_supernova.png Graphic file (type png)
 <use images/type_Ia_supernova.png>
 Package pdftex.def Info: images/type_Ia_supernova.png  used on input line 1006.
@@ -2274,7 +2288,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1067--1069
 
  []
 
-<images/luminousity_distance.png, id=1296, 591.20876pt x 663.47874pt>
+<images/luminousity_distance.png, id=1298, 591.20876pt x 663.47874pt>
 File: images/luminousity_distance.png Graphic file (type png)
 <use images/luminousity_distance.png>
 Package pdftex.def Info: images/luminousity_distance.png  used on input line 10
@@ -2366,13 +2380,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 1190--1191
 [77
 
 ]
-<images/universe_evolution.png, id=1320, 1445.4pt x 813.0375pt>
+<images/universe_evolution.png, id=1322, 1445.4pt x 813.0375pt>
 File: images/universe_evolution.png Graphic file (type png)
 <use images/universe_evolution.png>
 Package pdftex.def Info: images/universe_evolution.png  used on input line 1203
 .
 (pdftex.def)             Requested size: 350.53915pt x 197.17996pt.
-<images/universe_evolution_3.png, id=1321, 1117.17375pt x 1003.75pt>
+<images/universe_evolution_3.png, id=1323, 1117.17375pt x 1003.75pt>
 File: images/universe_evolution_3.png Graphic file (type png)
 <use images/universe_evolution_3.png>
 Package pdftex.def Info: images/universe_evolution_3.png  used on input line 12
@@ -2401,13 +2415,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 1374--1375
 
  []
 
-<images/energy_density_budget.png, id=1343, 553.06625pt x 398.48875pt>
+<images/energy_density_budget.png, id=1345, 553.06625pt x 398.48875pt>
 File: images/energy_density_budget.png Graphic file (type png)
 <use images/energy_density_budget.png>
 Package pdftex.def Info: images/energy_density_budget.png  used on input line 1
 392.
 (pdftex.def)             Requested size: 219.08614pt x 157.84824pt.
-<images/universe_evolution_2.png, id=1344, 1445.4pt x 813.0375pt>
+<images/universe_evolution_2.png, id=1346, 1445.4pt x 813.0375pt>
 File: images/universe_evolution_2.png Graphic file (type png)
 <use images/universe_evolution_2.png>
 Package pdftex.def Info: images/universe_evolution_2.png  used on input line 14
@@ -2419,7 +2433,7 @@ Package pdftex.def Info: images/universe_evolution_2.png  used on input line 14
 
  <./images/energy_density_budget.png> <./images/universe_evolution_2.png>]
 Chapter 4.
-<images/standard_model.png, id=1353, 853.1875pt x 640.3925pt>
+<images/standard_model.png, id=1355, 853.1875pt x 640.3925pt>
 File: images/standard_model.png Graphic file (type png)
 <use images/standard_model.png>
 Package pdftex.def Info: images/standard_model.png  used on input line 17.
@@ -2474,7 +2488,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 96--97
 [86
 
 ]
-<images/particles_mass.png, id=1374, 739.76375pt x 433.62pt>
+<images/particles_mass.png, id=1376, 739.76375pt x 433.62pt>
 File: images/particles_mass.png Graphic file (type png)
 <use images/particles_mass.png>
 Package pdftex.def Info: images/particles_mass.png  used on input line 112.
@@ -2638,7 +2652,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 389--391
 [100
 
 ]
-<images/g*_evolution.png, id=1435, 739.76375pt x 457.71pt>
+<images/g*_evolution.png, id=1437, 739.76375pt x 457.71pt>
 File: images/g*_evolution.png Graphic file (type png)
 <use images/g*_evolution.png>
 Package pdftex.def Info: images/g*_evolution.png  used on input line 416.
@@ -2811,7 +2825,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 745--746
 
  []
 
-<images/dependence_interaction_strength.png, id=1477, 736.7525pt x 395.4775pt>
+<images/dependence_interaction_strength.png, id=1479, 736.7525pt x 395.4775pt>
 File: images/dependence_interaction_strength.png Graphic file (type png)
 <use images/dependence_interaction_strength.png>
 Package pdftex.def Info: images/dependence_interaction_strength.png  used on in
@@ -3187,7 +3201,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 187--188
 
 
 [127]
-<images/baryon_to_photon_ratio.png, id=1558, 412.54124pt x 508.90125pt>
+<images/baryon_to_photon_ratio.png, id=1560, 412.54124pt x 508.90125pt>
 File: images/baryon_to_photon_ratio.png Graphic file (type png)
 <use images/baryon_to_photon_ratio.png>
 Package pdftex.def Info: images/baryon_to_photon_ratio.png  used on input line 
@@ -3227,7 +3241,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 279--281
 
 
 [130]
-<images/BBN_interaction_chain.jpg, id=1573, 602.25pt x 383.4325pt>
+<images/BBN_interaction_chain.jpg, id=1575, 602.25pt x 383.4325pt>
 File: images/BBN_interaction_chain.jpg Graphic file (type jpg)
 <use images/BBN_interaction_chain.jpg>
 Package pdftex.def Info: images/BBN_interaction_chain.jpg  used on input line 2
@@ -3245,7 +3259,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 353--354
 
 
 [132]
-<images/time_evolution_abundance.png, id=1583, 544.0325pt x 465.74pt>
+<images/time_evolution_abundance.png, id=1585, 544.0325pt x 465.74pt>
 File: images/time_evolution_abundance.png Graphic file (type png)
 <use images/time_evolution_abundance.png>
 Package pdftex.def Info: images/time_evolution_abundance.png  used on input lin
@@ -3326,7 +3340,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 75--76
 
  []
 
-<images/saha_equation.png, id=1608, 700.6175pt x 434.62375pt>
+<images/saha_equation.png, id=1610, 700.6175pt x 434.62375pt>
 File: images/saha_equation.png Graphic file (type png)
 <use images/saha_equation.png>
 Package pdftex.def Info: images/saha_equation.png  used on input line 83.
@@ -3361,7 +3375,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 123--124
 
 
 [139]
-<images/CMB_frequency_spectrum.png, id=1620, 713.66624pt x 537.00626pt>
+<images/CMB_frequency_spectrum.png, id=1622, 713.66624pt x 537.00626pt>
 File: images/CMB_frequency_spectrum.png Graphic file (type png)
 <use images/CMB_frequency_spectrum.png>
 Package pdftex.def Info: images/CMB_frequency_spectrum.png  used on input line 
@@ -3393,7 +3407,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 173--174
 
  []
 
-<images/CMB_anisotropies.png, id=1631, 757.83125pt x 376.40625pt>
+<images/CMB_anisotropies.png, id=1633, 757.83125pt x 376.40625pt>
 File: images/CMB_anisotropies.png Graphic file (type png)
 <use images/CMB_anisotropies.png>
 Package pdftex.def Info: images/CMB_anisotropies.png  used on input line 190.
@@ -3412,7 +3426,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 210--212
 
  []
 
-<images/CMB_comparison.png, id=1638, 813.0375pt x 456.70625pt>
+<images/CMB_comparison.png, id=1640, 813.0375pt x 456.70625pt>
 File: images/CMB_comparison.png Graphic file (type png)
 <use images/CMB_comparison.png>
 Package pdftex.def Info: images/CMB_comparison.png  used on input line 218.
@@ -3572,7 +3586,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 545--546
 
  []
 
-<images/Real_Spherical_Harmonics_Figure_Table_Complex_2D.png, id=1685, 1927.2pt
+<images/Real_Spherical_Harmonics_Figure_Table_Complex_2D.png, id=1687, 1927.2pt
  x 1009.7725pt>
 File: images/Real_Spherical_Harmonics_Figure_Table_Complex_2D.png Graphic file 
 (type png)
@@ -3580,7 +3594,7 @@ File: images/Real_Spherical_Harmonics_Figure_Table_Complex_2D.png Graphic file
 Package pdftex.def Info: images/Real_Spherical_Harmonics_Figure_Table_Complex_2
 D.png  used on input line 552.
 (pdftex.def)             Requested size: 438.17227pt x 229.57722pt.
-<images/Real_Spherical_Harmonics_Figure_Table_Complex_Polar_Plot.png, id=1686, 
+<images/Real_Spherical_Harmonics_Figure_Table_Complex_Polar_Plot.png, id=1688, 
 2055.68pt x 1541.76pt>
 File: images/Real_Spherical_Harmonics_Figure_Table_Complex_Polar_Plot.png Graph
 ic file (type png)
@@ -3589,7 +3603,7 @@ Package pdftex.def Info: images/Real_Spherical_Harmonics_Figure_Table_Complex_P
 olar_Plot.png  used on input line 560.
 (pdftex.def)             Requested size: 394.35236pt x 295.76048pt.
 <images/Real_Spherical_Harmonics_Figure_Table_Complex_Radial_Magnitude.png, id=
-1687, 1284.8pt x 963.6pt>
+1689, 1284.8pt x 963.6pt>
 File: images/Real_Spherical_Harmonics_Figure_Table_Complex_Radial_Magnitude.png
  Graphic file (type png)
 <use images/Real_Spherical_Harmonics_Figure_Table_Complex_Radial_Magnitude.png>
@@ -3670,7 +3684,7 @@ or  <return>  to continue without it.
 ]
 
 [159]
-<images/angular_power_spectrum.png, id=1724, 660.4675pt x 367.3725pt>
+<images/angular_power_spectrum.png, id=1726, 660.4675pt x 367.3725pt>
 File: images/angular_power_spectrum.png Graphic file (type png)
 <use images/angular_power_spectrum.png>
 Package pdftex.def Info: images/angular_power_spectrum.png  used on input line 
@@ -3725,7 +3739,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 833--835
 [162
 
 ]
-<images/damped_harmonic_oscillator.png, id=1740, 670.505pt x 375.4025pt>
+<images/damped_harmonic_oscillator.png, id=1742, 670.505pt x 375.4025pt>
 File: images/damped_harmonic_oscillator.png Graphic file (type png)
 <use images/damped_harmonic_oscillator.png>
 Package pdftex.def Info: images/damped_harmonic_oscillator.png  used on input l
@@ -3854,7 +3868,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1124--1126
 [170
 
 ]
-<images/angle_multipoles.png, id=1777, 369.38pt x 319.1925pt>
+<images/angle_multipoles.png, id=1779, 369.38pt x 319.1925pt>
 File: images/angle_multipoles.png Graphic file (type png)
 <use images/angle_multipoles.png>
 Package pdftex.def Info: images/angle_multipoles.png  used on input line 1136.
@@ -3907,7 +3921,7 @@ and I'll forget about whatever was undefined.
 ]
 
 [174]
-<images/omega_0_angular_power_spectrum.png, id=1797, 1723.43875pt x 656.4525pt>
+<images/omega_0_angular_power_spectrum.png, id=1799, 1723.43875pt x 656.4525pt>
 
 File: images/omega_0_angular_power_spectrum.png Graphic file (type png)
 <use images/omega_0_angular_power_spectrum.png>
@@ -4312,7 +4326,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1736--1738
 [187
 
 ]
-<images/damping_tail.png, id=1857, 540.0175pt x 373.395pt>
+<images/damping_tail.png, id=1859, 540.0175pt x 373.395pt>
 File: images/damping_tail.png Graphic file (type png)
 <use images/damping_tail.png>
 Package pdftex.def Info: images/damping_tail.png  used on input line 1762.
@@ -4424,7 +4438,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 62--63
 
  []
 
-<images/flat_rotation_curves.png, id=1895, 758.835pt x 394.47375pt>
+<images/flat_rotation_curves.png, id=1897, 758.835pt x 394.47375pt>
 File: images/flat_rotation_curves.png Graphic file (type png)
 <use images/flat_rotation_curves.png>
 Package pdftex.def Info: images/flat_rotation_curves.png  used on input line 70
@@ -4473,7 +4487,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 150--151
 
  []
 
-<images/bullet_cluster.png, id=1910, 579.16376pt x 363.3575pt>
+<images/bullet_cluster.png, id=1912, 579.16376pt x 363.3575pt>
 File: images/bullet_cluster.png Graphic file (type png)
 <use images/bullet_cluster.png>
 Package pdftex.def Info: images/bullet_cluster.png  used on input line 158.
@@ -4499,7 +4513,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 187--188
 [201
 
 ]
-<images/gravitational_microlensing.png, id=1926, 827.09pt x 614.295pt>
+<images/gravitational_microlensing.png, id=1928, 827.09pt x 614.295pt>
 File: images/gravitational_microlensing.png Graphic file (type png)
 <use images/gravitational_microlensing.png>
 Package pdftex.def Info: images/gravitational_microlensing.png  used on input l
@@ -4809,7 +4823,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 595--596
 ]
 
 [215]
-<images/comoving_number_density.png, id=1987, 471.7625pt x 467.7475pt>
+<images/comoving_number_density.png, id=1989, 471.7625pt x 467.7475pt>
 File: images/comoving_number_density.png Graphic file (type png)
 <use images/comoving_number_density.png>
 Package pdftex.def Info: images/comoving_number_density.png  used on input line
@@ -4837,7 +4851,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 714--715
  <./images/comoving_number_density.png>]
 
 [217]
-<images/non_gravitational_DM_detection.png, id=2000, 405.515pt x 384.43625pt>
+<images/non_gravitational_DM_detection.png, id=2002, 405.515pt x 384.43625pt>
 File: images/non_gravitational_DM_detection.png Graphic file (type png)
 <use images/non_gravitational_DM_detection.png>
 Package pdftex.def Info: images/non_gravitational_DM_detection.png  used on inp
@@ -4848,7 +4862,7 @@ ut line 745.
 [218
 
  <./images/non_gravitational_DM_detection.png>]
-<images/DM_exclusion.png, id=2007, 990.70125pt x 676.5275pt>
+<images/DM_exclusion.png, id=2009, 990.70125pt x 676.5275pt>
 File: images/DM_exclusion.png Graphic file (type png)
 <use images/DM_exclusion.png>
 Package pdftex.def Info: images/DM_exclusion.png  used on input line 761.
@@ -4873,7 +4887,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 771--772
 [219
 
  <./images/DM_exclusion.png>]
-<./images/DM_exclusion_2.png, id=2014, 677.53125pt x 490.08093pt>
+<./images/DM_exclusion_2.png, id=2016, 677.53125pt x 490.08093pt>
 File: ./images/DM_exclusion_2.png Graphic file (type png)
 <use ./images/DM_exclusion_2.png>
 Package pdftex.def Info: ./images/DM_exclusion_2.png  used on input line 779.
@@ -4902,7 +4916,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 812--814
 [222
 
 ]
-<images/gamma_ray_fingerprints.png, id=2032, 889.3225pt x 437.635pt>
+<images/gamma_ray_fingerprints.png, id=2034, 889.3225pt x 437.635pt>
 File: images/gamma_ray_fingerprints.png Graphic file (type png)
 <use images/gamma_ray_fingerprints.png>
 Package pdftex.def Info: images/gamma_ray_fingerprints.png  used on input line 
@@ -4965,7 +4979,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 884--886
 [226]
 
 [227]
-<images/positron_fraction_energy_spectrum.png, id=2056, 476.78125pt x 365.365pt
+<images/positron_fraction_energy_spectrum.png, id=2058, 476.78125pt x 365.365pt
 >
 File: images/positron_fraction_energy_spectrum.png Graphic file (type png)
 <use images/positron_fraction_energy_spectrum.png>
@@ -5003,7 +5017,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1024--1025
 [228
 
  <./images/positron_fraction_energy_spectrum.png>]
-<images/cosmic_rays_spectrum_mass.png, id=2063, 445.665pt x 359.3425pt>
+<images/cosmic_rays_spectrum_mass.png, id=2065, 445.665pt x 359.3425pt>
 File: images/cosmic_rays_spectrum_mass.png Graphic file (type png)
 <use images/cosmic_rays_spectrum_mass.png>
 Package pdftex.def Info: images/cosmic_rays_spectrum_mass.png  used on input li
@@ -5016,7 +5030,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1040--1041
 
  []
 
-<images/positron_fraction_energy_spectrum_2.png, id=2072, 830.10126pt x 690.58p
+<images/positron_fraction_energy_spectrum_2.png, id=2074, 830.10126pt x 690.58p
 t>
 File: images/positron_fraction_energy_spectrum_2.png Graphic file (type png)
 <use images/positron_fraction_energy_spectrum_2.png>
@@ -5037,7 +5051,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1078--1079
 [231
 
 ]
-<images/collider_detection.png, id=2089, 589.20125pt x 436.63126pt>
+<images/collider_detection.png, id=2091, 589.20125pt x 436.63126pt>
 File: images/collider_detection.png Graphic file (type png)
 <use images/collider_detection.png>
 Package pdftex.def Info: images/collider_detection.png  used on input line 1096
@@ -5046,7 +5060,7 @@ Package pdftex.def Info: images/collider_detection.png  used on input line 1096
 
 
 [232 <./images/collider_detection.png>]
-<images/DM_candidates.png, id=2096, 1785.67125pt x 1176.395pt>
+<images/DM_candidates.png, id=2098, 1785.67125pt x 1176.395pt>
 File: images/DM_candidates.png Graphic file (type png)
 <use images/DM_candidates.png>
 Package pdftex.def Info: images/DM_candidates.png  used on input line 1135.
@@ -5081,7 +5095,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1156--1157
  <./images/DM_candidates.png>]
 
 [234]
-<images/PBH.png, id=2107, 1297.84875pt x 829.0975pt>
+<images/PBH.png, id=2109, 1297.84875pt x 829.0975pt>
 File: images/PBH.png Graphic file (type png)
 <use images/PBH.png>
 Package pdftex.def Info: images/PBH.png  used on input line 1168.
@@ -5135,7 +5149,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 44--45
 
  []
 
-<./images/flatness_problem.png, id=2123, 1001.7425pt x 558.085pt>
+<./images/flatness_problem.png, id=2125, 1001.7425pt x 558.085pt>
 File: ./images/flatness_problem.png Graphic file (type png)
 <use ./images/flatness_problem.png>
 Package pdftex.def Info: ./images/flatness_problem.png  used on input line 52.
@@ -5156,7 +5170,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 112--113
 
  []
 
-<./images/horizon_problem.png, id=2137, 517.935pt x 251.94125pt>
+<./images/horizon_problem.png, id=2139, 517.935pt x 251.94125pt>
 File: ./images/horizon_problem.png Graphic file (type png)
 <use ./images/horizon_problem.png>
 Package pdftex.def Info: ./images/horizon_problem.png  used on input line 120.
@@ -5180,7 +5194,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 160--162
 ]
 
 [242]
-<./images/inflation_model.png, id=2153, 888.31876pt x 566.115pt>
+<./images/inflation_model.png, id=2155, 888.31876pt x 566.115pt>
 File: ./images/inflation_model.png Graphic file (type png)
 <use ./images/inflation_model.png>
 Package pdftex.def Info: ./images/inflation_model.png  used on input line 190.
@@ -5251,7 +5265,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 391--393
 
  []
 
-<./images/thomson_scattering.png, id=2180, 571.13374pt x 280.04625pt>
+<./images/thomson_scattering.png, id=2182, 571.13374pt x 280.04625pt>
 File: ./images/thomson_scattering.png Graphic file (type png)
 <use ./images/thomson_scattering.png>
 Package pdftex.def Info: ./images/thomson_scattering.png  used on input line 40
@@ -5275,7 +5289,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 410--411
 
 
 [249 <./images/thomson_scattering.png>]
-<./images/B-mode_pattern.png, id=2187, 445.665pt x 314.17375pt>
+<./images/B-mode_pattern.png, id=2189, 445.665pt x 314.17375pt>
 File: ./images/B-mode_pattern.png Graphic file (type png)
 <use ./images/B-mode_pattern.png>
 Package pdftex.def Info: ./images/B-mode_pattern.png  used on input line 418.
@@ -5394,23 +5408,24 @@ L3 programming layer <2025-01-18>
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 6DBBDB154E3333A3EBC07333665649DD;29961.
 
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                main
-(biblatex)                and rerun LaTeX afterwards.
+Package biblatex Warning: Please rerun LaTeX.
 
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 42342 strings out of 473190
- 837276 string characters out of 5715800
- 1716551 words of memory out of 5000000
- 63789 multiletter control sequences out of 15000+600000
- 671570 words of font info for 606 fonts, out of 8000000 for 9000
+ 42340 strings out of 473190
+ 837260 string characters out of 5715800
+ 1716333 words of memory out of 5000000
+ 63790 multiletter control sequences out of 15000+600000
+ 671415 words of font info for 604 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  92i,20n,99p,1179b,1441s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
@@ -5425,10 +5440,10 @@ texlive/2025/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb></usr/local/te
 xlive/2025/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2
 025/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2025/tex
 mf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (261 pages, 24481579 bytes).
+Output written on main.pdf (261 pages, 24482417 bytes).
 PDF statistics:
- 2435 PDF objects out of 2487 (max. 8388607)
- 1871 compressed objects within 19 object streams
+ 2437 PDF objects out of 2487 (max. 8388607)
+ 1873 compressed objects within 19 object streams
  504 named destinations out of 1000 (max. 500000)
  142420 words of extra memory for PDF output out of 154059 (max. 10000000)
 

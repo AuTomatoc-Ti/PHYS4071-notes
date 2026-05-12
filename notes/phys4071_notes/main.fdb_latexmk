@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber main"] 1777297762.53284 "main.bcf" "main.bbl" "main" 1778518542.61181 0
-  "main.bcf" 1778518542.32864 108292 59816962e8c6b85c083254c7680d0158 "pdflatex"
+["biber main"] 1778573135.10276 "main.bcf" "main.bbl" "main" 1778573158.37259 0
+  "main.bcf" 1778573158.07051 108292 59816962e8c6b85c083254c7680d0158 "pdflatex"
   "references.bib" 1777899805.26983 2439 3d128f4bd794e756d91ccdf49abe3f45 ""
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1778518530.45279 "main.tex" "main.pdf" "main" 1778518542.61218 2
+["pdflatex"] 1778573146.34143 "main.tex" "main.pdf" "main" 1778573158.37293 2
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1136849721 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -274,7 +274,7 @@
   "chapters/ch07_Cosmic_Microwave_Background.tex" 1777899805.15174 118601 2a8256d88980344e65a27187d10167c6 ""
   "chapters/ch08_dark_matter.tex" 1778518522.64893 95729 dc28f2fb45defd023c2121ba9cf0a154 ""
   "chapters/ch09_inflation.tex" 1778433604.70563 29965 5c063265d704e174dd58c7afde5adc0a ""
-  "chapters/intro.tex" 1774686359.97775 10892 c91d4b717fbdd6682b504c62d9e0bb68 ""
+  "chapters/intro.tex" 1778573132.50357 10984 984d16ec7518180459c0e09cb6f206a4 ""
   "images/B-mode_pattern.png" 1778417752.25612 174798 e657c551cf7c7cc57dde29766ecfadca ""
   "images/BBN_interaction_chain.jpg" 1774090497.97524 27630 bf0344b852fb4fa3e27ec5618e9a35fd ""
   "images/CMB_anisotropies.png" 1775112031.03514 1525993 4b6f6089fe9d019323aa9f5feccdcbca ""
@@ -326,13 +326,13 @@
   "images/universe_evolution.png" 1774723003.76484 757297 224958546c16d20f4b0aa0aa62e91708 ""
   "images/universe_evolution_2.png" 1774773105.75897 786377 292aeddda7243d1b771c93d57f91c214 ""
   "images/universe_evolution_3.png" 1774783004.9567 346275 faa3ee519acf57e5e9dfb973953a9408 ""
-  "main.aux" 1778518542.32261 44308 944a93360c6271ac58db3d187d11d8f7 "pdflatex"
-  "main.bbl" 1777899805.17916 11599 f9c143c658625a212dbf0d1ad9b4e100 "biber main"
-  "main.out" 1778518542.3258 29961 6dbbdb154e3333a3ebc07333665649dd "pdflatex"
-  "main.run.xml" 1778518542.32932 2339 701c5599c28a236675e0b8fb56d35042 "pdflatex"
+  "main.aux" 1778573158.06435 44285 7b54ce4f74e909ac3e6249ebce5f251e "pdflatex"
+  "main.bbl" 1778573146.22151 11559 9ddcc9e3fe9579dacdafd5e0447eb0f5 "biber main"
+  "main.out" 1778573158.06765 29961 6dbbdb154e3333a3ebc07333665649dd "pdflatex"
+  "main.run.xml" 1778573158.07112 2339 4f0f667f5af68b1fa41a252fcab371a3 "pdflatex"
   "main.tex" 1777909855.32946 6709 a8d3928126569c95966960d4eefcb336 ""
-  "main.toc" 1778518542.3294 14124 0b18de209879c08b56332a65a43b6fb5 "pdflatex"
-  "preamble.tex" 1774686359.5372 14010 f12fdc68b1b126321a770ff73050c267 ""
+  "main.toc" 1778573158.07119 14124 0b18de209879c08b56332a65a43b6fb5 "pdflatex"
+  "preamble.tex" 1778573079.89388 14126 f6aaf7bd3cb40d236116dfc3ecf10015 ""
   (generated)
   "main.aux"
   "main.bcf"
