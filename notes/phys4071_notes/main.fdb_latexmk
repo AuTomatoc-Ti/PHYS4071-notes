@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber main"] 1778573135.10276 "main.bcf" "main.bbl" "main" 1778790440.40196 0
-  "main.bcf" 1778790439.97813 108292 59816962e8c6b85c083254c7680d0158 "pdflatex"
+["biber main"] 1778573135.10276 "main.bcf" "main.bbl" "main" 1778791159.12285 0
+  "main.bcf" 1778791158.81255 108292 59816962e8c6b85c083254c7680d0158 "pdflatex"
   "references.bib" 1777899805.26983 2439 3d128f4bd794e756d91ccdf49abe3f45 ""
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1778790427.68107 "main.tex" "main.pdf" "main" 1778790440.40231 2
+["pdflatex"] 1778791146.17551 "main.tex" "main.pdf" "main" 1778791159.12314 2
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1136849721 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -274,7 +274,18 @@
   "chapters/ch07_Cosmic_Microwave_Background.tex" 1778790415.65172 133248 73ce0b0483cedc89378b0a7e4b216633 ""
   "chapters/ch08_dark_matter.tex" 1778787836.00581 116782 52e9111a049ac707b372e2cd78348577 ""
   "chapters/ch09_inflation.tex" 1778433604.70563 29965 5c063265d704e174dd58c7afde5adc0a ""
+  "chapters/images/acceleration_plot.png" 1774933270.95498 96217 2139dcf0b67e741a8a10c32ea87de3ec ""
   "chapters/intro.tex" 1778573132.50357 10984 984d16ec7518180459c0e09cb6f206a4 ""
+  "chapters/questions.tex" 1778791140.4401 1277 24735370688955bc0f1f6a618e4022d5 ""
+  "chapters/questions/q_ch01_fundamentals.tex" 1774689566.57033 7568 04c775dee2f889fe6c4e2fc6a8295729 ""
+  "chapters/questions/q_ch02_hubble_law_and_redshift.tex" 1774802565.18362 5695 a82f64e216371c2eda298af6bc8f2486 ""
+  "chapters/questions/q_ch03_cosmic_evolution.tex" 1774976009.6218 13165 51694d24c4df9b735b8caff9eb120342 ""
+  "chapters/questions/q_ch04_standard_model.tex" 1774689479.46022 3129 e9aca68dff413d07109a9aefbb9bbff0 ""
+  "chapters/questions/q_ch05_thermo_and_primordial_soup.tex" 1774962014.5756 8967 6d5eb58792928dd2cb0bbabf60b08985 ""
+  "chapters/questions/q_ch06_big_bang_nucleosynthesis.tex" 1774689479.48435 4221 cba684f475ba8eb861e11b195012634a ""
+  "chapters/questions/q_ch07_cmb.tex" 1778790943.03961 4639 ed684f103d5c64c05203594786b7ce5b ""
+  "chapters/questions/q_ch08_dark_matter.tex" 1778790993.24887 4197 0d6f52b89b20c10835a685c35e9dffb4 ""
+  "chapters/questions/q_ch09_inflation.tex" 1778791010.54827 3295 9bbeb9ceb48087b67282c8a8ef01430c ""
   "images/B-mode_pattern.png" 1778417752.25612 174798 e657c551cf7c7cc57dde29766ecfadca ""
   "images/BBN_interaction_chain.jpg" 1774090497.97524 27630 bf0344b852fb4fa3e27ec5618e9a35fd ""
   "images/CMB_anisotropies.png" 1775112031.03514 1525993 4b6f6089fe9d019323aa9f5feccdcbca ""
@@ -327,12 +338,12 @@
   "images/universe_evolution.png" 1774723003.76484 757297 224958546c16d20f4b0aa0aa62e91708 ""
   "images/universe_evolution_2.png" 1774773105.75897 786377 292aeddda7243d1b771c93d57f91c214 ""
   "images/universe_evolution_3.png" 1774783004.9567 346275 faa3ee519acf57e5e9dfb973953a9408 ""
-  "main.aux" 1778790439.9717 45084 9628702b02288e161938272a1216e1e5 "pdflatex"
+  "main.aux" 1778791158.80628 51631 1c54aefd76c86f9ed4f2d5864f6e2a2c "pdflatex"
   "main.bbl" 1778573146.22151 11559 9ddcc9e3fe9579dacdafd5e0447eb0f5 "biber main"
-  "main.out" 1778790439.97502 30025 1f3850181949e865166aa84eb64d6624 "pdflatex"
-  "main.run.xml" 1778790439.97912 2339 1ed341041bd1fbe5a1f3b1992463a6cc "pdflatex"
-  "main.tex" 1777909855.32946 6709 a8d3928126569c95966960d4eefcb336 ""
-  "main.toc" 1778790439.97929 14135 2823d24ad67fbfaaa50ca994a1f02ab2 "pdflatex"
+  "main.out" 1778791158.80988 34227 77e8cad80fea04b9d2f44c18190fa4db "pdflatex"
+  "main.run.xml" 1778791158.81356 2339 1ed341041bd1fbe5a1f3b1992463a6cc "pdflatex"
+  "main.tex" 1778790675.34014 6708 ab6948037ab1cf98b74584087bdc3d42 ""
+  "main.toc" 1778791158.81363 16576 f075f55f519b2a843166c4b0c792b56d "pdflatex"
   "preamble.tex" 1778573079.89388 14126 f6aaf7bd3cb40d236116dfc3ecf10015 ""
   (generated)
   "main.aux"

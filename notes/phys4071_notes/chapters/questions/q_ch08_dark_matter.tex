@@ -4,7 +4,47 @@
 \subsection{Questions}
 
 \begin{enumerate}[label=8.\arabic*]
-  \item \label{q:8.1} \textbf{(To be added)}
+  \item \label{q:8.1} \textbf{Galaxy Rotation Curves}
+  
+  For a spherical mass distribution $\rho(r)\propto r^{-n}$ with $0<n<3$:
+  \begin{enumerate}[label=(\alph*)]
+    \item Show that $M(r)\propto r^{3-n}$ and $v(r)\propto r^{(2-n)/2}$.
+    \item What value of $n$ gives a flat rotation curve $v\approx \text{const}$?
+    \item Explain why the visible matter profile of galaxies typically predicts a declining $v(r)$.
+  \end{enumerate}
+
+  \item \label{q:8.2} \textbf{MOND Deep-Regime Scaling}
+  
+  In MOND, $a\,\mu(a/a_0)=a_N$ and for $a\ll a_0$, $\mu(x)\approx x$.
+  \begin{enumerate}[label=(\alph*)]
+    \item Derive $v^4 = G M a_0$ for circular orbits.
+    \item If $a_0 = 1.2\times10^{-10}\,\mathrm{m/s^2}$ and $M=10^{11}M_\odot$, estimate $v$.
+  \end{enumerate}
+
+  \item \label{q:8.3} \textbf{WIMP Freeze-Out and Relic Density}
+  
+  Use the approximate relic abundance relation
+  \[
+    \Omega_\chi h^2 \approx 0.1\left(\frac{x_{\mathrm{FO}}}{20}\right)
+    \left(\frac{g_*}{80}\right)^{-1/2}
+    \left(\frac{\langle\sigma v\rangle}{3\times10^{-26}\,\mathrm{cm^3/s}}\right)^{-1}.
+  \]
+  \begin{enumerate}[label=(\alph*)]
+    \item For $x_{\mathrm{FO}}=25$ and $g_*=90$, find $\langle\sigma v\rangle$ that gives $\Omega_\chi h^2=0.12$.
+    \item Comment on how the required $\langle\sigma v\rangle$ compares with the weak scale.
+  \end{enumerate}
+
+  \item \label{q:8.4} \textbf{Gamma-Ray Flux and J-Factor}
+  
+  For annihilation,
+  \[
+    \Phi_\gamma(E,\psi)=\frac{1}{2}\frac{\langle\sigma v\rangle}{4\pi m_\chi^2}
+    \frac{dN_\gamma}{dE}\int_{\text{l.o.s.}}\rho^2(r,\psi)\,dl.
+  \]
+  \begin{enumerate}[label=(\alph*)]
+    \item Identify the ``particle physics'' and ``astrophysical'' factors.
+    \item Explain why the flux is proportional to $\rho^2$ rather than $\rho$.
+  \end{enumerate}
 \end{enumerate}
 
 \bigskip
@@ -13,4 +53,73 @@
 
 \subsection{Solutions}
 
-% Solution for 8.1: ...
+\subsubsection*{Solution 8.1: Galaxy Rotation Curves}
+
+\begin{enumerate}[label=(\alph*)]
+  \item
+  \[
+    M(r)=\int_0^r 4\pi r'^2\rho(r')dr'\propto \int_0^r r'^{2-n}dr'\propto r^{3-n}.
+  \]
+  Then
+  \[
+    v^2=\frac{GM(r)}{r}\propto r^{2-n}\Rightarrow v\propto r^{(2-n)/2}.
+  \]
+
+  \item Flat rotation curve requires $v\propto r^0$, so $2-n=0$ and $n=2$.
+
+  \item Visible matter falls off faster than $r^{-2}$ in the outer disk, so $n>2$;
+  therefore $v(r)$ is predicted to decrease with $r$, unlike the observed flat curves.
+\end{enumerate}
+
+\subsubsection*{Solution 8.2: MOND Deep-Regime Scaling}
+
+\begin{enumerate}[label=(\alph*)]
+  \item In deep MOND, $a\mu(a/a_0)\approx a(a/a_0)=a_N=GM/r^2$, so
+  \[
+    a^2=a_0\frac{GM}{r^2}.
+  \]
+  With $a=v^2/r$:
+  \[
+    \left(\frac{v^2}{r}\right)^2=a_0\frac{GM}{r^2}\Rightarrow v^4=GMa_0.
+  \]
+
+  \item $M=10^{11}M_\odot\approx 1.99\times10^{41}\,\mathrm{kg}$. Then
+  \[
+    v=(GMa_0)^{1/4}\approx \left((6.67\times10^{-11})(1.99\times10^{41})(1.2\times10^{-10})\right)^{1/4}
+    \approx 2\times10^5\,\mathrm{m/s}\approx 200\,\mathrm{km/s}.
+  \]
+\end{enumerate}
+
+\subsubsection*{Solution 8.3: WIMP Freeze-Out and Relic Density}
+
+\begin{enumerate}[label=(\alph*)]
+  \item Rearranging,
+  \[
+    \langle\sigma v\rangle \approx 3\times10^{-26}\,\frac{x_{\mathrm{FO}}}{20}
+    \left(\frac{g_*}{80}\right)^{-1/2}\left(\frac{0.1}{\Omega_\chi h^2}\right)\,\mathrm{cm^3/s}.
+  \]
+  Plugging in $x_{\mathrm{FO}}=25$, $g_*=90$, $\Omega_\chi h^2=0.12$:
+  \[
+    \langle\sigma v\rangle \approx 3\times10^{-26}\times 1.25\times\left(\frac{90}{80}\right)^{-1/2}\times\frac{0.1}{0.12}
+    \approx 2.9\times10^{-26}\,\mathrm{cm^3/s}.
+  \]
+
+  \item The value is close to the weak-scale annihilation cross section, illustrating the
+  ``WIMP miracle.''
+\end{enumerate}
+
+\subsubsection*{Solution 8.4: Gamma-Ray Flux and J-Factor}
+
+\begin{enumerate}[label=(\alph*)]
+  \item Particle-physics factor:
+  \[
+    \frac{1}{2}\frac{\langle\sigma v\rangle}{4\pi m_\chi^2}\frac{dN_\gamma}{dE}.
+  \]
+  Astrophysical factor (J-factor):
+  \[
+    J(\psi)=\int_{\text{l.o.s.}}\rho^2(r,\psi)\,dl.
+  \]
+
+  \item Annihilation requires two DM particles, so the rate scales as
+  $n_\chi^2\propto \rho^2$.
+\end{enumerate}

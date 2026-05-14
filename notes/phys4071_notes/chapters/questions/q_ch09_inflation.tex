@@ -4,7 +4,41 @@
 \subsection{Questions}
 
 \begin{enumerate}[label=9.\arabic*]
-  \item \label{q:9.1} \textbf{(To be added)}
+  \item \label{q:9.1} \textbf{Flatness Problem Scaling}
+  
+  Using $\Omega_k \equiv -k/(a^2H^2)$:
+  \begin{enumerate}[label=(\alph*)]
+    \item Show that in radiation domination $|\Omega_k|\propto a^2$ and in matter domination
+    $|\Omega_k|\propto a$.
+    \item Explain why this implies extreme fine-tuning of $\Omega_k$ at early times in
+    standard $\Lambda$CDM.
+  \end{enumerate}
+
+  \item \label{q:9.2} \textbf{Slow-Roll Conditions}
+  
+  For a scalar field $\phi$ with
+  \[\rho_\phi=\tfrac12\dot\phi^2+V(\phi),\qquad p_\phi=\tfrac12\dot\phi^2-V(\phi),\]
+  \begin{enumerate}[label=(\alph*)]
+    \item Show that $\ddot a>0$ requires $V(\phi) > \dot\phi^2$.
+    \item Compute the equation-of-state parameter $w_\phi$ and evaluate it in the
+    slow-roll limit $\dot\phi^2\ll V$.
+  \end{enumerate}
+
+  \item \label{q:9.3} \textbf{Number of e-folds}
+  
+  The number of e-folds is $N=\ln(a_{\mathrm{end}}/a_{\mathrm{init}})=\int H\,dt$.
+  \begin{enumerate}[label=(\alph*)]
+    \item If $a_{\mathrm{end}}/a_{\mathrm{init}}=e^{60}$, compute $N$.
+    \item Explain briefly how $N\gtrsim 60$ addresses the horizon problem.
+  \end{enumerate}
+
+  \item \label{q:9.4} \textbf{Relic Abundance Dilution}
+  
+  Suppose a relic number density scales as $n\propto a^{-3}$.
+  \begin{enumerate}[label=(\alph*)]
+    \item Show how an inflationary expansion by $N$ e-folds suppresses $n$.
+    \item Estimate the suppression factor for $N=60$.
+  \end{enumerate}
 \end{enumerate}
 
 \bigskip
@@ -13,4 +47,56 @@
 
 \subsection{Solutions}
 
-% Solution for 9.1: ...
+\subsubsection*{Solution 9.1: Flatness Problem Scaling}
+
+\begin{enumerate}[label=(\alph*)]
+  \item Since $\Omega_k\propto (a^2H^2)^{-1}$, use $H\propto a^{-2}$ in radiation domination and
+  $H\propto a^{-3/2}$ in matter domination:
+  \[
+    |\Omega_k|\propto \frac{1}{a^2H^2} \propto \begin{cases}
+      a^2, & \text{radiation} \\
+      a, & \text{matter}
+    \end{cases}
+  \]
+
+  \item Because $|\Omega_k|$ grows with time, to keep $|\Omega_k|\ll 1$ today it must be extremely
+  tiny in the early universe. This is the fine-tuning/flatness problem.
+\end{enumerate}
+
+\subsubsection*{Solution 9.2: Slow-Roll Conditions}
+
+\begin{enumerate}[label=(\alph*)]
+  \item From
+  \[
+    \frac{\ddot a}{a}=-\frac{4\pi G}{3}(\rho_\phi+3p_\phi)
+    =-\frac{4\pi G}{3}\left(2\dot\phi^2-2V\right),
+  \]
+  so $\ddot a>0$ requires $V>\dot\phi^2$.
+
+  \item
+  \[
+    w_\phi=\frac{p_\phi}{\rho_\phi}=
+    \frac{\tfrac12\dot\phi^2-V}{\tfrac12\dot\phi^2+V}.
+  \]
+  In slow-roll, $\dot\phi^2\ll V$, so $w_\phi\approx -1$.
+\end{enumerate}
+
+\subsubsection*{Solution 9.3: Number of e-folds}
+
+\begin{enumerate}[label=(\alph*)]
+  \item $N=\ln(e^{60})=60$.
+
+  \item Exponential expansion makes previously nearby regions much larger than the Hubble radius,
+  so regions seen in the CMB were in causal contact before inflation, solving the horizon problem.
+\end{enumerate}
+
+\subsubsection*{Solution 9.4: Relic Abundance Dilution}
+
+\begin{enumerate}[label=(\alph*)]
+  \item Inflation multiplies $a$ by $e^N$, so
+  \[
+    n \propto a^{-3} \Rightarrow n_{\mathrm{after}} = n_{\mathrm{before}} e^{-3N}.
+  \]
+
+  \item For $N=60$, the suppression is $e^{-180} \sim 10^{-78}$, effectively erasing relics.
+\end{enumerate}

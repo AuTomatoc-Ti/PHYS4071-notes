@@ -4,7 +4,55 @@
 \subsection{Questions}
 
 \begin{enumerate}[label=7.\arabic*]
-  \item \label{q:7.1} \textbf{(To be added)}
+  \item \label{q:7.1} \textbf{Recombination Redshift and Saha Equation}
+  
+  Use the Saha equation (hydrogen only)
+  \[
+    \frac{1 - Y_p}{Y_p^2} = \eta\,\frac{2^{5/2}\zeta(3)}{\pi^{1/2}}
+    \left(\frac{T}{m_e}\right)^{3/2} e^{B/T},
+  \]
+  with $\eta = 6\times 10^{-10}$, $B=13.6\,\mathrm{eV}$, $m_e=511\,\mathrm{keV}$.
+  \begin{enumerate}[label=(\alph*)]
+    \item Solve approximately for the temperature $T_{\mathrm{rec}}$ when $Y_p=0.5$.
+    \item Convert $T_{\mathrm{rec}}$ to recombination redshift using
+    $1+z_{\mathrm{rec}} = T_{\mathrm{rec}}/T_0$ with $T_0 = 2.725\,\mathrm{K}$.
+    \item Explain briefly why recombination happens at $T\ll B$.
+  \end{enumerate}
+
+  \item \label{q:7.2} \textbf{Sound Horizon and Acoustic Scale}
+  
+  Take $r_s^c(t_{\mathrm{rec}})=144\,\mathrm{Mpc}$ and
+  $d_A^c(t_{\mathrm{rec}})=1.39\times 10^4\,\mathrm{Mpc}$.
+  \begin{enumerate}[label=(\alph*)]
+    \item Compute $\theta_s = r_s^c/d_A^c$ in radians and degrees.
+    \item Compute the acoustic scale $l_A = \pi/\theta_s$.
+    \item The first peak is observed at $l\approx 220$, smaller than $l_A$.
+    Give one physical reason for this phase shift (briefly).
+  \end{enumerate}
+
+  \item \label{q:7.3} \textbf{Sachs--Wolfe Effect}
+  
+  For super-horizon modes at recombination during matter domination, the ordinary Sachs--Wolfe
+  contribution is
+  \[
+    \left(\frac{\Delta T}{T_0}\right)_{\mathrm{OSW}} \simeq \frac{1}{3}\Psi_*.
+  \]
+  \begin{enumerate}[label=(\alph*)]
+    \item If a potential well has $\Psi_*=-10^{-5}$, estimate $\Delta T/T_0$.
+    \item Interpret the sign (hotter or colder spot?).
+    \item State when the integrated Sachs--Wolfe (ISW) term is non-zero.
+  \end{enumerate}
+
+  \item \label{q:7.4} \textbf{Cosmic Variance}
+  
+  The cosmic-variance uncertainty is
+  \[
+    \sigma_{C_l}^2 = \frac{2}{2l+1} C_l^2.
+  \]
+  \begin{enumerate}[label=(\alph*)]
+    \item Compute the fractional uncertainty $\sigma_{C_l}/C_l$ for $l=2$ and $l=100$.
+    \item Explain why low-$l$ modes are fundamentally noisier.
+  \end{enumerate}
 \end{enumerate}
 
 \bigskip
@@ -13,4 +61,81 @@
 
 \subsection{Solutions}
 
-% Solution for 7.1: ...
+\subsubsection*{Solution 7.1: Recombination Redshift and Saha Equation}
+
+\begin{enumerate}[label=(\alph*)]
+  \item Set $Y_p=0.5$, so $(1-Y_p)/Y_p^2 = 2$. Solve approximately:
+  \[
+    2 = \eta\,\frac{2^{5/2}\zeta(3)}{\pi^{1/2}}
+    \left(\frac{T}{m_e}\right)^{3/2} e^{B/T}.
+  \]
+  Using $\eta=6\times10^{-10}$ and $m_e=511\,\mathrm{keV}$, one finds
+  \[
+    T_{\mathrm{rec}} \approx 0.26\text{--}0.30\,\mathrm{eV} \approx 3000\,\mathrm{K}.
+  \]
+
+  \item Convert to redshift:
+  \[
+    1+z_{\mathrm{rec}}=\frac{T_{\mathrm{rec}}}{T_0}
+    \approx \frac{3000\,\mathrm{K}}{2.725\,\mathrm{K}} \approx 1100.
+  \]
+  So $z_{\mathrm{rec}}\approx 1100$.
+
+  \item Because $\eta\ll1$, there are many photons per baryon. Even when $T<B$, the high-energy tail
+  of the photon distribution can still ionize hydrogen. Thus recombination happens only once
+  $T\ll B$.
+\end{enumerate}
+
+\subsubsection*{Solution 7.2: Sound Horizon and Acoustic Scale}
+
+\begin{enumerate}[label=(\alph*)]
+  \item
+  \[
+    \theta_s = \frac{144}{1.39\times10^4} \approx 1.04\times10^{-2}\,\mathrm{rad}
+    \approx 0.60^\circ.
+  \]
+
+  \item
+  \[
+    l_A = \frac{\pi}{\theta_s} \approx \frac{3.1416}{1.04\times10^{-2}} \approx 300.
+  \]
+
+  \item The first peak is shifted by projection/phase effects and baryon driving; the oscillations
+  are not purely cosine at recombination. These effects move the first temperature peak from
+  $l_A$ to $l\approx 220$.
+\end{enumerate}
+
+\subsubsection*{Solution 7.3: Sachs--Wolfe Effect}
+
+\begin{enumerate}[label=(\alph*)]
+  \item
+  \[
+    \frac{\Delta T}{T_0} \simeq \frac{1}{3}\Psi_* = \frac{1}{3}(-10^{-5})\approx -3.3\times10^{-6}.
+  \]
+
+  \item Negative $\Delta T$ means a colder spot: photons climb out of a potential well and are
+  redshifted.
+
+  \item ISW is non-zero when gravitational potentials evolve with time, e.g. during radiation--matter
+  transition (early ISW) or dark-energy domination (late ISW).
+\end{enumerate}
+
+\subsubsection*{Solution 7.4: Cosmic Variance}
+
+\begin{enumerate}[label=(\alph*)]
+  \item
+  \[
+    \frac{\sigma_{C_l}}{C_l} = \sqrt{\frac{2}{2l+1}}.
+  \]
+  For $l=2$:
+  \[
+    \frac{\sigma_{C_2}}{C_2}=\sqrt{\frac{2}{5}}\approx 0.63.
+  \]
+  For $l=100$:
+  \[
+    \frac{\sigma_{C_{100}}}{C_{100}}=\sqrt{\frac{2}{201}}\approx 0.10.
+  \]
+
+  \item Low-$l$ modes have only a few independent $m$ values to average over, so the statistical
+  uncertainty is intrinsically large.
+\end{enumerate}
