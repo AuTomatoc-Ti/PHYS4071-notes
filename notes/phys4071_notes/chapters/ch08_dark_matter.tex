@@ -858,10 +858,65 @@ The "WIMP miracle" shows the DM particles interact with regular matter with a st
 
 
 
+\bigskip \noindent
+\begin{intuition}
+    Apart from the continuos spectrum shown in above figure, there is also a possibility of producing a "line" spectrum, which is a sharp peak at a specific energy corresponding to the WIMP mass ("smoking gun"). This can occur if WIMPs annihilate directly produce gamma rays directly. \\
+
+    In such case, WIMPs produce final states like $\gamma \gamma$ or $\gamma Z$ or $\gamma h$, through \textbf{loop-level processes}, and the final states radiation has energy of $E_\gamma = m_\chi$ for $\gamma \gamma$ channel, and $E_\gamma = m_\chi (1 - m_Z^2 / 4 m_\chi^2)$ for $\gamma Z$ channel, and $E_\gamma = m_\chi (1 - m_h^2 / 4 m_\chi^2)$ for $\gamma h$ channel respectively. \\
+
+    Overall, the galactic center is the most promising target for gamma-ray searches for DM annihilation, because it is expected to have the highest DM density, and hence the highest annihilation rate. 
+\end{intuition}
+
+
+\bigskip \noindent
+\begin{foundation}
+    We derive the monochromatic photon energy from the 2-body annihilation kinematics of non-relativistic WIMPs $\chi\chi \to \gamma X$, where $X = \gamma, Z, h$. \\
+
+    Recall energy-momentum conservation in special relativity:
+    \begin{align*}
+        \begin{cases}
+            E_\chi + E_\chi &= E_\gamma + E_X \\
+            \vec{p}_\chi + \vec{p}_\chi &= \vec{p}_\gamma + \vec{p}_X
+        \end{cases}
+    \end{align*}
+    For non-relativistic WIMPs, we can approximate $E_\chi \approx m_\chi$ and $\vec{p}_\chi \approx 0$, so the equations simplify to:
+    \begin{align*}
+        \begin{cases}
+            2 m_\chi &= E_\gamma + E_X \\
+            \vec{p}_\gamma &= - \vec{p}_X
+        \end{cases}
+    \end{align*}
+    Combine the two equations, and substitute $E_\gamma = |\vec{p}_\gamma|$ and $E_X = \sqrt{|\vec{p}_X|^2 + m_X^2}$, we get:
+    \begin{align*}
+        2 m_\chi &= |\vec{p}_\gamma| + \sqrt{|\vec{p}_\gamma|^2 + m_X^2} \\
+        4 m_\chi^2 - 4 m_\chi |\vec{p}_\gamma| + |\vec{p}_\gamma|^2 &= m_X^2 + |\vec{p}_\gamma|^2 \\
+        4 m_\chi^2 - 4 m_\chi |\vec{p}_\gamma| &= m_X^2 \\
+        |\vec{p}_\gamma| &= m_\chi \left(1 - \frac{m_X^2}{4 m_\chi^2}\right)
+    \end{align*}
+    Note in above equation, if $X = \gamma$, then $m_X = m_\gamma = 0$. \\
+
+    The 3 possible loop-level annihilation channels and their corresponding photon energies are:
+    \begin{align*}
+        \chi\chi \to \gamma\gamma &: \quad E_\gamma = m_\chi \\
+        \chi\chi \to \gamma Z &: \quad E_\gamma = m_\chi \left(1 - \frac{m_Z^2}{4m_\chi^2}\right) \\
+        \chi\chi \to \gamma h &: \quad E_\gamma = m_\chi \left(1 - \frac{m_h^2}{4m_\chi^2}\right)
+    \end{align*}
+    For WIMP masses $m_\chi \gtrsim 100\,\mathrm{GeV}$, the $\gamma Z$ and $\gamma h$ lines are shifted slightly below $m_\chi$ due to the finite masses of the $Z$ boson ($m_Z \approx 91.2\,\mathrm{GeV}$) and the Higgs boson ($m_h \approx 125\,\mathrm{GeV}$). These monochromatic lines serve as a ``smoking gun'' signature for DM annihilation because no known astrophysical background can produce a sharp, line-like feature at such energies.
+\end{foundation}
+
+\bigskip \noindent
+\begin{example}{Loop-level Processes v.s. Tree-level Processes}
+    Why in line spectrum case, the WIMPs produce gamma rays through loop-level processes, instead of tree-level processes? \\
+
+    \bigskip\textbf{Solution.}\quad \\
+    The neutral WIMP, being electrically neutral, cannot couple directly to photons at tree level due to electromagnetic gauge invariance; thus $\chi\chi\to\gamma\gamma$ or $\gamma Z$ must proceed via loops of virtual charged states.  \\
+
+    \textbf{WIMPs vs. EWIMPs:} Generic WIMPs may have heavy or decoupled charged mediators, yielding highly suppressed loop amplitudes. In contrast, \textbf{EWIMPs} (e.g. pure wino/higgsino) belong to electroweak multiplets with \textit{near-degenerate charged partners}; these light charged states run in the loop, enhancing the line cross-section relative to generic WIMPs—though still loop-suppressed compared to tree-level continuum channels. The monochromatic signal persists in both cases because the final-state photon energy is fixed by kinematics, unlike the broad spectrum from tree-level hadronic cascades.
+\end{example}
 
 % ──────────────────────────────────────────────────────────────────────────────
-%\clearpage
-\bigskip \noindent \bigskip \noindent \bigskip \noindent
+\clearpage
+%\bigskip \noindent \bigskip \noindent \bigskip \noindent
 \subsection{Indirect Detection: Charged Cosmic Rays}
 \begin{intuition}
     In addition to gamma rays, WIMP annihilation can also produce charged cosmic rays (e.g. positrons, antiprotons, electrons, and protons) that can be detected by cosmic ray detectors (e.g. AMS-02 on the International Space Station). However, the detection of charged cosmic rays from WIMP annihilation is more challenging than gamma rays due to the following reasons:
@@ -1009,7 +1064,7 @@ The "WIMP miracle" shows the DM particles interact with regular matter with a st
 \bigskip \noindent
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.55\textwidth]{images/positron_fraction_energy_spectrum.png}
+    \includegraphics[width=0.65\textwidth]{images/positron_fraction_energy_spectrum.png}
     \caption{The positron fraction as a function of energy measured by the AMS-02 experiment.}
     \label{fig:positron_fraction_energy_spectrum}
 \end{figure}
@@ -1030,7 +1085,7 @@ The "WIMP miracle" shows the DM particles interact with regular matter with a st
 \bigskip \noindent
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.55\textwidth]{images/cosmic_rays_spectrum_mass.png}
+    \includegraphics[width=0.65\textwidth]{images/cosmic_rays_spectrum_mass.png}
     \caption{Spectra given by DM annihilation with different WIMP masses.}
     \label{fig:cosmic_rays_spectrum_mass}
 \end{figure}
