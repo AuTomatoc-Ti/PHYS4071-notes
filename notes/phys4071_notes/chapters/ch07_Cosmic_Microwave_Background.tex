@@ -1615,6 +1615,7 @@
     \end{align*}
    The part (b) only shows the integral forms of the peak separation $\Delta l$ for the two cases, we will evaluate the numerical values in part (c) below. \\
 
+   \pagebreak
     (c). \textbf{Numerical values of $r_s$ and $l_A$ for two $\Omega_{\Lambda,0}$ choices} \\
     \textbf{Assumptions.}\quad \\
     1. Use the problem parameters:
@@ -1700,7 +1701,7 @@
 % =══════════════════════════════════════════════════════════════════════════════
 \clearpage
 %\bigskip \noindent \bigskip \noindent \bigskip \noindent
-\section{More Features of the Power Spectrum}
+\section{More Features of the Power Spectrum (Optional)}
 From the previous section, we have discussed about the acoustic peaks in the power spectrum, which is the most prominent feature in the power spectrum. However, you may noticed we have ignored the damping term in the equation of temperature perturbation, which is not our real case. In fact, during the oscillation of the photon-baryon fluid, the oscillation is not perfect, but is damped by the expansion of the universe and the diffusion of photons (Silk damping). Therefore, we need to consider the damping term in the equation of temperature perturbation, which will give us more features in the power spectrum, such as the damping tail at small scales. \\
 
 Besides, there are also other features in the power spectrum, such as the Sachs-Wolfe effect at large scales, and the relative heights of the acoustic peaks, which can provide us more information about the universe, such as the geometry of the universe, we will discuss more about these features in below subsections.
@@ -1722,21 +1723,66 @@ Besides, there are also other features in the power spectrum, such as the Sachs-
     Therefore, for the small scales (large $l$), the damping term will be more significant, and hence the amplitude of the oscillation will be smaller, which will give us a damping tail in the power spectrum at small scales.
 \end{intuition}
 
-\bigskip \noindent
+\clearpage
+%\bigskip \noindent
 \begin{foundation}
-    To connect the above oscillator picture with the observed power spectrum, we can separate damping into two intuitive effects:
+    To connect the above oscillator picture with the observed power spectrum, we separate damping into two intuitive effects:
     \begin{itemize}
-        \item \textbf{Expansion damping (Hubble friction):} the expansion of the universe removes energy from oscillations, similar to friction in a damped oscillator.
-        \item \textbf{Diffusion damping (Silk damping):} before decoupling, photons still scatter many times and perform a random walk, so they can leak from hot regions to cold regions and smooth out temperature contrast.
+        \item \textbf{Expansion damping (Hubble friction):} the expansion of the universe removes energy from oscillations, analogous to friction in a damped oscillator. This contributes a term proportional to $H\dot{\Theta}$ in the equation of motion.
+        \item \textbf{Diffusion damping (Silk damping):} before decoupling, photons still scatter off electrons many times and perform a random walk through the plasma, leaking from hot regions to cold regions and smoothing out temperature contrasts. This is the dominant reason for the sharp small-scale suppression.
     \end{itemize}
 
-    The second effect is the dominant reason for the sharp small-scale suppression. A useful way to state it is: modes with wavelength smaller than the photon diffusion scale are exponentially erased. In $k$-space, this is often written schematically as:
+    \textbf{Step 1: The photon random walk and the diffusion length.} \\
+    Recall from Chapter 5 that the mean free path of a photon between two Thomson scatterings is:
     \[
-        \Theta(k,\eta_*) \simeq \Theta_{\mathrm{osc}}(k,\eta_*)\,\exp\!\left[-\left(\frac{k}{k_D}\right)^2\right]
+        \lambda_\gamma = \frac{1}{n_e \sigma_T}
     \]
-    where $k_D$ is the diffusion-damping scale (evaluated near recombination), and $\eta_*$ is recombination time. \newline
+    where $n_e$ is the free electron number density and $\sigma_T$ is the Thomson cross-section. Between scatterings, a photon travels a distance $\lambda_\gamma$, but in a random direction each time. After $N$ scatterings, the photon has performed a random walk and its net displacement squared is:
+    \[
+        \langle r^2 \rangle = N \lambda_\gamma^2
+    \]
+    which is just the standard result for a 3D random walk (each step is independent). \\
 
-    Since larger $k$ means smaller physical scale, the exponential factor suppresses high-$k$ modes much more strongly. This is exactly the same trend as your earlier statement $c\propto k^2\propto l^2$: higher-$k$ (thus higher-$l$) modes damp faster.
+    \textbf{Step 2: Estimating the number of scatterings.} \\
+    The total number of scatterings that occur between an initial time $t_i$ (close to the Big Bang) and recombination $t_*$ can be estimated by the scattering rate $\Gamma_T = n_e \sigma_T c$ integrated over time:
+    \[
+        N \sim \int_0^{t_*} \Gamma_T \, dt = \int_0^{t_*} n_e \sigma_T c \, dt
+    \]
+    (using natural units $c = 1$ from here on). Since each scattering takes on average a time $\lambda_\gamma = 1/\Gamma_T$, the mean free time between scatterings is $\Delta t = 1/\Gamma_T$. \\
+
+    \textbf{Step 3: The comoving diffusion length.} \\
+    In comoving coordinates, a photon travels a comoving distance $d\chi = d\lambda / a$ in each step. The comoving mean free path is $\lambda_\gamma^c = \lambda_\gamma / a = 1/(n_e \sigma_T a)$. Summing over all steps from $t_i$ to $t_*$, the mean squared comoving diffusion distance is:
+    \begin{align*}
+        \langle \chi_D^2 \rangle &= \int_0^{t_*} \frac{\lambda_\gamma^c}{\Delta t} \left(\lambda_\gamma^c\right)^2 dt 
+        = \int_0^{t_*} \Gamma_T \left(\frac{1}{n_e \sigma_T a}\right)^2 dt 
+        = \int_0^{t_*} \frac{n_e \sigma_T}{a^2} \cdot \frac{1}{(n_e \sigma_T)^2} \, dt \\
+        &= \int_0^{t_*} \frac{1}{n_e \sigma_T a^2} \, dt 
+        = \int_0^{t_*} \frac{\lambda_\gamma}{a^2} \, dt
+    \end{align*}
+    Switching the integration variable from $t$ to the scale factor $a$ via $dt = da / (a H)$, we define the \textbf{comoving diffusion damping scale} as:
+    \[
+        \frac{1}{k_D^2} \equiv \langle \chi_D^2 \rangle = \int_0^{a_*} \frac{da}{a^3 H(a) n_e(a) \sigma_T}
+    \]
+    where $a_* = 1/(1+z_*)$ is the scale factor at recombination. \\
+
+    \textbf{Step 4: How diffusion damps a Fourier mode.} \\
+    Consider a single Fourier mode of the temperature perturbation with comoving wavenumber $k$. Physically, Silk damping erases the temperature contrast in this mode if the diffusion length $\lambda_D = 1/k_D$ is larger than the wavelength $\lambda \sim 1/k$, i.e.\ when $k \gtrsim k_D$. \\
+
+    More precisely, one can show (from the Boltzmann equation for photons with repeated scattering) that each scattering event suppresses the amplitude of a mode $k$ by a factor $e^{-k^2 \lambda_\gamma^2 / 6}$ (in 3D, the damping per step involves $k^2$ and the step size squared). Multiplying this factor over all $N$ scatterings and converting to the integral above, the total suppression of the temperature perturbation amplitude is:
+    \begin{align*}
+        \Theta(k, \eta_*) &\simeq \Theta_{\mathrm{osc}}(k, \eta_*) \times \exp\!\left( -\frac{k^2}{2} \langle \chi_D^2 \rangle \right) \\
+        &= \Theta_{\mathrm{osc}}(k, \eta_*) \times \exp\!\left[ -\left(\frac{k}{k_D}\right)^2 \right]
+    \end{align*}
+    where we used $\langle \chi_D^2 \rangle = 1/k_D^2$ from Step 3 and absorbed the factor of 2 into the definition of $k_D$. \\
+
+    \textbf{Step 5: Translating to the power spectrum $C_l$.} \\
+    Recall that the power spectrum $C_l \propto |\Theta(k_l, \eta_*)|^2$ where $k_l \sim l / d_A^c$ is the wavenumber corresponding to multipole $l$. Squaring the exponential suppression factor, we get:
+    \begin{align*}
+        C_l &\simeq C_l^{\mathrm{(no\ damping)}} \times \left[\exp\!\left(-\left(\frac{k_l}{k_D}\right)^2\right)\right]^2 \\
+        &= C_l^{\mathrm{(no\ damping)}} \times \exp\!\left[-2\left(\frac{k_l}{k_D}\right)^2\right] \\
+        &= C_l^{\mathrm{(no\ damping)}} \times \exp\!\left[-2\left(\frac{l}{l_D}\right)^2\right]
+    \end{align*}
+    where we defined the \textbf{damping multipole} $l_D \equiv k_D \, d_A^c$. Since larger $k$ (or equivalently larger $l$) means smaller physical scale, the exponential factor suppresses high-$l$ modes much more strongly — consistently with our earlier scaling $c \propto k^2 \propto l^2$ for the effective damping coefficient.
 \end{foundation}
 
 \bigskip \noindent
@@ -1766,7 +1812,8 @@ Besides, there are also other features in the power spectrum, such as the Sachs-
 
 
 % -──────────────────────────────────────────────────────────────────────────────
-\bigskip \noindent \bigskip \noindent \bigskip \noindent
+\clearpage
+%\bigskip \noindent \bigskip \noindent \bigskip \noindent
 \subsection{Sachs-Wolfe Effect}
 \begin{intuition}
     The Sachs-Wolfe (SW) effect describes how gravity changes the observed CMB temperature when photons travel from the last-scattering surface to us. \\
@@ -1783,34 +1830,82 @@ Besides, there are also other features in the power spectrum, such as the Sachs-
 
 \bigskip \noindent
 \begin{foundation}
-    Let the line-of-sight direction be $\hat{n}$ and conformal time be $\eta$. The observed temperature perturbation can be written schematically as:
+    \textbf{Step 1: Setting up -- what does an observer actually measure?} \\
+    Recall from Chapter 5 that photon temperature scales as $T \propto 1/a$, so in the background universe the photon temperature simply redshifts with expansion. When there are small perturbations, however, a photon's frequency is shifted not only by expansion, but also by the gravitational potential it climbs in or out of. \\
+
+    Let us work with \textbf{conformal time} $\eta$, defined by $d\eta = dt/a(t)$, so that the photon path is simply $d\chi = d\eta$ for a radially-incoming photon (where $\chi$ is the comoving distance). The observed temperature in direction $\hat{n}$ relative to the mean temperature is:
     \[
         \Theta(\hat{n}) \equiv \frac{\Delta T}{T_0}(\hat{n})
-        = \left[\Theta_0 + \Psi\right]_{*}
-        + \int_{\eta_*}^{\eta_0} \left(\dot{\Psi} + \dot{\Phi}\right) d\eta
     \]
-    where:
+    Our goal is to trace this quantity back to physical conditions at the last-scattering surface. \\
+
+    \pagebreak
+    \textbf{Step 2: Energy shift along a photon geodesic} \\
+    In a perturbed spacetime, the metric (in the Newtonian gauge) takes the form:
+    \[
+        ds^2 = a^2(\eta)\left[-(1+2\Psi)d\eta^2 + (1-2\Phi)\delta_{ij}dx^i dx^j\right]
+    \]
+    where $\Psi$ is the \textbf{Newtonian gravitational potential} (related to the gravitational potential wells and hills) and $\Phi$ is the \textbf{curvature perturbation}.
     \begin{itemize}
-        \item $\Theta_0$ is the intrinsic photon temperature perturbation at last scattering;
-        \item $\Psi$ and $\Phi$ are metric (gravitational potential) perturbations;
-        \item subscript $*$ means evaluated at recombination;
-        \item the integral term is along the photon path from recombination to today.
+        \item $\Psi > 0$: photon is in a potential hill -- it loses energy as it moves outward.
+        \item $\Psi < 0$: photon is in a potential well -- it loses energy climbing out.
     \end{itemize}
 
-    The first bracket term is the \textbf{ordinary SW} contribution, while the line-of-sight integral is the \textbf{ISW} contribution. \\
+    Along a photon's path from the last-scattering surface (at conformal time $\eta_*$) to us (at $\eta_0$), the photon energy picks up contributions from both the gravitational potential at the emission point and from any \emph{time variation} of the potentials along the way. Specifically, one can show (by tracing the photon geodesic in the perturbed metric) that the total fractional change in photon energy is:
+    \[
+        \frac{\Delta E}{E} = \Psi(\eta_*, \vec{x}_*) - \Psi(\eta_0, \vec{x}_0) + \int_{\eta_*}^{\eta_0}\left(\dot{\Psi}+\dot{\Phi}\right)d\eta
+    \]
+    where the dot denotes $d/d\eta$. The first two terms are the gravitational redshift at emission and absorption (the ordinary SW effect), while the integral collects any extra energy shift caused by potentials that \emph{change} while the photon is traveling (the integrated SW effect). \\
 
-    For super-horizon modes at recombination in matter domination (and negligible anisotropic stress, so $\Phi \simeq \Psi$), the ordinary SW term reduces to the well-known approximation:
+    \textbf{Step 3: Assembling the full Sachs--Wolfe formula} \\
+    The observed temperature perturbation receives two contributions:
+    \begin{enumerate}
+        \item \textbf{Intrinsic temperature fluctuation at the last-scattering surface}, $\Theta_0$: this is the fractional temperature variation of the photon-baryon fluid at recombination, derived in the acoustic oscillation sections above.
+        \item \textbf{Gravitational energy shift} as the photon climbs out of the local potential $\Psi_*$ at the emission point.
+    \end{enumerate}
+    Together, the temperature we observe in direction $\hat{n}$ is:
+    \[
+        \Theta(\hat{n}) = \underbrace{\bigl[\Theta_0 + \Psi\bigr]_{*}}_{\text{ordinary SW (OSW)}}
+        + \underbrace{\int_{\eta_*}^{\eta_0}\!\bigl(\dot{\Psi}+\dot{\Phi}\bigr)\,d\eta}_{\text{integrated SW (ISW)}}
+    \]
+    where the subscript $*$ means the quantity is evaluated at recombination $\eta_*$. \\
+
+    \textbf{Step 4: Simplifying the ordinary Sachs--Wolfe term} \\
+    We now want to simplify $[\Theta_0 + \Psi]_*$ for the large-scale (super-horizon) modes that dominate the low-$l$ power spectrum. \\
+
+    Recall from the acoustic oscillation analysis earlier in this chapter that the temperature perturbation $\Theta_0$ satisfies (ignoring baryon loading and keeping only the photon pressure):
+    \[
+        \ddot{\Theta}_0 + c_s^2 k^2 \Theta_0 = F(k, \eta)
+    \]
+    For \textbf{super-horizon modes} (i.e.\ scales larger than the Hubble radius, $k \eta \ll 1$), the oscillation term $c_s^2 k^2 \Theta_0$ is negligible, and the photon perturbation is instead set by the gravitational driving. During \textbf{matter domination}, one can show that the gravitational potential $\Psi$ is constant in time (the Bardeen potential is conserved on super-horizon scales in matter domination), and the photon temperature perturbation tracks the gravitational potential as:
+    \[
+        \Theta_0 \approx -\frac{2}{3}\Psi_*
+    \]
+    where the factor of $-2/3$ comes from the fact that a deeper potential well ($\Psi < 0$) compresses and heats the photon gas. \\
+
+    Substituting this into the OSW term:
+    \begin{align*}
+        \left[\Theta_0 + \Psi\right]_* &\approx -\frac{2}{3}\Psi_* + \Psi_* \\
+        &= \left(1 - \frac{2}{3}\right)\Psi_* \\
+        &= \frac{1}{3}\Psi_*
+    \end{align*}
+    
+    Note that here we also assumed \textbf{negligible anisotropic stress}, which means $\Phi \simeq \Psi$, so the two potential perturbations are equal. This is valid during matter domination. \\
+
+    Therefore, on large angular scales, the temperature anisotropy is:
     \[
         \left(\frac{\Delta T}{T_0}\right)_{\mathrm{OSW}} \simeq \frac{1}{3}\Psi_*
     \]
-    (up to sign convention of the potential). \\
+    This is the \textbf{ordinary Sachs--Wolfe result}: the observed CMB temperature fluctuation on large scales is one-third of the primordial gravitational potential at the last-scattering surface. \\
+    
+    Physically, the $+\Psi_*$ in $[\Theta_0 + \Psi]_*$ is the gravitational redshift: a photon escaping from a potential well ($\Psi_* < 0$) loses energy and appears colder by $|\Psi_*|$. But the $-\frac{2}{3}\Psi_*$ term says the photon-baryon fluid \emph{inside} the well was intrinsically hotter by $\frac{2}{3}|\Psi_*|$ (because the gas was compressed by gravity). The two effects partially cancel, leaving a net fractional temperature change of $\frac{1}{3}\Psi_*$. \\
 
-    Physically, this means large-angle CMB anisotropy is roughly one-third of the primordial gravitational potential perturbation at last scattering. \\
-
-    For the ISW term:
+    \textbf{Step 5: The integrated Sachs--Wolfe term} \\
+    The ISW integral $\int_{\eta_*}^{\eta_0}(\dot{\Psi}+\dot{\Phi})\,d\eta$ is non-zero only when the gravitational potentials are \emph{changing} along the photon path:
     \begin{itemize}
-        \item During strict matter domination, potentials are nearly constant, so $\dot{\Psi}+\dot{\Phi}\approx 0$, and ISW is small.
-        \item Near radiation-matter transition (early ISW) and in dark-energy domination (late ISW), potentials evolve, so ISW becomes non-zero.
+        \item During \textbf{strict matter domination}, gravitational potentials are nearly constant in time (by the Bardeen conservation law), so $\dot{\Psi}+\dot{\Phi}\approx 0$, and the ISW contribution is small.
+        \item Near the \textbf{radiation-matter transition} (early ISW): radiation pressure makes potentials decay, which gives a non-zero ISW contribution on intermediate scales.
+        \item During \textbf{dark energy domination} (late ISW): the accelerated expansion causes potentials to decay on large scales, adding extra power at the lowest $l$ values and providing direct sensitivity to dark energy and spatial curvature.
     \end{itemize}
 \end{foundation}
 
@@ -1855,23 +1950,82 @@ Besides, there are also other features in the power spectrum, such as the Sachs-
 
 \bigskip \noindent
 \begin{foundation}
-    A useful approximate form of the photon temperature perturbation for one mode is:
+    \textbf{Step 1: Recall the pure-photon oscillator.} \\
+    From the acoustic oscillation section earlier in this chapter, ignoring baryons and gravity, the temperature perturbation $\Theta_0$ for a mode of comoving wavenumber $k$ obeys:
+    \[
+        \ddot{\Theta}_0 + c_s^2 k^2 \Theta_0 = 0, \qquad c_s = \frac{1}{\sqrt{3}}
+    \]
+    with the solution:
+    \[
+        \Theta_0(k, \eta) = A(k)\cos(k r_s(\eta)) + B(k)\sin(k r_s(\eta))
+    \]
+    where $r_s(\eta) = \int_0^\eta c_s\, d\eta'$ is the sound horizon (comoving distance a sound wave can travel by time $\eta$). For adiabatic initial conditions with $\dot{\Theta}_0(k,0) = 0$, only the cosine survives: $\Theta_0(k,\eta) \approx A(k)\cos(k r_s(\eta))$. \\
+
+    \textbf{Step 2: Adding gravity -- the driven oscillator.} \\
+    In reality, there are gravitational potential perturbations $\Psi(k,\eta)$ (the Newtonian potential wells and hills). Including photon pressure and gravity, the equation of motion becomes:
+    \[
+        \ddot{\Theta}_0 + c_s^2 k^2 \Theta_0 = - \frac{k^2}{3} \Psi
+    \]
+    where the right-hand side is the gravitational driving term (recall $c_s^2 = 1/3$, so $k^2/3 = c_s^2 k^2$). This is simply a harmonic oscillator driven by a source. \\
+
+    During \textbf{matter domination}, large-scale potentials $\Psi$ are approximately constant in time (Bardeen potential conservation), so the driving term is constant. For a harmonic oscillator with a constant force $F_0 = -k^2\Psi/3$, the equilibrium point shifts by $-F_0/\omega_0^2$:
+    \[
+        \text{new equilibrium: } \Theta_0^{\rm eq} = -\Psi
+    \]
+    This shift means the photon temperature at the equilibrium point is $-\Psi$, not zero. The general solution oscillates around this new equilibrium:
+    \[
+        \Theta_0(k,\eta) + \Psi = A(k)\cos(k r_s(\eta))
+    \]
+    where we combine $\Theta_0 + \Psi$ as the effective observable (since the $+\Psi$ term accounts for the gravitational redshift a photon must overcome to escape the potential well, as discussed in the Sachs-Wolfe section). \\
+
+    \textbf{Step 3: Adding baryons -- the baryon-loading shift.} \\
+    Now we include baryons. Recall from the Comoving Sound Horizon section that the sound speed in the photon-baryon fluid is:
+    \[
+        c_s^2(a) = \frac{1}{3(1 + R(a))}, \qquad R(a) \equiv \frac{3\rho_b}{4\rho_\gamma}
+    \]
+    where $R$ measures the baryon-to-photon momentum ratio (i.e., how much ``inertia'' the baryons add to the fluid). Including baryons, the equation of motion becomes:
+    \[
+        \ddot{\Theta}_0 + \frac{\dot{R}}{1+R}\dot{\Theta}_0 + c_s^2 k^2 \Theta_0 = -\frac{k^2}{3}\Psi - \frac{\ddot{R}}{1+R}\Psi
+    \]
+    The key new piece is the damping-like term $\frac{\dot{R}}{1+R}\dot{\Theta}_0$ (Hubble friction from baryon inertia) and the modified effective forcing. When $R$ changes slowly (quasi-static approximation), the equilibrium of the oscillation shifts to:
+    \[
+        (\Theta_0 + \Psi)_{\rm eq} = -R \Psi
+    \]
+    Intuitively, baryons have inertia: they ``pull'' the photon-baryon fluid deeper into potential wells, shifting the zero-point of the oscillation downward by $-R_*\Psi$ (where $R_* = R(\eta_*)$ is $R$ evaluated at recombination). \\
+
+    Therefore the effective temperature at recombination, accounting for both the gravitational shift and baryon loading, oscillates around a \textbf{shifted zero-point}:
     \[
         \Theta_0(k,\eta_*) + \Psi(k,\eta_*)
-        \approx A(k) \cos\!\big(k\,r_s(\eta_*)\big) - R_*\,\Psi(k,\eta_*)
+        \approx A(k)\cos\!\big(k\,r_s(\eta_*)\big) - R_*\,\Psi(k,\eta_*)
     \]
     where:
     \begin{itemize}
         \item $r_s(\eta_*)$ is the sound horizon at recombination;
-        \item $R_* \equiv \frac{3\rho_b}{4\rho_\gamma}\big|_{*}$ measures baryon loading;
-        \item $A(k)$ encodes driving effects from the evolving gravitational potentials.
-    \end{itemize}
+        \item $R_* \equiv \frac{3\rho_b}{4\rho_\gamma}\big|_* $ measures baryon loading at recombination;
+        \item $A(k)$ encodes the overall amplitude, set by the primordial power spectrum and driving by gravitational potentials.
+    \end{itemize} \\
 
-    The cosine term gives the alternating compression/rarefaction phases, while the $-R_*\Psi$ term is the baryon-loading shift. As $R_*$ increases:
+    \textbf{Step 4: Why odd peaks are enhanced and even peaks are suppressed.} \\
+    The extrema of the cosine term occur at $k r_s(\eta_*) = n\pi$, i.e.\ the $n$-th acoustic peak. The amplitude of $\Theta_0 + \Psi$ at the $n$-th peak is:
+    \[
+        |\Theta_0 + \Psi|_n \approx |A(k) \cdot (-1)^n - R_* \Psi|
+    \]
+    Suppose $\Psi < 0$ (a potential well, which is the generic case for over-dense regions), so $-R_*\Psi > 0$:
     \begin{itemize}
-        \item compression extrema (odd peaks) are boosted;
-        \item rarefaction extrema (even peaks) are suppressed.
+        \item \textbf{Odd peaks} ($n = 1, 3, 5, \dots$, compression maxima): the cosine is $+1$, so $|\Theta_0 + \Psi|_{\rm odd} \approx |A + R_*|\Psi|| = A + R_*|\Psi|$. The baryon shift \emph{adds} to the amplitude — compression is enhanced.
+        \item \textbf{Even peaks} ($n = 2, 4, 6, \dots$, rarefaction maxima): the cosine is $-1$, so $|\Theta_0 + \Psi|_{\rm even} \approx |{-A + R_*|\Psi||}$. The baryon shift \emph{subtracts} — rarefaction is suppressed.
     \end{itemize}
+    Hence, the larger the baryon loading $R_*$ (i.e.\ the larger $\omega_b$), the greater the odd-even peak contrast. \\
+
+    \textbf{Step 5: How dark matter affects the peak envelope via potential driving.} \\
+    The driving amplitude $A(k)$ in the solution depends on \emph{how} the gravitational potential $\Psi$ evolves as a mode enters the Hubble horizon. During \textbf{radiation domination}, radiation pressure causes $\Psi$ to decay after horizon entry, which reduces the gravitational driving and lowers the peak amplitude. During \textbf{matter domination}, $\Psi$ is approximately constant, so there is no such suppression. \\
+
+    The transition from radiation domination to matter domination occurs at $a_{\rm eq} \propto 1/\omega_m$:
+    \begin{itemize}
+        \item If $\omega_m$ is \textbf{small}, matter-radiation equality happens later, and \textbf{more modes enter the horizon during radiation domination}. Their driving amplitudes are reduced because $\Psi$ decays. This suppresses the second and higher peaks relative to the first.
+        \item If $\omega_m$ is \textbf{large}, matter-radiation equality happens earlier, so more modes enter in matter domination and experience less suppression. This enhances the second and higher peaks, especially the third.
+    \end{itemize}
+    Since non-baryonic dark matter $\omega_c$ does not couple to photons (it does not contribute to the sound speed, unlike baryons), it affects $A(k)$ purely through its gravitational effect on the expansion rate and potential evolution. Therefore the third peak relative to the first and second peaks is particularly sensitive to $\omega_c$.
 
     Meanwhile, matter content controls potential evolution around horizon entry:
     \begin{itemize}

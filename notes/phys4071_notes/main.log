@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2026.2.19)  15 MAY 2026 03:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2026.2.19)  15 MAY 2026 04:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -4307,17 +4307,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 1615--1617
 [185]
 
 [186]
-Underfull \hbox (badness 10000) in paragraph at lines 1704--1705
+Underfull \hbox (badness 10000) in paragraph at lines 1705--1706
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1715--1717
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1736--1738
+Underfull \hbox (badness 10000) in paragraph at lines 1716--1718
 
  []
 
@@ -4326,92 +4321,210 @@ Underfull \hbox (badness 10000) in paragraph at lines 1736--1738
 [187
 
 ]
-<images/damping_tail.png, id=1859, 540.0175pt x 373.395pt>
+Underfull \hbox (badness 10000) in paragraph at lines 1743--1745
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1750--1752
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1765--1767
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1768--1770
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1775--1777
+
+ []
+
+
+
+[188
+
+]
+
+[189]
+<images/damping_tail.png, id=1869, 540.0175pt x 373.395pt>
 File: images/damping_tail.png Graphic file (type png)
 <use images/damping_tail.png>
-Package pdftex.def Info: images/damping_tail.png  used on input line 1762.
+Package pdftex.def Info: images/damping_tail.png  used on input line 1808.
 (pdftex.def)             Requested size: 394.35236pt x 272.67863pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1772--1773
+
+[190
+
+ <./images/damping_tail.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 1819--1820
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1774--1775
+Underfull \hbox (badness 10000) in paragraph at lines 1821--1822
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1833--1835
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1839--1841
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1857--1859
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1870--1872
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1873--1875
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1883--1885
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1893--1894
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1898--1900
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1901--1902
 
  []
 
 
 
-[188]
-Underfull \hbox (badness 10000) in paragraph at lines 1800--1801
+[191
 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1805--1807
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1808--1809
-
- []
-
-
-
-[189 <./images/damping_tail.png>]
-
-[190]
-Underfull \hbox (badness 10000) in paragraph at lines 1841--1842
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1849--1850
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1851--1852
-
- []
-
-
-
-[191]
+]
 
 [192]
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1904.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\Lambda' on input line 1904.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1904.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1907--1908
+[193]
+Underfull \hbox (badness 10000) in paragraph at lines 1936--1937
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1909--1910
+Underfull \hbox (badness 10000) in paragraph at lines 1944--1945
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1911--1912
+Underfull \hbox (badness 10000) in paragraph at lines 1946--1947
+
+ []
+
+
+
+[194]
+Underfull \hbox (badness 10000) in paragraph at lines 1961--1963
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1968--1970
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1978--1980
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1993--1995
+
+ []
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2007 
+       
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2018--2019
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2020--2022
+
+ []
+
+
+
+[195]
+
+[196]
+
+[197]
+
+[198
+
+]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 2058.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\Lambda' on input line 2058.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 2058.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2061--2062
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2063--2064
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2065--2066
 
  []
 
 ) (./chapters/ch08_dark_matter.tex
 
-[193
+[199
 
 ]
 Chapter 8.
@@ -4427,18 +4540,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 17--18
 
 
 
-[194
+[200
 
 ]
 
-[195
+[201
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 62--63
 
  []
 
-<images/flat_rotation_curves.png, id=1897, 758.835pt x 394.47375pt>
+<images/flat_rotation_curves.png, id=1924, 758.835pt x 394.47375pt>
 File: images/flat_rotation_curves.png Graphic file (type png)
 <use images/flat_rotation_curves.png>
 Package pdftex.def Info: images/flat_rotation_curves.png  used on input line 70
@@ -4456,11 +4569,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 83--84
 
 
 
-[196
+[202
 
  <./images/flat_rotation_curves.png>]
 
-[197]
+[203]
 Underfull \hbox (badness 10000) in paragraph at lines 133--135
 
  []
@@ -4472,7 +4585,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 139--141
 
 
 
-[198]
+[204]
 Underfull \hbox (badness 10000) in paragraph at lines 146--147
 
  []
@@ -4487,7 +4600,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 150--151
 
  []
 
-<images/bullet_cluster.png, id=1912, 579.16376pt x 363.3575pt>
+<images/bullet_cluster.png, id=1939, 579.16376pt x 363.3575pt>
 File: images/bullet_cluster.png Graphic file (type png)
 <use images/bullet_cluster.png>
 Package pdftex.def Info: images/bullet_cluster.png  used on input line 158.
@@ -4499,21 +4612,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 164--165
 
 
 
-[199
+[205
 
  <./images/bullet_cluster.png>]
 
-[200]
+[206]
 Underfull \hbox (badness 10000) in paragraph at lines 187--188
 
  []
 
 
 
-[201
+[207
 
 ]
-<images/gravitational_microlensing.png, id=1928, 827.09pt x 614.295pt>
+<images/gravitational_microlensing.png, id=1955, 827.09pt x 614.295pt>
 File: images/gravitational_microlensing.png Graphic file (type png)
 <use images/gravitational_microlensing.png>
 Package pdftex.def Info: images/gravitational_microlensing.png  used on input l
@@ -4541,7 +4654,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 209--210
 
 
 
-[202
+[208
 
  <./images/gravitational_microlensing.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 219--220
@@ -4550,7 +4663,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 219--220
 
 
 
-[203]
+[209]
 Underfull \hbox (badness 10000) in paragraph at lines 229--232
 
  []
@@ -4704,7 +4817,7 @@ you left one out. Proceed, with fingers crossed.
 
 
 
-[204
+[210
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 255--260
@@ -4733,7 +4846,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 279--280
 
 
 
-[205
+[211
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 285--286
@@ -4752,7 +4865,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 305--307
 
 
 
-[206]
+[212]
 Underfull \hbox (badness 10000) in paragraph at lines 348--349
 
  []
@@ -4764,7 +4877,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 350--351
 
 
 
-[207]
+[213]
 Underfull \hbox (badness 10000) in paragraph at lines 368--370
 
  []
@@ -4786,9 +4899,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 428--430
 
 
 
-[208]
+[214]
 
-[209]
+[215]
 Underfull \hbox (badness 10000) in paragraph at lines 449--450
 
  []
@@ -4800,30 +4913,30 @@ Underfull \hbox (badness 10000) in paragraph at lines 451--452
 
 
 
-[210]
+[216]
 Underfull \hbox (badness 10000) in paragraph at lines 518--520
 
  []
 
 
 
-[211]
+[217]
 
-[212]
+[218]
 
-[213]
+[219]
 Underfull \hbox (badness 10000) in paragraph at lines 595--596
 
  []
 
 
 
-[214
+[220
 
 ]
 
-[215]
-<images/comoving_number_density.png, id=1989, 471.7625pt x 467.7475pt>
+[221]
+<images/comoving_number_density.png, id=2017, 471.7625pt x 467.7475pt>
 File: images/comoving_number_density.png Graphic file (type png)
 <use images/comoving_number_density.png>
 Package pdftex.def Info: images/comoving_number_density.png  used on input line
@@ -4846,12 +4959,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 714--715
 
 
 
-[216
+[222
 
  <./images/comoving_number_density.png>]
 
-[217]
-<images/non_gravitational_DM_detection.png, id=2002, 405.515pt x 384.43625pt>
+[223]
+<images/non_gravitational_DM_detection.png, id=2029, 405.515pt x 384.43625pt>
 File: images/non_gravitational_DM_detection.png Graphic file (type png)
 <use images/non_gravitational_DM_detection.png>
 Package pdftex.def Info: images/non_gravitational_DM_detection.png  used on inp
@@ -4859,7 +4972,7 @@ ut line 745.
 (pdftex.def)             Requested size: 240.99608pt x 228.4755pt.
 
 
-[218
+[224
 
  <./images/non_gravitational_DM_detection.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 778--780
@@ -4873,7 +4986,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 792--794
 
 
 
-[219
+[225
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 809--811
@@ -4892,8 +5005,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 817--819
 
 
 
-[220]
-<images/DM_direct_detection_experiments.png, id=2017, 497.86pt x 355.3275pt>
+[226]
+<images/DM_direct_detection_experiments.png, id=2044, 497.86pt x 355.3275pt>
 File: images/DM_direct_detection_experiments.png Graphic file (type png)
 <use images/DM_direct_detection_experiments.png>
 Package pdftex.def Info: images/DM_direct_detection_experiments.png  used on in
@@ -4901,7 +5014,7 @@ put line 826.
 (pdftex.def)             Requested size: 262.90604pt x 187.63951pt.
 
 
-[221 <./images/DM_direct_detection_experiments.png>]
+[227 <./images/DM_direct_detection_experiments.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 834--835
 
  []
@@ -4933,26 +5046,26 @@ Underfull \hbox (badness 10000) in paragraph at lines 911--913
 
 
 
-[222
+[228
 
 ]
 
-[223]
+[229]
 Underfull \hbox (badness 10000) in paragraph at lines 941--943
 
  []
 
 
 
-[224]
+[230]
 Underfull \hbox (badness 10000) in paragraph at lines 977--978
 
  []
 
 
 
-[225]
-<images/DM_exclusion.png, id=2041, 990.70125pt x 676.5275pt>
+[231]
+<images/DM_exclusion.png, id=2068, 990.70125pt x 676.5275pt>
 File: images/DM_exclusion.png Graphic file (type png)
 <use images/DM_exclusion.png>
 Package pdftex.def Info: images/DM_exclusion.png  used on input line 990.
@@ -4974,26 +5087,26 @@ Underfull \hbox (badness 10000) in paragraph at lines 1000--1001
 
 
 
-[226 <./images/DM_exclusion.png>]
+[232 <./images/DM_exclusion.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 1008--1009
 
  []
 
-<./images/DM_exclusion_2.png, id=2048, 677.53125pt x 490.08093pt>
+<./images/DM_exclusion_2.png, id=2075, 677.53125pt x 490.08093pt>
 File: ./images/DM_exclusion_2.png Graphic file (type png)
 <use ./images/DM_exclusion_2.png>
 Package pdftex.def Info: ./images/DM_exclusion_2.png  used on input line 1018.
 (pdftex.def)             Requested size: 350.53915pt x 253.5648pt.
 
 
-[227]
+[233]
 Underfull \hbox (badness 10000) in paragraph at lines 1024--1025
 
  []
 
 
 
-[228 <./images/DM_exclusion_2.png>]
+[234 <./images/DM_exclusion_2.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 1037--1038
 
  []
@@ -5005,10 +5118,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 1051--1053
 
 
 
-[229
+[235
 
 ]
-<images/gamma_ray_fingerprints.png, id=2068, 889.3225pt x 437.635pt>
+<images/gamma_ray_fingerprints.png, id=2095, 889.3225pt x 437.635pt>
 File: images/gamma_ray_fingerprints.png Graphic file (type png)
 <use images/gamma_ray_fingerprints.png>
 Package pdftex.def Info: images/gamma_ray_fingerprints.png  used on input line 
@@ -5041,9 +5154,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 1093--1094
 
 
 
-[230 <./images/gamma_ray_fingerprints.png>]
+[236 <./images/gamma_ray_fingerprints.png>]
 
-[231]
+[237]
 Underfull \hbox (badness 10000) in paragraph at lines 1102--1103
 
  []
@@ -5065,7 +5178,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1134--1136
 
 
 
-[232]
+[238]
 Underfull \hbox (badness 10000) in paragraph at lines 1148--1149
 
  []
@@ -5077,7 +5190,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1150--1152
 
 
 
-[233]
+[239]
 Underfull \hbox (badness 10000) in paragraph at lines 1163--1164
 
  []
@@ -5100,14 +5213,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 1178--1180
 
 
 
-[234
+[240
 
 ]
 
-[235]
+[241]
 
-[236]
-<images/positron_fraction_energy_spectrum.png, id=2101, 476.78125pt x 365.365pt
+[242]
+<images/positron_fraction_energy_spectrum.png, id=2128, 476.78125pt x 365.365pt
 >
 File: images/positron_fraction_energy_spectrum.png Graphic file (type png)
 <use images/positron_fraction_energy_spectrum.png>
@@ -5142,10 +5255,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 1318--1319
 
 
 
-[237
+[243
 
  <./images/positron_fraction_energy_spectrum.png>]
-<images/cosmic_rays_spectrum_mass.png, id=2108, 445.665pt x 359.3425pt>
+<images/cosmic_rays_spectrum_mass.png, id=2136, 445.665pt x 359.3425pt>
 File: images/cosmic_rays_spectrum_mass.png Graphic file (type png)
 <use images/cosmic_rays_spectrum_mass.png>
 Package pdftex.def Info: images/cosmic_rays_spectrum_mass.png  used on input li
@@ -5153,12 +5266,12 @@ ne 1327.
 (pdftex.def)             Requested size: 284.8093pt x 229.64394pt.
 
 
-[238 <./images/cosmic_rays_spectrum_mass.png>]
+[244 <./images/cosmic_rays_spectrum_mass.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 1334--1335
 
  []
 
-<images/positron_fraction_energy_spectrum_2.png, id=2116, 830.10126pt x 690.58p
+<images/positron_fraction_energy_spectrum_2.png, id=2144, 830.10126pt x 690.58p
 t>
 File: images/positron_fraction_energy_spectrum_2.png Graphic file (type png)
 <use images/positron_fraction_energy_spectrum_2.png>
@@ -5167,7 +5280,7 @@ n input line 1343.
 (pdftex.def)             Requested size: 350.53915pt x 291.62222pt.
 
 
-[239
+[245
 
  <./images/positron_fraction_energy_spectrum_2.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 1372--1373
@@ -5176,10 +5289,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 1372--1373
 
 
 
-[240
+[246
 
 ]
-<images/collider_detection.png, id=2133, 589.20125pt x 436.63126pt>
+<images/collider_detection.png, id=2161, 589.20125pt x 436.63126pt>
 File: images/collider_detection.png Graphic file (type png)
 <use images/collider_detection.png>
 Package pdftex.def Info: images/collider_detection.png  used on input line 1390
@@ -5187,8 +5300,8 @@ Package pdftex.def Info: images/collider_detection.png  used on input line 1390
 (pdftex.def)             Requested size: 306.71924pt x 227.29607pt.
 
 
-[241 <./images/collider_detection.png>]
-<images/DM_candidates.png, id=2142, 1785.67125pt x 1176.395pt>
+[247 <./images/collider_detection.png>]
+<images/DM_candidates.png, id=2169, 1785.67125pt x 1176.395pt>
 File: images/DM_candidates.png Graphic file (type png)
 <use images/DM_candidates.png>
 Package pdftex.def Info: images/DM_candidates.png  used on input line 1429.
@@ -5218,12 +5331,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 1450--1451
 
 
 
-[242
+[248
 
  <./images/DM_candidates.png>]
 
-[243]
-<images/PBH.png, id=2153, 1297.84875pt x 829.0975pt>
+[249]
+<images/PBH.png, id=2180, 1297.84875pt x 829.0975pt>
 File: images/PBH.png Graphic file (type png)
 <use images/PBH.png>
 Package pdftex.def Info: images/PBH.png  used on input line 1462.
@@ -5240,11 +5353,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 1494--1495
 
 
 
-[244
+[250
 
  <./images/PBH.png>]) (./chapters/ch09_inflation.tex
 
-[245]
+[251]
 Chapter 9.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
@@ -5270,14 +5383,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 36--37
 
 
 
-[246
+[252
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 44--45
 
  []
 
-<./images/flatness_problem.png, id=2168, 1001.7425pt x 558.085pt>
+<./images/flatness_problem.png, id=2195, 1001.7425pt x 558.085pt>
 File: ./images/flatness_problem.png Graphic file (type png)
 <use ./images/flatness_problem.png>
 Package pdftex.def Info: ./images/flatness_problem.png  used on input line 52.
@@ -5289,23 +5402,23 @@ Underfull \hbox (badness 10000) in paragraph at lines 73--74
 
 
 
-[247
+[253
 
  <./images/flatness_problem.png>]
 
-[248]
+[254]
 Underfull \hbox (badness 10000) in paragraph at lines 112--113
 
  []
 
-<./images/horizon_problem.png, id=2182, 517.935pt x 251.94125pt>
+<./images/horizon_problem.png, id=2209, 517.935pt x 251.94125pt>
 File: ./images/horizon_problem.png Graphic file (type png)
 <use ./images/horizon_problem.png>
 Package pdftex.def Info: ./images/horizon_problem.png  used on input line 120.
 (pdftex.def)             Requested size: 350.53915pt x 170.522pt.
 
 
-[249 <./images/horizon_problem.png>]
+[255 <./images/horizon_problem.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 150--152
 
  []
@@ -5317,12 +5430,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 160--162
 
 
 
-[250
+[256
 
 ]
 
-[251]
-<./images/inflation_model.png, id=2197, 888.31876pt x 566.115pt>
+[257]
+<./images/inflation_model.png, id=2224, 888.31876pt x 566.115pt>
 File: ./images/inflation_model.png Graphic file (type png)
 <use ./images/inflation_model.png>
 Package pdftex.def Info: ./images/inflation_model.png  used on input line 190.
@@ -5334,7 +5447,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 197--198
 
 
 
-[252
+[258
 
  <./images/inflation_model.png (PNG copy)>]
 Underfull \hbox (badness 10000) in paragraph at lines 205--206
@@ -5363,7 +5476,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 230--231
 
 
 
-[253
+[259
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 251--252
@@ -5377,23 +5490,23 @@ Underfull \hbox (badness 10000) in paragraph at lines 253--254
 
 
 
-[254]
+[260]
 Underfull \hbox (badness 10000) in paragraph at lines 302--304
 
  []
 
 
 
-[255]
+[261]
 
-[256]
+[262]
 
-[257]
+[263]
 Underfull \hbox (badness 10000) in paragraph at lines 391--393
 
  []
 
-<./images/thomson_scattering.png, id=2224, 571.13374pt x 280.04625pt>
+<./images/thomson_scattering.png, id=2251, 571.13374pt x 280.04625pt>
 File: ./images/thomson_scattering.png Graphic file (type png)
 <use ./images/thomson_scattering.png>
 Package pdftex.def Info: ./images/thomson_scattering.png  used on input line 40
@@ -5416,19 +5529,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 410--411
 
 
 
-[258 <./images/thomson_scattering.png>]
-<./images/B-mode_pattern.png, id=2231, 445.665pt x 314.17375pt>
+[264 <./images/thomson_scattering.png>]
+<./images/B-mode_pattern.png, id=2258, 445.665pt x 314.17375pt>
 File: ./images/B-mode_pattern.png Graphic file (type png)
 <use ./images/B-mode_pattern.png>
 Package pdftex.def Info: ./images/B-mode_pattern.png  used on input line 418.
 (pdftex.def)             Requested size: 350.53915pt x 247.1159pt.
 ) (./chapters/appendix.tex
 
-[259 <./images/B-mode_pattern.png>]
+[265 <./images/B-mode_pattern.png>]
 Appendix A.
 
 
-[260
+[266
 
 ]
 Appendix B.
@@ -5445,12 +5558,12 @@ it/12 A [] B \OMS/zplm/m/n/12 ^^F [] \OML/zplm/m/it/12 A [] B$\T1/ppl/m/n/12 (-
 
 
 
-[261
+[267
 
 
 ]
 
-[262
+[268
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 131--132
@@ -5469,15 +5582,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 138--140
 
 
 
-[263
+[269
 
 ]
 
-[264
+[270
 
 ]
 
-[265
+[271
 
 ]
 Appendix C.
@@ -5491,12 +5604,12 @@ you left one out. Proceed, with fingers crossed.
 
 
 
-[266
+[272
 
 
 ]
 
-[267
+[273
 
 ]
 Overfull \hbox (23.4547pt too wide) in paragraph at lines 337--359
@@ -5505,7 +5618,7 @@ Overfull \hbox (23.4547pt too wide) in paragraph at lines 337--359
 
 
 
-[268
+[274
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 395--396
@@ -5514,7 +5627,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 395--396
 
 
 
-[269
+[275
 
 ])
 Overfull \hbox (32.2523pt too wide) in paragraph at lines 152--152
@@ -5524,7 +5637,7 @@ t % 20into % 20collision %
 
 
 
-[270
+[276
 
 
 ] (./main.aux)
@@ -5532,18 +5645,22 @@ t % 20into % 20collision %
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 6DBBDB154E3333A3EBC07333665649DD;29961.
+(rerunfilecheck)             Checksum: 1F3850181949E865166AA84EB64D6624;30025.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 42390 strings out of 473190
- 838175 string characters out of 5715800
+ 42414 strings out of 473190
+ 838405 string characters out of 5715800
  1717004 words of memory out of 5000000
- 63819 multiletter control sequences out of 15000+600000
- 671804 words of font info for 610 fonts, out of 8000000 for 9000
+ 63823 multiletter control sequences out of 15000+600000
+ 672342 words of font info for 618 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  92i,20n,99p,1179b,1441s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
@@ -5558,10 +5675,10 @@ texlive/2025/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb></usr/local/te
 xlive/2025/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2
 025/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2025/tex
 mf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (270 pages, 24781446 bytes).
+Output written on main.pdf (276 pages, 24803365 bytes).
 PDF statistics:
- 2483 PDF objects out of 2487 (max. 8388607)
- 1907 compressed objects within 20 object streams
- 516 named destinations out of 1000 (max. 500000)
+ 2512 PDF objects out of 2984 (max. 8388607)
+ 1930 compressed objects within 20 object streams
+ 524 named destinations out of 1000 (max. 500000)
  142425 words of extra memory for PDF output out of 154059 (max. 10000000)
 
