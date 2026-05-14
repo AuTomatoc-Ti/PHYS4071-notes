@@ -756,6 +756,235 @@ The "WIMP miracle" shows the DM particles interact with regular matter with a st
 \end{intuition}
 
 \bigskip \noindent
+\begin{foundation}
+    Start from the general formula for reaction rate:
+    \[
+        R_\text{total} = \text{(\# of target nuclei)} \times \underbrace{\text{(flux of incoming particles)} \times \text{(interaction prob)} }_{R_\text{per target}}
+    \]
+    We only consider the last 2 terms, start from the flux definition of a specific velocity $v$:
+    \begin{align*}
+        \text{flux} &= \text{(number density of incoming particles)} \times \text{(relative velocity)} \\
+        &= \frac{\rho_\chi}{m_\chi} \cdot v f(\vec{v}) dv
+    \end{align*}
+    Then considering the interaction probability, we have
+    \begin{align*}
+        \text{interaction probability} &= \text{(differential cross section)} \\
+        &= \frac{d\sigma}{d |\vec{q}|} d|\vec{q}|
+    \end{align*}
+    where $\vec{q}$ is the momentum transfer in the scattering process, and it shows the probability of a collision that transfers a specific amount of momentum $|\vec{q}|$ to the nucleus. The total interaction probability is obtained by integrating over all possible momentum transfers, which corresponds to integrating over the recoil energy of the nucleus. Thus we have:
+    \begin{align*}
+        R_\text{per target} &\approx \int_{E_{\mathrm{min}}}^{E_{\mathrm{max}}} \int_{v_{\mathrm{min}}}^{v_{\mathrm{max}}} \frac{\rho_\chi}{m_\chi} v f(\vec{v}) \frac{d\sigma}{d |\vec{q}|} dv d|\vec{q}| \\
+        &\approx \int_{E_{\mathrm{min}}}^{E_{\mathrm{max}}} \int_{v_{\mathrm{min}}}^{v_{\mathrm{max}}} \frac{2 \rho_\chi}{m_\chi} \frac{d\sigma}{d |\vec{q}|} v f(\vec{v}) dv dE_R
+    \end{align*}
+    where factor of 2 term come from the Jacobian of the transformation from $|\vec{q}|$ to $E_R$ (i.e. $d|\vec{q}| = \sqrt{2 m_N E_R} dE_R$). \\
+
+    To estimate the maximum recoil energy $E_{\mathrm{max}}$, we can start from the fact that it happens when the WIMP bounce back with the maximum momentum transfer $|\vec{q}|_{\mathrm{max}} = 2 \mu v$, where $\mu$ is the reduced mass of the WIMP-nucleus system, and $v$ is the relative velocity between the WIMP and the nucleus. Thus we have:
+    \begin{align*}
+        E_R^\mathrm{max} &= \frac{|\vec{q}|_{\mathrm{max}}^2}{2 m_N} \\
+        &= \frac{(2 \mu v)^2}{2 m_N} \\
+        &= \frac{2 \mu^2 v^2}{m_N} \\          
+    \end{align*}
+    Actually for a general recoil energy $E_R$, we have:
+    \begin{align*}
+        E_R &= \frac{|\vec{q}|^2}{2 m_N} \\
+        &= \frac{(2 \mu^2 v^2 (1 - \cos\theta))}{2 m_N} \\
+        &= \frac{m_\chi^2 m_N v^2 (1 - \cos\theta)}{(m_\chi + m_N)^2}
+    \end{align*}
+    where $\theta$ is the scattering angle in the center-of-mass frame, and the maximum recoil energy happens when $\theta = \pi$ (i.e. the WIMP bounce back). \\
+
+    Now we can use the maximum recoil energy as upper limit of energy and hence get the minimum velocity $v_{\mathrm{min}}$ that can cause a recoil energy above the threshold of the detector:
+    \begin{align*}
+        E_R &\leq E_R^\mathrm{max} = \frac{2 \mu^2 v^2}{m_N} \\
+        \frac{E_R m_N}{2 \mu^2} &\leq v^2 \\
+        v &\geq \sqrt{\frac{E_R m_N}{2 \mu^2}} \equiv v_{\mathrm{min}}
+    \end{align*}
+    note it also depends on the recoil energy $E_R$, which means the higher the energy threshold of the detector, the higher the minimum velocity of WIMPs that can be detected.
+\end{foundation}
+
+%\bigskip \noindent
+\begin{theory}
+    The rate of the WIMP-nucleus scattering events in a direct detection experiment can be expressed as:
+    \[
+        R_\text{per target} \approx \int_{E_{\mathrm{min}}}^{E_{\mathrm{max}}} \int_{v_{\mathrm{min}}}^{v_{\mathrm{max}}} \frac{2 \rho_\chi}{m_\chi} \frac{d\sigma}{d |\vec{q}|} v f(\vec{v}) dv dE_R
+    \]
+    Where $\frac{2 \rho_\chi}{m_\chi}$ is the local number density of WIMPs, $\frac{d\sigma}{d |\vec{q}|}$ is the differential cross section for WIMP-nucleus scattering, $v$ is the relative velocity between the WIMP and the nucleus, $f(\vec{v})$ is the velocity distribution of WIMPs in the galactic halo, and $E_R$ is the recoil energy of the nucleus. The limits of integration $E_{\mathrm{min}}$, $E_{\mathrm{max}}$, $v_{\mathrm{min}}$, and $v_{\mathrm{max}}$ depend on the specific experimental setup and the properties of the WIMP and target nucleus. \\
+    
+    In actual case, $v_{\mathrm{max}}$ is typically taken as the escape velocity of the galaxy $\sim 650$ km/s, and $v_{\mathrm{min}}$ is determined by the kinematics of the scattering process and the energy threshold of the detector $\sim (E_R m_N / 2 \mu^2)^{1/2}$, and is around $1 \sim 100 \text{keV}$. \\
+
+    And the recoil energy is given by:
+    \[
+        E_R = \frac{|\vec{q}|^2}{2 m_N} = \frac{2 \mu^2 v^2 (1 - \cos\theta)}{2 m_N} = \frac{m_\chi^2 m_N v^2 (1 - \cos\theta)}{(m_\chi + m_N)^2}
+    \]
+    where $\vec{q}$ is the momentum of WIMP, $v$ is velocity, $\mu$ is the reduced mass of the WIMP-nucleus system, and it is obvious if we want to maximize the recoil energy, we need $m_\chi \approx m_N$ (try let $m_N = k m_\chi$ and take the derivative!), which means the WIMP mass should be around the mass of the target nucleus to get the best sensitivity in direct detection experiments. \\
+    
+    However, as we dont know the actual mass of the WIMP, we need to use a variety of target materials to cover a wide range of possible WIMP masses (as in below figure).
+\end{theory}
+
+%\bigskip \noindent
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=0.6\textwidth]{images/DM_direct_detection_experiments.png}
+    \caption{Experiments of DM direct detection with different target materials (e.g. Xenon, Argon, Germanium, etc.), under different detection techniques (e.g. scintillation, ionization, phonon, etc.) and different scheme (e.g. CREST, DAMA, CDMS, LUX, XENON, etc.).}
+    \label{fig:DM_direct_detection}
+\end{figure}
+
+\clearpage
+%\bigskip \noindent
+\begin{foundation}
+    Now we derive the spin-independent elastic scattering cross section used in direct-detection experiments. The goal is to connect a microscopic WIMP--quark interaction to the effective WIMP--nucleus cross section measured by experiments. \\
+
+    \textbf{1. Start from the physical picture of elastic scattering.}\\
+    In direct detection, the incoming WIMP $\chi$ hits a nucleus $N_A$ in the detector,
+    \[
+        \chi + N_A \rightarrow \chi + N_A,
+    \]
+    where $N_A$ denotes the whole nucleus with atomic number $Z$ and mass number $A$. ``Elastic'' means the particles after collision are still the same particles as before collision: no new particles are created, and the nucleus is not broken apart. The only observable effect is that the nucleus recoils with a small recoil energy $E_R$. \\
+
+    In the low-energy limit relevant for underground detectors, the de Broglie wavelength of the momentum transfer is usually larger than, or comparable to, the size of the nucleus. Therefore the WIMP cannot resolve the detailed positions of individual protons and neutrons. Instead, the scattering amplitudes from all nucleons add \textbf{coherently}. This is the origin of the important $A^2$ enhancement. \\
+
+    \textbf{2. Add the amplitudes from protons and neutrons.}\\
+    Let $f_p$ be the effective coupling between the WIMP and one proton, and $f_n$ be the effective coupling between the WIMP and one neutron. A nucleus contains
+    \[
+        Z \quad \text{protons}, \qquad A-Z \quad \text{neutrons}.
+    \]
+    Since spin-independent scattering does not care about the spin direction, and since the scattering is coherent, the total effective coupling to the whole nucleus is the sum of the proton and neutron contributions:
+    \begin{align*}
+        f_A &= \underbrace{f_p+f_p+\cdots+f_p}_{Z\ \text{times}}
+        +\underbrace{f_n+f_n+\cdots+f_n}_{A-Z\ \text{times}} \\
+        &= Z f_p + (A-Z) f_n .
+    \end{align*}
+    This is an \textbf{amplitude-level} sum, not a probability-level sum. Therefore, when we calculate the cross section, the square will appear:
+    \[
+        |f_A|^2 = \left[ Z f_p + (A-Z) f_n \right]^2 .
+    \]
+
+    \textbf{3. Include the two-body kinematics through the reduced mass.}\\
+    For a two-body collision, the relevant inertia is not simply $m_\chi$ or $m_A$ alone, but the reduced mass
+    \[
+        \mu_A \equiv \frac{m_\chi m_A}{m_\chi+m_A},
+    \]
+    where $m_A$ is the mass of the whole target nucleus. This is the same reduced-mass idea as in the recoil-energy derivation above: if one particle is much heavier than the other, the lighter particle controls the motion; if the two masses are comparable, the momentum transfer is most efficient. \\
+
+    In the standard direct-detection normalization for a short-range contact interaction, the total non-relativistic elastic cross section is
+    \[
+        \sigma^{\mathrm{SI}} = \frac{4\mu_A^2}{\pi}|f_A|^2 .
+    \]
+    The factor $\mu_A^2$ comes from two-body kinematics, while the factor $|f_A|^2$ comes from the usual rule that a probability is proportional to the square of the amplitude. Substituting the coherent nuclear coupling gives
+    \begin{align*}
+        \sigma^{\mathrm{SI}}
+        &= \frac{4\mu_A^2}{\pi}\left[ Z f_p + (A-Z) f_n \right]^2 \\
+        &= \frac{4}{\pi}\left(\frac{m_\chi m_A}{m_\chi+m_A}\right)^2
+        \left[ Z f_p + (A-Z) f_n \right]^2 .
+    \end{align*}
+    This is the elastic scattering cross section quoted below. Notice that the cross section grows strongly with the size of the nucleus because the amplitudes from many nucleons can add before squaring. \\
+
+    \textbf{4. Derive the nucleon coupling $f_{p,n}$ from quark couplings.}\\
+    The WIMP does not directly see a proton or neutron as an elementary object. A proton or neutron is made of quarks and gluons. At low energy, we describe the WIMP--quark scalar interaction by an effective coupling $a_q$ to each quark $q$:
+    \[
+        \chi \ \text{couples to} \ q \quad \text{with strength} \quad a_q .
+    \]
+    Since the nucleon is a bound state, we need the expectation value of the quark operator inside a proton or neutron. The useful definition is
+    \[
+        f_{T_q}^{(p,n)} \equiv \frac{\langle p,n|m_q \bar{q}q|p,n\rangle}{m_{p,n}} .
+    \]
+    In words, $f_{T_q}^{(p,n)}$ is the fraction of the proton or neutron mass that comes from the light quark $q$. Rearranging this definition gives
+    \[
+        \langle p,n|\bar{q}q|p,n\rangle
+        = f_{T_q}^{(p,n)}\frac{m_{p,n}}{m_q} .
+    \]
+    Therefore, the contribution of the light quarks $u,d,s$ to the effective WIMP--nucleon coupling is
+    \[
+        f_{p,n}^{\mathrm{light}}
+        = \sum_{q=u,d,s} a_q \langle p,n|\bar{q}q|p,n\rangle
+        = \sum_{q=u,d,s} f_{T_q}^{(p,n)} a_q \frac{m_{p,n}}{m_q} .
+    \]
+
+    \textbf{5. Include the heavy-quark contribution through gluons.}\\
+    Heavy quarks $c,b,t$ are not ordinary valence quarks inside the proton or neutron. However, they can still affect WIMP--nucleon scattering indirectly through loop diagrams that couple to gluons. The remaining fraction of the nucleon mass not carried by the light quarks is written as
+    \[
+        f_{TG}^{(p,n)} \equiv 1-\sum_{q=u,d,s} f_{T_q}^{(p,n)} .
+    \]
+    Using the standard heavy-quark matching result from QCD, each heavy quark contributes
+    \[
+        f_{p,n}^{\mathrm{heavy}}
+        = \frac{2}{27} f_{TG}^{(p,n)} \sum_{q=c,b,t} a_q \frac{m_{p,n}}{m_q} .
+    \]
+    The numerical factor $2/27$ is a QCD result. For this course, the important point is the physical meaning: heavy quarks contribute mainly by modifying the gluon content of the nucleon, not by appearing as ordinary constituent quarks. \\
+
+    \textbf{6. Combine light and heavy contributions.}\\
+    Adding the light-quark part and the heavy-quark/gluon part gives
+    \begin{align*}
+        f_{p,n}
+        &= f_{p,n}^{\mathrm{light}} + f_{p,n}^{\mathrm{heavy}} \\
+        &= \sum_{q=u,d,s} f_{T_q}^{(p,n)} a_q \frac{m_{p,n}}{m_q}
+        + \frac{2}{27} f_{TG}^{(p,n)} \sum_{q=c,b,t} a_q \frac{m_{p,n}}{m_q} .
+    \end{align*}
+    Hence the final cross section depends on two levels of physics:
+    \begin{itemize}
+        \item particle physics: the WIMP--quark couplings $a_q$;
+        \item nuclear physics: how quarks and gluons contribute to the nucleon mass, encoded in $f_{T_q}^{(p,n)}$ and $f_{TG}^{(p,n)}$.
+    \end{itemize}
+
+
+
+\end{foundation}
+
+%\bigskip \noindent
+\begin{theory}
+    The spin-independent WIMP-nucleon elastic scattering cross section is given by:
+    \[
+        \sigma \approx \frac{4 \mu^2}{\pi} \left[ Z f_p + (A-Z) f_n \right]^2 = \frac{4 m_\chi^2 m_N^2}{\pi (m_\chi + m_N)^2} \left[ Z f_p + (A-Z) f_n \right]^2
+    \]
+    where $Z$ and $A$ are the atomic number and atomic mass of nucleus respectively, $f_p$ and $f_n$ are the effective couplings of WIMP to proton and neutron respectively, which can be expressed as:
+    \[
+        f_{p,n} = \sum_{q=u,d,s} f_{T_q}^{(p,n)} a_q \frac{m_{p,n}}{m_q} + \frac{2}{27} f_{TG}^{(p,n)} \sum_{q=c,b,t} a_q \frac{m_{p,n}}{m_q}
+    \]
+    where $a_q$ is the effective coupling of WIMP to quark $q$, $f_{T_q}^{(p,n)}$ is the fraction of the nucleon mass that is contributed by the light quark $q$, and $f_{TG}^{(p,n)}$ is the fraction of the nucleon mass that is contributed by the gluons. The 1st term corresponds to interactions with the quarks in the target nuclei, while the 2nd term corresponds to interactions with the gluons in the target nuclei, which is induced by the heavy quarks (i.e. $c$, $b$, and $t$) through loop diagrams. \\
+    
+    By measurement in nuclear physic experiments, we have the below approximate values:
+    \begin{center}
+        \begin{tabular}{c|r}
+            \hline
+            $f_{T_u}^{(p)}$ & $0.020 \pm 0.004$ \\
+            $f_{T_d}^{(p)}$ & $0.026 \pm 0.005$ \\
+            $f_{T_s}^{(p)}$ & $0.118 \pm 0.062$ \\
+            \hline
+            $f_{T_u}^{(n)}$ & $0.014 \pm 0.003$ \\
+            $f_{T_d}^{(n)}$ & $0.036 \pm 0.008$ \\
+            $f_{T_s}^{(n)}$ & $0.118 \pm 0.062$ \\
+            \hline
+        \end{tabular}
+    \end{center}
+    And $f_{TG}^{(p)} = 1 - \sum_{q=u,d,s} f_{T_q}^{(p)} \approx 0.84$, $f_{TG}^{(n)} = 1 - \sum_{q=u,d,s} f_{T_q}^{(n)} \approx 0.83$. \\
+    (Due to the page limit and not the course focus, we will not go into the details of how to calculate $a_q$ and these values in specific models, maybe I can cover it in the nuclear physics course note at some point in the future. $\vartheta \wedge \vartheta$)
+\end{theory}
+
+\bigskip \noindent
+\begin{theory}
+    Further, if we use the isospin-symmetry (i.e. $f_p \approx f_n$), then we can express the WIMP-nucleon cross section as:
+    \begin{align*}
+        \sigma &\approx \frac{4 \mu^2}{\pi} \left[ Z f_p + (A-Z) f_n \right]^2 \\
+        &= \frac{4 \mu^2}{\pi} A^2 f_n^2 \\
+        &= \left( \frac{4}{\pi} m_N^2 f_n^2 \right) \frac{\mu^2}{m_N^2} A^2 \\
+        &= \sigma_n \frac{\mu^2}{m_N^2} A^2 \\
+        &= f(\sigma_n, m_\chi)
+    \end{align*}
+    The $\sigma_n$ is the cross section between WIMP and nucleon.
+\end{theory}
+
+\bigskip \noindent
+\begin{importantnote}
+    Some may mix the cross section of WIMP-nucleon scattering $\sigma_n$ with the cross section between WIMP and single nucleon $\sigma$, but they are different quantities, and their relationship is given by above. \\
+
+    More carefully, $\sigma$ is the cross section between a WIMP and the entire nucleus, while $\sigma_n$ is the reference cross section between a WIMP and one neutron (or one nucleon under the isospin-symmetric approximation $f_p\simeq f_n$). Direct-detection exclusion plots usually show this per-nucleon reference cross section so that experiments with different target nuclei can be compared on the same plot.
+\end{importantnote}
+
+\bigskip \noindent
+\begin{remark}
+    To avoid the background noise from cosmic rays and other sources, direct detection experiments are typically conducted deep underground (e.g. in mines or underground laboratories) to shield them from cosmic rays and other sources of background radiation. The detectors are also designed to be highly sensitive and have low energy thresholds to detect the small recoil energies expected from WIMP interactions.
+\end{remark}
+
+\bigskip \noindent
 \begin{figure}[!htbp]
     \centering
     \includegraphics[width=1.0\textwidth]{images/DM_exclusion.png}
@@ -772,6 +1001,16 @@ The "WIMP miracle" shows the DM particles interact with regular matter with a st
 
     Furthermore, we cn also see the dotted lines of experiments in the figure, they represent the future predictions in upcoming experiments at the time of the figure was made, and we can see that the future experiments will further push down the exclusion limits, and will conclude more WIMP models, wether they are working or not.
 \end{extra}
+
+%\clearpage
+\bigskip \noindent
+\begin{example}{Curve Shapes of Exclusion Limits}{}
+    Can you explain why the limits of exclusion curves are weaker for a low $m_\chi$ and a high $m_\chi$ (compared to the middle region around $m_\chi \approx 50$ GeV)? \\
+
+    \bigskip\textbf{Solution.}\quad \\
+    For a given $m_N$ experiment, the recoil energy $E_R$ will be maximized when $m_\chi \approx m_N$, which means the experiment will have the best sensitivity to WIMPs with mass around the mass of the target nucleus.  \\
+    Besides, for large $m_\chi$, the number density of WIMPs (which is proportional to $\rho_\chi / m_\chi$) will decrease, which means the expected event rate will also decrease, making it harder to detect heavier WIMPs. 
+\end{example}
 
 \bigskip \noindent
 \begin{figure}[!htbp]
