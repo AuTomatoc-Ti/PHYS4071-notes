@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2026.2.19)  15 MAY 2026 04:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2026.2.19)  24 MAY 2026 21:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -5751,27 +5751,17 @@ t % 20into % 20collision %
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
-
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 77E8CAD80FEA04B9D2F44C18190FA4DB;34227.
-
-Package biblatex Warning: Please rerun LaTeX.
-
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 42881 strings out of 473190
- 845843 string characters out of 5715800
- 1718488 words of memory out of 5000000
- 63951 multiletter control sequences out of 15000+600000
+ 42879 strings out of 473190
+ 845809 string characters out of 5715800
+ 1718661 words of memory out of 5000000
+ 63949 multiletter control sequences out of 15000+600000
  673222 words of font info for 629 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  92i,20n,99p,1179b,1441s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -5787,7 +5777,7 @@ texlive/2025/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb></usr/local/te
 xlive/2025/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2
 025/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2025/tex
 mf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (307 pages, 24974813 bytes).
+Output written on main.pdf (307 pages, 24974798 bytes).
 PDF statistics:
  3109 PDF objects out of 3580 (max. 8388607)
  2462 compressed objects within 25 object streams
