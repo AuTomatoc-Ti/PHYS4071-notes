@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2026.2.19)  24 MAY 2026 21:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2026.2.19)  28 MAY 2026 21:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2654,10 +2654,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 389--391
 [101
 
 ]
-<images/g*_evolution.png, id=1609, 739.76375pt x 457.71pt>
-File: images/g*_evolution.png Graphic file (type png)
-<use images/g*_evolution.png>
-Package pdftex.def Info: images/g*_evolution.png  used on input line 416.
+<images/g_star_evolution.png, id=1609, 739.76375pt x 457.71pt>
+File: images/g_star_evolution.png Graphic file (type png)
+<use images/g_star_evolution.png>
+Package pdftex.def Info: images/g_star_evolution.png  used on input line 416.
 (pdftex.def)             Requested size: 350.53915pt x 216.88371pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 435--436
@@ -2683,7 +2683,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 441--442
 
 [102
 
- <./images/g*_evolution.png>]
+ <./images/g_star_evolution.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 459--460
 
  []
@@ -5758,10 +5758,10 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 42879 strings out of 473190
- 845809 string characters out of 5715800
- 1718661 words of memory out of 5000000
- 63949 multiletter control sequences out of 15000+600000
+ 42878 strings out of 473190
+ 845831 string characters out of 5715800
+ 1718578 words of memory out of 5000000
+ 63948 multiletter control sequences out of 15000+600000
  673222 words of font info for 629 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  92i,20n,99p,1179b,1441s stack positions out of 10000i,1000n,20000p,200000b,200000s

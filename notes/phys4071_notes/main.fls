@@ -738,11 +738,11 @@ INPUT ./chapters/ch05_thermodynamics_and_primordial_soup.tex
 INPUT ./chapters/ch05_thermodynamics_and_primordial_soup.tex
 INPUT ./chapters/ch05_thermodynamics_and_primordial_soup.tex
 INPUT chapters/ch05_thermodynamics_and_primordial_soup.tex
-INPUT ./images/g*_evolution.png
-INPUT ./images/g*_evolution.png
-INPUT ./images/g*_evolution.png
-INPUT ./images/g*_evolution.png
-INPUT ./images/g*_evolution.png
+INPUT ./images/g_star_evolution.png
+INPUT ./images/g_star_evolution.png
+INPUT ./images/g_star_evolution.png
+INPUT ./images/g_star_evolution.png
+INPUT ./images/g_star_evolution.png
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/vf/public/mathpazo/zplmr7y.vf
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
 INPUT ./images/dependence_interaction_strength.png

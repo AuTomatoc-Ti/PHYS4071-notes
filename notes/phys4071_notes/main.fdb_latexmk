@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber main"] 1778791757.62298 "main.bcf" "main.bbl" "main" 1779630212.7521 0
-  "main.bcf" 1779630212.42264 108292 59816962e8c6b85c083254c7680d0158 "pdflatex"
+["biber main"] 1778791757.62298 "main.bcf" "main.bbl" "main" 1779975028.53623 0
+  "main.bcf" 1779975027.71436 108292 59816962e8c6b85c083254c7680d0158 "pdflatex"
   "references.bib" 1777899805.26983 2439 3d128f4bd794e756d91ccdf49abe3f45 ""
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1779630200.00207 "main.tex" "main.pdf" "main" 1779630212.75245 2
+["pdflatex"] 1779975014.37444 "main.tex" "main.pdf" "main" 1779975028.53819 2
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1136849721 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -269,7 +269,7 @@
   "chapters/ch02_Hubble_law_and_cosmological_redshift.tex" 1778434430.676 39528 1dff1318308ea5fe8d996f4e4cc27a72 ""
   "chapters/ch03_cosmic_evolution.tex" 1774932167.7178 65798 8950c7257f758033e1fe6f20e2ec271c ""
   "chapters/ch04_standard_model.tex" 1774678746.93787 12242 cf2a674ffe9475d5a3613f8fdca46c76 ""
-  "chapters/ch05_thermodynamics_and_primordial_soup.tex" 1774686814.29995 65502 556acf843d43355b5c89adb3a3335451 ""
+  "chapters/ch05_thermodynamics_and_primordial_soup.tex" 1779975001.98952 65506 a579bb9a14763e5eca0616533131c9e4 ""
   "chapters/ch06_Big_Bang_nucleosynthesis.tex" 1775330903.38952 29539 c3d8b2aa0b0d4e965b319cedcb8155de ""
   "chapters/ch07_Cosmic_Microwave_Background.tex" 1779630105.07082 133227 f0ebbb824548d35007681fc99c210135 ""
   "chapters/ch08_dark_matter.tex" 1779630181.42619 116784 0a0aa25f5abb0951ba4ed0075708687d ""
@@ -315,7 +315,7 @@
   "images/energy_momentum_tensor.png" 1775975787.51644 146608 0120beb59b83d1dfed09c22f97ad280a ""
   "images/flat_rotation_curves.png" 1777899805.17054 1830837 2ceea1a93a41ffc4924427684b95390c ""
   "images/flatness_problem.png" 1778237652.76089 1551023 452598afbf0977814091d8275c9766d0 ""
-  "images/g*_evolution.png" 1775975787.51774 146958 e6e1ebafbb2f3e01c84088999b993fe7 ""
+  "images/g_star_evolution.png" 1775975787.51774 146958 e6e1ebafbb2f3e01c84088999b993fe7 ""
   "images/gamma_ray_fingerprints.png" 1777899805.17199 216579 451f85b0ea3cb9efe9a98c98ad371f63 ""
   "images/gravitational_microlensing.png" 1777899805.17224 56561 a845f973521828d021e13684e2d68f21 ""
   "images/horizon_problem.png" 1778412123.83437 218677 2e617bed47290d8fad3fc8869d2c7c9a ""
@@ -338,12 +338,12 @@
   "images/universe_evolution.png" 1774723003.76484 757297 224958546c16d20f4b0aa0aa62e91708 ""
   "images/universe_evolution_2.png" 1774773105.75897 786377 292aeddda7243d1b771c93d57f91c214 ""
   "images/universe_evolution_3.png" 1774783004.9567 346275 faa3ee519acf57e5e9dfb973953a9408 ""
-  "main.aux" 1779630212.41554 51343 b9abad8acd08a1883bca70a49878360e "pdflatex"
+  "main.aux" 1779975027.68848 51343 b9abad8acd08a1883bca70a49878360e "pdflatex"
   "main.bbl" 1778791761.7215 11559 9ddcc9e3fe9579dacdafd5e0447eb0f5 "biber main"
-  "main.out" 1779630212.41922 34227 77e8cad80fea04b9d2f44c18190fa4db "pdflatex"
-  "main.run.xml" 1779630212.42336 2339 1ed341041bd1fbe5a1f3b1992463a6cc "pdflatex"
+  "main.out" 1779975027.7033 34227 77e8cad80fea04b9d2f44c18190fa4db "pdflatex"
+  "main.run.xml" 1779975027.7159 2339 1ed341041bd1fbe5a1f3b1992463a6cc "pdflatex"
   "main.tex" 1778791606.42813 6708 ab6948037ab1cf98b74584087bdc3d42 ""
-  "main.toc" 1779630212.42343 16576 f075f55f519b2a843166c4b0c792b56d "pdflatex"
+  "main.toc" 1779975027.71614 16576 f075f55f519b2a843166c4b0c792b56d "pdflatex"
   "preamble.tex" 1778573079.89388 14126 f6aaf7bd3cb40d236116dfc3ecf10015 ""
   (generated)
   "main.aux"
